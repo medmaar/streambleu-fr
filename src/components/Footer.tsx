@@ -2,142 +2,137 @@
 import Link from "next/link";
 import Logo from "./Logo";
 
+const sections = [
+  {
+    title: "Pages",
+    links: [
+      { href: "/", label: "Accueil" },
+      { href: "/tarifs", label: "Tarifs" },
+      { href: "/liste-chaines", label: "Chaînes" },
+      { href: "/essai-gratuit", label: "Essai Gratuit" },
+      { href: "/blog", label: "Blog" },
+      { href: "/revendeur", label: "Revendeur" },
+      { href: "/parrainage", label: "Parrainage" },
+      { href: "/contact", label: "Contact" },
+    ],
+  },
+  {
+    title: "Par Appareil",
+    links: [
+      { href: "/iptv-firestick-france", label: "Fire Stick" },
+      { href: "/iptv-android-tv-france", label: "Android TV" },
+      { href: "/iptv-smart-tv-france", label: "Smart TV" },
+      { href: "/iptv-apple-tv-france", label: "Apple TV" },
+      { href: "/iptv-mag-box-france", label: "MAG Box" },
+      { href: "/iptv-samsung-tv-france", label: "Samsung TV" },
+    ],
+  },
+  {
+    title: "Par Ville",
+    links: [
+      { href: "/iptv-paris", label: "Paris" },
+      { href: "/iptv-lyon", label: "Lyon" },
+      { href: "/iptv-marseille", label: "Marseille" },
+      { href: "/iptv-toulouse", label: "Toulouse" },
+      { href: "/iptv-nice", label: "Nice" },
+      { href: "/iptv-bordeaux", label: "Bordeaux" },
+    ],
+  },
+  {
+    title: "Légal",
+    links: [
+      { href: "/politique-confidentialite", label: "Politique de confidentialité" },
+      { href: "/conditions-utilisation", label: "Conditions d'utilisation" },
+      { href: "/politique-remboursement", label: "Remboursement" },
+      { href: "/avertissement", label: "Avertissement" },
+      { href: "/dmca", label: "DMCA" },
+    ],
+  },
+];
+
 export default function Footer() {
   return (
-    <footer
-      className="py-16 px-4 border-t"
-      style={{ background: "#5a5fcf", borderColor: "rgba(197,188,245,0.25)" }}
-    >
-      <div className="max-w-7xl mx-auto">
+    <footer style={{ background: "#4a4fc0", borderTop: "1px solid rgba(197,188,245,0.2)" }}>
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "36px 24px 0" }}>
 
-        {/* Brand bar */}
-        <div
-          className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pb-12 mb-12 border-b"
-          style={{ borderColor: "rgba(197,188,245,0.25)" }}
-        >
-          <div>
-            <Logo className="mb-4" />
-            <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, lineHeight: 1.7, maxWidth: 320 }}>
-              Le meilleur abonnement IPTV en France. Plus de 25 000 chaînes en direct,
-              120 000 films &amp; séries en 4K. Service disponible dans toute l&apos;Europe.
+        {/* ── TOP ROW: Logo+tagline left | 4 link sections right ── */}
+        <div style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "32px 48px",
+          alignItems: "flex-start",
+          paddingBottom: 28,
+          borderBottom: "1px solid rgba(197,188,245,0.18)",
+        }}>
+
+          {/* Brand */}
+          <div style={{ flex: "0 0 220px", minWidth: 180 }}>
+            <Logo className="mb-3" />
+            <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 12, lineHeight: 1.65, marginBottom: 10 }}>
+              Meilleur IPTV France. 25 000+ chaînes, 120 000+ films en 4K. Disponible toute l&apos;Europe.
             </p>
-          </div>
-
-          <div className="sm:text-right shrink-0">
-            <a
-              href="mailto:help@streambleu.fr"
-              style={{ fontSize: 14, color: "#c5bcf5", textDecoration: "none" }}
-            >
+            <a href="mailto:help@streambleu.fr"
+              style={{ color: "#c5bcf5", fontSize: 12, textDecoration: "none" }}>
               help@streambleu.fr
             </a>
-            <div className="mt-3" style={{ fontSize: 13, lineHeight: 1.8 }}>
-              <p style={{ color: "rgba(255,255,255,0.55)", fontWeight: 700, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 4 }}>Adresse</p>
-              <p style={{ color: "rgba(255,255,255,0.8)" }}>1 Rue Volant</p>
-              <p style={{ color: "rgba(255,255,255,0.8)" }}>92000 Nanterre, France</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Links — 2×2 on mobile, 4 cols on desktop */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-
-          {/* Pages */}
-          <div>
-            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Pages</p>
-            <div className="flex flex-col gap-2.5">
-              {[
-                { href: "/", label: "Accueil" },
-                { href: "/pricing", label: "Tarifs" },
-                { href: "/channels-list", label: "Chaînes" },
-                { href: "/free-trial", label: "Essai Gratuit" },
-                { href: "/blog", label: "Blog" },
-                { href: "/reseller", label: "Revendeur" },
-                { href: "/referral", label: "Parrainage" },
-                { href: "/contact", label: "Contact" },
-              ].map((l) => (
-                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
-                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
-                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
-                >{l.label}</Link>
-              ))}
-            </div>
           </div>
 
-          {/* Par Appareil */}
-          <div>
-            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Par Appareil</p>
-            <div className="flex flex-col gap-2.5">
-              {[
-                { href: "/iptv-firestick-france", label: "Fire Stick" },
-                { href: "/iptv-android-tv-france", label: "Android TV" },
-                { href: "/iptv-smart-tv-france", label: "Smart TV" },
-                { href: "/iptv-apple-tv-france", label: "Apple TV" },
-                { href: "/iptv-mag-box-france", label: "MAG Box" },
-                { href: "/iptv-samsung-tv-france", label: "Samsung TV" },
-              ].map((l) => (
-                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
-                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
-                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
-                >{l.label}</Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Par Ville */}
-          <div>
-            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Par Ville</p>
-            <div className="flex flex-col gap-2.5">
-              {[
-                { href: "/iptv-paris", label: "Paris" },
-                { href: "/iptv-lyon", label: "Lyon" },
-                { href: "/iptv-marseille", label: "Marseille" },
-                { href: "/iptv-toulouse", label: "Toulouse" },
-                { href: "/iptv-nice", label: "Nice" },
-                { href: "/iptv-bordeaux", label: "Bordeaux" },
-              ].map((l) => (
-                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
-                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
-                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
-                >{l.label}</Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Légal */}
-          <div>
-            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Légal</p>
-            <div className="flex flex-col gap-2.5 mb-6">
-              {[
-                { href: "/privacy-policy", label: "Politique de confidentialité" },
-                { href: "/terms-of-service", label: "Conditions d'utilisation" },
-                { href: "/refund-policy", label: "Politique de remboursement" },
-                { href: "/disclaimer", label: "Avertissement" },
-              ].map((l) => (
-                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
-                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
-                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
-                >{l.label}</Link>
-              ))}
-            </div>
-            <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 12, lineHeight: 1.6, marginBottom: 8 }}>
-              Stream Bleu n&apos;héberge ni ne diffuse aucun contenu protégé par le droit d&apos;auteur.
-              Tout le contenu est fourni par des prestataires tiers.
-            </p>
-            <Link href="/avertissement" style={{ fontSize: 12, color: "#c5bcf5", textDecoration: "none" }}>
-              Lire l&apos;avertissement →
-            </Link>
+          {/* 4 link sections in one horizontal row */}
+          <div style={{
+            flex: 1,
+            display: "grid",
+            gridTemplateColumns: "repeat(4, minmax(110px, 1fr))",
+            gap: "0 24px",
+          }}>
+            {sections.map((section) => (
+              <div key={section.title}>
+                <p style={{
+                  fontSize: 10,
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  color: "rgba(255,255,255,0.45)",
+                  marginBottom: 10,
+                }}>
+                  {section.title}
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  {section.links.map((l) => (
+                    <Link
+                      key={l.href}
+                      href={l.href}
+                      style={{ color: "rgba(255,255,255,0.72)", fontSize: 12, textDecoration: "none" }}
+                      onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                      onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.72)")}
+                    >
+                      {l.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
 
         </div>
 
-        {/* Bottom bar */}
-        <div
-          className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 border-t"
-          style={{ borderColor: "rgba(197,188,245,0.2)" }}
-        >
-          <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>© 2026 Stream Bleu. Tous droits réservés.</p>
-          <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>1 Rue Volant, 92000 Nanterre, France</p>
-          <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>help@streambleu.fr</p>
+        {/* ── BOTTOM BAR ── */}
+        <div style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: "6px 24px",
+          padding: "14px 0",
+        }}>
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: 0 }}>
+            © 2026 Stream Bleu. Tous droits réservés.
+          </p>
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: 0 }}>
+            1 Rue Volant, 92000 Nanterre, France
+          </p>
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: 0 }}>
+            Stream Bleu ne diffuse aucun contenu protégé — fourni par des prestataires tiers.
+          </p>
         </div>
 
       </div>
