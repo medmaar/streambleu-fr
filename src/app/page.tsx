@@ -450,7 +450,7 @@ export default function HomePage() {
                   fontWeight: 600,
                   display: "block",
                 }}>
-                  🇫🇷 {city.name}
+                  <img src="https://flagcdn.com/20x15/fr.png" alt="FR" width={20} height={15} style={{ borderRadius: 2, display: "inline-block", verticalAlign: "middle", marginRight: 6 }} />{city.name}
                 </Link>
               ))}
             </div>

@@ -172,10 +172,10 @@ const TP_STARS = () => (
 export default function ReviewsSection({ showHeader = true }: { showHeader?: boolean }) {
   const tp = useAutoSlide(trustpilotReviews.length, 5200);
   const wa = useAutoSlide(Math.ceil(whatsappReviews.length / 2), 5700);
-  const g  = useAutoSlide(Math.ceil(googleReviews.length / 3), 6100);
+  const g  = useAutoSlide(Math.ceil(googleReviews.length / 4), 6100);
 
   const waVisible = whatsappReviews.slice(wa.current * 2, wa.current * 2 + 2);
-  const gVisible  = googleReviews.slice(g.current * 3, g.current * 3 + 3);
+  const gVisible  = googleReviews.slice(g.current * 4, g.current * 4 + 4);
   const tpReview  = trustpilotReviews[tp.current];
 
   return (
@@ -190,13 +190,13 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
             {[
               { val: "5.0", label: "Trustpilot",  color: "#00b67a" },
-              { val: "50 000+", label: "Clients", color: "#5a5fcf" },
+              { val: "50 000+", label: "Clients", color: "#ffffff" },
               { val: "4.9★",  label: "Google",    color: "#FBBC04" },
               { val: "24/7",  label: "Support",   color: "#f5a623" },
             ].map(s => (
               <div key={s.val} style={{ background: "#4a4fc0", borderRadius: 12, padding: "12px 20px", textAlign: "center", minWidth: 90 }}>
                 <div style={{ fontSize: 18, fontWeight: 900, color: s.color }}>{s.val}</div>
-                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginTop: 2 }}>{s.label}</div>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.85)", marginTop: 2 }}>{s.label}</div>
               </div>
             ))}
           </div>
@@ -257,7 +257,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
         </div>
         <div style={{ overflow: "hidden" }}>
           <div style={slideStyle(g.sliding)}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
               {gVisible.map((r, i) => (
                 <div key={i} style={{ background: "#fff", borderRadius: 16, padding: "24px", boxShadow: "0 4px 20px rgba(90,95,207,0.09)", border: "1px solid rgba(90,95,207,0.1)" }}>
                   <div style={{ display: "flex", gap: 2, marginBottom: 10 }}>
@@ -269,7 +269,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
               ))}
             </div>
           </div>
-          <ProgressDots total={Math.ceil(googleReviews.length / 3)} current={g.current} go={g.go} />
+          <ProgressDots total={Math.ceil(googleReviews.length / 4)} current={g.current} go={g.go} />
         </div>
       </div>
     </div>

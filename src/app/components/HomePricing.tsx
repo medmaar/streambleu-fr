@@ -18,7 +18,7 @@ const allPrices: Record<number, [number, number, number, number]> = {
 const planDefs = [
   { name: "1 Mois",   badge: null,         slug: "1-month"   },
   { name: "3 Mois",  badge: null,         slug: "3-months"  },
-  { name: "6 Mois",  badge: "Populaire",    slug: "6-months"  },
+  { name: "6 Mois",  badge: null,         slug: "6-months"  },
   { name: "12 Mois", badge: "Meilleur Prix", slug: "12-months" },
 ];
 
@@ -149,7 +149,7 @@ export default function HomePricing() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: isBest ? "#5a5fcf" : "#5a5fcf",
+                    background: isBest ? "#f5a623" : "#7b87e8",
                     color: "#fff",
                     fontSize: 11,
                     fontWeight: 800,
