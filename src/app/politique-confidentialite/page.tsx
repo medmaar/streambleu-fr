@@ -1,101 +1,96 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialité | Stream Bleu – Best 4K IPTV France",
-  description: "Privacy policy for Stream Bleu, de France meilleur IPTV service. Learn how we collect, use, and protect your personal information.",
+  title: "Politique de confidentialité | Stream Bleu – IPTV France",
+  description: "Politique de confidentialité de Stream Bleu. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.",
   alternates: { canonical: "https://streambleu.fr/politique-confidentialite" },
-  openGraph: {
-    title: "Politique de confidentialité | Stream Bleu – Best 4K IPTV France",
-    description: "Privacy policy for Stream Bleu, de France meilleur IPTV service. Learn how we collect, use, and protect your personal information.",
-    url: "https://streambleu.fr/privacy-policy",
-    type: "website",
-    siteName: "Stream Bleu",
-    locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
-  },
-  twitter: { card: "summary_large_image" },
 };
 
-export default function PrivacyPolicyPage() {
+const sections = [
+  {
+    num: "1", title: "Informations que nous collectons",
+    content: "Lorsque vous utilisez Stream Bleu, nous pouvons collecter les types d'informations suivants :",
+    list: [
+      "Informations de compte : votre nom, adresse email et coordonnées fournies lors de votre inscription ou prise de contact.",
+      "Informations de paiement : données de transaction traitées par nos prestataires de paiement. Nous ne stockons pas les numéros de carte bancaire complets.",
+      "Données d'utilisation : informations sur la façon dont vous utilisez notre service, y compris le type d'appareil, l'adresse IP et l'activité de streaming.",
+      "Communications : messages que vous nous envoyez par email, WhatsApp ou Telegram.",
+    ]
+  },
+  {
+    num: "2", title: "Comment nous utilisons vos informations",
+    content: "Nous utilisons les informations collectées pour :",
+    list: [
+      "Fournir, maintenir et améliorer notre service IPTV",
+      "Traiter les transactions et envoyer les informations associées",
+      "Envoyer des mises à jour de service, des avis techniques et des messages de support",
+      "Répondre à vos commentaires et questions",
+      "Surveiller et analyser les tendances d'utilisation pour améliorer l'expérience utilisateur",
+      "Détecter et prévenir les utilisations frauduleuses ou non autorisées",
+    ]
+  },
+  {
+    num: "3", title: "Partage des informations",
+    content: "Nous ne vendons, n'échangeons ni ne louons vos informations personnelles à des tiers. Nous pouvons partager vos informations uniquement dans les circonstances suivantes :",
+    list: [
+      "Prestataires de services : sociétés tierces de confiance qui nous aident à exploiter notre service (ex : processeurs de paiement), soumises à des accords de confidentialité.",
+      "Exigences légales : lorsque la loi, une décision de justice ou une autorité gouvernementale l'exige.",
+      "Transferts d'entreprise : dans le cadre d'une fusion, acquisition ou vente d'actifs, avec des protections de confidentialité appropriées.",
+    ]
+  },
+  {
+    num: "4", title: "Conservation des données",
+    content: "Nous conservons vos informations personnelles aussi longtemps que votre compte est actif ou que nécessaire pour vous fournir notre service. Vous pouvez demander la suppression de vos données à tout moment en nous contactant. Nous répondrons dans les 30 jours.",
+  },
+  {
+    num: "5", title: "Sécurité",
+    content: "Nous mettons en œuvre des mesures de sécurité conformes aux normes du secteur pour protéger vos informations personnelles contre tout accès, divulgation, altération ou destruction non autorisés. Cependant, aucune méthode de transmission sur internet n'est sécurisée à 100 %.",
+  },
+  {
+    num: "6", title: "Cookies",
+    content: "Notre site web peut utiliser des cookies et des technologies de suivi similaires pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser les cookies, bien que certaines parties du site puissent ne pas fonctionner correctement.",
+  },
+  {
+    num: "7", title: "Vos droits (résidents français)",
+    content: "Conformément au RGPD (Règlement Général sur la Protection des Données), vous avez le droit de :",
+    list: [
+      "Accéder aux informations personnelles que nous détenons sur vous",
+      "Demander la correction d'informations inexactes",
+      "Retirer votre consentement à l'utilisation de vos informations personnelles",
+      "Demander la suppression de vos informations personnelles",
+      "Vous opposer au traitement de vos données à des fins de marketing direct",
+    ]
+  },
+  {
+    num: "8", title: "Modifications de cette politique",
+    content: "Nous pouvons mettre à jour cette Politique de confidentialité de temps en temps. Nous vous informerons des changements importants en publiant la nouvelle politique sur cette page avec une date mise à jour.",
+  },
+];
+
+export default function PolitiqueConfidentialitePage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(90,95,207,0.04) 0%, #fdf5ff 35%, #fdf5ff 65%, rgba(200,80,100,0.04) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#5a5fcf]">Politique de confidentialité</h1>
-        <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
-
-        <div className="space-y-10 text-black leading-relaxed">
+        <h1 className="text-4xl font-extrabold mb-4" style={{ color: "#5a5fcf" }}>Politique de confidentialité</h1>
+        <p style={{ color: "#666", fontSize: 13, marginBottom: 40 }}>Dernière mise à jour : 28 mars 2026</p>
+        <div className="space-y-8 leading-relaxed">
+          {sections.map(s => (
+            <section key={s.num}>
+              <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>{s.num}. {s.title}</h2>
+              <p style={{ color: "#333", marginBottom: s.list ? 12 : 0 }}>{s.content}</p>
+              {s.list && (
+                <ul className="list-disc pl-6 space-y-2">
+                  {s.list.map((item, i) => <li key={i} style={{ color: "#333" }}>{item}</li>)}
+                </ul>
+              )}
+            </section>
+          ))}
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">1. Information We Collect</h2>
-            <p className="mb-3">When you use IPTV Subscription France, we may collect the following types of information:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Account information:</strong> Your name, email address, and contact details provided when you sign up or contact us.</li>
-              <li><strong>Payment information:</strong> Transaction data processed through our payment providers. We do not store full credit card numbers.</li>
-              <li><strong>Usage data:</strong> Information about how you use our service, including device type, IP address, and streaming activity.</li>
-              <li><strong>Communications:</strong> Messages you send us via email, WhatsApp, or Telegram.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">2. How We Use Your Information</h2>
-            <p className="mb-3">We use the information we collect to:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Provide, maintain, and improve our IPTV service</li>
-              <li>Process transactions and send related information</li>
-              <li>Send service updates, technical notices, and support messages</li>
-              <li>Respond to your comments and questions</li>
-              <li>Monitor and analyze usage patterns to improve user experience</li>
-              <li>Detect and prevent fraudulent or unauthorized use</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">3. Information Sharing</h2>
-            <p className="mb-3">We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Service providers:</strong> Trusted third-party companies that assist us in operating our service (e.g., payment processors), subject to confidentiality agreements.</li>
-              <li><strong>Legal requirements:</strong> When required by law, court order, or governmental authority.</li>
-              <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or sale of assets, with appropriate confidentiality protections.</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">4. Data Retention</h2>
-            <p>We retain your personal information for as long as your account is active or as needed to provide you with our service. You may request deletion of your data at any time by contacting us. We will respond within 30 days.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">5. Security</h2>
-            <p>We implement industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">6. Cookies</h2>
-            <p>Our website may use cookies and similar tracking technologies to improve your browsing experience. You can instruct your browser to refuse cookies, though some parts of the site may not function properly as a result.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">7. Your Rights (Français Residents)</h2>
-            <p className="mb-3">Under de France Personal Information Protection and Electronic Documents Act (PIPEDA), you have the right to:</p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Access the personal information we hold about you</li>
-              <li>Request correction of inaccurate information</li>
-              <li>Withdraw consent for the use of your personal information</li>
-              <li>Request deletion of your personal information</li>
-            </ul>
-            <p className="mt-3">To exercise these rights, contact us at <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">help@streambleu.fr</a>.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">8. Changes to This Policy</h2>
-            <p>We may update this Politique de confidentialité from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. Continued use of our service after changes constitutes acceptance of the updated policy.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-black mb-3">9. Nous Contacter</h2>
-            <p>If you have questions about this Politique de confidentialité, please contact us:</p>
-            <div className="mt-4 bg-transparent rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">help@streambleu.fr</a></p>
-              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#5a5fcf] hover:underline">+1 (782) 802-6280</a></p>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>9. Nous contacter</h2>
+            <p style={{ color: "#333", marginBottom: 16 }}>Si vous avez des questions concernant cette Politique de confidentialité :</p>
+            <div style={{ background: "rgba(90,95,207,0.06)", borderRadius: 12, padding: 24, border: "1px solid rgba(90,95,207,0.15)" }}>
+              <p>Email : <a href="mailto:help@streambleu.fr" style={{ color: "#5a5fcf" }}>help@streambleu.fr</a></p>
+              <p className="mt-2">WhatsApp : <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf" }}>+1 (782) 802-6280</a></p>
             </div>
           </section>
         </div>

@@ -13,11 +13,11 @@ export default function ReviewsPage() {
       <section style={{ padding: "48px 16px 32px" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", textAlign: "center" }}>
-            <span style={{ display: "inline-block", background: "rgba(90,95,207,0.18)", border: "1px solid rgba(90,95,207,0.4)", color: "#5a5fcf", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
+            <span style={{ display: "inline-block", background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.35)", color: "#ffffff", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
               Avis Vérifiés
             </span>
             <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 14 }}>
-              Ce que disent les clients sur <span style={{ color: "#5a5fcf" }}>Stream Bleu</span>
+              Ce que disent les clients sur <span style={{ color: "#c5bcf5" }}>Stream Bleu</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14 }}>
               Avis réels de Trustpilot, WhatsApp &amp; Google — 50 000+ clients satisfaits en France et dans le monde.

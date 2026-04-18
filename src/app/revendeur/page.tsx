@@ -25,17 +25,17 @@ export default function ResellerPage() {
     <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
       <section style={{ background: "#5a5fcf", padding: "80px 16px 60px", textAlign: "center" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
-          <span style={{ background: "rgba(90,95,207,0.18)", border: "1px solid rgba(90,95,207,0.4)", color: "#5a5fcf", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 24 }}>
+          <span style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.35)", color: "#fff", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 24 }}>
             Programme Revendeur
           </span>
           <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#fff", lineHeight: 1.1, marginBottom: 20 }}>
-            Lancez votre <span style={{ color: "#5a5fcf" }}>Business IPTV</span> en France
+            Lancez votre <span style={{ color: "#f5a623" }}>Business IPTV</span> en France
           </h1>
           <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 16, lineHeight: 1.7, marginBottom: 32 }}>
             Rejoignez le programme revendeur Stream Bleu. Obtenez des crédits à prix grossiste, gérez vos clients depuis un panneau dédié, et construisez votre propre activité IPTV sous votre marque.
           </p>
           <a href="mailto:help@streambleu.fr?subject=Demande Revendeur Stream Bleu"
-            style={{ display: "inline-block", background: "#5a5fcf", color: "#fff", padding: "14px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
+            style={{ display: "inline-block", background: "#f5a623", color: "#1a1a4e", padding: "14px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
             Devenir Revendeur →
           </a>
         </div>
@@ -68,7 +68,7 @@ export default function ResellerPage() {
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="mailto:help@streambleu.fr?subject=Demande Revendeur"
-              style={{ display: "inline-block", background: "#5a5fcf", color: "#fff", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
+              style={{ display: "inline-block", background: "#f5a623", color: "#1a1a4e", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               Envoyer un Email
             </a>
             <a href="https://wa.me/17828026280?text=Bonjour%2C%20je%20souhaite%20devenir%20revendeur%20Stream%20Bleu"

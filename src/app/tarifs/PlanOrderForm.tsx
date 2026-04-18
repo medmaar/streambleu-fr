@@ -169,9 +169,9 @@ export default function PlanOrderForm({ plan }: Props) {
       <div>
         <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>Pays</label>
         <select name="country" value={form.country} onChange={handleChange}
-          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}>
+          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#3d4199", color: "#ffffff" }}>
           {countries.map((c) => (
-            <option key={c} value={c} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{c}</option>
+            <option key={c} value={c} style={{ backgroundColor: "#3d4199", color: "#ffffff" }}>{c}</option>
           ))}
         </select>
       </div>
@@ -180,10 +180,10 @@ export default function PlanOrderForm({ plan }: Props) {
       <div>
         <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>Type d&apos;appareil</label>
         <select name="device" value={form.device} onChange={handleChange}
-          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}>
-          <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Sélectionnez votre appareil</option>
+          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#3d4199", color: "#ffffff" }}>
+          <option value="" style={{ backgroundColor: "#3d4199", color: "#ffffff" }}>Sélectionnez votre appareil</option>
           {deviceTypes.map((d) => (
-            <option key={d} value={d} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{d}</option>
+            <option key={d} value={d} style={{ backgroundColor: "#3d4199", color: "#ffffff" }}>{d}</option>
           ))}
         </select>
       </div>

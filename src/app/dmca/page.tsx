@@ -1,111 +1,64 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DMCA Policy | Stream Bleu – Best 4K IPTV France",
-  description:
-    "DMCA policy for Stream Bleu, de France top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
+  title: "Politique DMCA | Stream Bleu – IPTV France",
+  description: "Politique DMCA de Stream Bleu. Apprenez comment soumettre un avis de retrait DMCA et notre processus de traitement des réclamations pour violation de droits d'auteur.",
   alternates: { canonical: "https://streambleu.fr/dmca" },
-  openGraph: {
-    title: "DMCA Policy | Stream Bleu – Best 4K IPTV France",
-    description: "DMCA policy for Stream Bleu, de France top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
-    url: "https://streambleu.fr/dmca",
-    type: "website",
-    siteName: "Stream Bleu",
-    locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
-  },
-  twitter: { card: "summary_large_image" },
 };
 
 export default function DMCAPage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(90,95,207,0.04) 0%, #fdf5ff 35%, #fdf5ff 65%, rgba(200,80,100,0.04) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#5a5fcf]">DMCA Policy</h1>
-        <p className="text-black text-sm mb-8">Last updated: March 28, 2026</p>
+        <h1 className="text-4xl font-extrabold mb-4" style={{ color: "#5a5fcf" }}>Politique DMCA</h1>
+        <p style={{ color: "#666", fontSize: 13, marginBottom: 32 }}>Dernière mise à jour : 28 mars 2026</p>
 
-        {/* Legal disclaimer block */}
-        <div className="bg-transparent border border-red-700 rounded-2xl p-8 mb-10">
-          <p className="text-xs font-bold text-[#5a5fcf] uppercase tracking-widest mb-3">Legal Avertissement</p>
-          <p className="text-black leading-relaxed">
-            Stream Bleu is a reseller of third-party IPTV services. We do not host, store, or transmit
-            any video content. All streams are provided by independent third-party servers. If you believe
-            your copyrighted content is being accessed through our platform, please contact us at{" "}
-            <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">
-              help@streambleu.fr
-            </a>{" "}
-            and we will forward your request to the appropriate provider. We respond to all valid DMCA
-            notices within 72 hours.
+        <div style={{ border: "1px solid rgba(220,50,50,0.3)", borderRadius: 16, padding: 24, marginBottom: 40, background: "rgba(220,50,50,0.04)" }}>
+          <p style={{ fontSize: 11, fontWeight: 700, color: "#5a5fcf", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Avertissement Légal</p>
+          <p style={{ color: "#333", lineHeight: 1.7 }}>
+            Stream Bleu est un revendeur de services IPTV tiers. Nous n&apos;hébergeons, ne stockons ni ne transmettons aucun contenu vidéo. Tous les flux sont fournis par des serveurs tiers indépendants. Si vous pensez que votre contenu protégé est accessible via notre plateforme, veuillez nous contacter à <a href="mailto:help@streambleu.fr" style={{ color: "#5a5fcf" }}>help@streambleu.fr</a> et nous transmettrons votre demande au prestataire concerné. Nous répondons à tous les avis DMCA valides dans les 72 heures.
           </p>
         </div>
 
-        <section className="space-y-8 text-black leading-relaxed">
+        <div className="space-y-8 leading-relaxed" style={{ color: "#333" }}>
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Overview</h2>
-            <p>
-              IPTV Subscription France respects the intellectual property rights of others and
-              expects users of our service to do the same. In accordance with the Digital
-              Millennium Copyright Act of 1998 (DMCA) and applicable Français copyright law,
-              we will respond expeditiously to claims of copyright infringement.
-            </p>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>Présentation</h2>
+            <p>Stream Bleu respecte les droits de propriété intellectuelle d&apos;autrui et attend de ses utilisateurs qu&apos;ils fassent de même. Conformément à la législation applicable sur le droit d&apos;auteur, nous répondrons rapidement aux réclamations pour violation du droit d&apos;auteur.</p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Reporting Copyright Infringement</h2>
-            <p className="mb-3">
-              If you believe that content accessible through our service infringes your copyright,
-              please send a written notice containing all of the following information to our
-              designated DMCA agent:
-            </p>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>Signalement d&apos;une violation de droits d&apos;auteur</h2>
+            <p className="mb-3">Si vous pensez qu&apos;un contenu accessible via notre service viole vos droits d&apos;auteur, veuillez envoyer un avis écrit contenant les informations suivantes à notre agent DMCA désigné :</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>A physical or electronic signature of the copyright owner or authorized agent.</li>
-              <li>Identification of the copyrighted work(s) claimed to have been infringed.</li>
-              <li>Identification of the material that is claimed to be infringing, with sufficient detail for us to locate it.</li>
-              <li>Your contact information: name, address, telephone number, and email address.</li>
-              <li>A statement that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law.</li>
-              <li>A statement, made under penalty of perjury, that the information in your notice is accurate and that you are the copyright owner or authorized to act on behalf of the copyright owner.</li>
+              <li>Une signature physique ou électronique du titulaire des droits ou de son représentant autorisé.</li>
+              <li>Identification de l&apos;œuvre protégée dont la violation est alléguée.</li>
+              <li>Identification du contenu supposément contrefaisant, avec suffisamment de détails pour que nous puissions le localiser.</li>
+              <li>Vos coordonnées : nom, adresse, numéro de téléphone et adresse email.</li>
+              <li>Une déclaration attestant de bonne foi que l&apos;utilisation contestée n&apos;est pas autorisée par le titulaire des droits.</li>
+              <li>Une déclaration, sous peine de parjure, que les informations contenues dans votre avis sont exactes.</li>
             </ul>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">DMCA Agent Contact</h2>
-            <p className="mb-2">Please send all DMCA notices to our designated agent:</p>
-            <div className="bg-transparent rounded-xl p-6 border border-gray-800">
-              <p className="font-bold text-black">Stream Bleu — DMCA Agent</p>
-              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">help@streambleu.fr</a></p>
-              <p className="text-black text-sm mt-2">Please include "DMCA Notice" in the subject line.</p>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>Contact de l&apos;agent DMCA</h2>
+            <p className="mb-2">Envoyez tous les avis DMCA à notre agent désigné :</p>
+            <div style={{ background: "rgba(90,95,207,0.06)", borderRadius: 12, padding: 24, border: "1px solid rgba(90,95,207,0.15)" }}>
+              <p style={{ fontWeight: 700, color: "#1a1a4e" }}>Stream Bleu — Agent DMCA</p>
+              <p>Email : <a href="mailto:help@streambleu.fr" style={{ color: "#5a5fcf" }}>help@streambleu.fr</a></p>
+              <p style={{ fontSize: 13, color: "#666", marginTop: 8 }}>Veuillez indiquer « Avis DMCA » dans l&apos;objet du message.</p>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Counter-Notification</h2>
-            <p>
-              If you believe your content was removed by mistake or misidentification, you may
-              submit a counter-notification to our DMCA agent. The counter-notification must
-              include your contact information, identification of the removed material,
-              a statement under penalty of perjury that the removal was a mistake, and
-              your consent to jurisdiction of your local federal court.
-            </p>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>Contre-notification</h2>
+            <p>Si vous pensez que votre contenu a été retiré par erreur ou identification incorrecte, vous pouvez soumettre une contre-notification à notre agent DMCA. La contre-notification doit inclure vos coordonnées, l&apos;identification du contenu retiré, une déclaration sous peine de parjure que le retrait était une erreur, et votre consentement à la juridiction de votre tribunal fédéral local.</p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Repeat Infringers</h2>
-            <p>
-              IPTV Subscription France reserves the right to terminate accounts of users who
-              are found to be repeat infringers of intellectual property rights.
-            </p>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>Contrevenants récidivistes</h2>
+            <p>Stream Bleu se réserve le droit de résilier les comptes des utilisateurs reconnus comme des contrevenants récidivistes des droits de propriété intellectuelle.</p>
           </div>
-
-          <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Avertissement</h2>
-            <p>
-              This DMCA policy is provided for informational purposes and to comply with
-              applicable law. Nothing in this policy constitutes legal advice. IPTV Subscription
-              France operates in compliance with Français broadcasting standards and applicable
-              federal law.
-            </p>
-          </div>
-        </section>
+        </div>
       </div>
     </main>
   );
