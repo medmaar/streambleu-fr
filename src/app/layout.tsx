@@ -38,7 +38,7 @@ export default function RootLayout({
             </head>
             <body
                 className="min-h-full flex flex-col"
-                style={{ fontFamily: "'Quicksand', sans-serif" }}
+                style={{ fontFamily: "'Quicksand', sans-serif", overflowX: "hidden" }}
             >
                 <Navbar />
                 <div className="flex-1">{children}</div>
