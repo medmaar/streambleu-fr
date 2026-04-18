@@ -2,138 +2,102 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | Stream Bleu",
+  title: { absolute: "IPTV sur MAG Box en France 2026 | Stream Bleu" },
   description:
-    "Set up Stream Bleu IPTV on your MAG Box in Canada. Full portal URL setup guide. 25,000+ live channels, NHL, TSN in 4K. Plans from $9/month.",
-  keywords: "IPTV MAG Box Canada, MAG 322 Stream Bleu, MAG Box setup Canada 2026",
+    "Comment regarder Stream Bleu sur MAG Box en France. Guide complet. 25 000+ chaînes, 4K Ultra HD. Compatible MAG 322, MAG 420, MAG 522, MAG 524.",
+  keywords: "iptv mag-box france, stream bleu mag box, iptv mag box france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-mag-box-france" },
   openGraph: {
-    title: "IPTV MAG Box Canada – Setup & Best Plans 2026 | Stream Bleu",
-    description: "Set up Stream Bleu IPTV on your MAG Box in Canada. Full portal URL setup guide. 25,000+ live channels, NHL, TSN in 4K. Plans from $9/month.",
+    title: "IPTV sur MAG Box en France 2026 | Stream Bleu",
+    description: "Installez Stream Bleu sur MAG Box en France. Guide étape par étape.",
     url: "https://streambleu.fr/iptv-mag-box-france",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV MAG Box Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV MAG Box" }],
   },
   twitter: { card: "summary_large_image" },
 };
 
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How to Set Up Stream Bleu IPTV on a MAG Box in Canada",
-  description: "Configure your MAG Box with Stream Bleu portal URL in minutes.",
-  step: [
-    { "@type": "HowToStep", name: "Boot your MAG Box", text: "Power on your MAG 322, 324, 351, or 410 box and wait for the home screen to load." },
-    { "@type": "HowToStep", name: "Open Settings", text: "Navigate to System Settings > Servers > Portals in the MAG Box menu." },
-    { "@type": "HowToStep", name: "Enter Portal URL", text: "Enter the Stream Bleu portal URL we send to your email after subscribing. Save and reboot." },
-    { "@type": "HowToStep", name: "Start streaming", text: "Your MAG Box will load the Stream Bleu portal with 25,000+ Canadian and international channels." },
-  ],
-};
-
-export default function IPTVMagBoxCanadaPage() {
+export default function IPTVMagboxFrancePage() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
-        <section style={{ background: "transparent", padding: "80px 16px 60px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "6px 16px", borderRadius: 999, marginBottom: 24 }}>
-              Stream Bleu · MAG Box
-            </span>
-            <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
-              IPTV MAG Box Canada –<br />
-              <span style={{ color: "#F96E5B" }}>Setup &amp; Best Plans 2026</span>
-            </h1>
-            <p style={{ color: "#000000", fontSize: 17, lineHeight: 1.7, maxWidth: 680, marginBottom: 36 }}>
-              Stream Bleu is one of the best Stream Bleu providers for MAG Box users. Whether you have a MAG 322, 324, 351, or 410, our service works flawlessly with a simple portal URL setup — no technical knowledge required.
-            </p>
-            <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
-              Get Your Stream Bleu Plan →
+    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      {/* Hero */}
+      <section style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", padding: "80px 16px 60px" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            IPTV MAG Box · Stream Bleu
+          </span>
+          <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#1A3D45" }}>
+            IPTV sur MAG Box<br />
+            <span style={{ color: "#F96E5B" }}>en France 2026</span>
+          </h1>
+          <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#1A3D45", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
+            Guide complet pour configurer Stream Bleu sur votre MAG Box. Installation en 5 minutes, 25 000+ chaînes françaises et internationales en 4K Ultra HD.
+          </p>
+          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+            <Link href="/pricing" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
+              Voir les Tarifs →
+            </Link>
+            <Link href="/free-trial" style={{ background: "transparent", border: "2px solid #1A3D45", color: "#1A3D45", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit 24h
             </Link>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
-              Why Stream Bleu Works Great on MAG Box
-            </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
-              {[
-                { title: "Native Portal Support", desc: "MAG boxes natively support IPTV portals. Stream Bleu provides a dedicated portal URL — no extra apps needed." },
-                { title: "HD & 4K Streams", desc: "MAG 322 and newer models support HD and 4K playback. Stream every Canadian channel in full quality." },
-                { title: "Full EPG Guide", desc: "Browse live TV with a complete electronic program guide, just like traditional cable — on your MAG Box." },
-                { title: "Catch-Up TV", desc: "Missed a game or show? Our 7-day catch-up feature lets you replay content on your MAG Box." },
-              ].map((f) => (
-                <div key={f.title} style={{ background: "#ffffff", border: "1px solid rgba(63,154,174,0.1)", borderRadius: 16, padding: "24px 20px" }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#F96E5B" }}>{f.title}</h3>
-                  <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
-                </div>
-              ))}
-            </div>
+      {/* Steps */}
+      <section style={{ padding: "60px 16px", background: "#fff" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, marginBottom: 36, color: "#1A3D45" }}>
+            Installation en 5 étapes
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+            <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>1</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Ouvrir le Play Store</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Depuis l'écran d'accueil de votre Android TV, ouvrez le Google Play Store</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>2</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Installer TiviMate ou Smarters</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Recherchez TiviMate ou IPTV Smarters Pro et installez</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>3</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Souscrire à Stream Bleu</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Choisissez votre forfait sur streambleu.fr — identifiants en 30 min</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>4</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Configurer le lecteur</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Dans TiviMate → Ajouter une liste M3U → collez votre URL Stream Bleu</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>5</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Regarder en 4K</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Naviguez dans vos chaînes favorites en 4K Ultra HD H.265</p></div></div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
-          <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 32 }}>
-              How to Set Up Stream Bleu on Your MAG Box
-            </h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {[
-                { n: "01", title: "Subscribe to Stream Bleu", desc: "Choose a plan on our pricing page. All plans support MAG Box via portal URL. Pay with Interac e-Transfer." },
-                { n: "02", title: "Receive Portal URL by Email", desc: "Within 5 minutes, we'll send your portal URL and MAC address registration instructions to your email." },
-                { n: "03", title: "Open MAG Box Settings", desc: "On your MAG Box home screen, go to System Settings → Servers → Portals." },
-                { n: "04", title: "Enter Portal URL", desc: "Type in the Stream Bleu portal URL in the Portal 1 URL field. Save and reboot your MAG Box." },
-                { n: "05", title: "Stream Canadian TV", desc: "Your MAG Box will load the full channel list. Browse 25,000+ channels and 120,000+ on-demand titles." },
-              ].map((s) => (
-                <div key={s.n} style={{ display: "flex", gap: 20, background: "#ffffff", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 24px" }}>
-                  <span style={{ color: "#F96E5B", fontWeight: 900, fontSize: 24, opacity: 0.5, minWidth: 36 }}>{s.n}</span>
-                  <div>
-                    <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 6 }}>{s.title}</h3>
-                    <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.6 }}>{s.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+      {/* CTA */}
+      <section style={{ padding: "60px 16px", background: "#1A3D45", textAlign: "center" }}>
+        <div style={{ maxWidth: 560, margin: "0 auto" }}>
+          <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>
+            IPTV sur MAG Box à partir de 9€/mois
+          </h2>
+          <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 15, marginBottom: 28, lineHeight: 1.6 }}>
+            Sans engagement · Activation en 30 min · Support 24/7 en français
+          </p>
+          <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/free-trial" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit
+            </Link>
+            <Link href="/pricing" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Voir les Tarifs →
+            </Link>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section style={{ padding: "60px 16px", background: "#E8F4F5", textAlign: "center" }}>
-          <div style={{ maxWidth: 600, margin: "0 auto" }}>
-            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 800, marginBottom: 16 }}>Ready to Set Up Your MAG Box?</h2>
-            <p style={{ color: "#000000", marginBottom: 32, fontSize: 15 }}>
-              Best Stream Bleu service for MAG boxes. Plans from $9/month with free 24h trial.
-            </p>
-            <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>View Stream Bleu Plans →</Link>
-              <Link href="/free-trial" style={{ background: "transparent", border: "2px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontWeight: 700, fontSize: 15, padding: "14px 30px", borderRadius: 12, textDecoration: "none" }}>Try 24h Free</Link>
-            </div>
+      {/* City links */}
+      <section style={{ padding: "50px 16px", background: "#E8F4F5" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: 20, fontWeight: 800, color: "#1A3D45", marginBottom: 24 }}>IPTV par ville en France</h2>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+            {[
+              { label: "IPTV Paris", href: "/iptv-paris" },
+              { label: "IPTV Lyon", href: "/iptv-lyon" },
+              { label: "IPTV Marseille", href: "/iptv-marseille" },
+              { label: "IPTV Toulouse", href: "/iptv-toulouse" },
+              { label: "IPTV Nice", href: "/iptv-nice" },
+              { label: "IPTV Bordeaux", href: "/iptv-bordeaux" },
+            ].map((c) => (
+              <Link key={c.href} href={c.href} style={{ background: "rgba(63,154,174,0.08)", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 10, padding: "9px 18px", textDecoration: "none", color: "#1A3D45", fontSize: 13, fontWeight: 600 }}>
+                🇫🇷 {c.label}
+              </Link>
+            ))}
           </div>
-        </section>
-      
-        {/* SEO Internal Links */}
-        <section style={{ padding: "48px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-              <a href="/iptv-paris" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
-              <a href="/iptv-lyon" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
-              <a href="/iptv-marseille" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
-              <a href="/iptv-toulouse" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
-              <a href="/iptv-nice" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
-              <a href="/iptv-bordeaux" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
-              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
-              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+    </main>
   );
 }

@@ -69,7 +69,7 @@ function OrderContent() {
           </a>
 
           <a
-            href={`https://t.me/IPTVCanadaSupport?text=${telegramMsg}`}
+            href={`https://t.me/IPTVFranceSupport?text=${telegramMsg}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl font-bold text-gray-900 bg-[#88C9F0] hover:brightness-110 transition text-lg"
@@ -103,7 +103,7 @@ function OrderContent() {
           </div>
           <div className="bg-transparent rounded-xl p-4 border border-gray-800">
             <div className="text-2xl mb-1">🇨🇦</div>
-            <div>Canadian Support</div>
+            <div>Français Support</div>
           </div>
         </div>
 

@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Stream Bleu – Best 4K IPTV Canada",
-  description: "Privacy policy for Stream Bleu, Canada's best 4K IPTV service. Learn how we collect, use, and protect your personal information.",
+  title: "Privacy Policy | Stream Bleu – Best 4K IPTV France",
+  description: "Privacy policy for Stream Bleu, de France meilleur IPTV service. Learn how we collect, use, and protect your personal information.",
   alternates: { canonical: "https://streambleu.fr/privacy-policy" },
   openGraph: {
-    title: "Privacy Policy | Stream Bleu – Best 4K IPTV Canada",
-    description: "Privacy policy for Stream Bleu, Canada's best 4K IPTV service. Learn how we collect, use, and protect your personal information.",
+    title: "Privacy Policy | Stream Bleu – Best 4K IPTV France",
+    description: "Privacy policy for Stream Bleu, de France meilleur IPTV service. Learn how we collect, use, and protect your personal information.",
     url: "https://streambleu.fr/privacy-policy",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
         <div className="space-y-10 text-black leading-relaxed">
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">1. Information We Collect</h2>
-            <p className="mb-3">When you use IPTV Subscription Canada, we may collect the following types of information:</p>
+            <p className="mb-3">When you use IPTV Subscription France, we may collect the following types of information:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Account information:</strong> Your name, email address, and contact details provided when you sign up or contact us.</li>
               <li><strong>Payment information:</strong> Transaction data processed through our payment providers. We do not store full credit card numbers.</li>
@@ -74,8 +74,8 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">7. Your Rights (Canadian Residents)</h2>
-            <p className="mb-3">Under Canada's Personal Information Protection and Electronic Documents Act (PIPEDA), you have the right to:</p>
+            <h2 className="text-2xl font-bold text-black mb-3">7. Your Rights (Français Residents)</h2>
+            <p className="mb-3">Under de France Personal Information Protection and Electronic Documents Act (PIPEDA), you have the right to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Access the personal information we hold about you</li>
               <li>Request correction of inaccurate information</li>
@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">9. Contact Us</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">9. Nous Contacter</h2>
             <p>If you have questions about this Privacy Policy, please contact us:</p>
             <div className="mt-4 bg-transparent rounded-xl p-6 border border-gray-800">
               <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#F96E5B] hover:underline">help@streambleu.fr</a></p>

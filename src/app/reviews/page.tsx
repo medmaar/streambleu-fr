@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ReviewsSection from "../components/ReviewsSection";
 
 export const metadata: Metadata = {
-  title: { absolute: "Stream Bleu Reviews — Trustpilot, WhatsApp & Google | Stream Bleu IPTV Canada" },
-  description: "Read verified Stream Bleu reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Canadian customers. See why Stream Bleu is Canada's top-rated IPTV service.",
+  title: { absolute: "Stream Bleu Reviews — Trustpilot, WhatsApp & Google | Stream Bleu IPTV France" },
+  description: "Read verified Stream Bleu reviews from Trustpilot, WhatsApp, and Google. 50,000+ happy Français customers. See why Stream Bleu is de France top-rated IPTV service.",
   alternates: { canonical: "https://streambleu.fr/reviews" },
 };
 
@@ -22,7 +22,7 @@ export default function ReviewsPage() {
               What Customers Say About <span style={{ color: "#F96E5B" }}>Stream Bleu</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14 }}>
-              Real feedback from Trustpilot, WhatsApp & Google — 50,000+ happy customers across Canada and worldwide.
+              Real feedback from Trustpilot, WhatsApp & Google — 50,000+ happy customers dans toute la France and worldwide.
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function ReviewsPage() {
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
             <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 15, textDecoration: "none", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
-              Get Free Trial
+              Get Essai Gratuit
             </a>
             <a href="/pricing" style={{ background: "transparent", border: "2px solid #79C9C5", color: "#79C9C5", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               View Plans

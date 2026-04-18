@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Refer a friend to Stream Bleu and earn +1 free year of service. No limits — every successful referral adds 12 months to your account.",
   keywords:
-    "Stream Bleu referral, refer a friend IPTV, Stream Bleu free year, IPTV affiliate Canada",
+    "Stream Bleu referral, refer a friend IPTV, Stream Bleu free year, IPTV affiliate France",
   alternates: { canonical: "https://streambleu.fr/referral" },
 };
 
@@ -108,7 +108,7 @@ export default function ReferralPage() {
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
             <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
-              Get Free Trial
+              Get Essai Gratuit
             </a>
             <a href="/pricing" style={{ background: "transparent", border: "2px solid #79C9C5", color: "#79C9C5", padding: "16px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
               View Pricing →

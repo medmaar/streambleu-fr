@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "6 Month IPTV france — €39 | Stream Bleu" },
   description:
-    "Get 6 months of IPTV in france for only €39. 25,000+ live channels, 4K quality, NHL, TSN, CTV included. Save vs monthly. Login credentials sent within minutes.",
+    "Get 6 months of IPTV in france for only €39. 25 000+ live channels, 4K quality, Ligue 1, beIN Sports, CTV included. Save vs monthly. Login credentials sent within minutes.",
   keywords:
     "IPTV 6 months france, Stream Bleu 6 months, best IPTV plan france, 6 month IPTV france €39",
   alternates: { canonical: "https://streambleu.fr/pricing/6-months" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "What is included in the 6-month IPTV plan?",
-    a: "The 6-month plan includes six full months of access to 25,000+ live channels (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA and more), 120,000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for €39.",
+    a: "The 6-month plan includes six full months of access to 25 000+ live channels (beIN Sports, RMC Sport, Canal+, CTV, Global, RDS, TVA and more), 120 000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for €39.",
   },
   {
     q: "How do I receive my login credentials after ordering?",
@@ -30,7 +30,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Can I watch live Français and Quebec channels?",
-    a: "Yes — all plans include TSN, Sportsnet, CBC, CTV, Global, City TV, RDS, TVA, Canal Vie, and all regional Français channels in HD and 4K. Complete NHL, NFL, NBA, MLB, UFC and CFL coverage is included.",
+    a: "Yes — all plans include beIN Sports, RMC Sport, Canal+, CTV, Global, City TV, RDS, TVA, Canal Vie, and all regional Français channels in HD and 4K. Complete Ligue 1, NFL, NBA, MLB, UFC and CFL coverage is included.",
   },
   {
     q: "Can I use this service on more than one device at a time?",
@@ -42,7 +42,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I get support if something stops working?",
-    a: "Our Français support team is available 24/7 via WhatsApp (+1 782-802-6280) and email in English and French. Most issues are resolved within minutes.",
+    a: "Our Français support team is disponible 24h/24 via WhatsApp (+1 782-802-6280) and email en français. Most issues are resolved within minutes.",
   },
 ];
 
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu 6 Month IPTV Plan",
-  description: "6 months of IPTV access to 25,000+ live channels in france including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  description: "6 months of IPTV access to 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   offers: {
     "@type": "Offer",

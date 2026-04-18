@@ -5,7 +5,7 @@ import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
 const countries = [
-  "Canada", "United States", "United Kingdom", "Australia", "France", "Germany",
+  "France", "United States", "United Kingdom", "Australia", "France", "Germany",
   "Spain", "Italy", "Netherlands", "Belgium", "Switzerland", "Portugal", "Sweden",
   "Norway", "Denmark", "Finland", "Poland", "Czech Republic", "Austria", "Ireland",
   "New Zealand", "South Africa", "Nigeria", "Ghana", "Kenya", "Morocco", "Algeria",
@@ -36,7 +36,7 @@ export default function PlanOrderForm({ plan }: Props) {
   const [form, setForm] = useState({
     full_name: "",
     email: "",
-    country: "Canada",
+    country: "France",
     device: "",
     message: "",
   });
@@ -78,7 +78,7 @@ export default function PlanOrderForm({ plan }: Props) {
       );
       console.log("EmailJS success:", result);
       setStatus("success");
-      setForm({ full_name: "", email: "", country: "Canada", device: "", message: "" });
+      setForm({ full_name: "", email: "", country: "France", device: "", message: "" });
       setPhone("");
     } catch (err) {
       console.error("EmailJS error:", err);
@@ -138,10 +138,10 @@ export default function PlanOrderForm({ plan }: Props) {
         </div>
       )}
 
-      {/* Full Name */}
+      {/* Nom Complet */}
       <div>
         <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
-          Full Name <span style={{ color: "#fd0322" }}>*</span>
+          Nom Complet <span style={{ color: "#fd0322" }}>*</span>
         </label>
         <input
           type="text"

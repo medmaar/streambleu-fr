@@ -2,258 +2,110 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Cable Canada 2026 | Stream Bleu – Best 4K IPTV Canada",
+  title: "IPTV vs Câble / ADSL en France 2026 : Comparatif Complet | Stream Bleu",
   description:
-    "IPTV vs cable TV in Canada — we compare price, channels, 4K picture quality, contracts, and flexibility to help you decide which is better in 2026.",
-  keywords:
-    "IPTV vs cable Canada, IPTV vs cable TV Canada, is IPTV better than cable Canada, IPTV or cable Canada 2026",
+    "IPTV ou offre câble/ADSL en France ? Comparatif complet sur le prix, les chaînes, la qualité 4K et la flexibilité. Découvrez quel service est fait pour vous en 2026.",
+  keywords: "iptv vs cable france, iptv vs adsl france, comparatif iptv france 2026",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-vs-cable-france" },
   openGraph: {
-    title: "IPTV vs Cable Canada 2026 | Stream Bleu – Best 4K IPTV Canada",
-    description:
-      "IPTV vs cable TV in Canada — we compare price, channels, 4K picture quality, contracts, and flexibility to help you decide which is better in 2026.",
+    title: "IPTV vs Câble / ADSL en France 2026 : Comparatif Complet",
+    description: "Comparatif complet IPTV vs offres câble/ADSL en France — prix, chaînes, qualité et flexibilité.",
     url: "https://streambleu.fr/blog/iptv-vs-cable-france",
     type: "article",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV vs Cable Canada – Stream Bleu" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512 }],
   },
-  twitter: { card: "summary_large_image" },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "IPTV vs Cable Canada 2026: Which Is Better?",
-  description:
-    "IPTV vs cable TV in Canada — we compare price, channels, picture quality, contracts, and flexibility.",
-  datePublished: "2026-02-20",
-  dateModified: "2026-04-01",
-  author: { "@type": "Organization", name: "Stream Bleu" },
-  publisher: {
-    "@type": "Organization",
-    name: "Stream Bleu",
-    url: "https://streambleu.fr",
-  },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-vs-cable-france" },
-};
-
-const comparison = [
-  { feature: "Monthly Cost (entry)",     iptv: "$9",             cable: "$80–$100",       winner: "iptv" },
-  { feature: "Monthly Cost (full pkg)",  iptv: "$9–$45",         cable: "$120–$200",      winner: "iptv" },
-  { feature: "Channel Count",           iptv: "25,000+",             cable: "200–500",            winner: "iptv" },
-  { feature: "4K Channels",             iptv: "Yes — many",          cable: "Limited (extra cost)",winner: "iptv" },
-  { feature: "Contract Required",       iptv: "No",                  cable: "Yes — 1–2 years",    winner: "iptv" },
-  { feature: "Installation Fee",        iptv: "None",                cable: "$99–$200",           winner: "iptv" },
-  { feature: "Equipment Rental",        iptv: "None",                cable: "$10–$25/mo",         winner: "iptv" },
-  { feature: "Device Flexibility",      iptv: "Any device",          cable: "Set-top box only",   winner: "iptv" },
-  { feature: "International Channels",  iptv: "Thousands",           cable: "Paid add-ons",       winner: "iptv" },
-  { feature: "VOD Library",             iptv: "120,000+ titles",     cable: "Limited",            winner: "iptv" },
-  { feature: "Network Reliability",     iptv: "Needs internet",      cable: "Dedicated line",     winner: "cable" },
-  { feature: "Support Quality",         iptv: "Varies by provider",  cable: "Established company",winner: "cable" },
+const rows = [
+  { feature: "Prix mensuel", iptv: "9€–25€", cable: "25€–60€", winner: "iptv" },
+  { feature: "Nombre de chaînes", iptv: "25 000+", cable: "200–600", winner: "iptv" },
+  { feature: "Résolution maximale", iptv: "4K Ultra HD", cable: "1080i/1080p", winner: "iptv" },
+  { feature: "Codec vidéo", iptv: "H.265/HEVC", cable: "MPEG-2 / H.264", winner: "iptv" },
+  { feature: "Sport premium", iptv: "Inclus (beIN, RMC)", cable: "En option (+15€/mois)", winner: "iptv" },
+  { feature: "Contenu international", iptv: "200+ pays", cable: "Très limité", winner: "iptv" },
+  { feature: "Engagement", iptv: "Aucun", cable: "12–24 mois", winner: "iptv" },
+  { feature: "Multi-appareils", iptv: "Jusqu'à 10 écrans", cable: "1–3 décodeurs", winner: "iptv" },
+  { feature: "Stabilité du réseau", iptv: "Dépend d'internet", cable: "Infrastructure dédiée", winner: "cable" },
+  { feature: "Support technique", iptv: "Email / WhatsApp", cable: "Boutique + téléphone", winner: "cable" },
 ];
 
-export default function IPTVvsCableCanada() {
+export default function IPTVvsCableFrance() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <main style={{ background: "#030712", color: "#000000", minHeight: "100vh" }}>
-        <article style={{ maxWidth: 768, margin: "0 auto", padding: "64px 16px" }}>
-          {/* Header */}
-          <div style={{ marginBottom: 16, display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-            <span style={{ background: "#dc2626", color: "#000000", fontSize: 12, padding: "4px 12px", borderRadius: 9999, fontWeight: 700 }}>Comparison</span>
-            <time dateTime="2026-02-20" style={{ color: "#000000", fontSize: 14 }}>February 20, 2026</time>
-            <span style={{ color: "#000000", fontSize: 14 }}>6 min read</span>
+    <main style={{ background: "#E8F4F5", minHeight: "100vh" }}>
+      <section style={{ background: "linear-gradient(to right, #1A3D45, #2d6a78)", padding: "80px 16px 60px" }}>
+        <div style={{ maxWidth: 820, margin: "0 auto" }}>
+          <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
+            <span style={{ background: "#79C9C5", color: "#1A3D45", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Comparatif</span>
+            <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>20 février 2026 · 6 min de lecture</span>
           </div>
-          <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, marginBottom: 24, lineHeight: 1.2 }}>
-            IPTV vs Cable Canada 2026: <span style={{ color: "#ef4444" }}>Which Is Better?</span>
+          <h1 style={{ fontSize: "clamp(26px, 4vw, 46px)", fontWeight: 900, color: "#fff", lineHeight: 1.2, marginBottom: 16 }}>
+            IPTV vs Câble / ADSL en France 2026
           </h1>
-          <p style={{ fontSize: 18, color: "#d1d5db", marginBottom: 40, lineHeight: 1.75 }}>
-            Canadian households are ditching cable at record rates — over 400,000 subscribers cut the
-            cord in 2025 alone. But is IPTV actually better than cable in Canada? We break it down
-            across every factor that matters.
+          <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 16, lineHeight: 1.7, maxWidth: 640 }}>
+            Quelle est la meilleure solution TV en France en 2026 ? Comparatif complet sur tous les critères qui comptent vraiment.
           </p>
+        </div>
+      </section>
 
-          {/* Quick verdict */}
-          <div style={{ background: "#450a0a", border: "1px solid #dc2626", borderRadius: 16, padding: 24, marginBottom: 48 }}>
-            <p style={{ fontWeight: 700, color: "#000000", fontSize: 18, marginBottom: 8 }}>Quick Verdict</p>
-            <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
-              For the vast majority of Canadian households, <strong>IPTV is the better choice in 2026</strong>.
-              It costs 80–95% less, offers far more channels, works on any device, and requires no contract.
-              Cable&apos;s only advantages are dedicated network reliability and established brand support.
-            </p>
-          </div>
+      <article style={{ maxWidth: 820, margin: "0 auto", padding: "60px 16px" }}>
+        <section style={{ marginBottom: 40 }}>
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 14 }}>Le contexte en France</h2>
+          <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
+            En France, la majorité des foyers reçoivent la télévision via une box opérateur (Orange, SFR, Free, Bouygues). Ces offres sont souvent bundlées avec l&apos;internet et le téléphone fixe. Mais depuis quelques années, les abonnements IPTV indépendants gagnent rapidement du terrain, notamment grâce à leur rapport qualité/prix et leur catalogue de chaînes bien plus large.
+          </p>
+        </section>
 
-          {/* Price comparison */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>Price Comparison: IPTV vs Cable in Canada</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 24 }}>
-              The price difference between IPTV and cable TV in Canada is staggering. Let&apos;s look at
-              real numbers from 2026:
-            </p>
-
-            <div style={{ background: "#111827", borderRadius: 16, padding: 24, border: "1px solid #1f2937", marginBottom: 16 }}>
-              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#f87171" }}>Bell Canada (Fibe TV)</h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14, color: "#d1d5db" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Alt TV (basic IPTV package)</span><span style={{ fontWeight: 700 }}>$25/mo (limited channels)</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Fibe TV Good Package</span><span style={{ fontWeight: 700 }}>$80/mo</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Fibe TV Better Package</span><span style={{ fontWeight: 700 }}>$100/mo</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Sports packages (TSN + Sportsnet)</span><span style={{ fontWeight: 700 }}>+$20–$40/mo</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between" }}><span>Equipment rental</span><span style={{ fontWeight: 700 }}>+$15/mo</span></div>
-              </div>
-              <p style={{ color: "#f87171", fontWeight: 700, marginTop: 16, fontSize: 14 }}>Full sports package total: ~$140–$160/month</p>
-            </div>
-
-            <div style={{ background: "#111827", borderRadius: 16, padding: 24, border: "1px solid #1f2937", marginBottom: 16 }}>
-              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#f87171" }}>Rogers Cable TV</h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14, color: "#d1d5db" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Starter package</span><span style={{ fontWeight: 700 }}>$40/mo</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>VIP package</span><span style={{ fontWeight: 700 }}>$110/mo</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #1f2937", paddingBottom: 8 }}><span>Sports bundle add-on</span><span style={{ fontWeight: 700 }}>+$25/mo</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between" }}><span>HD PVR rental</span><span style={{ fontWeight: 700 }}>+$18/mo</span></div>
-              </div>
-              <p style={{ color: "#f87171", fontWeight: 700, marginTop: 16, fontSize: 14 }}>Full sports package total: ~$150–$180/month</p>
-            </div>
-
-            <div style={{ background: "#052e16", borderRadius: 16, padding: 24, border: "1px solid #166534", marginBottom: 16 }}>
-              <h3 style={{ fontWeight: 700, fontSize: 19, marginBottom: 16, color: "#4ade80" }}>Stream Bleu</h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8, fontSize: 14, color: "#d1d5db" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #166534", paddingBottom: 8 }}><span>1 Month (1 device)</span><span style={{ fontWeight: 700 }}>$9</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #166534", paddingBottom: 8 }}><span>6 Months (1 device)</span><span style={{ fontWeight: 700 }}>$39 ($6.50/mo)</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #166534", paddingBottom: 8 }}><span>12 Months (1 device)</span><span style={{ fontWeight: 700 }}>$49 ($4.08/mo)</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", borderBottom: "1px solid #166534", paddingBottom: 8 }}><span>All sports included</span><span style={{ fontWeight: 700 }}>Included</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between" }}><span>Equipment</span><span style={{ fontWeight: 700 }}>None needed</span></div>
-              </div>
-              <p style={{ color: "#4ade80", fontWeight: 700, marginTop: 16, fontSize: 14 }}>Everything included: $9/month. Annual savings vs cable: $1,500+</p>
-            </div>
-
-            <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.75 }}>
-              View all <Link href="/pricing" style={{ color: "#F96E5B", textDecoration: "none", fontWeight: 600 }}>Stream Bleu plans</Link> with full pricing details.
-            </p>
-          </section>
-
-          {/* Comparison table */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 24 }}>Full IPTV vs Cable Comparison Table</h2>
-            <div style={{ overflowX: "auto", borderRadius: 16, border: "1px solid #1f2937" }}>
-              <table style={{ width: "100%", fontSize: 14, borderCollapse: "collapse" }}>
-                <thead style={{ background: "#111827" }}>
-                  <tr>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#000000" }}>Feature</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#4ade80" }}>IPTV</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#f87171" }}>Cable TV</th>
-                    <th style={{ textAlign: "left", padding: "12px 16px", color: "#000000" }}>Winner</th>
+        {/* Table */}
+        <section style={{ marginBottom: 48 }}>
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 20 }}>Tableau comparatif</h2>
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+              <thead>
+                <tr>
+                  <th style={{ textAlign: "left", padding: "12px 16px", background: "#1A3D45", color: "#fff", fontWeight: 700 }}>Critère</th>
+                  <th style={{ textAlign: "center", padding: "12px 16px", background: "#F96E5B", color: "#fff", fontWeight: 700 }}>IPTV (Stream Bleu)</th>
+                  <th style={{ textAlign: "center", padding: "12px 16px", background: "#1A3D45", color: "rgba(255,255,255,0.7)", fontWeight: 600 }}>Câble / ADSL</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row, i) => (
+                  <tr key={row.feature} style={{ background: i % 2 === 0 ? "#fff" : "rgba(63,154,174,0.04)" }}>
+                    <td style={{ padding: "12px 16px", fontWeight: 600, color: "#1A3D45" }}>{row.feature}</td>
+                    <td style={{ padding: "12px 16px", textAlign: "center", color: row.winner === "iptv" ? "#3F9AAE" : "#333", fontWeight: row.winner === "iptv" ? 700 : 400 }}>
+                      {row.winner === "iptv" && <span style={{ marginRight: 6 }}>✓</span>}{row.iptv}
+                    </td>
+                    <td style={{ padding: "12px 16px", textAlign: "center", color: row.winner === "cable" ? "#3F9AAE" : "#666", fontWeight: row.winner === "cable" ? 700 : 400 }}>
+                      {row.winner === "cable" && <span style={{ marginRight: 6 }}>✓</span>}{row.cable}
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  {comparison.map((row) => (
-                    <tr key={row.feature} style={{ background: "#030712", borderTop: "1px solid #1f2937" }}>
-                      <td style={{ padding: "12px 16px", color: "#d1d5db", fontWeight: 500 }}>{row.feature}</td>
-                      <td style={{ padding: "12px 16px", color: "#d1d5db" }}>{row.iptv}</td>
-                      <td style={{ padding: "12px 16px", color: "#d1d5db" }}>{row.cable}</td>
-                      <td style={{ padding: "12px 16px" }}>
-                        <span style={{
-                          fontSize: 12,
-                          fontWeight: 700,
-                          padding: "4px 8px",
-                          borderRadius: 9999,
-                          background: row.winner === "iptv" ? "#14532d" : "#1e3a5f",
-                          color: row.winner === "iptv" ? "#4ade80" : "#93c5fd",
-                        }}>
-                          {row.winner === "iptv" ? "IPTV" : "Cable"}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          {/* Sections */}
-          <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>Channel Selection: IPTV Wins Decisively</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              A typical Bell or Rogers cable package includes 200–500 channels depending on your tier.
-              A premium IPTV service like Stream Bleu includes 25,000+ channels from around
-              the world — including everything in the cable package plus thousands more.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              Crucially, IPTV includes international content that cable simply doesn&apos;t offer — South Asian
-              channels, Arabic networks, UK sports, European football, and more. For multicultural
-              Canadian households, this is a major advantage.
-            </p>
-          </section>
-
-          <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>Contracts and Flexibility: IPTV Wins</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Bell and Rogers typically require 1–2 year contracts with early termination fees of
-              $100–$300+. IPTV services have no contracts — you pay for the time you want and stop
-              whenever you like. There are no cancellation forms, no fees, no returning equipment.
-            </p>
-          </section>
-
-          <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>Reliability: Cable Has a Slight Edge</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Cable TV uses a dedicated coaxial or fibre infrastructure that is independent of your
-              internet connection. This means cable works even when the internet is down, and is less
-              susceptible to congestion during peak hours.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              However, premium IPTV providers like Stream Bleu achieve 99.9% uptime using
-              Canadian server infrastructure designed to handle demand spikes. For the vast majority of
-              users, the reliability difference is imperceptible.
-            </p>
-          </section>
-
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, marginBottom: 16 }}>The Bottom Line</h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              If you have a reliable internet connection of 25 Mbps or faster — which the vast majority
-              of Canadian households do — IPTV is the superior choice in 2026. You&apos;ll save over $1,500
-              per year compared to a full cable package, get more channels including international content,
-              and have the freedom to watch on any device without a contract.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              Cable TV made sense when it was the only option. In 2026, it&apos;s an expensive legacy product
-              for consumers who haven&apos;t yet discovered a better way to watch.
-            </p>
-          </section>
-
-          {/* CTA */}
-          <div style={{ background: "#111827", border: "1px solid #dc2626", borderRadius: 16, padding: 32, textAlign: "center", marginBottom: 48 }}>
-            <h2 style={{ fontSize: "clamp(20px, 2.5vw, 26px)", fontWeight: 700, marginBottom: 16 }}>Ready to Switch from Cable to IPTV?</h2>
-            <p style={{ color: "#d1d5db", marginBottom: 24 }}>Try Stream Bleu free for 24 hours — no credit card required.</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "center" }}>
-              <Link href="/free-trial" style={{ background: "#dc2626", color: "#000000", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
-                Get Free Trial
-              </Link>
-              <Link href="/pricing" style={{ border: "1px solid #dc2626", color: "#f87171", padding: "12px 32px", borderRadius: 12, fontWeight: 700, textDecoration: "none", display: "inline-block" }}>
-                View Stream Bleu Plans
-              </Link>
-            </div>
+                ))}
+              </tbody>
+            </table>
           </div>
+        </section>
 
-          {/* Related reading */}
-          <div style={{ borderTop: "1px solid #1f2937", paddingTop: 32, display: "flex", flexDirection: "column", gap: 12 }}>
-            <p style={{ color: "#000000", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
-            <Link href="/blog/is-iptv-legal-france" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
-              → Is IPTV Legal in Canada in 2026?
-            </Link>
-            <Link href="/blog/best-iptv-player-france" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
-              → Best IPTV Player Apps for Canada in 2026
-            </Link>
-            <Link href="/blog/best-iptv-canada-2026" style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}>
-              → Best IPTV Providers in Canada 2026 — Tested &amp; Ranked
-            </Link>
-          </div>
-        </article>
-      </main>
-    </>
+        <section style={{ marginBottom: 40 }}>
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 14 }}>Notre verdict</h2>
+          <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
+            Pour la grande majorité des foyers français connectés à la fibre ou à l&apos;ADSL, un service IPTV comme Stream Bleu offre clairement plus de valeur : plus de chaînes, meilleure qualité vidéo, sport premium inclus — et sans engagement.
+          </p>
+          <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8 }}>
+            Le câble/ADSL garde l&apos;avantage sur la stabilité du réseau dans les zones où la connexion internet est instable, et sur le support physique en boutique pour les utilisateurs moins technophiles.
+          </p>
+        </section>
+
+        <section style={{ background: "#1A3D45", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
+          <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Essayez Stream Bleu gratuitement</h2>
+          <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>24h d&apos;essai gratuit — sans carte bancaire. Comparez par vous-même.</p>
+          <Link href="/free-trial" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            Essai Gratuit →
+          </Link>
+        </section>
+
+        <Link href="/blog" style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
+      </article>
+    </main>
   );
 }

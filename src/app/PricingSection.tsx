@@ -56,14 +56,14 @@ function orderHref(devices: number, dur: Duration): string {
 }
 
 const features = [
-  "25,000+ Live Channels",
-  "120,000+ Movies & Series",
+  "25 000+ Live Channels",
+  "120 000+ Movies & Series",
   "4K Ultra HD Quality",
-  "NHL · TSN · Sportsnet · CTV",
+  "beIN Sports · RMC Sport · Canal+ · CTV",
   "PPV Events Included",
   "EPG & Catch-Up TV",
   "All Devices Supported",
-  "24/7 Canadian Support",
+  "24/7 Français Support",
 ];
 
 export default function PricingSection() {
@@ -205,7 +205,7 @@ export default function PricingSection() {
                     textDecoration: "none",
                   }}
                 >
-                  Get Started →
+                  Commencer →
                 </a>
               </div>
             );

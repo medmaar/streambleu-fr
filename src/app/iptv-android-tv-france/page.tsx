@@ -1,526 +1,103 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best IPTV for Android TV in Canada 2026 | Stream Bleu",
+  title: { absolute: "IPTV sur Android TV / Google TV en France 2026 | Stream Bleu" },
   description:
-    "Install IPTV on your Android TV box in Canada. Stream Bleu offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
+    "Comment regarder Stream Bleu sur Android TV / Google TV en France. Guide complet. 25 000+ chaînes, 4K Ultra HD. Compatible Sony Bravia, Philips, TCL, Xiaomi Mi Box, NVIDIA Shield.",
+  keywords: "iptv android-tv france, stream bleu android tv / google tv, iptv android tv / google tv france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-android-tv-france" },
   openGraph: {
-    title: "Best IPTV for Android TV in Canada 2026 | Stream Bleu",
-    description:
-      "Install IPTV on your Android TV box in Canada. Stream Bleu offers 25,000+ channels in 4K. TSN, NHL, Sportsnet, CTV & more. Free 24h trial.",
+    title: "IPTV sur Android TV / Google TV en France 2026 | Stream Bleu",
+    description: "Installez Stream Bleu sur Android TV / Google TV en France. Guide étape par étape.",
     url: "https://streambleu.fr/iptv-android-tv-france",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Android TV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Android TV / Google TV" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How to Set Up IPTV on Android TV in Canada",
-  step: [
-    {
-      "@type": "HowToStep",
-      name: "Download IPTV Player",
-      text: "Open the Google Play Store on your Android TV and download IPTV Smarters Pro or TiviMate.",
-    },
-    {
-      "@type": "HowToStep",
-      name: "Launch the App",
-      text: "Open the installed IPTV player and choose 'Login with Xtream Codes' or 'M3U URL' option.",
-    },
-    {
-      "@type": "HowToStep",
-      name: "Enter Credentials",
-      text: "Input the server URL, username, and password provided by Stream Bleu after purchase.",
-    },
-    {
-      "@type": "HowToStep",
-      name: "Enjoy Canadian TV",
-      text: "Browse your 25,000+ channel list and enjoy NHL, TSN, Sportsnet, CBC, and thousands more channels in 4K.",
-    },
-  ],
-};
-
-const steps = [
-  {
-    num: "1",
-    title: "Download IPTV Player",
-    desc: "Open the Google Play Store on your Android TV and download IPTV Smarters Pro or TiviMate. Both apps are free to install and work seamlessly with Stream Bleu.",
-  },
-  {
-    num: "2",
-    title: "Launch the App",
-    desc: "Open the installed IPTV player and choose 'Login with Xtream Codes' or the 'M3U URL' option from the main menu.",
-  },
-  {
-    num: "3",
-    title: "Enter Credentials",
-    desc: "Input the server URL, username, and password provided by Stream Bleu in your welcome email after purchase. Your channels will begin loading immediately.",
-  },
-  {
-    num: "4",
-    title: "Enjoy Canadian TV",
-    desc: "Browse your 25,000+ channel list and enjoy NHL, TSN, Sportsnet, CBC, and thousands more channels in stunning 4K HDR.",
-  },
-];
-
-export default function IPTVAndroidTVCanadaPage() {
+export default function IPTVAndroidtvFrancePage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      {/* Hero */}
+      <section style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", padding: "80px 16px 60px" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            IPTV Android TV / Google TV · Stream Bleu
+          </span>
+          <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#1A3D45" }}>
+            IPTV sur Android TV / Google TV<br />
+            <span style={{ color: "#F96E5B" }}>en France 2026</span>
+          </h1>
+          <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#1A3D45", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
+            Guide complet pour configurer Stream Bleu sur votre Android TV / Google TV. Installation en 5 minutes, 25 000+ chaînes françaises et internationales en 4K Ultra HD.
+          </p>
+          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+            <Link href="/pricing" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
+              Voir les Tarifs →
+            </Link>
+            <Link href="/free-trial" style={{ background: "transparent", border: "2px solid #1A3D45", color: "#1A3D45", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit 24h
+            </Link>
+          </div>
+        </div>
+      </section>
 
-        {/* Hero */}
-        <section
-          style={{
-            background: "#1A3D45",
-            padding: "80px 16px 60px",
-          }}
-        >
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span
-              style={{
-                background: "rgba(249,110,91,0.18)",
-                border: "1px solid rgba(249,110,91,0.4)",
-                color: "#F96E5B",
-                fontSize: 11,
-                fontWeight: 700,
-                padding: "5px 16px",
-                borderRadius: 999,
-                letterSpacing: 1,
-                display: "inline-block",
-                marginBottom: 20,
-              }}
-            >
-              IPTV CANADA · STREAM BLEU
-            </span>
-            <h1
-              style={{
-                fontSize: "clamp(2rem, 5vw, 3rem)",
-                fontWeight: 800,
-                lineHeight: 1.15,
-                marginBottom: 20,
-                color: "#ffffff",
-              }}
-            >
-              Best IPTV for{" "}
-              <span style={{ color: "#F96E5B" }}>Android TV in Canada 2026</span>
-            </h1>
-            <p
-              style={{
-                fontSize: "1.15rem",
-                color: "rgba(255,255,255,0.82)",
-                maxWidth: 680,
-                lineHeight: 1.75,
-                marginBottom: 36,
-              }}
-            >
-              Stream Bleu is the best Stream Bleu service for Android TV, Google TV, and
-              Android boxes. Whether you own a Nvidia Shield, Chromecast with Google TV, or any
-              Android box, you get 25,000+ live channels and 120,000+ movies in true 4K HDR —
-              set up in minutes straight from the Play Store.
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
-              <a
-                href="/pricing"
-                style={{
-                  background: "#F96E5B",
-                  color: "#ffffff",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                  fontSize: "1rem",
-                }}
-              >
-                Get Your Stream Bleu Plan →
-              </a>
-              <a
-                href="/free-trial"
-                style={{
-                  border: "2px solid #F96E5B",
-                  color: "#F96E5B",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                  fontSize: "1rem",
-                }}
-              >
-                Try 24h Free
-              </a>
-            </div>
+      {/* Steps */}
+      <section style={{ padding: "60px 16px", background: "#fff" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, marginBottom: 36, color: "#1A3D45" }}>
+            Installation en 5 étapes
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+            <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>1</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Ouvrir le Play Store</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Depuis l'écran d'accueil de votre Android TV, ouvrez le Google Play Store</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>2</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Installer TiviMate ou Smarters</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Recherchez TiviMate ou IPTV Smarters Pro et installez</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>3</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Souscrire à Stream Bleu</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Choisissez votre forfait sur streambleu.fr — identifiants en 30 min</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>4</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Configurer le lecteur</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Dans TiviMate → Ajouter une liste M3U → collez votre URL Stream Bleu</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>5</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Regarder en 4K</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Naviguez dans vos chaînes favorites en 4K Ultra HD H.265</p></div></div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Compatible Devices */}
-        <section style={{ padding: "40px 16px", background: "transparent" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto", textAlign: "center" }}>
-            <p style={{ color: "#888", fontSize: "0.85rem", marginBottom: 16, fontWeight: 600, letterSpacing: 1 }}>
-              COMPATIBLE WITH ALL ANDROID TV DEVICES
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 10 }}>
-              {[
-                "Nvidia Shield TV",
-                "Chromecast w/ Google TV",
-                "Xiaomi Mi Box",
-                "MECOOL Android Box",
-                "Sony Android TV",
-                "TCL Google TV",
-                "Hisense Android TV",
-                "Any Android Box",
-              ].map((d) => (
-                <span
-                  key={d}
-                  style={{
-                    background: "#1a1a1a",
-                    border: "1px solid #2a2a2a",
-                    color: "#000000",
-                    padding: "6px 16px",
-                    borderRadius: 999,
-                    fontSize: "0.85rem",
-                  }}
-                >
-                  {d}
-                </span>
-              ))}
-            </div>
+      {/* CTA */}
+      <section style={{ padding: "60px 16px", background: "#1A3D45", textAlign: "center" }}>
+        <div style={{ maxWidth: 560, margin: "0 auto" }}>
+          <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>
+            IPTV sur Android TV / Google TV à partir de 9€/mois
+          </h2>
+          <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 15, marginBottom: 28, lineHeight: 1.6 }}>
+            Sans engagement · Activation en 30 min · Support 24/7 en français
+          </p>
+          <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/free-trial" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit
+            </Link>
+            <Link href="/pricing" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Voir les Tarifs →
+            </Link>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Why Stream Bleu */}
-        <section style={{ padding: "60px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
-            >
-              Why Stream Bleu Is the Best IPTV for Android TV
-            </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 28 }}>
-              Android TV offers unmatched flexibility for Stream Bleu. Unlike closed platforms,
-              Android TV lets you choose your preferred player, customize your EPG, and
-              sideload apps freely. Stream Bleu is built to harness that flexibility fully.
-            </p>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-                gap: 16,
-              }}
-            >
-              {[
-                {
-                  title: "Maximum App Compatibility",
-                  desc: "Works with TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and more. Full Xtream Codes API and M3U playlist support included.",
-                },
-                {
-                  title: "True 4K HDR Streaming",
-                  desc: "Android boxes like the Nvidia Shield support 4K HDR10 and Dolby Vision. Our servers deliver the bitrate needed for flawless 4K playback.",
-                },
-                {
-                  title: "Anti-Freeze Server Network",
-                  desc: "Canadian-routed servers mean ultra-low latency for live sports. Zero buffering during NHL games, even at peak viewing hours.",
-                },
-                {
-                  title: "Full 7-Day EPG Guide",
-                  desc: "Our electronic program guide covers every channel in your lineup with 7 days of schedule data, search, and reminder features.",
-                },
-              ].map((f) => (
-                <div
-                  key={f.title}
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #2a0a0a",
-                    borderRadius: 14,
-                    padding: "22px 20px",
-                  }}
-                >
-                  <strong
-                    style={{ color: "#000000", display: "block", marginBottom: 8 }}
-                  >
-                    {f.title}
-                  </strong>
-                  <span style={{ color: "#000000", fontSize: "0.9rem", lineHeight: 1.65 }}>
-                    {f.desc}
-                  </span>
-                </div>
-              ))}
-            </div>
+      {/* City links */}
+      <section style={{ padding: "50px 16px", background: "#E8F4F5" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: 20, fontWeight: 800, color: "#1A3D45", marginBottom: 24 }}>IPTV par ville en France</h2>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+            {[
+              { label: "IPTV Paris", href: "/iptv-paris" },
+              { label: "IPTV Lyon", href: "/iptv-lyon" },
+              { label: "IPTV Marseille", href: "/iptv-marseille" },
+              { label: "IPTV Toulouse", href: "/iptv-toulouse" },
+              { label: "IPTV Nice", href: "/iptv-nice" },
+              { label: "IPTV Bordeaux", href: "/iptv-bordeaux" },
+            ].map((c) => (
+              <Link key={c.href} href={c.href} style={{ background: "rgba(63,154,174,0.08)", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 10, padding: "9px 18px", textDecoration: "none", color: "#1A3D45", fontSize: 13, fontWeight: 600 }}>
+                🇫🇷 {c.label}
+              </Link>
+            ))}
           </div>
-        </section>
-
-        {/* Setup Steps */}
-        <section style={{ padding: "60px 16px", background: "transparent" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
-            >
-              How to Set Up IPTV on Android TV in Canada
-            </h2>
-            <p style={{ color: "#000000", marginBottom: 36 }}>
-              Four easy steps — streaming in under 5 minutes.
-            </p>
-            <ol
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
-                display: "flex",
-                flexDirection: "column",
-                gap: 18,
-              }}
-            >
-              {steps.map((s) => (
-                <li
-                  key={s.num}
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #1f1f1f",
-                    borderRadius: 14,
-                    padding: "22px 24px",
-                    display: "flex",
-                    gap: 20,
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <span
-                    style={{
-                      background: "#F96E5B",
-                      color: "#000000",
-                      fontWeight: 800,
-                      fontSize: "1rem",
-                      borderRadius: "50%",
-                      width: 40,
-                      height: 40,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {s.num}
-                  </span>
-                  <div>
-                    <strong
-                      style={{
-                        color: "#000000",
-                        fontSize: "1rem",
-                        display: "block",
-                        marginBottom: 6,
-                      }}
-                    >
-                      {s.title}
-                    </strong>
-                    <span
-                      style={{ color: "#000000", fontSize: "0.92rem", lineHeight: 1.65 }}
-                    >
-                      {s.desc}
-                    </span>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-
-        {/* Canadian Channels */}
-        <section style={{ padding: "60px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
-            >
-              Canadian Channels on Your Android TV
-            </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 16 }}>
-              Stream Bleu gives your Android TV full access to Canada's biggest channels.
-              Watch every NHL game live on TSN and Sportsnet with our sports-optimized low-delay
-              streams. Stay informed with CBC News Network and CTV News. Enjoy primetime
-              entertainment on Global, City TV, and specialty channels across every genre.
-            </p>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 24 }}>
-              Your subscription also unlocks 25,000+ international channels — US networks like
-              ESPN, Fox, ABC, and NBC; UK channels including Sky Sports and BBC; plus
-              French-Canadian channels like RDS and TVA Sports, all in one Android TV app.
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-              {[
-                "TSN 1–5",
-                "Sportsnet",
-                "CBC",
-                "CTV",
-                "Global",
-                "City TV",
-                "RDS",
-                "TVA Sports",
-                "ESPN",
-                "NBC Sports",
-                "Sky Sports",
-                "beIN Sports",
-              ].map((ch) => (
-                <span
-                  key={ch}
-                  style={{
-                    background: "#1A3D45",
-                    border: "1px solid #3a1010",
-                    color: "#000000",
-                    padding: "6px 16px",
-                    borderRadius: 999,
-                    fontSize: "0.85rem",
-                    fontWeight: 600,
-                  }}
-                >
-                  {ch}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing */}
-        <section style={{ padding: "60px 16px", background: "transparent" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
-            >
-              Android TV IPTV Plans — Canadian Pricing
-            </h2>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-                gap: 16,
-                marginBottom: 28,
-              }}
-            >
-              {[
-                { period: "1 Month", price: "$9" },
-                { period: "3 Months", price: "$29" },
-                { period: "6 Months", price: "$49" },
-                { period: "12 Months", price: "$49" },
-              ].map((plan) => (
-                <div
-                  key={plan.period}
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #2a0a0a",
-                    borderRadius: 14,
-                    padding: "24px 20px",
-                    textAlign: "center",
-                  }}
-                >
-                  <div style={{ color: "#000000", fontSize: "0.9rem", marginBottom: 8 }}>
-                    {plan.period}
-                  </div>
-                  <div style={{ color: "#F96E5B", fontSize: "1.6rem", fontWeight: 800 }}>
-                    {plan.price}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <a
-                href="/pricing"
-                style={{
-                  background: "#F96E5B",
-                  color: "#000000",
-                  padding: "14px 36px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                }}
-              >
-                See Full Pricing Details →
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section
-          style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}
-        >
-          <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <h2 style={{ fontSize: "2rem", fontWeight: 800, marginBottom: 12 }}>
-              Start Streaming IPTV on Android TV Today
-            </h2>
-            <p
-              style={{ color: "#000000", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
-            >
-              Try Stream Bleu free for 24 hours — no credit card required. Need help? Contact
-              us at{" "}
-              <a
-                href="mailto:help@streambleu.fr"
-                style={{ color: "#F96E5B", textDecoration: "none" }}
-              >
-                help@streambleu.fr
-              </a>
-              .
-            </p>
-            <div
-              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 16 }}
-            >
-              <a
-                href="/pricing"
-                style={{
-                  background: "#F96E5B",
-                  color: "#ffffff",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                }}
-              >
-                Get Your Stream Bleu Plan →
-              </a>
-              <a
-                href="/free-trial"
-                style={{
-                  border: "2px solid #F96E5B",
-                  color: "#F96E5B",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                }}
-              >
-                Try 24h Free
-              </a>
-            </div>
-          </div>
-        </section>
-      
-        {/* SEO Internal Links */}
-        <section style={{ padding: "48px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-              <a href="/iptv-paris" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
-              <a href="/iptv-lyon" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
-              <a href="/iptv-marseille" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
-              <a href="/iptv-toulouse" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
-              <a href="/iptv-nice" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
-              <a href="/iptv-bordeaux" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
-              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
-              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+    </main>
   );
 }

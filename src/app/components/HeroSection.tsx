@@ -58,7 +58,7 @@ export default function HeroSection() {
       <p className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
         H.265/HEVC encoded. HDR10 &amp; Dolby Vision supported.
         <br className="hidden sm:block" />
-        25,000+ live channels and 120,000+ titles — at the resolution your display deserves.
+        25 000+ live channels and 120 000+ titles — at the resolution your display deserves.
       </p>
 
       {/* CTA buttons */}
@@ -85,7 +85,7 @@ export default function HeroSection() {
       {/* Stats row */}
       <div className="mt-14 flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm">
         {[
-          { n: "25,000+", l: "Live Channels" },
+          { n: "25 000+", l: "Live Channels" },
           { n: "4K HDR10", l: "& Dolby Vision" },
           { n: "H.265", l: "HEVC Codec" },
           { n: "99.9%", l: "Uptime" },

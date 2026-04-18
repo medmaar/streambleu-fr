@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How IPTV Works in Canada | Stream Bleu – Best 4K IPTV Canada",
+  title: "How IPTV Works en France | Stream Bleu – Best 4K IPTV France",
   description:
-    "Learn how Stream Bleu IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
+    "Learn how Stream Bleu IPTV works en France. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
   keywords:
-    "how does IPTV work Canada, how to set up Stream Bleu, IPTV setup Canada, IPTV explained Canada",
+    "how does IPTV work France, how to set up Stream Bleu, IPTV setup France, IPTV explained France",
   alternates: { canonical: "https://streambleu.fr/how-it-works" },
   openGraph: {
-    title: "How IPTV Works in Canada | Stream Bleu – Best 4K IPTV Canada",
-    description: "Learn how Stream Bleu IPTV works in Canada. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
+    title: "How IPTV Works en France | Stream Bleu – Best 4K IPTV France",
+    description: "Learn how Stream Bleu IPTV works en France. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
     url: "https://streambleu.fr/how-it-works",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -24,15 +24,15 @@ const steps = [
     step: "1",
     title: "Choose a Plan",
     desc: "Pick the subscription duration and number of devices that suits your household. All plans include every channel — no tiered content.",
-    detail: "Plans start at $9/month for 1 device. Multi-device plans are available for families. Start with a free 24h trial if you want to test first.",
+    detail: "Plans start at 9€/month for 1 device. Multi-device plans are available for families. Start with a free 24h trial if you want to test first.",
     cta: { label: "View Plans", href: "/pricing" },
   },
   {
     step: "2",
     title: "Get Your Credentials",
     desc: "After subscribing, our team sends you login details within minutes — a server URL, username, and password.",
-    detail: "Contact us via WhatsApp, Telegram, or email. Our Canadian support team is available 24/7 and typically responds in under 5 minutes.",
-    cta: { label: "Contact Us", href: "/contact" },
+    detail: "Contact us via WhatsApp, Telegram, or email. Our Français support team is disponible 24h/24 and typically responds in under 5 minutes.",
+    cta: { label: "Nous Contacter", href: "/contact" },
   },
   {
     step: "3",
@@ -70,7 +70,7 @@ export default function HowItWorksPage() {
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            How <span className="text-[#F96E5B]">IPTV Works</span> in Canada
+            How <span className="text-[#F96E5B]">IPTV Works</span> en France
           </h1>
           <p className="text-xl text-black">
             Three simple steps. No technician required. Start watching in minutes.
@@ -118,12 +118,12 @@ export default function HowItWorksPage() {
             </p>
             <p>
               Think of it like Netflix or YouTube — but for live TV. You open an app, browse a
-              channel guide with 25,000+ channels, and press play. The stream comes from our
+              channel guide with 25 000+ channels, and press play. The stream comes from our
               servers directly to your device over the internet in real time.
             </p>
             <p>
               Because it uses the internet, IPTV works on <strong>any internet-connected device</strong> —
-              your TV, phone, tablet, or computer — and you can watch from anywhere in Canada
+              your TV, phone, tablet, or computer — and you can watch from anywhere en France
               with a good connection.
             </p>
           </div>
@@ -165,7 +165,7 @@ export default function HowItWorksPage() {
             Internet Speed <span className="text-[#F96E5B]">Requirements</span>
           </h2>
           <p className="text-center text-black mb-10">
-            Any standard Canadian broadband connection is more than sufficient.
+            Any standard Français broadband connection is more than sufficient.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {requirements.map((r) => (
@@ -176,7 +176,7 @@ export default function HowItWorksPage() {
             ))}
           </div>
           <p className="text-center text-black text-sm">
-            The average Canadian internet speed is 200+ Mbps — well above what&apos;s needed even for 4K on multiple devices simultaneously.
+            The average Français internet speed is 200+ Mbps — well above what&apos;s needed even for 4K on multiple devices simultaneously.
           </p>
         </div>
       </section>
@@ -190,9 +190,9 @@ export default function HowItWorksPage() {
           <div className="space-y-6">
             {[
               { q: "Do I need to install any hardware?", a: "No. If you already have a Fire Stick, Smart TV, phone, or computer, you're ready. No dish, no cable box, no technician visit required." },
-              { q: "Will IPTV work with my existing internet plan?", a: "Yes. Any standard Canadian internet plan from Bell, Rogers, Telus, Shaw, Videotron, or any ISP with at least 25 Mbps will work perfectly for HD streaming." },
+              { q: "Will IPTV work with my existing internet plan?", a: "Yes. Any standard Français internet plan from Bell, Rogers, Telus, Shaw, Videotron, or any ISP with at least 25 Mbps will work perfectly for HD streaming." },
               { q: "Can I watch on multiple TVs at the same time?", a: "Yes — choose a 2, 3, 4, or 5 device plan. Each device streams independently. One person can watch hockey in the living room while another watches a movie in the bedroom." },
-              { q: "Does IPTV work outside Canada?", a: "Your subscription works anywhere in the world with a decent internet connection. Travel to Europe, the US, or anywhere and still access all your Canadian channels." },
+              { q: "Does IPTV work outside France?", a: "Your subscription works anywhere in the world with a decent internet connection. Travel to Europe, the US, or anywhere and still access all your Français channels." },
               { q: "What happens if a channel goes down?", a: "Our servers maintain multiple redundant streams for each channel. If one stream has issues, the system automatically switches to a backup. Our 24/7 support team also monitors the service around the clock." },
             ].map((item) => (
               <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
@@ -207,13 +207,13 @@ export default function HowItWorksPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Commencer?</h2>
           <p className="text-black mb-8">
             Try it free for 24 hours. No credit card, no commitment. Our team will have you set up in minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
-              Get Free Trial
+              Get Essai Gratuit
             </a>
             <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               View Pricing

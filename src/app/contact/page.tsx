@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Stream Bleu – Best 4K IPTV france",
-  description: "Contact Stream Bleu via WhatsApp, Telegram, or email. Le meilleur best 4K IPTV support team is available 24/7 in English and French.",
+  title: "Contact | Stream Bleu – Meilleur IPTV France",
+  description: "Contactez Stream Bleu par WhatsApp, Telegram ou email. Le meilleur meilleur IPTV support team is disponible 24h/24 en français.",
   alternates: { canonical: "https://streambleu.fr/contact" },
   openGraph: {
-    title: "Contact | Stream Bleu – Best 4K IPTV france",
-    description: "Contact Stream Bleu via WhatsApp, Telegram, or email. Le meilleur best 4K IPTV support team is available 24/7 in English and French.",
+    title: "Contact | Stream Bleu – Meilleur IPTV France",
+    description: "Contactez Stream Bleu par WhatsApp, Telegram ou email. Le meilleur meilleur IPTV support team is disponible 24h/24 en français.",
     url: "https://streambleu.fr/contact",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV france" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Meilleur IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -52,7 +52,7 @@ export default function ContactPage() {
           Contact <span className="text-[#F96E5B]">Us</span>
         </h1>
         <p className="text-black text-lg mb-12">
-          Our Français support team is available 24/7 in English and French.
+          Our Français support team is disponible 24h/24 en français.
           Choose the channel that works best for you.
         </p>
 

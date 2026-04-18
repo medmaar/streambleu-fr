@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Stream Bleu",
+  title: "IPTV Reseller France 2026 | Start Your IPTV Business – Stream Bleu",
   description:
-    "Become an IPTV reseller in Canada with Stream Bleu. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
-  keywords: "IPTV reseller Canada, IPTV reseller program Canada 2026, start IPTV business Canada",
+    "Become an IPTV reseller en France with Stream Bleu. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
+  keywords: "IPTV reseller France, IPTV reseller program France 2026, start IPTV business France",
   alternates: { canonical: "https://streambleu.fr/reseller" },
   openGraph: {
-    title: "IPTV Reseller Canada 2026 | Start Your IPTV Business – Stream Bleu",
-    description: "Become an IPTV reseller in Canada with Stream Bleu. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
+    title: "IPTV Reseller France 2026 | Start Your IPTV Business – Stream Bleu",
+    description: "Become an IPTV reseller en France with Stream Bleu. Wholesale pricing, white-label options, and a fast reseller panel. Start your own IPTV business today.",
     url: "https://streambleu.fr/reseller",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Reseller Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Reseller France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -54,10 +54,10 @@ export default function ResellerPage() {
           </span>
           <h1 style={{ fontSize: "clamp(34px, 5.5vw, 58px)", fontWeight: 900, lineHeight: 1.1, marginBottom: 22, color: "#ffffff" }}>
             Become an IPTV Reseller<br />
-            <span style={{ color: "#F96E5B" }}>in Canada</span>
+            <span style={{ color: "#F96E5B" }}>en France</span>
           </h1>
           <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 18, lineHeight: 1.7, maxWidth: 640, margin: "0 auto 36px" }}>
-            Start your own IPTV business in Canada with Stream Bleu&apos;s reseller program. Wholesale pricing, white-label support, and a powerful management panel — everything you need to build a profitable IPTV business.
+            Start your own IPTV business en France with Stream Bleu&apos;s reseller program. Wholesale pricing, white-label support, and a powerful management panel — everything you need to build a profitable IPTV business.
           </p>
           <a
             href="mailto:help@streambleu.fr?subject=IPTV%20Reseller%20Inquiry"
@@ -81,7 +81,7 @@ export default function ResellerPage() {
       <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
         <div style={{ maxWidth: 960, margin: "0 auto" }}>
           <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48 }}>
-            Everything You Need to Resell IPTV in Canada
+            Everything You Need to Resell IPTV en France
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24 }}>
             {features.map((f) => (
@@ -103,7 +103,7 @@ export default function ResellerPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
-              { n: "01", title: "Contact Us to Apply", desc: "Email help@streambleu.fr with your reseller inquiry. We'll respond within minutes with pricing and details." },
+              { n: "01", title: "Nous Contacter to Apply", desc: "Email help@streambleu.fr with your reseller inquiry. We'll respond within minutes with pricing and details." },
               { n: "02", title: "Purchase Credits", desc: "Buy a credit package at wholesale rates. Credits are used to create and renew your clients' subscriptions." },
               { n: "03", title: "Access Your Panel", desc: "Log into your reseller dashboard to manage all client accounts — create, suspend, renew, and monitor in real time." },
               { n: "04", title: "Set Your Own Prices", desc: "You control your retail pricing. Sell subscriptions at whatever margin works for your business." },
@@ -125,11 +125,11 @@ export default function ResellerPage() {
       <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48 }}>
-            Why Resell Stream Bleu IPTV in Canada?
+            Why Resell Stream Bleu IPTV en France?
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
             {[
-              { title: "Growing Market", desc: "Millions of Canadians are cutting cable. The Stream Bleu market is growing rapidly — perfect time to enter." },
+              { title: "Growing Market", desc: "Millions of Françaiss are cutting cable. The Stream Bleu market is growing rapidly — perfect time to enter." },
               { title: "Recurring Revenue", desc: "Subscription renewals mean predictable monthly income. Retain clients with a reliable service they love." },
               { title: "No Infrastructure Costs", desc: "We handle all servers, content, and technical support. You focus on sales and customer relationships." },
               { title: "24/7 Backend Support", desc: "Our technical team supports your infrastructure around the clock so your clients are always satisfied." },
@@ -150,7 +150,7 @@ export default function ResellerPage() {
             Ready to Start Your IPTV Business?
           </h2>
           <p style={{ color: "#000000", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
-            Contact us today to get started as an IPTV reseller in Canada. We&apos;ll walk you through the program and get your panel set up quickly.
+            Contact us today to get started as an IPTV reseller en France. We&apos;ll walk you through the program and get your panel set up quickly.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
             <a

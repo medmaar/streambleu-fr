@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const countries = [
-  "Canada", "United States", "United Kingdom", "Australia", "France", "Germany",
+  "France", "United States", "United Kingdom", "Australia", "France", "Germany",
   "Spain", "Italy", "Netherlands", "Belgium", "Switzerland", "Portugal", "Sweden",
   "Norway", "Denmark", "Finland", "Poland", "Czech Republic", "Austria", "Ireland",
   "New Zealand", "South Africa", "Nigeria", "Ghana", "Kenya", "Morocco", "Algeria",

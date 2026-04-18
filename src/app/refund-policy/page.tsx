@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | Stream Bleu – Best 4K IPTV Canada",
-  description: "Refund policy for Stream Bleu, Canada's best 4K IPTV service. Learn about our no-refund policy and how our free trial protects you before you subscribe.",
+  title: "Refund Policy | Stream Bleu – Best 4K IPTV France",
+  description: "Refund policy for Stream Bleu, de France meilleur IPTV service. Learn about our no-refund policy and how our essai gratuit protects you before you subscribe.",
   alternates: { canonical: "https://streambleu.fr/refund-policy" },
   openGraph: {
-    title: "Refund Policy | Stream Bleu – Best 4K IPTV Canada",
-    description: "Refund policy for Stream Bleu, Canada's best 4K IPTV service. Learn about our no-refund policy and how our free trial protects you.",
+    title: "Refund Policy | Stream Bleu – Best 4K IPTV France",
+    description: "Refund policy for Stream Bleu, de France meilleur IPTV service. Learn about our no-refund policy and how our essai gratuit protects you.",
     url: "https://streambleu.fr/refund-policy",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -45,16 +45,16 @@ export default function RefundPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">2. Free Trial — Try Before You Buy</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">2. Essai Gratuit — Try Before You Buy</h2>
             <p className="mb-3">We strongly encourage all new customers to use our free 24h trial before purchasing a subscription. The trial:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Requires no credit card</li>
-              <li>Gives full access to all 25,000+ channels and 120,000+ VOD titles</li>
+              <li>Gives full access to all 25 000+ channels and 120 000+ VOD titles</li>
               <li>Lets you test on all your devices</li>
               <li>Carries zero obligation to purchase</li>
             </ul>
             <p className="mt-3">
-              <a href="/free-trial" className="text-[#F96E5B] hover:underline font-semibold">Get your free trial here →</a>
+              <a href="/free-trial" className="text-[#F96E5B] hover:underline font-semibold">Get your essai gratuit here →</a>
             </p>
           </section>
 
@@ -75,7 +75,7 @@ export default function RefundPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">5. How to Contact Us</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">5. How to Nous Contacter</h2>
             <p className="mb-4">If you believe you qualify for an exception or have a billing concern, please reach out — we're here to help.</p>
             <div className="bg-transparent rounded-xl p-6 border border-gray-800 space-y-3">
               <p>
@@ -84,7 +84,7 @@ export default function RefundPolicyPage() {
               </p>
               <p>
                 <span className="text-black text-sm">Telegram: </span>
-                <a href="https://t.me/IPTVCanadaSupport" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">@IPTVCanadaSupport</a>
+                <a href="https://t.me/IPTVFranceSupport" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">@IPTVFranceSupport</a>
               </p>
               <p>
                 <span className="text-black text-sm">Email: </span>

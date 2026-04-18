@@ -2,111 +2,119 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Stream Bleu Blog | IPTV Guides, Reviews & News – Canada",
+  title: "Blog Stream Bleu | Guides IPTV, Avis & Actualités France",
   description:
-    "Read Stream Bleu's IPTV blog. Expert guides on setup, legality, pricing comparisons, player reviews, and the best 4K IPTV services in Canada for 2026.",
-  keywords: "Stream Bleu blog, IPTV guide Canada 2026, best IPTV Canada review",
+    "Lisez le blog Stream Bleu. Guides d'installation, légalité, comparatifs de prix, avis sur les lecteurs IPTV et les meilleurs services 4K en France pour 2026.",
+  keywords: "blog iptv france, guide iptv 2026, meilleur iptv france avis",
   alternates: { canonical: "https://streambleu.fr/blog" },
   openGraph: {
-    title: "Stream Bleu Blog | IPTV Guides, Reviews & News – Canada",
-    description: "Read Stream Bleu's IPTV blog. Expert guides on setup, legality, pricing comparisons, and player reviews for the best 4K IPTV in Canada.",
+    title: "Blog Stream Bleu | Guides IPTV, Avis & Actualités France",
+    description: "Guides d'installation IPTV, comparatifs, légalité et avis pour la France 2026.",
     url: "https://streambleu.fr/blog",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Blog Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Blog Stream Bleu IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
 
 const posts = [
   {
-    slug: "best-iptv-canada-2026",
-    title: "10 Best IPTV Providers in Canada for 2026 (Tested & Ranked)",
-    excerpt: "We tested and ranked the top 10 IPTV providers available in Canada for 2026. Stream Bleu takes the #1 spot — find out why.",
-    date: "2026-01-10",
-    readTime: "8 min read",
-    tag: "Reviews",
+    slug: "meilleur-iptv-france-2026",
+    title: "Meilleur IPTV France 2026 : Top Services Testés & Classés",
+    excerpt: "Nous avons testé et classé les meilleurs services IPTV disponibles en France pour 2026. Stream Bleu prend la première place — découvrez pourquoi.",
+    date: "10 jan. 2026",
+    readTime: "8 min",
+    tag: "Avis",
   },
   {
-    slug: "is-iptv-legal-france",
-    title: "Is IPTV Legal in Canada in 2026? (Honest Answer)",
-    excerpt: "A clear breakdown of Canadian IPTV laws, CRTC regulations, and what it means for consumers who want to use IPTV services.",
-    date: "2026-02-05",
-    readTime: "5 min read",
-    tag: "Legal",
+    slug: "iptv-legal-france",
+    title: "L'IPTV est-il légal en France en 2026 ? (Réponse honnête)",
+    excerpt: "Une analyse claire de la législation française sur l'IPTV, les réglementations Arcom et ce que cela signifie pour les consommateurs.",
+    date: "5 fév. 2026",
+    readTime: "5 min",
+    tag: "Légal",
   },
   {
     slug: "iptv-vs-cable-france",
-    title: "IPTV vs Cable in Canada 2026 – Is It Worth Switching?",
-    excerpt: "A detailed cost and feature comparison between IPTV and cable TV in Canada. Spoiler: the savings are significant.",
-    date: "2026-02-20",
-    readTime: "6 min read",
-    tag: "Comparison",
+    title: "IPTV vs Câble/ADSL en France 2026 : Quel est le Meilleur ?",
+    excerpt: "Comparatif complet entre l'IPTV et les offres câble/ADSL françaises. Prix, qualité, chaînes et flexibilité — tout est comparé.",
+    date: "20 fév. 2026",
+    readTime: "6 min",
+    tag: "Comparatif",
   },
   {
-    slug: "best-iptv-player-france",
-    title: "Best IPTV Player Apps for Canada in 2026",
-    excerpt: "TiviMate, IPTV Smarters Pro, GSE Smart IPTV, or Perfect Player? We tested all four with a real Stream Bleu subscription.",
-    date: "2026-04-01",
-    readTime: "5 min read",
+    slug: "iptv-firestick-france",
+    title: "Comment Installer l'IPTV sur Fire Stick en France (2026)",
+    excerpt: "Guide étape par étape pour configurer Stream Bleu sur votre Amazon Fire Stick en France. Fonctionne sur Fire TV Stick 4K et Fire TV Cube.",
+    date: "1 mar. 2026",
+    readTime: "7 min",
+    tag: "Guide",
+  },
+  {
+    slug: "meilleur-lecteur-iptv-france",
+    title: "Meilleur Lecteur IPTV pour la France 2026 : TiviMate, Smarters & Plus",
+    excerpt: "Comparatif des meilleurs applications lecteurs IPTV disponibles en France. TiviMate, IPTV Smarters Pro, IBO Player et plus encore — testés et évalués.",
+    date: "15 mar. 2026",
+    readTime: "6 min",
     tag: "Guide",
   },
 ];
 
+const tagColors: Record<string, string> = {
+  Avis: "#F96E5B",
+  Légal: "#3F9AAE",
+  Comparatif: "#79C9C5",
+  Guide: "#1A3D45",
+};
+
 export default function BlogPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
-      <section style={{ padding: "48px 16px 32px" }}>
-        <div style={{ maxWidth: 680, margin: "0 auto" }}>
-          <div style={{ background: "#1A3D45", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)", textAlign: "center" }}>
-            <span style={{ display: "inline-block", background: "rgba(249,110,91,0.18)", border: "1px solid rgba(249,110,91,0.4)", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, marginBottom: 20 }}>
-              Stream Bleu Blog
-            </span>
-            <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
-              Stream Bleu Guides &amp; Reviews
-            </h1>
-            <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 14 }}>
-              Expert articles on IPTV setup, legality, pricing, and the best Canadian IPTV services for 2026.
-            </p>
-          </div>
+    <main style={{ background: "#E8F4F5", minHeight: "100vh" }}>
+      <section style={{ padding: "80px 16px 60px", background: "linear-gradient(to right, #1A3D45, #2d6a78)" }}>
+        <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
+          <p style={{ color: "#79C9C5", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Blog</p>
+          <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, color: "#fff", marginBottom: 16 }}>
+            Guides & Actualités IPTV France
+          </h1>
+          <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 16, lineHeight: 1.6 }}>
+            Tout ce que vous devez savoir sur l&apos;IPTV en France — légalité, configuration, comparatifs et bien plus.
+          </p>
         </div>
       </section>
 
-      <section style={{ padding: "60px 16px 100px", background: "transparent" }}>
-        <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: 24 }}>
+      <section style={{ padding: "60px 16px", maxWidth: 900, margin: "0 auto" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
           {posts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              style={{ textDecoration: "none", display: "block" }}
-            >
-              <article
-                style={{
-                  background: "#ffffff",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: 20,
-                  padding: "28px 24px",
-                  height: "100%",
-                  cursor: "pointer",
-                  transition: "border-color 0.2s",
-                }}
-              >
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                  <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.25)", color: "#F96E5B", fontSize: 11, fontWeight: 700, padding: "4px 12px", borderRadius: 999 }}>
-                    {post.tag}
-                  </span>
-                  <span style={{ color: "#000000", fontSize: 12 }}>{post.readTime}</span>
+            <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+              <article style={{
+                background: "#fff",
+                borderRadius: 18,
+                padding: "32px 36px",
+                border: "1px solid rgba(63,154,174,0.15)",
+                boxShadow: "0 4px 20px rgba(26,61,69,0.06)",
+                transition: "transform 0.2s, box-shadow 0.2s",
+              }}>
+                <div style={{ display: "flex", gap: 12, alignItems: "center", marginBottom: 16, flexWrap: "wrap" }}>
+                  <span style={{
+                    background: tagColors[post.tag] ?? "#1A3D45",
+                    color: "#fff",
+                    fontSize: 11,
+                    fontWeight: 700,
+                    padding: "3px 12px",
+                    borderRadius: 999,
+                    letterSpacing: "0.05em",
+                    textTransform: "uppercase",
+                  }}>{post.tag}</span>
+                  <span style={{ color: "#888", fontSize: 13 }}>{post.date}</span>
+                  <span style={{ color: "#888", fontSize: 13 }}>· {post.readTime} de lecture</span>
                 </div>
-                <h2 style={{ fontWeight: 800, fontSize: 18, lineHeight: 1.4, color: "#000000", marginBottom: 12 }}>
+                <h2 style={{ fontSize: "clamp(18px, 2.5vw, 22px)", fontWeight: 800, color: "#1A3D45", marginBottom: 10, lineHeight: 1.3 }}>
                   {post.title}
                 </h2>
-                <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7, marginBottom: 16 }}>
-                  {post.excerpt}
-                </p>
-                <time dateTime={post.date} style={{ color: "#000000", fontSize: 12 }}>
-                  {new Date(post.date).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}
-                </time>
+                <p style={{ color: "#444", fontSize: 15, lineHeight: 1.65, marginBottom: 16 }}>{post.excerpt}</p>
+                <span style={{ color: "#F96E5B", fontWeight: 700, fontSize: 14 }}>Lire l&apos;article →</span>
               </article>
             </Link>
           ))}

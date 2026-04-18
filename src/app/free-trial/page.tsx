@@ -3,44 +3,44 @@ import PlanOrderForm from "../pricing/PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "Free IPTV Trial france — Test Stream Bleu Risk-Free | Stream Bleu" },
+  title: { absolute: "Essai Gratuit IPTV France — Testez Stream Bleu Sans Risque | Stream Bleu" },
   description:
-    "Get a free Stream Bleu IPTV trial in france. No credit card required. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies. Activate in under 5 minutes.",
+    "Obtenez un essai gratuit IPTV en France. Sans carte bancaire. Accédez à 25 000+ chaînes en direct, beIN Sports, Canal+, TF1 et 120 000+ films. Activation en 5 minutes.",
   keywords:
-    "free IPTV trial france, Stream Bleu essai gratuit, try IPTV france, free IPTV france no credit card",
+    "essai gratuit iptv france, stream bleu essai, test iptv france gratuit, iptv france sans carte bancaire",
   alternates: { canonical: "https://streambleu.fr/free-trial" },
   openGraph: {
-    title: "Free IPTV Trial france — Test Stream Bleu Risk-Free | Stream Bleu",
-    description: "Get a free Stream Bleu IPTV trial in france. No credit card required. Access 25,000+ live channels, NHL, TSN, CTV and 120,000+ movies.",
+    title: "Essai Gratuit IPTV France — Testez Stream Bleu Sans Risque",
+    description: "Essai IPTV gratuit en France. Sans carte bancaire. 25 000+ chaînes, 120 000+ films et séries en 4K.",
     url: "https://streambleu.fr/free-trial",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu Free IPTV Trial france" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu Essai Gratuit IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
 
 const faqItems: FaqItem[] = [
   {
-    q: "How do I get the essai gratuit?",
-    a: "Simply fill out the form above and submit your request. Our team will activate your trial within minutes — usually under 5 minutes during business hours.",
+    q: "Comment obtenir l'essai gratuit ?",
+    a: "Remplissez simplement le formulaire ci-dessus et soumettez votre demande. Notre équipe activera votre essai en quelques minutes — généralement en moins de 5 minutes.",
   },
   {
-    q: "Does the essai gratuit include all channels?",
-    a: "Yes. Your 24h trial gives you full access to all 25,000+ live channels, 120,000+ VOD titles, and all sports packages — no restrictions.",
+    q: "L'essai gratuit donne-t-il accès à toutes les chaînes ?",
+    a: "Oui. Votre essai de 24h vous donne un accès complet à toutes les 25 000+ chaînes en direct, 120 000+ titres VOD, et tous les packages sportifs — sans restriction.",
   },
   {
-    q: "How many devices can I use during the trial?",
-    a: "Your trial includes one simultaneous connection. If you want to test on multiple devices, let us know and we can arrange that.",
+    q: "Combien d'appareils puis-je utiliser pendant l'essai ?",
+    a: "Votre essai inclut une connexion simultanée. Si vous souhaitez tester sur plusieurs appareils, contactez-nous et nous pouvons l'organiser.",
   },
   {
-    q: "What happens after 2 hours?",
-    a: "Your trial simply stops. There are no charges, no cancellation required. If you'd like to continue, contact us to choose a plan.",
+    q: "Que se passe-t-il après 24 heures ?",
+    a: "Votre essai s'arrête simplement. Aucun frais, aucune annulation nécessaire. Si vous souhaitez continuer, contactez-nous pour choisir un forfait.",
   },
   {
-    q: "Is a credit card required to start the trial?",
-    a: "Absolutely not. No payment information is needed. The trial is 100% free with zero obligation to subscribe afterwards.",
+    q: "Une carte bancaire est-elle requise pour démarrer l'essai ?",
+    a: "Absolument pas. Aucune information de paiement n'est nécessaire. L'essai est 100% gratuit, sans aucune obligation de s'abonner ensuite.",
   },
 ];
 
@@ -57,86 +57,48 @@ const faqSchema = {
 export default function FreeTrialPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
-        <section
-          className="py-20 px-4"
-          style={{ background: "transparent" }}
-        >
-          <div className="max-w-2xl mx-auto">
-            {/* Header */}
-            <div className="mb-8">
-              <span
-                className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5"
-                style={{
-                  background: "rgba(249,110,91,0.12)",
-                  border: "1px solid rgba(249,110,91,0.35)",
-                  color: "#F96E5B",
-                }}
-              >
-                No Credit Card Required
-              </span>
-              <h1
-                style={{
-                  fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
-                  fontWeight: 800,
-                  color: "#000000",
-                  lineHeight: 1.2,
-                }}
-              >
-                Essai Gratuit — Stream Bleu
-              </h1>
-              <p style={{ color: "#000000", fontSize: 14, marginTop: 10 }}>
-                5-minute full access. Fill out the form and we&apos;ll activate your trial within minutes.
-              </p>
+        <section style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", padding: "80px 16px 60px" }}>
+          <div style={{ maxWidth: 700, margin: "0 auto" }}>
+            <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+              Sans Carte Bancaire · Activation Instantanée
+            </span>
+            <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#1A3D45" }}>
+              Essai Gratuit IPTV<br />
+              <span style={{ color: "#F96E5B" }}>France 24 Heures</span>
+            </h1>
+            <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#1A3D45", marginBottom: 36, lineHeight: 1.7 }}>
+              Testez Stream Bleu gratuitement pendant 24 heures — sans carte bancaire, sans engagement. Accès complet à 25 000+ chaînes, beIN Sports, Canal+, TF1, et 120 000+ films en 4K.
+            </p>
+            <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 12 }}>
+              {["✓ Aucune carte bancaire", "✓ Activation en 5 min", "✓ 4K Ultra HD", "✓ Toutes les chaînes incluses"].map(f => (
+                <span key={f} style={{ fontSize: 14, fontWeight: 600, color: "#1A3D45" }}>{f}</span>
+              ))}
             </div>
+          </div>
+        </section>
 
-            {/* Order Form */}
-            <div
-              className="rounded-3xl p-6 md:p-8 border mb-16"
-              style={{
-                background: "#1A3D45",
-                borderColor: "rgba(121,201,197,0.2)",
-                boxShadow: "0 8px 32px rgba(26,61,69,0.25)",
-              }}
-            >
-              <PlanOrderForm plan="Essai Gratuit" />
-            </div>
-
-            {/* FAQ */}
-            <div style={{ background: "#1A3D45", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(26,61,69,0.25)" }}>
-              <p
-                className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: "#F96E5B" }}
-              >
-                FAQ
-              </p>
-              <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#ffffff", marginBottom: 24 }}>
-                Frequently Asked Questions
+        <section style={{ padding: "60px 16px" }}>
+          <div style={{ maxWidth: 700, margin: "0 auto" }}>
+            <div style={{ background: "#fff", borderRadius: 20, padding: "40px 36px", boxShadow: "0 8px 40px rgba(26,61,69,0.1)", border: "1px solid rgba(63,154,174,0.15)" }}>
+              <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 8, textAlign: "center" }}>
+                Demander votre essai gratuit
               </h2>
-              <PlanFAQ items={faqItems} />
-            
-            {/* Internal Links */}
-            <div style={{ marginTop: 32, background: "rgba(255,255,255,0.06)", borderRadius: 16, padding: "24px 20px" }}>
-              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 12, fontWeight: 600, textAlign: "center", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>Explore More Plans</p>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 14 }}>
-                <a href="/pricing/1-month" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>1 Month — 9€</a>
-                <a href="/pricing/3-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Months — €29</a>
-                <a href="/pricing/6-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Months — €39</a>
-                <a href="/pricing/12-months" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>1 Year — €49 ⭐</a>
-              </div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-                <a href="/free-trial" style={{ background: "#79C9C5", color: "#1A3D45", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Try Free 24h</a>
-                <a href="/pricing" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>All Plans</a>
-                <a href="/channels-list" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Channel List</a>
-                <a href="/iptv-paris" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Toronto</a>
-                <a href="/iptv-lyon" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Vancouver</a>
-              </div>
+              <p style={{ textAlign: "center", color: "#666", fontSize: 14, marginBottom: 28 }}>
+                Remplissez le formulaire — vous recevrez vos identifiants par email en moins de 5 minutes.
+              </p>
+              <PlanOrderForm plan="Essai Gratuit 24h" />
             </div>
-            </div>
+          </div>
+        </section>
+
+        <section style={{ padding: "60px 16px", background: "#fff" }}>
+          <div style={{ maxWidth: 700, margin: "0 auto" }}>
+            <h2 style={{ textAlign: "center", fontSize: 26, fontWeight: 800, color: "#1A3D45", marginBottom: 36 }}>
+              Questions fréquentes sur l&apos;essai gratuit
+            </h2>
+            <PlanFAQ items={faqItems} />
           </div>
         </section>
       </main>

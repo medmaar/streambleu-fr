@@ -2,7 +2,7 @@
 import { useState, FormEvent } from "react";
 
 const COUNTRIES = [
-  "Canada","United States","United Kingdom","Australia","France","Germany",
+  "France","United States","United Kingdom","Australia","France","Germany",
   "Belgium","Switzerland","Netherlands","Spain","Italy","Portugal","Sweden",
   "Norway","Denmark","Finland","Ireland","New Zealand","UAE","Qatar","Kuwait",
   "Saudi Arabia","Morocco","Algeria","Tunisia","Senegal","Cameroon","Ivory Coast",

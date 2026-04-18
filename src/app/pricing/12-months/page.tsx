@@ -3,9 +3,9 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "1 Year IPTV france — €49 Best Value | Stream Bleu" },
+  title: { absolute: "1 Year IPTV france — €49 Meilleur Prix | Stream Bleu" },
   description:
-    "Get a full year of IPTV in france for only €49. 25,000+ live channels, 4K quality, NHL, TSN, CTV, IBO Player bonus included. Best value IPTV plan france.",
+    "Get a full year of IPTV in france for only €49. 25 000+ live channels, 4K quality, Ligue 1, beIN Sports, CTV, IBO Player bonus included. Best value IPTV plan france.",
   keywords:
     "IPTV annual france, Stream Bleu 1 year, best value IPTV france, 12 month IPTV france €49, yearly IPTV france",
   alternates: { canonical: "https://streambleu.fr/pricing/12-months" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "What is included in the 1-year IPTV plan?",
-    a: "The 1-year plan gives you a full 12 months of access to 25,000+ live channels (TSN, Sportsnet, CBC, CTV, Global, RDS, TVA and hundreds more), 120,000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for €49.",
+    a: "The 1-year plan gives you a full 12 months of access to 25 000+ live channels (beIN Sports, RMC Sport, Canal+, CTV, Global, RDS, TVA and hundreds more), 120 000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for €49.",
   },
   {
     q: "How do I receive my login credentials after ordering?",
@@ -30,7 +30,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Can I watch live Français and Quebec channels?",
-    a: "Yes — all plans include TSN, Sportsnet, CBC, CTV, Global, City TV, RDS, TVA, Canal Vie, and every regional Français channel in HD and 4K. Full coverage of NHL, NFL, NBA, MLB, UFC, F1 and CFL is included throughout the year.",
+    a: "Yes — all plans include beIN Sports, RMC Sport, Canal+, CTV, Global, City TV, RDS, TVA, Canal Vie, and every regional Français channel in HD and 4K. Full coverage of Ligue 1, NFL, NBA, MLB, UFC, F1 and CFL is included throughout the year.",
   },
   {
     q: "Can I use this service on more than one device at a time?",
@@ -42,7 +42,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I get support if something stops working?",
-    a: "Our Français support team is available 24/7 via WhatsApp (+1 782-802-6280) and email in English and French. Most issues are resolved within minutes, any time of day.",
+    a: "Our Français support team is disponible 24h/24 via WhatsApp (+1 782-802-6280) and email en français. Most issues are resolved within minutes, any time of day.",
   },
 ];
 
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu 1 Year IPTV Plan",
-  description: "12 months of IPTV access to 25,000+ live channels in france including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K. Includes IBO Player subscription.",
+  description: "12 months of IPTV access to 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K. Includes IBO Player subscription.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   offers: {
     "@type": "Offer",

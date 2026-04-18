@@ -5,7 +5,7 @@ import FaqAccordion from "../components/FaqAccordion";
 
 export const metadata: Metadata = {
   title: { absolute: "4K IPTV Plans france — H.265/HEVC from 9€ | Stream Bleu" },
-  description: "Compare Stream Bleu premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from 9€. 25,000+ live channels, no contracts.",
+  description: "Compare Stream Bleu premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from 9€. 25 000+ live channels, no contracts.",
   keywords: "Stream Bleu pricing, 4K IPTV plans france, H.265 HEVC IPTV france, HDR IPTV subscription 2026",
   alternates: { canonical: "https://streambleu.fr/pricing" },
 };
@@ -36,7 +36,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Interactive pricing */}
+      {/* PayPaltive pricing */}
       <section style={{ padding: "0 16px 60px" }}>
         <PricingSection />
       </section>
@@ -52,12 +52,12 @@ export default function PricingPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
             {[
-              "25,000+ Live TV Channels",
-              "120,000+ Movies & Series (VOD)",
+              "25 000+ Live TV Channels",
+              "120 000+ Movies & Series (VOD)",
               "True 4K Ultra HD — H.265/HEVC",
               "HDR10 & Dolby Vision Support",
-              "NHL, NFL, NBA, MLB, UFC, CFL",
-              "TSN, Sportsnet, CBC, CTV, Global",
+              "Ligue 1, NFL, NBA, MLB, UFC, CFL",
+              "beIN Sports, RMC Sport, Canal+, CTV, Global",
               "PPV Events Included — No Extra Cost",
               "Full EPG + Catch-Up TV (7 days)",
               "TiviMate & IBO Player Compatible",

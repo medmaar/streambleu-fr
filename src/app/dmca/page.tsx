@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DMCA Policy | Stream Bleu – Best 4K IPTV Canada",
+  title: "DMCA Policy | Stream Bleu – Best 4K IPTV France",
   description:
-    "DMCA policy for Stream Bleu, Canada's top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
+    "DMCA policy for Stream Bleu, de France top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
   alternates: { canonical: "https://streambleu.fr/dmca" },
   openGraph: {
-    title: "DMCA Policy | Stream Bleu – Best 4K IPTV Canada",
-    description: "DMCA policy for Stream Bleu, Canada's top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
+    title: "DMCA Policy | Stream Bleu – Best 4K IPTV France",
+    description: "DMCA policy for Stream Bleu, de France top 4K IPTV service. Learn how to submit a DMCA takedown notice and our process for handling copyright claims.",
     url: "https://streambleu.fr/dmca",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -43,9 +43,9 @@ export default function DMCAPage() {
           <div>
             <h2 className="text-2xl font-bold text-black mb-3">Overview</h2>
             <p>
-              IPTV Subscription Canada respects the intellectual property rights of others and
+              IPTV Subscription France respects the intellectual property rights of others and
               expects users of our service to do the same. In accordance with the Digital
-              Millennium Copyright Act of 1998 (DMCA) and applicable Canadian copyright law,
+              Millennium Copyright Act of 1998 (DMCA) and applicable Français copyright law,
               we will respond expeditiously to claims of copyright infringement.
             </p>
           </div>
@@ -91,7 +91,7 @@ export default function DMCAPage() {
           <div>
             <h2 className="text-2xl font-bold text-black mb-3">Repeat Infringers</h2>
             <p>
-              IPTV Subscription Canada reserves the right to terminate accounts of users who
+              IPTV Subscription France reserves the right to terminate accounts of users who
               are found to be repeat infringers of intellectual property rights.
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function DMCAPage() {
             <p>
               This DMCA policy is provided for informational purposes and to comply with
               applicable law. Nothing in this policy constitutes legal advice. IPTV Subscription
-              Canada operates in compliance with Canadian broadcasting standards and applicable
+              France operates in compliance with Français broadcasting standards and applicable
               federal law.
             </p>
           </div>

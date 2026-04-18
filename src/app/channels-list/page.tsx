@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Channels Canada — 25,000+ Live Channels | Stream Bleu" },
+  title: { absolute: "IPTV Channels France — 25 000+ Live Channels | Stream Bleu" },
   description:
-    "Full Stream Bleu IPTV channel list for Canada 2026. Browse 25,000+ live channels including TSN, Sportsnet, CBC, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
+    "Full Stream Bleu IPTV channel list pour la France 2026. Browse 25 000+ live channels including beIN Sports, RMC Sport, Canal+, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
   keywords:
-    "IPTV channels Canada, Stream Bleu channel list, Canadian IPTV channels, TSN IPTV, Sportsnet IPTV Canada",
+    "IPTV channels France, Stream Bleu channel list, Français IPTV channels, TSN IPTV, Sportsnet IPTV France",
   alternates: { canonical: "https://streambleu.fr/channels-list" },
 };
 
@@ -8261,11 +8261,11 @@ export default function ChannelsListPage() {
             Stream Bleu <span className="text-[#F96E5B]">Channel List</span>
           </h1>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
-            25,000+ live channels across Canada, the US, UK, and worldwide.
+            25 000+ live channels dans toute la France, the US, UK, and worldwide.
             Every plan includes all channels below — no add-ons required.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> All Canadian networks</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> All Français networks</span>
             <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> TSN &amp; Sportsnet</span>
             <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> 4K &amp; HD quality</span>
             <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> PPV included</span>
@@ -8277,7 +8277,7 @@ export default function ChannelsListPage() {
       <div className="bg-[#F96E5B] py-3 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-black text-sm font-semibold">
           <span>🌍 152 Countries &amp; Regions</span>
-          <span>📺 25,000+ Live Channels</span>
+          <span>📺 25 000+ Live Channels</span>
           <span>🎬 4K Ultra HD Quality</span>
           <span>⚡ Zero Buffering</span>
         </div>
@@ -8332,13 +8332,13 @@ export default function ChannelsListPage() {
       {/* CTA */}
       <section style={{ padding: "64px 16px", background: "#1A3D45", textAlign: "center" }}>
         <div className="max-w-2xl mx-auto">
-          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 25,000+ Channels</h2>
+          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 25 000+ Channels</h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 32 }}>
             Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
-              Get Free Trial
+              Get Essai Gratuit
             </a>
             <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               View Pricing

@@ -2,286 +2,95 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Stream Bleu",
+  title: "L'IPTV est-il Légal en France en 2026 ? | Stream Bleu",
   description:
-    "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
-  keywords: "is iptv legal in canada, iptv legal canada 2026, crtc iptv canada",
-  alternates: { canonical: "https://streambleu.fr/blog/is-iptv-legal-france" },
+    "L'IPTV est-il légal en France ? Analyse complète de la législation française, du rôle de l'Arcom et de ce que cela signifie pour les utilisateurs en 2026.",
+  keywords: "iptv legal france, iptv légal france 2026, arcom iptv france, loi iptv france",
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-legal-france" },
   openGraph: {
-    title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Stream Bleu",
-    description:
-      "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
-    url: "https://streambleu.fr/blog/is-iptv-legal-france",
-    siteName: "Stream Bleu",
+    title: "L'IPTV est-il Légal en France en 2026 ?",
+    description: "Analyse de la législation française sur l'IPTV, le rôle de l'Arcom et les droits des utilisateurs.",
+    url: "https://streambleu.fr/blog/iptv-legal-france",
     type: "article",
+    siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Is IPTV Legal in Canada? – Stream Bleu" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Is IPTV Legal in Canada? (2026 Honest Answer) | Stream Bleu",
-    description:
-      "Is IPTV legal in Canada in 2026? We explain CRTC rules, legal vs illegal IPTV, and what you need to know as a Canadian consumer.",
+    images: [{ url: "/favicon.svg", width: 512, height: 512 }],
   },
 };
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Is IPTV Legal in Canada in 2026?",
-  datePublished: "2026-01-15",
-  dateModified: "2026-04-01",
+  headline: "L'IPTV est-il Légal en France en 2026 ?",
+  datePublished: "2026-02-05",
+  dateModified: "2026-04-10",
   author: { "@type": "Organization", name: "Stream Bleu" },
-  publisher: {
-    "@type": "Organization",
-    name: "Stream Bleu",
-    url: "https://streambleu.fr",
-  },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/is-iptv-legal-france" },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
 };
 
-export default function IsIPTVLegalCanada() {
+export default function IPTVLegalFrance() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
-        <article style={{ maxWidth: 800, margin: "0 auto", padding: "80px 16px" }}>
-          <time
-            dateTime="2026-01-15"
-            style={{ color: "#000000", fontSize: 14, display: "block", marginBottom: 16 }}
-          >
-            January 15, 2026
-          </time>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <main style={{ background: "#E8F4F5", minHeight: "100vh" }}>
+        <section style={{ background: "linear-gradient(to right, #1A3D45, #2d6a78)", padding: "80px 16px 60px" }}>
+          <div style={{ maxWidth: 820, margin: "0 auto" }}>
+            <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
+              <span style={{ background: "#3F9AAE", color: "#fff", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Légal</span>
+              <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>5 février 2026 · 5 min de lecture</span>
+            </div>
+            <h1 style={{ fontSize: "clamp(26px, 4vw, 46px)", fontWeight: 900, color: "#fff", lineHeight: 1.2, marginBottom: 16 }}>
+              L&apos;IPTV est-il Légal en France en 2026 ?
+            </h1>
+            <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 16, lineHeight: 1.7, maxWidth: 640 }}>
+              Une réponse claire basée sur la législation française actuelle, le rôle de l&apos;Arcom, et ce que cela signifie concrètement pour vous.
+            </p>
+          </div>
+        </section>
 
-          <h1
-            style={{
-              fontSize: "clamp(2rem, 5vw, 3rem)",
-              fontWeight: 800,
-              lineHeight: 1.2,
-              marginBottom: 24,
-            }}
-          >
-            Is IPTV Legal in Canada in 2026?
-          </h1>
-
-          <p style={{ fontSize: 18, color: "#d1d5db", lineHeight: 1.75, marginBottom: 40 }}>
-            If you&apos;ve been considering switching to IPTV, one question comes up immediately: is
-            IPTV legal in Canada? The short answer is yes — with important nuances. Here&apos;s
-            everything a Canadian consumer needs to know in 2026.
-          </p>
-
-          {/* Section 1 */}
+        <article style={{ maxWidth: 820, margin: "0 auto", padding: "60px 16px" }}>
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: 16 }}>
-              What Is IPTV?
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              IPTV stands for Internet Protocol Television. Instead of receiving TV signals through
-              a satellite dish or coaxial cable, IPTV delivers video content over the internet using
-              the same IP networks that power your web browsing, video calls, and streaming apps.
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 14 }}>La technologie IPTV est légale</h2>
+            <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
+              La technologie IPTV (Internet Protocol Television) est parfaitement légale en France. C&apos;est la même technologie utilisée par Orange TV, SFR TV, Free Freebox TV et Bouygues Bbox — les grands opérateurs français livrent leurs services TV via protocole IP depuis des années.
             </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              This technology is not new or underground — it powers mainstream services like Apple
-              TV+, Crave, and even the internal distribution systems used by Canada&apos;s major
-              broadcasters. The technology itself is simply a delivery mechanism, and as a delivery
-              mechanism, it is entirely legal.
+            <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8 }}>
+              Ce qui détermine la légalité d&apos;un service IPTV n&apos;est pas la technologie, mais le contenu diffusé et les droits détenus pour ce contenu.
             </p>
           </section>
 
-          {/* Section 2 */}
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: 16 }}>
-              The Short Answer: IPTV Technology Is Legal in Canada
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Canada&apos;s biggest telecoms — Bell, Rogers, and Telus — all use IP-based delivery
-              for their television products. Bell Fibe TV, Rogers Ignite TV, and Telus Optik TV are
-              all IPTV services. When you subscribe to one of those, you are using IPTV. There is
-              nothing inherently illegal about the technology.
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 14 }}>Le rôle de l&apos;Arcom en France</h2>
+            <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
+              L&apos;Arcom (Autorité de régulation de la communication audiovisuelle et numérique) est le régulateur français de l&apos;audiovisuel. Depuis la loi du 25 octobre 2021, l&apos;Arcom dispose de pouvoirs renforcés pour lutter contre le piratage, notamment la capacité de faire bloquer des sites ou services par les FAI sans procédure judiciaire préalable dans certains cas.
             </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              What matters legally is not how the content is delivered, but whether the service
-              delivering it has the rights to do so — and whether the consumer is accessing it
-              within the terms of applicable law.
+            <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8 }}>
+              L&apos;Arcom cible principalement les opérateurs de services pirates, pas les utilisateurs individuels. Cependant, utiliser un service clairement illicite expose théoriquement l&apos;utilisateur à des risques juridiques.
             </p>
           </section>
 
-          {/* Section 3 */}
-          <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: 16 }}>
-              CRTC and Canadian Broadcasting Regulations
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              The Canadian Radio-television and Telecommunications Commission (CRTC) is the federal
-              regulator that oversees broadcasting in Canada. Under the Broadcasting Act, IPTV
-              services that operate as broadcasting undertakings are subject to CRTC oversight.
-              Licensed IPTV providers — like Bell Fibe or Rogers Ignite — hold CRTC broadcasting
-              distribution undertaking (BDU) licences.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              For individual Canadians streaming content over the internet for personal, private use,
-              Canadian broadcasting law has generally not been applied to restrict personal viewing.
-              The CRTC has historically focused enforcement on the commercial distribution side —
-              providers selling access to content without proper authorization — rather than on end
-              consumers.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              In 2024 and 2025, the CRTC introduced updated guidance for online streaming services
-              under the Online Streaming Act (formerly Bill C-11), but these rules primarily target
-              platforms generating revenue from Canadian audiences, not individual viewers choosing
-              how they receive broadcasts.
-            </p>
-          </section>
-
-          {/* Section 4 */}
-          <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: 16 }}>
-              Legal vs Unlicensed IPTV: What&apos;s the Difference?
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              This is where Canadians need to pay attention. There is a meaningful distinction
-              between two types of IPTV services:
-            </p>
-            <ul style={{ color: "#d1d5db", lineHeight: 2, paddingLeft: 24, marginBottom: 16 }}>
-              <li>
-                <strong style={{ color: "#000000" }}>Licensed / legitimate IPTV:</strong> Services
-                that hold the rights to the content they distribute — either directly or through
-                licensing agreements. Examples include Bell Fibe TV, Rogers Ignite, Crave, and
-                services that aggregate publicly available streams.
-              </li>
-              <li>
-                <strong style={{ color: "#000000" }}>Unlicensed IPTV:</strong> Services that
-                redistribute pay-per-view events, premium cable channels, or other proprietary
-                content without holding the necessary rights. These services operate outside the
-                law — not because they use IPTV technology, but because they distribute content
-                they have no right to distribute.
-              </li>
-            </ul>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              Canadian courts and the CRTC have taken action against unlicensed IPTV distributors.
-              In 2023 and 2024, several enforcement actions were brought against services providing
-              unauthorized access to NHL games, premium movie channels, and live pay-per-view
-              events. The actions targeted the distributors — not individual viewers.
-            </p>
-          </section>
-
-          {/* Section 5 */}
-          <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: 16 }}>
-              Your Responsibility as a Canadian Consumer
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              As a consumer, your best protection is to use reputable IPTV services that are
-              transparent about how they source and deliver content. Ask providers directly: what
-              content do they have rights to stream? Are they aggregating publicly available
-              broadcasts, or are they redistributing proprietary signals they have no authorization
-              to distribute?
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              You should verify that the service you choose complies with the laws of your province
-              and with Canadian federal broadcasting regulations. If a price seems too good to be
-              true and the service is offering hundreds of premium channels for a few dollars, that
-              is a signal worth taking seriously.
-            </p>
-          </section>
-
-          {/* Section 6 */}
-          <section
-            style={{
-              background: "#1A3D45",
-              border: "1px solid #F96E5B",
-              borderRadius: 12,
-              padding: 24,
-              marginBottom: 40,
-            }}
-          >
-            <h2 style={{ fontSize: "1.4rem", fontWeight: 700, marginBottom: 12 }}>
-              Stream Bleu Compliance Statement
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              Stream Bleu complies with Canadian broadcasting regulations and provides access to
-              publicly available streams. We operate transparently and encourage all subscribers to
-              use our service for content they have the right to access in their jurisdiction.
-              Questions? Email us at{" "}
-              <a
-                href="mailto:help@streambleu.fr"
-                style={{ color: "#F96E5B", textDecoration: "underline" }}
-              >
-                help@streambleu.fr
-              </a>
-              .
-            </p>
-          </section>
-
-          {/* Section 7 */}
-          <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: "1.6rem", fontWeight: 700, marginBottom: 16 }}>
-              Final Answer: Is IPTV Legal in Canada in 2026?
-            </h2>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75, marginBottom: 16 }}>
-              Yes — IPTV as a technology is completely legal in Canada. Canada&apos;s largest
-              telecoms use it every day. The legality question really comes down to the specific
-              service and content: use reputable providers, understand what you&apos;re paying for,
-              and verify that the service operates within Canadian broadcasting law.
-            </p>
-            <p style={{ color: "#d1d5db", lineHeight: 1.75 }}>
-              For most Canadians looking for a legal, affordable alternative to cable, a quality
-              IPTV subscription from a transparent provider is a straightforward and lawful choice.
-            </p>
-          </section>
-
-          {/* Internal links */}
-          <div
-            style={{
-              borderTop: "1px solid #1f2937",
-              paddingTop: 32,
-              display: "flex",
-              flexDirection: "column",
-              gap: 12,
-            }}
-          >
-            <p style={{ color: "#000000", fontSize: 14, marginBottom: 8 }}>Related reading:</p>
-            <Link
-              href="/blog/best-iptv-canada-2026"
-              style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}
-            >
-              → Best IPTV Providers in Canada 2026 – Tested &amp; Ranked
-            </Link>
-            <Link
-              href="/blog/best-iptv-player-france"
-              style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}
-            >
-              → Best IPTV Player Apps for Canada in 2026
-            </Link>
-            <Link
-              href="/iptv-firestick-france"
-              style={{ color: "#F96E5B", textDecoration: "none", fontSize: 15 }}
-            >
-              → How to Set Up IPTV on Firestick in Canada
-            </Link>
+          <div style={{ background: "rgba(63,154,174,0.08)", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 14, padding: "24px 28px", marginBottom: 40 }}>
+            <h3 style={{ fontWeight: 700, fontSize: 17, color: "#1A3D45", marginBottom: 12 }}>📋 Résumé en 3 points</h3>
+            {[
+              "La technologie IPTV est légale — c'est la même qu'utilisent Orange, SFR, Free et Bouygues.",
+              "Ce qui compte, c'est la légitimité du contenu et les droits de diffusion du service que vous choisissez.",
+              "Stream Bleu donne accès à des flux disponibles publiquement. Les utilisateurs restent responsables des contenus auxquels ils accèdent.",
+            ].map((p, i) => (
+              <p key={i} style={{ color: "#333", fontSize: 14, lineHeight: 1.7, marginBottom: 8, display: "flex", gap: 10 }}>
+                <span style={{ color: "#3F9AAE", fontWeight: 700, flexShrink: 0 }}>{i + 1}.</span>{p}
+              </p>
+            ))}
           </div>
 
-          {/* CTA */}
-          <div style={{ marginTop: 48, textAlign: "center" }}>
-            <Link
-              href="/pricing"
-              style={{
-                display: "inline-block",
-                background: "#F96E5B",
-                color: "#000000",
-                fontWeight: 700,
-                fontSize: 16,
-                padding: "14px 32px",
-                borderRadius: 8,
-                textDecoration: "none",
-              }}
-            >
-              Explore Stream Bleu Plans →
+          <section style={{ background: "#1A3D45", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
+            <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Testez Stream Bleu gratuitement</h2>
+            <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>Essai 24h sans carte bancaire. Activation instantanée.</p>
+            <Link href="/free-trial" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit →
             </Link>
-          </div>
+          </section>
+
+          <Link href="/blog" style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
         </article>
       </main>
     </>

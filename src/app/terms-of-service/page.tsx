@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Stream Bleu – Best 4K IPTV Canada",
-  description: "Terms of service for Stream Bleu, Canada's leading 4K IPTV provider. Read our terms before using our IPTV service.",
+  title: "Terms of Service | Stream Bleu – Best 4K IPTV France",
+  description: "Terms of service for Stream Bleu, de France leading 4K IPTV provider. Read our terms before using our IPTV service.",
   alternates: { canonical: "https://streambleu.fr/terms-of-service" },
   openGraph: {
-    title: "Terms of Service | Stream Bleu – Best 4K IPTV Canada",
-    description: "Terms of service for Stream Bleu, Canada's leading 4K IPTV provider. Read our terms before using our IPTV service.",
+    title: "Terms of Service | Stream Bleu – Best 4K IPTV France",
+    description: "Terms of service for Stream Bleu, de France leading 4K IPTV provider. Read our terms before using our IPTV service.",
     url: "https://streambleu.fr/terms-of-service",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -26,12 +26,12 @@ export default function TermsOfServicePage() {
         <div className="space-y-10 text-black leading-relaxed">
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">1. Acceptance of Terms</h2>
-            <p>By accessing or using the IPTV Subscription Canada service ("Service"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Service.</p>
+            <p>By accessing or using the IPTV Subscription France service ("Service"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Service.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">2. Service Description</h2>
-            <p>IPTV Subscription Canada provides an internet-based television streaming service offering access to live channels, video on demand, and related content. The Service requires a compatible device and a broadband internet connection.</p>
+            <p>IPTV Subscription France provides an internet-based television streaming service offering access to live channels, video on demand, and related content. The Service requires a compatible device and a broadband internet connection.</p>
           </section>
 
           <section>
@@ -60,7 +60,7 @@ export default function TermsOfServicePage() {
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">5. Payment and Billing</h2>
-            <p className="mb-3">All subscriptions are prepaid. Prices are listed in Canadian dollars (CAD) unless otherwise stated. By purchasing a subscription, you agree that:</p>
+            <p className="mb-3">All subscriptions are prepaid. Prices are listed in Français dollars (CAD) unless otherwise stated. By purchasing a subscription, you agree that:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>All fees are due at the time of purchase</li>
               <li>There are no automatic renewals — you purchase the duration you choose</li>
@@ -85,12 +85,12 @@ export default function TermsOfServicePage() {
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">9. Limitation of Liability</h2>
-            <p>To the maximum extent permitted by applicable law, IPTV Subscription Canada shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of, or inability to use, the Service. Our total liability to you shall not exceed the amount you paid for the Service in the three months preceding the claim.</p>
+            <p>To the maximum extent permitted by applicable law, IPTV Subscription France shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of, or inability to use, the Service. Our total liability to you shall not exceed the amount you paid for the Service in the three months preceding the claim.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">10. Governing Law</h2>
-            <p>These Terms of Service are governed by and construed in accordance with the laws of the Province of Nova Scotia and the federal laws of Canada applicable therein, without regard to conflict of law principles.</p>
+            <p>These Terms of Service are governed by and construed in accordance with the laws of the Province of Nova Scotia and the federal laws of France applicable therein, without regard to conflict of law principles.</p>
           </section>
 
           <section>

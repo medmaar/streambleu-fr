@@ -1,512 +1,103 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV Firestick Canada | Stream Bleu – Best 4K IPTV Canada",
+  title: { absolute: "IPTV sur Amazon Fire Stick en France 2026 | Stream Bleu" },
   description:
-    "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Stream Bleu offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
+    "Comment regarder Stream Bleu sur Amazon Fire Stick en France. Guide complet. 25 000+ chaînes, 4K Ultra HD. Compatible Fire TV Stick 4K, Fire TV Stick Lite, Fire TV Cube.",
+  keywords: "iptv firestick france, stream bleu amazon fire stick, iptv amazon fire stick france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-firestick-france" },
   openGraph: {
-    title: "IPTV Firestick Canada | Stream Bleu – Best 4K IPTV Canada",
-    description:
-      "Set up IPTV on your Amazon Firestick in Canada in under 5 minutes. Stream Bleu offers 25,000+ channels, NHL, TSN & 4K quality. Free 24h trial.",
+    title: "IPTV sur Amazon Fire Stick en France 2026 | Stream Bleu",
+    description: "Installez Stream Bleu sur Amazon Fire Stick en France. Guide étape par étape.",
     url: "https://streambleu.fr/iptv-firestick-france",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Firestick Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Amazon Fire Stick" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How to Set Up IPTV on Amazon Firestick in Canada",
-  step: [
-    {
-      "@type": "HowToStep",
-      name: "Install Downloader App",
-      text: "Search for 'Downloader' in the Amazon App Store and install it. Enable 'Apps from Unknown Sources' in Firestick settings.",
-    },
-    {
-      "@type": "HowToStep",
-      name: "Install IPTV Player",
-      text: "Open Downloader and enter the URL provided by Stream Bleu to install TiviMate or IPTV Smarters Pro.",
-    },
-    {
-      "@type": "HowToStep",
-      name: "Enter Your Credentials",
-      text: "Open your IPTV player and enter the server URL, username, and password sent by Stream Bleu to your email.",
-    },
-    {
-      "@type": "HowToStep",
-      name: "Start Streaming",
-      text: "Your 25,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming.",
-    },
-  ],
-};
-
-const steps = [
-  {
-    num: "1",
-    title: "Install Downloader App",
-    desc: "Search for 'Downloader' in the Amazon App Store and install it. Then go to Settings > My Fire TV > Developer Options and enable 'Apps from Unknown Sources'.",
-  },
-  {
-    num: "2",
-    title: "Install IPTV Player",
-    desc: "Open Downloader, enter the URL provided by Stream Bleu, and install TiviMate or IPTV Smarters Pro — both are optimized for Firestick.",
-  },
-  {
-    num: "3",
-    title: "Enter Your Credentials",
-    desc: "Open your IPTV player and enter the server URL, username, and password from your Stream Bleu welcome email. Tap 'Connect' and your channels load in seconds.",
-  },
-  {
-    num: "4",
-    title: "Start Streaming",
-    desc: "Your 25,000+ Canadian and international channels are now ready. Navigate to TSN, Sportsnet, or CBC and enjoy 4K streaming on your big screen.",
-  },
-];
-
-export default function IPTVFirestickCanadaPage() {
+export default function IPTVFirestickFrancePage() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      {/* Hero */}
+      <section style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", padding: "80px 16px 60px" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            IPTV Amazon Fire Stick · Stream Bleu
+          </span>
+          <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#1A3D45" }}>
+            IPTV sur Amazon Fire Stick<br />
+            <span style={{ color: "#F96E5B" }}>en France 2026</span>
+          </h1>
+          <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#1A3D45", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
+            Guide complet pour configurer Stream Bleu sur votre Amazon Fire Stick. Installation en 5 minutes, 25 000+ chaînes françaises et internationales en 4K Ultra HD.
+          </p>
+          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+            <Link href="/pricing" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
+              Voir les Tarifs →
+            </Link>
+            <Link href="/free-trial" style={{ background: "transparent", border: "2px solid #1A3D45", color: "#1A3D45", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit 24h
+            </Link>
+          </div>
+        </div>
+      </section>
 
-        {/* Hero */}
-        <section
-          style={{
-            background: "#1A3D45",
-            padding: "80px 16px 60px",
-          }}
-        >
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <span
-              style={{
-                background: "rgba(249,110,91,0.18)",
-                border: "1px solid rgba(249,110,91,0.4)",
-                color: "#F96E5B",
-                fontSize: 11,
-                fontWeight: 700,
-                padding: "5px 16px",
-                borderRadius: 999,
-                letterSpacing: 1,
-                display: "inline-block",
-                marginBottom: 20,
-              }}
-            >
-              IPTV CANADA · STREAM BLEU
-            </span>
-            <h1
-              style={{
-                fontSize: "clamp(2rem, 5vw, 3rem)",
-                fontWeight: 800,
-                lineHeight: 1.15,
-                marginBottom: 20,
-                color: "#ffffff",
-              }}
-            >
-              IPTV on Amazon Firestick in{" "}
-              <span style={{ color: "#F96E5B" }}>Canada 2026</span>
-            </h1>
-            <p
-              style={{
-                fontSize: "1.15rem",
-                color: "rgba(255,255,255,0.82)",
-                maxWidth: 680,
-                lineHeight: 1.75,
-                marginBottom: 36,
-              }}
-            >
-              Stream Bleu is the top-rated Stream Bleu service built for Amazon Firestick.
-              Connect your Firestick in under 5 minutes and unlock 25,000+ live channels,
-              120,000+ movies and series, and crystal-clear 4K HDR streams — including every
-              major Canadian broadcaster and sports network.
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
-              <a
-                href="/pricing"
-                style={{
-                  background: "#F96E5B",
-                  color: "#ffffff",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                  fontSize: "1rem",
-                }}
-              >
-                Get Your Stream Bleu Plan →
-              </a>
-              <a
-                href="/free-trial"
-                style={{
-                  border: "2px solid #F96E5B",
-                  color: "#F96E5B",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                  fontSize: "1rem",
-                }}
-              >
-                Try 24h Free
-              </a>
-            </div>
+      {/* Steps */}
+      <section style={{ padding: "60px 16px", background: "#fff" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, marginBottom: 36, color: "#1A3D45" }}>
+            Installation en 5 étapes
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+            <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>1</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Activer les sources inconnues</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Paramètres → Ma Fire TV → Options développeur → Sources inconnues : Activé</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>2</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Installer Downloader</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Recherchez Downloader sur l'App Store Amazon et installez-le</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>3</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Installer IPTV Smarters Pro</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Via Downloader, téléchargez et installez l'APK IPTV Smarters Pro</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>4</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Entrer vos identifiants Stream Bleu</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Smarters → Ajouter utilisateur → collez votre URL M3U Stream Bleu</p></div></div> <div style={{ background: "#E8F4F5", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(63,154,174,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#F96E5B", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>5</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#1A3D45", marginBottom: 6 }}>Profitez de 25 000+ chaînes</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Chargement terminé — naviguez dans toutes vos chaînes françaises en 4K</p></div></div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Why Stream Bleu on Firestick */}
-        <section style={{ padding: "60px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
-            >
-              Why Stream Bleu Works Great on Firestick
-            </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 28 }}>
-              Millions of Canadians use Amazon Firestick as their primary streaming device.
-              Stream Bleu is engineered to take full advantage of the Firestick hardware —
-              delivering reliable, high-speed Stream Bleu streams without complicated setup.
-            </p>
-            <ul
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
-                display: "flex",
-                flexDirection: "column",
-                gap: 16,
-              }}
-            >
-              {[
-                {
-                  title: "Blazing-Fast Anti-Freeze Servers",
-                  desc: "Our Canadian-optimized servers guarantee low-latency streams with zero buffering — even during peak NHL playoff nights. Your Firestick handles 4K without a hitch.",
-                },
-                {
-                  title: "Full TiviMate & Smarters Compatibility",
-                  desc: "Stream Bleu works perfectly with both TiviMate and IPTV Smarters Pro — the two highest-rated IPTV players on Fire TV. Full 7-day EPG guide included.",
-                },
-                {
-                  title: "True 4K Ultra HD Picture Quality",
-                  desc: "Firestick 4K and Firestick 4K Max users get native 4K HDR streams. SD and HD options are available for older Fire TV Stick models — always crisp, always clear.",
-                },
-              ].map((item) => (
-                <li
-                  key={item.title}
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #2a0a0a",
-                    borderRadius: 14,
-                    padding: "20px 24px",
-                    display: "flex",
-                    gap: 16,
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <span
-                    style={{
-                      background: "#F96E5B",
-                      width: 10,
-                      height: 10,
-                      borderRadius: "50%",
-                      flexShrink: 0,
-                      marginTop: 6,
-                    }}
-                  />
-                  <div>
-                    <strong
-                      style={{ color: "#000000", display: "block", marginBottom: 4 }}
-                    >
-                      {item.title}
-                    </strong>
-                    <span
-                      style={{ color: "#000000", fontSize: "0.92rem", lineHeight: 1.65 }}
-                    >
-                      {item.desc}
-                    </span>
-                  </div>
-                </li>
-              ))}
-            </ul>
+      {/* CTA */}
+      <section style={{ padding: "60px 16px", background: "#1A3D45", textAlign: "center" }}>
+        <div style={{ maxWidth: 560, margin: "0 auto" }}>
+          <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>
+            IPTV sur Amazon Fire Stick à partir de 9€/mois
+          </h2>
+          <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 15, marginBottom: 28, lineHeight: 1.6 }}>
+            Sans engagement · Activation en 30 min · Support 24/7 en français
+          </p>
+          <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/free-trial" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit
+            </Link>
+            <Link href="/pricing" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              Voir les Tarifs →
+            </Link>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Setup Steps */}
-        <section style={{ padding: "60px 16px", background: "transparent" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 8 }}
-            >
-              How to Set Up IPTV on Your Firestick
-            </h2>
-            <p style={{ color: "#000000", marginBottom: 36 }}>
-              Four simple steps — up and streaming in under 5 minutes.
-            </p>
-            <ol
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
-                display: "flex",
-                flexDirection: "column",
-                gap: 18,
-              }}
-            >
-              {steps.map((s) => (
-                <li
-                  key={s.num}
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #1f1f1f",
-                    borderRadius: 14,
-                    padding: "22px 24px",
-                    display: "flex",
-                    gap: 20,
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <span
-                    style={{
-                      background: "#F96E5B",
-                      color: "#000000",
-                      fontWeight: 800,
-                      fontSize: "1rem",
-                      borderRadius: "50%",
-                      width: 40,
-                      height: 40,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {s.num}
-                  </span>
-                  <div>
-                    <strong
-                      style={{
-                        color: "#000000",
-                        fontSize: "1rem",
-                        display: "block",
-                        marginBottom: 6,
-                      }}
-                    >
-                      {s.title}
-                    </strong>
-                    <span
-                      style={{ color: "#000000", fontSize: "0.92rem", lineHeight: 1.65 }}
-                    >
-                      {s.desc}
-                    </span>
-                  </div>
-                </li>
-              ))}
-            </ol>
+      {/* City links */}
+      <section style={{ padding: "50px 16px", background: "#E8F4F5" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: 20, fontWeight: 800, color: "#1A3D45", marginBottom: 24 }}>IPTV par ville en France</h2>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+            {[
+              { label: "IPTV Paris", href: "/iptv-paris" },
+              { label: "IPTV Lyon", href: "/iptv-lyon" },
+              { label: "IPTV Marseille", href: "/iptv-marseille" },
+              { label: "IPTV Toulouse", href: "/iptv-toulouse" },
+              { label: "IPTV Nice", href: "/iptv-nice" },
+              { label: "IPTV Bordeaux", href: "/iptv-bordeaux" },
+            ].map((c) => (
+              <Link key={c.href} href={c.href} style={{ background: "rgba(63,154,174,0.08)", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 10, padding: "9px 18px", textDecoration: "none", color: "#1A3D45", fontSize: 13, fontWeight: 600 }}>
+                🇫🇷 {c.label}
+              </Link>
+            ))}
           </div>
-        </section>
-
-        {/* Canadian Channels */}
-        <section style={{ padding: "60px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
-            >
-              What Canadian Channels Do You Get?
-            </h2>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 16 }}>
-              Stream Bleu delivers every major Canadian channel straight to your Firestick.
-              Never miss a live NHL game on TSN or Sportsnet, catch the latest on CBC News
-              Network, follow hit dramas on CTV and Global, or cheer on your team with RDS and
-              TVA Sports. Our Stream Bleu library includes all regional variants of each network
-              so you always get your local feed.
-            </p>
-            <p style={{ color: "#000000", lineHeight: 1.75, marginBottom: 24 }}>
-              Beyond Canadian content, the full 25,000+ channel lineup spans US, UK, European,
-              Middle Eastern, and South Asian networks — plus a 120,000+ title VOD library of
-              movies and series, all accessible from the Firestick remote.
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-              {[
-                "TSN 1–5",
-                "Sportsnet",
-                "CBC",
-                "CTV",
-                "Global",
-                "City TV",
-                "RDS",
-                "TVA Sports",
-                "ESPN",
-                "NFL Network",
-                "Sky Sports",
-                "beIN Sports",
-              ].map((ch) => (
-                <span
-                  key={ch}
-                  style={{
-                    background: "#1A3D45",
-                    border: "1px solid #3a1010",
-                    color: "#000000",
-                    padding: "6px 16px",
-                    borderRadius: 999,
-                    fontSize: "0.85rem",
-                    fontWeight: 600,
-                  }}
-                >
-                  {ch}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Snapshot */}
-        <section style={{ padding: "60px 16px", background: "transparent" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2
-              style={{ color: "#000000", fontSize: "1.8rem", fontWeight: 700, marginBottom: 24 }}
-            >
-              Firestick IPTV Plans — Simple Canadian Pricing
-            </h2>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-                gap: 16,
-                marginBottom: 28,
-              }}
-            >
-              {[
-                { period: "1 Month", price: "$9" },
-                { period: "3 Months", price: "$29" },
-                { period: "6 Months", price: "$49" },
-                { period: "12 Months", price: "$49" },
-              ].map((plan) => (
-                <div
-                  key={plan.period}
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #2a0a0a",
-                    borderRadius: 14,
-                    padding: "24px 20px",
-                    textAlign: "center",
-                  }}
-                >
-                  <div style={{ color: "#000000", fontSize: "0.9rem", marginBottom: 8 }}>
-                    {plan.period}
-                  </div>
-                  <div
-                    style={{ color: "#F96E5B", fontSize: "1.6rem", fontWeight: 800 }}
-                  >
-                    {plan.price}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <a
-                href="/pricing"
-                style={{
-                  background: "#F96E5B",
-                  color: "#000000",
-                  padding: "14px 36px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                }}
-              >
-                See Full Pricing Details →
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section
-          style={{ background: "#1A3D45", padding: "60px 16px", textAlign: "center" }}
-        >
-          <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <h2
-              style={{ fontSize: "2rem", fontWeight: 800, marginBottom: 12 }}
-            >
-              Ready to Stream IPTV on Your Firestick?
-            </h2>
-            <p
-              style={{ color: "#000000", marginBottom: 32, fontSize: "1.05rem", lineHeight: 1.7 }}
-            >
-              Join thousands of Canadians already enjoying Stream Bleu. Try it free for 24
-              hours — no credit card required. Questions? Email{" "}
-              <a
-                href="mailto:help@streambleu.fr"
-                style={{ color: "#F96E5B", textDecoration: "none" }}
-              >
-                help@streambleu.fr
-              </a>
-              .
-            </p>
-            <div
-              style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 16 }}
-            >
-              <a
-                href="/pricing"
-                style={{
-                  background: "#F96E5B",
-                  color: "#ffffff",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                }}
-              >
-                Get Your Stream Bleu Plan →
-              </a>
-              <a
-                href="/free-trial"
-                style={{
-                  border: "2px solid #F96E5B",
-                  color: "#F96E5B",
-                  padding: "16px 40px",
-                  borderRadius: 12,
-                  fontWeight: 700,
-                  display: "inline-block",
-                  textDecoration: "none",
-                }}
-              >
-                Try 24h Free
-              </a>
-            </div>
-          </div>
-        </section>
-      
-        {/* SEO Internal Links */}
-        <section style={{ padding: "48px 16px" }}>
-          <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Other Canadian cities we serve:</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center", marginBottom: 16 }}>
-              <a href="/iptv-paris" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Toronto</a>
-              <a href="/iptv-lyon" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Vancouver</a>
-              <a href="/iptv-marseille" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Montreal</a>
-              <a href="/iptv-toulouse" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Calgary</a>
-              <a href="/iptv-nice" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Ottawa</a>
-              <a href="/iptv-bordeaux" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>🍁 IPTV Edmonton</a>
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-              <a href="/pricing" style={{ background: "#F96E5B", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>View Plans</a>
-              <a href="/free-trial" style={{ background: "#3F9AAE", color: "#fff", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Free Trial</a>
-              <a href="/channels-list" style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>Channel List</a>
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+    </main>
   );
 }

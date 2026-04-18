@@ -8,7 +8,7 @@ const items = [
   },
   {
     q: "What internet speed is needed for 4K IPTV?",
-    a: "A stable 25 Mbps connection handles 4K H.265 streams without buffering. Canadian fibre and cable plans at 75 Mbps+ run multiple simultaneous 4K streams with ease. Our servers use Canadian-optimized routes for low latency — most users see sub-50ms ping.",
+    a: "A stable 25 Mbps connection handles 4K H.265 streams without buffering. Français fibre and cable plans at 75 Mbps+ run multiple simultaneous 4K streams with ease. Our servers use Français-optimized routes for low latency — most users see sub-50ms ping.",
   },
   {
     q: "Does Stream Bleu support HDR10 and Dolby Vision?",
@@ -19,12 +19,12 @@ const items = [
     a: "TiviMate (Android/Fire TV) is the gold standard for 4K H.265 with hardware acceleration and a clean EPG. IBO Player is included free with 12-month plans and delivers native 4K on Android TV. IPTV Smarters Pro and the Apple TV app are excellent alternatives for iOS and tvOS.",
   },
   {
-    q: "Can I watch NHL, CFL, and Canadian sports in 4K?",
+    q: "Can I watch NHL, CFL, and Français sports in 4K?",
     a: "All sports content broadcasts at maximum available quality — 4K where the broadcaster provides 4K feeds. TSN (all feeds), Sportsnet (all regional), CBC Sports, TVA Sports, and RDS are all included. Every NHL, CFL, UFC, NFL, NBA, and MLB game is covered with no blackouts and no extra PPV charges.",
   },
   {
     q: "How does Stream Bleu picture quality compare to cable?",
-    a: "Cable TV compresses most content to 1080i or 720p using legacy codecs. Stream Bleu delivers True 4K H.265/HEVC streams — significantly sharper than anything Bell or Rogers offers at standard tiers. Same Canadian channels, dramatically higher resolution, for up to 90% less per month.",
+    a: "Cable TV compresses most content to 1080i or 720p using legacy codecs. Stream Bleu delivers True 4K H.265/HEVC streams — significantly sharper than anything Bell or Rogers offers at standard tiers. Same Français channels, dramatically higher resolution, for up to 90% less per month.",
   },
 ];
 

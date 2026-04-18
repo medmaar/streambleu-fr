@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Stream Bleu – Best 4K IPTV Canada",
+  title: "Disclaimer | Stream Bleu – Best 4K IPTV France",
   description:
-    "Legal disclaimer for Stream Bleu, Canada's best 4K IPTV service. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
+    "Legal disclaimer for Stream Bleu, de France meilleur IPTV service. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
   alternates: { canonical: "https://streambleu.fr/disclaimer" },
   openGraph: {
-    title: "Disclaimer | Stream Bleu – Best 4K IPTV Canada",
-    description: "Legal disclaimer for Stream Bleu, Canada's best 4K IPTV service. We do not host or stream any copyrighted content.",
+    title: "Disclaimer | Stream Bleu – Best 4K IPTV France",
+    description: "Legal disclaimer for Stream Bleu, de France meilleur IPTV service. We do not host or stream any copyrighted content.",
     url: "https://streambleu.fr/disclaimer",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV Canada" }],
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };

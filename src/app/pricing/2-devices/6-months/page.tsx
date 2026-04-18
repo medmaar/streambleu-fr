@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "2 Connections IPTV france 6 Months — €69 | Stream Bleu" },
   description:
-    "Get 2 simultaneous connections for €69. 25,000+ live channels, 4K quality, NHL, TSN, CTV and more. No contract. Credentials sent within minutes.",
+    "Get 2 simultaneous connections for €69. 25 000+ live channels, 4K quality, Ligue 1, beIN Sports, CTV and more. No contract. Credentials sent within minutes.",
   alternates: { canonical: "https://streambleu.fr/pricing/2-devices/6-months" },
 };
 
@@ -24,7 +24,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Can I watch live Français channels?",
-    a: "Yes — every plan includes TSN, Sportsnet, CBC, CTV, Global, City TV, RDS, TVA and all regional Français channels in HD and 4K. Every NHL, NFL, NBA and CFL game is covered.",
+    a: "Yes — every plan includes beIN Sports, RMC Sport, Canal+, CTV, Global, City TV, RDS, TVA and all regional Français channels in HD and 4K. Every Ligue 1, NFL, NBA and CFL game is covered.",
   },
   {
     q: "What happens when my subscription expires?",
@@ -32,7 +32,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "How do I get support if something stops working?",
-    a: "Our Français support team is available 24/7 via WhatsApp (+1 782-802-6280) and email in English and French. Most issues are resolved within minutes.",
+    a: "Our Français support team is disponible 24h/24 via WhatsApp (+1 782-802-6280) and email en français. Most issues are resolved within minutes.",
   },
 ];
 
@@ -50,7 +50,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu 6 Months IPTV Plan — 2 Devices",
-  description: "6 Months of IPTV access for 2 simultaneous connections. 25,000+ live channels in france including NHL, TSN, CTV, Sportsnet and 120,000+ VOD titles in 4K.",
+  description: "6 Months of IPTV access for 2 simultaneous connections. 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   offers: {
     "@type": "Offer",
