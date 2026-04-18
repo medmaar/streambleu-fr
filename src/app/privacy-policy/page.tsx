@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Politique de confidentialité</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#6367FF]">Politique de confidentialité</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         <div className="space-y-10 text-black leading-relaxed">
@@ -82,7 +82,7 @@ export default function PrivacyPolicyPage() {
               <li>Withdraw consent for the use of your personal information</li>
               <li>Request deletion of your personal information</li>
             </ul>
-            <p className="mt-3">To exercise these rights, contact us at <a href="mailto:help@streambleu.fr" className="text-[#F96E5B] hover:underline">help@streambleu.fr</a>.</p>
+            <p className="mt-3">To exercise these rights, contact us at <a href="mailto:help@streambleu.fr" className="text-[#6367FF] hover:underline">help@streambleu.fr</a>.</p>
           </section>
 
           <section>
@@ -94,8 +94,8 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-2xl font-bold text-black mb-3">9. Nous Contacter</h2>
             <p>If you have questions about this Politique de confidentialité, please contact us:</p>
             <div className="mt-4 bg-transparent rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#F96E5B] hover:underline">help@streambleu.fr</a></p>
-              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">+1 (782) 802-6280</a></p>
+              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#6367FF] hover:underline">help@streambleu.fr</a></p>
+              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#6367FF] hover:underline">+1 (782) 802-6280</a></p>
             </div>
           </section>
         </div>

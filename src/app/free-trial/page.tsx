@@ -58,22 +58,22 @@ export default function FreeTrialPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
-        <section style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", padding: "80px 16px 60px" }}>
+      <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+        <section style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <span style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", color: "#F96E5B", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            <span style={{ background: "rgba(99,103,255,0.12)", border: "1px solid rgba(99,103,255,0.3)", color: "#6367FF", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
               Sans Carte Bancaire · Activation Instantanée
             </span>
-            <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#1A3D45" }}>
+            <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#6367FF" }}>
               Essai Gratuit IPTV<br />
-              <span style={{ color: "#F96E5B" }}>France 24 Heures</span>
+              <span style={{ color: "#6367FF" }}>France 24 Heures</span>
             </h1>
-            <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#1A3D45", marginBottom: 36, lineHeight: 1.7 }}>
+            <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#6367FF", marginBottom: 36, lineHeight: 1.7 }}>
               Testez Stream Bleu gratuitement pendant 24 heures — sans carte bancaire, sans engagement. Accès complet à 25 000+ chaînes, beIN Sports, Canal+, TF1, et 120 000+ films en 4K.
             </p>
             <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 12 }}>
               {["✓ Aucune carte bancaire", "✓ Activation en 5 min", "✓ 4K Ultra HD", "✓ Toutes les chaînes incluses"].map(f => (
-                <span key={f} style={{ fontSize: 14, fontWeight: 600, color: "#1A3D45" }}>{f}</span>
+                <span key={f} style={{ fontSize: 14, fontWeight: 600, color: "#6367FF" }}>{f}</span>
               ))}
             </div>
           </div>
@@ -81,8 +81,8 @@ export default function FreeTrialPage() {
 
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <div style={{ background: "#fff", borderRadius: 20, padding: "40px 36px", boxShadow: "0 8px 40px rgba(26,61,69,0.1)", border: "1px solid rgba(63,154,174,0.15)" }}>
-              <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 8, textAlign: "center" }}>
+            <div style={{ background: "#fff", borderRadius: 20, padding: "40px 36px", boxShadow: "0 8px 40px rgba(99,103,255,0.1)", border: "1px solid rgba(132,148,255,0.15)" }}>
+              <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 8, textAlign: "center" }}>
                 Demander votre essai gratuit
               </h2>
               <p style={{ textAlign: "center", color: "#666", fontSize: 14, marginBottom: 28 }}>
@@ -95,7 +95,7 @@ export default function FreeTrialPage() {
 
         <section style={{ padding: "60px 16px", background: "#fff" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: 26, fontWeight: 800, color: "#1A3D45", marginBottom: 36 }}>
+            <h2 style={{ textAlign: "center", fontSize: 26, fontWeight: 800, color: "#6367FF", marginBottom: 36 }}>
               Questions fréquentes sur l&apos;essai gratuit
             </h2>
             <PlanFAQ items={faqItems} />

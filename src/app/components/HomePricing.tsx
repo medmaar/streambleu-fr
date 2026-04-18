@@ -55,21 +55,21 @@ export default function HomePricing() {
   const connLabel = `${selected} Connexion${selected > 1 ? "s" : ""}`;
 
   return (
-    <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
+    <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
-        <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
+        <p style={{ textAlign: "center", color: "#6367FF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
           Tarifs Transparents
         </p>
-        <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>
+        <h2 style={{ textAlign: "center", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
           Abonnements Stream Bleu
         </h2>
         <div style={{ textAlign: "center", marginBottom: 20 }}>
-          <span style={{ display: "inline-block", background: "#F96E5B", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
+          <span style={{ display: "inline-block", background: "#6367FF", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
             Offre Spéciale -50% Aujourd'hui !
           </span>
         </div>
-        <p style={{ textAlign: "center", color: "#000000", marginBottom: 36, fontSize: 15 }}>
+        <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 36, fontSize: 15 }}>
           Tous les forfaits incluent 25 000+ chaînes, streaming 4K H.265/HEVC avec HDR10, et support 24/7 en français. Paiement par PayPal ou Carte bancaire.
         </p>
 
@@ -99,9 +99,9 @@ export default function HomePricing() {
                   flexShrink: 0,
                   padding: "9px 18px",
                   borderRadius: 999,
-                  border: active ? "none" : "1.5px solid #1A3D45",
-                  background: active ? "#1A3D45" : "transparent",
-                  color: active ? "#E8F4F5" : "#1A3D45",
+                  border: active ? "none" : "1.5px solid #6367FF",
+                  background: active ? "#6367FF" : "transparent",
+                  color: active ? "#FFDBFD" : "#6367FF",
                   fontWeight: 700,
                   fontSize: 13,
                   cursor: "pointer",
@@ -122,24 +122,24 @@ export default function HomePricing() {
             const isBest = plan.badge === "Meilleur Prix";
             const isPopulaire = plan.badge === "Populaire";
             // Each card gets its own distinct color
-            const cardBg = isBest ? "#F96E5B" : isPopulaire ? "#3F9AAE" : i === 0 ? "#ffffff" : "#2d6a78";
+            const cardBg = isBest ? "#6367FF" : isPopulaire ? "#8494FF" : i === 0 ? "#ffffff" : "#8494FF";
             const isLight = i === 0; // 1 Mois card is white/light
             return (
             <div
               key={plan.name}
               style={{
                 background: cardBg,
-                border: isLight ? "2px solid rgba(63,154,174,0.3)" : "none",
+                border: isLight ? "2px solid rgba(132,148,255,0.3)" : "none",
                 borderRadius: 20,
                 padding: "32px 24px",
                 position: "relative",
                 display: "flex",
                 flexDirection: "column",
                 boxShadow: isBest
-                  ? "0 12px 40px rgba(249,110,91,0.45)"
+                  ? "0 12px 40px rgba(99,103,255,0.45)"
                   : isPopulaire
-                  ? "0 12px 40px rgba(63,154,174,0.45)"
-                  : "0 8px 24px rgba(26,61,69,0.3)",
+                  ? "0 12px 40px rgba(132,148,255,0.45)"
+                  : "0 8px 24px rgba(99,103,255,0.3)",
               }}
             >
               {plan.badge && (
@@ -149,7 +149,7 @@ export default function HomePricing() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: isBest ? "#1A3D45" : "#F96E5B",
+                    background: isBest ? "#6367FF" : "#6367FF",
                     color: "#fff",
                     fontSize: 11,
                     fontWeight: 800,
@@ -161,10 +161,10 @@ export default function HomePricing() {
                   {plan.badge}
                 </span>
               )}
-              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: isLight ? "#1A3D45" : "#fff" }}>{plan.name}</div>
+              <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: isLight ? "#6367FF" : "#fff" }}>{plan.name}</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
-                <span style={{ fontSize: 40, fontWeight: 900, color: isLight ? "#F96E5B" : "#E8F4F5" }}>€{prices[i]}</span>
-                <span style={{ fontSize: 12, color: isLight ? "#3F9AAE" : "rgba(255,255,255,0.7)" }}>/ {connLabel.replace('Connection', 'Connexion')}</span>
+                <span style={{ fontSize: 40, fontWeight: 900, color: isLight ? "#6367FF" : "#FFDBFD" }}>€{prices[i]}</span>
+                <span style={{ fontSize: 12, color: isLight ? "#8494FF" : "rgba(255,255,255,0.7)" }}>/ {connLabel.replace('Connection', 'Connexion')}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                 {plan.slug === "12-months" && (
@@ -187,8 +187,8 @@ export default function HomePricing() {
                   </li>
                 )}
                 {planFeatures.map((f) => (
-                  <li key={f} style={{ fontSize: 13, color: isLight ? "#1A3D45" : "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 6 }}>
-                    <span style={{ color: isLight ? "#3F9AAE" : "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                  <li key={f} style={{ fontSize: 13, color: isLight ? "#6367FF" : "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 6 }}>
+                    <span style={{ color: isLight ? "#8494FF" : "#FFDBFD", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                   </li>
                 ))}
               </ul>
@@ -196,7 +196,7 @@ export default function HomePricing() {
                 href={getHref(selected, plan.slug)}
                 style={{
                   display: "block",
-                  background: isLight ? "#1A3D45" : "#E8F4F5",
+                  background: isLight ? "#6367FF" : "#FFDBFD",
                   color: isLight ? "#fff" : cardBg,
                   fontWeight: 800,
                   fontSize: 15,
@@ -214,7 +214,7 @@ export default function HomePricing() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
-          <Link href="/pricing" style={{ color: "#F96E5B", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+          <Link href="/pricing" style={{ color: "#6367FF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             Voir tous les tarifs →
           </Link>
         </div>

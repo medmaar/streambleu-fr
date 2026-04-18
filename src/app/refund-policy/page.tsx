@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 
 export default function RefundPolicyPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Politique de remboursement</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#6367FF]">Politique de remboursement</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         {/* Summary box */}
-        <div style={{ background: "#1A3D45", border: "1px solid rgba(121,201,197,0.3)", borderRadius: 16, padding: "24px", marginBottom: 40 }}>
+        <div style={{ background: "#6367FF", border: "1px solid rgba(201,190,255,0.3)", borderRadius: 16, padding: "24px", marginBottom: 40 }}>
           <h2 style={{ fontSize: 18, fontWeight: 700, color: "#ffffff", marginBottom: 8 }}>Summary</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 14, lineHeight: 1.7 }}>
             Due to the instant digital nature of our service, we do not offer refunds once a subscription
@@ -54,7 +54,7 @@ export default function RefundPolicyPage() {
               <li>Carries zero obligation to purchase</li>
             </ul>
             <p className="mt-3">
-              <a href="/free-trial" className="text-[#F96E5B] hover:underline font-semibold">Get your essai gratuit here →</a>
+              <a href="/free-trial" className="text-[#6367FF] hover:underline font-semibold">Get your essai gratuit here →</a>
             </p>
           </section>
 
@@ -80,15 +80,15 @@ export default function RefundPolicyPage() {
             <div className="bg-transparent rounded-xl p-6 border border-gray-800 space-y-3">
               <p>
                 <span className="text-black text-sm">WhatsApp: </span>
-                <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">+1 (782) 802-6280</a>
+                <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#6367FF] hover:underline">+1 (782) 802-6280</a>
               </p>
               <p>
                 <span className="text-black text-sm">Telegram: </span>
-                <a href="https://t.me/IPTVFranceSupport" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">@IPTVFranceSupport</a>
+                <a href="https://t.me/IPTVFranceSupport" target="_blank" rel="noopener noreferrer" className="text-[#6367FF] hover:underline">@IPTVFranceSupport</a>
               </p>
               <p>
                 <span className="text-black text-sm">Email: </span>
-                <a href="mailto:help@streambleu.fr" className="text-[#F96E5B] hover:underline">help@streambleu.fr</a>
+                <a href="mailto:help@streambleu.fr" className="text-[#6367FF] hover:underline">help@streambleu.fr</a>
               </p>
             </div>
           </section>

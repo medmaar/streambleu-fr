@@ -1,15 +1,235 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Channels France — 25 000+ Chaînes en direct | Stream Bleu" },
+  title: { absolute: "Liste Chaînes IPTV France 2026 — 25 000+ Chaînes | Stream Bleu" },
   description:
-    "Full Stream Bleu IPTV channel list pour la France 2026. Browse 25 000+ live channels including beIN Sports, RMC Sport, Canal+, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
+    "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 25 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2, et des milliers de chaînes internationales.",
   keywords:
-    "IPTV channels France, Stream Bleu channel list, Français IPTV channels, TSN IPTV, Sportsnet IPTV France",
+    "liste chaînes iptv france, stream bleu chaînes, chaînes iptv france 2026, bein sports iptv, canal plus iptv",
   alternates: { canonical: "https://streambleu.fr/channels-list" },
 };
 
-const categories = [  {
+const categories = [{
+    name: "FRANCE",
+    count: "38+",
+    channels: [
+      "FR - TF1 FHD",
+      "FR - FRANCE 2 FHD",
+      "FR - FRANCE 3 FHD",
+      "FR - FRANCE 3 NOA FHD",
+      "FR - FRANCE 4 FHD",
+      "FR - FRANCE 5 FHD",
+      "FR - FRANCE Ô FHD",
+      "FR - ARTE FHD",
+      "FR - M6  FHD",
+      "FR - 6TER FHD",
+      "FR - C8 FHD",
+      "FR - W9 FHD",
+      "FR - RTS UN FHD",
+      "FR - RTS DEUX FHD",
+      "FR - AB1 FHD",
+      "FR - AB3 FHD",
+      "FR - TV BREIZH FHD",
+      "FR - TV5 MONDE FHD",
+      "FR - 13EME RUE FHD",
+      "FR - TFX FHD",
+      "FR - TF1 SERIES-FILMS FHD",
+      "FR - LFM TV FHD",
+      "FR - TVM3 FHD",
+      "FR - BET FHD",
+      "FR - C STAR FHD",
+      "FR - CANAL 31 FHD",
+      "FR - CLIQUE TV FHD",
+      "FR - COMEDIE  FHD",
+      "FR - GAME ONE  1 FHD",
+      "FR - GAME ONE FHD",
+      "FR - IDF 1 FHD",
+      "FR - J ONE FHD",
+      "FR - MY CUISINE FHD",
+      "FR - NOVELAS TV FHD",
+      "FR - PARIS PREMIERE FHD",
+      "FR - RTL 9 FHD",
+      "FR - TEVA FHD",
+      "FR - CHERIE 25 FHD",
+    ],
+  },{
+    name: "BELGIQUE",
+    count: "14+",
+    channels: [
+      "BE - CORONA VIRUS INFO",
+      "BE - EEN HD",
+      "BE - Q2 HD",
+      "BE - VTM HD",
+      "BE - VTM KIDS",
+      "BE - VIER HD",
+      "BE - VIJF TV",
+      "BE - ZES",
+      "BE - CAZ",
+      "BE - VITAYA",
+      "BE - VTM KIDS JR",
+      "BE - KETNEET",
+      "BE - JIM JAM",
+      "BE - ECLIPS TV",
+    ],
+  },{
+    name: "SUISSE",
+    count: "27+",
+    channels: [
+      "CH -CORONA VIRUS INFO",
+      "CH - RSI LA 1 HD",
+      "CH - RSI LA 2 HD",
+      "CH - SRF INFO",
+      "CH - SRF ZWEI HD",
+      "CH - SRF 1 HD",
+      "CH - RTS UN HD",
+      "CH - RTS DEUX HD",
+      "CH - PLUS 8 HD",
+      "CH - 3  HD",
+      "CH - 4  HD",
+      "CH - 5  HD",
+      "CH - TV 24 HD",
+      "CH - TV 25 HD",
+      "CH - TELECLUB CINEMA HD",
+      "CH - TELECLUB SPORT 1 HD",
+      "CH - TELECLUB SPORT 2 HD",
+      "CH - MY SPORTS HD",
+      "CH - MY SPORTS 1 HD/SKY 1",
+      "CH - MY SPORTS 2 HD/SKY 2",
+      "CH - MY SPORTS 3 HD/SKY 3",
+      "CH - MY SPORTS 4 HD/SKY 4",
+      "CH - MY SPORTS 5 HD/SKY 5",
+      "CH - MY SPORTS 6 HD/SKY 6",
+      "CH - MY SPORTS 7 HD/SKY 7",
+      "CH - MY SPORTS 8 HD/SKY 8",
+      "CH - MY SPORTS 9 HD/SKY 9",
+    ],
+  },{
+    name: "MAROC",
+    count: "48+",
+    channels: [
+      "MA - AL OULA HD",
+      "MA - AL OULA HD +6H",
+      "MA - ARRYADIA HD LIVE",
+      "MA - AL OULA INTER HD",
+      "MA - 2M MAROC",
+      "MA - 2M MAROC +6H",
+      "MA - ARRIADIA",
+      "MA - ARRABIA HD",
+      "MA - ARRABIA HD +1",
+      "MA - ARRABIA HD +2",
+      "MA - ARRABIA HD +4",
+      "MA - ARRABIA HD +6",
+      "MA - AL MAGHRIBIA HD",
+      "MA - ASSADISSA HD",
+      "MA - ASSABIA HD",
+      "MA - TAMAZIGHT HD",
+      "MA - MEDI 1 TV HD",
+      "MA - MEDI 1 TV ARAB HD",
+      "MA - MEDI1TV AFRIQUE HD",
+      "MA - TELE MAROC",
+      "MA - TELE MAROC HD",
+      "MA - CHADA FM HD",
+      "MA - AL ONS TV",
+      "MA - M24",
+      "MA - CANAL ATLAS",
+      "MA - AFlam On Demand",
+      "MA - TNT 2M MAROC",
+      "MA - TNT AL MAGHRIBIA",
+      "MA - TNT AL OULA",
+      "MA - TNT AL OULA HD",
+      "MA - TNT AL OULA INTER",
+      "MA - TNT ARRABIA",
+      "MA - TNT ARRIADIA HD",
+      "MA - TNT ASSABIA",
+      "MA - TNT ASSADISSA",
+      "MA - TNT ASSADISSA HD",
+      "MA - TNT MEDI 1 TV",
+      "MA - TNT TAMAZIGHT",
+      "MA - Hit Radio",
+      "MA - Radio 2M",
+      "MA - Radio Mars",
+      "MA - Med Radio",
+      "MA - Medi1 FM",
+      "MA - Radio Aswat",
+      "MA - Chada FM",
+      "MA - Atlantic Radio",
+      "MA - Cap Radio",
+      "MA - MUSIC HITS",
+    ],
+  },{
+    name: "ALGÉRIE",
+    count: "19+",
+    channels: [
+      "ENTV 4K",
+      "CANAL ALGÉRIE 4K",
+      "A3 4K",
+      "TV4 (TAMAZIGHT TV) 4K",
+      "TV5 (CORAN TV) 4K",
+      "TV6 4K",
+      "TV7 (EL MAARIFA) 4K",
+      "TV8 (DZAÏR TV) 4K",
+      "ECHOUROUK TV 4K",
+      "ENNAHAR TV 4K",
+      "EL BILAD TV 4K",
+      "NUMIDIA NEWS TV 4K",
+      "BEUR TV 4K",
+      "HOGGAR TV 4K",
+      "BAHIA TV 4K",
+      "DZAIR 24 4K",
+      "SAMIRA TV 4K",
+      "EL DJAZAIRIA ONE 4K",
+      "LINA TV 4K",
+    ],
+  },{
+    name: "TUNISIE",
+    count: "15+",
+    channels: [
+      "TN - TUNISIA NATIONAL 1",
+      "TN - TUNISIA NATIONAL 2",
+      "TN - HANNIBAL",
+      "TN - NESSMA TV",
+      "TN - AL HIWAR ETTOUNSI",
+      "TN - AL INSEN",
+      "TN - M TUNISIA",
+      "TN - TUNISNA",
+      "TN - ZAYTOONA TV",
+      "TN - ATTESSIA TV",
+      "TN - ZITOUNA HEDAYA",
+      "TN - AL JANOUBIA",
+      "TN - CARTHAGE+",
+      "TN - TUNESIE TELEVISION",
+      "TN - TELVZA TV",
+    ],
+  },{
+    name: "BEIN SPORTS 4K",
+    count: "24+",
+    channels: [
+      "BEIN SPORTS 1",
+      "BEIN SPORTS 2",
+      "BEIN SPORTS 3",
+      "BEIN SPORTS 4",
+      "BEIN SPORTS 5",
+      "BEIN SPORTS 6",
+      "BEIN SPORTS 7",
+      "BEIN SPORTS 8",
+      "BEIN SPORTS 9",
+      "BEIN SPORTS 10",
+      "BEIN SPORTS 11",
+      "BEIN SPORTS 12",
+      "BEIN SPORTS 13",
+      "BEIN SPORTS 14",
+      "BEIN SPORTS 15",
+      "BEIN SPORTS 16",
+      "BEIN SPORTS NBA",
+      "AL KASS 1 HD",
+      "AL KASS 2 HD",
+      "AL KASS 4 HD",
+      "ABUDHABI SPORTS 1 HD",
+      "ABUDHABI SPORTS 3 HD",
+      "ABUDHABI SPORTS 4 HD",
+      "YAS TV",
+    ],
+  },{
     name: "CANADA",
     count: "434+",
     channels: [
@@ -448,10 +668,8 @@ const categories = [  {
       "SUPER SPORTS CH 484 4K",
       "CTV Calgary 4K",
     ],
-  },
-
-  {
-    name: "USA",
+  },{
+    name: "ÉTATS-UNIS",
     count: "1213+",
     channels: [
       "A&E 4K",
@@ -1668,9 +1886,8 @@ const categories = [  {
       "US - ESPN FOOTBALL | 4K",
       "US - ESPN+ | 4K",
     ],
-  },
-  {
-    name: "CARIBBEAN",
+  },{
+    name: "CARAÏBES",
     count: "160+",
     channels: [
       "CAPEVERDE - TCV CABO",
@@ -1834,9 +2051,8 @@ const categories = [  {
       "CAR - ZNS (BAHAMAS) | HD",
       "CAR - TELEMICRO INTERNACIONAL | UHD",
     ],
-  },
-  {
-    name: "AM | BRAZIL",
+  },{
+    name: "BRÉSIL",
     count: "26+",
     channels: [
       "BR - GLOBO BRASILA HD",
@@ -1866,9 +2082,8 @@ const categories = [  {
       "BR - CURTA! HD",
       "BR - PRIME BOX BRASIL HD",
     ],
-  },
-  {
-    name: "ARGENTINA",
+  },{
+    name: "ARGENTINE",
     count: "39+",
     channels: [
       "ARG - FOX SPORTS PREMIUM",
@@ -1911,9 +2126,8 @@ const categories = [  {
       "ARG - ARGENTINISIMA",
       "ARG - ENCUENTRO",
     ],
-  },
-  {
-    name: "COLOMBIA",
+  },{
+    name: "COLOMBIE",
     count: "32+",
     channels: [
       "CO - CABLENOTICIAS",
@@ -1949,9 +2163,8 @@ const categories = [  {
       "CO - UAO Play",
       "CO - UAO Play +",
     ],
-  },
-  {
-    name: "ECUADOR",
+  },{
+    name: "ÉQUATEUR",
     count: "6+",
     channels: [
       "EC - CANAL UNO",
@@ -1961,8 +2174,7 @@ const categories = [  {
       "EC - TC ECUADOR",
       "EC - TELE AMAZONAS",
     ],
-  },
-  {
+  },{
     name: "URUGUAY",
     count: "14+",
     channels: [
@@ -1981,9 +2193,8 @@ const categories = [  {
       "UY - CANAL 10",
       "UY - TV CIUDAD",
     ],
-  },
-  {
-    name: "PERU",
+  },{
+    name: "PÉROU",
     count: "7+",
     channels: [
       "PE - AMERICA TELEVISION",
@@ -1994,8 +2205,7 @@ const categories = [  {
       "PE - PANAMERICANA",
       "PE - TV PERU",
     ],
-  },
-  {
+  },{
     name: "SURINAME",
     count: "1213+",
     channels: [
@@ -3213,8 +3423,7 @@ const categories = [  {
       "US - ESPN FOOTBALL | 4K",
       "US - ESPN+ | 4K",
     ],
-  },
-  {
+  },{
     name: "LATINO",
     count: "120+",
     channels: [
@@ -3339,9 +3548,8 @@ const categories = [  {
       "LATIN - UNIVISION TELENOVELAS",
       "LATIN - HBO ESTE",
     ],
-  },
-  {
-    name: "MEXICO",
+  },{
+    name: "MEXIQUE",
     count: "199+",
     channels: [
       "MX - A PLUS | SD",
@@ -3544,9 +3752,8 @@ const categories = [  {
       "MX - WARNER | HD",
       "MX - WOBI | HD",
     ],
-  },
-  {
-    name: "CHILE",
+  },{
+    name: "CHILI",
     count: "10+",
     channels: [
       "CL - 13 CABLE",
@@ -3560,8 +3767,7 @@ const categories = [  {
       "CL - FOX SPORTS",
       "CL - CDF",
     ],
-  },
-  {
+  },{
     name: "CUBA",
     count: "4+",
     channels: [
@@ -3570,17 +3776,15 @@ const categories = [  {
       "CU - TELE REBELDE",
       "CU - TV MARTI",
     ],
-  },
-  {
+  },{
     name: "PANAMA",
     count: "2+",
     channels: [
       "PN - ECO",
       "PN - NET TV",
     ],
-  },
-  {
-    name: "DOMINICAN",
+  },{
+    name: "DOMINICAINE",
     count: "16+",
     channels: [
       "RDOM - COLORVISION",
@@ -3600,8 +3804,7 @@ const categories = [  {
       "RDOM - CANAL DEL SOL",
       "RDOM - ACENTO TV",
     ],
-  },
-  {
+  },{
     name: "NICARAGUA",
     count: "16+",
     channels: [
@@ -3622,9 +3825,8 @@ const categories = [  {
       "CNN NICARAGUA 4K",
       "NACIONAL TV NICARAGUA 4K",
     ],
-  },
-  {
-    name: "GUYANA",
+  },{
+    name: "GUYANE",
     count: "120+",
     channels: [
       "LATIN - TELEMUNDO",
@@ -3748,53 +3950,8 @@ const categories = [  {
       "LATIN - UNIVISION TELENOVELAS",
       "LATIN - HBO ESTE",
     ],
-  },
-  {
-    name: "FRANCE",
-    count: "38+",
-    channels: [
-      "FR - TF1 FHD",
-      "FR - FRANCE 2 FHD",
-      "FR - FRANCE 3 FHD",
-      "FR - FRANCE 3 NOA FHD",
-      "FR - FRANCE 4 FHD",
-      "FR - FRANCE 5 FHD",
-      "FR - FRANCE Ô FHD",
-      "FR - ARTE FHD",
-      "FR - M6  FHD",
-      "FR - 6TER FHD",
-      "FR - C8 FHD",
-      "FR - W9 FHD",
-      "FR - RTS UN FHD",
-      "FR - RTS DEUX FHD",
-      "FR - AB1 FHD",
-      "FR - AB3 FHD",
-      "FR - TV BREIZH FHD",
-      "FR - TV5 MONDE FHD",
-      "FR - 13EME RUE FHD",
-      "FR - TFX FHD",
-      "FR - TF1 SERIES-FILMS FHD",
-      "FR - LFM TV FHD",
-      "FR - TVM3 FHD",
-      "FR - BET FHD",
-      "FR - C STAR FHD",
-      "FR - CANAL 31 FHD",
-      "FR - CLIQUE TV FHD",
-      "FR - COMEDIE  FHD",
-      "FR - GAME ONE  1 FHD",
-      "FR - GAME ONE FHD",
-      "FR - IDF 1 FHD",
-      "FR - J ONE FHD",
-      "FR - MY CUISINE FHD",
-      "FR - NOVELAS TV FHD",
-      "FR - PARIS PREMIERE FHD",
-      "FR - RTL 9 FHD",
-      "FR - TEVA FHD",
-      "FR - CHERIE 25 FHD",
-    ],
-  },
-  {
-    name: "GERMANY",
+  },{
+    name: "ALLEMAGNE",
     count: "25+",
     channels: [
       "DE - DAS ERSTE HD (ARD)",
@@ -3823,9 +3980,8 @@ const categories = [  {
       "DE - DMAX HD",
       "DE - ZDF INFO HD",
     ],
-  },
-  {
-    name: "SPAIN",
+  },{
+    name: "ESPAGNE",
     count: "19+",
     channels: [
       "SP - CORONA VIRUS INFO",
@@ -3848,9 +4004,8 @@ const categories = [  {
       "SP - CLAN TVE",
       "SP - IBERALIA",
     ],
-  },
-  {
-    name: "ITALY",
+  },{
+    name: "ITALIE",
     count: "60+",
     channels: [
       "IT - RAI 1 UHD",
@@ -3914,9 +4069,8 @@ const categories = [  {
       "IT - LA EFFE",
       "IT - SKY MTV UHD",
     ],
-  },
-  {
-    name: "NETHERLANDS",
+  },{
+    name: "PAYS-BAS",
     count: "88+",
     channels: [
       "NL - NPO 1 HD",
@@ -4008,9 +4162,8 @@ const categories = [  {
       "NL - 100% NL",
       "NL - BVN TV",
     ],
-  },
-  {
-    name: "GREECE",
+  },{
+    name: "GRÈCE",
     count: "18+",
     channels: [
       "GR - ERT 1",
@@ -4032,9 +4185,8 @@ const categories = [  {
       "GR - SKAI HD",
       "GR - MEGA CHANNEL",
     ],
-  },
-  {
-    name: "ARMENIA",
+  },{
+    name: "ARMÉNIE",
     count: "42+",
     channels: [
       "ARM - ARMENIA TV",
@@ -4080,42 +4232,8 @@ const categories = [  {
       "ARM - US ARMENIA TV",
       "ARM - YERKIR MEDIA",
     ],
-  },
-  {
-    name: "SWITZERLAND",
-    count: "27+",
-    channels: [
-      "CH -CORONA VIRUS INFO",
-      "CH - RSI LA 1 HD",
-      "CH - RSI LA 2 HD",
-      "CH - SRF INFO",
-      "CH - SRF ZWEI HD",
-      "CH - SRF 1 HD",
-      "CH - RTS UN HD",
-      "CH - RTS DEUX HD",
-      "CH - PLUS 8 HD",
-      "CH - 3  HD",
-      "CH - 4  HD",
-      "CH - 5  HD",
-      "CH - TV 24 HD",
-      "CH - TV 25 HD",
-      "CH - TELECLUB CINEMA HD",
-      "CH - TELECLUB SPORT 1 HD",
-      "CH - TELECLUB SPORT 2 HD",
-      "CH - MY SPORTS HD",
-      "CH - MY SPORTS 1 HD/SKY 1",
-      "CH - MY SPORTS 2 HD/SKY 2",
-      "CH - MY SPORTS 3 HD/SKY 3",
-      "CH - MY SPORTS 4 HD/SKY 4",
-      "CH - MY SPORTS 5 HD/SKY 5",
-      "CH - MY SPORTS 6 HD/SKY 6",
-      "CH - MY SPORTS 7 HD/SKY 7",
-      "CH - MY SPORTS 8 HD/SKY 8",
-      "CH - MY SPORTS 9 HD/SKY 9",
-    ],
-  },
-  {
-    name: "BULGARIA",
+  },{
+    name: "BULGARIE",
     count: "81+",
     channels: [
       "BU - BNT 1",
@@ -4200,9 +4318,8 @@ const categories = [  {
       "BU - RING BG",
       "BU - TRAVEL CHANNEL",
     ],
-  },
-  {
-    name: "SWEDEN",
+  },{
+    name: "SUÈDE",
     count: "18+",
     channels: [
       "SW - SVT 1 HD",
@@ -4224,9 +4341,8 @@ const categories = [  {
       "SW - MAX HD",
       "SW - SVT KUNSKAPSKANALEN HD",
     ],
-  },
-  {
-    name: "DENMARK",
+  },{
+    name: "DANEMARK",
     count: "21+",
     channels: [
       "DK - DR1",
@@ -4251,9 +4367,8 @@ const categories = [  {
       "DK - DR RAMASJANG",
       "DK - XEE",
     ],
-  },
-  {
-    name: "EXYU",
+  },{
+    name: "EX-YOUGOSLAVIE",
     count: "39+",
     channels: [
       "|EXYU| BHT HD",
@@ -4296,9 +4411,8 @@ const categories = [  {
       "|EXYU| B1 GRADACAC",
       "|EXYU| ALFA TV SARAJEVO",
     ],
-  },
-  {
-    name: "MAKEDONIA",
+  },{
+    name: "MACÉDOINE",
     count: "33+",
     channels: [
       "|MK| MRT 1",
@@ -4335,9 +4449,8 @@ const categories = [  {
       "|MK| VIASAT HISTORY",
       "|MK| VIASAT NATURE",
     ],
-  },
-  {
-    name: "HUNGARIAN",
+  },{
+    name: "HONGRIE",
     count: "14+",
     channels: [
       "HU - M PLUS",
@@ -4355,8 +4468,7 @@ const categories = [  {
       "HU - VIASAT 3",
       "HU - VIASAT 6",
     ],
-  },
-  {
+  },{
     name: "UKRAINE",
     count: "51+",
     channels: [
@@ -4412,16 +4524,14 @@ const categories = [  {
       "UKR - INTER PLUS",
       "UKR - AVERS",
     ],
-  },
-  {
-    name: "ANDORRA",
+  },{
+    name: "ANDORRE",
     count: "1+",
     channels: [
       "ATV ANDORRA 4K",
     ],
-  },
-  {
-    name: "BOSNIA AND HERZEGOVINA",
+  },{
+    name: "BOSNIE-HERZÉGOVINE",
     count: "8+",
     channels: [
       "BHRT 4K",
@@ -4433,9 +4543,8 @@ const categories = [  {
       "FACE TV 4K",
       "ALFA TV 4K",
     ],
-  },
-  {
-    name: "CROATIA",
+  },{
+    name: "CROATIE",
     count: "6+",
     channels: [
       "HRT 1 4K",
@@ -4445,9 +4554,8 @@ const categories = [  {
       "RTL 2 4K",
       "DOMA TV 4K",
     ],
-  },
-  {
-    name: "CYPRUS",
+  },{
+    name: "CHYPRE",
     count: "6+",
     channels: [
       "RIK 1 4K",
@@ -4457,9 +4565,8 @@ const categories = [  {
       "OMEGA TV 4K",
       "ALPHA CYPRUS 4K",
     ],
-  },
-  {
-    name: "CZECH REPUBLIC",
+  },{
+    name: "RÉPUBLIQUE TCHÈQUE",
     count: "6+",
     channels: [
       "ČT1 4K",
@@ -4469,9 +4576,8 @@ const categories = [  {
       "PRIMA COOL 4K",
       "BARRANDOV TV 4K",
     ],
-  },
-  {
-    name: "ESTONIA",
+  },{
+    name: "ESTONIE",
     count: "5+",
     channels: [
       "ETV 4K",
@@ -4480,9 +4586,8 @@ const categories = [  {
       "TV3 ESTONIA 4K",
       "TV6 ESTONIA 4K",
     ],
-  },
-  {
-    name: "GEORGIA",
+  },{
+    name: "GÉORGIE",
     count: "5+",
     channels: [
       "IMEDI TV 4K",
@@ -4491,9 +4596,8 @@ const categories = [  {
       "MAESTRO TV 4K",
       "ADJARA TV 4K",
     ],
-  },
-  {
-    name: "ICELAND",
+  },{
+    name: "ISLANDE",
     count: "4+",
     channels: [
       "RÚV 4K",
@@ -4501,35 +4605,13 @@ const categories = [  {
       "STÖÐ 2 4K",
       "HÚSASMIÐJAN TV 4K",
     ],
-  },
-  {
-    name: "VATICAN CITY",
+  },{
+    name: "CITÉ DU VATICAN",
     count: "1+",
     channels: [
       "VATICAN MEDIA 4K",
     ],
-  },
-  {
-    name: "BELGIUM",
-    count: "14+",
-    channels: [
-      "BE - CORONA VIRUS INFO",
-      "BE - EEN HD",
-      "BE - Q2 HD",
-      "BE - VTM HD",
-      "BE - VTM KIDS",
-      "BE - VIER HD",
-      "BE - VIJF TV",
-      "BE - ZES",
-      "BE - CAZ",
-      "BE - VITAYA",
-      "BE - VTM KIDS JR",
-      "BE - KETNEET",
-      "BE - JIM JAM",
-      "BE - ECLIPS TV",
-    ],
-  },
-  {
+  },{
     name: "PORTUGAL",
     count: "34+",
     channels: [
@@ -4568,9 +4650,8 @@ const categories = [  {
       "PT - TCV CABO",
       "PT - Fatima TV",
     ],
-  },
-  {
-    name: "MALTA",
+  },{
+    name: "MALTE",
     count: "30+",
     channels: [
       "MT - TVM HD",
@@ -4604,9 +4685,8 @@ const categories = [  {
       "MT - THE RIVER CHRISTIAN CHANNEL HD",
       "MT - TV SHOP CHANNEL HD",
     ],
-  },
-  {
-    name: "AUSTRIA",
+  },{
+    name: "AUTRICHE",
     count: "20+",
     channels: [
       "AT - AUSTRIAAT - ATV HD",
@@ -4630,9 +4710,8 @@ const categories = [  {
       "DE - NICK /MTV HD",
       "DE - Auto Motor Sport HD",
     ],
-  },
-  {
-    name: "ARMENIA",
+  },{
+    name: "ARMÉNIE",
     count: "42+",
     channels: [
       "ARM - ARMENIA TV",
@@ -4678,9 +4757,8 @@ const categories = [  {
       "ARM - US ARMENIA TV",
       "ARM - YERKIR MEDIA",
     ],
-  },
-  {
-    name: "POLONIA",
+  },{
+    name: "POLOGNE",
     count: "18+",
     channels: [
       "PL - TVP HD",
@@ -4702,9 +4780,8 @@ const categories = [  {
       "PL - ATM ROZRYWKA TV",
       "PL - POLSAT RODZINA",
     ],
-  },
-  {
-    name: "ALBANIA",
+  },{
+    name: "ALBANIE",
     count: "63+",
     channels: [
       "ALB - roylab stats",
@@ -4771,9 +4848,8 @@ const categories = [  {
       "ALB - ELRODI",
       "ALB - KANAL D DRAMA",
     ],
-  },
-  {
-    name: "ROMANIA",
+  },{
+    name: "ROUMANIE",
     count: "54+",
     channels: [
       "|RO| TVR 1",
@@ -4831,9 +4907,8 @@ const categories = [  {
       "|RO| SPERANTA TV",
       "|RO| RTL LOUNGE",
     ],
-  },
-  {
-    name: "NORWAY",
+  },{
+    name: "NORVÈGE",
     count: "24+",
     channels: [
       "NO - NRK 1 HD",
@@ -4861,9 +4936,8 @@ const categories = [  {
       "NO - VIASAT SERIES FHD",
       "NO - VOX FHD",
     ],
-  },
-  {
-    name: "FINLAND",
+  },{
+    name: "FINLANDE",
     count: "6+",
     channels: [
       "FI - YLE TV FEM",
@@ -4873,9 +4947,8 @@ const categories = [  {
       "FI - LIV",
       "FI - NELONEN",
     ],
-  },
-  {
-    name: "SLOVENIA",
+  },{
+    name: "SLOVÉNIE",
     count: "12+",
     channels: [
       "|SLOVENIA| SLOV1 HD",
@@ -4891,9 +4964,8 @@ const categories = [  {
       "|SLOVENIA| PLANET HD",
       "|SLOVENIA| TV3MSLO",
     ],
-  },
-  {
-    name: "MONTENEGRO",
+  },{
+    name: "MONTÉNÉGRO",
     count: "11+",
     channels: [
       "|MONTENEGRO| RTV CG 1",
@@ -4908,9 +4980,8 @@ const categories = [  {
       "|MONTENEGRO| VIJESTI",
       "|MONTENEGRO| BOIN TV",
     ],
-  },
-  {
-    name: "AZERBAIJAN",
+  },{
+    name: "AZERBAÏDJAN",
     count: "20+",
     channels: [
       "AZE - ARB",
@@ -4934,9 +5005,8 @@ const categories = [  {
       "AZE - SPACE TV",
       "AZE - XEZER TV",
     ],
-  },
-  {
-    name: "RUSSIA",
+  },{
+    name: "RUSSIE",
     count: "49+",
     channels: [
       "RU - AMEDIA 1 HD",
@@ -4989,8 +5059,7 @@ const categories = [  {
       "RU - TV1000 РУССКОЕ КИНО",
       "RU - PERVIY KANAL",
     ],
-  },
-  {
+  },{
     name: "KOSOVO",
     count: "6+",
     channels: [
@@ -5001,9 +5070,8 @@ const categories = [  {
       "KLAN KOSOVA 4K",
       "TV DUKAGJINI 4K",
     ],
-  },
-  {
-    name: "LATVIA",
+  },{
+    name: "LETTONIE",
     count: "5+",
     channels: [
       "LTV1 4K",
@@ -5012,16 +5080,14 @@ const categories = [  {
       "TV6 LATVIA 4K",
       "RĪGA TV 24 4K",
     ],
-  },
-  {
+  },{
     name: "LIECHTENSTEIN",
     count: "1+",
     channels: [
       "1FLTV 4K",
     ],
-  },
-  {
-    name: "LITHUANIA",
+  },{
+    name: "LITUANIE",
     count: "5+",
     channels: [
       "LRT TELEVIZIJA 4K",
@@ -5030,30 +5096,26 @@ const categories = [  {
       "TV6 LITHUANIA 4K",
       "BTV LITHUANIA 4K",
     ],
-  },
-  {
+  },{
     name: "LUXEMBOURG",
     count: "2+",
     channels: [
       "RTL LUXEMBOURG 4K",
       "T.TV 4K",
     ],
-  },
-  {
+  },{
     name: "MONACO",
     count: "1+",
     channels: [
       "MONACO INFO 4K",
     ],
-  },
-  {
+  },{
     name: "SAN MARINO",
     count: "1+",
     channels: [
       "SAN MARINO RTV 4K",
     ],
-  },
-  {
+  },{
     name: "SERBIA",
     count: "6+",
     channels: [
@@ -5064,8 +5126,7 @@ const categories = [  {
       "PINK TV 4K",
       "HAPPY TV 4K",
     ],
-  },
-  {
+  },{
     name: "SLOVAKIA",
     count: "5+",
     channels: [
@@ -5075,8 +5136,7 @@ const categories = [  {
       "JOJ TV 4K",
       "TA3 NEWS 4K",
     ],
-  },
-  {
+  },{
     name: "KURDISH",
     count: "39+",
     channels: [
@@ -5120,8 +5180,7 @@ const categories = [  {
       "|KU| ZAGROS TV",
       "|KU| ZAROK TV",
     ],
-  },
-  {
+  },{
     name: "IRAN",
     count: "223+",
     channels: [
@@ -5349,8 +5408,7 @@ const categories = [  {
       "IR - U TOON",
       "IR - TAMASHA HD",
     ],
-  },
-  {
+  },{
     name: "TAMIL",
     count: "60+",
     channels: [
@@ -5415,8 +5473,7 @@ const categories = [  {
       "TAMIL - #KALAIGNARTV MURASU",
       "TAMIL - MOON tv",
     ],
-  },
-  {
+  },{
     name: "INDIA [EUROPE/UK]",
     count: "34+",
     channels: [
@@ -5455,8 +5512,7 @@ const categories = [  {
       "IN|UK - STAR PLUS HD",
       "IN|UK - STAR PLUS",
     ],
-  },
-  {
+  },{
     name: "TELUGU",
     count: "28+",
     channels: [
@@ -5489,8 +5545,7 @@ const categories = [  {
       "TELUGU - GEMINI LIFE",
       "TELGU - SAKSHI TV",
     ],
-  },
-  {
+  },{
     name: "BENGALI",
     count: "7+",
     channels: [
@@ -5502,8 +5557,7 @@ const categories = [  {
       "BENGALI - STAR JALSHA MOVIES HD",
       "BENGALI - TATA SKY BANGLA CINEMA HD",
     ],
-  },
-  {
+  },{
     name: "ENGLISH",
     count: "35+",
     channels: [
@@ -5543,8 +5597,7 @@ const categories = [  {
       "ENGLISH - WARNER BROS",
       "ENGLISH - ZEE CAFE HD",
     ],
-  },
-  {
+  },{
     name: "BHOJPURI",
     count: "3+",
     channels: [
@@ -5552,8 +5605,7 @@ const categories = [  {
       "BHOJPURI - HUNGAMA DHAMAAL HD",
       "BHOJPURI - SANGEET BHOJPURI",
     ],
-  },
-  {
+  },{
     name: "KANNADA",
     count: "11+",
     channels: [
@@ -5569,8 +5621,7 @@ const categories = [  {
       "KANNADA - TV9 KANNADA",
       "KANNADA - UDAYA HD",
     ],
-  },
-  {
+  },{
     name: "AFGHANISTAN",
     count: "34+",
     channels: [
@@ -5609,8 +5660,7 @@ const categories = [  {
       "AFG - RTA",
       "AFG - ASR TV",
     ],
-  },
-  {
+  },{
     name: "KAZAKHSTAN",
     count: "16+",
     channels: [
@@ -5631,8 +5681,7 @@ const categories = [  {
       "KZ - DOMBYRA TV",
       "KZ - АСЫЛ АРНА",
     ],
-  },
-  {
+  },{
     name: "THAILAND",
     count: "8+",
     channels: [
@@ -5645,15 +5694,13 @@ const categories = [  {
       "TH - MONO29 HD",
       "TH - CARTOON CLUB HD",
     ],
-  },
-  {
+  },{
     name: "BHUTAN",
     count: "1+",
     channels: [
       "BHUTAN BROADCASTING SERVICE (BBS) 4K",
     ],
-  },
-  {
+  },{
     name: "BRUNEI",
     count: "3+",
     channels: [
@@ -5661,8 +5708,7 @@ const categories = [  {
       "RTB NEWS 4K",
       "RTB GO 4K",
     ],
-  },
-  {
+  },{
     name: "CAMBODIA",
     count: "3+",
     channels: [
@@ -5670,15 +5716,13 @@ const categories = [  {
       "CNC (CAMBODIA NEWS CHANNEL) 4K",
       "MYTV 4K",
     ],
-  },
-  {
+  },{
     name: "EAST TIMOR (TIMOR-LESTE)",
     count: "1+",
     channels: [
       "RTTL (RADIO TELEVISAUN TIMOR LESTE) 4K",
     ],
-  },
-  {
+  },{
     name: "INDONESIA",
     count: "5+",
     channels: [
@@ -5688,8 +5732,7 @@ const categories = [  {
       "TRANSTV 4K",
       "NET TV 4K",
     ],
-  },
-  {
+  },{
     name: "JAPAN",
     count: "5+",
     channels: [
@@ -5699,8 +5742,7 @@ const categories = [  {
       "NTV (NIPPON TV) 4K",
       "TV ASAHI 4K",
     ],
-  },
-  {
+  },{
     name: "KAZAKHSTAN",
     count: "4+",
     channels: [
@@ -5709,16 +5751,14 @@ const categories = [  {
       "KTK CHANNEL 4K",
       "NTK 4K",
     ],
-  },
-  {
+  },{
     name: "UZBEKISTAN",
     count: "2+",
     channels: [
       "UZBEKISTAN 24 4K",
       "SPORT TV UZBEKISTAN 4K",
     ],
-  },
-  {
+  },{
     name: "VIETNAM",
     count: "4+",
     channels: [
@@ -5727,8 +5767,7 @@ const categories = [  {
       "HTV9 4K",
       "SCTV 4K",
     ],
-  },
-  {
+  },{
     name: "TURKEY",
     count: "32+",
     channels: [
@@ -5765,8 +5804,7 @@ const categories = [  {
       "TR - SHOW MAX",
       "TR - TRT 4K PLUS",
     ],
-  },
-  {
+  },{
     name: "PAKISTAN",
     count: "24+",
     channels: [
@@ -5795,8 +5833,7 @@ const categories = [  {
       "PK - CMG ACTION",
       "PK|EU - 92 NEWS",
     ],
-  },
-  {
+  },{
     name: "HINDI",
     count: "101+",
     channels: [
@@ -5902,9 +5939,8 @@ const categories = [  {
       "HINDI - TARANG TV",
       "HINDI - ZEE ODISHA",
     ],
-  },
-  {
-    name: "BANGLA",
+  },{
+    name: "BENGALI",
     count: "9+",
     channels: [
       "BANGLA - MUSIC FATAFATI",
@@ -5917,8 +5953,7 @@ const categories = [  {
       "BANGLA - ANANDA TV",
       "BANGLA - ROAL TV",
     ],
-  },
-  {
+  },{
     name: "MALAYALAM",
     count: "21+",
     channels: [
@@ -5944,8 +5979,7 @@ const categories = [  {
       "MAL - MEDIA ONE HD",
       "MAL - JANAM TV",
     ],
-  },
-  {
+  },{
     name: "PUNJABI",
     count: "21+",
     channels: [
@@ -5971,8 +6005,7 @@ const categories = [  {
       "PUNJABI - ZEE PUNJAB HARYANA HD",
       "PUNJABI - JUS ONE",
     ],
-  },
-  {
+  },{
     name: "SPORTS",
     count: "18+",
     channels: [
@@ -5995,8 +6028,7 @@ const categories = [  {
       "SPORTS - WILLOW CRICKET",
       "SPORTS - WILLOW CRICKET | HD",
     ],
-  },
-  {
+  },{
     name: "GUJARATI",
     count: "7+",
     channels: [
@@ -6008,9 +6040,8 @@ const categories = [  {
       "GUJARATI - SANDESH NEWS",
       "GUJARATI - VTV NEWS",
     ],
-  },
-  {
-    name: "BANGLA",
+  },{
+    name: "BENGALI",
     count: "6+",
     channels: [
       "BANGLA - UK - CHANNEL S",
@@ -6020,8 +6051,7 @@ const categories = [  {
       "BANGLA -UK| IQRA BANGLA",
       "BANGLA - ZEE BANGLA HD",
     ],
-  },
-  {
+  },{
     name: "PHILIPPINES",
     count: "63+",
     channels: [
@@ -6089,9 +6119,8 @@ const categories = [  {
       "PH VIP - MYX",
       "PH VIP - TELERADYO",
     ],
-  },
-  {
-    name: "SOUTH KOREA",
+  },{
+    name: "CORÉE DU SUD",
     count: "13+",
     channels: [
       "SK - YTN Science",
@@ -6108,9 +6137,8 @@ const categories = [  {
       "SK - ARIRANG",
       "SK - EBS KIDS",
     ],
-  },
-  {
-    name: "MALAYSIA",
+  },{
+    name: "MALAISIE",
     count: "9+",
     channels: [
       "MY - TV IKIM",
@@ -6123,17 +6151,15 @@ const categories = [  {
       "MY - NTV7",
       "MY - TV Ikim",
     ],
-  },
-  {
-    name: "KYRGYZSTAN",
+  },{
+    name: "KIRGHIZISTAN",
     count: "3+",
     channels: [
       "KTRK 4K",
       "ELTR 4K",
       "NTS 4K",
     ],
-  },
-  {
+  },{
     name: "MALDIVES",
     count: "3+",
     channels: [
@@ -6141,33 +6167,29 @@ const categories = [  {
       "YES TV 4K",
       "RAJJE TV 4K",
     ],
-  },
-  {
-    name: "MYANMAR (BURMA)",
+  },{
+    name: "MYANMAR (BIRMANIE)",
     count: "3+",
     channels: [
       "MRTV 4K",
       "MWD (MYANMAR WIDECASTING) 4K",
       "CHANNEL 7 4K",
     ],
-  },
-  {
-    name: "NEPAL",
+  },{
+    name: "NÉPAL",
     count: "3+",
     channels: [
       "KANTIPUR TV 4K",
       "NTV (NEPAL TELEVISION) 4K",
       "IMAGE CHANNEL 4K",
     ],
-  },
-  {
-    name: "NORTH KOREA",
+  },{
+    name: "CORÉE DU NORD",
     count: "1+",
     channels: [
       "KCTV (KOREAN CENTRAL TELEVISION) 4K",
     ],
-  },
-  {
+  },{
     name: "PHILIPPINES",
     count: "5+",
     channels: [
@@ -6177,9 +6199,8 @@ const categories = [  {
       "PTV 4K",
       "CNN PHILIPPINES 4K",
     ],
-  },
-  {
-    name: "SINGAPORE",
+  },{
+    name: "SINGAPOUR",
     count: "4+",
     channels: [
       "CHANNEL 5 4K",
@@ -6187,9 +6208,8 @@ const categories = [  {
       "SURIA 4K",
       "OKTO 4K",
     ],
-  },
-  {
-    name: "SOUTH KOREA",
+  },{
+    name: "CORÉE DU SUD",
     count: "4+",
     channels: [
       "KBS 1TV 4K",
@@ -6197,8 +6217,7 @@ const categories = [  {
       "SBS TV 4K",
       "JTBC 4K",
     ],
-  },
-  {
+  },{
     name: "SRI LANKA",
     count: "4+",
     channels: [
@@ -6207,25 +6226,22 @@ const categories = [  {
       "SIRASA TV 4K",
       "TV DERANA 4K",
     ],
-  },
-  {
-    name: "TAJIKISTAN",
+  },{
+    name: "TADJIKISTAN",
     count: "2+",
     channels: [
       "TV VARZISH 4K",
       "TOJIKISTON TV 4K",
     ],
-  },
-  {
-    name: "TURKMENISTAN",
+  },{
+    name: "TURKMÉNISTAN",
     count: "2+",
     channels: [
       "TURKMENISTAN TV 4K",
       "ALTYN ASYR 4K",
     ],
-  },
-  {
-    name: "ARABIC NEWS & FACTUAL",
+  },{
+    name: "ACTUALITÉS & INFO ARABES",
     count: "25+",
     channels: [
       "AL JAZEERA",
@@ -6254,84 +6270,8 @@ const categories = [  {
       "KAIFA",
       "I24 NEWS",
     ],
-  },
-  {
-    name: "MOROCCO",
-    count: "48+",
-    channels: [
-      "MA - AL OULA HD",
-      "MA - AL OULA HD +6H",
-      "MA - ARRYADIA HD LIVE",
-      "MA - AL OULA INTER HD",
-      "MA - 2M MAROC",
-      "MA - 2M MAROC +6H",
-      "MA - ARRIADIA",
-      "MA - ARRABIA HD",
-      "MA - ARRABIA HD +1",
-      "MA - ARRABIA HD +2",
-      "MA - ARRABIA HD +4",
-      "MA - ARRABIA HD +6",
-      "MA - AL MAGHRIBIA HD",
-      "MA - ASSADISSA HD",
-      "MA - ASSABIA HD",
-      "MA - TAMAZIGHT HD",
-      "MA - MEDI 1 TV HD",
-      "MA - MEDI 1 TV ARAB HD",
-      "MA - MEDI1TV AFRIQUE HD",
-      "MA - TELE MAROC",
-      "MA - TELE MAROC HD",
-      "MA - CHADA FM HD",
-      "MA - AL ONS TV",
-      "MA - M24",
-      "MA - CANAL ATLAS",
-      "MA - AFlam On Demand",
-      "MA - TNT 2M MAROC",
-      "MA - TNT AL MAGHRIBIA",
-      "MA - TNT AL OULA",
-      "MA - TNT AL OULA HD",
-      "MA - TNT AL OULA INTER",
-      "MA - TNT ARRABIA",
-      "MA - TNT ARRIADIA HD",
-      "MA - TNT ASSABIA",
-      "MA - TNT ASSADISSA",
-      "MA - TNT ASSADISSA HD",
-      "MA - TNT MEDI 1 TV",
-      "MA - TNT TAMAZIGHT",
-      "MA - Hit Radio",
-      "MA - Radio 2M",
-      "MA - Radio Mars",
-      "MA - Med Radio",
-      "MA - Medi1 FM",
-      "MA - Radio Aswat",
-      "MA - Chada FM",
-      "MA - Atlantic Radio",
-      "MA - Cap Radio",
-      "MA - MUSIC HITS",
-    ],
-  },
-  {
-    name: "TUNISIA",
-    count: "15+",
-    channels: [
-      "TN - TUNISIA NATIONAL 1",
-      "TN - TUNISIA NATIONAL 2",
-      "TN - HANNIBAL",
-      "TN - NESSMA TV",
-      "TN - AL HIWAR ETTOUNSI",
-      "TN - AL INSEN",
-      "TN - M TUNISIA",
-      "TN - TUNISNA",
-      "TN - ZAYTOONA TV",
-      "TN - ATTESSIA TV",
-      "TN - ZITOUNA HEDAYA",
-      "TN - AL JANOUBIA",
-      "TN - CARTHAGE+",
-      "TN - TUNESIE TELEVISION",
-      "TN - TELVZA TV",
-    ],
-  },
-  {
-    name: "LEBANON",
+  },{
+    name: "LIBAN",
     count: "27+",
     channels: [
       "LB - AL MANAR +6H",
@@ -6362,9 +6302,8 @@ const categories = [  {
       "LB - TELELIBAN TV",
       "LB - AL QANAT",
     ],
-  },
-  {
-    name: "UAE",
+  },{
+    name: "ÉMIRATS ARABES UNIS",
     count: "19+",
     channels: [
       "AE - DUBAI ONE",
@@ -6387,9 +6326,8 @@ const categories = [  {
       "AE - NOOR DUBAI",
       "AE - HOD HOD TV",
     ],
-  },
-  {
-    name: "KUWAIT",
+  },{
+    name: "KOWEÏT",
     count: "10+",
     channels: [
       "KW - KTV 1 HD",
@@ -6403,9 +6341,8 @@ const categories = [  {
       "KW - AL MAJLIS",
       "KW - AL QURAIN",
     ],
-  },
-  {
-    name: "LIBYA",
+  },{
+    name: "LIBYE",
     count: "7+",
     channels: [
       "LIBYA AL WATANIYA TV 4K",
@@ -6416,9 +6353,8 @@ const categories = [  {
       "LIBYA 218 TV 4K",
       "LIBYA ALRASMIA TV 4",
     ],
-  },
-  {
-    name: "MAURITANIA",
+  },{
+    name: "MAURITANIE",
     count: "6+",
     channels: [
       "AL MOURITANIA TV 4K",
@@ -6428,17 +6364,15 @@ const categories = [  {
       "SAHARA TV 4K",
       "CHINGUITTY TV 4K",
     ],
-  },
-  {
-    name: "COMOROS",
+  },{
+    name: "COMORES",
     count: "3+",
     channels: [
       "ORTC (OFFICE DE LA RADIO ET TELEVISION DES COMORES) 4K",
       "ORTC AL WATANIA 4K",
       "COMORES INFO TV 4K",
     ],
-  },
-  {
+  },{
     name: "DJIBOUTI",
     count: "3+",
     channels: [
@@ -6446,9 +6380,8 @@ const categories = [  {
       "DJIBOUTI NATIONAL TV 4K",
       "DJIBOUTI SPORTS TV 4K",
     ],
-  },
-  {
-    name: "SOMALIA",
+  },{
+    name: "SOMALIE",
     count: "11+",
     channels: [
       "SOMALI NATIONAL TV (SNTV) 4K",
@@ -6463,9 +6396,8 @@ const categories = [  {
       "ASTAAN TV 4K",
       "SOMALICHANNEL TV 4K",
     ],
-  },
-  {
-    name: "YEMEN",
+  },{
+    name: "YÉMEN",
     count: "10+",
     channels: [
       "YEMEN TV 4K",
@@ -6479,8 +6411,7 @@ const categories = [  {
       "YEMEN SHABAB TV 4K",
       "AL HAWYAH TV 4K",
     ],
-  },
-  {
+  },{
     name: "PALESTINE",
     count: "10+",
     channels: [
@@ -6495,38 +6426,7 @@ const categories = [  {
       "AL MAHD TV 4K",
       "AL SIRAJ TV 4K",
     ],
-  },
-  {
-    name: "BEIN SPORTS 4K",
-    count: "24+",
-    channels: [
-      "BEIN SPORTS 1",
-      "BEIN SPORTS 2",
-      "BEIN SPORTS 3",
-      "BEIN SPORTS 4",
-      "BEIN SPORTS 5",
-      "BEIN SPORTS 6",
-      "BEIN SPORTS 7",
-      "BEIN SPORTS 8",
-      "BEIN SPORTS 9",
-      "BEIN SPORTS 10",
-      "BEIN SPORTS 11",
-      "BEIN SPORTS 12",
-      "BEIN SPORTS 13",
-      "BEIN SPORTS 14",
-      "BEIN SPORTS 15",
-      "BEIN SPORTS 16",
-      "BEIN SPORTS NBA",
-      "AL KASS 1 HD",
-      "AL KASS 2 HD",
-      "AL KASS 4 HD",
-      "ABUDHABI SPORTS 1 HD",
-      "ABUDHABI SPORTS 3 HD",
-      "ABUDHABI SPORTS 4 HD",
-      "YAS TV",
-    ],
-  },
-  {
+  },{
     name: "MYHD & OSN",
     count: "228+",
     channels: [
@@ -6759,34 +6659,8 @@ const categories = [  {
       "OSN - Sky News SD",
       "OSN - ART Hekayat 2",
     ],
-  },
-  {
-    name: "ALGERIA",
-    count: "19+",
-    channels: [
-      "ENTV 4K",
-      "CANAL ALGÉRIE 4K",
-      "A3 4K",
-      "TV4 (TAMAZIGHT TV) 4K",
-      "TV5 (CORAN TV) 4K",
-      "TV6 4K",
-      "TV7 (EL MAARIFA) 4K",
-      "TV8 (DZAÏR TV) 4K",
-      "ECHOUROUK TV 4K",
-      "ENNAHAR TV 4K",
-      "EL BILAD TV 4K",
-      "NUMIDIA NEWS TV 4K",
-      "BEUR TV 4K",
-      "HOGGAR TV 4K",
-      "BAHIA TV 4K",
-      "DZAIR 24 4K",
-      "SAMIRA TV 4K",
-      "EL DJAZAIRIA ONE 4K",
-      "LINA TV 4K",
-    ],
-  },
-  {
-    name: "EGYPT",
+  },{
+    name: "ÉGYPTE",
     count: "130+",
     channels: [
       "AL MASRIYA 4K",
@@ -6920,9 +6794,8 @@ const categories = [  {
       "AL SHASHA COMEDY 4K",
       "AL SHASHA MOSALSALAT 4K",
     ],
-  },
-  {
-    name: "JORDAN",
+  },{
+    name: "JORDANIE",
     count: "10+",
     channels: [
       "JORDAN TV 4K",
@@ -6936,9 +6809,8 @@ const categories = [  {
       "AL HAQIQA INTERNATIONAL 4K",
       "A1 JORDAN 4K",
     ],
-  },
-  {
-    name: "SAUDI ARABIA",
+  },{
+    name: "ARABIE SAOUDITE",
     count: "19+",
     channels: [
       "SAUDI TV CHANNEL 1 4K",
@@ -6961,8 +6833,7 @@ const categories = [  {
       "LBC SAT 4K",
       "AL ARABIYA 4K",
     ],
-  },
-  {
+  },{
     name: "OMAN",
     count: "10+",
     channels: [
@@ -6977,8 +6848,7 @@ const categories = [  {
       "OMAN MUBASHER 4K",
       "OMAN HD 4K",
     ],
-  },
-  {
+  },{
     name: "QATAR",
     count: "15+",
     channels: [
@@ -6998,9 +6868,8 @@ const categories = [  {
       "AL KASS SPORTS CHANNELS 4K",
       "QATAR FOUNDATION TV 4K",
     ],
-  },
-  {
-    name: "BAHRAIN",
+  },{
+    name: "BAHREÏN",
     count: "10+",
     channels: [
       "BAHRAIN TV 4K",
@@ -7014,9 +6883,8 @@ const categories = [  {
       "AL WATAN TV 4K",
       "AL SALAM TV 4K",
     ],
-  },
-  {
-    name: "SYRIA",
+  },{
+    name: "SYRIE",
     count: "10+",
     channels: [
       "SYRIAN SATELLITE CHANNEL 4K",
@@ -7030,9 +6898,8 @@ const categories = [  {
       "ALIKHBARIA SYRIA 4K",
       "SHAM TV 4K",
     ],
-  },
-  {
-    name: "IRAQ",
+  },{
+    name: "IRAK",
     count: "16+",
     channels: [
       "AL IRAQIYA TV 4K",
@@ -7052,9 +6919,8 @@ const categories = [  {
       "AL MASAR TV 4K",
       "AL NUJABA TV 4K",
     ],
-  },
-  {
-    name: "SUDAN",
+  },{
+    name: "SOUDAN",
     count: "10+",
     channels: [
       "SUDAN TV 4K",
@@ -7068,9 +6934,8 @@ const categories = [  {
       "S24 TV 4K",
       "AL ZAIEM AL AZHARI TV 4K",
     ],
-  },
-  {
-    name: "YEMEN",
+  },{
+    name: "YÉMEN",
     count: "10+",
     channels: [
       "YEMEN TV 4K",
@@ -7084,9 +6949,8 @@ const categories = [  {
       "YEMEN SHABAB TV 4K",
       "AL HAWYAH TV 4K",
     ],
-  },
-  {
-    name: "SOUTH AFRICA",
+  },{
+    name: "AFRIQUE DU SUD",
     count: "93+",
     channels: [
       "SABC 1 4K",
@@ -7183,15 +7047,13 @@ const categories = [  {
       "HITV SOUTH AFRICA 4K",
       "COMMUNITY TV NETWORK 4K",
     ],
-  },
-  {
-    name: "SOMALIA",
+  },{
+    name: "SOMALIE",
     count: "1+",
     channels: [
       "SOMALIA - FLIX MOVIE",
     ],
-  },
-  {
+  },{
     name: "GHANA",
     count: "31+",
     channels: [
@@ -7227,8 +7089,7 @@ const categories = [  {
       "GHANA - 3ABN FRANÇAIS",
       "GHANA - | ADOM TV",
     ],
-  },
-  {
+  },{
     name: "KENYA",
     count: "80+",
     channels: [
@@ -7313,9 +7174,8 @@ const categories = [  {
       "ZUKU BOX OFFICE 4K",
       "MAWINGU TV 4K",
     ],
-  },
-  {
-    name: "UGANDA",
+  },{
+    name: "OUGANDA",
     count: "75+",
     channels: [
       "UBC TV 4K",
@@ -7394,9 +7254,8 @@ const categories = [  {
       "ZUKU BOX OFFICE 4K",
       "MOVIE PLANET TV 4K",
     ],
-  },
-  {
-    name: "TANZANIA",
+  },{
+    name: "TANZANIE",
     count: "74+",
     channels: [
       "ITV TANZANIA 4K",
@@ -7474,8 +7333,7 @@ const categories = [  {
       "STARDOM TV 4K",
       "LUXURY TV TANZANIA 4K",
     ],
-  },
-  {
+  },{
     name: "RWANDA",
     count: "71+",
     channels: [
@@ -7551,8 +7409,7 @@ const categories = [  {
       "TOP TV RWANDA 4K",
       "RADIOTEL RWANDA 4K",
     ],
-  },
-  {
+  },{
     name: "BURUNDI",
     count: "65+",
     channels: [
@@ -7622,8 +7479,7 @@ const categories = [  {
       "YOUTH TV BURUNDI 4K",
       "LOCAL NEWS TV BURUNDI 4K",
     ],
-  },
-  {
+  },{
     name: "MALAWI",
     count: "65+",
     channels: [
@@ -7693,9 +7549,8 @@ const categories = [  {
       "UN TV MALAWI 4K",
       "VTV MALAWI 4K",
     ],
-  },
-  {
-    name: "NIGERIA",
+  },{
+    name: "NIGÉRIA",
     count: "54+",
     channels: [
       "NIGERIA - VOX AFRICA",
@@ -7753,9 +7608,8 @@ const categories = [  {
       "NIGERIA - LUMEN CHRISTI",
       "NIGERIA - TVC NEWS NIGERIA",
     ],
-  },
-  {
-    name: "ZAMBIA",
+  },{
+    name: "ZAMBIE",
     count: "67+",
     channels: [
       "ZNBC (ZAMBIA NATIONAL BROADCASTING CORPORATION) 4K",
@@ -7826,8 +7680,7 @@ const categories = [  {
       "UN TV ZAMBIA 4K",
       "VTV ZAMBIA 4K",
     ],
-  },
-  {
+  },{
     name: "ZIMBABWE",
     count: "65+",
     channels: [
@@ -7897,8 +7750,7 @@ const categories = [  {
       "HEROES TV ZIMBABWE 4K",
       "ECTV ZIMBABWE 4K",
     ],
-  },
-  {
+  },{
     name: "BOTSWANA",
     count: "57+",
     channels: [
@@ -7960,9 +7812,8 @@ const categories = [  {
       "HEROES TV BOTSWANA 4K",
       "ECTV BOTSWANA 4K",
     ],
-  },
-  {
-    name: "NAMIBIA",
+  },{
+    name: "NAMIBIE",
     count: "57+",
     channels: [
       "NBC (NAMIBIA BROADCASTING CORPORATION) 4K",
@@ -8023,8 +7874,7 @@ const categories = [  {
       "HEROES TV NAMIBIA 4K",
       "ECTV NAMIBIA 4K",
     ],
-  },
-  {
+  },{
     name: "MOZAMBIQUE",
     count: "63+",
     channels: [
@@ -8092,8 +7942,7 @@ const categories = [  {
       "HBO MAX MOZAMBIQUE 4K",
       "CINEMAX MOZAMBIQUE 4K",
     ],
-  },
-  {
+  },{
     name: "ANGOLA",
     count: "79+",
     channels: [
@@ -8177,8 +8026,7 @@ const categories = [  {
       "CNN Angola 4K",
       "Discovery Family Angola 4K",
     ],
-  },
-  {
+  },{
     name: "GABON",
     count: "65+",
     channels: [
@@ -8253,28 +8101,28 @@ const categories = [  {
 
 export default function ChannelsListPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen">
+    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen">
       {/* Hero */}
-      <section style={{ background: "#1A3D45", padding: "64px 16px", textAlign: "center" }}>
+      <section style={{ background: "#6367FF", padding: "64px 16px", textAlign: "center" }}>
         <div className="max-w-3xl mx-auto">
           <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 900, marginBottom: 16, color: "#ffffff" }}>
-            Stream Bleu <span className="text-[#F96E5B]">Liste des Chaînes</span>
+            Stream Bleu <span className="text-[#6367FF]">Liste des Chaînes</span>
           </h1>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
             25 000+ live channels dans toute la France, the US, UK, and worldwide.
             Every plan includes all channels below — no add-ons required.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> All Français networks</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> TSN &amp; Sportsnet</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> 4K &amp; HD quality</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#79C9C5" }}>✓</span> PPV included</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> All Français networks</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> TSN &amp; Sportsnet</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> 4K &amp; HD quality</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> PPV included</span>
           </div>
         </div>
       </section>
 
       {/* Stats bar */}
-      <div className="bg-[#F96E5B] py-3 px-4">
+      <div className="bg-[#6367FF] py-3 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-black text-sm font-semibold">
           <span>🌍 152 Countries &amp; Regions</span>
           <span>📺 25 000+ Chaînes en direct</span>
@@ -8289,16 +8137,16 @@ export default function ChannelsListPage() {
           {categories.map((cat, index) => (
             <details
               key={cat.name}
-              className="group border border-[rgba(63,154,174,0.2)] rounded-xl overflow-hidden transition-all hover:border-[#F96E5B]" style={{ background: "#ffffff" }}
+              className="group border border-[rgba(132,148,255,0.2)] rounded-xl overflow-hidden transition-all hover:border-[#6367FF]" style={{ background: "#ffffff" }}
             >
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer select-none list-none">
                 <div className="flex items-center gap-3">
-                  <span className="text-[#F96E5B] font-bold text-lg group-open:text-[#F96E5B] transition-colors">
+                  <span className="text-[#6367FF] font-bold text-lg group-open:text-[#6367FF] transition-colors">
                     {cat.name}
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="bg-white border border-[rgba(63,154,174,0.25)] text-black text-xs px-3 py-1 rounded-full font-medium">
+                  <span className="bg-white border border-[rgba(132,148,255,0.25)] text-black text-xs px-3 py-1 rounded-full font-medium">
                     {cat.count} channels
                   </span>
                   <svg
@@ -8312,12 +8160,12 @@ export default function ChannelsListPage() {
                   </svg>
                 </div>
               </summary>
-              <div className="px-5 pb-5 pt-2 border-t" style={{ borderColor: "rgba(63,154,174,0.15)" }}>
+              <div className="px-5 pb-5 pt-2 border-t" style={{ borderColor: "rgba(132,148,255,0.15)" }}>
                 <div className="flex flex-wrap gap-2">
                   {cat.channels.map((ch) => (
                     <span
                       key={ch}
-                      className="bg-white border border-[rgba(63,154,174,0.2)] hover:border-[#F96E5B] hover:bg-[#F96E5B] hover:text-white text-black text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
+                      className="bg-white border border-[rgba(132,148,255,0.2)] hover:border-[#6367FF] hover:bg-[#6367FF] hover:text-white text-black text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
                     >
                       {ch}
                     </span>
@@ -8330,17 +8178,17 @@ export default function ChannelsListPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "64px 16px", background: "#1A3D45", textAlign: "center" }}>
+      <section style={{ padding: "64px 16px", background: "#6367FF", textAlign: "center" }}>
         <div className="max-w-2xl mx-auto">
           <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 25 000+ Channels</h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 32 }}>
             Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" style={{ background: "#F96E5B", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
+            <a href="/free-trial" style={{ background: "#6367FF", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
               Get Essai Gratuit
             </a>
-            <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/pricing" className="border border-[#6367FF] text-[#6367FF] hover:bg-[#6367FF] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Voir les Tarifs
             </a>
           </div>

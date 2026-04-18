@@ -131,7 +131,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-      <main style={{ background: "#E8F4F5", color: "#000000" }}>
+      <main style={{ background: "#FFDBFD", color: "#1a1a4e" }}>
 
         {/* ── 1. HERO ── */}
         <section style={{
@@ -152,15 +152,15 @@ export default function HomePage() {
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, rgba(26,61,69,0.72) 0%, rgba(26,61,69,0.88) 100%)",
+            background: "linear-gradient(to bottom, rgba(99,103,255,0.72) 0%, rgba(99,103,255,0.88) 100%)",
             zIndex: 1,
           }} />
           <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 2 }}>
             <span style={{
               display: "inline-block",
-              background: "rgba(249,110,91,0.2)",
-              border: "1px solid rgba(249,110,91,0.6)",
-              color: "#F96E5B",
+              background: "rgba(99,103,255,0.2)",
+              border: "1px solid rgba(99,103,255,0.6)",
+              color: "#6367FF",
               fontSize: 12,
               fontWeight: 700,
               letterSpacing: "0.1em",
@@ -179,7 +179,7 @@ export default function HomePage() {
               color: "#ffffff",
             }}>
               L&apos;IPTV Premium<br />
-              <span style={{ color: "#F96E5B" }}>Made for France</span>
+              <span style={{ color: "#6367FF" }}>Made for France</span>
             </h1>
             <p style={{
               fontSize: "clamp(16px, 2vw, 20px)",
@@ -193,7 +193,7 @@ export default function HomePage() {
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link href="/pricing" style={{
-                background: "#F96E5B",
+                background: "#6367FF",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 17,
@@ -201,7 +201,7 @@ export default function HomePage() {
                 borderRadius: 14,
                 textDecoration: "none",
                 display: "inline-block",
-                boxShadow: "0 6px 20px rgba(249,110,91,0.5)",
+                boxShadow: "0 6px 20px rgba(99,103,255,0.5)",
               }}>
                 Voir les Tarifs →
               </Link>
@@ -226,7 +226,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 2. STATS BAR ── */}
-        <section style={{ background: "#3F9AAE", padding: "32px 16px" }}>
+        <section style={{ background: "#8494FF", padding: "32px 16px" }}>
           <div style={{
             maxWidth: 960,
             margin: "0 auto",
@@ -254,11 +254,11 @@ export default function HomePage() {
         </section>
 
         {/* ── REVIEWS ── */}
-        <section style={{ padding: "80px 16px", background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)" }}>
+        <section style={{ padding: "80px 16px", background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)" }}>
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
             <ReviewsSection showHeader={true} />
             <div style={{ textAlign: "center", marginTop: 40 }}>
-              <a href="/reviews" style={{ display: "inline-block", background: "#1A3D45", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
+              <a href="/reviews" style={{ display: "inline-block", background: "#6367FF", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
                 Voir tous les avis →
               </a>
             </div>
@@ -269,12 +269,12 @@ export default function HomePage() {
         <HomePricing />
 
         {/* ── 4. DEVICES MARQUEE ── */}
-        <section style={{ padding: "80px 16px", background: "#E8F4F5", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#FFDBFD", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Compatible avec tous vos appareils
             </h2>
-            <p style={{ textAlign: "center", color: "#000000", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 48, fontSize: 15 }}>
               Un seul abonnement — tous les écrans de votre maison.
             </p>
           </div>
@@ -283,11 +283,11 @@ export default function HomePage() {
               {[...deviceNames, ...deviceNames].map((name, i) => (
                 <div key={i} style={{
                   flexShrink: 0,
-                  background: "rgba(63,154,174,0.1)",
-                  border: "1px solid rgba(63,154,174,0.25)",
+                  background: "rgba(132,148,255,0.1)",
+                  border: "1px solid rgba(132,148,255,0.25)",
                   borderRadius: 14,
                   padding: "14px 24px",
-                  color: "#000000",
+                  color: "#1a1a4e",
                   fontSize: 13,
                   fontWeight: 600,
                   whiteSpace: "nowrap",
@@ -300,48 +300,48 @@ export default function HomePage() {
         </section>
 
         {/* ── 5. FRENCH CHANNELS ── */}
-        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
+            <p style={{ color: "#6367FF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Chaînes Françaises
             </p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16, color: "#000000" }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16, color: "#1a1a4e" }}>
               Toutes vos chaînes françaises préférées
             </h2>
-            <p style={{ textAlign: "center", color: "#000000", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
+            <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 40, fontSize: 15, maxWidth: 620, margin: "0 auto 40px" }}>
               Stream Bleu inclut toutes les grandes chaînes françaises en qualité maximale — TNT, chaînes câblées, info en continu, sans coupure.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
               {frenchChannels.map((ch) => (
                 <span key={ch} style={{
-                  background: "rgba(63,154,174,0.08)",
-                  border: "1px solid rgba(63,154,174,0.2)",
+                  background: "rgba(132,148,255,0.08)",
+                  border: "1px solid rgba(132,148,255,0.2)",
                   borderRadius: 8,
                   padding: "8px 16px",
                   fontSize: 13,
                   fontWeight: 600,
-                  color: "#000000",
+                  color: "#1a1a4e",
                 }}>
                   {ch}
                 </span>
               ))}
             </div>
-            <p style={{ textAlign: "center", color: "#000000", fontSize: 13 }}>
+            <p style={{ textAlign: "center", color: "#1a1a4e", fontSize: 13 }}>
               + 25 000+ autres chaînes du monde entier
             </p>
           </div>
         </section>
 
         {/* ── 6. SPORTS ── */}
-        <section style={{ padding: "80px 16px", background: "#E8F4F5", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#FFDBFD", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Ne ratez plus aucun match
             </h2>
-            <p style={{ textAlign: "center", color: "#000000", marginBottom: 16, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 16, fontSize: 15 }}>
               Tous les événements PPV inclus sans supplément. Chaque match en qualité maximale — 4K Ultra HD là où c&apos;est disponible.
             </p>
-            <p style={{ textAlign: "center", color: "#3F9AAE", fontSize: 13, marginBottom: 44 }}>
+            <p style={{ textAlign: "center", color: "#8494FF", fontSize: 13, marginBottom: 44 }}>
               ✓ Aucune coupure &nbsp;&nbsp; ✓ Tous les PPV gratuits &nbsp;&nbsp; ✓ Ligue 1, Champions League, Roland-Garros
             </p>
           </div>
@@ -350,11 +350,11 @@ export default function HomePage() {
               {[...sportsChannels, ...sportsChannels].map((ch, i) => (
                 <div key={i} style={{
                   flexShrink: 0,
-                  background: "rgba(249,110,91,0.06)",
-                  border: "1px solid rgba(249,110,91,0.15)",
+                  background: "rgba(99,103,255,0.06)",
+                  border: "1px solid rgba(99,103,255,0.15)",
                   borderRadius: 14,
                   padding: "14px 24px",
-                  color: "#000000",
+                  color: "#1a1a4e",
                   fontSize: 13,
                   fontWeight: 700,
                   whiteSpace: "nowrap",
@@ -367,31 +367,31 @@ export default function HomePage() {
         </section>
 
         {/* ── 7. COMPARISON TABLE ── */}
-        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Stream Bleu vs Câble vs IPTV Générique
             </h2>
-            <p style={{ textAlign: "center", color: "#000000", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 48, fontSize: 15 }}>
               Le câble plafonne à 1080i. L&apos;IPTV générique utilise H.264. Stream Bleu diffuse en vrai 4K H.265/HEVC avec HDR.
             </p>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                 <thead>
                   <tr>
-                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#000000", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Fonctionnalité</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#F96E5B", fontWeight: 700, borderBottom: "1px solid rgba(249,110,91,0.3)", background: "rgba(249,110,91,0.06)" }}>Stream Bleu</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#000000", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Câble / ADSL</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#000000", fontWeight: 600, borderBottom: "1px solid rgba(63,154,174,0.2)" }}>Autre IPTV</th>
+                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(132,148,255,0.2)" }}>Fonctionnalité</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#6367FF", fontWeight: 700, borderBottom: "1px solid rgba(99,103,255,0.3)", background: "rgba(99,103,255,0.06)" }}>Stream Bleu</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(132,148,255,0.2)" }}>Câble / ADSL</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(132,148,255,0.2)" }}>Autre IPTV</th>
                   </tr>
                 </thead>
                 <tbody>
                   {comparison.map((row, i) => (
-                    <tr key={row.feature} style={{ background: i % 2 === 0 ? "transparent" : "rgba(63,154,174,0.04)" }}>
-                      <td style={{ padding: "14px 16px", color: "#000000", fontWeight: 500 }}>{row.feature}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#3F9AAE", fontWeight: 600, background: "rgba(249,110,91,0.04)" }}>{row.us}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#000000" }}>{row.cable}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#000000" }}>{row.other}</td>
+                    <tr key={row.feature} style={{ background: i % 2 === 0 ? "transparent" : "rgba(132,148,255,0.04)" }}>
+                      <td style={{ padding: "14px 16px", color: "#1a1a4e", fontWeight: 500 }}>{row.feature}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#8494FF", fontWeight: 600, background: "rgba(99,103,255,0.04)" }}>{row.us}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#1a1a4e" }}>{row.cable}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#1a1a4e" }}>{row.other}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -401,22 +401,22 @@ export default function HomePage() {
         </section>
 
         {/* ── 8. FAQ ── */}
-        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#000000" }}>
+            <p style={{ color: "#6367FF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#1a1a4e" }}>
               Questions Fréquentes
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {faqs.map((faq) => (
                 <div key={faq.q} style={{
-                  background: "rgba(63,154,174,0.08)",
-                  border: "1px solid rgba(63,154,174,0.2)",
+                  background: "rgba(132,148,255,0.08)",
+                  border: "1px solid rgba(132,148,255,0.2)",
                   borderRadius: 16,
                   padding: "24px 28px",
                 }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 10, color: "#000000" }}>{faq.q}</h3>
-                  <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 10, color: "#1a1a4e" }}>{faq.q}</h3>
+                  <p style={{ color: "#1a1a4e", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
                 </div>
               ))}
             </div>
@@ -424,12 +424,12 @@ export default function HomePage() {
         </section>
 
         {/* ── 9. CITIES ── */}
-        <section style={{ padding: "80px 16px", background: "#E8F4F5" }}>
+        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#000000" }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Disponible dans toute la France
             </h2>
-            <p style={{ textAlign: "center", color: "#000000", marginBottom: 48, fontSize: 15 }}>
+            <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 48, fontSize: 15 }}>
               Serveurs Stream Bleu optimisés pour chaque grande ville française.
             </p>
             <div style={{
@@ -439,13 +439,13 @@ export default function HomePage() {
             }}>
               {cities.map((city) => (
                 <Link key={city.name} href={city.href} style={{
-                  background: "rgba(63,154,174,0.08)",
-                  border: "1px solid rgba(63,154,174,0.2)",
+                  background: "rgba(132,148,255,0.08)",
+                  border: "1px solid rgba(132,148,255,0.2)",
                   borderRadius: 12,
                   padding: "18px 16px",
                   textAlign: "center",
                   textDecoration: "none",
-                  color: "#000000",
+                  color: "#1a1a4e",
                   fontSize: 14,
                   fontWeight: 600,
                   display: "block",
@@ -458,17 +458,17 @@ export default function HomePage() {
         </section>
 
         {/* ── FINAL CTA ── */}
-        <section style={{ padding: "80px 16px", textAlign: "center", background: "#E8F4F5" }}>
+        <section style={{ padding: "80px 16px", textAlign: "center", background: "#FFDBFD" }}>
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#000000" }}>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#1a1a4e" }}>
               Commencez à streamer dès aujourd&apos;hui
             </h2>
-            <p style={{ color: "#000000", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
+            <p style={{ color: "#1a1a4e", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
               Le seul IPTV français construit autour du vrai 4K Ultra HD. H.265/HEVC, HDR10 &amp; Dolby Vision — à partir de 9€/mois. Essai gratuit, sans carte bancaire.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/free-trial" style={{
-                background: "#F96E5B",
+                background: "#6367FF",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -481,8 +481,8 @@ export default function HomePage() {
               </Link>
               <Link href="/pricing" style={{
                 background: "transparent",
-                border: "2px solid rgba(249,110,91,0.4)",
-                color: "#F96E5B",
+                border: "2px solid rgba(99,103,255,0.4)",
+                color: "#6367FF",
                 fontWeight: 700,
                 fontSize: 16,
                 padding: "16px 36px",

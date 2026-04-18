@@ -19,10 +19,10 @@ type Duration = typeof durations[number];
 
 // Same colors as HomePricing cards
 const cardColors: Record<Duration, { bg: string; isLight: boolean; shadow: string }> = {
-  "1 Month":  { bg: "#ffffff",  isLight: true,  shadow: "0 8px 24px rgba(63,154,174,0.15)" },
-  "3 Months": { bg: "#2d6a78",  isLight: false, shadow: "0 8px 24px rgba(45,106,120,0.3)" },
-  "6 Months": { bg: "#3F9AAE",  isLight: false, shadow: "0 12px 40px rgba(63,154,174,0.45)" },
-  "1 Year":   { bg: "#F96E5B",  isLight: false, shadow: "0 12px 40px rgba(249,110,91,0.45)" },
+  "1 Month":  { bg: "#ffffff",  isLight: true,  shadow: "0 8px 24px rgba(132,148,255,0.15)" },
+  "3 Months": { bg: "#8494FF",  isLight: false, shadow: "0 8px 24px rgba(45,106,120,0.3)" },
+  "6 Months": { bg: "#8494FF",  isLight: false, shadow: "0 12px 40px rgba(132,148,255,0.45)" },
+  "1 Year":   { bg: "#6367FF",  isLight: false, shadow: "0 12px 40px rgba(99,103,255,0.45)" },
 };
 
 const badgeLabels: Partial<Record<Duration, string>> = {
@@ -31,8 +31,8 @@ const badgeLabels: Partial<Record<Duration, string>> = {
 };
 
 const badgeBg: Partial<Record<Duration, string>> = {
-  "6 Months": "#F96E5B",
-  "1 Year":   "#1A3D45",
+  "6 Months": "#6367FF",
+  "1 Year":   "#6367FF",
 };
 
 const durationSlug: Record<Duration, string> = {
@@ -85,18 +85,18 @@ export default function PricingSection() {
     <section id="pricing-section" style={{ padding: "0 16px 60px" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Header */}
-        <p style={{ textAlign: "center", color: "#F96E5B", fontWeight: 700, fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>
+        <p style={{ textAlign: "center", color: "#6367FF", fontWeight: 700, fontSize: 11, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>
           PRICING PLANS
         </p>
-        <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem,4vw,2.2rem)", fontWeight: 900, color: "#000000", marginBottom: 10 }}>
+        <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem,4vw,2.2rem)", fontWeight: 900, color: "#1a1a4e", marginBottom: 10 }}>
           Simple, Transparent Pricing
         </h2>
         <div style={{ textAlign: "center", marginBottom: 10 }}>
-          <span style={{ display: "inline-block", background: "#F96E5B", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
+          <span style={{ display: "inline-block", background: "#6367FF", color: "#fff", fontSize: 13, fontWeight: 700, padding: "5px 18px", borderRadius: 999 }}>
             50% OFF Today!
           </span>
         </div>
-        <p style={{ textAlign: "center", color: "#000000", marginBottom: 32, fontSize: 15 }}>
+        <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 32, fontSize: 15 }}>
           Sans engagement. No hidden fees. Activation instantanée after you order.
         </p>
 
@@ -126,9 +126,9 @@ export default function PricingSection() {
                   flexShrink: 0,
                   padding: "8px 18px",
                   borderRadius: 999,
-                  border: active ? "none" : "1.5px solid #1A3D45",
-                  background: active ? "#1A3D45" : "transparent",
-                  color: active ? "#E8F4F5" : "#1A3D45",
+                  border: active ? "none" : "1.5px solid #6367FF",
+                  background: active ? "#6367FF" : "transparent",
+                  color: active ? "#FFDBFD" : "#6367FF",
                   fontWeight: 700,
                   fontSize: 13,
                   cursor: "pointer",
@@ -156,7 +156,7 @@ export default function PricingSection() {
                 key={dur}
                 style={{
                   background: bg,
-                  border: isLight ? "2px solid rgba(63,154,174,0.3)" : "none",
+                  border: isLight ? "2px solid rgba(132,148,255,0.3)" : "none",
                   borderRadius: 20,
                   padding: "32px 24px",
                   position: "relative",
@@ -176,10 +176,10 @@ export default function PricingSection() {
                     {badge}
                   </span>
                 )}
-                <p style={{ fontSize: 16, fontWeight: 700, color: isLight ? "#1A3D45" : "#fff", marginBottom: 6 }}>{dur}</p>
+                <p style={{ fontSize: 16, fontWeight: 700, color: isLight ? "#6367FF" : "#fff", marginBottom: 6 }}>{dur}</p>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 8, margin: "4px 0 16px" }}>
-                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: isLight ? "#F96E5B" : "#E8F4F5" }}>${price}</span>
-                  <span style={{ fontSize: 12, color: isLight ? "#3F9AAE" : "rgba(255,255,255,0.65)" }}>/ {connLabel}</span>
+                  <span style={{ fontSize: "clamp(2rem,5vw,2.6rem)", fontWeight: 900, color: isLight ? "#6367FF" : "#FFDBFD" }}>${price}</span>
+                  <span style={{ fontSize: 12, color: isLight ? "#8494FF" : "rgba(255,255,255,0.65)" }}>/ {connLabel}</span>
                 </div>
                 <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
                   {isYear && (
@@ -189,8 +189,8 @@ export default function PricingSection() {
                     </li>
                   )}
                   {features.map((f) => (
-                    <li key={f} style={{ fontSize: 13, color: isLight ? "#1A3D45" : "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
-                      <span style={{ color: isLight ? "#3F9AAE" : "#E8F4F5", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
+                    <li key={f} style={{ fontSize: 13, color: isLight ? "#6367FF" : "rgba(255,255,255,0.9)", marginBottom: 6, display: "flex", alignItems: "center", gap: 8 }}>
+                      <span style={{ color: isLight ? "#8494FF" : "#FFDBFD", fontWeight: 700, flexShrink: 0 }}>✓</span> {f}
                     </li>
                   ))}
                 </ul>
@@ -199,7 +199,7 @@ export default function PricingSection() {
                   style={{
                     display: "block", textAlign: "center",
                     padding: "13px 0", borderRadius: 12,
-                    background: isLight ? "#1A3D45" : "#E8F4F5",
+                    background: isLight ? "#6367FF" : "#FFDBFD",
                     color: isLight ? "#fff" : bg,
                     fontWeight: 800, fontSize: 14,
                     textDecoration: "none",
@@ -212,7 +212,7 @@ export default function PricingSection() {
           })}
         </div>
 
-        <p style={{ textAlign: "center", color: "#000000", fontSize: 12, marginTop: 24, opacity: 0.6 }}>
+        <p style={{ textAlign: "center", color: "#1a1a4e", fontSize: 12, marginTop: 24, opacity: 0.6 }}>
           All plans include the same channels, VOD library, and features. Longer plans = lower monthly cost.
         </p>
       </div>

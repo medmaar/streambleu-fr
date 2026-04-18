@@ -65,12 +65,12 @@ const requirements = [
 
 export default function HowItWorksPage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen">
+    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            How <span className="text-[#F96E5B]">IPTV Works</span> en France
+            How <span className="text-[#6367FF]">IPTV Works</span> en France
           </h1>
           <p className="text-xl text-black">
             Three simple steps. No technician required. Start watching in minutes.
@@ -84,7 +84,7 @@ export default function HowItWorksPage() {
           <div className="space-y-8">
             {steps.map((s) => (
               <div key={s.step} className="flex gap-6 bg-transparent rounded-2xl p-8 border border-gray-800">
-                <div className="flex-shrink-0 w-14 h-14 bg-[#F96E5B] rounded-full flex items-center justify-center font-extrabold text-black text-2xl">
+                <div className="flex-shrink-0 w-14 h-14 bg-[#6367FF] rounded-full flex items-center justify-center font-extrabold text-black text-2xl">
                   {s.step}
                 </div>
                 <div className="flex-1">
@@ -93,7 +93,7 @@ export default function HowItWorksPage() {
                   <p className="text-black text-sm mb-4">{s.detail}</p>
                   <a
                     href={s.cta.href}
-                    className="inline-block border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-5 py-2 rounded-lg text-sm font-bold transition-colors"
+                    className="inline-block border border-[#6367FF] text-[#6367FF] hover:bg-[#6367FF] hover:text-black px-5 py-2 rounded-lg text-sm font-bold transition-colors"
                   >
                     {s.cta.label} →
                   </a>
@@ -108,7 +108,7 @@ export default function HowItWorksPage() {
       <section className="py-16 px-4 bg-transparent">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">
-            What Exactly <span className="text-[#F96E5B]">Is IPTV?</span>
+            What Exactly <span className="text-[#6367FF]">Is IPTV?</span>
           </h2>
           <div className="space-y-4 text-black leading-relaxed">
             <p>
@@ -134,7 +134,7 @@ export default function HowItWorksPage() {
       <section id="devices" className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Compatible <span className="text-[#F96E5B]">Devices</span>
+            Compatible <span className="text-[#6367FF]">Devices</span>
           </h2>
           <p className="text-center text-black mb-10">
             Our IPTV service works on virtually every screen you own.
@@ -147,7 +147,7 @@ export default function HowItWorksPage() {
                   <div className="font-bold text-black">{d.name}</div>
                   <div className="text-black text-sm">{d.desc}</div>
                   {d.guide && (
-                    <a href={d.guide} className="text-[#F96E5B] text-xs hover:underline mt-1 inline-block">
+                    <a href={d.guide} className="text-[#6367FF] text-xs hover:underline mt-1 inline-block">
                       Setup guide →
                     </a>
                   )}
@@ -162,7 +162,7 @@ export default function HowItWorksPage() {
       <section className="py-16 px-4 bg-transparent">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Internet Speed <span className="text-[#F96E5B]">Requirements</span>
+            Internet Speed <span className="text-[#6367FF]">Requirements</span>
           </h2>
           <p className="text-center text-black mb-10">
             Any standard Français broadband connection is more than sufficient.
@@ -170,7 +170,7 @@ export default function HowItWorksPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {requirements.map((r) => (
               <div key={r.label} className="bg-transparent rounded-xl p-5 border border-gray-800 text-center">
-                <div className="text-2xl font-extrabold text-[#F96E5B] mb-1">{r.speed}</div>
+                <div className="text-2xl font-extrabold text-[#6367FF] mb-1">{r.speed}</div>
                 <div className="text-black text-sm">{r.label}</div>
               </div>
             ))}
@@ -185,7 +185,7 @@ export default function HowItWorksPage() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Common <span className="text-[#F96E5B]">Questions</span>
+            Common <span className="text-[#6367FF]">Questions</span>
           </h2>
           <div className="space-y-6">
             {[
@@ -196,7 +196,7 @@ export default function HowItWorksPage() {
               { q: "What happens if a channel goes down?", a: "Our servers maintain multiple redundant streams for each channel. If one stream has issues, the system automatically switches to a backup. Our Support 24/7 team also monitors the service around the clock." },
             ].map((item) => (
               <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
-                <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>
+                <h3 className="font-bold text-lg mb-3 text-[#6367FF]">{item.q}</h3>
                 <p className="text-black text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
@@ -212,10 +212,10 @@ export default function HowItWorksPage() {
             Try it free for 24 hours. No credit card, no commitment. Our team will have you set up in minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" className="bg-[#F96E5B] hover:bg-[#F96E5B] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/free-trial" className="bg-[#6367FF] hover:bg-[#6367FF] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Get Essai Gratuit
             </a>
-            <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/pricing" className="border border-[#6367FF] text-[#6367FF] hover:bg-[#6367FF] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Voir les Tarifs
             </a>
           </div>

@@ -65,7 +65,7 @@ function StarRating({ rating }: { rating: number }) {
   return (
     <div style={{ display: "flex", gap: 2 }}>
       {[1, 2, 3, 4, 5].map((s) => (
-        <span key={s} style={{ color: s <= rating ? "#F96E5B" : "rgba(0,0,0,0.15)", fontSize: 14 }}>★</span>
+        <span key={s} style={{ color: s <= rating ? "#6367FF" : "rgba(0,0,0,0.15)", fontSize: 14 }}>★</span>
       ))}
     </div>
   );
@@ -100,8 +100,8 @@ export default function ReviewsSection({ showHeader = true }: Props) {
     fontSize: 13,
     cursor: "pointer",
     border: "none",
-    background: tab === t ? "#F96E5B" : "rgba(63,154,174,0.12)",
-    color: tab === t ? "#fff" : "#1A3D45",
+    background: tab === t ? "#6367FF" : "rgba(132,148,255,0.12)",
+    color: tab === t ? "#fff" : "#6367FF",
     transition: "all 0.2s",
   });
 
@@ -109,8 +109,8 @@ export default function ReviewsSection({ showHeader = true }: Props) {
     <div ref={sectionRef}>
       {showHeader && (
         <div style={{ textAlign: "center", marginBottom: 32 }}>
-          <p style={{ color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>Avis Vérifiés</p>
-          <h2 style={{ fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, color: "#1A3D45", marginBottom: 8 }}>
+          <p style={{ color: "#6367FF", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>Avis Vérifiés</p>
+          <h2 style={{ fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, color: "#6367FF", marginBottom: 8 }}>
             Ce que disent nos clients
           </h2>
           <p style={{ color: "#555", fontSize: 14 }}>Avis réels de Trustpilot, WhatsApp &amp; Google — 50 000+ clients satisfaits en France et dans le monde.</p>
@@ -136,14 +136,14 @@ export default function ReviewsSection({ showHeader = true }: Props) {
               background: "#fff",
               borderRadius: 18,
               padding: "22px 22px",
-              border: "1px solid rgba(63,154,174,0.15)",
-              boxShadow: "0 4px 16px rgba(26,61,69,0.06)",
+              border: "1px solid rgba(132,148,255,0.15)",
+              boxShadow: "0 4px 16px rgba(99,103,255,0.06)",
               transitionDelay: `${(i % 6) * 0.07}s`,
             }}
           >
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 14, color: "#1A3D45" }}>{"flag" in r ? (r as { flag: string }).flag : ""} {r.name}</div>
+                <div style={{ fontWeight: 700, fontSize: 14, color: "#6367FF" }}>{"flag" in r ? (r as { flag: string }).flag : ""} {r.name}</div>
                 {"title" in r && <div style={{ fontSize: 13, fontWeight: 600, color: "#333", marginTop: 4 }}>{(r as { title: string }).title}</div>}
               </div>
               {"rating" in r && <StarRating rating={(r as { rating: number }).rating} />}
@@ -157,7 +157,7 @@ export default function ReviewsSection({ showHeader = true }: Props) {
         <div style={{ textAlign: "center", marginTop: 32 }}>
           <button
             onClick={() => setVisible((v) => v + 6)}
-            style={{ background: "#1A3D45", color: "#fff", fontWeight: 700, fontSize: 14, padding: "12px 28px", borderRadius: 12, border: "none", cursor: "pointer" }}
+            style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 14, padding: "12px 28px", borderRadius: 12, border: "none", cursor: "pointer" }}
           >
             Voir plus d&apos;avis
           </button>

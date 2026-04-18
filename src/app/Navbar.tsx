@@ -27,20 +27,20 @@ export default function Navbar() {
     <nav
       className="sticky top-0 z-50 transition-all duration-300"
       style={{
-        background: scrolled ? "rgba(26,61,69,0.97)" : "#1A3D45",
+        background: scrolled ? "rgba(99,103,255,0.97)" : "#6367FF",
         backdropFilter: scrolled ? "blur(16px)" : "none",
-        borderBottom: "2px solid rgba(121,201,197,0.25)",
+        borderBottom: "2px solid rgba(201,190,255,0.35)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-[68px] flex items-center justify-between">
         <Logo />
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: "#79C9C5" }}>
+        <div className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: "#C9BEFF" }}>
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="transition-colors" style={{ color: "#79C9C5" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "#E8F4F5")}
-              onMouseLeave={e => (e.currentTarget.style.color = "#79C9C5")}
+            <Link key={l.href} href={l.href} className="transition-colors" style={{ color: "#C9BEFF" }}
+              onMouseEnter={e => (e.currentTarget.style.color = "#FFDBFD")}
+              onMouseLeave={e => (e.currentTarget.style.color = "#C9BEFF")}
             >
               {l.label}
             </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
         <Link
           href="/free-trial"
           className="hidden md:inline-flex items-center gap-2 text-sm font-bold text-white px-6 py-2.5 rounded-xl transition-all"
-          style={{ background: "#F96E5B", boxShadow: "0 4px 18px rgba(249,110,91,0.45)", letterSpacing: "0.02em" }}
+          style={{ background: "#6367FF", boxShadow: "0 4px 18px rgba(99,103,255,0.45)", letterSpacing: "0.02em" }}
         >
           Essai Gratuit
         </Link>
@@ -62,9 +62,9 @@ export default function Navbar() {
           aria-label="Ouvrir le menu"
           className="md:hidden flex flex-col justify-center gap-[5px] w-8 h-8"
         >
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#E8F4F5" }} />
-          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#E8F4F5" }} />
-          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "#E8F4F5" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-[7px]" : ""}`} style={{ background: "#FFDBFD" }} />
+          <span className={`block h-0.5 rounded transition-opacity duration-300 ${open ? "opacity-0" : ""}`} style={{ background: "#FFDBFD" }} />
+          <span className={`block h-0.5 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-[7px]" : ""}`} style={{ background: "#FFDBFD" }} />
         </button>
       </div>
 
@@ -72,7 +72,7 @@ export default function Navbar() {
       {open && (
         <div
           className="md:hidden border-t px-4 pb-5"
-          style={{ background: "#1A3D45", borderColor: "rgba(121,201,197,0.25)" }}
+          style={{ background: "#6367FF", borderColor: "rgba(201,190,255,0.25)" }}
         >
           <div className="flex flex-col gap-1 pt-3">
             {links.map((l) => (
@@ -81,7 +81,7 @@ export default function Navbar() {
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className="px-3 py-3 rounded-xl text-sm font-medium transition-colors"
-                style={{ color: "#79C9C5" }}
+                style={{ color: "#C9BEFF" }}
               >
                 {l.label}
               </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
               href="/free-trial"
               onClick={() => setOpen(false)}
               className="mt-2 text-white px-4 py-3 rounded-xl text-sm font-bold text-center"
-              style={{ background: "#F96E5B" }}
+              style={{ background: "#6367FF" }}
             >
               Essai Gratuit
             </Link>

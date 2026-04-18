@@ -63,18 +63,18 @@ const posts = [
 ];
 
 const tagColors: Record<string, string> = {
-  Avis: "#F96E5B",
-  Légal: "#3F9AAE",
-  Comparatif: "#79C9C5",
-  Guide: "#1A3D45",
+  Avis: "#6367FF",
+  Légal: "#8494FF",
+  Comparatif: "#C9BEFF",
+  Guide: "#6367FF",
 };
 
 export default function BlogPage() {
   return (
-    <main style={{ background: "#E8F4F5", minHeight: "100vh" }}>
-      <section style={{ padding: "80px 16px 60px", background: "linear-gradient(to right, #1A3D45, #2d6a78)" }}>
+    <main style={{ background: "#FFDBFD", minHeight: "100vh" }}>
+      <section style={{ padding: "80px 16px 60px", background: "linear-gradient(135deg, #6367FF, #8494FF)" }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
-          <p style={{ color: "#79C9C5", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Blog</p>
+          <p style={{ color: "#C9BEFF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Blog</p>
           <h1 style={{ fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 900, color: "#fff", marginBottom: 16 }}>
             Guides & Actualités IPTV France
           </h1>
@@ -92,13 +92,13 @@ export default function BlogPage() {
                 background: "#fff",
                 borderRadius: 18,
                 padding: "32px 36px",
-                border: "1px solid rgba(63,154,174,0.15)",
-                boxShadow: "0 4px 20px rgba(26,61,69,0.06)",
+                border: "1px solid rgba(132,148,255,0.15)",
+                boxShadow: "0 4px 20px rgba(99,103,255,0.06)",
                 transition: "transform 0.2s, box-shadow 0.2s",
               }}>
                 <div style={{ display: "flex", gap: 12, alignItems: "center", marginBottom: 16, flexWrap: "wrap" }}>
                   <span style={{
-                    background: tagColors[post.tag] ?? "#1A3D45",
+                    background: tagColors[post.tag] ?? "#6367FF",
                     color: "#fff",
                     fontSize: 11,
                     fontWeight: 700,
@@ -110,11 +110,11 @@ export default function BlogPage() {
                   <span style={{ color: "#888", fontSize: 13 }}>{post.date}</span>
                   <span style={{ color: "#888", fontSize: 13 }}>· {post.readTime} de lecture</span>
                 </div>
-                <h2 style={{ fontSize: "clamp(18px, 2.5vw, 22px)", fontWeight: 800, color: "#1A3D45", marginBottom: 10, lineHeight: 1.3 }}>
+                <h2 style={{ fontSize: "clamp(18px, 2.5vw, 22px)", fontWeight: 800, color: "#6367FF", marginBottom: 10, lineHeight: 1.3 }}>
                   {post.title}
                 </h2>
                 <p style={{ color: "#444", fontSize: 15, lineHeight: 1.65, marginBottom: 16 }}>{post.excerpt}</p>
-                <span style={{ color: "#F96E5B", fontWeight: 700, fontSize: 14 }}>Lire l&apos;article →</span>
+                <span style={{ color: "#6367FF", fontWeight: 700, fontSize: 14 }}>Lire l&apos;article →</span>
               </article>
             </Link>
           ))}

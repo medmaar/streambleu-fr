@@ -33,11 +33,11 @@ const rows = [
 
 export default function IPTVvsCableFrance() {
   return (
-    <main style={{ background: "#E8F4F5", minHeight: "100vh" }}>
-      <section style={{ background: "linear-gradient(to right, #1A3D45, #2d6a78)", padding: "80px 16px 60px" }}>
+    <main style={{ background: "#FFDBFD", minHeight: "100vh" }}>
+      <section style={{ background: "linear-gradient(135deg, #6367FF, #8494FF)", padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 820, margin: "0 auto" }}>
           <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
-            <span style={{ background: "#79C9C5", color: "#1A3D45", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Comparatif</span>
+            <span style={{ background: "#C9BEFF", color: "#6367FF", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Comparatif</span>
             <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>20 février 2026 · 6 min de lecture</span>
           </div>
           <h1 style={{ fontSize: "clamp(26px, 4vw, 46px)", fontWeight: 900, color: "#fff", lineHeight: 1.2, marginBottom: 16 }}>
@@ -51,7 +51,7 @@ export default function IPTVvsCableFrance() {
 
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "60px 16px" }}>
         <section style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 14 }}>Le contexte en France</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 14 }}>Le contexte en France</h2>
           <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
             En France, la majorité des foyers reçoivent la télévision via une box opérateur (Orange, SFR, Free, Bouygues). Ces offres sont souvent bundlées avec l&apos;internet et le téléphone fixe. Mais depuis quelques années, les abonnements IPTV indépendants gagnent rapidement du terrain, notamment grâce à leur rapport qualité/prix et leur catalogue de chaînes bien plus large.
           </p>
@@ -59,24 +59,24 @@ export default function IPTVvsCableFrance() {
 
         {/* Table */}
         <section style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 20 }}>Tableau comparatif</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 20 }}>Tableau comparatif</h2>
           <div style={{ overflowX: "auto" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
               <thead>
                 <tr>
-                  <th style={{ textAlign: "left", padding: "12px 16px", background: "#1A3D45", color: "#fff", fontWeight: 700 }}>Critère</th>
-                  <th style={{ textAlign: "center", padding: "12px 16px", background: "#F96E5B", color: "#fff", fontWeight: 700 }}>IPTV (Stream Bleu)</th>
-                  <th style={{ textAlign: "center", padding: "12px 16px", background: "#1A3D45", color: "rgba(255,255,255,0.7)", fontWeight: 600 }}>Câble / ADSL</th>
+                  <th style={{ textAlign: "left", padding: "12px 16px", background: "#6367FF", color: "#fff", fontWeight: 700 }}>Critère</th>
+                  <th style={{ textAlign: "center", padding: "12px 16px", background: "#6367FF", color: "#fff", fontWeight: 700 }}>IPTV (Stream Bleu)</th>
+                  <th style={{ textAlign: "center", padding: "12px 16px", background: "#6367FF", color: "rgba(255,255,255,0.7)", fontWeight: 600 }}>Câble / ADSL</th>
                 </tr>
               </thead>
               <tbody>
                 {rows.map((row, i) => (
-                  <tr key={row.feature} style={{ background: i % 2 === 0 ? "#fff" : "rgba(63,154,174,0.04)" }}>
-                    <td style={{ padding: "12px 16px", fontWeight: 600, color: "#1A3D45" }}>{row.feature}</td>
-                    <td style={{ padding: "12px 16px", textAlign: "center", color: row.winner === "iptv" ? "#3F9AAE" : "#333", fontWeight: row.winner === "iptv" ? 700 : 400 }}>
+                  <tr key={row.feature} style={{ background: i % 2 === 0 ? "#fff" : "rgba(132,148,255,0.04)" }}>
+                    <td style={{ padding: "12px 16px", fontWeight: 600, color: "#6367FF" }}>{row.feature}</td>
+                    <td style={{ padding: "12px 16px", textAlign: "center", color: row.winner === "iptv" ? "#8494FF" : "#333", fontWeight: row.winner === "iptv" ? 700 : 400 }}>
                       {row.winner === "iptv" && <span style={{ marginRight: 6 }}>✓</span>}{row.iptv}
                     </td>
-                    <td style={{ padding: "12px 16px", textAlign: "center", color: row.winner === "cable" ? "#3F9AAE" : "#666", fontWeight: row.winner === "cable" ? 700 : 400 }}>
+                    <td style={{ padding: "12px 16px", textAlign: "center", color: row.winner === "cable" ? "#8494FF" : "#666", fontWeight: row.winner === "cable" ? 700 : 400 }}>
                       {row.winner === "cable" && <span style={{ marginRight: 6 }}>✓</span>}{row.cable}
                     </td>
                   </tr>
@@ -87,7 +87,7 @@ export default function IPTVvsCableFrance() {
         </section>
 
         <section style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#1A3D45", marginBottom: 14 }}>Notre verdict</h2>
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 14 }}>Notre verdict</h2>
           <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
             Pour la grande majorité des foyers français connectés à la fibre ou à l&apos;ADSL, un service IPTV comme Stream Bleu offre clairement plus de valeur : plus de chaînes, meilleure qualité vidéo, sport premium inclus — et sans engagement.
           </p>
@@ -96,15 +96,15 @@ export default function IPTVvsCableFrance() {
           </p>
         </section>
 
-        <section style={{ background: "#1A3D45", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
+        <section style={{ background: "#6367FF", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
           <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Essayez Stream Bleu gratuitement</h2>
           <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>24h d&apos;essai gratuit — sans carte bancaire. Comparez par vous-même.</p>
-          <Link href="/free-trial" style={{ background: "#F96E5B", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+          <Link href="/free-trial" style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
             Essai Gratuit →
           </Link>
         </section>
 
-        <Link href="/blog" style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
+        <Link href="/blog" style={{ color: "#8494FF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
       </article>
     </main>
   );

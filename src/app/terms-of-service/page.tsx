@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Conditions d'utilisation</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#6367FF]">Conditions d'utilisation</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         <div className="space-y-10 text-black leading-relaxed">
@@ -101,8 +101,8 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">12. Contact</h2>
             <div className="bg-transparent rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#F96E5B] hover:underline">help@streambleu.fr</a></p>
-              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">+1 (782) 802-6280</a></p>
+              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#6367FF] hover:underline">help@streambleu.fr</a></p>
+              <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#6367FF] hover:underline">+1 (782) 802-6280</a></p>
             </div>
           </section>
         </div>

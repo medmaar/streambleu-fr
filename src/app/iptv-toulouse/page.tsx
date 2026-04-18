@@ -54,15 +54,15 @@ export default function IPTVToulousePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
 
         {/* Hero */}
-        <section style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", padding: "80px 16px 60px" }}>
+        <section style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span style={{
-              background: "rgba(249,110,91,0.12)",
-              border: "1px solid rgba(249,110,91,0.3)",
-              color: "#F96E5B",
+              background: "rgba(99,103,255,0.12)",
+              border: "1px solid rgba(99,103,255,0.3)",
+              color: "#6367FF",
               fontSize: 12,
               fontWeight: 700,
               padding: "4px 14px",
@@ -72,17 +72,17 @@ export default function IPTVToulousePage() {
             }}>
               IPTV Toulouse · Stream Bleu
             </span>
-            <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#1A3D45" }}>
+            <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#6367FF" }}>
               Meilleur IPTV<br />
-              <span style={{ color: "#F96E5B" }}>Toulouse 2026</span>
+              <span style={{ color: "#6367FF" }}>Toulouse 2026</span>
             </h1>
-            <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "#1A3D45", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
+            <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "#6367FF", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
               Stream Bleu est le meilleur service IPTV à Toulouse. Profitez de TF1, Canal+, beIN Sports,
               RMC Sport et 25 000+ chaînes en 4K Ultra HD. Suivez le Stade Toulousain en Top 14, la Ligue 1 et toute l'actualité sportive en 4K.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/pricing" style={{
-                background: "#F96E5B",
+                background: "#6367FF",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -90,14 +90,14 @@ export default function IPTVToulousePage() {
                 borderRadius: 12,
                 textDecoration: "none",
                 display: "inline-block",
-                boxShadow: "0 6px 20px rgba(249,110,91,0.4)",
+                boxShadow: "0 6px 20px rgba(99,103,255,0.4)",
               }}>
                 Voir les Tarifs →
               </Link>
               <Link href="/free-trial" style={{
                 background: "transparent",
-                border: "2px solid #1A3D45",
-                color: "#1A3D45",
+                border: "2px solid #6367FF",
+                color: "#6367FF",
                 fontWeight: 700,
                 fontSize: 16,
                 padding: "14px 32px",
@@ -114,7 +114,7 @@ export default function IPTVToulousePage() {
         {/* Features grid */}
         <section style={{ padding: "70px 16px", background: "#fff" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 48, color: "#1A3D45" }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 48, color: "#6367FF" }}>
               Pourquoi choisir Stream Bleu à Toulouse ?
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
@@ -127,14 +127,14 @@ export default function IPTVToulousePage() {
                 { icon: "🆓", title: "Essai Gratuit", desc: "Testez 24h gratuitement sans carte bancaire. Activation instantanée." },
               ].map((f) => (
                 <div key={f.title} style={{
-                  background: "rgba(63,154,174,0.06)",
-                  border: "1px solid rgba(63,154,174,0.18)",
+                  background: "rgba(132,148,255,0.06)",
+                  border: "1px solid rgba(132,148,255,0.18)",
                   borderRadius: 16,
                   padding: "28px 24px",
                 }}>
                   <div style={{ fontSize: 32, marginBottom: 12 }}>{f.icon}</div>
-                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#1A3D45" }}>{f.title}</h3>
-                  <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#6367FF" }}>{f.title}</h3>
+                  <p style={{ color: "#1a1a4e", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
                 </div>
               ))}
             </div>
@@ -142,7 +142,7 @@ export default function IPTVToulousePage() {
         </section>
 
         {/* Pricing CTA */}
-        <section style={{ padding: "70px 16px", background: "#1A3D45", textAlign: "center" }}>
+        <section style={{ padding: "70px 16px", background: "#6367FF", textAlign: "center" }}>
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, color: "#fff", marginBottom: 16 }}>
               Abonnement IPTV Toulouse à partir de 9€/mois
@@ -152,7 +152,7 @@ export default function IPTVToulousePage() {
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/free-trial" style={{
-                background: "#F96E5B",
+                background: "#6367FF",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -181,22 +181,22 @@ export default function IPTVToulousePage() {
         </section>
 
         {/* FAQ */}
-        <section style={{ padding: "70px 16px", background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)" }}>
+        <section style={{ padding: "70px 16px", background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 40, color: "#1A3D45" }}>
+            <p style={{ color: "#6367FF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 40, color: "#6367FF" }}>
               Questions fréquentes — IPTV Toulouse
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {faqItems.map((faq) => (
                 <div key={faq.q} style={{
                   background: "rgba(255,255,255,0.7)",
-                  border: "1px solid rgba(63,154,174,0.2)",
+                  border: "1px solid rgba(132,148,255,0.2)",
                   borderRadius: 16,
                   padding: "24px 28px",
                 }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 10, color: "#1A3D45" }}>{faq.q}</h3>
-                  <p style={{ color: "#000000", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 10, color: "#6367FF" }}>{faq.q}</h3>
+                  <p style={{ color: "#1a1a4e", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
                 </div>
               ))}
             </div>
@@ -206,7 +206,7 @@ export default function IPTVToulousePage() {
         {/* Internal links to other cities */}
         <section style={{ padding: "60px 16px", background: "#fff" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: 22, fontWeight: 800, marginBottom: 32, color: "#1A3D45" }}>
+            <h2 style={{ textAlign: "center", fontSize: 22, fontWeight: 800, marginBottom: 32, color: "#6367FF" }}>
               IPTV dans d&apos;autres villes françaises
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
@@ -219,12 +219,12 @@ export default function IPTVToulousePage() {
                 { label: "IPTV Bordeaux", href: "/iptv-bordeaux" },
               ].filter(c => !c.href.includes("toulouse")).map((c) => (
                 <Link key={c.href} href={c.href} style={{
-                  background: "rgba(63,154,174,0.08)",
-                  border: "1px solid rgba(63,154,174,0.2)",
+                  background: "rgba(132,148,255,0.08)",
+                  border: "1px solid rgba(132,148,255,0.2)",
                   borderRadius: 10,
                   padding: "10px 20px",
                   textDecoration: "none",
-                  color: "#1A3D45",
+                  color: "#6367FF",
                   fontSize: 14,
                   fontWeight: 600,
                 }}>

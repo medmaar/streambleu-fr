@@ -2,18 +2,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #E8F4F5;
-  --foreground: #1A3D45;
-  --teal: #3F9AAE;
-  --mint: #79C9C5;
-  --cream: #E8F4F5;
-  --coral: #F96E5B;
-  --dark: #1A3D45;
+  --background: #FFDBFD;
+  --foreground: #6367FF;
+  --purple: #8494FF;
+  --light-purple: #C9BEFF;
+  --pink-bg: #FFDBFD;
+  --primary: #6367FF;
+  --dark: #6367FF;
 }
 
 body {
-  background: #E8F4F5;
-  color: #000000;
+  background: #FFDBFD;
+  color: #1a1a4e;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -36,8 +36,8 @@ body {
 }
 
 @keyframes fourKGlow {
-  0%, 100% { text-shadow: 0 0 8px rgba(249,110,91,0.6),  0 0 20px rgba(249,110,91,0.3); }
-  50%       { text-shadow: 0 0 16px rgba(249,110,91,0.9), 0 0 40px rgba(249,110,91,0.5), 0 0 60px rgba(249,110,91,0.2); }
+  0%, 100% { text-shadow: 0 0 8px rgba(99,103,255,0.6),  0 0 20px rgba(99,103,255,0.3); }
+  50%       { text-shadow: 0 0 16px rgba(99,103,255,0.9), 0 0 40px rgba(99,103,255,0.5), 0 0 60px rgba(99,103,255,0.2); }
 }
 
 .logo-leaf {
@@ -48,7 +48,7 @@ body {
 .logo-4k {
   display: inline-block;
   animation: fourKPump 1.8s ease-in-out infinite, fourKGlow 1.8s ease-in-out infinite;
-  color: #F96E5B !important;
+  color: #C9BEFF !important;
 }
 
 @keyframes statPop {
@@ -124,29 +124,20 @@ a, button {
   position: relative;
 }
 
-/* Nav and footer links — NO background change ever (except the Free Trial CTA button) */
+/* Nav and footer links — NO background change */
 nav a:not([href="/free-trial"]), nav a:not([href="/free-trial"]):hover, footer a, footer a:hover {
   background: transparent !important;
   box-shadow: none !important;
 }
 nav a:not([href="/free-trial"]):hover { transform: translateY(-2px) !important; }
 
-/* Coral buttons → dark teal on hover */
-a:not(nav a):not(footer a)[style*="#F96E5B"]:hover,
-button[style*="#F96E5B"]:hover {
-  background: #1A3D45 !important;
+/* Primary buttons (#6367FF) → lighter on hover */
+a:not(nav a):not(footer a)[style*="#6367FF"]:hover,
+button[style*="#6367FF"]:hover {
+  background: #8494FF !important;
   color: #ffffff !important;
   transform: translateY(-4px) scale(1.04) !important;
-  box-shadow: 0 14px 32px rgba(26,61,69,0.3) !important;
-}
-
-/* Dark buttons → coral on hover */
-a:not(nav a):not(footer a)[style*="#1A3D45"]:hover,
-button[style*="#1A3D45"]:hover {
-  background: #F96E5B !important;
-  color: #ffffff !important;
-  transform: translateY(-4px) scale(1.04) !important;
-  box-shadow: 0 14px 32px rgba(249,110,91,0.35) !important;
+  box-shadow: 0 14px 32px rgba(99,103,255,0.4) !important;
 }
 
 /* ── UNDERLINE ANIMATION ── */
@@ -158,7 +149,7 @@ nav a::after, footer a::after {
   position: absolute;
   bottom: -2px; left: 0;
   width: 0; height: 2px;
-  background: #F96E5B;
+  background: #C9BEFF;
   border-radius: 2px;
   transition: width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -171,14 +162,14 @@ a[href="/free-trial"] {
 a[href="/free-trial"]:hover { animation: none !important; }
 
 @keyframes softPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(249,110,91,0); }
-  50%       { box-shadow: 0 0 0 10px rgba(249,110,91,0.15); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(99,103,255,0); }
+  50%       { box-shadow: 0 0 0 10px rgba(99,103,255,0.2); }
 }
 
 /* ── CHANNEL PILLS ── */
 span[style*="borderRadius: 8"]:hover,
 div[style*="borderRadius: 14"]:hover {
-  background: #3F9AAE !important;
+  background: #8494FF !important;
   color: #fff !important;
   transform: scale(1.06) translateY(-2px) !important;
   transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
@@ -186,14 +177,14 @@ div[style*="borderRadius: 14"]:hover {
 
 /* ── CITY LINKS ── */
 a[href*="/iptv-"]:hover {
-  background: #3F9AAE !important;
+  background: #8494FF !important;
   color: #fff !important;
   transform: translateY(-4px) scale(1.05) !important;
 }
 
 /* ── INPUT FOCUS ── */
 input:focus, select:focus, textarea:focus {
-  outline: 2px solid #79C9C5 !important;
+  outline: 2px solid #C9BEFF !important;
   outline-offset: 2px;
   transform: scale(1.01);
   transition: all 0.25s ease !important;
@@ -203,20 +194,20 @@ input:focus, select:focus, textarea:focus {
 main > section:first-child::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(249,110,91,0.06), rgba(63,154,174,0.06), rgba(121,201,197,0.06));
+  background: linear-gradient(135deg, rgba(99,103,255,0.08), rgba(132,148,255,0.06), rgba(201,190,255,0.06));
   background-size: 400% 400%;
   animation: gradientShift 8s ease infinite;
   pointer-events: none;
   z-index: 0;
 }
 
-/* ── CONNECTION SELECTOR BUTTONS — no scale, just color change ── */
+/* ── CONNECTION SELECTOR BUTTONS ── */
 button[data-n]:hover {
   transform: none !important;
-  background: #1A3D45 !important;
-  color: #E8F4F5 !important;
+  background: #6367FF !important;
+  color: #FFDBFD !important;
   opacity: 1 !important;
-  border-color: #1A3D45 !important;
+  border-color: #6367FF !important;
 }
 html { scroll-behavior: smooth; }
 
@@ -225,8 +216,7 @@ nav {
   animation: fadeSlideUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-
-/* react-phone-number-input dark theme */
+/* react-phone-number-input theme */
 .phone-input-wrapper .PhoneInput {
   display: flex;
   gap: 8px;
@@ -244,7 +234,7 @@ nav {
   cursor: pointer;
 }
 .phone-input-wrapper .PhoneInputCountrySelect {
-  background: #1A3D45;
+  background: #6367FF;
   color: #fff;
   border: none;
   outline: none;
@@ -265,7 +255,7 @@ nav {
   color: rgba(255,255,255,0.35);
 }
 .phone-input-wrapper .PhoneInputInput:focus {
-  border-color: #79C9C5;
+  border-color: #C9BEFF;
 }
 .phone-input-wrapper .PhoneInputCountrySelectArrow {
   color: rgba(255,255,255,0.5);

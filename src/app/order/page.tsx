@@ -20,7 +20,7 @@ function OrderContent() {
   );
 
   return (
-    <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-16 px-4">
+    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4">
       <div className="max-w-xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
@@ -28,7 +28,7 @@ function OrderContent() {
             You&apos;re one step away
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3">
-            Complete Your <span className="text-[#F96E5B]">Order</span>
+            Complete Your <span className="text-[#6367FF]">Order</span>
           </h1>
           <p className="text-black">
             Contact us via your preferred method below and we&apos;ll activate your subscription within minutes.
@@ -36,8 +36,8 @@ function OrderContent() {
         </div>
 
         {/* Plan summary */}
-        <div className="bg-transparent border border-[#F96E5B] rounded-2xl p-6 mb-8">
-          <h2 className="text-lg font-bold text-[#F96E5B] mb-4">Your Selected Plan</h2>
+        <div className="bg-transparent border border-[#6367FF] rounded-2xl p-6 mb-8">
+          <h2 className="text-lg font-bold text-[#6367FF] mb-4">Your Selected Plan</h2>
           <div className="flex justify-between items-center mb-2">
             <span className="text-black">Duration</span>
             <span className="font-bold">{duration}</span>
@@ -48,7 +48,7 @@ function OrderContent() {
           </div>
           <div className="border-t border-gray-700 mt-4 pt-4 flex justify-between items-center">
             <span className="text-black font-bold">Total</span>
-            <span className="text-3xl font-extrabold text-[#F96E5B]">${price}</span>
+            <span className="text-3xl font-extrabold text-[#6367FF]">${price}</span>
           </div>
         </div>
 
@@ -108,7 +108,7 @@ function OrderContent() {
         </div>
 
         <div className="text-center">
-          <a href="/pricing" className="text-[#1A3D45] hover:text-[#F96E5B] text-sm transition-colors">
+          <a href="/pricing" className="text-[#6367FF] hover:text-[#6367FF] text-sm transition-colors">
             ← Back to pricing
           </a>
         </div>
