@@ -133,7 +133,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Nom complet */}
       <div>
-        <label style={{ display: "block", fontSize: 13, color: "#C9BEFF", marginBottom: 6, fontWeight: 600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>
           Nom Complet <span style={{ color: "#fd0322" }}>*</span>
         </label>
         <input type="text" name="full_name" required placeholder="Ex : Jean Dupont"
@@ -142,7 +142,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Email */}
       <div>
-        <label style={{ display: "block", fontSize: 13, color: "#C9BEFF", marginBottom: 6, fontWeight: 600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>
           Adresse Email <span style={{ color: "#fd0322" }}>*</span>
         </label>
         <input type="text" name="email" required placeholder="vous@exemple.com"
@@ -156,7 +156,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Téléphone */}
       <div>
-        <label style={{ display: "block", fontSize: 13, color: "#C9BEFF", marginBottom: 6, fontWeight: 600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>
           Téléphone / WhatsApp
           <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 11, marginLeft: 6 }}>(optionnel)</span>
         </label>
@@ -167,7 +167,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Pays */}
       <div>
-        <label style={{ display: "block", fontSize: 13, color: "#C9BEFF", marginBottom: 6, fontWeight: 600 }}>Pays</label>
+        <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>Pays</label>
         <select name="country" value={form.country} onChange={handleChange}
           style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}>
           {countries.map((c) => (
@@ -178,7 +178,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Appareil */}
       <div>
-        <label style={{ display: "block", fontSize: 13, color: "#C9BEFF", marginBottom: 6, fontWeight: 600 }}>Type d&apos;appareil</label>
+        <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>Type d&apos;appareil</label>
         <select name="device" value={form.device} onChange={handleChange}
           style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}>
           <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Sélectionnez votre appareil</option>
@@ -190,7 +190,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Notes */}
       <div>
-        <label style={{ display: "block", fontSize: 13, color: "#C9BEFF", marginBottom: 6, fontWeight: 600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#c5bcf5", marginBottom: 6, fontWeight: 600 }}>
           Notes / Message
           <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 11, marginLeft: 6 }}>(optionnel)</span>
         </label>
@@ -201,7 +201,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       <button type="submit" disabled={status === "loading"}
         className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60"
-        style={{ background: "#6367FF" }}>
+        style={{ background: "#5a5fcf" }}>
         {status === "loading" ? "Envoi en cours…" : "Commander →"}
       </button>
 

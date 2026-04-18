@@ -20,8 +20,8 @@ export default function PlanFAQ({ items }: Props) {
           key={i}
           className="rounded-2xl border overflow-hidden"
           style={{
-            borderColor: open === i ? "rgba(201,190,255,0.5)" : "rgba(255,255,255,0.1)",
-            background: open === i ? "rgba(201,190,255,0.08)" : "rgba(255,255,255,0.05)",
+            borderColor: open === i ? "rgba(197,188,245,0.5)" : "rgba(255,255,255,0.1)",
+            background: open === i ? "rgba(197,188,245,0.08)" : "rgba(255,255,255,0.05)",
             transition: "border-color 0.2s, background 0.2s",
           }}
         >
@@ -35,7 +35,7 @@ export default function PlanFAQ({ items }: Props) {
               className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-lg font-bold"
               style={{
                 color: "#ffffff",
-                background: open === i ? "#6367FF" : "rgba(255,255,255,0.12)",
+                background: open === i ? "#5a5fcf" : "rgba(255,255,255,0.12)",
                 transform: open === i ? "rotate(45deg)" : "rotate(0deg)",
                 transition: "transform 0.25s, background 0.2s",
               }}

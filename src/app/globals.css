@@ -2,17 +2,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: linear-gradient(to right, rgba(100,130,255,0.06) 0%, #FFDBFD 35%, #FFDBFD 65%, rgba(220,100,120,0.06) 100%) fixed;
-  --foreground: #6367FF;
-  --purple: #8494FF;
-  --light-purple: #C9BEFF;
-  --pink-bg: #FFDBFD;
-  --primary: #6367FF;
-  --dark: #6367FF;
+  --background: #f5f0ff;
+  --foreground: #5a5fcf;
+  --purple: #7b87e8;
+  --light-purple: #c5bcf5;
+  --pink-bg: #fdf5ff;
+  --primary: #5a5fcf;
 }
 
 body {
-  background: linear-gradient(to right, rgba(100,130,255,0.06) 0%, #FFDBFD 35%, #FFDBFD 65%, rgba(220,100,120,0.06) 100%) fixed;
+  background: linear-gradient(to right, rgba(90,95,207,0.04) 0%, #fdf5ff 35%, #fdf5ff 65%, rgba(200,80,100,0.04) 100%) fixed;
   color: #1a1a4e;
   font-family: 'Quicksand', sans-serif;
 }
@@ -36,230 +35,138 @@ body {
 }
 
 @keyframes fourKGlow {
-  0%, 100% { text-shadow: 0 0 8px rgba(99,103,255,0.6),  0 0 20px rgba(99,103,255,0.3); }
-  50%       { text-shadow: 0 0 16px rgba(99,103,255,0.9), 0 0 40px rgba(99,103,255,0.5), 0 0 60px rgba(99,103,255,0.2); }
+  0%, 100% { text-shadow: 0 0 8px rgba(90,95,207,0.5),  0 0 20px rgba(90,95,207,0.2); }
+  50%       { text-shadow: 0 0 16px rgba(90,95,207,0.8), 0 0 40px rgba(90,95,207,0.4); }
 }
 
-.logo-leaf {
-  animation: leafSway 3.5s ease-in-out infinite;
-  display: inline-block;
-}
+.logo-leaf { animation: leafSway 3.5s ease-in-out infinite; display: inline-block; }
 
 .logo-4k {
   display: inline-block;
   animation: fourKPump 1.8s ease-in-out infinite, fourKGlow 1.8s ease-in-out infinite;
-  color: #C9BEFF !important;
+  color: #c5bcf5 !important;
 }
 
 @keyframes statPop {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeSlideUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
-@keyframes ripple {
-  to { transform: scale(2.5); opacity: 0; }
-}
-
+@keyframes ripple { to { transform: scale(2.5); opacity: 0; } }
 @keyframes floatOrb {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33%       { transform: translate(20px, -15px) scale(1.05); }
-  66%       { transform: translate(-10px, 10px) scale(0.97); }
+  0%, 100% { transform: translate(0,0) scale(1); }
+  33%       { transform: translate(20px,-15px) scale(1.05); }
+  66%       { transform: translate(-10px,10px) scale(0.97); }
 }
-
 @keyframes gradientShift {
   0%, 100% { background-position: 0% 50%; }
   50%       { background-position: 100% 50%; }
 }
-
 @keyframes slideInLeft {
   from { opacity: 0; transform: translateX(-28px); }
   to   { opacity: 1; transform: translateX(0); }
 }
-
 @keyframes bounceIn {
   0%   { transform: scale(0.85); opacity: 0; }
   60%  { transform: scale(1.06); opacity: 1; }
   100% { transform: scale(1); }
 }
 
-/* ── SCROLL REVEAL ── */
 .ma-init {
   opacity: 0;
   transform: translateY(22px);
-  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
-              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
 }
-.ma-visible {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
+.ma-visible { opacity: 1 !important; transform: translateY(0) !important; }
+.animate-fade-slide { animation: fadeSlideUp 0.55s cubic-bezier(0.22,1,0.36,1) forwards; }
 
-.animate-fade-slide {
-  animation: fadeSlideUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-/* ── MARQUEE ── */
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 .animate-marquee { animation: marquee 28s linear infinite; }
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marquee 35s linear infinite;
-}
+.marquee-track { display: flex; width: max-content; animation: marquee 35s linear infinite; }
 
-/* ── BUTTONS — springy hover ── */
 a, button {
-  transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
-              background 0.22s ease,
-              color 0.22s ease,
-              box-shadow 0.28s ease !important;
+  transition: transform 0.32s cubic-bezier(0.34,1.56,0.64,1), background 0.22s ease, color 0.22s ease, box-shadow 0.28s ease !important;
   position: relative;
 }
 
-/* Nav and footer links — NO background change */
 nav a:not([href="/free-trial"]), nav a:not([href="/free-trial"]):hover, footer a, footer a:hover {
   background: transparent !important;
   box-shadow: none !important;
 }
 nav a:not([href="/free-trial"]):hover { transform: translateY(-2px) !important; }
 
-/* Primary buttons (#6367FF) → lighter on hover */
-a:not(nav a):not(footer a)[style*="#6367FF"]:hover,
-button[style*="#6367FF"]:hover {
-  background: #8494FF !important;
+a:not(nav a):not(footer a)[style*="#5a5fcf"]:hover,
+button[style*="#5a5fcf"]:hover {
+  background: #7b87e8 !important;
   color: #ffffff !important;
   transform: translateY(-4px) scale(1.04) !important;
-  box-shadow: 0 14px 32px rgba(99,103,255,0.4) !important;
+  box-shadow: 0 14px 32px rgba(90,95,207,0.35) !important;
 }
 
-/* ── UNDERLINE ANIMATION ── */
-nav a, footer a {
-  position: relative;
-}
+nav a, footer a { position: relative; }
 nav a::after, footer a::after {
   content: '';
   position: absolute;
   bottom: -2px; left: 0;
   width: 0; height: 2px;
-  background: #C9BEFF;
+  background: #c5bcf5;
   border-radius: 2px;
-  transition: width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: width 0.35s cubic-bezier(0.34,1.56,0.64,1);
 }
 nav a:hover::after, footer a:hover::after { width: 100%; }
 
-/* ── FREE TRIAL PULSE ── */
-a[href="/free-trial"] {
-  animation: softPulse 3.2s ease-in-out infinite;
-}
-a[href="/free-trial"]:hover { animation: none !important; }
-
 @keyframes softPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(99,103,255,0); }
-  50%       { box-shadow: 0 0 0 10px rgba(99,103,255,0.2); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(90,95,207,0); }
+  50%       { box-shadow: 0 0 0 10px rgba(90,95,207,0.15); }
 }
 
-/* ── CHANNEL PILLS ── */
 span[style*="borderRadius: 8"]:hover,
 div[style*="borderRadius: 14"]:hover {
-  background: #8494FF !important;
+  background: #7b87e8 !important;
   color: #fff !important;
   transform: scale(1.06) translateY(-2px) !important;
-  transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  transition: all 0.28s cubic-bezier(0.34,1.56,0.64,1) !important;
 }
 
-/* ── CITY LINKS ── */
 a[href*="/iptv-"]:hover {
-  background: #8494FF !important;
+  background: #7b87e8 !important;
   color: #fff !important;
   transform: translateY(-4px) scale(1.05) !important;
 }
 
-/* ── INPUT FOCUS ── */
 input:focus, select:focus, textarea:focus {
-  outline: 2px solid #C9BEFF !important;
+  outline: 2px solid #c5bcf5 !important;
   outline-offset: 2px;
   transform: scale(1.01);
   transition: all 0.25s ease !important;
 }
 
-/* ── HERO GRADIENT ANIMATION ── */
 main > section:first-child::before {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(99,103,255,0.08), rgba(132,148,255,0.06), rgba(201,190,255,0.06));
+  background: linear-gradient(135deg, rgba(90,95,207,0.06), rgba(123,135,232,0.04), rgba(197,188,245,0.04));
   background-size: 400% 400%;
   animation: gradientShift 8s ease infinite;
   pointer-events: none;
   z-index: 0;
 }
 
-/* ── CONNECTION SELECTOR BUTTONS ── */
 button[data-n]:hover {
   transform: none !important;
-  background: #6367FF !important;
-  color: #FFDBFD !important;
+  background: #5a5fcf !important;
+  color: #fdf5ff !important;
   opacity: 1 !important;
-  border-color: #6367FF !important;
+  border-color: #5a5fcf !important;
 }
 html { scroll-behavior: smooth; }
 
-/* ── PAGE LOAD BOUNCE ── */
-nav {
-  animation: fadeSlideUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-/* react-phone-number-input theme */
-.phone-input-wrapper .PhoneInput {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-.phone-input-wrapper .PhoneInputCountry {
-  display: flex;
-  align-items: center;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 0 12px;
-  height: 46px;
-  gap: 6px;
-  cursor: pointer;
-}
-.phone-input-wrapper .PhoneInputCountrySelect {
-  background: #6367FF;
-  color: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 14px;
-}
-.phone-input-wrapper .PhoneInputInput {
-  flex: 1;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 12px 16px;
-  color: #fff;
-  font-size: 14px;
-  outline: none;
-}
-.phone-input-wrapper .PhoneInputInput::placeholder {
-  color: rgba(255,255,255,0.35);
-}
-.phone-input-wrapper .PhoneInputInput:focus {
-  border-color: #C9BEFF;
-}
-.phone-input-wrapper .PhoneInputCountrySelectArrow {
-  color: rgba(255,255,255,0.5);
-}
+nav { animation: fadeSlideUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
 
 /* ── EIFFEL TOWER LOGO FLOAT ── */
 @keyframes towerFloat {
@@ -269,14 +176,24 @@ nav {
 .logo-tower {
   animation: towerFloat 3.2s ease-in-out infinite;
   display: inline-block;
-  filter: drop-shadow(0 2px 8px rgba(201,190,255,0.4));
+  filter: drop-shadow(0 2px 6px rgba(197,188,245,0.3));
 }
 
-/* ── STREAMING WAVES LOGO PULSE ── */
-@keyframes wavesPulse {
-  0%, 100% { transform: scale(1);    filter: drop-shadow(0 0 4px rgba(201,190,255,0.3)); }
-  50%       { transform: scale(1.06); filter: drop-shadow(0 0 8px rgba(201,190,255,0.55)); }
+/* react-phone-number-input theme */
+.phone-input-wrapper .PhoneInput { display: flex; gap: 8px; align-items: center; }
+.phone-input-wrapper .PhoneInputCountry {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px; padding: 0 12px; height: 46px; gap: 6px; cursor: pointer;
 }
-.logo-tower {
-  animation: wavesPulse 3s ease-in-out infinite;
+.phone-input-wrapper .PhoneInputCountrySelect {
+  background: #5a5fcf; color: #fff; border: none; outline: none; cursor: pointer; font-size: 14px;
 }
+.phone-input-wrapper .PhoneInputInput {
+  flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px; padding: 12px 16px; color: #fff; font-size: 14px; outline: none;
+}
+.phone-input-wrapper .PhoneInputInput::placeholder { color: rgba(255,255,255,0.35); }
+.phone-input-wrapper .PhoneInputInput:focus { border-color: #c5bcf5; }
+.phone-input-wrapper .PhoneInputCountrySelectArrow { color: rgba(255,255,255,0.5); }

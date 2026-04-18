@@ -118,7 +118,7 @@ export default function Animations() {
     glow.id = "cursor-glow";
     glow.style.cssText = `
       position:fixed; width:320px; height:320px; border-radius:50%;
-      background:radial-gradient(circle, rgba(99,103,255,0.06) 0%, transparent 70%);
+      background:radial-gradient(circle, rgba(90,95,207,0.06) 0%, transparent 70%);
       pointer-events:none; z-index:0; top:0; left:0;
       transform:translate(-50%,-50%);
       transition:opacity 0.3s ease;

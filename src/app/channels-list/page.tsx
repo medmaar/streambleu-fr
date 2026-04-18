@@ -8101,28 +8101,28 @@ const categories = [{
 
 export default function ChannelsListPage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen">
       {/* Hero */}
-      <section style={{ background: "#6367FF", padding: "64px 16px", textAlign: "center" }}>
+      <section style={{ background: "#5a5fcf", padding: "64px 16px", textAlign: "center" }}>
         <div className="max-w-3xl mx-auto">
           <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 900, marginBottom: 16, color: "#ffffff" }}>
-            Stream Bleu <span className="text-[#6367FF]">Liste des Chaînes</span>
+            Stream Bleu <span className="text-[#5a5fcf]">Liste des Chaînes</span>
           </h1>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
             25 000+ live channels dans toute la France, the US, UK, and worldwide.
             Every plan includes all channels below — no add-ons required.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
-            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> All Français networks</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> TSN &amp; Sportsnet</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> 4K &amp; HD quality</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#C9BEFF" }}>✓</span> PPV included</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> All Français networks</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> TSN &amp; Sportsnet</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> 4K &amp; HD quality</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> PPV included</span>
           </div>
         </div>
       </section>
 
       {/* Stats bar */}
-      <div className="bg-[#6367FF] py-3 px-4">
+      <div className="bg-[#5a5fcf] py-3 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-black text-sm font-semibold">
           <span>🌍 152 Countries &amp; Regions</span>
           <span>📺 25 000+ Chaînes en direct</span>
@@ -8137,16 +8137,16 @@ export default function ChannelsListPage() {
           {categories.map((cat, index) => (
             <details
               key={cat.name}
-              className="group border border-[rgba(132,148,255,0.2)] rounded-xl overflow-hidden transition-all hover:border-[#6367FF]" style={{ background: "#ffffff" }}
+              className="group border border-[rgba(123,135,232,0.2)] rounded-xl overflow-hidden transition-all hover:border-[#5a5fcf]" style={{ background: "#ffffff" }}
             >
               <summary className="flex items-center justify-between px-5 py-4 cursor-pointer select-none list-none">
                 <div className="flex items-center gap-3">
-                  <span className="text-[#6367FF] font-bold text-lg group-open:text-[#6367FF] transition-colors">
+                  <span className="text-[#5a5fcf] font-bold text-lg group-open:text-[#5a5fcf] transition-colors">
                     {cat.name}
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="bg-white border border-[rgba(132,148,255,0.25)] text-black text-xs px-3 py-1 rounded-full font-medium">
+                  <span className="bg-white border border-[rgba(123,135,232,0.25)] text-black text-xs px-3 py-1 rounded-full font-medium">
                     {cat.count} channels
                   </span>
                   <svg
@@ -8160,12 +8160,12 @@ export default function ChannelsListPage() {
                   </svg>
                 </div>
               </summary>
-              <div className="px-5 pb-5 pt-2 border-t" style={{ borderColor: "rgba(132,148,255,0.15)" }}>
+              <div className="px-5 pb-5 pt-2 border-t" style={{ borderColor: "rgba(123,135,232,0.15)" }}>
                 <div className="flex flex-wrap gap-2">
                   {cat.channels.map((ch) => (
                     <span
                       key={ch}
-                      className="bg-white border border-[rgba(132,148,255,0.2)] hover:border-[#6367FF] hover:bg-[#6367FF] hover:text-white text-black text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
+                      className="bg-white border border-[rgba(123,135,232,0.2)] hover:border-[#5a5fcf] hover:bg-[#5a5fcf] hover:text-white text-black text-xs px-3 py-1.5 rounded-lg transition-colors cursor-default"
                     >
                       {ch}
                     </span>
@@ -8178,17 +8178,17 @@ export default function ChannelsListPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "64px 16px", background: "#6367FF", textAlign: "center" }}>
+      <section style={{ padding: "64px 16px", background: "#5a5fcf", textAlign: "center" }}>
         <div className="max-w-2xl mx-auto">
           <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 25 000+ Channels</h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 32 }}>
             Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/free-trial" style={{ background: "#6367FF", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
+            <a href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
               Get Essai Gratuit
             </a>
-            <a href="/pricing" className="border border-[#6367FF] text-[#6367FF] hover:bg-[#6367FF] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
+            <a href="/pricing" className="border border-[#5a5fcf] text-[#5a5fcf] hover:bg-[#5a5fcf] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Voir les Tarifs
             </a>
           </div>

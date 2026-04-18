@@ -21,25 +21,25 @@ export const metadata: Metadata = {
 
 export default function IPTVAndroidtvFrancePage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
       {/* Hero */}
-      <section style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", padding: "80px 16px 60px" }}>
+      <section style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
-          <span style={{ background: "rgba(99,103,255,0.12)", border: "1px solid rgba(99,103,255,0.3)", color: "#6367FF", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+          <span style={{ background: "rgba(90,95,207,0.12)", border: "1px solid rgba(90,95,207,0.3)", color: "#5a5fcf", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
             IPTV Android TV / Google TV · Stream Bleu
           </span>
-          <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#6367FF" }}>
+          <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#5a5fcf" }}>
             IPTV sur Android TV / Google TV<br />
-            <span style={{ color: "#6367FF" }}>en France 2026</span>
+            <span style={{ color: "#5a5fcf" }}>en France 2026</span>
           </h1>
-          <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#6367FF", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
+          <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#5a5fcf", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
             Guide complet pour configurer Stream Bleu sur votre Android TV / Google TV. Installation en 5 minutes, 25 000+ chaînes françaises et internationales en 4K Ultra HD.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-            <Link href="/pricing" style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(99,103,255,0.4)" }}>
+            <Link href="/pricing" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(90,95,207,0.4)" }}>
               Voir les Tarifs →
             </Link>
-            <Link href="/free-trial" style={{ background: "transparent", border: "2px solid #6367FF", color: "#6367FF", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/free-trial" style={{ background: "transparent", border: "2px solid #5a5fcf", color: "#5a5fcf", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit 24h
             </Link>
           </div>
@@ -49,17 +49,17 @@ export default function IPTVAndroidtvFrancePage() {
       {/* Steps */}
       <section style={{ padding: "60px 16px", background: "#fff" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
-          <h2 style={{ textAlign: "center", fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, marginBottom: 36, color: "#6367FF" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, marginBottom: 36, color: "#5a5fcf" }}>
             Installation en 5 étapes
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
-            <div style={{ background: "#FFDBFD", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(132,148,255,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#6367FF", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>1</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#6367FF", marginBottom: 6 }}>Ouvrir le Play Store</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Depuis l'écran d'accueil de votre Android TV, ouvrez le Google Play Store</p></div></div> <div style={{ background: "#FFDBFD", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(132,148,255,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#6367FF", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>2</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#6367FF", marginBottom: 6 }}>Installer TiviMate ou Smarters</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Recherchez TiviMate ou IPTV Smarters Pro et installez</p></div></div> <div style={{ background: "#FFDBFD", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(132,148,255,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#6367FF", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>3</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#6367FF", marginBottom: 6 }}>Souscrire à Stream Bleu</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Choisissez votre forfait sur streambleu.fr — identifiants en 30 min</p></div></div> <div style={{ background: "#FFDBFD", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(132,148,255,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#6367FF", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>4</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#6367FF", marginBottom: 6 }}>Configurer le lecteur</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Dans TiviMate → Ajouter une liste M3U → collez votre URL Stream Bleu</p></div></div> <div style={{ background: "#FFDBFD", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(132,148,255,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#6367FF", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>5</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#6367FF", marginBottom: 6 }}>Regarder en 4K</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Naviguez dans vos chaînes favorites en 4K Ultra HD H.265</p></div></div>
+            <div style={{ background: "#fdf5ff", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(123,135,232,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#5a5fcf", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>1</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>Ouvrir le Play Store</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Depuis l'écran d'accueil de votre Android TV, ouvrez le Google Play Store</p></div></div> <div style={{ background: "#fdf5ff", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(123,135,232,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#5a5fcf", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>2</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>Installer TiviMate ou Smarters</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Recherchez TiviMate ou IPTV Smarters Pro et installez</p></div></div> <div style={{ background: "#fdf5ff", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(123,135,232,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#5a5fcf", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>3</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>Souscrire à Stream Bleu</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Choisissez votre forfait sur streambleu.fr — identifiants en 30 min</p></div></div> <div style={{ background: "#fdf5ff", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(123,135,232,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#5a5fcf", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>4</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>Configurer le lecteur</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Dans TiviMate → Ajouter une liste M3U → collez votre URL Stream Bleu</p></div></div> <div style={{ background: "#fdf5ff", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(123,135,232,0.15)", display: "flex", gap: 16 }}><div style={{ flexShrink: 0, width: 40, height: 40, background: "#5a5fcf", borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 16, color: "#fff" }}>5</div><div><h3 style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>Regarder en 4K</h3><p style={{ color: "#444", fontSize: 14, lineHeight: 1.6 }}>Naviguez dans vos chaînes favorites en 4K Ultra HD H.265</p></div></div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "60px 16px", background: "#6367FF", textAlign: "center" }}>
+      <section style={{ padding: "60px 16px", background: "#5a5fcf", textAlign: "center" }}>
         <div style={{ maxWidth: 560, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>
             IPTV sur Android TV / Google TV à partir de 9€/mois
@@ -68,7 +68,7 @@ export default function IPTVAndroidtvFrancePage() {
             Sans engagement · Activation en 30 min · Support 24/7 en français
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/free-trial" style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit
             </Link>
             <Link href="/pricing" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
@@ -79,9 +79,9 @@ export default function IPTVAndroidtvFrancePage() {
       </section>
 
       {/* City links */}
-      <section style={{ padding: "50px 16px", background: "#FFDBFD" }}>
+      <section style={{ padding: "50px 16px", background: "#fdf5ff" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
-          <h2 style={{ textAlign: "center", fontSize: 20, fontWeight: 800, color: "#6367FF", marginBottom: 24 }}>IPTV par ville en France</h2>
+          <h2 style={{ textAlign: "center", fontSize: 20, fontWeight: 800, color: "#5a5fcf", marginBottom: 24 }}>IPTV par ville en France</h2>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
             {[
               { label: "IPTV Paris", href: "/iptv-paris" },
@@ -91,7 +91,7 @@ export default function IPTVAndroidtvFrancePage() {
               { label: "IPTV Nice", href: "/iptv-nice" },
               { label: "IPTV Bordeaux", href: "/iptv-bordeaux" },
             ].map((c) => (
-              <Link key={c.href} href={c.href} style={{ background: "rgba(132,148,255,0.08)", border: "1px solid rgba(132,148,255,0.2)", borderRadius: 10, padding: "9px 18px", textDecoration: "none", color: "#6367FF", fontSize: 13, fontWeight: 600 }}>
+              <Link key={c.href} href={c.href} style={{ background: "rgba(123,135,232,0.08)", border: "1px solid rgba(123,135,232,0.2)", borderRadius: 10, padding: "9px 18px", textDecoration: "none", color: "#5a5fcf", fontSize: 13, fontWeight: 600 }}>
                 🇫🇷 {c.label}
               </Link>
             ))}

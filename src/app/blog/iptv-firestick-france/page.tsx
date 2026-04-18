@@ -39,11 +39,11 @@ export default function IPTVFirestickFrance() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <main style={{ background: "#FFDBFD", minHeight: "100vh" }}>
-        <section style={{ background: "linear-gradient(135deg, #6367FF, #8494FF)", padding: "80px 16px 60px" }}>
+      <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
+        <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 820, margin: "0 auto" }}>
             <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
-              <span style={{ background: "#6367FF", border: "1px solid #C9BEFF", color: "#C9BEFF", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Guide</span>
+              <span style={{ background: "#5a5fcf", border: "1px solid #c5bcf5", color: "#c5bcf5", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Guide</span>
               <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>1 mars 2026 · 7 min de lecture</span>
             </div>
             <h1 style={{ fontSize: "clamp(26px, 4vw, 46px)", fontWeight: 900, color: "#fff", lineHeight: 1.2, marginBottom: 16 }}>
@@ -57,7 +57,7 @@ export default function IPTVFirestickFrance() {
 
         <article style={{ maxWidth: 820, margin: "0 auto", padding: "60px 16px" }}>
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 14 }}>Ce dont vous avez besoin</h2>
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#5a5fcf", marginBottom: 14 }}>Ce dont vous avez besoin</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               {[
                 "Un Amazon Fire Stick (Lite, 4K, 4K Max ou Fire TV Cube)",
@@ -65,8 +65,8 @@ export default function IPTVFirestickFrance() {
                 "Un abonnement Stream Bleu (essai gratuit disponible)",
                 "5 minutes de configuration",
               ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start", background: "#fff", borderRadius: 10, padding: "14px 18px", border: "1px solid rgba(132,148,255,0.15)" }}>
-                  <span style={{ color: "#8494FF", fontWeight: 800, fontSize: 16, flexShrink: 0 }}>✓</span>
+                <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start", background: "#fff", borderRadius: 10, padding: "14px 18px", border: "1px solid rgba(123,135,232,0.15)" }}>
+                  <span style={{ color: "#7b87e8", fontWeight: 800, fontSize: 16, flexShrink: 0 }}>✓</span>
                   <span style={{ color: "#333", fontSize: 14, lineHeight: 1.5 }}>{item}</span>
                 </div>
               ))}
@@ -75,15 +75,15 @@ export default function IPTVFirestickFrance() {
 
           {/* Steps */}
           <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 24 }}>Installation en 6 étapes</h2>
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#5a5fcf", marginBottom: 24 }}>Installation en 6 étapes</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
               {steps.map((step) => (
-                <div key={step.num} style={{ background: "#fff", borderRadius: 16, padding: "24px 24px", border: "1px solid rgba(132,148,255,0.15)", display: "flex", gap: 20 }}>
-                  <div style={{ flexShrink: 0, width: 44, height: 44, background: "#6367FF", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 18, color: "#fff" }}>
+                <div key={step.num} style={{ background: "#fff", borderRadius: 16, padding: "24px 24px", border: "1px solid rgba(123,135,232,0.15)", display: "flex", gap: 20 }}>
+                  <div style={{ flexShrink: 0, width: 44, height: 44, background: "#5a5fcf", borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 900, fontSize: 18, color: "#fff" }}>
                     {step.num}
                   </div>
                   <div>
-                    <h3 style={{ fontWeight: 700, fontSize: 16, color: "#6367FF", marginBottom: 8 }}>{step.title}</h3>
+                    <h3 style={{ fontWeight: 700, fontSize: 16, color: "#5a5fcf", marginBottom: 8 }}>{step.title}</h3>
                     <p style={{ color: "#444", fontSize: 14, lineHeight: 1.65 }}>{step.desc}</p>
                   </div>
                 </div>
@@ -91,15 +91,15 @@ export default function IPTVFirestickFrance() {
             </div>
           </section>
 
-          <section style={{ background: "#6367FF", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
+          <section style={{ background: "#5a5fcf", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Prêt à commencer ?</h2>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>Essai gratuit 24h — sans carte bancaire. Vous recevez vos identifiants en 30 minutes.</p>
-            <Link href="/free-trial" style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit →
             </Link>
           </section>
 
-          <Link href="/blog" style={{ color: "#8494FF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
+          <Link href="/blog" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
         </article>
       </main>
     </>

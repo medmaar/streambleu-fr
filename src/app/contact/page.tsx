@@ -44,12 +44,12 @@ const channels = [
 
 export default function ContactPage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
 
         {/* En-tête */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Nous <span className="text-[#6367FF]">Contacter</span>
+          Nous <span className="text-[#5a5fcf]">Contacter</span>
         </h1>
         <p className="text-black text-lg mb-12">
           Notre équipe de support est disponible 24h/24 en français.
@@ -63,7 +63,7 @@ export default function ContactPage() {
               <div className="flex-1">
                 <h2 className="text-xl font-bold mb-1">{c.name}</h2>
                 <p className="text-black text-sm mb-1">{c.desc}</p>
-                <p className="text-[#6367FF] text-xs font-semibold">{c.detail}</p>
+                <p className="text-[#5a5fcf] text-xs font-semibold">{c.detail}</p>
               </div>
               <a
                 href={c.href}
@@ -78,8 +78,8 @@ export default function ContactPage() {
         </div>
 
         {/* Délais de réponse */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 mb-12" style={{ boxShadow: "0 4px 20px rgba(99,103,255,0.08)" }}>
-          <h2 className="text-2xl font-bold mb-6 text-[#6367FF]">Délais de réponse</h2>
+        <div className="bg-white rounded-2xl p-8 border border-gray-200 mb-12" style={{ boxShadow: "0 4px 20px rgba(90,95,207,0.08)" }}>
+          <h2 className="text-2xl font-bold mb-6 text-[#5a5fcf]">Délais de réponse</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div>
               <div className="text-3xl font-extrabold text-green-500 mb-1">&lt; 5 min</div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
         {/* Lien FAQ */}
         <div className="text-center">
           <p className="text-black mb-4">Vous avez une question courante ? Consultez notre FAQ en premier.</p>
-          <a href="/#faq" className="inline-block border border-[#6367FF] text-[#6367FF] hover:bg-[#6367FF] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
+          <a href="/#faq" className="inline-block border border-[#5a5fcf] text-[#5a5fcf] hover:bg-[#5a5fcf] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
             Voir la FAQ
           </a>
         </div>

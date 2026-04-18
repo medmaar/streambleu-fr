@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 const trustpilotReviews = [
-  { name: "Thomas R.", flag: "🇫🇷", rating: 5, title: "Meilleur IPTV que j'ai testé — enfin sans coupure", text: "J'ai essayé au moins quatre fournisseurs IPTV différents ces deux dernières années, et aucun n'approchait Stream Bleu. L'activation était rapide, le support a répondu vite, et le sport en direct est enfin fluide." },
+  { name: "Thomas R.", flag: "🇫🇷", rating: 5, title: "Meilleur IPTV testé — enfin sans coupure", text: "J'ai essayé au moins quatre fournisseurs IPTV différents ces deux dernières années, et aucun n'approchait Stream Bleu. L'activation était rapide, le support a répondu vite, et le sport en direct est enfin fluide." },
   { name: "Julien M.", flag: "🇫🇷", rating: 5, title: "Un support qui aide vraiment", text: "Le service client est ce qui m'a fait rester avec Stream Bleu. Je venais d'un autre prestataire qui promettait des serveurs premium mais disparaissait dès qu'il y avait un problème. Ici, le support écoute et répond rapidement." },
   { name: "Antoine B.", flag: "🇫🇷", rating: 5, title: "Stable depuis le premier jour", text: "J'étais sceptique car j'ai déjà été déçu par des services IPTV qui fonctionnent bien une semaine puis deviennent inutilisables. Stream Bleu est stable depuis le premier jour. Testé pendant des matchs en direct — aucun problème." },
   { name: "Pierre L.", flag: "🇫🇷", rating: 5, title: "Qualité et sérieux bien au-dessus des autres", text: "Après avoir comparé Stream Bleu avec deux autres fournisseurs, la différence était évidente. Les autres étaient moins chers mais peu fiables avec un mauvais support. Stream Bleu m'a aidé à tout configurer et a fait un suivi." },
@@ -58,111 +58,220 @@ const googleReviews = [
   { name: "Sébastien H.", rating: 5, text: "L'installation était simple. J'ai contacté le support juste pour confirmer quelques points et ils ont répondu plus vite que prévu. Les streams sont propres et la VOD fonctionne bien. Plus professionnel que la plupart des services." },
   { name: "Lucas C.", rating: 5, text: "Essayé Stream Bleu sur recommandation d'un ami. Comparé à mon ancien service, c'est plus stable et plus facile à utiliser. Le service client n'a pas disparu après le paiement, ce que j'avais vécu avant." },
   { name: "Guillaume R.", rating: 5, text: "Les chaînes changent vite et la qualité est constante. J'ai eu un petit problème d'installation et le support m'a aidé à le résoudre en quelques minutes. Dans l'ensemble très satisfait." },
+  { name: "Florian A.", rating: 5, text: "Utilisé Stream Bleu pendant quelques mois. Le sport en direct est fiable et les films chargent sans longue attente. Le support a été réactif à chaque fois. Bien mieux que le service IPTV que j'utilisais l'an dernier." },
+  { name: "Vincent T.", rating: 5, text: "Stream Bleu fait ce qu'il promet. Pas de déclarations exagérées, juste un service stable. J'avais des problèmes de buffering avec mon ancien fournisseur presque tous les jours. Avec Stream Bleu, ça ne s'est pas produit." },
+  { name: "Alexandre M.", rating: 5, text: "Bonne qualité de streams et activation rapide. Le service client a été utile quand j'avais besoin de conseils. Comparé aux autres services que j'ai essayés, Stream Bleu semble plus organisé et fiable." },
+  { name: "Christophe B.", rating: 5, text: "Je ne laisse pas souvent des avis, mais Stream Bleu a été solide. Les chaînes sportives fonctionnent bien, la sélection VOD est bonne, et le support répond vite au lieu d'envoyer des messages génériques." },
+  { name: "Jonathan L.", rating: 5, text: "Passé à Stream Bleu après des problèmes constants avec un autre fournisseur. La différence est notable. Meilleure stabilité des streams, bien meilleur support. Tout fonctionne bien sur mes appareils." },
+  { name: "Stéphane L.", rating: 5, text: "L'activation a été rapide et le support était disponible quand j'avais des questions. Je regarde principalement des séries et des films et tout se passe sans problème. Bon service fiable dans l'ensemble." },
+  { name: "David M.", rating: 5, text: "Stream Bleu a été stable aux heures de pointe, ce qui était mon plus grand problème avec les services précédents. Le service client est réactif et professionnel. Content de mon abonnement." },
+  { name: "Damien P.", rating: 5, text: "Les chaînes chargent vite et la qualité reste constante. Contacté le support une fois et ils ont géré ça poliment. Comparé aux autres services que j'ai utilisés, celui-ci semble plus digne de confiance." },
+  { name: "Arnaud W.", rating: 5, text: "Testé Stream Bleu en parallèle avec un autre fournisseur et Stream Bleu a clairement mieux performé. Moins de buffering, changement de chaîne plus rapide. Le support m'a aidé à tout configurer correctement dès le départ." },
+  { name: "Benoît T.", rating: 5, text: "Service fiable avec une bonne qualité d'image. Le support client était utile et facile à joindre quand j'avais une question d'installation. Bien plus fluide que mon dernier fournisseur IPTV." },
 ];
 
+const WA_ICON = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+);
 
-function StarRating({ rating }: { rating: number }) {
+const FLAG_MAP: Record<string, string> = {
+  "🇫🇷": "fr", "🇧🇪": "be", "🇨🇭": "ch", "🇲🇦": "ma",
+  "🇺🇸": "us", "🇨🇦": "ca",
+};
+
+const FlagImg = ({ flag }: { flag: string }) => {
+  const code = FLAG_MAP[flag];
+  if (!code) return <span>{flag}</span>;
   return (
-    <div style={{ display: "flex", gap: 2 }}>
-      {[1, 2, 3, 4, 5].map((s) => (
-        <span key={s} style={{ color: s <= rating ? "#6367FF" : "rgba(0,0,0,0.15)", fontSize: 14 }}>★</span>
-      ))}
-    </div>
+    <img src={`https://flagcdn.com/20x15/${code}.png`} alt={code.toUpperCase()} width={20} height={15}
+      style={{ borderRadius: 2, display: "inline-block", verticalAlign: "middle", marginLeft: 4 }} />
   );
-}
+};
 
-interface Props { showHeader?: boolean; }
+const TrustpilotLogo = () => (
+  <svg viewBox="0 0 260 62" width="180" height="44" xmlns="http://www.w3.org/2000/svg">
+    <path d="M28 0l5.5 17H52L37.5 27.5l5.5 17L28 34 13 44.5l5.5-17L4 17h18.5z" fill="#00b67a"/>
+    <path d="M28 0l5.5 17H52L37.5 27.5 28 34V0z" fill="#005128"/>
+    <text x="60" y="22" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="22" fill="#191919">Trustpilot</text>
+    <g transform="translate(60,32)">
+      {[0,1,2,3,4].map(i => (
+        <rect key={i} x={i*24} y={0} width={20} height={20} rx="2" fill="#00b67a"/>
+      ))}
+      {[0,1,2,3,4].map(i => (
+        <text key={`s${i}`} x={i*24+10} y={10} textAnchor="middle" dominantBaseline="middle" fontSize="14" fill="white">★</text>
+      ))}
+    </g>
+  </svg>
+);
 
-export default function ReviewsSection({ showHeader = true }: Props) {
-  const [tab, setTab] = useState<"trustpilot" | "whatsapp" | "google">("trustpilot");
-  const [visible, setVisible] = useState(6);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [inView, setInView] = useState(false);
+const GoogleReviewsLogo = () => (
+  <svg viewBox="0 0 260 56" width="220" height="50" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22 10C15.4 10 10 15.4 10 22s5.4 12 12 12c5.6 0 10.3-3.8 11.6-9H22v-4h16.2c.2 1 .3 2 .3 3 0 8.8-5.9 15-16.5 15C10.5 39 4 32.5 4 22S10.5 5 22 5c5.6 0 10.2 2.1 13.8 5.4l-3.6 3.6C29.8 11.6 26.2 10 22 10z" fill="#4285F4"/>
+    <text x="50" y="26" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="24" dominantBaseline="middle">
+      <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+    </text>
+    <text x="50" y="48" fontFamily="Arial,sans-serif" fontWeight="600" fontSize="15" fill="#5F6368">Avis</text>
+    <text x="90" y="48" fontFamily="Arial,sans-serif" fontSize="15" fill="#FBBC04">★★★★★</text>
+  </svg>
+);
 
-  const checkInView = useCallback(() => {
-    if (!sectionRef.current) return;
-    const rect = sectionRef.current.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.85) setInView(true);
-  }, []);
+function useAutoSlide(total: number, interval: number) {
+  const [current, setCurrent] = useState(0);
+  const [sliding, setSliding] = useState(false);
+  const pausedUntil = useRef(0);
 
   useEffect(() => {
-    window.addEventListener("scroll", checkInView, { passive: true });
-    checkInView();
-    return () => window.removeEventListener("scroll", checkInView);
-  }, [checkInView]);
+    const timer = setInterval(() => {
+      if (Date.now() < pausedUntil.current) return;
+      setSliding(true);
+      setTimeout(() => { setCurrent(c => (c + 1) % total); setSliding(false); }, 420);
+    }, interval);
+    return () => clearInterval(timer);
+  }, [total, interval]);
 
-  const reviews = tab === "trustpilot" ? trustpilotReviews : tab === "whatsapp" ? whatsappReviews : googleReviews;
+  const go = useCallback((n: number) => {
+    pausedUntil.current = Date.now() + 9000;
+    setSliding(true);
+    setTimeout(() => { setCurrent(n); setSliding(false); }, 420);
+  }, []);
 
-  const tabStyle = (t: string): React.CSSProperties => ({
-    padding: "8px 20px",
-    borderRadius: 999,
-    fontWeight: 700,
-    fontSize: 13,
-    cursor: "pointer",
-    border: "none",
-    background: tab === t ? "#6367FF" : "rgba(132,148,255,0.12)",
-    color: tab === t ? "#fff" : "#6367FF",
-    transition: "all 0.2s",
-  });
+  return { current, go, sliding };
+}
+
+const slideStyle = (sliding: boolean): React.CSSProperties => ({
+  transition: "opacity 0.42s ease, transform 0.42s cubic-bezier(0.25,0.46,0.45,0.94)",
+  opacity: sliding ? 0 : 1,
+  transform: sliding ? "translateX(32px)" : "translateX(0)",
+});
+
+const ProgressDots = ({ total, current, go }: { total: number; current: number; go: (n: number) => void }) => (
+  <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 22 }}>
+    {Array.from({ length: total }).map((_, i) => (
+      <button key={i} onClick={() => go(i)} style={{
+        width: i === current ? 26 : 10, height: 10, borderRadius: 99,
+        border: "none", cursor: "pointer", padding: 0, fontFamily: "inherit",
+        background: i === current ? "#5a5fcf" : "rgba(90,95,207,0.25)",
+        transition: "all 0.45s cubic-bezier(0.34,1.56,0.64,1)",
+      }} />
+    ))}
+  </div>
+);
+
+const TP_STARS = () => (
+  <div style={{ display: "flex", gap: 4, marginBottom: 16 }}>
+    {[0,1,2,3,4].map(i => (
+      <div key={i} style={{ width: 30, height: 30, background: "#00b67a", borderRadius: 4, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <span style={{ color: "#fff", fontSize: 17, lineHeight: 1 }}>★</span>
+      </div>
+    ))}
+  </div>
+);
+
+export default function ReviewsSection({ showHeader = true }: { showHeader?: boolean }) {
+  const tp = useAutoSlide(trustpilotReviews.length, 5200);
+  const wa = useAutoSlide(Math.ceil(whatsappReviews.length / 2), 5700);
+  const g  = useAutoSlide(Math.ceil(googleReviews.length / 3), 6100);
+
+  const waVisible = whatsappReviews.slice(wa.current * 2, wa.current * 2 + 2);
+  const gVisible  = googleReviews.slice(g.current * 3, g.current * 3 + 3);
+  const tpReview  = trustpilotReviews[tp.current];
 
   return (
-    <div ref={sectionRef}>
+    <div>
       {showHeader && (
-        <div style={{ textAlign: "center", marginBottom: 32 }}>
-          <p style={{ color: "#6367FF", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 10 }}>Avis Vérifiés</p>
-          <h2 style={{ fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, color: "#6367FF", marginBottom: 8 }}>
-            Ce que disent nos clients
+        <div style={{ textAlign: "center", marginBottom: 52 }}>
+          <p style={{ color: "#5a5fcf", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 14 }}>Avis Vérifiés</p>
+          <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 900, color: "#1a1a4e", marginBottom: 12 }}>
+            Ce que disent nos clients sur <span style={{ color: "#5a5fcf" }}>Stream Bleu</span>
           </h2>
-          <p style={{ color: "#555", fontSize: 14 }}>Avis réels de Trustpilot, WhatsApp &amp; Google — 50 000+ clients satisfaits en France et dans le monde.</p>
-        </div>
-      )}
-
-      {/* Onglets */}
-      <div style={{ display: "flex", gap: 10, justifyContent: "center", marginBottom: 32, flexWrap: "wrap" }}>
-        {(["trustpilot", "whatsapp", "google"] as const).map((t) => (
-          <button key={t} style={tabStyle(t)} onClick={() => { setTab(t); setVisible(6); }}>
-            {t === "trustpilot" ? "⭐ Trustpilot" : t === "whatsapp" ? "💬 WhatsApp" : "🔍 Google"}
-          </button>
-        ))}
-      </div>
-
-      {/* Grille d'avis */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-        {reviews.slice(0, visible).map((r, i) => (
-          <div
-            key={i}
-            className={inView ? "ma-visible" : "ma-init"}
-            style={{
-              background: "#fff",
-              borderRadius: 18,
-              padding: "22px 22px",
-              border: "1px solid rgba(132,148,255,0.15)",
-              boxShadow: "0 4px 16px rgba(99,103,255,0.06)",
-              transitionDelay: `${(i % 6) * 0.07}s`,
-            }}
-          >
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 10 }}>
-              <div>
-                <div style={{ fontWeight: 700, fontSize: 14, color: "#6367FF" }}>{"flag" in r ? (r as { flag: string }).flag : ""} {r.name}</div>
-                {"title" in r && <div style={{ fontSize: 13, fontWeight: 600, color: "#333", marginTop: 4 }}>{(r as { title: string }).title}</div>}
+          <p style={{ color: "#444", fontSize: 15, marginBottom: 28 }}>Avis réels de Trustpilot, WhatsApp &amp; Google</p>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 14 }}>
+            {[
+              { val: "5.0", label: "Trustpilot",  color: "#00b67a" },
+              { val: "50 000+", label: "Clients", color: "#5a5fcf" },
+              { val: "4.9★",  label: "Google",    color: "#FBBC04" },
+              { val: "24/7",  label: "Support",   color: "#f5a623" },
+            ].map(s => (
+              <div key={s.val} style={{ background: "#4a4fc0", borderRadius: 12, padding: "12px 20px", textAlign: "center", minWidth: 90 }}>
+                <div style={{ fontSize: 18, fontWeight: 900, color: s.color }}>{s.val}</div>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.65)", marginTop: 2 }}>{s.label}</div>
               </div>
-              {"rating" in r && <StarRating rating={(r as { rating: number }).rating} />}
-            </div>
-            <p style={{ fontSize: 13, color: "#444", lineHeight: 1.65 }}>{r.text}</p>
+            ))}
           </div>
-        ))}
-      </div>
-
-      {visible < reviews.length && (
-        <div style={{ textAlign: "center", marginTop: 32 }}>
-          <button
-            onClick={() => setVisible((v) => v + 6)}
-            style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 14, padding: "12px 28px", borderRadius: 12, border: "none", cursor: "pointer" }}
-          >
-            Voir plus d&apos;avis
-          </button>
         </div>
       )}
+
+      {/* ── TRUSTPILOT ── */}
+      <div style={{ marginBottom: 64 }}>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 28 }}>
+          <TrustpilotLogo />
+        </div>
+        <div style={{ maxWidth: 780, margin: "0 auto", overflow: "hidden" }}>
+          <div style={slideStyle(tp.sliding)}>
+            <div style={{ background: "#fff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 4px 28px rgba(90,95,207,0.12)", border: "1px solid rgba(90,95,207,0.12)" }}>
+              <TP_STARS />
+              <h4 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#1a1a4e" }}>{tpReview.title}</h4>
+              <p style={{ color: "#333", lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
+              <p style={{ color: "#5a5fcf", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
+            </div>
+          </div>
+          <ProgressDots total={trustpilotReviews.length} current={tp.current} go={tp.go} />
+        </div>
+      </div>
+
+      {/* ── WHATSAPP ── */}
+      <div style={{ marginBottom: 64 }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 10, marginBottom: 28 }}>
+          <div style={{ background: "#25D366", borderRadius: 10, width: 38, height: 38, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <WA_ICON />
+          </div>
+          <span style={{ fontWeight: 800, fontSize: 22, color: "#25D366" }}>WhatsApp</span>
+        </div>
+        <div style={{ maxWidth: 900, margin: "0 auto", overflow: "hidden" }}>
+          <div style={slideStyle(wa.sliding)}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
+              {waVisible.map((r, i) => (
+                <div key={i} style={{ background: "#fff", borderRadius: 16, padding: "24px", boxShadow: "0 4px 20px rgba(90,95,207,0.09)", border: "1px solid rgba(90,95,207,0.1)" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
+                    <div style={{ width: 34, height: 34, borderRadius: "50%", background: "#25D366", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <WA_ICON />
+                    </div>
+                    <span style={{ fontWeight: 700, fontSize: 14, color: "#1a1a4e" }}>WhatsApp</span>
+                  </div>
+                  <p style={{ color: "#333", lineHeight: 1.75, fontSize: 14, marginBottom: 14 }}>{r.text}</p>
+                  <p style={{ color: "#5a5fcf", fontWeight: 600, fontSize: 13 }}>— {r.name} <FlagImg flag={r.flag} /></p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <ProgressDots total={Math.ceil(whatsappReviews.length / 2)} current={wa.current} go={wa.go} />
+        </div>
+      </div>
+
+      {/* ── GOOGLE ── */}
+      <div style={{ marginBottom: 24 }}>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 28 }}>
+          <GoogleReviewsLogo />
+        </div>
+        <div style={{ overflow: "hidden" }}>
+          <div style={slideStyle(g.sliding)}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
+              {gVisible.map((r, i) => (
+                <div key={i} style={{ background: "#fff", borderRadius: 16, padding: "24px", boxShadow: "0 4px 20px rgba(90,95,207,0.09)", border: "1px solid rgba(90,95,207,0.1)" }}>
+                  <div style={{ display: "flex", gap: 2, marginBottom: 10 }}>
+                    {Array.from({ length: r.rating }).map((_, j) => <span key={j} style={{ color: "#FBBC04", fontSize: 20 }}>★</span>)}
+                  </div>
+                  <p style={{ fontWeight: 700, fontSize: 15, color: "#1a1a4e", marginBottom: 10 }}>{r.name}</p>
+                  <p style={{ color: "#333", lineHeight: 1.75, fontSize: 14 }}>{r.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <ProgressDots total={Math.ceil(googleReviews.length / 3)} current={g.current} go={g.go} />
+        </div>
+      </div>
     </div>
   );
 }

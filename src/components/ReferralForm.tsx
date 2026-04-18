@@ -7,7 +7,7 @@ const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Bonjour%20Stream%20Bleu%2C
 const inputStyle = {
   width: "100%",
   background: "#ffffff",
-  border: "2px solid rgba(132,148,255,0.25)",
+  border: "2px solid rgba(123,135,232,0.25)",
   borderRadius: 10,
   padding: "12px 16px",
   fontSize: 14,
@@ -50,9 +50,9 @@ export default function ReferralForm() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} style={{ background: "#ffffff", border: "2px solid rgba(132,148,255,0.2)", borderRadius: 20, padding: 32, boxShadow: "0 4px 24px rgba(132,148,255,0.1)" }}>
+      <form onSubmit={handleSubmit} style={{ background: "#ffffff", border: "2px solid rgba(123,135,232,0.2)", borderRadius: 20, padding: 32, boxShadow: "0 4px 24px rgba(123,135,232,0.1)" }}>
 
-        <p style={{ fontSize: 11, color: "#6367FF", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Vos Coordonnées</p>
+        <p style={{ fontSize: 11, color: "#5a5fcf", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Vos Coordonnées</p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
           <div>
             <label style={labelStyle}>Votre Prénom</label>
@@ -64,7 +64,7 @@ export default function ReferralForm() {
           </div>
         </div>
 
-        <p style={{ fontSize: 11, color: "#6367FF", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Coordonnées de l&apos;Ami</p>
+        <p style={{ fontSize: 11, color: "#5a5fcf", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Coordonnées de l&apos;Ami</p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
           <div>
             <label style={labelStyle}>Prénom de l&apos;ami</label>
@@ -77,17 +77,17 @@ export default function ReferralForm() {
         </div>
 
         {status === "success" ? (
-          <div style={{ background: "rgba(132,148,255,0.1)", border: "1px solid rgba(132,148,255,0.3)", borderRadius: 12, padding: "16px 20px", color: "#6367FF", fontSize: 14, fontWeight: 600, textAlign: "center" }}>
+          <div style={{ background: "rgba(123,135,232,0.1)", border: "1px solid rgba(123,135,232,0.3)", borderRadius: 12, padding: "16px 20px", color: "#5a5fcf", fontSize: 14, fontWeight: 600, textAlign: "center" }}>
             ✓ Parrainage soumis ! Nous l&apos;examinerons rapidement et vous contacterons.
           </div>
         ) : (
-          <button type="submit" disabled={status === "loading"} style={{ width: "100%", background: "#6367FF", color: "#fff", padding: "16px", borderRadius: 12, fontWeight: 700, fontSize: 16, border: "none", cursor: "pointer", opacity: status === "loading" ? 0.6 : 1, fontFamily: "inherit", boxShadow: "0 4px 16px rgba(99,103,255,0.35)" }}>
+          <button type="submit" disabled={status === "loading"} style={{ width: "100%", background: "#5a5fcf", color: "#fff", padding: "16px", borderRadius: 12, fontWeight: 700, fontSize: 16, border: "none", cursor: "pointer", opacity: status === "loading" ? 0.6 : 1, fontFamily: "inherit", boxShadow: "0 4px 16px rgba(90,95,207,0.35)" }}>
             {status === "loading" ? "Envoi en cours…" : "Soumettre le Parrainage"}
           </button>
         )}
 
         {status === "error" && (
-          <p style={{ textAlign: "center", color: "#6367FF", fontSize: 13, marginTop: 12 }}>
+          <p style={{ textAlign: "center", color: "#5a5fcf", fontSize: 13, marginTop: 12 }}>
             Une erreur s&apos;est produite. Réessayez ou utilisez WhatsApp ci-dessous.
           </p>
         )}

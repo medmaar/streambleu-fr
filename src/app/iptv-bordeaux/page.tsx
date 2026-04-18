@@ -54,15 +54,15 @@ export default function IPTVBordeauxPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
 
         {/* Hero */}
-        <section style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", padding: "80px 16px 60px" }}>
+        <section style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <span style={{
-              background: "rgba(99,103,255,0.12)",
-              border: "1px solid rgba(99,103,255,0.3)",
-              color: "#6367FF",
+              background: "rgba(90,95,207,0.12)",
+              border: "1px solid rgba(90,95,207,0.3)",
+              color: "#5a5fcf",
               fontSize: 12,
               fontWeight: 700,
               padding: "4px 14px",
@@ -72,17 +72,17 @@ export default function IPTVBordeauxPage() {
             }}>
               IPTV Bordeaux · Stream Bleu
             </span>
-            <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#6367FF" }}>
+            <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#5a5fcf" }}>
               Meilleur IPTV<br />
-              <span style={{ color: "#6367FF" }}>Bordeaux 2026</span>
+              <span style={{ color: "#5a5fcf" }}>Bordeaux 2026</span>
             </h1>
-            <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "#6367FF", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
+            <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "#5a5fcf", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
               Stream Bleu est le meilleur service IPTV à Bordeaux. Profitez de TF1, Canal+, beIN Sports,
               RMC Sport et 25 000+ chaînes en 4K Ultra HD. Suivez la Ligue 1, le rugby et tous les événements sportifs en 4K Ultra HD.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/pricing" style={{
-                background: "#6367FF",
+                background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -90,14 +90,14 @@ export default function IPTVBordeauxPage() {
                 borderRadius: 12,
                 textDecoration: "none",
                 display: "inline-block",
-                boxShadow: "0 6px 20px rgba(99,103,255,0.4)",
+                boxShadow: "0 6px 20px rgba(90,95,207,0.4)",
               }}>
                 Voir les Tarifs →
               </Link>
               <Link href="/free-trial" style={{
                 background: "transparent",
-                border: "2px solid #6367FF",
-                color: "#6367FF",
+                border: "2px solid #5a5fcf",
+                color: "#5a5fcf",
                 fontWeight: 700,
                 fontSize: 16,
                 padding: "14px 32px",
@@ -114,7 +114,7 @@ export default function IPTVBordeauxPage() {
         {/* Features grid */}
         <section style={{ padding: "70px 16px", background: "#fff" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 48, color: "#6367FF" }}>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 48, color: "#5a5fcf" }}>
               Pourquoi choisir Stream Bleu à Bordeaux ?
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
@@ -127,13 +127,13 @@ export default function IPTVBordeauxPage() {
                 { icon: "🆓", title: "Essai Gratuit", desc: "Testez 24h gratuitement sans carte bancaire. Activation instantanée." },
               ].map((f) => (
                 <div key={f.title} style={{
-                  background: "rgba(132,148,255,0.06)",
-                  border: "1px solid rgba(132,148,255,0.18)",
+                  background: "rgba(123,135,232,0.06)",
+                  border: "1px solid rgba(123,135,232,0.18)",
                   borderRadius: 16,
                   padding: "28px 24px",
                 }}>
                   <div style={{ fontSize: 32, marginBottom: 12 }}>{f.icon}</div>
-                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#6367FF" }}>{f.title}</h3>
+                  <h3 style={{ fontWeight: 700, fontSize: 16, marginBottom: 8, color: "#5a5fcf" }}>{f.title}</h3>
                   <p style={{ color: "#1a1a4e", fontSize: 14, lineHeight: 1.6 }}>{f.desc}</p>
                 </div>
               ))}
@@ -142,7 +142,7 @@ export default function IPTVBordeauxPage() {
         </section>
 
         {/* Pricing CTA */}
-        <section style={{ padding: "70px 16px", background: "#6367FF", textAlign: "center" }}>
+        <section style={{ padding: "70px 16px", background: "#5a5fcf", textAlign: "center" }}>
           <div style={{ maxWidth: 600, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, color: "#fff", marginBottom: 16 }}>
               Abonnement IPTV Bordeaux à partir de 9€/mois
@@ -152,7 +152,7 @@ export default function IPTVBordeauxPage() {
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/free-trial" style={{
-                background: "#6367FF",
+                background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -181,21 +181,21 @@ export default function IPTVBordeauxPage() {
         </section>
 
         {/* FAQ */}
-        <section style={{ padding: "70px 16px", background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)" }}>
+        <section style={{ padding: "70px 16px", background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <p style={{ color: "#6367FF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
-            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 40, color: "#6367FF" }}>
+            <p style={{ color: "#5a5fcf", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
+            <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 40, color: "#5a5fcf" }}>
               Questions fréquentes — IPTV Bordeaux
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {faqItems.map((faq) => (
                 <div key={faq.q} style={{
                   background: "rgba(255,255,255,0.7)",
-                  border: "1px solid rgba(132,148,255,0.2)",
+                  border: "1px solid rgba(123,135,232,0.2)",
                   borderRadius: 16,
                   padding: "24px 28px",
                 }}>
-                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 10, color: "#6367FF" }}>{faq.q}</h3>
+                  <h3 style={{ fontWeight: 700, fontSize: 15, marginBottom: 10, color: "#5a5fcf" }}>{faq.q}</h3>
                   <p style={{ color: "#1a1a4e", fontSize: 14, lineHeight: 1.7 }}>{faq.a}</p>
                 </div>
               ))}
@@ -206,7 +206,7 @@ export default function IPTVBordeauxPage() {
         {/* Internal links to other cities */}
         <section style={{ padding: "60px 16px", background: "#fff" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: 22, fontWeight: 800, marginBottom: 32, color: "#6367FF" }}>
+            <h2 style={{ textAlign: "center", fontSize: 22, fontWeight: 800, marginBottom: 32, color: "#5a5fcf" }}>
               IPTV dans d&apos;autres villes françaises
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
@@ -219,12 +219,12 @@ export default function IPTVBordeauxPage() {
                 { label: "IPTV Bordeaux", href: "/iptv-bordeaux" },
               ].filter(c => !c.href.includes("bordeaux")).map((c) => (
                 <Link key={c.href} href={c.href} style={{
-                  background: "rgba(132,148,255,0.08)",
-                  border: "1px solid rgba(132,148,255,0.2)",
+                  background: "rgba(123,135,232,0.08)",
+                  border: "1px solid rgba(123,135,232,0.2)",
                   borderRadius: 10,
                   padding: "10px 20px",
                   textDecoration: "none",
-                  color: "#6367FF",
+                  color: "#5a5fcf",
                   fontSize: 14,
                   fontWeight: 600,
                 }}>

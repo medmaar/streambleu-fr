@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 
 export default function AvertissementPage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#6367FF]">Avertissement</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#5a5fcf]">Avertissement</h1>
         <p className="text-black text-sm mb-10">Last updated: April 4, 2026</p>
 
         <section className="space-y-8 text-black leading-relaxed">
@@ -87,8 +87,8 @@ export default function AvertissementPage() {
               third-party provider.
             </p>
             <div className="mt-4 bg-transparent rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#6367FF] hover:underline">help@streambleu.fr</a></p>
-              <p className="text-[#6367FF] text-sm mt-2">Please include &quot;Copyright Concern&quot; in the subject line.</p>
+              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">help@streambleu.fr</a></p>
+              <p className="text-[#5a5fcf] text-sm mt-2">Please include &quot;Copyright Concern&quot; in the subject line.</p>
             </div>
           </div>
         </section>

@@ -58,22 +58,22 @@ export default function FreeTrialPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
-        <section style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", padding: "80px 16px 60px" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+        <section style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <span style={{ background: "rgba(99,103,255,0.12)", border: "1px solid rgba(99,103,255,0.3)", color: "#6367FF", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            <span style={{ background: "rgba(90,95,207,0.12)", border: "1px solid rgba(90,95,207,0.3)", color: "#5a5fcf", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
               Sans Carte Bancaire · Activation Instantanée
             </span>
-            <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#6367FF" }}>
+            <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#5a5fcf" }}>
               Essai Gratuit IPTV<br />
-              <span style={{ color: "#6367FF" }}>France 24 Heures</span>
+              <span style={{ color: "#5a5fcf" }}>France 24 Heures</span>
             </h1>
-            <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#6367FF", marginBottom: 36, lineHeight: 1.7 }}>
+            <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#5a5fcf", marginBottom: 36, lineHeight: 1.7 }}>
               Testez Stream Bleu gratuitement pendant 24 heures — sans carte bancaire, sans engagement. Accès complet à 25 000+ chaînes, beIN Sports, Canal+, TF1, et 120 000+ films en 4K.
             </p>
             <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 12 }}>
               {["✓ Aucune carte bancaire", "✓ Activation en 5 min", "✓ 4K Ultra HD", "✓ Toutes les chaînes incluses"].map(f => (
-                <span key={f} style={{ fontSize: 14, fontWeight: 600, color: "#6367FF" }}>{f}</span>
+                <span key={f} style={{ fontSize: 14, fontWeight: 600, color: "#5a5fcf" }}>{f}</span>
               ))}
             </div>
           </div>
@@ -81,8 +81,8 @@ export default function FreeTrialPage() {
 
         <section style={{ padding: "60px 16px" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <div style={{ background: "#fff", borderRadius: 20, padding: "40px 36px", boxShadow: "0 8px 40px rgba(99,103,255,0.1)", border: "1px solid rgba(132,148,255,0.15)" }}>
-              <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 8, textAlign: "center" }}>
+            <div style={{ background: "#fff", borderRadius: 20, padding: "40px 36px", boxShadow: "0 8px 40px rgba(90,95,207,0.1)", border: "1px solid rgba(123,135,232,0.15)" }}>
+              <h2 style={{ fontSize: 24, fontWeight: 800, color: "#5a5fcf", marginBottom: 8, textAlign: "center" }}>
                 Demander votre essai gratuit
               </h2>
               <p style={{ textAlign: "center", color: "#666", fontSize: 14, marginBottom: 28 }}>
@@ -95,7 +95,7 @@ export default function FreeTrialPage() {
 
         <section style={{ padding: "60px 16px", background: "#fff" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <h2 style={{ textAlign: "center", fontSize: 26, fontWeight: 800, color: "#6367FF", marginBottom: 36 }}>
+            <h2 style={{ textAlign: "center", fontSize: 26, fontWeight: 800, color: "#5a5fcf", marginBottom: 36 }}>
               Questions fréquentes sur l&apos;essai gratuit
             </h2>
             <PlanFAQ items={faqItems} />

@@ -19,19 +19,19 @@ export const metadata: Metadata = {
 
 export default function DMCAPage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#6367FF]">DMCA Policy</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#5a5fcf]">DMCA Policy</h1>
         <p className="text-black text-sm mb-8">Last updated: March 28, 2026</p>
 
         {/* Legal disclaimer block */}
         <div className="bg-transparent border border-red-700 rounded-2xl p-8 mb-10">
-          <p className="text-xs font-bold text-[#6367FF] uppercase tracking-widest mb-3">Legal Avertissement</p>
+          <p className="text-xs font-bold text-[#5a5fcf] uppercase tracking-widest mb-3">Legal Avertissement</p>
           <p className="text-black leading-relaxed">
             Stream Bleu is a reseller of third-party IPTV services. We do not host, store, or transmit
             any video content. All streams are provided by independent third-party servers. If you believe
             your copyrighted content is being accessed through our platform, please contact us at{" "}
-            <a href="mailto:help@streambleu.fr" className="text-[#6367FF] hover:underline">
+            <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">
               help@streambleu.fr
             </a>{" "}
             and we will forward your request to the appropriate provider. We respond to all valid DMCA
@@ -72,7 +72,7 @@ export default function DMCAPage() {
             <p className="mb-2">Please send all DMCA notices to our designated agent:</p>
             <div className="bg-transparent rounded-xl p-6 border border-gray-800">
               <p className="font-bold text-black">Stream Bleu — DMCA Agent</p>
-              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#6367FF] hover:underline">help@streambleu.fr</a></p>
+              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">help@streambleu.fr</a></p>
               <p className="text-black text-sm mt-2">Please include "DMCA Notice" in the subject line.</p>
             </div>
           </div>

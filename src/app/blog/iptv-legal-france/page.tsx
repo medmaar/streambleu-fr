@@ -32,11 +32,11 @@ export default function IPTVLegalFrance() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <main style={{ background: "#FFDBFD", minHeight: "100vh" }}>
-        <section style={{ background: "linear-gradient(135deg, #6367FF, #8494FF)", padding: "80px 16px 60px" }}>
+      <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
+        <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 820, margin: "0 auto" }}>
             <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
-              <span style={{ background: "#8494FF", color: "#fff", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Légal</span>
+              <span style={{ background: "#7b87e8", color: "#fff", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Légal</span>
               <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>5 février 2026 · 5 min de lecture</span>
             </div>
             <h1 style={{ fontSize: "clamp(26px, 4vw, 46px)", fontWeight: 900, color: "#fff", lineHeight: 1.2, marginBottom: 16 }}>
@@ -50,7 +50,7 @@ export default function IPTVLegalFrance() {
 
         <article style={{ maxWidth: 820, margin: "0 auto", padding: "60px 16px" }}>
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 14 }}>La technologie IPTV est légale</h2>
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#5a5fcf", marginBottom: 14 }}>La technologie IPTV est légale</h2>
             <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
               La technologie IPTV (Internet Protocol Television) est parfaitement légale en France. C&apos;est la même technologie utilisée par Orange TV, SFR TV, Free Freebox TV et Bouygues Bbox — les grands opérateurs français livrent leurs services TV via protocole IP depuis des années.
             </p>
@@ -60,7 +60,7 @@ export default function IPTVLegalFrance() {
           </section>
 
           <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#6367FF", marginBottom: 14 }}>Le rôle de l&apos;Arcom en France</h2>
+            <h2 style={{ fontSize: 24, fontWeight: 800, color: "#5a5fcf", marginBottom: 14 }}>Le rôle de l&apos;Arcom en France</h2>
             <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
               L&apos;Arcom (Autorité de régulation de la communication audiovisuelle et numérique) est le régulateur français de l&apos;audiovisuel. Depuis la loi du 25 octobre 2021, l&apos;Arcom dispose de pouvoirs renforcés pour lutter contre le piratage, notamment la capacité de faire bloquer des sites ou services par les FAI sans procédure judiciaire préalable dans certains cas.
             </p>
@@ -69,28 +69,28 @@ export default function IPTVLegalFrance() {
             </p>
           </section>
 
-          <div style={{ background: "rgba(132,148,255,0.08)", border: "1px solid rgba(132,148,255,0.2)", borderRadius: 14, padding: "24px 28px", marginBottom: 40 }}>
-            <h3 style={{ fontWeight: 700, fontSize: 17, color: "#6367FF", marginBottom: 12 }}>📋 Résumé en 3 points</h3>
+          <div style={{ background: "rgba(123,135,232,0.08)", border: "1px solid rgba(123,135,232,0.2)", borderRadius: 14, padding: "24px 28px", marginBottom: 40 }}>
+            <h3 style={{ fontWeight: 700, fontSize: 17, color: "#5a5fcf", marginBottom: 12 }}>📋 Résumé en 3 points</h3>
             {[
               "La technologie IPTV est légale — c'est la même qu'utilisent Orange, SFR, Free et Bouygues.",
               "Ce qui compte, c'est la légitimité du contenu et les droits de diffusion du service que vous choisissez.",
               "Stream Bleu donne accès à des flux disponibles publiquement. Les utilisateurs restent responsables des contenus auxquels ils accèdent.",
             ].map((p, i) => (
               <p key={i} style={{ color: "#333", fontSize: 14, lineHeight: 1.7, marginBottom: 8, display: "flex", gap: 10 }}>
-                <span style={{ color: "#8494FF", fontWeight: 700, flexShrink: 0 }}>{i + 1}.</span>{p}
+                <span style={{ color: "#7b87e8", fontWeight: 700, flexShrink: 0 }}>{i + 1}.</span>{p}
               </p>
             ))}
           </div>
 
-          <section style={{ background: "#6367FF", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
+          <section style={{ background: "#5a5fcf", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Testez Stream Bleu gratuitement</h2>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>Essai 24h sans carte bancaire. Activation instantanée.</p>
-            <Link href="/free-trial" style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit →
             </Link>
           </section>
 
-          <Link href="/blog" style={{ color: "#8494FF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
+          <Link href="/blog" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
         </article>
       </main>
     </>

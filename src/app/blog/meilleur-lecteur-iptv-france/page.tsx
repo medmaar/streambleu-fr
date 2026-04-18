@@ -39,11 +39,11 @@ export default function MeilleurLecteurIPTV() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <main style={{ background: "#FFDBFD", minHeight: "100vh" }}>
-        <section style={{ background: "linear-gradient(135deg, #6367FF, #8494FF)", padding: "80px 16px 60px" }}>
+      <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
+        <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 820, margin: "0 auto" }}>
             <div style={{ display: "flex", gap: 10, marginBottom: 20 }}>
-              <span style={{ background: "#6367FF", border: "1px solid #C9BEFF", color: "#C9BEFF", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Guide</span>
+              <span style={{ background: "#5a5fcf", border: "1px solid #c5bcf5", color: "#c5bcf5", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Guide</span>
               <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>15 mars 2026 · 6 min de lecture</span>
             </div>
             <h1 style={{ fontSize: "clamp(26px, 4vw, 46px)", fontWeight: 900, color: "#fff", lineHeight: 1.2, marginBottom: 16 }}>
@@ -58,44 +58,44 @@ export default function MeilleurLecteurIPTV() {
         <article style={{ maxWidth: 820, margin: "0 auto", padding: "60px 16px" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 28, marginBottom: 48 }}>
             {players.map((p, i) => (
-              <div key={p.name} style={{ background: "#fff", borderRadius: 18, padding: "28px 28px", border: i === 0 ? "2px solid rgba(99,103,255,0.3)" : "1px solid rgba(132,148,255,0.15)" }}>
+              <div key={p.name} style={{ background: "#fff", borderRadius: 18, padding: "28px 28px", border: i === 0 ? "2px solid rgba(90,95,207,0.3)" : "1px solid rgba(123,135,232,0.15)" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
                   <div>
-                    <span style={{ background: i === 0 ? "#6367FF" : "#6367FF", color: "#fff", fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 999, marginRight: 10 }}>#{p.rank}</span>
-                    <span style={{ fontSize: 20, fontWeight: 800, color: "#6367FF" }}>{p.name}</span>
+                    <span style={{ background: i === 0 ? "#5a5fcf" : "#5a5fcf", color: "#fff", fontSize: 11, fontWeight: 700, padding: "3px 10px", borderRadius: 999, marginRight: 10 }}>#{p.rank}</span>
+                    <span style={{ fontSize: 20, fontWeight: 800, color: "#5a5fcf" }}>{p.name}</span>
                   </div>
                   <div style={{ textAlign: "right" }}>
-                    <div style={{ fontSize: 22, fontWeight: 900, color: "#6367FF" }}>{p.rating}</div>
+                    <div style={{ fontSize: 22, fontWeight: 900, color: "#5a5fcf" }}>{p.rating}</div>
                     <div style={{ fontSize: 12, color: "#888" }}>{p.verdict}</div>
                   </div>
                 </div>
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 14 }}>
-                  <span style={{ background: "rgba(132,148,255,0.1)", color: "#8494FF", fontSize: 12, fontWeight: 600, padding: "3px 10px", borderRadius: 999 }}>{p.platforms}</span>
-                  <span style={{ background: "rgba(99,103,255,0.1)", color: "#6367FF", fontSize: 12, fontWeight: 600, padding: "3px 10px", borderRadius: 999 }}>{p.price}</span>
+                  <span style={{ background: "rgba(123,135,232,0.1)", color: "#7b87e8", fontSize: 12, fontWeight: 600, padding: "3px 10px", borderRadius: 999 }}>{p.platforms}</span>
+                  <span style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", fontSize: 12, fontWeight: 600, padding: "3px 10px", borderRadius: 999 }}>{p.price}</span>
                 </div>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                   <div>
-                    <p style={{ fontSize: 12, fontWeight: 700, color: "#8494FF", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 8 }}>Points forts</p>
-                    {p.pros.map(pro => <p key={pro} style={{ fontSize: 13, color: "#333", marginBottom: 4, display: "flex", gap: 6 }}><span style={{ color: "#8494FF" }}>✓</span>{pro}</p>)}
+                    <p style={{ fontSize: 12, fontWeight: 700, color: "#7b87e8", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 8 }}>Points forts</p>
+                    {p.pros.map(pro => <p key={pro} style={{ fontSize: 13, color: "#333", marginBottom: 4, display: "flex", gap: 6 }}><span style={{ color: "#7b87e8" }}>✓</span>{pro}</p>)}
                   </div>
                   <div>
-                    <p style={{ fontSize: 12, fontWeight: 700, color: "#6367FF", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 8 }}>Points faibles</p>
-                    {p.cons.map(con => <p key={con} style={{ fontSize: 13, color: "#555", marginBottom: 4, display: "flex", gap: 6 }}><span style={{ color: "#6367FF" }}>−</span>{con}</p>)}
+                    <p style={{ fontSize: 12, fontWeight: 700, color: "#5a5fcf", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 8 }}>Points faibles</p>
+                    {p.cons.map(con => <p key={con} style={{ fontSize: 13, color: "#555", marginBottom: 4, display: "flex", gap: 6 }}><span style={{ color: "#5a5fcf" }}>−</span>{con}</p>)}
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          <section style={{ background: "#6367FF", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
+          <section style={{ background: "#5a5fcf", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Testez avec Stream Bleu gratuitement</h2>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>IBO Player inclus gratuitement avec le forfait 12 mois. Essai 24h disponible.</p>
-            <Link href="/free-trial" style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit →
             </Link>
           </section>
 
-          <Link href="/blog" style={{ color: "#8494FF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
+          <Link href="/blog" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
         </article>
       </main>
     </>

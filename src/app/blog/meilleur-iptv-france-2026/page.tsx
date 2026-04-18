@@ -49,18 +49,18 @@ export default function MeilleurIPTVFrance2026() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <main style={{ background: "#FFDBFD", minHeight: "100vh" }}>
+      <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
 
         {/* Hero */}
-        <section style={{ background: "linear-gradient(135deg, #6367FF, #8494FF)", padding: "80px 16px 60px" }}>
+        <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 820, margin: "0 auto" }}>
             <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
-              <span style={{ background: "#6367FF", color: "#fff", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Avis</span>
+              <span style={{ background: "#5a5fcf", color: "#fff", fontSize: 11, fontWeight: 700, padding: "3px 12px", borderRadius: 999, textTransform: "uppercase" }}>Avis</span>
               <span style={{ color: "rgba(255,255,255,0.6)", fontSize: 13 }}>10 janvier 2026 · 8 min de lecture</span>
             </div>
             <h1 style={{ fontSize: "clamp(28px, 4.5vw, 50px)", fontWeight: 900, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
               Meilleur IPTV France 2026 :<br />
-              <span style={{ color: "#6367FF" }}>Services Testés & Classés</span>
+              <span style={{ color: "#5a5fcf" }}>Services Testés & Classés</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 16, lineHeight: 1.7, maxWidth: 680 }}>
               Nous avons testé les principaux services IPTV disponibles en France pendant 30 jours — chaînes, qualité vidéo, stabilité et support. Voici notre classement honnête pour 2026.
@@ -72,7 +72,7 @@ export default function MeilleurIPTVFrance2026() {
 
           {/* Intro */}
           <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#6367FF", marginBottom: 16 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#5a5fcf", marginBottom: 16 }}>
               Pourquoi choisir un IPTV en France en 2026 ?
             </h2>
             <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
@@ -88,14 +88,14 @@ export default function MeilleurIPTVFrance2026() {
 
           {/* Criteria */}
           <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#6367FF", marginBottom: 20 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#5a5fcf", marginBottom: 20 }}>
               Nos critères d&apos;évaluation
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
               {criteria.map((c, i) => (
-                <div key={c.label} style={{ background: "#fff", borderRadius: 14, padding: "20px 20px", border: "1px solid rgba(132,148,255,0.15)" }}>
-                  <div style={{ fontWeight: 800, fontSize: 24, color: "#6367FF", marginBottom: 6 }}>{i + 1}.</div>
-                  <div style={{ fontWeight: 700, fontSize: 15, color: "#6367FF", marginBottom: 6 }}>{c.label}</div>
+                <div key={c.label} style={{ background: "#fff", borderRadius: 14, padding: "20px 20px", border: "1px solid rgba(123,135,232,0.15)" }}>
+                  <div style={{ fontWeight: 800, fontSize: 24, color: "#5a5fcf", marginBottom: 6 }}>{i + 1}.</div>
+                  <div style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>{c.label}</div>
                   <div style={{ fontSize: 13, color: "#555", lineHeight: 1.5 }}>{c.desc}</div>
                 </div>
               ))}
@@ -104,13 +104,13 @@ export default function MeilleurIPTVFrance2026() {
 
           {/* Rankings table */}
           <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#6367FF", marginBottom: 20 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#5a5fcf", marginBottom: 20 }}>
               Classement 2026
             </h2>
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
                 <thead>
-                  <tr style={{ background: "#6367FF" }}>
+                  <tr style={{ background: "#5a5fcf" }}>
                     {["#", "Service", "Chaînes", "Qualité", "Uptime", "Activation", "Support", "Prix", "Verdict"].map(h => (
                       <th key={h} style={{ padding: "12px 14px", color: "#fff", fontWeight: 700, textAlign: "left", whiteSpace: "nowrap" }}>{h}</th>
                     ))}
@@ -118,16 +118,16 @@ export default function MeilleurIPTVFrance2026() {
                 </thead>
                 <tbody>
                   {services.map((s, i) => (
-                    <tr key={s.name} style={{ background: i === 0 ? "rgba(99,103,255,0.06)" : i % 2 === 0 ? "#fff" : "rgba(132,148,255,0.04)" }}>
-                      <td style={{ padding: "12px 14px", fontWeight: 900, color: i === 0 ? "#6367FF" : "#6367FF", fontSize: 16 }}>#{s.rank}</td>
-                      <td style={{ padding: "12px 14px", fontWeight: 700, color: "#6367FF" }}>{s.name}</td>
+                    <tr key={s.name} style={{ background: i === 0 ? "rgba(90,95,207,0.06)" : i % 2 === 0 ? "#fff" : "rgba(123,135,232,0.04)" }}>
+                      <td style={{ padding: "12px 14px", fontWeight: 900, color: i === 0 ? "#5a5fcf" : "#5a5fcf", fontSize: 16 }}>#{s.rank}</td>
+                      <td style={{ padding: "12px 14px", fontWeight: 700, color: "#5a5fcf" }}>{s.name}</td>
                       <td style={{ padding: "12px 14px", color: "#333" }}>{s.channels}</td>
-                      <td style={{ padding: "12px 14px", color: i === 0 ? "#8494FF" : "#333", fontWeight: i === 0 ? 700 : 400 }}>{s.quality}</td>
+                      <td style={{ padding: "12px 14px", color: i === 0 ? "#7b87e8" : "#333", fontWeight: i === 0 ? 700 : 400 }}>{s.quality}</td>
                       <td style={{ padding: "12px 14px", color: "#333" }}>{s.uptime}</td>
                       <td style={{ padding: "12px 14px", color: "#333" }}>{s.activation}</td>
                       <td style={{ padding: "12px 14px", color: "#333" }}>{s.support}</td>
                       <td style={{ padding: "12px 14px", color: "#333", fontWeight: 600 }}>{s.price}</td>
-                      <td style={{ padding: "12px 14px", color: i === 0 ? "#6367FF" : "#555", fontWeight: i === 0 ? 700 : 400 }}>{s.verdict}</td>
+                      <td style={{ padding: "12px 14px", color: i === 0 ? "#5a5fcf" : "#555", fontWeight: i === 0 ? 700 : 400 }}>{s.verdict}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -137,7 +137,7 @@ export default function MeilleurIPTVFrance2026() {
 
           {/* Stream Bleu deep dive */}
           <section style={{ marginBottom: 48 }}>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#6367FF", marginBottom: 16 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: "#5a5fcf", marginBottom: 16 }}>
               #1 Stream Bleu — Notre Meilleur Choix
             </h2>
             <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
@@ -149,12 +149,12 @@ export default function MeilleurIPTVFrance2026() {
             <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 20 }}>
               L&apos;offre sportive est également remarquable : beIN Sports (1, 2, 3), RMC Sport (1, 2), Canal+ Sport, Eurosport 1 & 2, et L&apos;Équipe TV sont tous inclus sans supplément. Tous les matchs de Ligue 1, de Champions League et les Grands Prix de Formule 1 sont accessibles.
             </p>
-            <div style={{ background: "rgba(99,103,255,0.06)", border: "1px solid rgba(99,103,255,0.2)", borderRadius: 14, padding: "20px 24px", marginBottom: 20 }}>
-              <p style={{ fontSize: 14, color: "#6367FF", fontWeight: 700, marginBottom: 8 }}>✓ Ce que nous avons aimé</p>
+            <div style={{ background: "rgba(90,95,207,0.06)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 14, padding: "20px 24px", marginBottom: 20 }}>
+              <p style={{ fontSize: 14, color: "#5a5fcf", fontWeight: 700, marginBottom: 8 }}>✓ Ce que nous avons aimé</p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {["Vrai 4K H.265/HEVC avec HDR10", "25 000+ chaînes dont toute la TNT française", "Activation en moins de 30 minutes", "Support 24/7 en français par WhatsApp & email", "Essai gratuit 24h sans carte bancaire", "À partir de 9€/mois sans engagement"].map(p => (
                   <li key={p} style={{ fontSize: 14, color: "#333", marginBottom: 5, display: "flex", gap: 8 }}>
-                    <span style={{ color: "#6367FF", fontWeight: 700 }}>✓</span>{p}
+                    <span style={{ color: "#5a5fcf", fontWeight: 700 }}>✓</span>{p}
                   </li>
                 ))}
               </ul>
@@ -162,7 +162,7 @@ export default function MeilleurIPTVFrance2026() {
           </section>
 
           {/* Final verdict */}
-          <section style={{ background: "#6367FF", borderRadius: 20, padding: "36px 32px", marginBottom: 48, textAlign: "center" }}>
+          <section style={{ background: "#5a5fcf", borderRadius: 20, padding: "36px 32px", marginBottom: 48, textAlign: "center" }}>
             <h2 style={{ fontSize: 24, fontWeight: 900, color: "#fff", marginBottom: 12 }}>
               Notre Verdict : Stream Bleu est le Meilleur IPTV France 2026
             </h2>
@@ -170,7 +170,7 @@ export default function MeilleurIPTVFrance2026() {
               Meilleure qualité vidéo, plus de chaînes, meilleur support — tout ça à partir de 9€/mois. L&apos;essai gratuit 24h vous permet de vérifier par vous-même.
             </p>
             <Link href="/free-trial" style={{
-              background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 16,
+              background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 16,
               padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block",
             }}>
               Essai Gratuit 24h →
@@ -178,7 +178,7 @@ export default function MeilleurIPTVFrance2026() {
           </section>
 
           {/* Retour au blog */}
-          <Link href="/blog" style={{ color: "#8494FF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+          <Link href="/blog" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             ← Retour au blog
           </Link>
         </article>

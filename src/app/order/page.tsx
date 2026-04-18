@@ -20,7 +20,7 @@ function OrderContent() {
   );
 
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4">
       <div className="max-w-xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
@@ -28,7 +28,7 @@ function OrderContent() {
             You&apos;re one step away
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold mb-3">
-            Complete Your <span className="text-[#6367FF]">Order</span>
+            Complete Your <span className="text-[#5a5fcf]">Order</span>
           </h1>
           <p className="text-black">
             Contact us via your preferred method below and we&apos;ll activate your subscription within minutes.
@@ -36,8 +36,8 @@ function OrderContent() {
         </div>
 
         {/* Plan summary */}
-        <div className="bg-transparent border border-[#6367FF] rounded-2xl p-6 mb-8">
-          <h2 className="text-lg font-bold text-[#6367FF] mb-4">Your Selected Plan</h2>
+        <div className="bg-transparent border border-[#5a5fcf] rounded-2xl p-6 mb-8">
+          <h2 className="text-lg font-bold text-[#5a5fcf] mb-4">Your Selected Plan</h2>
           <div className="flex justify-between items-center mb-2">
             <span className="text-black">Duration</span>
             <span className="font-bold">{duration}</span>
@@ -48,7 +48,7 @@ function OrderContent() {
           </div>
           <div className="border-t border-gray-700 mt-4 pt-4 flex justify-between items-center">
             <span className="text-black font-bold">Total</span>
-            <span className="text-3xl font-extrabold text-[#6367FF]">${price}</span>
+            <span className="text-3xl font-extrabold text-[#5a5fcf]">${price}</span>
           </div>
         </div>
 
@@ -108,7 +108,7 @@ function OrderContent() {
         </div>
 
         <div className="text-center">
-          <a href="/pricing" className="text-[#6367FF] hover:text-[#6367FF] text-sm transition-colors">
+          <a href="/pricing" className="text-[#5a5fcf] hover:text-[#5a5fcf] text-sm transition-colors">
             ← Back to pricing
           </a>
         </div>

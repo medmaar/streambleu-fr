@@ -72,7 +72,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
-      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
         <section
           className="py-20 px-4"
           style={{
@@ -82,16 +82,16 @@ export default function Page() {
         >
           <div className="max-w-2xl mx-auto">
             {/* 1. Page title */}
-            <div style={{ background: "#6367FF", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(99,103,255,0.25)", marginBottom: 24, textAlign: "center" }}>
-              <span style={{ background: "rgba(99,103,255,0.18)", border: "1px solid rgba(99,103,255,0.4)", color: "#6367FF", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 20 }}>
+            <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 24, textAlign: "center" }}>
+              <span style={{ background: "rgba(90,95,207,0.18)", border: "1px solid rgba(90,95,207,0.4)", color: "#5a5fcf", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 20 }}>
                 Stream Bleu · 1 Year · 7 Devices
               </span>
               <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
                 1 Year - 7 Devices
               </h1>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 16 }}>
-                <span style={{ color: "#6367FF", fontWeight: 900, fontSize: "2.4rem" }}>Price : €315</span>
-                <span style={{ background: "#6367FF", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>50% OFF</span>
+                <span style={{ color: "#5a5fcf", fontWeight: 900, fontSize: "2.4rem" }}>Price : €315</span>
+                <span style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>50% OFF</span>
               </div>
               <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Fill out the form below — credentials sent within minutes</p>
             </div>
@@ -99,18 +99,18 @@ export default function Page() {
             <div
               className="rounded-3xl p-6 md:p-8 border mb-16"
               style={{
-                background: "#6367FF",
-                borderColor: "rgba(201,190,255,0.2)", boxShadow: "0 8px 32px rgba(99,103,255,0.25)",
+                background: "#5a5fcf",
+                borderColor: "rgba(197,188,245,0.2)", boxShadow: "0 8px 32px rgba(90,95,207,0.25)",
               }}
             >
               <PlanOrderForm plan="1 Year - 7 Devices — €315" />
             </div>
 
             {/* 4. FAQ */}
-            <div style={{ background: "#6367FF", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(99,103,255,0.25)", marginBottom: 32 }}>
+            <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 32 }}>
               <p
                 className="text-xs font-bold uppercase tracking-widest mb-2"
-                style={{ color: "#6367FF" }}
+                style={{ color: "#5a5fcf" }}
               >
                 FAQ
               </p>
@@ -126,10 +126,10 @@ export default function Page() {
                 <a href="/pricing/1-month" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>1 Month — 9€</a>
                 <a href="/pricing/3-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Months — €29</a>
                 <a href="/pricing/6-months" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Months — €39</a>
-                <a href="/pricing/12-months" style={{ background: "#6367FF", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>1 Year — €49 ⭐</a>
+                <a href="/pricing/12-months" style={{ background: "#5a5fcf", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>1 Year — €49 ⭐</a>
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
-                <a href="/free-trial" style={{ background: "#C9BEFF", color: "#6367FF", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Essai Gratuit 24h</a>
+                <a href="/free-trial" style={{ background: "#c5bcf5", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Essai Gratuit 24h</a>
                 <a href="/pricing" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>All Plans</a>
                 <a href="/channels-list" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Channel List</a>
                 <a href="/iptv-paris" style={{ background: "rgba(255,255,255,0.1)", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>IPTV Toronto</a>

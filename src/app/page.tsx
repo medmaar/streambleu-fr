@@ -131,7 +131,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #FFDBFD 40%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #fdf5ff 40%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }}>
 
         {/* ── 1. HERO ── */}
         <section style={{
@@ -152,15 +152,15 @@ export default function HomePage() {
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, rgba(99,103,255,0.72) 0%, rgba(99,103,255,0.88) 100%)",
+            background: "linear-gradient(to bottom, rgba(90,95,207,0.72) 0%, rgba(90,95,207,0.88) 100%)",
             zIndex: 1,
           }} />
           <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 2 }}>
             <span style={{
               display: "inline-block",
-              background: "rgba(99,103,255,0.2)",
-              border: "1px solid rgba(99,103,255,0.6)",
-              color: "#6367FF",
+              background: "rgba(90,95,207,0.2)",
+              border: "1px solid rgba(90,95,207,0.6)",
+              color: "#5a5fcf",
               fontSize: 12,
               fontWeight: 700,
               letterSpacing: "0.1em",
@@ -179,7 +179,7 @@ export default function HomePage() {
               color: "#ffffff",
             }}>
               L&apos;IPTV Premium<br />
-              <span style={{ color: "#6367FF" }}>Made for France</span>
+              <span style={{ color: "#5a5fcf" }}>Made for France</span>
             </h1>
             <p style={{
               fontSize: "clamp(16px, 2vw, 20px)",
@@ -193,7 +193,7 @@ export default function HomePage() {
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link href="/pricing" style={{
-                background: "#6367FF",
+                background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 17,
@@ -201,7 +201,7 @@ export default function HomePage() {
                 borderRadius: 14,
                 textDecoration: "none",
                 display: "inline-block",
-                boxShadow: "0 6px 20px rgba(99,103,255,0.5)",
+                boxShadow: "0 6px 20px rgba(90,95,207,0.5)",
               }}>
                 Voir les Tarifs →
               </Link>
@@ -226,7 +226,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 2. STATS BAR ── */}
-        <section style={{ background: "#8494FF", padding: "32px 16px" }}>
+        <section style={{ background: "#7b87e8", padding: "32px 16px" }}>
           <div style={{
             maxWidth: 960,
             margin: "0 auto",
@@ -254,11 +254,11 @@ export default function HomePage() {
         </section>
 
         {/* ── REVIEWS ── */}
-        <section style={{ padding: "80px 16px", background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)" }}>
+        <section style={{ padding: "80px 16px", background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)" }}>
           <div style={{ maxWidth: 680, margin: "0 auto" }}>
             <ReviewsSection showHeader={true} />
             <div style={{ textAlign: "center", marginTop: 40 }}>
-              <a href="/reviews" style={{ display: "inline-block", background: "#6367FF", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
+              <a href="/reviews" style={{ display: "inline-block", background: "#5a5fcf", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
                 Voir tous les avis →
               </a>
             </div>
@@ -269,7 +269,7 @@ export default function HomePage() {
         <HomePricing />
 
         {/* ── 4. DEVICES MARQUEE ── */}
-        <section style={{ padding: "80px 16px", background: "#FFDBFD", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#fdf5ff", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Compatible avec tous vos appareils
@@ -283,8 +283,8 @@ export default function HomePage() {
               {[...deviceNames, ...deviceNames].map((name, i) => (
                 <div key={i} style={{
                   flexShrink: 0,
-                  background: "rgba(132,148,255,0.1)",
-                  border: "1px solid rgba(132,148,255,0.25)",
+                  background: "rgba(123,135,232,0.1)",
+                  border: "1px solid rgba(123,135,232,0.25)",
                   borderRadius: 14,
                   padding: "14px 24px",
                   color: "#1a1a4e",
@@ -300,9 +300,9 @@ export default function HomePage() {
         </section>
 
         {/* ── 5. FRENCH CHANNELS ── */}
-        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
+        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
-            <p style={{ color: "#6367FF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
+            <p style={{ color: "#5a5fcf", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Chaînes Françaises
             </p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 16, color: "#1a1a4e" }}>
@@ -314,8 +314,8 @@ export default function HomePage() {
             <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center", marginBottom: 32 }}>
               {frenchChannels.map((ch) => (
                 <span key={ch} style={{
-                  background: "rgba(132,148,255,0.08)",
-                  border: "1px solid rgba(132,148,255,0.2)",
+                  background: "rgba(123,135,232,0.08)",
+                  border: "1px solid rgba(123,135,232,0.2)",
                   borderRadius: 8,
                   padding: "8px 16px",
                   fontSize: 13,
@@ -333,7 +333,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 6. SPORTS ── */}
-        <section style={{ padding: "80px 16px", background: "#FFDBFD", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "#fdf5ff", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Ne ratez plus aucun match
@@ -341,7 +341,7 @@ export default function HomePage() {
             <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 16, fontSize: 15 }}>
               Tous les événements PPV inclus sans supplément. Chaque match en qualité maximale — 4K Ultra HD là où c&apos;est disponible.
             </p>
-            <p style={{ textAlign: "center", color: "#8494FF", fontSize: 13, marginBottom: 44 }}>
+            <p style={{ textAlign: "center", color: "#7b87e8", fontSize: 13, marginBottom: 44 }}>
               ✓ Aucune coupure &nbsp;&nbsp; ✓ Tous les PPV gratuits &nbsp;&nbsp; ✓ Ligue 1, Champions League, Roland-Garros
             </p>
           </div>
@@ -350,8 +350,8 @@ export default function HomePage() {
               {[...sportsChannels, ...sportsChannels].map((ch, i) => (
                 <div key={i} style={{
                   flexShrink: 0,
-                  background: "rgba(99,103,255,0.06)",
-                  border: "1px solid rgba(99,103,255,0.15)",
+                  background: "rgba(90,95,207,0.06)",
+                  border: "1px solid rgba(90,95,207,0.15)",
                   borderRadius: 14,
                   padding: "14px 24px",
                   color: "#1a1a4e",
@@ -367,7 +367,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 7. COMPARISON TABLE ── */}
-        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
+        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Stream Bleu vs Câble vs IPTV Générique
@@ -379,17 +379,17 @@ export default function HomePage() {
               <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
                 <thead>
                   <tr>
-                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(132,148,255,0.2)" }}>Fonctionnalité</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#6367FF", fontWeight: 700, borderBottom: "1px solid rgba(99,103,255,0.3)", background: "rgba(99,103,255,0.06)" }}>Stream Bleu</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(132,148,255,0.2)" }}>Câble / ADSL</th>
-                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(132,148,255,0.2)" }}>Autre IPTV</th>
+                    <th style={{ textAlign: "left", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(123,135,232,0.2)" }}>Fonctionnalité</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#5a5fcf", fontWeight: 700, borderBottom: "1px solid rgba(90,95,207,0.3)", background: "rgba(90,95,207,0.06)" }}>Stream Bleu</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(123,135,232,0.2)" }}>Câble / ADSL</th>
+                    <th style={{ textAlign: "center", padding: "14px 16px", color: "#1a1a4e", fontWeight: 600, borderBottom: "1px solid rgba(123,135,232,0.2)" }}>Autre IPTV</th>
                   </tr>
                 </thead>
                 <tbody>
                   {comparison.map((row, i) => (
-                    <tr key={row.feature} style={{ background: i % 2 === 0 ? "transparent" : "rgba(132,148,255,0.04)" }}>
+                    <tr key={row.feature} style={{ background: i % 2 === 0 ? "transparent" : "rgba(123,135,232,0.04)" }}>
                       <td style={{ padding: "14px 16px", color: "#1a1a4e", fontWeight: 500 }}>{row.feature}</td>
-                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#8494FF", fontWeight: 600, background: "rgba(99,103,255,0.04)" }}>{row.us}</td>
+                      <td style={{ padding: "14px 16px", textAlign: "center", color: "#7b87e8", fontWeight: 600, background: "rgba(90,95,207,0.04)" }}>{row.us}</td>
                       <td style={{ padding: "14px 16px", textAlign: "center", color: "#1a1a4e" }}>{row.cable}</td>
                       <td style={{ padding: "14px 16px", textAlign: "center", color: "#1a1a4e" }}>{row.other}</td>
                     </tr>
@@ -401,17 +401,17 @@ export default function HomePage() {
         </section>
 
         {/* ── 8. FAQ ── */}
-        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
+        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
-            <p style={{ color: "#6367FF", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
+            <p style={{ color: "#5a5fcf", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#1a1a4e" }}>
               Questions Fréquentes
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
               {faqs.map((faq) => (
                 <div key={faq.q} style={{
-                  background: "rgba(132,148,255,0.08)",
-                  border: "1px solid rgba(132,148,255,0.2)",
+                  background: "rgba(123,135,232,0.08)",
+                  border: "1px solid rgba(123,135,232,0.2)",
                   borderRadius: 16,
                   padding: "24px 28px",
                 }}>
@@ -424,7 +424,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 9. CITIES ── */}
-        <section style={{ padding: "80px 16px", background: "#FFDBFD" }}>
+        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Disponible dans toute la France
@@ -439,8 +439,8 @@ export default function HomePage() {
             }}>
               {cities.map((city) => (
                 <Link key={city.name} href={city.href} style={{
-                  background: "rgba(132,148,255,0.08)",
-                  border: "1px solid rgba(132,148,255,0.2)",
+                  background: "rgba(123,135,232,0.08)",
+                  border: "1px solid rgba(123,135,232,0.2)",
                   borderRadius: 12,
                   padding: "18px 16px",
                   textAlign: "center",
@@ -458,7 +458,7 @@ export default function HomePage() {
         </section>
 
         {/* ── FINAL CTA ── */}
-        <section style={{ padding: "80px 16px", textAlign: "center", background: "#FFDBFD" }}>
+        <section style={{ padding: "80px 16px", textAlign: "center", background: "#fdf5ff" }}>
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#1a1a4e" }}>
               Commencez à streamer dès aujourd&apos;hui
@@ -468,7 +468,7 @@ export default function HomePage() {
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/free-trial" style={{
-                background: "#6367FF",
+                background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -481,8 +481,8 @@ export default function HomePage() {
               </Link>
               <Link href="/pricing" style={{
                 background: "transparent",
-                border: "2px solid rgba(99,103,255,0.4)",
-                color: "#6367FF",
+                border: "2px solid rgba(90,95,207,0.4)",
+                color: "#5a5fcf",
                 fontWeight: 700,
                 fontSize: 16,
                 padding: "16px 36px",

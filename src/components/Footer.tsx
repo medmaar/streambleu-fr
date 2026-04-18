@@ -6,14 +6,14 @@ export default function Footer() {
   return (
     <footer
       className="py-16 px-4 border-t"
-      style={{ background: "#6367FF", borderColor: "rgba(201,190,255,0.25)" }}
+      style={{ background: "#5a5fcf", borderColor: "rgba(197,188,245,0.25)" }}
     >
       <div className="max-w-7xl mx-auto">
 
         {/* Brand bar */}
         <div
           className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pb-12 mb-12 border-b"
-          style={{ borderColor: "rgba(201,190,255,0.25)" }}
+          style={{ borderColor: "rgba(197,188,245,0.25)" }}
         >
           <div>
             <Logo className="mb-4" />
@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="sm:text-right shrink-0">
             <a
               href="mailto:help@streambleu.fr"
-              style={{ fontSize: 14, color: "#C9BEFF", textDecoration: "none" }}
+              style={{ fontSize: 14, color: "#c5bcf5", textDecoration: "none" }}
             >
               help@streambleu.fr
             </a>
@@ -123,7 +123,7 @@ export default function Footer() {
               Stream Bleu n&apos;héberge ni ne diffuse aucun contenu protégé par le droit d&apos;auteur.
               Tout le contenu est fourni par des prestataires tiers.
             </p>
-            <Link href="/disclaimer" style={{ fontSize: 12, color: "#C9BEFF", textDecoration: "none" }}>
+            <Link href="/disclaimer" style={{ fontSize: 12, color: "#c5bcf5", textDecoration: "none" }}>
               Lire l&apos;avertissement →
             </Link>
           </div>
@@ -133,7 +133,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div
           className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 border-t"
-          style={{ borderColor: "rgba(201,190,255,0.2)" }}
+          style={{ borderColor: "rgba(197,188,245,0.2)" }}
         >
           <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>© 2026 Stream Bleu. Tous droits réservés.</p>
           <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>1 Rue Volant, 92000 Nanterre, France</p>
