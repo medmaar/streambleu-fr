@@ -21,7 +21,9 @@ const channels = [
     desc: "Réponse la plus rapide. Discutez directement avec notre équipe — généralement en moins de 5 minutes.",
     action: "Écrire sur WhatsApp",
     href: "https://wa.me/17828026280?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20intéressé%20par%20votre%20service.",
-    bg: "bg-[#25D366]",
+    actionBg: "#25D366",
+    actionColor: "#fff",
+    iconBg: "#25D366",
     detail: "+1 (782) 802-6280",
   },
   {
@@ -29,7 +31,9 @@ const channels = [
     desc: "Rejoignez notre canal de support pour une aide rapide et les annonces de service.",
     action: "Ouvrir Telegram",
     href: "https://t.me/IPTVfranceSupport",
-    bg: "bg-[#229ED9]",
+    actionBg: "#229ED9",
+    actionColor: "#fff",
+    iconBg: "#229ED9",
     detail: "@IPTVfranceSupport",
   },
   {
@@ -37,39 +41,60 @@ const channels = [
     desc: "Pour les demandes détaillées, questions de facturation ou avis DMCA.",
     action: "Envoyer un email",
     href: "mailto:help@streambleu.fr",
-    bg: "bg-[#F5C518]",
+    actionBg: "#F5C518",
+    actionColor: "#111",
+    iconBg: "#F5C518",
     detail: "help@streambleu.fr",
   },
 ];
 
 export default function ContactPage() {
   return (
-    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(90,95,207,0.04) 0%, #fdf5ff 35%, #fdf5ff 65%, rgba(200,80,100,0.04) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
 
-        {/* En-tête */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Nous <span className="text-[#5a5fcf]">Contacter</span>
+          Nous <span style={{ color: "#5a5fcf" }}>Contacter</span>
         </h1>
-        <p className="text-black text-lg mb-12">
+        <p style={{ color: "#444", fontSize: 18, marginBottom: 48, lineHeight: 1.6 }}>
           Notre équipe de support est disponible 24h/24 en français.
           Choisissez le canal qui vous convient le mieux.
         </p>
 
-        {/* Cartes de contact */}
-        <div className="flex flex-col gap-6 mb-16">
+        {/* Contact cards — solid light background */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 48 }}>
           {channels.map((c) => (
-            <div key={c.name} className="bg-transparent rounded-2xl p-6 border border-gray-300 flex flex-col sm:flex-row sm:items-center gap-5">
-              <div className="flex-1">
-                <h2 className="text-xl font-bold mb-1">{c.name}</h2>
-                <p className="text-black text-sm mb-1">{c.desc}</p>
-                <p className="text-[#5a5fcf] text-xs font-semibold">{c.detail}</p>
+            <div key={c.name} style={{
+              background: "#fff",
+              borderRadius: 20,
+              padding: "24px 28px",
+              border: "1px solid rgba(90,95,207,0.12)",
+              boxShadow: "0 4px 20px rgba(90,95,207,0.07)",
+              display: "flex",
+              flexDirection: "column",
+              gap: 16,
+            }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 8, flex: 1 }}>
+                <h2 style={{ fontSize: 20, fontWeight: 700, color: "#1a1a4e", margin: 0 }}>{c.name}</h2>
+                <p style={{ color: "#555", fontSize: 14, margin: 0, lineHeight: 1.6 }}>{c.desc}</p>
+                <p style={{ color: "#5a5fcf", fontSize: 13, fontWeight: 600, margin: 0 }}>{c.detail}</p>
               </div>
               <a
                 href={c.href}
                 target={c.href.startsWith("mailto") ? undefined : "_blank"}
                 rel={c.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-                className={`${c.bg} text-gray-900 font-bold px-6 py-3 rounded-xl text-sm text-center whitespace-nowrap hover:brightness-110 transition shrink-0`}
+                style={{
+                  background: c.actionBg,
+                  color: c.actionColor,
+                  fontWeight: 700,
+                  padding: "12px 28px",
+                  borderRadius: 12,
+                  fontSize: 14,
+                  textAlign: "center",
+                  textDecoration: "none",
+                  display: "inline-block",
+                  alignSelf: "flex-start",
+                }}
               >
                 {c.action}
               </a>
@@ -77,29 +102,29 @@ export default function ContactPage() {
           ))}
         </div>
 
-        {/* Délais de réponse */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 mb-12" style={{ boxShadow: "0 4px 20px rgba(90,95,207,0.08)" }}>
-          <h2 className="text-2xl font-bold mb-6 text-[#5a5fcf]">Délais de réponse</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        {/* Response times */}
+        <div style={{ background: "#fff", borderRadius: 20, padding: "32px", border: "1px solid rgba(90,95,207,0.12)", boxShadow: "0 4px 20px rgba(90,95,207,0.07)", marginBottom: 40 }}>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "#5a5fcf", marginBottom: 28 }}>Délais de réponse</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 24, textAlign: "center" }}>
             <div>
-              <div className="text-3xl font-extrabold text-green-500 mb-1">&lt; 5 min</div>
-              <div className="text-black text-sm">WhatsApp<br />Aux heures de pointe</div>
+              <div style={{ fontSize: 32, fontWeight: 900, color: "#25D366", marginBottom: 6 }}>&lt; 5 min</div>
+              <div style={{ color: "#555", fontSize: 14 }}>WhatsApp<br />Aux heures de pointe</div>
             </div>
             <div>
-              <div className="text-3xl font-extrabold text-blue-500 mb-1">&lt; 15 min</div>
-              <div className="text-black text-sm">Telegram<br />Toutes heures</div>
+              <div style={{ fontSize: 32, fontWeight: 900, color: "#229ED9", marginBottom: 6 }}>&lt; 15 min</div>
+              <div style={{ color: "#555", fontSize: 14 }}>Telegram<br />Toutes heures</div>
             </div>
             <div>
-              <div className="text-3xl font-extrabold text-yellow-500 mb-1">&lt; 2h</div>
-              <div className="text-black text-sm">Email<br />Toutes heures</div>
+              <div style={{ fontSize: 32, fontWeight: 900, color: "#e5a800", marginBottom: 6 }}>&lt; 2h</div>
+              <div style={{ color: "#555", fontSize: 14 }}>Email<br />Toutes heures</div>
             </div>
           </div>
         </div>
 
-        {/* Lien FAQ */}
-        <div className="text-center">
-          <p className="text-black mb-4">Vous avez une question courante ? Consultez notre FAQ en premier.</p>
-          <a href="/#faq" className="inline-block border border-[#5a5fcf] text-[#5a5fcf] hover:bg-[#5a5fcf] hover:text-white px-8 py-3 rounded-xl font-bold transition-colors">
+        {/* FAQ link */}
+        <div style={{ textAlign: "center" }}>
+          <p style={{ color: "#555", marginBottom: 16 }}>Vous avez une question courante ? Consultez notre FAQ en premier.</p>
+          <a href="/#faq" style={{ display: "inline-block", border: "2px solid #5a5fcf", color: "#5a5fcf", padding: "12px 32px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
             Voir la FAQ
           </a>
         </div>

@@ -122,8 +122,8 @@ export default function HomePricing() {
             const isBest = plan.badge === "Meilleur Prix";
             const isPopulaire = plan.badge === "Populaire";
             // Each card gets its own distinct color
-            const cardBg = isBest ? "#5a5fcf" : isPopulaire ? "#7b87e8" : i === 0 ? "#ffffff" : "#7b87e8";
-            const isLight = i === 0; // 1 Mois card is white/light
+            const cardBg = i === 0 ? "#ffffff" : i === 1 ? "#c5c9f5" : i === 2 ? "#8b92ec" : "#5a5fcf";
+            const isLight = i <= 1; // 1 Mois (white) and 3 Mois (light periwinkle) use dark text
             return (
             <div
               key={plan.name}
@@ -149,7 +149,7 @@ export default function HomePricing() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: isBest ? "#f5a623" : "#7b87e8",
+                    background: "#e03e3e",
                     color: "#fff",
                     fontSize: 11,
                     fontWeight: 800,
