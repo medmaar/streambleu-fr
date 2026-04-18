@@ -4,12 +4,12 @@ import Link from "next/link";
 import Logo from "../components/Logo";
 
 const links = [
-  { label: "Tarifs",     href: "/pricing" },
-  { label: "Chaînes",   href: "/channels-list" },
-  { label: "Avis",      href: "/reviews" },
+  { label: "Tarifs",     href: "/tarifs" },
+  { label: "Chaînes",   href: "/liste-chaines" },
+  { label: "Avis",      href: "/avis" },
   { label: "Blog",      href: "/blog" },
-  { label: "Parrainage",href: "/referral" },
-  { label: "Revendeur", href: "/reseller" },
+  { label: "Parrainage",href: "/parrainage" },
+  { label: "Revendeur", href: "/revendeur" },
   { label: "Contact",   href: "/contact" },
 ];
 
@@ -53,7 +53,7 @@ export default function Navbar() {
 
         {/* Desktop CTA — distinct color button */}
         <Link
-          href="/free-trial"
+          href="/essai-gratuit"
           className="hidden md:inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-xl transition-all"
           style={{
             background: "#f5a623",
@@ -96,7 +96,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/free-trial"
+              href="/essai-gratuit"
               onClick={() => setOpen(false)}
               className="mt-2 px-4 py-3 rounded-xl text-sm font-bold text-center"
               style={{ background: "#f5a623", color: "#1a1a4e" }}

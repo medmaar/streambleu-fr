@@ -94,7 +94,7 @@ export default function IPTVFirestickFrance() {
           <section style={{ background: "#5a5fcf", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Prêt à commencer ?</h2>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>Essai gratuit 24h — sans carte bancaire. Vous recevez vos identifiants en 30 minutes.</p>
-            <Link href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/essai-gratuit" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit →
             </Link>
           </section>

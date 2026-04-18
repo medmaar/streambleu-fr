@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import PlanOrderForm from "../pricing/PlanOrderForm";
-import PlanFAQ, { type FaqItem } from "../pricing/PlanFAQ";
+import PlanOrderForm from "../tarifs/PlanOrderForm";
+import PlanFAQ, { type FaqItem } from "../tarifs/PlanFAQ";
 
 interface PlanPageData {
   title: string;

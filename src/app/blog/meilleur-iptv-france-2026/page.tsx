@@ -169,7 +169,7 @@ export default function MeilleurIPTVFrance2026() {
             <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, lineHeight: 1.7, marginBottom: 28, maxWidth: 560, margin: "0 auto 28px" }}>
               Meilleure qualité vidéo, plus de chaînes, meilleur support — tout ça à partir de 9€/mois. L&apos;essai gratuit 24h vous permet de vérifier par vous-même.
             </p>
-            <Link href="/free-trial" style={{
+            <Link href="/essai-gratuit" style={{
               background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 16,
               padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block",
             }}>

@@ -192,7 +192,7 @@ export default function HomePage() {
               et 120 000+ films &amp; séries — à la résolution que votre écran mérite.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
-              <Link href="/pricing" style={{
+              <Link href="/tarifs" style={{
                 background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
@@ -205,7 +205,7 @@ export default function HomePage() {
               }}>
                 Voir les Tarifs →
               </Link>
-              <Link href="/free-trial" style={{
+              <Link href="/essai-gratuit" style={{
                 background: "transparent",
                 border: "2px solid #fff",
                 color: "#fff",
@@ -258,7 +258,7 @@ export default function HomePage() {
           <div style={{ maxWidth: 680, margin: "0 auto" }}>
             <ReviewsSection showHeader={true} />
             <div style={{ textAlign: "center", marginTop: 40 }}>
-              <a href="/reviews" style={{ display: "inline-block", background: "#5a5fcf", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
+              <a href="/avis" style={{ display: "inline-block", background: "#5a5fcf", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
                 Voir tous les avis →
               </a>
             </div>
@@ -467,7 +467,7 @@ export default function HomePage() {
               Le seul IPTV français construit autour du vrai 4K Ultra HD. H.265/HEVC, HDR10 &amp; Dolby Vision — à partir de 9€/mois. Essai gratuit, sans carte bancaire.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" style={{
+              <Link href="/essai-gratuit" style={{
                 background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
@@ -479,7 +479,7 @@ export default function HomePage() {
               }}>
                 Essai Gratuit
               </Link>
-              <Link href="/pricing" style={{
+              <Link href="/tarifs" style={{
                 background: "transparent",
                 border: "2px solid rgba(90,95,207,0.4)",
                 color: "#5a5fcf",

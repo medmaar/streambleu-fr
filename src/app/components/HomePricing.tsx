@@ -16,10 +16,10 @@ const allPrices: Record<number, [number, number, number, number]> = {
 };
 
 const planDefs = [
-  { name: "1 Mois",   badge: null,         slug: "1-month"   },
-  { name: "3 Mois",  badge: null,         slug: "3-months"  },
-  { name: "6 Mois",  badge: null,         slug: "6-months"  },
-  { name: "12 Mois", badge: "Meilleur Prix", slug: "12-months" },
+  { name: "1 Mois",   badge: null,         slug: "1-mois"   },
+  { name: "3 Mois",  badge: null,         slug: "3-mois"  },
+  { name: "6 Mois",  badge: null,         slug: "6-mois"  },
+  { name: "12 Mois", badge: "Meilleur Prix", slug: "12-mois" },
 ];
 
 const planFeatures = [
@@ -34,9 +34,9 @@ const planFeatures = [
 ];
 
 function getHref(n: number, slug: string): string {
-  if (n === 1) return `/pricing/${slug}`;
-  const multiSlug = slug === "12-months" ? "1-year" : slug;
-  return `/pricing/${n}-devices/${multiSlug}`;
+  if (n === 1) return `/tarifs/${slug}`;
+  const multiSlug = slug === "12-mois" ? "1-an" : slug;
+  return `/tarifs/${n}-connexions/${multiSlug}`;
 }
 
 export default function HomePricing() {
@@ -167,7 +167,7 @@ export default function HomePricing() {
                 <span style={{ fontSize: 12, color: isLight ? "#7b87e8" : "rgba(255,255,255,0.7)" }}>/ {connLabel.replace('Connection', 'Connexion')}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>
-                {plan.slug === "12-months" && (
+                {plan.slug === "12-mois" && (
                   <li
                     style={{
                       marginBottom: 10,
@@ -214,7 +214,7 @@ export default function HomePricing() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: 32 }}>
-          <Link href="/pricing" style={{ color: "#5a5fcf", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+          <Link href="/tarifs" style={{ color: "#5a5fcf", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             Voir tous les tarifs →
           </Link>
         </div>

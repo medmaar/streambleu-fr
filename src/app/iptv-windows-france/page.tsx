@@ -36,10 +36,10 @@ export default function IPTVWindowsFrancePage() {
             Guide complet pour configurer Stream Bleu sur votre PC Windows. Installation en 5 minutes, 25 000+ chaînes françaises et internationales en 4K Ultra HD.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-            <Link href="/pricing" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(90,95,207,0.4)" }}>
+            <Link href="/tarifs" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(90,95,207,0.4)" }}>
               Voir les Tarifs →
             </Link>
-            <Link href="/free-trial" style={{ background: "transparent", border: "2px solid #5a5fcf", color: "#5a5fcf", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/essai-gratuit" style={{ background: "transparent", border: "2px solid #5a5fcf", color: "#5a5fcf", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit 24h
             </Link>
           </div>
@@ -68,10 +68,10 @@ export default function IPTVWindowsFrancePage() {
             Sans engagement · Activation en 30 min · Support 24/7 en français
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/essai-gratuit" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit
             </Link>
-            <Link href="/pricing" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+            <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Voir les Tarifs →
             </Link>
           </div>

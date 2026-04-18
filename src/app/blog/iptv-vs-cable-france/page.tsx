@@ -99,7 +99,7 @@ export default function IPTVvsCableFrance() {
         <section style={{ background: "#5a5fcf", borderRadius: 18, padding: "32px 28px", textAlign: "center", marginBottom: 40 }}>
           <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Essayez Stream Bleu gratuitement</h2>
           <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 24 }}>24h d&apos;essai gratuit — sans carte bancaire. Comparez par vous-même.</p>
-          <Link href="/free-trial" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+          <Link href="/essai-gratuit" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
             Essai Gratuit →
           </Link>
         </section>

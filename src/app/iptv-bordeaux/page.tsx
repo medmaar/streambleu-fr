@@ -81,7 +81,7 @@ export default function IPTVBordeauxPage() {
               RMC Sport et 25 000+ chaînes en 4K Ultra HD. Suivez la Ligue 1, le rugby et tous les événements sportifs en 4K Ultra HD.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <Link href="/pricing" style={{
+              <Link href="/tarifs" style={{
                 background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
@@ -94,7 +94,7 @@ export default function IPTVBordeauxPage() {
               }}>
                 Voir les Tarifs →
               </Link>
-              <Link href="/free-trial" style={{
+              <Link href="/essai-gratuit" style={{
                 background: "transparent",
                 border: "2px solid #5a5fcf",
                 color: "#5a5fcf",
@@ -151,7 +151,7 @@ export default function IPTVBordeauxPage() {
               Sans engagement · Activation sous 30 minutes · Support 24/7 en français
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/free-trial" style={{
+              <Link href="/essai-gratuit" style={{
                 background: "#5a5fcf",
                 color: "#fff",
                 fontWeight: 700,
@@ -163,7 +163,7 @@ export default function IPTVBordeauxPage() {
               }}>
                 Essai Gratuit
               </Link>
-              <Link href="/pricing" style={{
+              <Link href="/tarifs" style={{
                 background: "transparent",
                 border: "2px solid rgba(255,255,255,0.4)",
                 color: "#fff",

@@ -64,7 +64,7 @@ export default function HeroSection() {
       {/* CTA buttons */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="/pricing"
+          href="/tarifs"
           className="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-2xl text-base font-bold text-white transition-all hover:brightness-110 hover:scale-[1.02] active:scale-[0.99]"
           style={{
             background: "#fd0322",
@@ -74,7 +74,7 @@ export default function HeroSection() {
           Souscrire →
         </a>
         <a
-          href="/free-trial"
+          href="/essai-gratuit"
           className="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-2xl text-base font-bold text-white transition-all hover:bg-white/10 active:scale-[0.99]"
           style={{ border: "1px solid rgba(255,255,255,0.18)" }}
         >

@@ -123,7 +123,7 @@ export default function Footer() {
               Stream Bleu n&apos;héberge ni ne diffuse aucun contenu protégé par le droit d&apos;auteur.
               Tout le contenu est fourni par des prestataires tiers.
             </p>
-            <Link href="/disclaimer" style={{ fontSize: 12, color: "#c5bcf5", textDecoration: "none" }}>
+            <Link href="/avertissement" style={{ fontSize: 12, color: "#c5bcf5", textDecoration: "none" }}>
               Lire l&apos;avertissement →
             </Link>
           </div>
