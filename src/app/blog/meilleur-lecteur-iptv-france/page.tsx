@@ -1,0 +1,171 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Best IPTV Player Canada 2026 | Stream Bleu – Best 4K IPTV Canada",
+  description:
+    "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player. Works with Stream Bleu on all devices.",
+  keywords: "best IPTV player Canada, TiviMate Canada, IPTV Smarters Canada, IPTV app Canada 2026",
+  alternates: { canonical: "https://streambleu.fr/blog/best-iptv-player-france" },
+  openGraph: {
+    title: "Best IPTV Player Canada 2026 | Stream Bleu – Best 4K IPTV Canada",
+    description: "Find the best IPTV player app for Canada in 2026. Compare TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
+    url: "https://streambleu.fr/blog/best-iptv-player-france",
+    type: "article",
+    siteName: "Stream Bleu",
+    locale: "fr_FR",
+    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Best IPTV Player Canada – Stream Bleu" }],
+  },
+  twitter: { card: "summary_large_image" },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Best IPTV Player Apps for Canada in 2026",
+  description: "Compare the best IPTV player apps for Canadian users in 2026 — TiviMate, IPTV Smarters Pro, GSE Smart IPTV, and Perfect Player.",
+  datePublished: "2026-01-15",
+  dateModified: "2026-04-01",
+  author: { "@type": "Organization", name: "Stream Bleu" },
+  publisher: {
+    "@type": "Organization",
+    name: "Stream Bleu",
+    url: "https://streambleu.fr",
+  },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/best-iptv-player-france" },
+};
+
+const players = [
+  {
+    name: "TiviMate",
+    platform: "Android / Firestick",
+    pros: ["Best UI of any IPTV player", "Multiple playlists support", "EPG with catch-up", "Recording feature (Premium)"],
+    cons: ["Premium version required for full features (~$5 USD/year)", "Android only — no iOS"],
+    bestFor: "Firestick and Android TV Box users who want the best experience",
+    rating: "9.5/10",
+  },
+  {
+    name: "IPTV Smarters Pro",
+    platform: "Android, iOS, Apple TV, Smart TV, PC",
+    pros: ["Works on all major platforms", "Free version available", "Xtream Codes & M3U support", "Parental controls"],
+    cons: ["UI is less polished than TiviMate", "Occasional bugs on iOS"],
+    bestFor: "Multi-device users who need one app on all platforms",
+    rating: "8.5/10",
+  },
+  {
+    name: "GSE Smart IPTV",
+    platform: "iOS, Android, Apple TV",
+    pros: ["Excellent on iPhone and iPad", "Free with no major limitations", "Multiple stream format support", "Chromecast support"],
+    cons: ["EPG can be slow to load", "Less feature-rich than TiviMate"],
+    bestFor: "iPhone, iPad, and Apple TV users",
+    rating: "8.0/10",
+  },
+  {
+    name: "Perfect Player",
+    platform: "Android",
+    pros: ["Lightweight and fast", "Clean interface", "EPG support", "Free"],
+    cons: ["Android only", "Less active development"],
+    bestFor: "Users who want a simple, no-frills IPTV player on Android",
+    rating: "7.5/10",
+  },
+];
+
+export default function BestIPTVPlayerCanadaPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <main style={{ background: "#E8F4F5", color: "#000000", minHeight: "100vh" }}>
+        <section style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(249,110,91,0.12) 0%, transparent 65%), #0a0a0a", padding: "80px 16px 60px" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+            <p style={{ color: "#F96E5B", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
+              Blog · Stream Bleu Guide
+            </p>
+            <h1 style={{ fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
+              Best IPTV Player Apps for Canada in 2026
+            </h1>
+            <p style={{ color: "#000000", fontSize: 16, lineHeight: 1.7, marginBottom: 20 }}>
+              Choosing the right IPTV player is essential for getting the most out of your Stream Bleu subscription. The player you use affects stream quality, EPG performance, and overall usability. Here&apos;s our tested breakdown of the best IPTV player apps available to Canadian users in 2026.
+            </p>
+            <time dateTime="2026-04-01" style={{ color: "#000000", fontSize: 13 }}>
+              Updated April 2026
+            </time>
+          </div>
+        </section>
+
+        {/* Intro */}
+        <section style={{ padding: "40px 16px 20px", background: "#E8F4F5" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+              All four players below are fully compatible with <Link href="/pricing" style={{ color: "#F96E5B", textDecoration: "none", fontWeight: 600 }}>Stream Bleu plans</Link>. They support M3U playlists and Xtream Codes — the two formats we provide. Whether you&apos;re on a Firestick, Android TV box, or iPhone, one of these will work perfectly for you.
+            </p>
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8 }}>
+              We tested each player with a real Stream Bleu subscription, evaluating channel loading speed, EPG accuracy, UI responsiveness, and overall stability on Canadian connections.
+            </p>
+          </div>
+        </section>
+
+        {/* Player reviews */}
+        <section style={{ padding: "40px 16px 80px", background: "#E8F4F5" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto", display: "flex", flexDirection: "column", gap: 32 }}>
+            {players.map((p, i) => (
+              <div key={p.name} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20, padding: "32px 28px" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12, marginBottom: 16 }}>
+                  <div>
+                    <span style={{ color: "#F96E5B", fontSize: 13, fontWeight: 700, marginRight: 8 }}>#{i + 1}</span>
+                    <span style={{ fontWeight: 900, fontSize: 22 }}>{p.name}</span>
+                  </div>
+                  <div style={{ background: "rgba(249,110,91,0.12)", border: "1px solid rgba(249,110,91,0.3)", borderRadius: 8, padding: "6px 14px" }}>
+                    <span style={{ color: "#F96E5B", fontWeight: 700, fontSize: 14 }}>{p.rating}</span>
+                  </div>
+                </div>
+                <p style={{ color: "#000000", fontSize: 13, marginBottom: 20 }}>
+                  <strong style={{ color: "#000000" }}>Platform:</strong> {p.platform}
+                </p>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 20 }}>
+                  <div>
+                    <p style={{ color: "#4ade80", fontWeight: 700, fontSize: 13, marginBottom: 8 }}>✓ Pros</p>
+                    {p.pros.map((pro) => (
+                      <p key={pro} style={{ color: "#000000", fontSize: 13, marginBottom: 6 }}>· {pro}</p>
+                    ))}
+                  </div>
+                  <div>
+                    <p style={{ color: "#f87171", fontWeight: 700, fontSize: 13, marginBottom: 8 }}>✗ Cons</p>
+                    {p.cons.map((con) => (
+                      <p key={con} style={{ color: "#000000", fontSize: 13, marginBottom: 6 }}>· {con}</p>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ background: "rgba(249,110,91,0.06)", borderRadius: 10, padding: "12px 16px" }}>
+                  <p style={{ color: "#d1d5db", fontSize: 13 }}>
+                    <strong style={{ color: "#F96E5B" }}>Best for:</strong> {p.bestFor}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Summary */}
+        <section style={{ padding: "60px 16px", background: "#E8F4F5" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(24px, 3.5vw, 34px)", fontWeight: 800, marginBottom: 20 }}>
+              Our Recommendation for Canadian IPTV Users
+            </h2>
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+              For most Canadians using Stream Bleu on a Firestick or Android TV box, <strong style={{ color: "#000000" }}>TiviMate</strong> is the clear winner. Its polished interface, reliable EPG, and catch-up support make it the best IPTV player experience available.
+            </p>
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+              If you&apos;re on an iPhone or Apple TV, go with <strong style={{ color: "#000000" }}>GSE Smart IPTV</strong> or <strong style={{ color: "#000000" }}>IPTV Smarters Pro</strong>. Both work flawlessly with Stream Bleu credentials.
+            </p>
+            <p style={{ color: "#000000", fontSize: 15, lineHeight: 1.8, marginBottom: 32 }}>
+              All players listed above are compatible with <Link href="/iptv-firestick-france" style={{ color: "#F96E5B", textDecoration: "none" }}>Firestick</Link>, <Link href="/iptv-android-tv-france" style={{ color: "#F96E5B", textDecoration: "none" }}>Android TV</Link>, and <Link href="/iptv-apple-tv-france" style={{ color: "#F96E5B", textDecoration: "none" }}>Apple TV</Link> setups. Once you have your player, all you need is a <Link href="/pricing" style={{ color: "#F96E5B", textDecoration: "none" }}>Stream Bleu plan</Link> to get started.
+            </p>
+            <Link href="/pricing" style={{ background: "#F96E5B", color: "#000000", fontWeight: 700, fontSize: 15, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+              View Stream Bleu Plans →
+            </Link>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
