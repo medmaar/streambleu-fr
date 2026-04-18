@@ -131,7 +131,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #fdf5ff 40%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }}>
+      <main style={{ color: "#1a1a4e" }}>
 
         {/* ── 1. HERO ── */}
         <section style={{
@@ -269,7 +269,7 @@ export default function HomePage() {
         <HomePricing />
 
         {/* ── 4. DEVICES MARQUEE ── */}
-        <section style={{ padding: "80px 16px", background: "#fdf5ff", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "transparent", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Compatible avec tous vos appareils
@@ -300,7 +300,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 5. FRENCH CHANNELS ── */}
-        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
+        <section style={{ padding: "80px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <p style={{ color: "#5a5fcf", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>
               Chaînes Françaises
@@ -333,7 +333,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 6. SPORTS ── */}
-        <section style={{ padding: "80px 16px", background: "#fdf5ff", overflow: "hidden" }}>
+        <section style={{ padding: "80px 16px", background: "transparent", overflow: "hidden" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Ne ratez plus aucun match
@@ -367,7 +367,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 7. COMPARISON TABLE ── */}
-        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
+        <section style={{ padding: "80px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Stream Bleu vs Câble vs IPTV Générique
@@ -401,7 +401,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 8. FAQ ── */}
-        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
+        <section style={{ padding: "80px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 780, margin: "0 auto" }}>
             <p style={{ color: "#5a5fcf", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 48, color: "#1a1a4e" }}>
@@ -424,7 +424,7 @@ export default function HomePage() {
         </section>
 
         {/* ── 9. CITIES ── */}
-        <section style={{ padding: "80px 16px", background: "#fdf5ff" }}>
+        <section style={{ padding: "80px 16px", background: "transparent" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, marginBottom: 12, color: "#1a1a4e" }}>
               Disponible dans toute la France
@@ -458,7 +458,7 @@ export default function HomePage() {
         </section>
 
         {/* ── FINAL CTA ── */}
-        <section style={{ padding: "80px 16px", textAlign: "center", background: "#fdf5ff" }}>
+        <section style={{ padding: "80px 16px", textAlign: "center", background: "transparent" }}>
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#1a1a4e" }}>
               Commencez à streamer dès aujourd&apos;hui

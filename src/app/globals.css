@@ -13,6 +13,8 @@
 html {
   overflow-x: hidden;
   width: 100%;
+  /* Prevent white flash before CSS loads */
+  background: #f0eeff;
 }
 
 body {
@@ -85,8 +87,8 @@ body {
 
 .ma-init {
   opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+  transform: translateY(14px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .ma-visible { opacity: 1 !important; transform: translateY(0) !important; }
 .animate-fade-slide { animation: fadeSlideUp 0.55s cubic-bezier(0.22,1,0.36,1) forwards; }
