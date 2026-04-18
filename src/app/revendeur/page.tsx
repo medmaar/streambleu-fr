@@ -58,8 +58,8 @@ export default function ResellerPage() {
         </div>
       </section>
 
-      <section style={{ padding: "60px 16px", background: "#5a5fcf", textAlign: "center" }}>
-        <div style={{ maxWidth: 600, margin: "0 auto" }}>
+      <section style={{ padding: "48px 24px", background: "transparent" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>
             Prêt à démarrer ?
           </h2>

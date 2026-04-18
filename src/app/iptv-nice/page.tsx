@@ -82,7 +82,7 @@ export default function IPTVNicePage() {
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/tarifs" style={{
-                background: "#5a5fcf",
+                background: "#e03e3e",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -142,8 +142,8 @@ export default function IPTVNicePage() {
         </section>
 
         {/* Pricing CTA */}
-        <section style={{ padding: "70px 16px", background: "#5a5fcf", textAlign: "center" }}>
-          <div style={{ maxWidth: 600, margin: "0 auto" }}>
+        <section style={{ padding: "48px 24px", background: "transparent" }}>
+          <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
             <h2 style={{ fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, color: "#fff", marginBottom: 16 }}>
               Abonnement IPTV Nice à partir de 9€/mois
             </h2>
@@ -152,7 +152,7 @@ export default function IPTVNicePage() {
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{
-                background: "#5a5fcf",
+                background: "#e03e3e",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,

@@ -72,8 +72,8 @@ export default function TarifsPage() {
       </section>
 
       {/* Essai gratuit CTA */}
-      <section style={{ padding: "60px 16px", textAlign: "center", background: "#4a4fc0" }}>
-        <div style={{ maxWidth: 620, margin: "0 auto" }}>
+      <section style={{ padding: "48px 24px", background: "transparent" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 14 }}>
             Pas encore convaincu ? Testez l&apos;expérience 4K gratuitement
           </h2>
