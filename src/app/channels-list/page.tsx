@@ -8101,7 +8101,7 @@ const categories = [{
 
 export default function ChannelsListPage() {
   return (
-    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen">
       {/* Hero */}
       <section style={{ background: "#6367FF", padding: "64px 16px", textAlign: "center" }}>
         <div className="max-w-3xl mx-auto">

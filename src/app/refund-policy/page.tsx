@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function RefundPolicyPage() {
   return (
-    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 text-[#6367FF]">Politique de remboursement</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>

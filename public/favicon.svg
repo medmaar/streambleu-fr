@@ -4,30 +4,36 @@
       <stop offset="0%" stop-color="#8494FF"/>
       <stop offset="100%" stop-color="#5558e8"/>
     </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#a8c0ff"/>
+      <stop offset="38%"  stop-color="#ffffff"/>
+      <stop offset="62%"  stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffb3c1"/>
+    </linearGradient>
   </defs>
-  <!-- Rounded square background -->
-  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <!-- Eiffel Tower: tower is 40x54, centered at (32,32) → translate(12,5) -->
-  <g transform="translate(12,5)">
-    <path
-      fill-rule="evenodd"
-      fill="white"
-      opacity="0.95"
-      d="M 20 2
-         L 23 12
-         L 27 22
-         L 25 24
-         L 28 32
-         L 30 34
-         L 36 54
-         L 4 54
-         L 10 34
-         L 12 32
-         L 15 24
-         L 13 22
-         L 17 12
-         Z
-         M 27 54 L 27 44 Q 20 36 13 44 L 13 54 Z"
-    />
+  <rect width="64" height="64" rx="13" fill="url(#bg)"/>
+  <!-- Scaled to 64x64: tower in viewport 0 0 60 84 → scale ~0.7, offset translate(2,3) -->
+  <g transform="translate(2,2) scale(0.995)">
+    <!-- Spire -->
+    <line x1="30" y1="2"  x2="30" y2="14" stroke="url(#t)" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Spire platform -->
+    <line x1="25" y1="14" x2="35" y2="14" stroke="url(#t)" stroke-width="2"   stroke-linecap="round"/>
+    <!-- Upper body -->
+    <line x1="27" y1="14" x2="20" y2="32" stroke="url(#t)" stroke-width="2"   stroke-linecap="round"/>
+    <line x1="33" y1="14" x2="40" y2="32" stroke="url(#t)" stroke-width="2"   stroke-linecap="round"/>
+    <!-- 2nd floor -->
+    <line x1="18" y1="32" x2="42" y2="32" stroke="url(#t)" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- Middle -->
+    <line x1="18" y1="32" x2="11" y2="53" stroke="url(#t)" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="42" y1="32" x2="49" y2="53" stroke="url(#t)" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- 1st floor -->
+    <line x1="9"  y1="53" x2="51" y2="53" stroke="url(#t)" stroke-width="2.6" stroke-linecap="round"/>
+    <!-- Legs -->
+    <path d="M 11,53 C 10,60 6,68 4,78"  stroke="url(#t)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M 49,53 C 50,60 54,68 56,78" stroke="url(#t)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <!-- Main arch -->
+    <path d="M 4,78 Q 30,63 56,78" stroke="url(#t)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- Ground -->
+    <line x1="2" y1="81" x2="58" y2="81" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.4"/>
   </g>
 </svg>

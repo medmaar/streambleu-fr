@@ -131,7 +131,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-      <main style={{ background: "#FFDBFD", color: "#1a1a4e" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #FFDBFD 40%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }}>
 
         {/* ── 1. HERO ── */}
         <section style={{
@@ -254,7 +254,7 @@ export default function HomePage() {
         </section>
 
         {/* ── REVIEWS ── */}
-        <section style={{ padding: "80px 16px", background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)" }}>
+        <section style={{ padding: "80px 16px", background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)" }}>
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
             <ReviewsSection showHeader={true} />
             <div style={{ textAlign: "center", marginTop: 40 }}>

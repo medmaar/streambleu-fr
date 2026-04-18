@@ -58,8 +58,8 @@ export default function FreeTrialPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
-        <section style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", padding: "80px 16px 60px" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+        <section style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
             <span style={{ background: "rgba(99,103,255,0.12)", border: "1px solid rgba(99,103,255,0.3)", color: "#6367FF", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
               Sans Carte Bancaire · Activation Instantanée

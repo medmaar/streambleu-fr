@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Logo from "./Logo";
 
@@ -5,18 +6,18 @@ export default function Footer() {
   return (
     <footer
       className="py-16 px-4 border-t"
-      style={{ background: "#6367FF", borderColor: "rgba(201,190,255,0.2)" }}
+      style={{ background: "#6367FF", borderColor: "rgba(201,190,255,0.25)" }}
     >
       <div className="max-w-7xl mx-auto">
 
         {/* Brand bar */}
         <div
           className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 pb-12 mb-12 border-b"
-          style={{ borderColor: "rgba(201,190,255,0.2)" }}
+          style={{ borderColor: "rgba(201,190,255,0.25)" }}
         >
           <div>
             <Logo className="mb-4" />
-            <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
+            <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, lineHeight: 1.7, maxWidth: 320 }}>
               Le meilleur abonnement IPTV en France. Plus de 25 000 chaînes en direct,
               120 000 films &amp; séries en 4K. Service disponible dans toute l&apos;Europe.
             </p>
@@ -25,15 +26,14 @@ export default function Footer() {
           <div className="sm:text-right shrink-0">
             <a
               href="mailto:help@streambleu.fr"
-              className="text-sm text-gray-400 hover:text-[#C9BEFF] transition-colors"
+              style={{ fontSize: 14, color: "#C9BEFF", textDecoration: "none" }}
             >
               help@streambleu.fr
             </a>
-            <div className="mt-3 text-gray-500 text-sm leading-relaxed">
-              <p className="text-gray-400 font-medium text-xs uppercase tracking-wider mb-1">Service client</p>
-              <p>Disponible 7j/7</p>
-              <p>Réponse sous 24h</p>
-              <p>France &amp; Europe</p>
+            <div className="mt-3" style={{ fontSize: 13, lineHeight: 1.8 }}>
+              <p style={{ color: "rgba(255,255,255,0.55)", fontWeight: 700, fontSize: 11, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 4 }}>Adresse</p>
+              <p style={{ color: "rgba(255,255,255,0.8)" }}>1 Rue Volant</p>
+              <p style={{ color: "rgba(255,255,255,0.8)" }}>92000 Nanterre, France</p>
             </div>
           </div>
         </div>
@@ -43,59 +43,87 @@ export default function Footer() {
 
           {/* Pages */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Pages</p>
+            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Pages</p>
             <div className="flex flex-col gap-2.5">
-              <Link href="/" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Accueil</Link>
-              <Link href="/pricing" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Tarifs</Link>
-              <Link href="/channels-list" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Chaînes</Link>
-              <Link href="/free-trial" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Essai Gratuit</Link>
-              <Link href="/blog" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Blog</Link>
-              <Link href="/reseller" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Revendeur</Link>
-              <Link href="/referral" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Parrainage</Link>
-              <Link href="/contact" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Contact</Link>
+              {[
+                { href: "/", label: "Accueil" },
+                { href: "/pricing", label: "Tarifs" },
+                { href: "/channels-list", label: "Chaînes" },
+                { href: "/free-trial", label: "Essai Gratuit" },
+                { href: "/blog", label: "Blog" },
+                { href: "/reseller", label: "Revendeur" },
+                { href: "/referral", label: "Parrainage" },
+                { href: "/contact", label: "Contact" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
+                >{l.label}</Link>
+              ))}
             </div>
           </div>
 
-          {/* By Device */}
+          {/* Par Appareil */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Par Appareil</p>
+            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Par Appareil</p>
             <div className="flex flex-col gap-2.5">
-              <Link href="/iptv-firestick-france" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Firestick</Link>
-              <Link href="/iptv-android-tv-france" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Android TV</Link>
-              <Link href="/iptv-smart-tv-france" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Smart TV</Link>
-              <Link href="/iptv-apple-tv-france" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Apple TV</Link>
-              <Link href="/iptv-mag-box-france" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">MAG Box</Link>
-              <Link href="/iptv-samsung-tv-france" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Samsung TV</Link>
+              {[
+                { href: "/iptv-firestick-france", label: "Fire Stick" },
+                { href: "/iptv-android-tv-france", label: "Android TV" },
+                { href: "/iptv-smart-tv-france", label: "Smart TV" },
+                { href: "/iptv-apple-tv-france", label: "Apple TV" },
+                { href: "/iptv-mag-box-france", label: "MAG Box" },
+                { href: "/iptv-samsung-tv-france", label: "Samsung TV" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
+                >{l.label}</Link>
+              ))}
             </div>
           </div>
 
-          {/* By City */}
+          {/* Par Ville */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Par Ville</p>
+            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Par Ville</p>
             <div className="flex flex-col gap-2.5">
-              <Link href="/iptv-paris" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Paris</Link>
-              <Link href="/iptv-lyon" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Lyon</Link>
-              <Link href="/iptv-marseille" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Marseille</Link>
-              <Link href="/iptv-toulouse" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Toulouse</Link>
-              <Link href="/iptv-nice" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Nice</Link>
-              <Link href="/iptv-bordeaux" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Bordeaux</Link>
+              {[
+                { href: "/iptv-paris", label: "Paris" },
+                { href: "/iptv-lyon", label: "Lyon" },
+                { href: "/iptv-marseille", label: "Marseille" },
+                { href: "/iptv-toulouse", label: "Toulouse" },
+                { href: "/iptv-nice", label: "Nice" },
+                { href: "/iptv-bordeaux", label: "Bordeaux" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
+                >{l.label}</Link>
+              ))}
             </div>
           </div>
 
-          {/* Legal */}
+          {/* Légal */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Légal</p>
+            <p style={{ fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", color: "rgba(255,255,255,0.5)", marginBottom: 16 }}>Légal</p>
             <div className="flex flex-col gap-2.5 mb-6">
-              <Link href="/privacy-policy" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Politique de confidentialité</Link>
-              <Link href="/terms-of-service" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Conditions d&apos;utilisation</Link>
-              <Link href="/refund-policy" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Politique de remboursement</Link>
-              <Link href="/disclaimer" className="text-gray-400 hover:text-[#C9BEFF] text-sm transition-colors">Avertissement</Link>
+              {[
+                { href: "/privacy-policy", label: "Politique de confidentialité" },
+                { href: "/terms-of-service", label: "Conditions d'utilisation" },
+                { href: "/refund-policy", label: "Politique de remboursement" },
+                { href: "/disclaimer", label: "Avertissement" },
+              ].map((l) => (
+                <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.75)", fontSize: 14, textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
+                >{l.label}</Link>
+              ))}
             </div>
-            <p className="text-gray-600 text-xs leading-relaxed mb-2">
+            <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 12, lineHeight: 1.6, marginBottom: 8 }}>
               Stream Bleu n&apos;héberge ni ne diffuse aucun contenu protégé par le droit d&apos;auteur.
               Tout le contenu est fourni par des prestataires tiers.
             </p>
-            <Link href="/disclaimer" className="text-xs text-[#6367FF] hover:text-[#C9BEFF] transition-colors">
+            <Link href="/disclaimer" style={{ fontSize: 12, color: "#C9BEFF", textDecoration: "none" }}>
               Lire l&apos;avertissement →
             </Link>
           </div>
@@ -107,8 +135,9 @@ export default function Footer() {
           className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-3 border-t"
           style={{ borderColor: "rgba(201,190,255,0.2)" }}
         >
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>© 2026 Stream Bleu. Tous droits réservés.</p>
-          <p className="text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>help@streambleu.fr</p>
+          <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>© 2026 Stream Bleu. Tous droits réservés.</p>
+          <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>1 Rue Volant, 92000 Nanterre, France</p>
+          <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)" }}>help@streambleu.fr</p>
         </div>
 
       </div>

@@ -127,7 +127,7 @@ export default function ReviewsSection({ showHeader = true }: Props) {
       </div>
 
       {/* Grille d'avis */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 18 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
         {reviews.slice(0, visible).map((r, i) => (
           <div
             key={i}

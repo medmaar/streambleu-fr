@@ -7,58 +7,82 @@ export default function Logo({ className }: { className?: string }) {
       className={`flex items-center gap-2.5 shrink-0 ${className ?? ""}`}
       aria-label="Stream Bleu IPTV France Logo"
     >
-      {/* Minimal Eiffel Tower icon */}
       <svg
         className="logo-tower"
-        width="28"
-        height="36"
-        viewBox="0 0 40 54"
+        width="30"
+        height="42"
+        viewBox="0 0 60 84"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
         <defs>
-          <linearGradient
-            id="streambleu-tower-grad"
-            x1="20" y1="0" x2="20" y2="54"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="100%" stopColor="#C9BEFF" />
+          {/* Subtle French tricolor gradient — blue left, white centre, red-pink right */}
+          <linearGradient id="sb-flag" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"   stopColor="#a8c0ff" />
+            <stop offset="38%"  stopColor="#ffffff" />
+            <stop offset="62%"  stopColor="#ffffff" />
+            <stop offset="100%" stopColor="#ffb3c1" />
+          </linearGradient>
+          <linearGradient id="sb-flag-v" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"   stopColor="#ffffff"  stopOpacity="1" />
+            <stop offset="100%" stopColor="#C9BEFF"  stopOpacity="0.85" />
           </linearGradient>
         </defs>
-        {/* Tower silhouette + arch cutout (evenodd fill rule) */}
-        <path
-          fillRule="evenodd"
-          fill="url(#streambleu-tower-grad)"
-          d="M 20 2
-             L 23 12
-             L 27 22
-             L 25 24
-             L 28 32
-             L 30 34
-             L 36 54
-             L 4 54
-             L 10 34
-             L 12 32
-             L 15 24
-             L 13 22
-             L 17 12
-             Z
-             M 27 54 L 27 44 Q 20 36 13 44 L 13 54 Z"
-        />
-        {/* Subtle horizontal beam line at first floor */}
-        <line
-          x1="10" y1="34" x2="30" y2="34"
-          stroke="rgba(255,255,255,0.25)"
-          strokeWidth="1"
-        />
-        {/* Subtle beam at second floor */}
-        <line
-          x1="13" y1="22" x2="27" y2="22"
-          stroke="rgba(255,255,255,0.2)"
-          strokeWidth="0.8"
-        />
+
+        {/* ── SPIRE / ANTENNA ── */}
+        {/* Very thin needle at top */}
+        <line x1="30" y1="2" x2="30" y2="14" stroke="url(#sb-flag)" strokeWidth="1.5" strokeLinecap="round"/>
+
+        {/* ── UPPER BODY (between spire platform and 2nd floor) ── */}
+        {/* Left */}
+        <line x1="27" y1="14" x2="20" y2="32" stroke="url(#sb-flag)" strokeWidth="1.8" strokeLinecap="round"/>
+        {/* Right */}
+        <line x1="33" y1="14" x2="40" y2="32" stroke="url(#sb-flag)" strokeWidth="1.8" strokeLinecap="round"/>
+        {/* Spire platform */}
+        <line x1="25" y1="14" x2="35" y2="14" stroke="url(#sb-flag)" strokeWidth="1.6" strokeLinecap="round"/>
+
+        {/* ── 2ND FLOOR PLATFORM ── */}
+        <line x1="18" y1="32" x2="42" y2="32" stroke="url(#sb-flag)" strokeWidth="2" strokeLinecap="round"/>
+
+        {/* ── MIDDLE BODY (between 2nd floor and 1st floor) ── */}
+        {/* Left outer */}
+        <line x1="18" y1="32" x2="11" y2="53" stroke="url(#sb-flag)" strokeWidth="2" strokeLinecap="round"/>
+        {/* Right outer */}
+        <line x1="42" y1="32" x2="49" y2="53" stroke="url(#sb-flag)" strokeWidth="2" strokeLinecap="round"/>
+        {/* Left inner */}
+        <line x1="20" y1="32" x2="17" y2="53" stroke="url(#sb-flag)" strokeWidth="1.2" strokeLinecap="round"/>
+        {/* Right inner */}
+        <line x1="40" y1="32" x2="43" y2="53" stroke="url(#sb-flag)" strokeWidth="1.2" strokeLinecap="round"/>
+
+        {/* ── 1ST FLOOR PLATFORM ── */}
+        <line x1="9"  y1="53" x2="51" y2="53" stroke="url(#sb-flag)" strokeWidth="2.2" strokeLinecap="round"/>
+
+        {/* ── LOWER BODY — curved legs sweeping out wide ── */}
+        {/* Left outer leg — curves out to wide base */}
+        <path d="M 11,53 C 10,60 6,68 4,78" stroke="url(#sb-flag)" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
+        {/* Right outer leg */}
+        <path d="M 49,53 C 50,60 54,68 56,78" stroke="url(#sb-flag)" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
+        {/* Left inner leg */}
+        <path d="M 17,53 C 16,60 14,68 18,78" stroke="url(#sb-flag)" strokeWidth="1.4" fill="none" strokeLinecap="round"/>
+        {/* Right inner leg */}
+        <path d="M 43,53 C 44,60 46,68 42,78" stroke="url(#sb-flag)" strokeWidth="1.4" fill="none" strokeLinecap="round"/>
+
+        {/* ── ARCH AT BASE ── */}
+        {/* The iconic wide arch between the four legs */}
+        <path d="M 4,78 Q 30,63 56,78" stroke="url(#sb-flag)" strokeWidth="2" fill="none" strokeLinecap="round"/>
+        {/* Inner arch */}
+        <path d="M 18,78 Q 30,67 42,78" stroke="url(#sb-flag)" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
+
+        {/* ── GROUND BASE ── */}
+        <line x1="2" y1="81" x2="58" y2="81" stroke="url(#sb-flag)" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.5"/>
+
+        {/* ── STRUCTURAL CROSS DETAILS ── */}
+        {/* Diagonal braces in lower body (subtle) */}
+        <line x1="11" y1="60" x2="17" y2="56" stroke="url(#sb-flag)" strokeWidth="0.8" strokeOpacity="0.5"/>
+        <line x1="49" y1="60" x2="43" y2="56" stroke="url(#sb-flag)" strokeWidth="0.8" strokeOpacity="0.5"/>
+        <line x1="8"  y1="70" x2="18" y2="64" stroke="url(#sb-flag)" strokeWidth="0.8" strokeOpacity="0.5"/>
+        <line x1="52" y1="70" x2="42" y2="64" stroke="url(#sb-flag)" strokeWidth="0.8" strokeOpacity="0.5"/>
       </svg>
 
       {/* Brand name */}

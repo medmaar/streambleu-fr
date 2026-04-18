@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFDBFD;
+  --background: linear-gradient(to right, rgba(100,130,255,0.06) 0%, #FFDBFD 35%, #FFDBFD 65%, rgba(220,100,120,0.06) 100%) fixed;
   --foreground: #6367FF;
   --purple: #8494FF;
   --light-purple: #C9BEFF;
@@ -12,7 +12,7 @@
 }
 
 body {
-  background: #FFDBFD;
+  background: linear-gradient(to right, rgba(100,130,255,0.06) 0%, #FFDBFD 35%, #FFDBFD 65%, rgba(220,100,120,0.06) 100%) fixed;
   color: #1a1a4e;
   font-family: 'Quicksand', sans-serif;
 }

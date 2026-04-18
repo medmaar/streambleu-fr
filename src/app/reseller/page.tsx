@@ -22,7 +22,7 @@ const features = [
 
 export default function ResellerPage() {
   return (
-    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
       <section style={{ background: "#6367FF", padding: "80px 16px 60px", textAlign: "center" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <span style={{ background: "rgba(99,103,255,0.18)", border: "1px solid rgba(99,103,255,0.4)", color: "#6367FF", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 24 }}>

@@ -65,7 +65,7 @@ const requirements = [
 
 export default function HowItWorksPage() {
   return (
-    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">

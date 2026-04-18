@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ReviewsPage() {
   return (
-    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", minHeight: "100vh", color: "#1a1a4e" }}>
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", minHeight: "100vh", color: "#1a1a4e" }}>
       <section style={{ padding: "48px 16px 32px" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <div style={{ background: "#6367FF", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(99,103,255,0.25)", textAlign: "center" }}>

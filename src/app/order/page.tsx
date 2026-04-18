@@ -20,7 +20,7 @@ function OrderContent() {
   );
 
   return (
-    <main style={{ background: "linear-gradient(135deg, #C9BEFF 0%, #FFDBFD 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4">
+    <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4">
       <div className="max-w-xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
