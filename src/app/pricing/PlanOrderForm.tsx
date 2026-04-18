@@ -5,27 +5,24 @@ import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
 const countries = [
-  "France", "United States", "United Kingdom", "Australia", "France", "Germany",
-  "Spain", "Italy", "Netherlands", "Belgium", "Switzerland", "Portugal", "Sweden",
-  "Norway", "Denmark", "Finland", "Poland", "Czech Republic", "Austria", "Ireland",
-  "New Zealand", "South Africa", "Nigeria", "Ghana", "Kenya", "Morocco", "Algeria",
-  "Tunisia", "Egypt", "Saudi Arabia", "United Arab Emirates", "Qatar", "Kuwait",
-  "Bahrain", "Oman", "Jordan", "Lebanon", "Iraq", "Iran", "Pakistan", "India",
-  "Bangladesh", "Sri Lanka", "Philippines", "Malaysia", "Singapore", "Indonesia",
-  "Thailand", "Vietnam", "China", "Hong Kong", "Taiwan", "Japan", "South Korea",
-  "Brazil", "Mexico", "Argentina", "Colombia", "Chile", "Peru", "Venezuela",
-  "Dominican Republic", "Jamaica", "Trinidad and Tobago", "Other",
+  "France", "Belgique", "Suisse", "Luxembourg", "Canada", "Maroc", "Algérie",
+  "Tunisie", "Sénégal", "Cameroun", "Côte d'Ivoire", "Madagascar", "Mali",
+  "Allemagne", "Espagne", "Italie", "Portugal", "Pays-Bas", "Suède", "Norvège",
+  "Danemark", "Finlande", "Irlande", "Royaume-Uni", "États-Unis", "Australie",
+  "Nouvelle-Zélande", "Émirats Arabes Unis", "Qatar", "Koweït", "Arabie Saoudite",
+  "Liban", "Jordanie", "Turquie", "Brésil", "Mexique", "Colombie", "Argentine", "Autre",
 ];
 
 const deviceTypes = [
-  "Smart TV (Samsung / LG)",
-  "Amazon Firestick",
-  "Android Box",
-  "Android Phone / Tablet",
+  "Smart TV (Samsung / LG / Philips)",
+  "Amazon Fire Stick",
+  "Box Android TV",
+  "Téléphone / Tablette Android",
   "iPhone / iPad",
   "MAG Box",
   "Apple TV",
-  "Other",
+  "PC Windows / Mac",
+  "Autre",
 ];
 
 interface Props {
@@ -66,14 +63,14 @@ export default function PlanOrderForm({ plan }: Props) {
         "service_0e3cugb",
         "template_cuf7svm",
         {
-          from_name: form.full_name || "Not provided",
-          from_email: form.email || "Not provided",
-          phone: phone || "Not provided",
+          from_name: form.full_name || "Non renseigné",
+          from_email: form.email || "Non renseigné",
+          phone: phone || "Non renseigné",
           country: form.country,
-          device: form.device || "Not specified",
+          device: form.device || "Non précisé",
           plan,
           message: form.message || "—",
-          site_name: "Stream Bleu.ca",
+          site_name: "Stream Bleu",
         }
       );
       console.log("EmailJS success:", result);
@@ -100,123 +97,91 @@ export default function PlanOrderForm({ plan }: Props) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
 
-      {/* Order instructions */}
+      {/* Instructions */}
       <div style={{ marginBottom: 8, paddingBottom: 16, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
         <h2 style={{ fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: 6 }}>
-          Place Your Order
+          Passer votre commande
         </h2>
         <p style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", marginBottom: 12 }}>
-          Please complete the form below. Make sure your details are correct so we can contact you without delay.
+          Remplissez le formulaire ci-dessous. Assurez-vous que vos coordonnées sont correctes afin que nous puissions vous contacter rapidement.
         </p>
         <ol style={{ paddingLeft: 18, margin: 0, display: "flex", flexDirection: "column", gap: 6 }}>
-          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Enter your first and last name</li>
-          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Add your email or WhatsApp number — depending on how you prefer to be contacted</li>
-          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Submit the form — we will contact you within minutes</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Entrez votre prénom et nom</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Ajoutez votre email ou numéro WhatsApp selon votre préférence</li>
+          <li style={{ fontSize: 13, color: "rgba(255,255,255,0.65)" }}>Soumettez le formulaire — nous vous contacterons en quelques minutes</li>
         </ol>
       </div>
 
-      {/* Success banner */}
+      {/* Succès */}
       {status === "success" && (
-        <div
-          className="rounded-2xl px-4 py-3 text-sm font-medium"
-          style={{ background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.3)", color: "#4ade80" }}
-        >
-          ✅ Order received! We&apos;ll contact you within minutes.
+        <div className="rounded-2xl px-4 py-3 text-sm font-medium"
+          style={{ background: "rgba(74,222,128,0.1)", border: "1px solid rgba(74,222,128,0.3)", color: "#4ade80" }}>
+          ✅ Commande reçue ! Nous vous contacterons dans quelques minutes.
         </div>
       )}
 
-      {/* Error banner */}
+      {/* Erreur */}
       {status === "error" && (
-        <div
-          className="rounded-2xl px-4 py-3 text-sm font-medium"
-          style={{ background: "rgba(253,3,34,0.1)", border: "1px solid rgba(253,3,34,0.3)", color: "#ff6b6b" }}
-        >
-          ❌ Something went wrong. Please try again or{" "}
+        <div className="rounded-2xl px-4 py-3 text-sm font-medium"
+          style={{ background: "rgba(253,3,34,0.1)", border: "1px solid rgba(253,3,34,0.3)", color: "#ff6b6b" }}>
+          ❌ Une erreur s&apos;est produite. Réessayez ou{" "}
           <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="underline">
-            contact us on WhatsApp
+            contactez-nous sur WhatsApp
           </a>.
         </div>
       )}
 
-      {/* Nom Complet */}
+      {/* Nom complet */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
           Nom Complet <span style={{ color: "#fd0322" }}>*</span>
         </label>
-        <input
-          type="text"
-          name="full_name"
-          required
-          placeholder="Your full name"
-          value={form.full_name}
-          onChange={handleChange}
-          style={inputStyle}
-        />
+        <input type="text" name="full_name" required placeholder="Ex : Jean Dupont"
+          value={form.full_name} onChange={handleChange} style={inputStyle} />
       </div>
 
       {/* Email */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
-          Email Address <span style={{ color: "#fd0322" }}>*</span>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
+          Adresse Email <span style={{ color: "#fd0322" }}>*</span>
         </label>
-        <input
-          type="text"
-          name="email"
-          required
-          placeholder="you@example.com"
-          value={form.email}
-          onChange={handleChange}
-          style={inputStyle}
-        />
+        <input type="text" name="email" required placeholder="vous@exemple.com"
+          value={form.email} onChange={handleChange} style={inputStyle} />
         {emailWarning && (
           <p className="text-xs mt-1" style={{ color: "#fbbf24" }}>
-            This doesn&apos;t look like a valid email — make sure it contains @
+            Cet email ne semble pas valide — assurez-vous qu&apos;il contient @
           </p>
         )}
       </div>
 
-      {/* Phone with flag dropdown */}
+      {/* Téléphone */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
-          Phone / WhatsApp
-          <span style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }}>(optional)</span>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
+          Téléphone / WhatsApp
+          <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 11, marginLeft: 6 }}>(optionnel)</span>
         </label>
         <div className="phone-input-wrapper">
-          <PhoneInput
-            international
-            defaultCountry="CA"
-            value={phone}
-            onChange={setPhone}
-            placeholder="+1 234 567 8900"
-          />
+          <PhoneInput international defaultCountry="FR" value={phone} onChange={setPhone} placeholder="+33 6 00 00 00 00" />
         </div>
       </div>
 
-      {/* Country */}
+      {/* Pays */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>Country</label>
-        <select
-          name="country"
-          value={form.country}
-          onChange={handleChange}
-          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}
-        >
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>Pays</label>
+        <select name="country" value={form.country} onChange={handleChange}
+          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}>
           {countries.map((c) => (
             <option key={c} value={c} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{c}</option>
           ))}
         </select>
       </div>
 
-      {/* Device Type */}
+      {/* Appareil */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>Device Type</label>
-        <select
-          name="device"
-          value={form.device}
-          onChange={handleChange}
-          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}
-        >
-          <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Select your device</option>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>Type d&apos;appareil</label>
+        <select name="device" value={form.device} onChange={handleChange}
+          style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#1a1a2e", color: "#ffffff" }}>
+          <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Sélectionnez votre appareil</option>
           {deviceTypes.map((d) => (
             <option key={d} value={d} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{d}</option>
           ))}
@@ -225,33 +190,23 @@ export default function PlanOrderForm({ plan }: Props) {
 
       {/* Notes */}
       <div>
-        <label style={{ display:"block", fontSize:13, color:"#79C9C5", marginBottom:6, fontWeight:600 }}>
+        <label style={{ display: "block", fontSize: 13, color: "#79C9C5", marginBottom: 6, fontWeight: 600 }}>
           Notes / Message
-          <span style={{ color:"rgba(255,255,255,0.4)", fontSize:11, marginLeft:6 }}>(optional)</span>
+          <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 11, marginLeft: 6 }}>(optionnel)</span>
         </label>
-        <textarea
-          name="message"
-          placeholder="Any special requests?"
-          value={form.message}
-          onChange={handleChange}
-          rows={3}
-          style={{ ...inputStyle, resize: "vertical" }}
-        />
+        <textarea name="message" placeholder="Demandes particulières ?"
+          value={form.message} onChange={handleChange} rows={3}
+          style={{ ...inputStyle, resize: "vertical" }} />
       </div>
 
-      {/* Hidden plan field — passed via emailjs.send data object, not a real input */}
-
-      <button
-        type="submit"
-        disabled={status === "loading"}
+      <button type="submit" disabled={status === "loading"}
         className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60"
-        style={{ background: "#F96E5B" }}
-      >
-        {status === "loading" ? "Sending…" : "Order Now →"}
+        style={{ background: "#F96E5B" }}>
+        {status === "loading" ? "Envoi en cours…" : "Commander →"}
       </button>
 
-      <p style={{ textAlign:"center", color:"rgba(255,255,255,0.55)", fontSize:12 }}>
-        Secure · Login credentials sent to your email within minutes
+      <p style={{ textAlign: "center", color: "rgba(255,255,255,0.55)", fontSize: 12 }}>
+        Sécurisé · Identifiants envoyés par email en quelques minutes
       </p>
     </form>
   );

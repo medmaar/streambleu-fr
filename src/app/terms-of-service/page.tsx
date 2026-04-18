@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Stream Bleu – Best 4K IPTV France",
+  title: "Conditions d'utilisation | Stream Bleu – Best 4K IPTV France",
   description: "Terms of service for Stream Bleu, de France leading 4K IPTV provider. Read our terms before using our IPTV service.",
   alternates: { canonical: "https://streambleu.fr/terms-of-service" },
   openGraph: {
-    title: "Terms of Service | Stream Bleu – Best 4K IPTV France",
+    title: "Conditions d'utilisation | Stream Bleu – Best 4K IPTV France",
     description: "Terms of service for Stream Bleu, de France leading 4K IPTV provider. Read our terms before using our IPTV service.",
     url: "https://streambleu.fr/terms-of-service",
     type: "website",
@@ -20,13 +20,13 @@ export default function TermsOfServicePage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Terms of Service</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Conditions d'utilisation</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         <div className="space-y-10 text-black leading-relaxed">
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">1. Acceptance of Terms</h2>
-            <p>By accessing or using the IPTV Subscription France service ("Service"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Service.</p>
+            <p>By accessing or using the IPTV Subscription France service ("Service"), you agree to be bound by these Conditions d'utilisation. If you do not agree to these terms, please do not use our Service.</p>
           </section>
 
           <section>
@@ -80,7 +80,7 @@ export default function TermsOfServicePage() {
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">8. Termination</h2>
-            <p>We reserve the right to suspend or terminate your access to the Service at any time, without notice, if you violate these Terms of Service. Upon termination for breach, no refund will be issued. We may also terminate the Service with 30 days' notice to all subscribers.</p>
+            <p>We reserve the right to suspend or terminate your access to the Service at any time, without notice, if you violate these Conditions d'utilisation. Upon termination for breach, no refund will be issued. We may also terminate the Service with 30 days' notice to all subscribers.</p>
           </section>
 
           <section>
@@ -90,12 +90,12 @@ export default function TermsOfServicePage() {
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">10. Governing Law</h2>
-            <p>These Terms of Service are governed by and construed in accordance with the laws of the Province of Nova Scotia and the federal laws of France applicable therein, without regard to conflict of law principles.</p>
+            <p>These Conditions d'utilisation are governed by and construed in accordance with the laws of the Province of Nova Scotia and the federal laws of France applicable therein, without regard to conflict of law principles.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">11. Changes to Terms</h2>
-            <p>We may modify these Terms of Service at any time. We will provide notice of material changes by updating the date at the top of this page. Continued use of the Service after changes take effect constitutes your acceptance of the revised terms.</p>
+            <p>We may modify these Conditions d'utilisation at any time. We will provide notice of material changes by updating the date at the top of this page. Continued use of the Service after changes take effect constitutes your acceptance of the revised terms.</p>
           </section>
 
           <section>

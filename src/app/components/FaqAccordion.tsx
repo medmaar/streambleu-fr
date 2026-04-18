@@ -3,28 +3,28 @@ import { useState } from "react";
 
 const items = [
   {
-    q: "What resolution and codec does Stream Bleu stream in?",
-    a: "Stream Bleu streams in True 4K Ultra HD (3840×2160) using H.265/HEVC encoding — delivering twice the picture quality of H.264 at the same bitrate. HDR10 and Dolby Vision are supported where broadcasters provide HDR feeds, giving you cinema-grade colour and brightness on compatible displays.",
+    q: "Quelle résolution et quel codec utilise Stream Bleu ?",
+    a: "Stream Bleu diffuse en vrai 4K Ultra HD (3840×2160) avec l'encodage H.265/HEVC — offrant deux fois la qualité d'image du H.264 au même débit. HDR10 et Dolby Vision sont pris en charge sur les chaînes compatibles, vous offrant une qualité cinématographique sur les écrans compatibles.",
   },
   {
-    q: "What internet speed is needed for 4K IPTV?",
-    a: "A stable 25 Mbps connection handles 4K H.265 streams without buffering. Français fibre and cable plans at 75 Mbps+ run multiple simultaneous 4K streams with ease. Our servers use Français-optimized routes for low latency — most users see sub-50ms ping.",
+    q: "Quelle vitesse internet faut-il pour l'IPTV 4K ?",
+    a: "Une connexion stable de 25 Mbps suffit pour des streams 4K H.265 sans buffering. Les offres fibre françaises à 100 Mbps+ permettent plusieurs streams 4K simultanés sans effort. Nos serveurs utilisent des routes optimisées pour la France pour une faible latence.",
   },
   {
-    q: "Does Stream Bleu support HDR10 and Dolby Vision?",
-    a: "Yes. HDR10 and Dolby Vision are fully supported on compatible streams and players. Pair Stream Bleu with TiviMate or IBO Player on an Apple TV 4K, Samsung QLED, or LG OLED and your display's full HDR capability is automatically engaged — peak brightness, wide colour gamut, the works.",
+    q: "Stream Bleu supporte-t-il HDR10 et Dolby Vision ?",
+    a: "Oui. HDR10 et Dolby Vision sont entièrement pris en charge sur les streams et lecteurs compatibles. Associez Stream Bleu à TiviMate ou IBO Player sur un Apple TV 4K, Samsung QLED ou LG OLED et les capacités HDR de votre écran s'activent automatiquement.",
   },
   {
-    q: "Which IPTV player gives the best 4K H.265 performance?",
-    a: "TiviMate (Android/Fire TV) is the gold standard for 4K H.265 with hardware acceleration and a clean EPG. IBO Player is included free with 12-month plans and delivers native 4K on Android TV. IPTV Smarters Pro and the Apple TV app are excellent alternatives for iOS and tvOS.",
+    q: "Quel lecteur IPTV donne les meilleures performances 4K H.265 ?",
+    a: "TiviMate (Android/Fire TV) est la référence pour la 4K H.265 avec accélération matérielle et un EPG propre. IBO Player est inclus gratuitement avec les forfaits 12 mois. IPTV Smarters Pro est une excellente alternative pour iOS et tvOS.",
   },
   {
-    q: "Can I watch NHL, CFL, and Français sports in 4K?",
-    a: "All sports content broadcasts at maximum available quality — 4K where the broadcaster provides 4K feeds. TSN (all feeds), Sportsnet (all regional), CBC Sports, TVA Sports, and RDS are all included. Every NHL, CFL, UFC, NFL, NBA, and MLB game is covered with no blackouts and no extra PPV charges.",
+    q: "Puis-je regarder la Ligue 1, la Champions League et le sport français en 4K ?",
+    a: "Tout le contenu sportif est diffusé à la qualité maximale disponible — 4K là où le diffuseur le propose. beIN Sports (tous feeds), RMC Sport, Canal+ Sport, Eurosport et L'Équipe TV sont tous inclus. Chaque match de Ligue 1, Champions League, Roland-Garros, Top 14 et F1 est couvert sans blackout ni frais PPV supplémentaire.",
   },
   {
-    q: "How does Stream Bleu picture quality compare to cable?",
-    a: "Cable TV compresses most content to 1080i or 720p using legacy codecs. Stream Bleu delivers True 4K H.265/HEVC streams — significantly sharper than anything Bell or Rogers offers at standard tiers. Same Français channels, dramatically higher resolution, for up to 90% less per month.",
+    q: "Comment la qualité d'image de Stream Bleu se compare-t-elle au câble ?",
+    a: "La TV par câble compresse la plupart des contenus en 1080i ou 720p avec des codecs anciens. Stream Bleu délivre de vrais streams 4K H.265/HEVC — nettement plus nets que tout ce qu'Orange, SFR ou Free proposent aux abonnements standard. Mêmes chaînes françaises, résolution bien supérieure, pour jusqu'à 80% moins cher par mois.",
   },
 ];
 
@@ -34,28 +34,16 @@ export default function FaqAccordion() {
   return (
     <div className="space-y-3">
       {items.map((item, i) => (
-        <div
-          key={i}
-          className="rounded-2xl border overflow-hidden transition-colors"
+        <div key={i} className="rounded-2xl border overflow-hidden transition-colors"
           style={{
-            borderColor: open === i ? "rgba(253,3,34,0.38)" : "rgba(255,255,255,0.07)",
-            background: open === i ? "rgba(253,3,34,0.05)" : "rgba(255,255,255,0.03)",
-          }}
-        >
-          <button
-            className="w-full flex items-center justify-between gap-4 px-5 py-5 text-left"
-            onClick={() => setOpen(open === i ? null : i)}
-          >
-            <span className="font-semibold text-white text-sm md:text-base leading-snug">
-              {item.q}
-            </span>
-            <span
-              className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-lg font-bold transition-all duration-300"
-              style={{
-                background: open === i ? "#fd0322" : "rgba(255,255,255,0.08)",
-                transform: open === i ? "rotate(45deg)" : "rotate(0deg)",
-              }}
-            >
+            borderColor: open === i ? "rgba(249,110,91,0.38)" : "rgba(255,255,255,0.07)",
+            background: open === i ? "rgba(249,110,91,0.05)" : "rgba(255,255,255,0.03)",
+          }}>
+          <button className="w-full flex items-center justify-between gap-4 px-5 py-5 text-left"
+            onClick={() => setOpen(open === i ? null : i)}>
+            <span className="font-semibold text-white text-sm md:text-base leading-snug">{item.q}</span>
+            <span className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-lg font-bold transition-all duration-300"
+              style={{ background: open === i ? "#F96E5B" : "rgba(255,255,255,0.08)", transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}>
               +
             </span>
           </button>

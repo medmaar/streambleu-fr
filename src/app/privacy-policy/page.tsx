@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Stream Bleu – Best 4K IPTV France",
+  title: "Politique de confidentialité | Stream Bleu – Best 4K IPTV France",
   description: "Privacy policy for Stream Bleu, de France meilleur IPTV service. Learn how we collect, use, and protect your personal information.",
   alternates: { canonical: "https://streambleu.fr/privacy-policy" },
   openGraph: {
-    title: "Privacy Policy | Stream Bleu – Best 4K IPTV France",
+    title: "Politique de confidentialité | Stream Bleu – Best 4K IPTV France",
     description: "Privacy policy for Stream Bleu, de France meilleur IPTV service. Learn how we collect, use, and protect your personal information.",
     url: "https://streambleu.fr/privacy-policy",
     type: "website",
@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Privacy Policy</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Politique de confidentialité</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         <div className="space-y-10 text-black leading-relaxed">
@@ -87,12 +87,12 @@ export default function PrivacyPolicyPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">8. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. Continued use of our service after changes constitutes acceptance of the updated policy.</p>
+            <p>We may update this Politique de confidentialité from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. Continued use of our service after changes constitutes acceptance of the updated policy.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-black mb-3">9. Nous Contacter</h2>
-            <p>If you have questions about this Privacy Policy, please contact us:</p>
+            <p>If you have questions about this Politique de confidentialité, please contact us:</p>
             <div className="mt-4 bg-transparent rounded-xl p-6 border border-gray-800">
               <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#F96E5B] hover:underline">help@streambleu.fr</a></p>
               <p className="mt-2">WhatsApp: <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="text-[#F96E5B] hover:underline">+1 (782) 802-6280</a></p>

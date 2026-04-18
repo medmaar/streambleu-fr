@@ -4,9 +4,9 @@ import PricingSection from "../PricingSection";
 import FaqAccordion from "../components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: { absolute: "4K IPTV Plans france — H.265/HEVC from 9€ | Stream Bleu" },
-  description: "Compare Stream Bleu premium 4K IPTV plans. H.265/HEVC encoded, HDR10 & Dolby Vision. 1, 3, 6 & 12-month options from 9€. 25 000+ live channels, no contracts.",
-  keywords: "Stream Bleu pricing, 4K IPTV plans france, H.265 HEVC IPTV france, HDR IPTV subscription 2026",
+  title: { absolute: "Abonnement IPTV France 2026 — 4K H.265 à partir de 9€ | Stream Bleu" },
+  description: "Comparez les forfaits IPTV premium Stream Bleu. H.265/HEVC, HDR10 & Dolby Vision. Formules 1, 3, 6 et 12 mois à partir de 9€. 25 000+ chaînes, sans engagement.",
+  keywords: "abonnement iptv france, tarif iptv france 2026, forfait iptv 4k france, iptv pas cher france",
   alternates: { canonical: "https://streambleu.fr/pricing" },
 };
 
@@ -14,20 +14,20 @@ export default function PricingPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000", minHeight: "100vh" }}>
 
-      {/* Header */}
+      {/* En-tête */}
       <section style={{ padding: "80px 16px 60px", textAlign: "center" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <p style={{ color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
-            Transparent Pricing
+            Tarifs Transparents
           </p>
           <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#000000", marginBottom: 16, lineHeight: 1.1 }}>
-            Stream Bleu <span style={{ color: "#F96E5B" }}>Premium 4K Plans 2026</span>
+            Stream Bleu <span style={{ color: "#F96E5B" }}>Forfaits Premium 4K 2026</span>
           </h1>
           <p style={{ color: "#000000", marginBottom: 28, maxWidth: 560, margin: "0 auto 28px", lineHeight: 1.7, fontSize: 16 }}>
-            No hidden fees. Every plan streams in True 4K Ultra HD with H.265/HEVC encoding, HDR10 &amp; Dolby Vision support, and 24/7 Français support.
+            Pas de frais cachés. Chaque forfait diffuse en vrai 4K Ultra HD avec encodage H.265/HEVC, support HDR10 &amp; Dolby Vision, et assistance 24/7 en français.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 20, fontSize: 14, color: "#000000", fontWeight: 600 }}>
-            {["No contracts", "Instant activation", "Cancel anytime", "24h essai gratuit available"].map((item) => (
+            {["Sans engagement", "Activation instantanée", "Résiliation à tout moment", "Essai gratuit 24h disponible"].map((item) => (
               <span key={item} style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 <span style={{ color: "#3F9AAE" }}>✓</span> {item}
               </span>
@@ -36,34 +36,34 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* PayPaltive pricing */}
+      {/* Tarifs */}
       <section style={{ padding: "0 16px 60px" }}>
         <PricingSection />
       </section>
 
-      {/* What's included */}
+      {/* Inclus dans chaque forfait */}
       <section style={{ padding: "60px 16px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <p style={{ textAlign: "center", color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>
-            Included in Every Plan
+            Inclus dans chaque forfait
           </p>
           <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#000000", marginBottom: 36 }}>
-            Everything You Need — <span style={{ color: "#F96E5B" }}>Zero Extras</span>
+            Tout ce qu&apos;il vous faut — <span style={{ color: "#F96E5B" }}>Sans supplément</span>
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
             {[
-              "25 000+ Live TV Channels",
-              "120 000+ Movies & Series (VOD)",
-              "True 4K Ultra HD — H.265/HEVC",
-              "HDR10 & Dolby Vision Support",
-              "Ligue 1, NFL, NBA, MLB, UFC, CFL",
-              "beIN Sports, RMC Sport, Canal+, CTV, Global",
-              "PPV Events Included — No Extra Cost",
-              "Full EPG + Catch-Up TV (7 days)",
-              "TiviMate & IBO Player Compatible",
-              "All Devices: Fire TV, Smart TV, iOS, Android",
-              "99.9% Uptime Guarantee",
-              "24/7 Français Support",
+              "25 000+ Chaînes TV en direct",
+              "120 000+ Films & Séries (VOD)",
+              "Vrai 4K Ultra HD — H.265/HEVC",
+              "Support HDR10 & Dolby Vision",
+              "Ligue 1, Champions League, Roland-Garros",
+              "beIN Sports, RMC Sport, Canal+, TF1, M6",
+              "Événements PPV inclus — sans supplément",
+              "EPG complet + Télévision de rattrapage (7 jours)",
+              "Compatible TiviMate & IBO Player",
+              "Tous appareils : Fire TV, Smart TV, iOS, Android",
+              "Garantie de disponibilité 99,9%",
+              "Support 24/7 en français",
             ].map((feature) => (
               <div key={feature} style={{ display: "flex", alignItems: "center", gap: 12, background: "#ffffff", border: "1px solid rgba(63,154,174,0.2)", borderRadius: 14, padding: "14px 18px" }}>
                 <span style={{ color: "#3F9AAE", fontWeight: 700, flexShrink: 0 }}>✓</span>
@@ -74,39 +74,39 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Free trial CTA */}
+      {/* CTA essai gratuit */}
       <section style={{ padding: "60px 16px", textAlign: "center", background: "#1A3D45" }}>
         <div style={{ maxWidth: 620, margin: "0 auto" }}>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 14 }}>
-            Not Sure Yet? Try the Full 4K Experience Free
+            Pas encore convaincu ? Testez l&apos;expérience 4K gratuitement
           </h2>
           <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 28, fontSize: 15 }}>
-            No credit card required. Test True 4K H.265 streams on your own hardware.
-            Also check our <Link href="/channels-list" style={{ color: "#79C9C5", textDecoration: "underline" }}>full channel list</Link>.
+            Sans carte bancaire. Testez les streams 4K H.265 sur votre propre matériel.
+            Consultez aussi notre <Link href="/channels-list" style={{ color: "#79C9C5", textDecoration: "underline" }}>liste complète des chaînes</Link>.
           </p>
           <Link href="/free-trial" style={{ display: "inline-block", background: "#F96E5B", color: "#fff", padding: "14px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none", boxShadow: "0 6px 20px rgba(249,110,91,0.4)" }}>
-            Get Essai Gratuit
+            Essai Gratuit 24h
           </Link>
         </div>
       </section>
 
-      {/* Internal links */}
-      <section style={{ padding: "48px 16px", background: "transparent" }}>
+      {/* Liens villes */}
+      <section style={{ padding: "48px 16px" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <p style={{ textAlign: "center", color: "#000000", fontSize: 13, fontWeight: 600, marginBottom: 20 }}>
-            Available in your city:
+            Disponible dans votre ville :
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
             {[
-              { name: "Toronto", href: "/iptv-paris" },
-              { name: "Vancouver", href: "/iptv-lyon" },
-              { name: "Montreal", href: "/iptv-marseille" },
-              { name: "Calgary", href: "/iptv-toulouse" },
-              { name: "Ottawa", href: "/iptv-nice" },
-              { name: "Edmonton", href: "/iptv-bordeaux" },
+              { name: "Paris", href: "/iptv-paris" },
+              { name: "Lyon", href: "/iptv-lyon" },
+              { name: "Marseille", href: "/iptv-marseille" },
+              { name: "Toulouse", href: "/iptv-toulouse" },
+              { name: "Nice", href: "/iptv-nice" },
+              { name: "Bordeaux", href: "/iptv-bordeaux" },
             ].map((city) => (
               <Link key={city.href} href={city.href} style={{ background: "rgba(63,154,174,0.1)", border: "1px solid rgba(63,154,174,0.25)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1A3D45", textDecoration: "none" }}>
-                🍁 IPTV {city.name}
+                🇫🇷 IPTV {city.name}
               </Link>
             ))}
           </div>
@@ -118,7 +118,7 @@ export default function PricingPage() {
         <div style={{ maxWidth: 720, margin: "0 auto", background: "#1A3D45", borderRadius: 24, padding: "36px 28px", boxShadow: "0 8px 32px rgba(26,61,69,0.2)" }}>
           <p style={{ color: "#F96E5B", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>FAQ</p>
           <h2 style={{ fontSize: "1.6rem", fontWeight: 900, color: "#ffffff", marginBottom: 28, textAlign: "center" }}>
-            Pricing FAQ
+            Questions fréquentes sur les tarifs
           </h2>
           <FaqAccordion />
         </div>

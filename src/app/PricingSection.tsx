@@ -97,7 +97,7 @@ export default function PricingSection() {
           </span>
         </div>
         <p style={{ textAlign: "center", color: "#000000", marginBottom: 32, fontSize: 15 }}>
-          No contracts. No hidden fees. Instant activation after you order.
+          Sans engagement. No hidden fees. Activation instantanée after you order.
         </p>
 
         {/* Connection selector */}

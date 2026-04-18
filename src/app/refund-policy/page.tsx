@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | Stream Bleu – Best 4K IPTV France",
+  title: "Politique de remboursement | Stream Bleu – Best 4K IPTV France",
   description: "Refund policy for Stream Bleu, de France meilleur IPTV service. Learn about our no-refund policy and how our essai gratuit protects you before you subscribe.",
   alternates: { canonical: "https://streambleu.fr/refund-policy" },
   openGraph: {
-    title: "Refund Policy | Stream Bleu – Best 4K IPTV France",
+    title: "Politique de remboursement | Stream Bleu – Best 4K IPTV France",
     description: "Refund policy for Stream Bleu, de France meilleur IPTV service. Learn about our no-refund policy and how our essai gratuit protects you.",
     url: "https://streambleu.fr/refund-policy",
     type: "website",
@@ -20,7 +20,7 @@ export default function RefundPolicyPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Refund Policy</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Politique de remboursement</h1>
         <p className="text-black text-sm mb-10">Last updated: March 28, 2026</p>
 
         {/* Summary box */}
@@ -35,7 +35,7 @@ export default function RefundPolicyPage() {
 
         <div className="space-y-10 text-black leading-relaxed">
           <section>
-            <h2 className="text-2xl font-bold text-black mb-3">1. No-Refund Policy</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">1. No-Politique de remboursement</h2>
             <p className="mb-3">All sales are final. Once your IPTV subscription has been activated and credentials delivered, we are unable to offer refunds for the following reasons:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>The service is delivered digitally and immediately upon payment</li>

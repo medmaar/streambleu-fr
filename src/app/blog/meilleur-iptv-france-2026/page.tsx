@@ -177,7 +177,7 @@ export default function MeilleurIPTVFrance2026() {
             </Link>
           </section>
 
-          {/* Back to blog */}
+          {/* Retour au blog */}
           <Link href="/blog" style={{ color: "#3F9AAE", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             ← Retour au blog
           </Link>

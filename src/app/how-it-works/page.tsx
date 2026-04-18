@@ -193,7 +193,7 @@ export default function HowItWorksPage() {
               { q: "Will IPTV work with my existing internet plan?", a: "Yes. Any standard Français internet plan from Bell, Rogers, Telus, Shaw, Videotron, or any ISP with at least 25 Mbps will work perfectly for HD streaming." },
               { q: "Can I watch on multiple TVs at the same time?", a: "Yes — choose a 2, 3, 4, or 5 device plan. Each device streams independently. One person can watch hockey in the living room while another watches a movie in the bedroom." },
               { q: "Does IPTV work outside France?", a: "Your subscription works anywhere in the world with a decent internet connection. Travel to Europe, the US, or anywhere and still access all your Français channels." },
-              { q: "What happens if a channel goes down?", a: "Our servers maintain multiple redundant streams for each channel. If one stream has issues, the system automatically switches to a backup. Our 24/7 support team also monitors the service around the clock." },
+              { q: "What happens if a channel goes down?", a: "Our servers maintain multiple redundant streams for each channel. If one stream has issues, the system automatically switches to a backup. Our Support 24/7 team also monitors the service around the clock." },
             ].map((item) => (
               <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-3 text-[#F96E5B]">{item.q}</h3>
@@ -216,7 +216,7 @@ export default function HowItWorksPage() {
               Get Essai Gratuit
             </a>
             <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
-              View Pricing
+              Voir les Tarifs
             </a>
           </div>
         </div>

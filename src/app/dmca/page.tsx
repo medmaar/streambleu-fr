@@ -26,7 +26,7 @@ export default function DMCAPage() {
 
         {/* Legal disclaimer block */}
         <div className="bg-transparent border border-red-700 rounded-2xl p-8 mb-10">
-          <p className="text-xs font-bold text-[#F96E5B] uppercase tracking-widest mb-3">Legal Disclaimer</p>
+          <p className="text-xs font-bold text-[#F96E5B] uppercase tracking-widest mb-3">Legal Avertissement</p>
           <p className="text-black leading-relaxed">
             Stream Bleu is a reseller of third-party IPTV services. We do not host, store, or transmit
             any video content. All streams are provided by independent third-party servers. If you believe
@@ -97,7 +97,7 @@ export default function DMCAPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-black mb-3">Disclaimer</h2>
+            <h2 className="text-2xl font-bold text-black mb-3">Avertissement</h2>
             <p>
               This DMCA policy is provided for informational purposes and to comply with
               applicable law. Nothing in this policy constitutes legal advice. IPTV Subscription

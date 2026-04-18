@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Channels France — 25 000+ Live Channels | Stream Bleu" },
+  title: { absolute: "IPTV Channels France — 25 000+ Chaînes en direct | Stream Bleu" },
   description:
     "Full Stream Bleu IPTV channel list pour la France 2026. Browse 25 000+ live channels including beIN Sports, RMC Sport, Canal+, CTV, RDS, TVA, NHL, NFL, NBA, and thousands of international channels.",
   keywords:
@@ -469,7 +469,7 @@ const categories = [  {
       "TBS 4K",
       "TNT 4K",
       "USA Network 4K",
-      "E! Entertainment 4K",
+      "E! Divertissement 4K",
       "Freeform 4K",
       "truTV 4K",
       "VH1 4K",
@@ -580,7 +580,7 @@ const categories = [  {
       "TV5Monde 4K",
       "Univision Deportes 4K",
       "Telemundo Deportes 4K",
-      "Sony Entertainment Television 4K",
+      "Sony Divertissement Television 4K",
       "Zee TV 4K",
       "Willow TV 4K",
       "Sundance TV 4K",
@@ -622,7 +622,7 @@ const categories = [  {
       "Destination America 4K",
       "Military History 4K",
       "Shudder 4K",
-      "Starz Kids & Family 4K",
+      "Starz Enfants Kids & Family Famille 4K",
       "FXM (FX Movies) 4K",
       "Encore Westerns 4K",
       "Encore Suspense 4K",
@@ -2014,7 +2014,7 @@ const categories = [  {
       "TBS 4K",
       "TNT 4K",
       "USA Network 4K",
-      "E! Entertainment 4K",
+      "E! Divertissement 4K",
       "Freeform 4K",
       "truTV 4K",
       "VH1 4K",
@@ -2125,7 +2125,7 @@ const categories = [  {
       "TV5Monde 4K",
       "Univision Deportes 4K",
       "Telemundo Deportes 4K",
-      "Sony Entertainment Television 4K",
+      "Sony Divertissement Television 4K",
       "Zee TV 4K",
       "Willow TV 4K",
       "Sundance TV 4K",
@@ -2167,7 +2167,7 @@ const categories = [  {
       "Destination America 4K",
       "Military History 4K",
       "Shudder 4K",
-      "Starz Kids & Family 4K",
+      "Starz Enfants Kids & Family Famille 4K",
       "FXM (FX Movies) 4K",
       "Encore Westerns 4K",
       "Encore Suspense 4K",
@@ -8119,7 +8119,7 @@ const categories = [  {
       "History Channel Angola 4K",
       "Comedy Central Angola 4K",
       "Fox News Angola 4K",
-      "E! Entertainment Angola 4K",
+      "E! Divertissement Angola 4K",
       "Showmax Angola 4K",
       "Movie Zone Angola 4K",
       "Luxe TV Angola 4K",
@@ -8153,7 +8153,7 @@ const categories = [  {
       "Star Network Angola 4K",
       "RAI Africa Angola 4K",
       "Showtime Angola 4K",
-      "Sony Entertainment TV Angola 4K",
+      "Sony Divertissement TV Angola 4K",
       "ZAP Sport 4K",
       "ZAP Series 4K",
       "Boomerang Angola 4K",
@@ -8168,12 +8168,12 @@ const categories = [  {
       "Investigation Discovery Angola 4K",
       "RMC Angola 4K",
       "Kulture TV Angola 4K",
-      "BBC Entertainment Angola 4K",
+      "BBC Divertissement Angola 4K",
       "ReelzChannel Angola 4K",
       "Ovation Angola 4K",
       "TV Globo Internacional Angola 4K",
       "A+E Networks Angola 4K",
-      "E! Entertainment Angola 4K",
+      "E! Divertissement Angola 4K",
       "CNN Angola 4K",
       "Discovery Family Angola 4K",
     ],
@@ -8258,7 +8258,7 @@ export default function ChannelsListPage() {
       <section style={{ background: "#1A3D45", padding: "64px 16px", textAlign: "center" }}>
         <div className="max-w-3xl mx-auto">
           <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 900, marginBottom: 16, color: "#ffffff" }}>
-            Stream Bleu <span className="text-[#F96E5B]">Channel List</span>
+            Stream Bleu <span className="text-[#F96E5B]">Liste des Chaînes</span>
           </h1>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
             25 000+ live channels dans toute la France, the US, UK, and worldwide.
@@ -8277,7 +8277,7 @@ export default function ChannelsListPage() {
       <div className="bg-[#F96E5B] py-3 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-black text-sm font-semibold">
           <span>🌍 152 Countries &amp; Regions</span>
-          <span>📺 25 000+ Live Channels</span>
+          <span>📺 25 000+ Chaînes en direct</span>
           <span>🎬 4K Ultra HD Quality</span>
           <span>⚡ Zero Buffering</span>
         </div>
@@ -8341,7 +8341,7 @@ export default function ChannelsListPage() {
               Get Essai Gratuit
             </a>
             <a href="/pricing" className="border border-[#F96E5B] text-[#F96E5B] hover:bg-[#F96E5B] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
-              View Pricing
+              Voir les Tarifs
             </a>
           </div>
         </div>

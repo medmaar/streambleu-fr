@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Stream Bleu – Best 4K IPTV France",
+  title: "Avertissement | Stream Bleu – Best 4K IPTV France",
   description:
     "Legal disclaimer for Stream Bleu, de France meilleur IPTV service. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
   alternates: { canonical: "https://streambleu.fr/disclaimer" },
   openGraph: {
-    title: "Disclaimer | Stream Bleu – Best 4K IPTV France",
+    title: "Avertissement | Stream Bleu – Best 4K IPTV France",
     description: "Legal disclaimer for Stream Bleu, de France meilleur IPTV service. We do not host or stream any copyrighted content.",
     url: "https://streambleu.fr/disclaimer",
     type: "website",
@@ -17,16 +17,16 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export default function DisclaimerPage() {
+export default function AvertissementPage() {
   return (
     <main style={{ background: "linear-gradient(to left, #daf0f2 0%, #fce8e4 100%)", color: "#000000" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Disclaimer</h1>
+        <h1 className="text-4xl font-extrabold mb-4 text-[#F96E5B]">Avertissement</h1>
         <p className="text-black text-sm mb-10">Last updated: April 4, 2026</p>
 
         <section className="space-y-8 text-black leading-relaxed">
           <div className="bg-transparent border border-red-700 rounded-2xl p-8">
-            <h2 className="text-2xl font-bold text-black mb-4">Content Disclaimer</h2>
+            <h2 className="text-2xl font-bold text-black mb-4">Content Avertissement</h2>
             <p className="text-black leading-relaxed">
               Stream Bleu does not host or stream any copyrighted content. All content is
               provided by third-party providers. Users are responsible for ensuring they have

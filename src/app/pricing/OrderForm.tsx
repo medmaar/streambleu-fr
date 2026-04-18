@@ -49,7 +49,7 @@ export default function OrderForm({ plan, price, devices }: Props) {
         device: "Not specified",
         plan: `${plan} — ${devices} device${devices > 1 ? "s" : ""} — $${price}`,
         message: "—",
-        site_name: "Stream Bleu.ca",
+        site_name: "Stream Bleu",
       });
     } catch {
       // Still show success to user even if email fails
