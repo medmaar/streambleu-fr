@@ -11,46 +11,96 @@ export const metadata: Metadata = {
 
 const categories = [{
     name: "FRANCE",
-    count: "38+",
+    count: "180+",
     channels: [
-      "FR - TF1 FHD",
-      "FR - FRANCE 2 FHD",
-      "FR - FRANCE 3 FHD",
-      "FR - FRANCE 3 NOA FHD",
-      "FR - FRANCE 4 FHD",
-      "FR - FRANCE 5 FHD",
-      "FR - FRANCE Ô FHD",
-      "FR - ARTE FHD",
-      "FR - M6  FHD",
-      "FR - 6TER FHD",
-      "FR - C8 FHD",
-      "FR - W9 FHD",
-      "FR - RTS UN FHD",
-      "FR - RTS DEUX FHD",
-      "FR - AB1 FHD",
-      "FR - AB3 FHD",
-      "FR - TV BREIZH FHD",
-      "FR - TV5 MONDE FHD",
-      "FR - 13EME RUE FHD",
-      "FR - TFX FHD",
-      "FR - TF1 SERIES-FILMS FHD",
-      "FR - LFM TV FHD",
-      "FR - TVM3 FHD",
-      "FR - BET FHD",
-      "FR - C STAR FHD",
-      "FR - CANAL 31 FHD",
-      "FR - CLIQUE TV FHD",
-      "FR - COMEDIE  FHD",
-      "FR - GAME ONE  1 FHD",
-      "FR - GAME ONE FHD",
-      "FR - IDF 1 FHD",
-      "FR - J ONE FHD",
-      "FR - MY CUISINE FHD",
+      // TNT Généraliste
+      "FR - TF1 4K", "FR - TF1 FHD", "FR - FRANCE 2 4K", "FR - FRANCE 2 FHD",
+      "FR - FRANCE 3 FHD", "FR - FRANCE 3 ILE-DE-FRANCE FHD", "FR - FRANCE 3 NORMANDIE FHD",
+      "FR - FRANCE 3 BRETAGNE FHD", "FR - FRANCE 3 PAYS DE LA LOIRE FHD",
+      "FR - FRANCE 3 CENTRE-VAL DE LOIRE FHD", "FR - FRANCE 3 BOURGOGNE FHD",
+      "FR - FRANCE 3 ALSACE FHD", "FR - FRANCE 3 LORRAINE FHD",
+      "FR - FRANCE 3 CHAMPAGNE-ARDENNE FHD", "FR - FRANCE 3 NORD-PAS-DE-CALAIS FHD",
+      "FR - FRANCE 3 PICARDIE FHD", "FR - FRANCE 3 NOUVELLE-AQUITAINE FHD",
+      "FR - FRANCE 3 OCCITANIE FHD", "FR - FRANCE 3 AUVERGNE-RHÔNE-ALPES FHD",
+      "FR - FRANCE 3 PACA FHD", "FR - FRANCE 3 ALPES FHD",
+      "FR - FRANCE 4 FHD", "FR - FRANCE 5 FHD", "FR - FRANCE Ô FHD",
+      "FR - ARTE 4K", "FR - ARTE FHD",
+      "FR - M6 4K", "FR - M6 FHD", "FR - W9 FHD", "FR - TFX FHD",
+      "FR - TF1 SERIES-FILMS FHD", "FR - 6TER FHD",
+      "FR - C8 FHD", "FR - C-STAR FHD", "FR - CINE+ PREMIER FHD",
+      "FR - TMC FHD", "FR - TF1+1 FHD",
+      // Info & Actualités
+      "FR - BFM TV 4K", "FR - BFM TV FHD", "FR - BFM BUSINESS FHD",
+      "FR - BFM PARIS FHD", "FR - BFM LYON FHD", "FR - BFM MARSEILLE FHD",
+      "FR - CNEWS FHD", "FR - LCI FHD", "FR - EUROPE 1 TV FHD",
+      "FR - RTL FHD", "FR - PUBLIC SENAT FHD", "FR - LCP ASSEMBLEE FHD",
+      "FR - TV5 MONDE FHD", "FR - TV5 MONDE EUROPE FHD", "FR - FRANCE 24 FHD",
+      "FR - FRANCE 24 ARABIC FHD", "FR - RFI FHD",
+      // Sport
+      "FR - BEIN SPORTS 1 4K", "FR - BEIN SPORTS 1 FHD", "FR - BEIN SPORTS 2 FHD",
+      "FR - BEIN SPORTS 3 FHD", "FR - BEIN SPORTS 4 FHD", "FR - BEIN SPORTS MAX 1 FHD",
+      "FR - BEIN SPORTS MAX 2 FHD", "FR - BEIN SPORTS MAX 3 FHD",
+      "FR - BEIN SPORTS MAX 4 FHD", "FR - BEIN SPORTS MAX 5 FHD",
+      "FR - BEIN SPORTS MAX 6 FHD", "FR - BEIN SPORTS MAX 7 FHD",
+      "FR - RMC SPORT 1 4K", "FR - RMC SPORT 1 FHD", "FR - RMC SPORT 2 FHD",
+      "FR - RMC SPORT 3 FHD", "FR - RMC SPORT 4 FHD",
+      "FR - CANAL+ SPORT 1 FHD", "FR - CANAL+ SPORT 2 FHD",
+      "FR - CANAL+ SPORT 3 FHD", "FR - CANAL+ SPORT 4 FHD",
+      "FR - EUROSPORT 1 4K", "FR - EUROSPORT 1 FHD", "FR - EUROSPORT 2 FHD",
+      "FR - L'EQUIPE TV FHD", "FR - INFOSPORT+ FHD",
+      "FR - AB MOTEURS FHD", "FR - SPORT EN FRANCE FHD",
+      "FR - GOLF+ FHD", "FR - TENNIS CHANNEL FHD", "FR - RUGBY+ FHD",
+      "FR - MOTOR VISION FHD", "FR - EXTREME SPORTS FHD",
+      // Canal+
+      "FR - CANAL+ 4K", "FR - CANAL+ FHD", "FR - CANAL+ CINEMA FHD",
+      "FR - CANAL+ SERIES FHD", "FR - CANAL+ DOCS FHD",
+      "FR - CANAL+ FAMILY FHD", "FR - CANAL+ KIDS FHD",
+      "FR - CANAL+ COMEDIE FHD", "FR - CANAL+ ACTION FHD",
+      "FR - CANAL+ DECALE FHD", "FR - CANAL+ MYSTERY FHD",
+      "FR - CANAL+ GRAND ECRAN FHD",
+      // Cinéma
+      "FR - CINE+ PREMIER 4K", "FR - CINE+ PREMIER FHD", "FR - CINE+ CLUB FHD",
+      "FR - CINE+ EMOTION FHD", "FR - CINE+ FAMIZ FHD", "FR - CINE+ FRISSON FHD",
+      "FR - CINE+ CLASSIC FHD",
+      "FR - TCM CINEMA FHD", "FR - PARAMOUNT CHANNEL FHD",
+      "FR - ACTION FHD", "FR - POLAR+ FHD", "FR - SF 1 FHD",
+      "FR - 13EME RUE FHD", "FR - THRILLER FHD",
+      "FR - COMEDY CENTRAL FHD",
+      // Divertissement & Général
+      "FR - M6 BOUTIQUE FHD", "FR - GULLI FHD", "FR - TFOU MAX FHD",
+      "FR - PIWI+ FHD", "FR - TIJI FHD", "FR - J-ONE FHD",
+      "FR - GAME ONE FHD", "FR - MANGAS FHD",
+      "FR - COMEDIE+ FHD", "FR - RTL 9 FHD", "FR - SERIES+ FHD",
+      "FR - PARIS PREMIERE FHD", "FR - TEVA FHD", "FR - CHERIE 25 FHD",
+      "FR - CLIQUE TV FHD", "FR - VIAPLAY FHD",
+      "FR - TV BREIZH FHD", "FR - IDF1 FHD",
+      "FR - LFM TV FHD", "FR - NON STOP PEOPLE FHD",
+      "FR - HISTOIRE TV FHD", "FR - TOUTE L'HISTOIRE FHD",
+      "FR - ODYSSEE FHD", "FR - USHUAIA TV FHD",
+      "FR - NATIONAL GEOGRAPHIC FHD", "FR - NATIONAL GEOGRAPHIC WILD FHD",
+      "FR - ANIMAL PLANET FHD", "FR - DISCOVERY CHANNEL FHD",
+      "FR - DISCOVERY SCIENCE FHD", "FR - PLANETE+ FHD",
+      "FR - PLANETE+ CRIME INVESTIGATION FHD", "FR - SCIENCE & VIE TV FHD",
+      // Musique
+      "FR - MTV FRANCE FHD", "FR - MCM FHD", "FR - MCM TOP FHD",
+      "FR - M6 MUSIC FHD", "FR - RFM TV FHD", "FR - FIP TV FHD",
+      "FR - TRACE URBAN FHD", "FR - TRACE TROPICAL FHD",
+      "FR - MEZZO FHD", "FR - STINGRAY CLASSICA FHD",
+      // Lifestyle & Cuisine
+      "FR - MY CUISINE FHD", "FR - CUISINE+ FHD", "FR - GOURMET TV FHD",
+      "FR - FASHION TV FHD", "FR - LUXE TV FHD",
+      "FR - D&CO FHD", "FR - MAISON+ FHD", "FR - TEVA LIFESTYLE FHD",
+      "FR - ELLE GIRL FHD",
+      // Régionales
+      "FR - FRANCE 3 ALSACE FHD", "FR - FRANCE 3 ANTILLES FHD",
+      "FR - ANTILLE TV FHD", "FR - CANAL 10 FHD", "FR - CANAL ANTILLES FHD",
+      "FR - MARTINIQUE LA 1ERE FHD", "FR - GUADELOUPE LA 1ERE FHD",
+      "FR - GUYANE LA 1ERE FHD", "FR - REUNION LA 1ERE FHD",
+      "FR - TAHITI NUI TV FHD", "FR - NC LA 1ERE FHD",
+      "FR - WALLA TV FHD", "FR - TELE CORSE FHD",
+      // AB Group
+      "FR - AB1 FHD", "FR - AB3 FHD", "FR - NOVA FHD",
       "FR - NOVELAS TV FHD",
-      "FR - PARIS PREMIERE FHD",
-      "FR - RTL 9 FHD",
-      "FR - TEVA FHD",
-      "FR - CHERIE 25 FHD",
     ],
   },{
     name: "BELGIQUE",
@@ -8106,28 +8156,28 @@ export default function ChannelsListPage() {
       <section style={{ background: "#5a5fcf", padding: "64px 16px", textAlign: "center" }}>
         <div className="max-w-3xl mx-auto">
           <h1 style={{ fontSize: "clamp(2rem,5vw,3rem)", fontWeight: 900, marginBottom: 16, color: "#ffffff" }}>
-            Stream Bleu <span className="text-[#5a5fcf]">Liste des Chaînes</span>
+            Stream Bleu <span style={{ color: "#c5bcf5" }}>Liste des Chaînes</span>
           </h1>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
-            25 000+ live channels dans toute la France, the US, UK, and worldwide.
-            Every plan includes all channels below — no add-ons required.
+            25 000+ chaînes en direct pour la France, l'Europe et le monde entier.
+            Tous les forfaits incluent la liste complète des chaînes — sans options payantes.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
-            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> All Français networks</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> TSN &amp; Sportsnet</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> 4K &amp; HD quality</span>
-            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> PPV included</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> Toutes les chaînes françaises</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> beIN Sports &amp; RMC Sport</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> Qualité 4K &amp; HD</span>
+            <span className="flex items-center gap-2"><span style={{ color: "#c5bcf5" }}>✓</span> PPV inclus sans supplément</span>
           </div>
         </div>
       </section>
 
       {/* Stats bar */}
       <div className="bg-[#5a5fcf] py-3 px-4">
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-black text-sm font-semibold">
-          <span>🌍 152 Countries &amp; Regions</span>
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-white text-sm font-semibold">
+          <span>🌍 152 Pays &amp; Régions</span>
           <span>📺 25 000+ Chaînes en direct</span>
-          <span>🎬 4K Ultra HD Quality</span>
-          <span>⚡ Zero Buffering</span>
+          <span>🎬 Qualité 4K Ultra HD</span>
+          <span>⚡ Zéro Coupure</span>
         </div>
       </div>
 
@@ -8147,7 +8197,7 @@ export default function ChannelsListPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="bg-white border border-[rgba(123,135,232,0.25)] text-black text-xs px-3 py-1 rounded-full font-medium">
-                    {cat.count} channels
+                    {cat.count} chaînes
                   </span>
                   <svg
                     className="w-5 h-5 text-black transition-transform duration-300 group-open:rotate-180"
@@ -8178,18 +8228,18 @@ export default function ChannelsListPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "64px 16px", background: "#5a5fcf", textAlign: "center" }}>
-        <div className="max-w-2xl mx-auto">
-          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Access All 25 000+ Channels</h2>
-          <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 32 }}>
-            Every plan includes the full channel list. Try it free for 24 hours — no credit card required.
+      <section style={{ padding: "64px 24px", background: "transparent" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
+          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Accédez à 25 000+ Chaînes</h2>
+          <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 32, fontSize: 16, lineHeight: 1.6 }}>
+            Chaque forfait inclut la liste complète des chaînes. Testez gratuitement pendant 24h — sans carte bancaire.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/essai-gratuit" style={{ background: "#5a5fcf", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
-              Get Essai Gratuit
+            <a href="/essai-gratuit" style={{ background: "#e03e3e", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none", display: "inline-block" }}>
+              Essai Gratuit 24h
             </a>
-            <a href="/tarifs" className="border border-[#5a5fcf] text-[#5a5fcf] hover:bg-[#5a5fcf] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
-              Voir les Tarifs
+            <a href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.6)", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none", display: "inline-block" }}>
+              Voir les Tarifs →
             </a>
           </div>
         </div>
