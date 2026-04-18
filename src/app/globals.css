@@ -271,3 +271,12 @@ nav {
   display: inline-block;
   filter: drop-shadow(0 2px 8px rgba(201,190,255,0.4));
 }
+
+/* ── STREAMING WAVES LOGO PULSE ── */
+@keyframes wavesPulse {
+  0%, 100% { transform: scale(1);    filter: drop-shadow(0 0 4px rgba(201,190,255,0.3)); }
+  50%       { transform: scale(1.06); filter: drop-shadow(0 0 8px rgba(201,190,255,0.55)); }
+}
+.logo-tower {
+  animation: wavesPulse 3s ease-in-out infinite;
+}

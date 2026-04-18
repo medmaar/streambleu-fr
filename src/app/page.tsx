@@ -255,7 +255,7 @@ export default function HomePage() {
 
         {/* ── REVIEWS ── */}
         <section style={{ padding: "80px 16px", background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #C9BEFF 30%, #FFDBFD 60%, rgba(220,100,120,0.07) 100%)" }}>
-          <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div style={{ maxWidth: 680, margin: "0 auto" }}>
             <ReviewsSection showHeader={true} />
             <div style={{ textAlign: "center", marginTop: 40 }}>
               <a href="/reviews" style={{ display: "inline-block", background: "#6367FF", color: "#fff", padding: "12px 28px", borderRadius: 12, fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
