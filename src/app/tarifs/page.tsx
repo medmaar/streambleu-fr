@@ -114,7 +114,7 @@ export default function TarifsPage() {
               { name: "Bordeaux", href: "/iptv-bordeaux" },
             ].map(city => (
               <Link key={city.href} href={city.href} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#1a1a4e", textDecoration: "none" }}>
-                🇫🇷 IPTV {city.name}
+                <img src="https://flagcdn.com/20x15/fr.png" alt="FR" width={20} height={15} style={{ borderRadius: 2, display: "inline-block", verticalAlign: "middle", marginRight: 6 }} />IPTV {city.name}
               </Link>
             ))}
           </div>

@@ -193,7 +193,7 @@ export default function HomePage() {
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link href="/tarifs" style={{
-                background: "#2d9e6b",
+                background: "#e03e3e",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 17,
@@ -201,21 +201,20 @@ export default function HomePage() {
                 borderRadius: 14,
                 textDecoration: "none",
                 display: "inline-block",
-                boxShadow: "0 6px 20px rgba(45,158,107,0.5)",
+                boxShadow: "0 6px 20px rgba(224,62,62,0.5)",
               }}>
                 Voir les Tarifs →
               </Link>
               <Link href="/essai-gratuit" style={{
-                background: "#f5a623",
-                border: "none",
-                color: "#1a1a4e",
+                background: "transparent",
+                border: "2px solid #fff",
+                color: "#fff",
                 fontWeight: 700,
                 fontSize: 17,
                 padding: "16px 36px",
                 borderRadius: 14,
                 textDecoration: "none",
                 display: "inline-block",
-                boxShadow: "0 6px 20px rgba(245,166,35,0.5)",
               }}>
                 Essai Gratuit
               </Link>
