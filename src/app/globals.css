@@ -260,3 +260,14 @@ nav {
 .phone-input-wrapper .PhoneInputCountrySelectArrow {
   color: rgba(255,255,255,0.5);
 }
+
+/* ── EIFFEL TOWER LOGO FLOAT ── */
+@keyframes towerFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-2.5px); }
+}
+.logo-tower {
+  animation: towerFloat 3.2s ease-in-out infinite;
+  display: inline-block;
+  filter: drop-shadow(0 2px 8px rgba(201,190,255,0.4));
+}

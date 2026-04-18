@@ -2,33 +2,69 @@ import Link from "next/link";
 
 export default function Logo({ className }: { className?: string }) {
   return (
-    <Link href="/" className={`flex items-center gap-2 shrink-0 ${className ?? ""}`} aria-label="Stream Bleu IPTV France Logo">
-      <span className="logo-leaf" style={{ display: "inline-flex", alignItems: "center" }}>
-        {/* Water drop / stream icon */}
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 100 100"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            fill="#6367FF"
-            d="M50 5 C50 5, 15 45, 15 62 C15 80.4 31 93 50 93 C69 93 85 80.4 85 62 C85 45 50 5 50 5Z"
-          />
-          <path
-            fill="rgba(255,255,255,0.25)"
-            d="M38 55 C35 62 36 72 42 78"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </svg>
-      </span>
-      <span style={{ fontWeight: 700, fontSize: "20px", lineHeight: 1, letterSpacing: "0.04em" }}>
+    <Link
+      href="/"
+      className={`flex items-center gap-2.5 shrink-0 ${className ?? ""}`}
+      aria-label="Stream Bleu IPTV France Logo"
+    >
+      {/* Minimal Eiffel Tower icon */}
+      <svg
+        className="logo-tower"
+        width="28"
+        height="36"
+        viewBox="0 0 40 54"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <defs>
+          <linearGradient
+            id="streambleu-tower-grad"
+            x1="20" y1="0" x2="20" y2="54"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0%" stopColor="#ffffff" />
+            <stop offset="100%" stopColor="#C9BEFF" />
+          </linearGradient>
+        </defs>
+        {/* Tower silhouette + arch cutout (evenodd fill rule) */}
+        <path
+          fillRule="evenodd"
+          fill="url(#streambleu-tower-grad)"
+          d="M 20 2
+             L 23 12
+             L 27 22
+             L 25 24
+             L 28 32
+             L 30 34
+             L 36 54
+             L 4 54
+             L 10 34
+             L 12 32
+             L 15 24
+             L 13 22
+             L 17 12
+             Z
+             M 27 54 L 27 44 Q 20 36 13 44 L 13 54 Z"
+        />
+        {/* Subtle horizontal beam line at first floor */}
+        <line
+          x1="10" y1="34" x2="30" y2="34"
+          stroke="rgba(255,255,255,0.25)"
+          strokeWidth="1"
+        />
+        {/* Subtle beam at second floor */}
+        <line
+          x1="13" y1="22" x2="27" y2="22"
+          stroke="rgba(255,255,255,0.2)"
+          strokeWidth="0.8"
+        />
+      </svg>
+
+      {/* Brand name */}
+      <span style={{ fontWeight: 800, fontSize: "19px", lineHeight: 1, letterSpacing: "0.04em" }}>
         <span style={{ color: "#ffffff" }}>STREAM </span>
-        <span className="logo-4k" style={{ color: "#C9BEFF" }}>BLEU</span>
+        <span className="logo-4k">BLEU</span>
       </span>
     </Link>
   );
