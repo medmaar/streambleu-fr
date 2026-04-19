@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://streambleu.fr"),
     icons: { icon: "/favicon.svg" },
     title: {
-        default: "IPTV France Premium | Stream Bleu",
-        template: "%s | Stream Bleu IPTV France",
+        default: "Abonnement IPTV France 2026 — IPTV Premium 4K | Stream Bleu",
+        template: "%s | Stream Bleu — Abonnement IPTV France",
     },
     description:
-        "Le meilleur abonnement IPTV en France. Plus de 25 000 chaînes en direct, 120 000 films et séries en 4K. Plans à partir de 9€. Essai gratuit — sans carte bancaire.",
+        "Abonnement IPTV France 2026 — Service IPTV premium 4K. 25 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. À partir de 9€/mois. Essai gratuit 24h.",
     keywords:
-        "iptv france, meilleur iptv france 2026, abonnement iptv france, iptv 4k france, iptv premium france, stream bleu",
+        "abonnement iptv, iptv abonnement, iptv france, iptv premium, meilleur iptv france, abonnement iptv france, iptv sans coupure, french iptv",
     openGraph: {
         siteName: "Stream Bleu",
         locale: "fr_FR",

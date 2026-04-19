@@ -21,6 +21,62 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "iptv-sans-coupure",
+    title: "IPTV Sans Coupure en France 2026 — Fini le Buffering",
+    excerpt: "Comment avoir un IPTV sans coupure en France ? Guide complet sur les serveurs stables et pourquoi Stream Bleu garantit zéro buffering.",
+    date: "15 mar. 2026",
+    readTime: "8 min",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-pas-cher-france",
+    title: "IPTV Pas Cher France 2026 — À partir de 4€/mois",
+    excerpt: "Comment trouver un IPTV pas cher en France sans sacrifier la qualité ? Comparatif des prix et guide pour éviter les arnaques.",
+    date: "20 mar. 2026",
+    readTime: "7 min",
+    tag: "Comparatif",
+  },
+  {
+    slug: "meilleur-abonnement-iptv-france",
+    title: "Meilleur Abonnement IPTV France 2026 — Guide Complet",
+    excerpt: "Quel est le meilleur abonnement IPTV en France ? Critères de choix, comparatif et pourquoi Stream Bleu arrive en tête.",
+    date: "1 avr. 2026",
+    readTime: "9 min",
+    tag: "Avis",
+  },
+  {
+    slug: "iptv-stable-france",
+    title: "IPTV Stable France 2026 — Les Critères d'un Service Fiable",
+    excerpt: "Pourquoi la stabilité est le critère n°1 pour un IPTV en France. Infrastructure, uptime et comment Stream Bleu garantit 99,9% de disponibilité.",
+    date: "5 avr. 2026",
+    readTime: "7 min",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-france-avis",
+    title: "IPTV France Avis 2026 — Ce que Disent les Vrais Clients",
+    excerpt: "Avis vérifiés de 50 000+ clients sur Stream Bleu. Trustpilot, Google et WhatsApp — ce que disent vraiment les utilisateurs.",
+    date: "8 avr. 2026",
+    readTime: "6 min",
+    tag: "Avis",
+  },
+  {
+    slug: "iptv-test-gratuit",
+    title: "IPTV Test Gratuit France 2026 — Essai 24h Sans CB",
+    excerpt: "Comment tester un service IPTV gratuitement en France ? Guide de l'essai gratuit Stream Bleu : 24h d'accès complet sans carte bancaire.",
+    date: "10 avr. 2026",
+    readTime: "5 min",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-rapide-france",
+    title: "IPTV Rapide France 2026 — Zap Instantané & Chargement Ultra-Rapide",
+    excerpt: "IPTV rapide en France : zapping instantané, chargement en moins d'une seconde. Pourquoi Stream Bleu est l'IPTV le plus réactif du marché.",
+    date: "12 avr. 2026",
+    readTime: "6 min",
+    tag: "Guide",
+  },
+  {
     slug: "meilleur-iptv-france-2026",
     title: "Meilleur IPTV France 2026 : Top Services Testés & Classés",
     excerpt: "Nous avons testé et classé les meilleurs services IPTV disponibles en France pour 2026. Stream Bleu prend la première place — découvrez pourquoi.",
@@ -47,7 +103,7 @@ const posts = [
   {
     slug: "iptv-firestick-france",
     title: "Comment Installer l'IPTV sur Fire Stick en France (2026)",
-    excerpt: "Guide étape par étape pour configurer Stream Bleu sur votre Amazon Fire Stick en France. Fonctionne sur Fire TV Stick 4K et Fire TV Cube.",
+    excerpt: "Guide étape par étape pour configurer Stream Bleu sur votre Amazon Fire Stick en France.",
     date: "1 mar. 2026",
     readTime: "7 min",
     tag: "Guide",
@@ -55,7 +111,7 @@ const posts = [
   {
     slug: "meilleur-lecteur-iptv-france",
     title: "Meilleur Lecteur IPTV pour la France 2026 : TiviMate, Smarters & Plus",
-    excerpt: "Comparatif des meilleurs applications lecteurs IPTV disponibles en France. TiviMate, IPTV Smarters Pro, IBO Player et plus encore — testés et évalués.",
+    excerpt: "Comparatif des meilleurs lecteurs IPTV : TiviMate, IPTV Smarters Pro, IBO Player — testés et évalués pour la France.",
     date: "15 mar. 2026",
     readTime: "6 min",
     tag: "Guide",
@@ -65,8 +121,9 @@ const posts = [
 const tagColors: Record<string, string> = {
   Avis: "#5a5fcf",
   Légal: "#7b87e8",
-  Comparatif: "#c5bcf5",
+  Comparatif: "#8b92ec",
   Guide: "#5a5fcf",
+  SEO: "#e03e3e",
 };
 
 export default function BlogPage() {

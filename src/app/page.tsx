@@ -4,16 +4,16 @@ import HomePricing from "./components/HomePricing";
 import ReviewsSection from "./components/ReviewsSection";
 
 export const metadata: Metadata = {
-  title: { absolute: "Meilleur IPTV France 2026 — 4K Ultra HD | Stream Bleu" },
+  title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu" },
   description:
-    "Le meilleur abonnement IPTV en France. Streams H.265/HEVC avec support HDR10 & Dolby Vision. 25 000+ chaînes en direct, 120 000+ films et séries — à partir de 9€/mois. Essai gratuit.",
+    "Abonnement IPTV France 2026 — Le meilleur service IPTV premium 4K. 25 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. Activation instantanée. Essai gratuit 24h sans carte bancaire. À partir de 9€/mois.",
   keywords:
-    "iptv france, meilleur iptv france 2026, abonnement iptv france, iptv 4k france, iptv premium france, stream bleu, iptv pas cher france",
+    "abonnement iptv, iptv abonnement, iptv france, iptv premium, meilleur iptv france, abonnement iptv france, iptv 4k france, iptv sans coupure, iptv stable france, french iptv",
   alternates: { canonical: "https://streambleu.fr" },
   openGraph: {
-    title: "Meilleur IPTV France 2026 — 4K Ultra HD | Stream Bleu",
+    title: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu",
     description:
-      "Le meilleur abonnement IPTV en France. 25 000+ chaînes, 120 000+ films et séries en 4K. À partir de 9€/mois. Essai gratuit sans carte bancaire.",
+      "Abonnement IPTV France 2026. Le meilleur IPTV premium 4K — 25 000+ chaînes, beIN Sports, Canal+, sans coupure. À partir de 9€/mois. Essai gratuit 24h.",
     url: "https://streambleu.fr",
     type: "website",
     siteName: "Stream Bleu",
@@ -169,7 +169,7 @@ export default function HomePage() {
               borderRadius: 999,
               marginBottom: 28,
             }}>
-              🇫🇷 Meilleur IPTV France — 2026
+              🇫🇷 Abonnement IPTV France — N°1 2026
             </span>
             <h1 style={{
               fontSize: "clamp(36px, 6vw, 64px)",
@@ -178,8 +178,8 @@ export default function HomePage() {
               marginBottom: 24,
               color: "#ffffff",
             }}>
-              L&apos;IPTV Premium<br />
-              <span style={{ color: "#5a5fcf" }}>Made for France</span>
+              Abonnement IPTV France<br />
+              <span style={{ color: "#c5bcf5" }}>Premium 4K Sans Coupure</span>
             </h1>
             <p style={{
               fontSize: "clamp(16px, 2vw, 20px)",
@@ -188,8 +188,7 @@ export default function HomePage() {
               margin: "0 auto 36px",
               lineHeight: 1.7,
             }}>
-              Streams H.265/HEVC avec support HDR10 &amp; Dolby Vision. 25 000+ chaînes en direct
-              et 120 000+ films &amp; séries — à la résolution que votre écran mérite.
+              Le meilleur abonnement IPTV en France : 25 000+ chaînes en direct, beIN Sports, Canal+, RMC Sport et 120 000+ films en 4K Ultra HD H.265. IPTV premium sans coupure, activation instantanée — à partir de 9€/mois.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link href="/tarifs" style={{
@@ -457,7 +456,32 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── FINAL CTA ── */}
+        {/* ── SEO INTERNAL LINKS HUB ── */}
+        <section style={{ padding: "48px 16px 0" }}>
+          <div style={{ maxWidth: 860, margin: "0 auto" }}>
+            <h2 style={{ textAlign: "center", fontSize: "1.1rem", fontWeight: 700, color: "#5a5fcf", marginBottom: 20, letterSpacing: "0.02em" }}>
+              Explorer nos services IPTV
+            </h2>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+              {[
+                {l:"/iptv-france", t:"IPTV France"},
+                {l:"/abonnement-iptv", t:"Abonnement IPTV"},
+                {l:"/iptv-premium", t:"IPTV Premium 4K"},
+                {l:"/meilleur-iptv-france", t:"Meilleur IPTV France"},
+                {l:"/iptv-francais", t:"IPTV Français"},
+                {l:"/blog/iptv-sans-coupure", t:"IPTV Sans Coupure"},
+                {l:"/blog/iptv-pas-cher-france", t:"IPTV Pas Cher"},
+                {l:"/blog/meilleur-abonnement-iptv-france", t:"Meilleur Abonnement IPTV"},
+                {l:"/blog/iptv-france-avis", t:"Avis IPTV France"},
+                {l:"/liste-chaines", t:"Liste des Chaînes"},
+              ].map((x) => (
+                <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.07)", border: "1px solid rgba(90,95,207,0.18)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        $/* ── FINAL CTA ── */
         <section style={{ padding: "80px 16px", textAlign: "center", background: "transparent" }}>
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#1a1a4e" }}>
