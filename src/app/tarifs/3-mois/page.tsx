@@ -122,7 +122,7 @@ export default function Pricing3MonthsPage() {
                 FAQ
               </p>
               <h2 style={{ color: "#ffffff", fontSize: "1.4rem", fontWeight: 800, marginBottom: 24 }}>
-                Frequently Asked Questions
+                Questions Fréquentes
               </h2>
               <PlanFAQ items={faqItems} />
             
