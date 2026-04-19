@@ -143,13 +143,42 @@ export default function HomePage() {
           display: "flex",
           alignItems: "center",
         }}>
-          <div style={{
-            position: "absolute", inset: 0,
-            backgroundImage: "url('/hero.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "70% 30%",
-            zIndex: 0,
-          }} />
+          {/* ── HERO IMAGE CAROUSEL ── */}
+          <div style={{ position: "absolute", inset: 0, zIndex: 0, overflow: "hidden" }}>
+            <div
+              className="hero-carousel-track"
+              style={{
+                display: "flex",
+                height: "100%",
+                width: "600%",
+                animation: "heroScroll 24s linear infinite",
+              }}
+            >
+              {[
+                { src: "/abonnement-iptv-france-1.jpg", alt: "Abonnement IPTV France — supporters français" },
+                { src: "/abonnement-iptv-france-2.jpg", alt: "IPTV France — fans coupe du monde" },
+                { src: "/abonnement-iptv-france-3.jpg", alt: "IPTV Premium France — Champs-Élysées" },
+                { src: "/abonnement-iptv-france-4.jpg", alt: "Abonnement IPTV — supporters Tour Eiffel" },
+                { src: "/abonnement-iptv-france-5.jpg", alt: "IPTV France 4K — équipe de France football" },
+                { src: "/abonnement-iptv-france-6.jpg", alt: "Service IPTV France — supporters stade" },
+              ].map((img, i) => (
+                <div key={i} style={{ flex: "0 0 16.666%", height: "100%", position: "relative" }}>
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: "center center",
+                      display: "block",
+                    }}
+                    loading={i === 0 ? "eager" : "lazy"}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
           <div style={{
             position: "absolute", inset: 0,
             background: "linear-gradient(to bottom, rgba(90,95,207,0.72) 0%, rgba(90,95,207,0.88) 100%)",
@@ -481,7 +510,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        $/* ── FINAL CTA ── */
+        {/* ── FINAL CTA ── */}
         <section style={{ padding: "80px 16px", textAlign: "center", background: "transparent" }}>
           <div style={{ maxWidth: 620, margin: "0 auto" }}>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 44px)", fontWeight: 900, marginBottom: 16, color: "#1a1a4e" }}>
