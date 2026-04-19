@@ -206,7 +206,7 @@ export default function PlanOrderForm({ plan }: Props) {
       </button>
 
       <p style={{ textAlign: "center", color: "rgba(255,255,255,0.55)", fontSize: 12 }}>
-        Sécurisé · Identifiants envoyés par email en quelques minutes
+        🔒 Sécurisé · Identifiants envoyés par email ou WhatsApp en moins de 5 minutes
       </p>
     </form>
   );
