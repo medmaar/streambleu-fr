@@ -5,14 +5,29 @@
       <stop offset="100%" stop-color="#5a5fcf"/>
     </linearGradient>
   </defs>
+  <!-- Purple rounded square background -->
   <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <!-- White circle -->
-  <circle cx="32" cy="32" r="26" fill="white"/>
-  <!-- Spotify-style angled arcs in purple -->
-  <!-- Bottom arc (widest) -->
-  <path d="M 13 41 C 20 35, 38 34, 51 39" stroke="#5a5fcf" stroke-width="4.8" fill="none" stroke-linecap="round"/>
-  <!-- Middle arc -->
-  <path d="M 16 32 C 23 26, 39 25, 50 30" stroke="#5a5fcf" stroke-width="4.4" fill="none" stroke-linecap="round"/>
-  <!-- Top arc (narrowest) -->
-  <path d="M 19 23 C 25 18, 39 17, 48 22" stroke="#5a5fcf" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Eiffel Tower silhouette — exact same path as navbar logo, scaled to fit 64×64 -->
+  <g transform="translate(12, 4) scale(1.0)">
+    <path
+      fill-rule="evenodd"
+      fill="white"
+      opacity="0.95"
+      d="M 20 2
+         L 23 12
+         L 27 22
+         L 25 24
+         L 28 32
+         L 30 34
+         L 36 54
+         L 4 54
+         L 10 34
+         L 12 32
+         L 15 24
+         L 13 22
+         L 17 12
+         Z
+         M 27 54 L 27 44 Q 20 36 13 44 L 13 54 Z"
+    />
+  </g>
 </svg>
