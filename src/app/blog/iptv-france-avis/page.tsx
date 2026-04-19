@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV France Avis 2026 — Ce que Disent les Vrais Clients | Stream Bleu",
-  description: "Avis sur les services IPTV France en 2026. Ce que disent vraiment les clients de Stream Bleu : Trustpilot, Google, WhatsApp. 50 000+ clients satisfaits en France.",
+  title: "IPTV France Avis 2026 — Clients Vérifiés | Stream Bleu",
+  description: "Avis IPTV France 2026 — ce que disent vraiment 50 000+ clients de Stream Bleu sur Trustpilot, Google et WhatsApp.",
   keywords: "iptv france avis, avis iptv france, stream bleu avis, meilleur iptv france avis, service iptv france avis",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-france-avis" },
   openGraph: {
-    title: "IPTV France Avis 2026 — Ce que Disent les Vrais Clients | Stream Bleu",
-    description: "Avis sur les services IPTV France en 2026. Ce que disent vraiment les clients de Stream Bleu : Trustpilot, Google, WhatsApp. 50 000+ clients satisfaits en France.",
+    title: "IPTV France Avis 2026 — Clients Vérifiés | Stream Bleu",
+    description: "Avis IPTV France 2026 — ce que disent vraiment 50 000+ clients de Stream Bleu sur Trustpilot, Google et WhatsApp.",
     url: "https://streambleu.fr/blog/iptv-france-avis", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV France Avis 2026 — Ce que Disent les Vrais Clients | Stream Bleu" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV France Avis 2026 — Clients Vérifiés | Stream Bleu" }],
   },
 };
 

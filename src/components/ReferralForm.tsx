@@ -81,7 +81,7 @@ export default function ReferralForm() {
             ✓ Parrainage soumis ! Nous l&apos;examinerons rapidement et vous contacterons.
           </div>
         ) : (
-          <button type="submit" disabled={status === "loading"} style={{ width: "100%", background: "#5a5fcf", color: "#fff", padding: "16px", borderRadius: 12, fontWeight: 700, fontSize: 16, border: "none", cursor: "pointer", opacity: status === "loading" ? 0.6 : 1, fontFamily: "inherit", boxShadow: "0 4px 16px rgba(90,95,207,0.35)" }}>
+          <button type="submit" disabled={status === "loading"} style={{ width: "100%", background: "#e03e3e", color: "#fff", padding: "16px", borderRadius: 12, fontWeight: 700, fontSize: 16, border: "none", cursor: "pointer", opacity: status === "loading" ? 0.6 : 1, fontFamily: "inherit", boxShadow: "0 4px 16px rgba(224,62,62,0.35)" }}>
             {status === "loading" ? "Envoi en cours…" : "Soumettre le Parrainage"}
           </button>
         )}

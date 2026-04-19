@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Rapide France 2026 — Zapping Instantané | Stream Bleu",
-  description: "IPTV rapide en France : zapping instantané, chargement des chaînes en moins d'une seconde, EPG ultra-réactif. Pourquoi Stream Bleu est l'IPTV le plus rapide disponible en France.",
+  description: "IPTV rapide en France : zapping instantané, chargement < 1 sec, EPG ultra-réactif. Stream Bleu — l'IPTV le plus rapide du marché.",
   keywords: "iptv rapide france, iptv rapide, zapping iptv rapide, iptv chargement rapide france",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-rapide-france" },
   openGraph: {
     title: "IPTV Rapide France 2026 — Zapping Instantané | Stream Bleu",
-    description: "IPTV rapide en France : zapping instantané, chargement des chaînes en moins d'une seconde, EPG ultra-réactif. Pourquoi Stream Bleu est l'IPTV le plus rapide disponible en France.",
+    description: "IPTV rapide en France : zapping instantané, chargement < 1 sec, EPG ultra-réactif. Stream Bleu — l'IPTV le plus rapide du marché.",
     url: "https://streambleu.fr/blog/iptv-rapide-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Rapide France 2026 — Zapping Instantané | Stream Bleu" }],
   },

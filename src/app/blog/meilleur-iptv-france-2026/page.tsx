@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Meilleur IPTV France 2026 : Services Testés & Classés | Stream Bleu",
   description:
-    "Quel est le meilleur service IPTV en France pour 2026 ? Nous avons testé les principaux fournisseurs sur les chaînes, la qualité 4K, la fiabilité et le support. Stream Bleu arrive en tête.",
+    "Quel est le meilleur IPTV en France 2026 ? Comparatif des services testés sur stabilité, qualité 4K et support. Stream Bleu arrive en tête.",
   keywords: "meilleur iptv france 2026, top iptv france, stream bleu avis, meilleur abonnement iptv france",
   alternates: { canonical: "https://streambleu.fr/blog/meilleur-iptv-france-2026" },
   openGraph: {

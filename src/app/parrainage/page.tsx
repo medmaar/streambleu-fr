@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ReferralForm from "../../components/ReferralForm";
 
 export const metadata: Metadata = {
-  title: "Programme de Parrainage | Stream Bleu — Parrainez un ami, gagnez +1 an gratuit",
+  title: "Parrainage IPTV France — Gagnez +1 An | Stream Bleu",
   description: "Parrainez un ami sur Stream Bleu et gagnez +1 an de service gratuit. Sans limite — chaque parrainage réussi ajoute 12 mois à votre compte.",
   keywords: "parrainage stream bleu, parrainer ami iptv, stream bleu an gratuit, affiliation iptv france",
   alternates: { canonical: "https://streambleu.fr/parrainage" },

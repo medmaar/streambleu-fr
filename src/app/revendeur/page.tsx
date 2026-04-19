@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Revendeur IPTV France 2026 | Lancez votre Business IPTV – Stream Bleu",
+  title: "Revendeur IPTV France 2026 | Stream Bleu",
   description: "Devenez revendeur IPTV en France avec Stream Bleu. Prix grossiste, options marque blanche et panneau revendeur rapide. Lancez votre propre activité IPTV dès aujourd'hui.",
   keywords: "revendeur iptv france, programme revendeur iptv france 2026, business iptv france",
   alternates: { canonical: "https://streambleu.fr/revendeur" },
   openGraph: {
-    title: "Revendeur IPTV France 2026 | Lancez votre Business IPTV – Stream Bleu",
+    title: "Revendeur IPTV France 2026 | Stream Bleu",
     description: "Devenez revendeur IPTV en France avec Stream Bleu. Prix grossiste et panneau revendeur rapide.",
     url: "https://streambleu.fr/revendeur", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/favicon.svg", width: 512, height: 512 }],

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Pas Cher France 2026 — À partir de 4€/mois | Stream Bleu",
-  description: "Comment trouver un IPTV pas cher en France sans sacrifier la qualité ? Comparatif des prix IPTV et pourquoi Stream Bleu offre le meilleur rapport qualité/prix dès 4€/mois.",
+  description: "IPTV pas cher en France : comparatif des prix et guide pour éviter les arnaques. Stream Bleu dès 4€/mois avec qualité 4K.",
   keywords: "iptv pas cher france, iptv pas cher, abonnement iptv pas cher, iptv economique france, iptv moins cher",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-pas-cher-france" },
   openGraph: {

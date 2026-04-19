@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Câble / ADSL en France 2026 : Comparatif Complet | Stream Bleu",
-  description:
-    "IPTV ou offre câble/ADSL en France ? Comparatif complet sur le prix, les chaînes, la qualité 4K et la flexibilité. Découvrez quel service est fait pour vous en 2026.",
+  title: "IPTV vs Câble France 2026 : Comparatif | Stream Bleu",
+  description: "IPTV vs câble/ADSL France 2026 : comparatif prix, chaînes, 4K et flexibilité.",
   keywords: "iptv vs cable france, iptv vs adsl france, comparatif iptv france 2026",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-vs-cable-france" },
   openGraph: {

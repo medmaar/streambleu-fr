@@ -3,7 +3,7 @@ import PlanOrderForm from "../tarifs/PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../tarifs/PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "Essai Gratuit IPTV France — Testez Stream Bleu Sans Risque | Stream Bleu" },
+  title: { absolute: "Essai Gratuit IPTV France 24h — Sans CB | Stream Bleu" },
   description: "Obtenez un essai gratuit IPTV en France. Sans carte bancaire. Accédez à 25 000+ chaînes en direct, beIN Sports, Canal+, TF1 et 120 000+ films. Activation en 5 minutes.",
   keywords: "essai gratuit iptv france, stream bleu essai, test iptv france gratuit, iptv france sans carte bancaire",
   alternates: { canonical: "https://streambleu.fr/essai-gratuit" },

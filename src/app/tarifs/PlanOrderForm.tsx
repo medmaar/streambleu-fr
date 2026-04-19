@@ -201,7 +201,7 @@ export default function PlanOrderForm({ plan }: Props) {
 
       <button type="submit" disabled={status === "loading"}
         className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60"
-        style={{ background: "#5a5fcf" }}>
+        style={{ background: "#e03e3e", boxShadow: "0 4px 16px rgba(224,62,62,0.4)" }}>
         {status === "loading" ? "Envoi en cours…" : "Commander →"}
       </button>
 

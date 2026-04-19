@@ -3,8 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Comment Installer l'IPTV sur Fire Stick en France 2026 | Stream Bleu",
-  description:
-    "Guide complet pour installer Stream Bleu sur Amazon Fire Stick en France. Compatible Fire TV Stick 4K, Fire TV Cube. Configuration IPTV Smarters et TiviMate incluse.",
+  description: "Guide pour installer Stream Bleu sur Amazon Fire Stick en France. Compatible tous modèles. 5 minutes.",
   keywords: "iptv firestick france, installer iptv fire stick france, stream bleu firestick, iptv fire tv france",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-firestick-france" },
   openGraph: {

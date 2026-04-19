@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Sans Coupure en France 2026 — Fini le Buffering | Stream Bleu",
-  description: "Comment avoir un IPTV sans coupure en France ? Tout sur les serveurs stables, la connexion requise et pourquoi Stream Bleu garantit zéro buffering. Essai gratuit 24h.",
+  description: "IPTV sans coupure en France : guide des serveurs stables, connexion requise, et pourquoi Stream Bleu garantit zéro buffering.",
   keywords: "iptv sans coupure, iptv stable, iptv sans buffering, iptv fluide france, iptv anti freeze",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-sans-coupure" },
   openGraph: {

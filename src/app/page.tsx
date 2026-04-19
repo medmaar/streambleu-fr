@@ -6,7 +6,7 @@ import ReviewsSection from "./components/ReviewsSection";
 export const metadata: Metadata = {
   title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu" },
   description:
-    "Abonnement IPTV France 2026 — Le meilleur service IPTV premium 4K. 25 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. Activation instantanée. Essai gratuit 24h sans carte bancaire. À partir de 9€/mois.",
+    "Abonnement IPTV France 2026 — IPTV premium 4K. 25 000+ chaînes, beIN Sports, Canal+. Sans coupure. Essai gratuit 24h. À partir de 9€/mois.",
   keywords:
     "abonnement iptv, iptv abonnement, iptv france, iptv premium, meilleur iptv france, abonnement iptv france, iptv 4k france, iptv sans coupure, iptv stable france, french iptv",
   alternates: { canonical: "https://streambleu.fr" },

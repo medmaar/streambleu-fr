@@ -67,7 +67,7 @@ const productSchema = {
     price: "49.00",
     priceCurrency: "EUR",
     availability: "https://schema.org/InStock",
-    url: "https://streambleu.fr/pricing/12-months",
+    url: "https://streambleu.fr/tarifs/12-mois",
   },
 };
 
