@@ -33,9 +33,8 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <link rel="preload" as="image" href="/abonnement-iptv-france-1.jpg" />
-                {/* TODO: Replace G-PLACEHOLDER with your new GA4 property ID for streambleu.fr */}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
-                <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PLACEHOLDER');` }}></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTDG47S721"></script>
+                <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KTDG47S721');` }}></script>
                             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
