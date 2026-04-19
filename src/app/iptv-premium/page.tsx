@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu",
     description: "IPTV Premium France : 4K Ultra HD, H.265/HEVC, HDR10 & Dolby Vision. 25 000+ chaînes sans coupure.",
     url: "https://streambleu.fr/iptv-premium", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV Premium France Stream Bleu" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Premium France Stream Bleu" }],
   },
 };
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "IPTV Français 2026 — Chaînes Françaises en 4K | Stream Bleu",
     description: "IPTV Français : toutes les chaînes françaises en 4K Ultra HD. Support en français 24/7.",
     url: "https://streambleu.fr/iptv-francais", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV Français Stream Bleu" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Français Stream Bleu" }],
   },
 };
 

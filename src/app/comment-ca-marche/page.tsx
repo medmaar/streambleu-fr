@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How IPTV Works en France | Stream Bleu – Best 4K IPTV France",
-  description:
-    "Learn how Stream Bleu IPTV works en France. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
-  keywords:
-    "how does IPTV work France, how to set up Stream Bleu, IPTV setup France, IPTV explained France",
-  alternates: { canonical: "https://streambleu.fr/how-it-works" },
+  title: "Comment fonctionne l'IPTV en France 2026 | Stream Bleu",
+  description: "Découvrez comment fonctionne l'IPTV en France. Installation simple en 3 étapes, appareils compatibles, connexion requise — tout pour commencer à streamer en 4K Ultra HD.",
+  keywords: "comment fonctionne iptv france, iptv explication france, installer iptv france, iptv configuration",
+  alternates: { canonical: "https://streambleu.fr/comment-ca-marche" },
   openGraph: {
-    title: "How IPTV Works en France | Stream Bleu – Best 4K IPTV France",
+    title: "Comment fonctionne l'IPTV en France 2026 | Stream Bleu",
     description: "Learn how Stream Bleu IPTV works en France. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
-    url: "https://streambleu.fr/how-it-works",
+    url: "https://streambleu.fr/comment-ca-marche",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Best 4K IPTV France" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Stream Bleu – Best 4K IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };

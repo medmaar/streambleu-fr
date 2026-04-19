@@ -27,7 +27,7 @@ const steps = [
   { num: 6, title: "Profitez de 25 000+ chaînes", desc: "L'application va charger la liste des chaînes. Naviguez dans les catégories : France, Sport, Cinéma, Séries et bien plus." },
 ];
 
-const articleSchema = {
+const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "Comment installer l'IPTV sur Fire Stick en France",
@@ -35,10 +35,24 @@ const articleSchema = {
   step: steps.map(s => ({ "@type": "HowToStep", name: s.title, text: s.desc })),
 };
 
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Comment Installer l'IPTV sur Fire Stick en France 2026",
+  description: "Comment Installer l'IPTV sur Fire Stick en France 2026 — Guide complet Stream Bleu.",
+  datePublished: "2026-03-01",
+  dateModified: "2026-04-18",
+  author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-firestick-france" },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+};
+
 export default function IPTVFirestickFrance() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
         <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>
           <div style={{ maxWidth: 820, margin: "0 auto" }}>

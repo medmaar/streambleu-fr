@@ -31,6 +31,20 @@ const rows = [
   { feature: "Support technique", iptv: "Email / WhatsApp", cable: "Boutique + téléphone", winner: "cable" },
 ];
 
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "IPTV vs Câble/ADSL en France 2026 : Comparatif Complet",
+  description: "IPTV vs Câble/ADSL en France 2026 : Comparatif Complet — Guide complet Stream Bleu.",
+  datePublished: "2026-02-20",
+  dateModified: "2026-04-18",
+  author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-vs-cable-france" },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+};
+
 export default function IPTVvsCableFrance() {
   return (
     <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "IPTV France 2026 — 25 000+ Chaînes en Direct | Stream Bleu",
     description: "Le meilleur service IPTV en France. 25 000+ chaînes, 4K Ultra HD, sans coupure. Essai gratuit 24h.",
     url: "https://streambleu.fr/iptv-france", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV France Stream Bleu" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV France Stream Bleu" }],
   },
 };
 

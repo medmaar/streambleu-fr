@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Meilleur IPTV France 2026" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Meilleur IPTV France 2026" }],
   },
 };
 

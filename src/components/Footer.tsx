@@ -8,12 +8,23 @@ const sections = [
     links: [
       { href: "/", label: "Accueil" },
       { href: "/tarifs", label: "Tarifs" },
-      { href: "/liste-chaines", label: "Chaînes" },
       { href: "/essai-gratuit", label: "Essai Gratuit" },
+      { href: "/liste-chaines", label: "Chaînes" },
+      { href: "/avis", label: "Avis" },
       { href: "/blog", label: "Blog" },
-      { href: "/revendeur", label: "Revendeur" },
-      { href: "/parrainage", label: "Parrainage" },
       { href: "/contact", label: "Contact" },
+    ],
+  },
+  {
+    title: "IPTV France",
+    links: [
+      { href: "/iptv-france", label: "IPTV France" },
+      { href: "/abonnement-iptv", label: "Abonnement IPTV" },
+      { href: "/iptv-premium", label: "IPTV Premium 4K" },
+      { href: "/meilleur-iptv-france", label: "Meilleur IPTV France" },
+      { href: "/iptv-francais", label: "IPTV Français" },
+      { href: "/parrainage", label: "Parrainage" },
+      { href: "/revendeur", label: "Revendeur" },
     ],
   },
   {
@@ -81,7 +92,7 @@ export default function Footer() {
           <div style={{
             flex: 1,
             display: "grid",
-            gridTemplateColumns: "repeat(4, minmax(110px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
             gap: "0 24px",
           }}>
             {sections.map((section) => (

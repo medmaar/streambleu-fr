@@ -35,8 +35,7 @@ const planFeatures = [
 
 function getHref(n: number, slug: string): string {
   if (n === 1) return `/tarifs/${slug}`;
-  const multiSlug = slug === "12-mois" ? "1-an" : slug;
-  return `/tarifs/${n}-connexions/${multiSlug}`;
+  return `/tarifs/${slug}-${n}-connexions`;
 }
 
 export default function HomePricing() {

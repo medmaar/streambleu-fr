@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Abonnement IPTV France 2026 — À partir de 9€/mois | Stream Bleu",
     description: "Abonnement IPTV France à partir de 9€/mois. 25 000+ chaînes, 4K Ultra HD, sans engagement.",
     url: "https://streambleu.fr/abonnement-iptv", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Abonnement IPTV France Stream Bleu" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Abonnement IPTV France Stream Bleu" }],
   },
 };
 

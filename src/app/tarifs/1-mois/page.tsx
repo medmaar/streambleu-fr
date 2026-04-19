@@ -3,12 +3,12 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "1 Mois IPTV france — 9€ | Stream Bleu" },
+  title: { absolute: "Forfait IPTV 1 Mois — 9€ | Stream Bleu" },
   description:
     "Get 1 month of IPTV in france for only 9€. 25 000+ live channels, 4K quality, Ligue 1, beIN Sports, CTV included. No contract. Login credentials sent within minutes.",
   keywords:
     "IPTV 1 month france, Stream Bleu 1 month, IPTV 9€ france, month to month IPTV france",
-  alternates: { canonical: "https://streambleu.fr/pricing/1-month" },
+  alternates: { canonical: "https://streambleu.fr/tarifs/1-mois" },
 };
 
 const faqItems: FaqItem[] = [

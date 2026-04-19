@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Get a full year of IPTV in france for only €49. 25 000+ live channels, 4K quality, Ligue 1, beIN Sports, CTV, IBO Player bonus included. Best value IPTV plan france.",
   keywords:
     "IPTV annual france, Stream Bleu 1 year, best value IPTV france, 12 month IPTV france €49, yearly IPTV france",
-  alternates: { canonical: "https://streambleu.fr/pricing/12-months" },
+  alternates: { canonical: "https://streambleu.fr/tarifs/12-mois" },
 };
 
 const faqItems: FaqItem[] = [

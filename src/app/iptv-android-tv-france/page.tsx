@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu IPTV Android TV / Google TV" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Stream Bleu IPTV Android TV / Google TV" }],
   },
   twitter: { card: "summary_large_image" },
 };

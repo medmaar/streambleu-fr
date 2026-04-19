@@ -10,15 +10,30 @@ export const metadata: Metadata = {
     title: "Meilleur Abonnement IPTV France 2026 — Guide Complet | Stream Bleu",
     description: "Quel est le meilleur abonnement IPTV en France en 2026 ? Guide complet pour choisir : qualité, prix, chaînes, stabilité. Stream Bleu offre le meilleur rapport qualité/prix.",
     url: "https://streambleu.fr/blog/meilleur-abonnement-iptv-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Meilleur Abonnement IPTV France 2026 — Guide Complet | Stream Bleu" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Meilleur Abonnement IPTV France 2026 — Guide Complet | Stream Bleu" }],
   },
 };
 
 const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Puis-je tester Meilleur Abonnement IPTV France 2026 gratuitement ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Stream Bleu propose un essai gratuit de 24h sans carte bancaire. Testez la qualit\u00e9 4K Ultra HD sur votre propre mat\u00e9riel avant de vous abonner."}}, {"@type": "Question", "name": "Combien co\u00fbte l'abonnement IPTV Stream Bleu ?", "acceptedAnswer": {"@type": "Answer", "text": "Les abonnements Stream Bleu commencent \u00e0 9\u20ac/mois (1 mois) et descendent \u00e0 4\u20ac/mois avec le forfait annuel \u00e0 49\u20ac. C'est le meilleur rapport qualit\u00e9/prix du march\u00e9 pour un service IPTV premium en France."}}, {"@type": "Question", "name": "Stream Bleu fonctionne-t-il sur ma Smart TV ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Stream Bleu est compatible avec Samsung, LG, Philips, Sony Smart TV, Amazon Firestick, Android TV, Apple TV, MAG Box et tout appareil supportant TiviMate ou IPTV Smarters Pro."}}]};
 
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Meilleur Abonnement IPTV France 2026 — Guide Complet",
+  description: "Meilleur Abonnement IPTV France 2026 — Guide Complet — Guide complet Stream Bleu.",
+  datePublished: "2026-04-01",
+  dateModified: "2026-04-18",
+  author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/meilleur-abonnement-iptv-france" },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+};
+
 export default function BlogPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ color: "#1a1a4e", minHeight: "100vh" }}>
         <section style={{ background: "linear-gradient(135deg,#4a4fc0 0%,#5a5fcf 100%)", padding: "64px 16px 48px" }}>

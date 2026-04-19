@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "IPTV Sans Coupure en France 2026 — Fini le Buffering | Stream Bleu",
     description: "Guide complet pour avoir un IPTV sans coupure en France. Pourquoi Stream Bleu garantit zéro buffering.",
     url: "https://streambleu.fr/blog/iptv-sans-coupure", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "IPTV Sans Coupure France" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Sans Coupure France" }],
   },
 };
 

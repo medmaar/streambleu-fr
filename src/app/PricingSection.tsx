@@ -2,62 +2,53 @@
 import { useRef, useState } from "react";
 
 const plans = [
-  { devices: 1,  prices: { "1 Month": 9,   "3 Months": 29,  "6 Months": 39,  "1 Year": 49  } },
-  { devices: 2,  prices: { "1 Month": 18,  "3 Months": 50,  "6 Months": 69,  "1 Year": 89  } },
-  { devices: 3,  prices: { "1 Month": 27,  "3 Months": 75,  "6 Months": 105, "1 Year": 135 } },
-  { devices: 4,  prices: { "1 Month": 36,  "3 Months": 99,  "6 Months": 140, "1 Year": 180 } },
-  { devices: 5,  prices: { "1 Month": 45,  "3 Months": 120, "6 Months": 175, "1 Year": 225 } },
-  { devices: 6,  prices: { "1 Month": 54,  "3 Months": 144, "6 Months": 210, "1 Year": 270 } },
-  { devices: 7,  prices: { "1 Month": 63,  "3 Months": 168, "6 Months": 245, "1 Year": 315 } },
-  { devices: 8,  prices: { "1 Month": 72,  "3 Months": 192, "6 Months": 280, "1 Year": 360 } },
-  { devices: 9,  prices: { "1 Month": 81,  "3 Months": 216, "6 Months": 315, "1 Year": 405 } },
-  { devices: 10, prices: { "1 Month": 90,  "3 Months": 240, "6 Months": 350, "1 Year": 450 } },
+  { devices: 1,  prices: { "1 Mois": 9,   "3 Mois": 29,  "6 Mois": 39,  "12 Mois": 49  } },
+  { devices: 2,  prices: { "1 Mois": 18,  "3 Mois": 50,  "6 Mois": 69,  "12 Mois": 89  } },
+  { devices: 3,  prices: { "1 Mois": 27,  "3 Mois": 75,  "6 Mois": 105, "12 Mois": 135 } },
+  { devices: 4,  prices: { "1 Mois": 36,  "3 Mois": 99,  "6 Mois": 140, "12 Mois": 180 } },
+  { devices: 5,  prices: { "1 Mois": 45,  "3 Mois": 120, "6 Mois": 175, "12 Mois": 225 } },
+  { devices: 6,  prices: { "1 Mois": 54,  "3 Mois": 144, "6 Mois": 210, "12 Mois": 270 } },
+  { devices: 7,  prices: { "1 Mois": 63,  "3 Mois": 168, "6 Mois": 245, "12 Mois": 315 } },
+  { devices: 8,  prices: { "1 Mois": 72,  "3 Mois": 192, "6 Mois": 280, "12 Mois": 360 } },
+  { devices: 9,  prices: { "1 Mois": 81,  "3 Mois": 216, "6 Mois": 315, "12 Mois": 405 } },
+  { devices: 10, prices: { "1 Mois": 90,  "3 Mois": 240, "6 Mois": 350, "12 Mois": 450 } },
 ];
 
-const durations = ["1 Month", "3 Months", "6 Months", "1 Year"] as const;
+const durations = ["1 Mois", "3 Mois", "6 Mois", "12 Mois"] as const;
 type Duration = typeof durations[number];
 
 // Same colors as HomePricing cards
 const cardColors: Record<Duration, { bg: string; isLight: boolean; shadow: string }> = {
-  "1 Month":  { bg: "#ffffff",  isLight: true,  shadow: "0 8px 24px rgba(123,135,232,0.15)" },
-  "3 Months": { bg: "#7b87e8",  isLight: false, shadow: "0 8px 24px rgba(45,106,120,0.3)" },
-  "6 Months": { bg: "#7b87e8",  isLight: false, shadow: "0 12px 40px rgba(123,135,232,0.45)" },
-  "1 Year":   { bg: "#5a5fcf",  isLight: false, shadow: "0 12px 40px rgba(90,95,207,0.45)" },
+  "1 Mois":  { bg: "#ffffff",  isLight: true,  shadow: "0 8px 24px rgba(123,135,232,0.15)" },
+  "3 Mois": { bg: "#c5c9f5",  isLight: true,  shadow: "0 8px 24px rgba(45,106,120,0.3)" },
+  "6 Mois": { bg: "#8b92ec",  isLight: false, shadow: "0 12px 40px rgba(123,135,232,0.45)" },
+  "12 Mois":   { bg: "#5a5fcf",  isLight: false, shadow: "0 12px 40px rgba(90,95,207,0.45)" },
 };
 
 const badgeLabels: Partial<Record<Duration, string>> = {
-  "6 Months": "Popular",
-  "1 Year":   "Best Value",
+  "12 Mois": "Meilleur Prix",
 };
 
 const badgeBg: Partial<Record<Duration, string>> = {
-  "6 Months": "#5a5fcf",
-  "1 Year":   "#5a5fcf",
+  "12 Mois": "#e03e3e",
 };
 
 const durationSlug: Record<Duration, string> = {
-  "1 Month":  "1-month",
-  "3 Months": "3-months",
-  "6 Months": "6-months",
-  "1 Year":   "1-year",
+  "1 Mois":  "1-mois",
+  "3 Mois": "3-mois",
+  "6 Mois": "6-mois",
+  "12 Mois":   "12-mois",
 };
 
 function orderHref(devices: number, dur: Duration): string {
-  if (devices === 1) {
-    const map: Record<Duration, string> = {
-      "1 Month":  "/pricing/1-month",
-      "3 Months": "/pricing/3-months",
-      "6 Months": "/pricing/6-months",
-      "1 Year":   "/pricing/12-months",
-    };
-    return map[dur];
-  }
-  return `/pricing/${devices}-devices/${durationSlug[dur]}`;
+  const slug = durationSlug[dur];
+  if (devices === 1) return `/tarifs/${slug}`;
+  return `/tarifs/${slug}-${devices}-connexions`;
 }
 
 const features = [
-  "25 000+ Live Channels",
-  "120 000+ Movies & Series",
+  "25 000+ Chaînes en Direct",
+  "120 000+ Films & Séries",
   "4K Ultra HD Quality",
   "beIN Sports · RMC Sport · Canal+ · CTV",
   "PPV Events Included",
@@ -150,7 +141,7 @@ export default function PricingSection() {
             const price = plan.prices[dur];
             const badge = badgeLabels[dur];
             const { bg, isLight, shadow } = cardColors[dur];
-            const isYear = dur === "1 Year";
+            const isYear = dur === "12 Mois";
             return (
               <div
                 key={dur}
@@ -213,7 +204,7 @@ export default function PricingSection() {
         </div>
 
         <p style={{ textAlign: "center", color: "#1a1a4e", fontSize: 12, marginTop: 24, opacity: 0.6 }}>
-          All plans include the same channels, VOD library, and features. Longer plans = lower monthly cost.
+          Tous les forfaits incluent 25 000+ chaînes, 120 000+ VOD et le support 24/7. Plus longue est la durée, moins vous payez par mois.
         </p>
       </div>
     </section>

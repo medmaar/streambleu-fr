@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Meilleur IPTV France 2026 — Comparatif & Test | Stream Bleu",
     description: "Comparatif du meilleur IPTV en France 2026. Stream Bleu : 4K Ultra HD, 25 000+ chaînes, sans coupure.",
     url: "https://streambleu.fr/meilleur-iptv-france", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Meilleur IPTV France Stream Bleu" }],
+    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Meilleur IPTV France Stream Bleu" }],
   },
 };
 
