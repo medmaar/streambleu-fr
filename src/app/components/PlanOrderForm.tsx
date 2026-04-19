@@ -27,7 +27,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const msg = encodeURIComponent(
-      `Hi Stream Bleu!\n\nI'd like to order the ${planLabel} plan at $${price}.\n\nName: ${name}\nEmail: ${email}\nCountry: ${country}\nWhatsApp: ${phone || "—"}\n\nPlease send me payment instructions. Thank you!`
+      `Bonjour Stream Bleu !\n\nJe souhaite commander le forfait ${planLabel} à ${price}€.\n\nNom : ${name}\nEmail : ${email}\nPays : ${country}\nWhatsApp : ${phone || "—"}\n\nMerci de m'envoyer les instructions de paiement.`
     );
     window.open(`https://wa.me/${whatsappNumber}?text=${msg}`, "_blank");
     setSubmitted(true);

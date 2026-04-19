@@ -137,7 +137,7 @@ export default function IptvSansCoupurePage() {
             <h2 style={{ fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>Testez l&apos;IPTV sans coupure gratuitement</h2>
             <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, fontSize: 15 }}>24h d&apos;essai gratuit • Qualité 4K Ultra HD • Zéro buffering garanti</p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/essai-gratuit" style={{ background: "#e03e3e", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit</Link>
+              <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit</Link>
               <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Voir les Tarifs →</Link>
             </div>
           </div>

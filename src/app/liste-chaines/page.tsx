@@ -8235,7 +8235,7 @@ export default function ChannelsListPage() {
             Chaque forfait inclut la liste complète des chaînes. Testez gratuitement pendant 24h — sans carte bancaire.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/essai-gratuit" style={{ background: "#e03e3e", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none", display: "inline-block" }}>
+            <a href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit 24h
             </a>
             <a href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.6)", color: "#fff", padding: "14px 32px", borderRadius: 12, fontWeight: 700, fontSize: 16, textDecoration: "none", display: "inline-block" }}>

@@ -52,7 +52,7 @@ export default function AbonnementIptvPage() {
               Le meilleur abonnement IPTV en France. 25 000+ chaînes, beIN Sports, Canal+, RMC Sport en 4K Ultra HD. Sans engagement, sans carte bancaire pour l&apos;essai.
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/essai-gratuit" style={{ background: "#e03e3e", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit 24h</Link>
+              <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit 24h</Link>
               <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.6)", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Voir les Tarifs →</Link>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function AbonnementIptvPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))", gap: 16 }}>
               {plans.map((p, i) => (
                 <div key={p.name} style={{ background: i === 3 ? "#5a5fcf" : i === 2 ? "#8b92ec" : i === 1 ? "#c5c9f5" : "#fff", borderRadius: 20, padding: "28px 22px", textAlign: "center", border: i < 2 ? "1px solid rgba(90,95,207,0.15)" : "none", position: "relative", boxShadow: i === 3 ? "0 8px 32px rgba(90,95,207,0.3)" : "0 4px 16px rgba(90,95,207,0.08)" }}>
-                  {p.tag && <span style={{ position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)", background: "#e03e3e", color: "#fff", fontSize: 11, fontWeight: 700, padding: "4px 14px", borderRadius: 999, whiteSpace: "nowrap" }}>{p.tag}</span>}
+                  {p.tag && <span style={{ position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)", background: "#f5a623", color: "#fff", fontSize: 11, fontWeight: 700, padding: "4px 14px", borderRadius: 999, whiteSpace: "nowrap" }}>{p.tag}</span>}
                   <div style={{ fontSize: 16, fontWeight: 700, color: i >= 2 ? "#fff" : "#1a1a4e", marginBottom: 6 }}>{p.name}</div>
                   <div style={{ fontSize: 36, fontWeight: 900, color: i >= 2 ? "#fff" : "#5a5fcf", marginBottom: 6 }}>{p.price}</div>
                   <p style={{ fontSize: 13, color: i >= 2 ? "rgba(255,255,255,0.8)" : "#555", marginBottom: 16, lineHeight: 1.5 }}>{p.desc}</p>
@@ -116,7 +116,7 @@ export default function AbonnementIptvPage() {
             <h2 style={{ fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>Commencez votre abonnement IPTV</h2>
             <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, fontSize: 15 }}>Essai gratuit 24h • Sans carte bancaire • Identifiants en 5 min</p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/essai-gratuit" style={{ background: "#e03e3e", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit</Link>
+              <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit</Link>
               <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Voir les Tarifs →</Link>
             </div>
           </div>

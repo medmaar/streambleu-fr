@@ -4,19 +4,19 @@ import { Suspense } from "react";
 
 function OrderContent() {
   const params = useSearchParams();
-  const devices = params.get("devices") || "1";
+  const appareils = params.get("appareils") || "1";
   const duration = params.get("duration") || "1 Month";
   const price = params.get("price") || "9";
 
   const whatsappMsg = encodeURIComponent(
-    `Hi Stream Bleu, I'd like to order the ${duration} plan for ${devices} device${Number(devices) > 1 ? "s" : ""} at $${price}.`
+    `Bonjour Stream Bleu, je souhaite commander le forfait ${duration} pour ${appareils} appareil${Number(appareils) > 1 ? "s" : ""} à ${price}€.`
   );
-  const emailSubject = encodeURIComponent(`Stream Bleu Order - ${duration} / ${devices} Device${Number(devices) > 1 ? "s" : ""}`);
+  const emailSubject = encodeURIComponent(`Stream Bleu Order - ${duration} / ${appareils} Device${Number(appareils) > 1 ? "s" : ""}`);
   const emailBody = encodeURIComponent(
-    `Hi,\n\nI'd like to purchase the following plan:\n\n- Duration: ${duration}\n- Devices: ${devices}\n- Price: $${price}\n\nPlease send me payment instructions.\n\nThank you!`
+    `Hi,\n\nI'd like to purchase the following plan:\n\n- Duration: ${duration}\n- Devices: ${appareils}\n- Price: $${price}\n\nPlease send me payment instructions.\n\nThank you!`
   );
   const telegramMsg = encodeURIComponent(
-    `Hi Stream Bleu, I want to order the ${duration} plan for ${devices} device${Number(devices) > 1 ? "s" : ""} at $${price}.`
+    `Bonjour Stream Bleu, je voudrais commander le forfait ${duration} pour ${appareils} appareil${Number(appareils) > 1 ? "s" : ""} à ${price}€.`
   );
 
   return (
@@ -44,7 +44,7 @@ function OrderContent() {
           </div>
           <div className="flex justify-between items-center mb-2">
             <span className="text-black">Devices</span>
-            <span className="font-bold">{devices} {Number(devices) === 1 ? "Device" : "Devices"}</span>
+            <span className="font-bold">{appareils} {Number(appareils) === 1 ? "Device" : "Devices"}</span>
           </div>
           <div className="border-t border-gray-700 mt-4 pt-4 flex justify-between items-center">
             <span className="text-black font-bold">Total</span>

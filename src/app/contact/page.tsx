@@ -20,7 +20,7 @@ const channels = [
     name: "WhatsApp",
     desc: "Réponse la plus rapide. Discutez directement avec notre équipe — généralement en moins de 5 minutes.",
     action: "Écrire sur WhatsApp",
-    href: "https://wa.me/17828026280?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20intéressé%20par%20votre%20service.",
+    href: "https://wa.me/17828026280?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service.",
     actionBg: "#25D366",
     actionColor: "#fff",
     iconBg: "#25D366",

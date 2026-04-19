@@ -151,16 +151,16 @@ export default function HomePage() {
                 display: "flex",
                 height: "100%",
                 width: "600%",
-                animation: "heroScroll 24s linear infinite",
+                animation: "heroScroll 40s linear infinite",
               }}
             >
               {[
-                { src: "/abonnement-iptv-france-1.jpg", alt: "Abonnement IPTV France — supporters français" },
-                { src: "/abonnement-iptv-france-2.jpg", alt: "IPTV France — fans coupe du monde" },
-                { src: "/abonnement-iptv-france-3.jpg", alt: "IPTV Premium France — Champs-Élysées" },
-                { src: "/abonnement-iptv-france-4.jpg", alt: "Abonnement IPTV — supporters Tour Eiffel" },
-                { src: "/abonnement-iptv-france-5.jpg", alt: "IPTV France 4K — équipe de France football" },
-                { src: "/abonnement-iptv-france-6.jpg", alt: "Service IPTV France — supporters stade" },
+                { src: "/abonnement-iptv-france-1.jpg", alt: "Abonnement IPTV France — supporters français", pos: "center 30%" },
+                { src: "/abonnement-iptv-france-2.jpg", alt: "IPTV France — fans coupe du monde", pos: "center 20%" },
+                { src: "/abonnement-iptv-france-3.jpg", alt: "IPTV Premium France — Champs-Élysées", pos: "center 40%" },
+                { src: "/abonnement-iptv-france-4.jpg", alt: "Abonnement IPTV — supporters Tour Eiffel", pos: "center 30%" },
+                { src: "/abonnement-iptv-france-5.jpg", alt: "IPTV France 4K — équipe de France football", pos: "center 25%" },
+                { src: "/abonnement-iptv-france-6.jpg", alt: "Service IPTV France — supporters stade", pos: "center 35%" },
               ].map((img, i) => (
                 <div key={i} style={{ flex: "0 0 16.666%", height: "100%", position: "relative" }}>
                   <img
@@ -170,7 +170,7 @@ export default function HomePage() {
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
-                      objectPosition: "center center",
+                      objectPosition: img.pos,
                       display: "block",
                     }}
                     loading={i === 0 ? "eager" : "lazy"}
@@ -187,9 +187,9 @@ export default function HomePage() {
           <div style={{ maxWidth: 800, margin: "0 auto", position: "relative", zIndex: 2 }}>
             <span style={{
               display: "inline-block",
-              background: "rgba(90,95,207,0.2)",
-              border: "1px solid rgba(90,95,207,0.6)",
-              color: "#5a5fcf",
+              background: "rgba(255,255,255,0.18)",
+              border: "1px solid rgba(255,255,255,0.5)",
+              color: "#ffffff",
               fontSize: 12,
               fontWeight: 700,
               letterSpacing: "0.1em",
@@ -221,7 +221,7 @@ export default function HomePage() {
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link href="/tarifs" style={{
-                background: "#e03e3e",
+                background: "#f5a623",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 17,
@@ -229,7 +229,7 @@ export default function HomePage() {
                 borderRadius: 14,
                 textDecoration: "none",
                 display: "inline-block",
-                boxShadow: "0 6px 20px rgba(224,62,62,0.5)",
+                boxShadow: "0 6px 20px rgba(245,166,35,0.5)",
               }}>
                 Voir les Tarifs →
               </Link>

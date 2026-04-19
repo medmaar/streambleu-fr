@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 
-const WA_URL = "https://wa.me/17828026280?text=Hi%20Stream Bleu%2C%20I%27m%20interested%20in%20your%20service.";
-const TG_URL = "https://t.me/IPTVFranceSupport?text=Hi%20Stream Bleu%2C%20I%27m%20interested%20in%20your%20service.";
+const WA_URL = "https://wa.me/17828026280?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service.";
+const TG_URL = "https://t.me/IPTVFranceSupport?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service.";
 const EMAIL_URL = "mailto:help@streambleu.fr?subject=I%27m%20interested%20in%20your%20service";
 
 const contacts = [
@@ -70,7 +70,7 @@ export default function FloatingContact() {
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close contact menu" : "Open contact menu"}
         className="w-14 h-14 rounded-full shadow-xl flex items-center justify-center transition-all duration-300 hover:brightness-110"
-        style={{ background: "#e03e3e" }}
+        style={{ background: "#f5a623" }}
       >
         {open ? (
           /* X icon */

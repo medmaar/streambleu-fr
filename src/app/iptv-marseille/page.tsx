@@ -82,7 +82,7 @@ export default function IPTVMarseillePage() {
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/tarifs" style={{
-                background: "#e03e3e",
+                background: "#f5a623",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,
@@ -152,7 +152,7 @@ export default function IPTVMarseillePage() {
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{
-                background: "#e03e3e",
+                background: "#f5a623",
                 color: "#fff",
                 fontWeight: 700,
                 fontSize: 16,

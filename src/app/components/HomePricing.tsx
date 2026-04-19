@@ -148,7 +148,7 @@ export default function HomePricing() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: "#e03e3e",
+                    background: "#f5a623",
                     color: "#fff",
                     fontSize: 11,
                     fontWeight: 800,

@@ -55,7 +55,7 @@ export default function Navbar() {
         <Link
           href="/essai-gratuit"
           className="hidden md:inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-xl transition-all"
-          style={{ background: "#e03e3e", color: "#fff", boxShadow: "0 4px 14px rgba(224,62,62,0.4)", letterSpacing: "0.02em" }}
+          style={{ background: "#f5a623", color: "#1a1a4e", boxShadow: "0 4px 14px rgba(245,166,35,0.45)", letterSpacing: "0.02em", fontWeight: 800 }}
         >
           Essai Gratuit
         </Link>
@@ -94,7 +94,7 @@ export default function Navbar() {
               href="/essai-gratuit"
               onClick={() => setOpen(false)}
               className="mt-2 px-4 py-3 rounded-xl text-sm font-bold text-center"
-              style={{ background: "#e03e3e", color: "#fff" }}
+              style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 800 }}
             >
               Essai Gratuit
             </Link>

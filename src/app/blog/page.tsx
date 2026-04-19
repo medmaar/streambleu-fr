@@ -123,7 +123,7 @@ const tagColors: Record<string, string> = {
   Légal: "#7b87e8",
   Comparatif: "#8b92ec",
   Guide: "#5a5fcf",
-  SEO: "#e03e3e",
+  SEO: "#f5a623",
 };
 
 export default function BlogPage() {

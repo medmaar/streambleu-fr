@@ -30,7 +30,7 @@ const badgeLabels: Partial<Record<Duration, string>> = {
 };
 
 const badgeBg: Partial<Record<Duration, string>> = {
-  "12 Mois": "#e03e3e",
+  "12 Mois": "#f5a623",
 };
 
 const durationSlug: Record<Duration, string> = {
