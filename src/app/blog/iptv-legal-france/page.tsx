@@ -23,14 +23,25 @@ const articleSchema = {
   "@type": "Article",
   headline: "L'IPTV est-il Légal en France en 2026 ?",
   datePublished: "2026-02-05",
-  dateModified: "2026-04-10",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "L'IPTV est-il Légal en France en 2026 ?", "item": "https://streambleu.fr/blog/iptv-legal-france"}
+  ]
+};
 export default function IPTVLegalFrance() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
         <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>

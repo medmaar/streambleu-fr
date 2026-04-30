@@ -18,7 +18,7 @@ const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
   headline: "IPTV Sans Coupure en France 2026 — Fini le Buffering",
   description: "Guide complet sur l'IPTV sans coupure en France. Comment fonctionne un service IPTV stable et pourquoi Stream Bleu garantit zéro buffering.",
-  datePublished: "2026-03-15", dateModified: "2026-04-18",
+  datePublished: "2026-03-15", dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-sans-coupure" },
@@ -37,9 +37,20 @@ const faqSchema = {
   mainEntity: faqItems.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "IPTV Sans Coupure en France 2026 — Fini le Bufferi", "item": "https://streambleu.fr/blog/iptv-sans-coupure"}
+  ]
+};
 export default function IptvSansCoupurePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ color: "#1a1a4e", minHeight: "100vh" }}>

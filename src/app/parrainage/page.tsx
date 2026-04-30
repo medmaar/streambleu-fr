@@ -30,9 +30,20 @@ const rules = [
 // Shared page gradient
 const pageBg = "linear-gradient(135deg, #4a4fc0 0%, #6366d4 40%, #7b87e8 100%)";
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "Parrainage IPTV France — Gagnez +1 An", "item": "https://streambleu.fr/parrainage"}
+  ]
+};
 export default function ParrainagePage() {
   return (
-    <main style={{ background: pageBg, color: "#fff", minHeight: "100vh" }}>
+    <main
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+       style={{ background: pageBg, color: "#fff", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section style={{ padding: "64px 16px 40px", textAlign: "center" }}>

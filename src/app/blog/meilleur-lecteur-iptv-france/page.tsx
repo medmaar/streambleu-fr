@@ -30,14 +30,25 @@ const articleSchema = {
   "@type": "Article",
   headline: "Meilleur Lecteur IPTV France 2026",
   datePublished: "2026-03-15",
-  dateModified: "2026-04-10",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "Meilleur Lecteur IPTV France 2026 : TiviMate, Smar", "item": "https://streambleu.fr/blog/meilleur-lecteur-iptv-france"}
+  ]
+};
 export default function MeilleurLecteurIPTV() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
         <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>

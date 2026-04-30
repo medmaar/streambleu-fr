@@ -49,7 +49,7 @@ export default function RootLayout({
   description: "Abonnement IPTV France 2026 — Meilleur service IPTV premium 4K. 25 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. À partir de 9€/mois.",
   address: { "@type": "PostalAddress", streetAddress: "1 Rue Volant", addressLocality: "Nanterre", postalCode: "92000", addressCountry: "FR" },
   areaServed: [{ "@type": "Country", name: "France" }, { "@type": "Country", name: "Belgique" }, { "@type": "Country", name: "Suisse" }],
-  priceRange: "€",
+  priceRange: "€9-€100",
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   sameAs: ["https://t.me/+z1lV-u1HmIA2YTQ0"],
 }) }} />

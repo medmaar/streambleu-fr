@@ -37,16 +37,27 @@ const articleSchema = {
   headline: "IPTV vs Câble/ADSL en France 2026 : Comparatif Complet",
   description: "IPTV vs Câble/ADSL en France 2026 : Comparatif Complet — Guide complet Stream Bleu.",
   datePublished: "2026-02-20",
-  dateModified: "2026-04-18",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-vs-cable-france" },
   image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "IPTV vs Câble France 2026 : Comparatif", "item": "https://streambleu.fr/blog/iptv-vs-cable-france"}
+  ]
+};
 export default function IPTVvsCableFrance() {
   return (
-    <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
+    <main
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+       style={{ background: "#fdf5ff", minHeight: "100vh" }}>
       <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 820, margin: "0 auto" }}>
           <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>

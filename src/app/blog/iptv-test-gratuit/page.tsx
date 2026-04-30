@@ -23,16 +23,27 @@ const articleSchema = {
   headline: "IPTV Test Gratuit France 2026 — Essai 24h Sans CB",
   description: "IPTV Test Gratuit France 2026 — Essai 24h Sans CB — Guide complet Stream Bleu.",
   datePublished: "2026-04-10",
-  dateModified: "2026-04-18",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-test-gratuit" },
   image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "IPTV Test Gratuit France 2026 — Essai 24h Sans CB", "item": "https://streambleu.fr/blog/iptv-test-gratuit"}
+  ]
+};
 export default function BlogPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ color: "#1a1a4e", minHeight: "100vh" }}>

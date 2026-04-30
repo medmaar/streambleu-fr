@@ -38,9 +38,20 @@ const features = [
 
 const channels = ["TF1 4K","France 2 4K","M6","Arte","Canal+","beIN Sports 1","beIN Sports 2","beIN Sports 3","RMC Sport 1","RMC Sport 2","BFM TV","CNews","LCI","C8","W9","TMC","TFX","France 3","Eurosport 1","TV5 Monde","France 24","Canal+ Sport"];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "IPTV France 2026 — 25 000+ Chaînes en Direct", "item": "https://streambleu.fr/iptv-france"}
+  ]
+};
 export default function IptvFrancePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ color: "#1a1a4e", minHeight: "100vh" }}>
 

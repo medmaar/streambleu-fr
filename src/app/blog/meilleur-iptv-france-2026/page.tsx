@@ -24,7 +24,7 @@ const articleSchema = {
   headline: "Meilleur IPTV France 2026 : Services Testés & Classés",
   description: "Comparatif des meilleurs services IPTV disponibles en France pour 2026.",
   datePublished: "2026-01-10",
-  dateModified: "2026-04-10",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/meilleur-iptv-france-2026" },
@@ -45,9 +45,20 @@ const services = [
   { rank: 3, name: "Concurrent B", channels: "10 000+", quality: "1080p", uptime: "95%", activation: "24h", support: "Limité", price: "12€/mois", verdict: "Service basique" },
 ];
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "Meilleur IPTV France 2026 : Services Testés & Clas", "item": "https://streambleu.fr/blog/meilleur-iptv-france-2026"}
+  ]
+};
 export default function MeilleurIPTVFrance2026() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
 

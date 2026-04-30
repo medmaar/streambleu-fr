@@ -40,16 +40,27 @@ const articleSchema = {
   headline: "Comment Installer l'IPTV sur Fire Stick en France 2026",
   description: "Comment Installer l'IPTV sur Fire Stick en France 2026 — Guide complet Stream Bleu.",
   datePublished: "2026-03-01",
-  dateModified: "2026-04-18",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-firestick-france" },
   image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "Comment Installer l'IPTV sur Fire Stick en France ", "item": "https://streambleu.fr/blog/iptv-firestick-france"}
+  ]
+};
 export default function IPTVFirestickFrance() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>

@@ -23,16 +23,27 @@ const articleSchema = {
   headline: "IPTV France Avis 2026 — Ce que Disent les Vrais Clients",
   description: "IPTV France Avis 2026 — Ce que Disent les Vrais Clients — Guide complet Stream Bleu.",
   datePublished: "2026-04-08",
-  dateModified: "2026-04-18",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-france-avis" },
   image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
 };
 
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "IPTV France Avis 2026 — Clients Vérifiés", "item": "https://streambleu.fr/blog/iptv-france-avis"}
+  ]
+};
 export default function BlogPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ color: "#1a1a4e", minHeight: "100vh" }}>

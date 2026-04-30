@@ -23,7 +23,7 @@ const articleSchema = {
   headline: "IPTV Rapide France 2026 — Zap Instantané & Chargement Ultra-Rapide",
   description: "IPTV Rapide France 2026 — Zap Instantané & Chargement Ultra-Rapide — Guide complet Stream Bleu.",
   datePublished: "2026-04-12",
-  dateModified: "2026-04-18",
+  dateModified: "2026-04-30",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-rapide-france" },
