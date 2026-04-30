@@ -1,3 +1,6 @@
+import { Quicksand } from 'next/font/google';
+
+const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'swap', variable: '--font-quicksand' });
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
@@ -7,6 +10,7 @@ import Animations from "./components/Animations";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://streambleu.fr"),
+    alternates: { canonical: "https://streambleu.fr", languages: { "fr-FR": "https://streambleu.fr", "fr-BE": "https://streambleu.fr", "fr-CH": "https://streambleu.fr", "x-default": "https://streambleu.fr" } },
     icons: { icon: "/favicon.svg" },
     title: {
         default: "Abonnement IPTV France 2026 — IPTV Premium 4K | Stream Bleu",
@@ -20,7 +24,7 @@ export const metadata: Metadata = {
         siteName: "Stream Bleu",
         locale: "fr_FR",
         type: "website",
-        images: [{ url: "/favicon.svg", width: 512, height: 512, alt: "Stream Bleu – Meilleur IPTV France" }],
+        images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Stream Bleu – Meilleur IPTV France 2026 — IPTV Premium 4K" }],
     },
     twitter: { card: "summary_large_image" },
 };
