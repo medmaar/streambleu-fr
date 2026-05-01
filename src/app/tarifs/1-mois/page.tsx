@@ -144,7 +144,7 @@ export default function Pricing1MonthPage() {
                 1 Mois
               </h1>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 16 }}>
-                <span style={{ color: "#f5a623", fontWeight: 900, fontSize: "2.4rem" }}>Price : 9€</span>
+                <span style={{ color: "#f5a623", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 9€</span>
                 <span style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>Offre -50%</span>
               </div>
               <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 13 }}>Remplissez le formulaire — identifiants envoyés en quelques minutes</p>
