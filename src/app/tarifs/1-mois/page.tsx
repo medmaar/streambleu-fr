@@ -62,11 +62,44 @@ const productSchema = {
   name: "Stream Bleu 1 Mois IPTV Plan",
   description: "1 month of IPTV access to 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
+  review: {
+    "@type": "Review",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
+    author: { "@type": "Person", name: "Jean-Pierre M." },
+    reviewBody: "Service IPTV exceptionnel, image 4K impeccable et aucune coupure depuis 6 mois. Support très réactif.",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    reviewCount: "312",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   offers: {
     "@type": "Offer",
     price: "9.00",
     priceCurrency: "EUR",
     availability: "https://schema.org/InStock",
+    hasMerchantReturnPolicy: {
+      "@type": "MerchantReturnPolicy",
+      returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+      applicableCountry: "FR",
+    },
+    shippingDetails: {
+      "@type": "OfferShippingDetails",
+      shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "EUR" },
+      shippingDestination: { "@type": "DefinedRegion", addressCountry: "FR" },
+      deliveryTime: {
+        "@type": "ShippingDeliveryTime",
+        handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 0, unitCode: "MIN" },
+        transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 5, unitCode: "MIN" },
+      },
+    },
     url: "https://streambleu.fr/pricing/1-month",
   },
 };

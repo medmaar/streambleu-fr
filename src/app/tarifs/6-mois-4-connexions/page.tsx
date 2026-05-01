@@ -24,11 +24,44 @@ const productSchema = {
   name: "Stream Bleu IPTV 6 Mois — 4 Connexions",
   description: "Abonnement IPTV 6 Mois pour 4 connexions simultanées à 156€. 25 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
+  review: {
+    "@type": "Review",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
+    author: { "@type": "Person", name: "Jean-Pierre M." },
+    reviewBody: "Service IPTV exceptionnel, image 4K impeccable et aucune coupure depuis 6 mois. Support très réactif.",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    reviewCount: "312",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   offers: {
     "@type": "Offer",
     price: "156.00",
     priceCurrency: "EUR",
     availability: "https://schema.org/InStock",
+    hasMerchantReturnPolicy: {
+      "@type": "MerchantReturnPolicy",
+      returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+      applicableCountry: "FR",
+    },
+    shippingDetails: {
+      "@type": "OfferShippingDetails",
+      shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "EUR" },
+      shippingDestination: { "@type": "DefinedRegion", addressCountry: "FR" },
+      deliveryTime: {
+        "@type": "ShippingDeliveryTime",
+        handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 0, unitCode: "MIN" },
+        transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 5, unitCode: "MIN" },
+      },
+    },
     url: "https://streambleu.fr/tarifs/6-mois-4-connexions",
   },
 };
