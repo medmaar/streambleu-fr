@@ -178,20 +178,7 @@ html { scroll-behavior: smooth; }
 nav { animation: fadeSlideUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
 
 
-/* ── HERO IMAGE CAROUSEL ── */
-@keyframes heroScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-83.333%); }
-}
-
-.hero-carousel-track {
-  will-change: transform;
-}
-
-/* Pause on hover for accessibility */
-.hero-carousel-track:hover {
-  animation-play-state: paused;
-}
+/* ── HERO CROSSFADE (handled inline via React state) ── */
 
 /* ── EIFFEL TOWER LOGO FLOAT ── */
 @keyframes towerFloat {

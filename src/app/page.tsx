@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomePricing from "./components/HomePricing";
 import ReviewsSection from "./components/ReviewsSection";
+import HeroCrossfade from "./components/HeroCrossfade";
 
 export const metadata: Metadata = {
   title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu" },
@@ -125,6 +126,7 @@ const comparison = [
   { feature: "Support FR 24/7", us: "✓", cable: "Heures ouvrées", other: "×" },
 ];
 
+
 export default function HomePage() {
   return (
     <>
@@ -143,42 +145,8 @@ export default function HomePage() {
           display: "flex",
           alignItems: "center",
         }}>
-          {/* ── HERO IMAGE CAROUSEL ── */}
-          <div style={{ position: "absolute", inset: 0, zIndex: 0, overflow: "hidden" }}>
-            <div
-              className="hero-carousel-track"
-              style={{
-                display: "flex",
-                height: "100%",
-                width: "600%",
-                animation: "heroScroll 40s linear infinite",
-              }}
-            >
-              {[
-                { src: "/abonnement-iptv-france-1.jpg", alt: "Abonnement IPTV France — supporters français", pos: "center 30%" },
-                { src: "/abonnement-iptv-france-2.jpg", alt: "IPTV France — fans coupe du monde", pos: "center 20%" },
-                { src: "/abonnement-iptv-france-3.jpg", alt: "IPTV Premium France — Champs-Élysées", pos: "center 40%" },
-                { src: "/abonnement-iptv-france-4.jpg", alt: "Abonnement IPTV — supporters Tour Eiffel", pos: "center 30%" },
-                { src: "/abonnement-iptv-france-5.jpg", alt: "IPTV France 4K — équipe de France football", pos: "center 25%" },
-                { src: "/abonnement-iptv-france-6.jpg", alt: "Service IPTV France — supporters stade", pos: "center 35%" },
-              ].map((img, i) => (
-                <div key={i} style={{ flex: "0 0 16.666%", height: "100%", position: "relative" }}>
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      objectPosition: img.pos,
-                      display: "block",
-                    }}
-                    loading={i === 0 ? "eager" : "lazy"}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+          {/* ── HERO IMAGE CROSSFADE ── */}
+          <HeroCrossfade />
           <div style={{
             position: "absolute", inset: 0,
             background: "linear-gradient(to bottom, rgba(90,95,207,0.72) 0%, rgba(90,95,207,0.88) 100%)",
