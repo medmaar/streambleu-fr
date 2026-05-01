@@ -8,9 +8,9 @@ const countries = [
   "France", "Belgique", "Suisse", "Luxembourg", "Canada", "Maroc", "Algérie",
   "Tunisie", "Sénégal", "Cameroun", "Côte d'Ivoire", "Madagascar", "Mali",
   "Allemagne", "Espagne", "Italie", "Portugal", "Pays-Bas", "Suède", "Norvège",
-  "Danemark", "Finlande", "Irlande", "Royaume-Uni", "États-Unis", "Australie",
+  "Danemark", "Finlandee", "Irlande", "Royaume-Uni", "États-Unis", "Australie",
   "Nouvelle-Zélande", "Émirats Arabes Unis", "Qatar", "Koweït", "Arabie Saoudite",
-  "Liban", "Jordanie", "Turquie", "Brésil", "Mexique", "Colombie", "Argentine", "Autre",
+  "Liban", "Jordanieie", "Turquie", "Brésil", "Mexique", "Colombie", "Argentine", "Autre",
 ];
 
 const deviceTypes = [

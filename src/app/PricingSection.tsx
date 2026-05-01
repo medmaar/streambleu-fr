@@ -88,7 +88,7 @@ export default function PricingSection() {
           </span>
         </div>
         <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 32, fontSize: 15 }}>
-          Sans engagement. No hidden fees. Activation instantanée after you order.
+          Sans engagement. Sans frais cachés. Activation instantanée après votre commande.
         </p>
 
         {/* Connection selector */}

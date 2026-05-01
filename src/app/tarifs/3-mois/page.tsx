@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 3 Mois — €29 | Stream Bleu" },
   description:
-    "Get 3 months of IPTV in france for only €29. 25 000+ live channels, 4K quality, Ligue 1, beIN Sports, CTV included. No contract. Login credentials sent within minutes.",
+    "Profitez de 3 mois d'IPTV en France pour seulement 29€. 25 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés en quelques minutes.",
   keywords:
     "IPTV 3 months france, Stream Bleu 3 months, IPTV quarterly france, 3 month IPTV france €29",
   alternates: { canonical: "https://streambleu.fr/tarifs/3-mois" },
@@ -14,31 +14,31 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "Qu'est-ce qui est inclus dans le forfait 3 mois ?",
-    a: "The 3-month plan gives you full access to 25 000+ live channels including all Français networks (beIN Sports, RMC Sport, Canal+, CTV, Global, RDS, TVA), 120 000+ movies and series on demand, 4K Ultra HD streaming, electronic program guide (EPG), and 7-day catch-up TV — all for €29.",
+    a: "Le forfait 3 mois vous donne un accès complet à plus de 25 000 chaînes en direct dont toutes les chaînes françaises, 120 000+ films et séries à la demande, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 29€.",
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
-    a: "After placing your order, our team will review it and send your login credentials (server URL, username, and password) directly to your email address within minutes. Check your spam folder if you don't see it.",
+    a: "Après votre commande, notre équipe la vérifie et vous envoie vos identifiants (URL serveur, nom d'utilisateur et mot de passe) directement par e-mail en quelques minutes. Vérifiez vos courriers indésirables si vous ne les voyez pas.",
   },
   {
     q: "Quels appareils sont compatibles avec ce service IPTV ?",
-    a: "Our service works on Amazon Firestick, all Samsung and LG Smart TVs, Android boxes, Android phones and tablets, iPhone, iPad, Apple TV, MAG boxes, Windows PCs and Macs. You can use it on virtually any device that supports an IPTV player app.",
+    a: "Notre service fonctionne sur Amazon Firestick, toutes les Smart TV Samsung et LG, les box Android, les téléphones et tablettes Android, iPhone, iPad, Apple TV, les box MAG, PC Windows et Mac. Compatible avec pratiquement tout appareil supportant une application IPTV.",
   },
   {
     q: "Quelle vitesse internet faut-il ?",
-    a: "We recommend at least 10 Mbps for HD streaming and 25 Mbps for 4K Ultra HD. Any standard Français home internet plan handles this easily. Our anti-freeze technology also minimises buffering on slower connections.",
+    a: "Nous recommandons au moins 10 Mbps pour le streaming HD et 25 Mbps pour la 4K Ultra HD. Tout abonnement internet domicile standard en France gère cela facilement. Notre technologie anti-gel minimise également les coupures sur les connexions plus lentes.",
   },
   {
     q: "Puis-je regarder les chaînes françaises en direct ?",
-    a: "Yes — every plan includes beIN Sports, RMC Sport, Canal+, CTV, Global, City TV, RDS, TVA, Canal Vie, and all regional Français channels in HD and 4K. Every Ligue 1, NFL, NBA and CFL game is covered.",
+    a: "Oui — chaque forfait inclut beIN Sports, RMC Sport, Canal+, TF1, M6, France 2, Arte, et toutes les chaînes régionales françaises en HD et 4K. Toute la Ligue 1, Champions League et matchs internationaux sont couverts.",
   },
   {
     q: "Que se passe-t-il à l'expiration de mon abonnement 3 mois ?",
-    a: "You'll receive a reminder before expiry. Simply place a new order to renew — or upgrade to the 6-month or 12-month plan for better savings. There are no automatic charges and no contracts.",
+    a: "Vous recevrez un rappel avant l'expiration. Passez simplement une nouvelle commande pour renouveler — ou passez au forfait 6 mois ou 12 mois pour plus d'économies. Aucun prélèvement automatique, aucun contrat.",
   },
   {
     q: "Comment obtenir du support en cas de problème ?",
-    a: "Our Français support team is disponible 24h/24 via WhatsApp (+1 782-802-6280) and email en français. Most issues are resolved within minutes.",
+    a: "Notre équipe support est disponible 24h/24 via WhatsApp et e-mail en français. La plupart des problèmes sont résolus en quelques minutes.",
   },
 ];
 

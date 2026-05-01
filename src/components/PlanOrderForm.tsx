@@ -3,11 +3,11 @@ import { useState, FormEvent, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const COUNTRIES = [
-  "France","Belgium","Switzerland","Netherlands","Germany","Spain","Italy",
-  "Portugal","Sweden","Norway","Denmark","Finland","Ireland","United Kingdom",
-  "United States","Canada","Australia","New Zealand","UAE","Qatar","Kuwait",
-  "Saudi Arabia","Morocco","Algeria","Tunisia","Senegal","Cameroon","Ivory Coast",
-  "Lebanon","Jordan","Turkey","Brazil","Mexico","Colombia","Argentina","Other",
+  "France","Belgique","Suisse","Pays-Bas","Allemagne","Espagne","Italie",
+  "Portugal","Suède","Norvège","Danemark","Finlande","Irlande","Royaume-Uni",
+  "États-Unis","Canada","Australie","Nouvelle-Zélande","UAE","Qatar","Koweït",
+  "Arabie Saoudite","Maroc","Algérie","Tunisie","Sénégal","Cameroun","Ivory Coast",
+  "Liban","Jordanie","Turkey","Brésil","Mexique","Colombie","Argentine","Autre",
 ];
 
 interface Props {

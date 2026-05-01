@@ -2,12 +2,12 @@
 import { useState, FormEvent } from "react";
 
 const COUNTRIES = [
-  "France","United States","United Kingdom","Australia","France","Germany",
-  "Belgium","Switzerland","Netherlands","Spain","Italy","Portugal","Sweden",
-  "Norway","Denmark","Finland","Ireland","New Zealand","UAE","Qatar","Kuwait",
-  "Saudi Arabia","Morocco","Algeria","Tunisia","Senegal","Cameroon","Ivory Coast",
-  "Lebanon","Israel","Jordan","Turkey","Brazil","Mexico","Colombia","Argentina",
-  "Other",
+  "France","États-Unis","Royaume-Uni","Australie","France","Allemagne",
+  "Belgique","Suisse","Pays-Bas","Espagne","Italie","Portugal","Suède",
+  "Norvège","Danemark","Finlande","Irlande","Nouvelle-Zélande","UAE","Qatar","Koweït",
+  "Arabie Saoudite","Maroc","Algérie","Tunisie","Sénégal","Cameroun","Ivory Coast",
+  "Liban","Israel","Jordanie","Turkey","Brésil","Mexique","Colombie","Argentine",
+  "Autre",
 ];
 
 interface Props {
@@ -39,7 +39,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
         <div className="text-4xl mb-3">✅</div>
         <p className="font-bold text-gray-800 text-lg">Opening WhatsApp...</p>
         <p className="text-gray-500 text-sm mt-1">
-          Complete your order via WhatsApp. If it didn&apos;t open,{" "}
+          Pour compléter votre commande par e-mail,{" "}
           <a
             href={`mailto:${emailAddress}`}
             className="underline text-red-700"
@@ -63,7 +63,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
       {/* Name */}
       <div>
         <label className="block text-sm font-semibold text-gray-700 mb-1">
-          First Name
+          Prénom
         </label>
         <input
           type="text"
@@ -78,7 +78,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
       {/* Email */}
       <div>
         <label className="block text-sm font-semibold text-gray-700 mb-1">
-          Email Address
+          Adresse e-mail
         </label>
         <input
           type="email"
@@ -111,7 +111,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
       {/* WhatsApp */}
       <div>
         <label className="block text-sm font-semibold text-gray-700 mb-1">
-          WhatsApp Number
+          Numéro WhatsApp
         </label>
         <input
           type="tel"

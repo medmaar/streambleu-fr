@@ -3,19 +3,19 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const countries = [
-  "France", "United States", "United Kingdom", "Australia", "France", "Germany",
-  "Spain", "Italy", "Netherlands", "Belgium", "Switzerland", "Portugal", "Sweden",
-  "Norway", "Denmark", "Finland", "Poland", "Czech Republic", "Austria", "Ireland",
-  "New Zealand", "South Africa", "Nigeria", "Ghana", "Kenya", "Morocco", "Algeria",
-  "Tunisia", "Senegal", "Cameroon", "Côte d'Ivoire", "Egypt", "Saudi Arabia",
-  "United Arab Emirates", "Qatar", "Kuwait", "Bahrain", "Oman", "Jordan", "Lebanon",
-  "Iraq", "Iran", "Pakistan", "India", "Bangladesh", "Sri Lanka", "Nepal",
-  "Philippines", "Malaysia", "Singapore", "Indonesia", "Thailand", "Vietnam",
-  "China", "Hong Kong", "Taiwan", "Japan", "South Korea", "Brazil", "Mexico",
-  "Argentina", "Colombia", "Chile", "Peru", "Venezuela", "Ecuador", "Bolivia",
+  "France", "États-Unis", "Royaume-Uni", "Australie", "France", "Allemagne",
+  "Espagne", "Italie", "Pays-Bas", "Belgique", "Suisse", "Portugal", "Suède",
+  "Norvège", "Danemark", "Finlande", "Pologne", "République tchèque", "Autriche", "Irlande",
+  "Nouvelle-Zélande", "Afrique du Sud", "Nigeria", "Ghana", "Kenya", "Maroc", "Algérie",
+  "Tunisie", "Sénégal", "Cameroun", "Côte d'Ivoire", "Égypte", "Arabie Saoudite",
+  "Émirats Arabes Unis", "Qatar", "Koweït", "Bahreïn", "Oman", "Jordanie", "Liban",
+  "Irak", "Iran", "Pakistan", "Inde", "Bangladesh", "Sri Lanka", "Népal",
+  "Philippines", "Malaisie", "Singapour", "Indonésie", "Thaïlande", "Viêt Nam",
+  "Chine", "Hong Kong", "Taïwan", "Japon", "Corée du Sud", "Brésil", "Mexique",
+  "Argentine", "Colombie", "Chili", "Pérou", "Venezuela", "Équateur", "Bolivie",
   "Uruguay", "Paraguay", "Guatemala", "Honduras", "El Salvador", "Costa Rica",
-  "Panama", "Dominican Republic", "Cuba", "Haiti", "Jamaica", "Trinidad and Tobago",
-  "Other",
+  "Panama", "République Dominicaine", "Cuba", "Haïti", "Jamaïque", "Trinité-et-Tobago",
+  "Autre",
 ];
 
 interface Props {
@@ -42,11 +42,11 @@ export default function OrderForm({ plan, price, devices }: Props) {
     setLoading(true);
     try {
       await emailjs.send("service_wqw39vi", "template_3jpw5qp", {
-        from_name: form.name || "Not provided",
-        from_email: form.email || "Not provided",
-        phone: form.whatsapp || "Not provided",
+        from_name: form.name || "Non renseigné",
+        from_email: form.email || "Non renseigné",
+        phone: form.whatsapp || "Non renseigné",
         country: form.country,
-        device: "Not specified",
+        device: "Non spécifié",
         plan: `${plan} — ${devices} device${devices > 1 ? "s" : ""} — $${price}`,
         message: "—",
         site_name: "Stream Bleu",
@@ -63,12 +63,12 @@ export default function OrderForm({ plan, price, devices }: Props) {
     return (
       <div className="text-center py-10">
         <div className="text-green-400 text-5xl mb-4">✓</div>
-        <h3 className="text-2xl font-bold mb-2">Order Received!</h3>
+        <h3 className="text-2xl font-bold mb-2">Commande reçue !</h3>
         <p className="text-gray-400 text-sm mb-1">
-          Thanks, <span className="text-white font-semibold">{form.name}</span>. We&apos;ll contact you shortly on WhatsApp or email.
+          Merci, <span className="text-white font-semibold">{form.name}</span>. We&apos;ll contact you shortly on WhatsApp or email.
         </p>
         <p className="text-gray-500 text-xs mt-4">
-          Usually activated within 15 minutes. Check WhatsApp and your inbox.
+          Activation généralement en moins de 15 minutes. Vérifiez votre messagerie.
         </p>
       </div>
     );
@@ -88,22 +88,22 @@ export default function OrderForm({ plan, price, devices }: Props) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">First Name</label>
+        <label className="block text-sm text-gray-400 mb-1.5">Prénom</label>
         <input
           type="text"
           name="name"
-          placeholder="Your first name"
+          placeholder="Votre prénom"
           value={form.name}
           onChange={handleChange}
           style={inputStyle}
         />
       </div>
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Email Address</label>
+        <label className="block text-sm text-gray-400 mb-1.5">Adresse e-mail</label>
         <input
           type="email"
           name="email"
-          placeholder="you@example.com"
+          placeholder="vous@exemple.fr"
           value={form.email}
           onChange={handleChange}
           style={inputStyle}
@@ -117,18 +117,18 @@ export default function OrderForm({ plan, price, devices }: Props) {
           onChange={handleChange}
           style={{ ...inputStyle, backgroundColor: "#1a1a2e", color: "#ffffff" }}
         >
-          <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Select your country</option>
+          <option value="" style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>Sélectionnez votre pays</option>
           {countries.map((c) => (
             <option key={c} value={c} style={{ backgroundColor: "#1a1a2e", color: "#ffffff" }}>{c}</option>
           ))}
         </select>
       </div>
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">WhatsApp Number</label>
+        <label className="block text-sm text-gray-400 mb-1.5">Numéro WhatsApp</label>
         <input
           type="tel"
           name="whatsapp"
-          placeholder="+1 234 567 8900"
+          placeholder="+33 6 00 00 00 00"
           value={form.whatsapp}
           onChange={handleChange}
           style={inputStyle}
@@ -141,7 +141,7 @@ export default function OrderForm({ plan, price, devices }: Props) {
         className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60 mt-2"
         style={{ background: "#fd0322" }}
       >
-        {loading ? "Submitting…" : "Submit Order →"}
+        {loading ? "Envoi en cours…" : "Commander maintenant →"}
       </button>
       <p className="text-center text-gray-600 text-xs">
         Secure · We&apos;ll contact you via WhatsApp or email to activate.

@@ -80,7 +80,7 @@ export default function ResellerPage() {
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <a href="mailto:contact@streambleu.fr?subject=Demande Revendeur"
               style={{ display: "inline-block", background: "#f5a623", color: "#1a1a4e", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
-              Envoyer un Email
+              Envoyer un e-mail
             </a>
             <a href="https://wa.me/17828026280?text=Bonjour%2C%20je%20souhaite%20devenir%20revendeur%20Stream%20Bleu"
               target="_blank" rel="noopener noreferrer"

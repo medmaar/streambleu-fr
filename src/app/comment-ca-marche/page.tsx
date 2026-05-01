@@ -20,38 +20,38 @@ export const metadata: Metadata = {
 const steps = [
   {
     step: "1",
-    title: "Choose a Plan",
-    desc: "Pick the subscription duration and number of devices that suits your household. All plans include every channel — no tiered content.",
-    detail: "Plans start at 9€/month for 1 device. Multi-device plans are available for families. Start with a free 24h trial if you want to test first.",
-    cta: { label: "View Plans", href: "/pricing" },
+    title: "Choisir un forfait",
+    desc: "Choisissez la durée d'abonnement et le nombre d'appareils adaptés à votre foyer. Tous les forfaits incluent toutes les chaînes.",
+    detail: "Les forfaits débutent à 9€/mois pour 1 appareil. Des formules multi-appareils sont disponibles pour les familles. Commencez par un essai gratuit 24h si vous souhaitez tester.",
+    cta: { label: "Voir les forfaits", href: "/tarifs" },
   },
   {
     step: "2",
-    title: "Get Your Credentials",
-    desc: "After subscribing, our team sends you login details within minutes — a server URL, username, and password.",
-    detail: "Contact us via WhatsApp, Telegram, or email. Our Français support team is disponible 24h/24 and typically responds in under 5 minutes.",
-    cta: { label: "Nous Contacter", href: "/contact" },
+    title: "Recevoir vos identifiants",
+    desc: "Après votre commande, notre équipe vous envoie vos identifiants en quelques minutes — URL serveur, nom d'utilisateur et mot de passe.",
+    detail: "Contactez-nous via WhatsApp, Telegram ou e-mail. Notre équipe support est disponible 24h/24 et répond généralement en moins de 5 minutes.",
+    cta: { label: "Nous contacter", href: "/contact" },
   },
   {
     step: "3",
-    title: "Install & Watch",
-    desc: "Download a free IPTV player app on your device, enter your credentials, and start streaming instantly.",
-    detail: "We'll tell you exactly which app to install for your device and walk you through setup if needed. Most users are watching within 10 minutes.",
-    cta: { label: "Supported Devices", href: "#devices" },
+    title: "Installer & regarder",
+    desc: "Téléchargez une application IPTV gratuite sur votre appareil, entrez vos identifiants et commencez à regarder instantanément.",
+    detail: "Nous vous indiquerons exactement quelle application installer et vous guiderons pas à pas si besoin. La plupart des utilisateurs regardent en moins de 10 minutes.",
+    cta: { label: "Appareils compatibles", href: "#devices" },
   },
 ];
 
 const devices = [
-  { name: "Amazon Fire Stick", desc: "All generations including 4K and Lite", guide: "/iptv-firestick-france" },
-  { name: "Samsung Smart TV", desc: "All Tizen-based models (2018+)", guide: "/iptv-samsung-tv-france" },
-  { name: "LG Smart TV", desc: "webOS models (2016+)" },
-  { name: "Android TV / Box", desc: "Nvidia Shield, Chromecast with Google TV, any Android TV device" },
-  { name: "iPhone & iPad", desc: "iOS 13 and newer" },
-  { name: "Android Phone & Tablet", desc: "Android 6.0 and newer" },
-  { name: "Windows PC", desc: "Windows 10 and 11 via IPTV player app" },
-  { name: "Mac", desc: "macOS 11 Big Sur and newer" },
-  { name: "MAG Box", desc: "MAG 250, 254, 256, 322, 324, and newer" },
-  { name: "Formuler", desc: "Z8, Z10, Z Alpha, and all Formuler devices" },
+  { name: "Amazon Fire Stick", desc: "Toutes générations dont 4K et Lite", guide: "/iptv-firestick-france" },
+  { name: "Samsung Smart TV", desc: "Tous les modèles Tizen (2018+)", guide: "/iptv-samsung-tv-france" },
+  { name: "LG Smart TV", desc: "Modèles webOS (2016+)" },
+  { name: "Android TV / Box", desc: "Nvidia Shield, Chromecast avec Google TV, toute Box Android TV" },
+  { name: "iPhone & iPad", desc: "iOS 13 et supérieur" },
+  { name: "Android Phone & Tablet", desc: "Android 6.0 et supérieur" },
+  { name: "Windows PC", desc: "Windows 10 et 11 via une application IPTV" },
+  { name: "Mac", desc: "macOS 11 Big Sur et supérieur" },
+  { name: "MAG Box", desc: "MAG 250, 254, 256, 322, 324 et modèles récents" },
+  { name: "Formuler", desc: "Z8, Z10, Z Alpha et tous les appareils Formuler" },
 ];
 
 const requirements = [
@@ -79,10 +79,10 @@ export default function HowItWorksPage() {
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            How <span className="text-[#5a5fcf]">IPTV Works</span> en France
+            Comment fonctionne <span className="text-[#5a5fcf]">l&apos;IPTV</span> en France
           </h1>
           <p className="text-xl text-black">
-            Three simple steps. No technician required. Start watching in minutes.
+            Trois étapes simples. Aucun technicien requis. Regardez en quelques minutes.
           </p>
         </div>
       </section>
@@ -117,23 +117,17 @@ export default function HowItWorksPage() {
       <section className="py-16 px-4 bg-transparent">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">
-            What Exactly <span className="text-[#5a5fcf]">Is IPTV?</span>
+            Qu&apos;est-ce que <span className="text-[#5a5fcf]">l&apos;IPTV&nbsp;?</span>
           </h2>
           <div className="space-y-4 text-black leading-relaxed">
             <p>
-              IPTV stands for <strong>Internet Protocol Television</strong>. Instead of receiving
-              TV signals via a coaxial cable or satellite dish, IPTV delivers live television
-              and on-demand content over your regular internet connection.
+              IPTV signifie <strong>Internet Protocol Television</strong>. Au lieu de recevoir les signaux TV via un câble coaxial ou une antenne satellite, l&apos;IPTV diffuse la télévision en direct et le contenu à la demande via votre connexion internet.
             </p>
             <p>
-              Think of it like Netflix or YouTube — but for live TV. You open an app, browse a
-              channel guide with 25 000+ channels, and press play. The stream comes from our
-              servers directly to your device over the internet in real time.
+              Pensez-y comme Netflix ou YouTube — mais pour la TV en direct. Vous ouvrez une application, parcourez un guide avec 25 000+ chaînes et appuyez sur lecture. Le flux provient directement de nos serveurs vers votre appareil en temps réel.
             </p>
             <p>
-              Because it uses the internet, IPTV works on <strong>any internet-connected device</strong> —
-              your TV, phone, tablet, or computer — and you can watch from anywhere en France
-              with a good connection.
+              Grâce à internet, l&apos;IPTV fonctionne sur <strong>n&apos;importe quel appareil connecté</strong> — votre TV, téléphone, tablette ou ordinateur — et vous pouvez regarder de partout avec une bonne connexion.
             </p>
           </div>
         </div>
@@ -143,10 +137,10 @@ export default function HowItWorksPage() {
       <section id="devices" className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Compatible <span className="text-[#5a5fcf]">Devices</span>
+            Appareils <span className="text-[#5a5fcf]">compatibles</span>
           </h2>
           <p className="text-center text-black mb-10">
-            Our IPTV service works on virtually every screen you own.
+            Notre service IPTV fonctionne sur pratiquement tous vos écrans.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {devices.map((d) => (
@@ -157,7 +151,7 @@ export default function HowItWorksPage() {
                   <div className="text-black text-sm">{d.desc}</div>
                   {d.guide && (
                     <a href={d.guide} className="text-[#5a5fcf] text-xs hover:underline mt-1 inline-block">
-                      Setup guide →
+                      Guide d’installation →
                     </a>
                   )}
                 </div>
@@ -171,10 +165,10 @@ export default function HowItWorksPage() {
       <section className="py-16 px-4 bg-transparent">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Internet Speed <span className="text-[#5a5fcf]">Requirements</span>
+            Débit internet <span className="text-[#5a5fcf]">requis</span>
           </h2>
           <p className="text-center text-black mb-10">
-            Any standard Français broadband connection is more than sufficient.
+            Toute connexion internet standard en France est largement suffisante.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {requirements.map((r) => (
@@ -185,7 +179,7 @@ export default function HowItWorksPage() {
             ))}
           </div>
           <p className="text-center text-black text-sm">
-            The average Français internet speed is 200+ Mbps — well above what&apos;s needed even for 4K on multiple devices simultaneously.
+            La vitesse internet moyenne en France est de 200+ Mbps — bien au-delà du nécessaire, même pour la 4K sur plusieurs appareils simultanément.
           </p>
         </div>
       </section>
@@ -194,15 +188,15 @@ export default function HowItWorksPage() {
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">
-            Common <span className="text-[#5a5fcf]">Questions</span>
+            Questions <span className="text-[#5a5fcf]">fréquentes</span>
           </h2>
           <div className="space-y-6">
             {[
-              { q: "Do I need to install any hardware?", a: "No. If you already have a Fire Stick, Smart TV, phone, or computer, you're ready. No dish, no cable box, no technician visit required." },
-              { q: "Will IPTV work with my existing internet plan?", a: "Yes. Any standard Français internet plan from Bell, Rogers, Telus, Shaw, Videotron, or any ISP with at least 25 Mbps will work perfectly for HD streaming." },
-              { q: "Can I watch on multiple TVs at the same time?", a: "Yes — choose a 2, 3, 4, or 5 device plan. Each device streams independently. One person can watch hockey in the living room while another watches a movie in the bedroom." },
-              { q: "Does IPTV work outside France?", a: "Your subscription works anywhere in the world with a decent internet connection. Travel to Europe, the US, or anywhere and still access all your Français channels." },
-              { q: "What happens if a channel goes down?", a: "Our servers maintain multiple redundant streams for each channel. If one stream has issues, the system automatically switches to a backup. Our Support 24/7 team also monitors the service around the clock." },
+              { q: "Faut-il installer du matériel spécifique ?", a: "Non. Si vous avez déjà un Fire Stick, une Smart TV, un téléphone ou un ordinateur, vous êtes prêt. Pas d'antenne, pas de décodeur, pas de technicien requis." },
+              { q: "L'IPTV fonctionne-t-il avec mon abonnement internet actuel ?", a: "Oui. Tout abonnement internet français standard (Orange, SFR, Free, Bouygues) avec au moins 25 Mbps fonctionne parfaitement pour le streaming HD." },
+              { q: "Puis-je regarder sur plusieurs TV en même temps ?", a: "Oui — choisissez un forfait 2, 3, 4 ou 5 appareils. Chaque appareil streame indépendamment. Une personne peut regarder le foot au salon pendant qu'une autre regarde un film dans la chambre." },
+              { q: "L'IPTV fonctionne-t-il hors de France ?", a: "Votre abonnement fonctionne partout dans le monde avec une bonne connexion internet. Voyagez en Europe, aux États-Unis ou ailleurs et accédez toujours à toutes vos chaînes françaises." },
+              { q: "Que se passe-t-il si une chaîne est indisponible ?", a: "Nos serveurs maintiennent plusieurs flux redondants pour chaque chaîne. En cas de problème, le système bascule automatiquement sur un flux de secours. Notre équipe support 24h/24 surveille le service en permanence." },
             ].map((item) => (
               <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-3 text-[#5a5fcf]">{item.q}</h3>
@@ -216,13 +210,13 @@ export default function HowItWorksPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-gradient-to-r from-red-900 to-gray-900 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4">Ready to Commencer?</h2>
+          <h2 className="text-3xl font-bold mb-4">Prêt à commencer ?</h2>
           <p className="text-black mb-8">
-            Try it free for 24 hours. No credit card, no commitment. Our team will have you set up in minutes.
+            Essayez gratuitement pendant 24 heures. Sans carte bancaire, sans engagement. Notre équipe vous configure en quelques minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/essai-gratuit" className="bg-[#5a5fcf] hover:bg-[#5a5fcf] text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
-              Get Essai Gratuit
+              Obtenir l’essai gratuit
             </a>
             <a href="/tarifs" className="border border-[#5a5fcf] text-[#5a5fcf] hover:bg-[#5a5fcf] hover:text-black px-8 py-4 rounded-xl font-bold text-lg transition-colors">
               Voir les Tarifs

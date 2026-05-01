@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 6 Mois — €39 | Stream Bleu" },
   description:
-    "Get 6 months of IPTV in france for only €39. 25 000+ live channels, 4K quality, Ligue 1, beIN Sports, CTV included. Save vs monthly. Login credentials sent within minutes.",
+    "Profitez de 6 mois d'IPTV en France pour seulement 39€. 25 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au mensuel. Identifiants envoyés en quelques minutes.",
   keywords:
     "IPTV 6 months france, Stream Bleu 6 months, best IPTV plan france, 6 month IPTV france €39",
   alternates: { canonical: "https://streambleu.fr/tarifs/6-mois" },
@@ -14,19 +14,19 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "Qu'est-ce qui est inclus dans le forfait 6 mois ?",
-    a: "The 6-month plan includes six full months of access to 25 000+ live channels (beIN Sports, RMC Sport, Canal+, CTV, Global, RDS, TVA and more), 120 000+ movies and series on demand, 4K Ultra HD streaming, EPG, and 7-day catch-up TV — all for €39.",
+    a: "Le forfait 6 mois inclut six mois complets d'accès à plus de 25 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6 et plus), 120 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 39€.",
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
-    a: "After placing your order, our team will review it and send your login credentials (server URL, username, and password) directly to your email address within minutes. Check your spam folder if you don't see it.",
+    a: "Après votre commande, notre équipe la vérifie et vous envoie vos identifiants (URL serveur, nom d'utilisateur et mot de passe) directement par e-mail en quelques minutes. Vérifiez vos courriers indésirables si vous ne les voyez pas.",
   },
   {
     q: "Quels appareils sont compatibles avec ce service IPTV ?",
-    a: "Our service works on Amazon Firestick, all Samsung and LG Smart TVs, Android boxes, Android phones and tablets, iPhone, iPad, Apple TV, MAG boxes, Windows PCs and Macs. Any device that supports an IPTV player app is compatible.",
+    a: "Notre service fonctionne sur Amazon Firestick, toutes les Smart TV Samsung et LG, les box Android, les téléphones et tablettes Android, iPhone, iPad, Apple TV, les box MAG, PC Windows et Mac. Tout appareil supportant une application IPTV est compatible.",
   },
   {
     q: "Quelle vitesse internet faut-il ?",
-    a: "We recommend at least 10 Mbps for HD streaming and 25 Mbps for 4K Ultra HD. Any standard Français home internet plan handles this easily. Our anti-freeze technology also helps on slower connections.",
+    a: "Nous recommandons au moins 10 Mbps pour le streaming HD et 25 Mbps pour la 4K Ultra HD. Tout abonnement internet domicile standard en France gère facilement cela. Notre technologie anti-gel aide également sur les connexions plus lentes.",
   },
   {
     q: "Puis-je regarder les chaînes françaises en direct ?",
@@ -34,7 +34,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Puis-je utiliser ce service sur plusieurs appareils en même temps ?",
-    a: "The base plan supports 1 simultaneous connection. If you need multiple devices streaming at the same time, contact us and we'll arrange a multi-connection plan for your household.",
+    a: "Le forfait de base supporte 1 connexion simultanée. Si vous avez besoin de plusieurs appareils simultanés, contactez-nous et nous arrangerons un forfait multi-connexions pour votre foyer.",
   },
   {
     q: "Que se passe-t-il à l'expiration de mon abonnement 6 mois ?",
@@ -42,7 +42,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Comment obtenir du support en cas de problème ?",
-    a: "Our Français support team is disponible 24h/24 via WhatsApp (+1 782-802-6280) and email en français. Most issues are resolved within minutes.",
+    a: "Notre équipe support est disponible 24h/24 via WhatsApp et e-mail en français. La plupart des problèmes sont résolus en quelques minutes.",
   },
 ];
 
