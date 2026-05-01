@@ -2,6 +2,15 @@
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
+    {"@type": "ListItem", "position": 2, "name": "Commande", "item": "https://streambleu.fr/commande"}
+  ]
+};
+
 function OrderContent() {
   const params = useSearchParams();
   const appareils = params.get("appareils") || "1";
@@ -20,9 +29,9 @@ function OrderContent() {
   );
 
   return (
-    <main
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-       style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4">
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4">
       <div className="max-w-xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
@@ -116,18 +125,11 @@ function OrderContent() {
         </div>
       </div>
     </main>
+    </>
   );
 }
 
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "Commande", "item": "https://streambleu.fr/commande"}
-  ]
-};
 export default function OrderPage() {
   return (
     <Suspense fallback={<div className="bg-transparent min-h-screen flex items-center justify-center text-black">Loading...</div>}>
