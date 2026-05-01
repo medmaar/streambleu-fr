@@ -41,9 +41,9 @@ const breadcrumbSchema = {
 };
 export default function ParrainagePage() {
   return (
-    <main
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-       style={{ background: pageBg, color: "#fff", minHeight: "100vh" }}>
+      <main style={{ background: pageBg, color: "#fff", minHeight: "100vh" }}>
 
       {/* Hero */}
       <section style={{ padding: "64px 16px 40px", textAlign: "center" }}>
@@ -123,5 +123,6 @@ export default function ParrainagePage() {
       </section>
 
     </main>
+    </>
   );
 }

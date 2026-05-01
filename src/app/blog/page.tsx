@@ -137,9 +137,9 @@ const breadcrumbSchema = {
 };
 export default function BlogPage() {
   return (
-    <main
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-       style={{ background: "#fdf5ff", minHeight: "100vh" }}>
+      <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
       <section style={{ padding: "80px 16px 60px", background: "linear-gradient(135deg, #5a5fcf, #7b87e8)" }}>
         <div style={{ maxWidth: 800, margin: "0 auto", textAlign: "center" }}>
           <p style={{ color: "#c5bcf5", fontSize: 12, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 12 }}>Blog</p>
@@ -189,5 +189,6 @@ export default function BlogPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

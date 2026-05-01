@@ -21,9 +21,9 @@ const breadcrumbSchema = {
 };
 export default function TarifsPage() {
   return (
-    <main
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-       style={{ background: "linear-gradient(to right, rgba(90,95,207,0.04) 0%, #fdf5ff 35%, #fdf5ff 65%, rgba(200,80,100,0.04) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(90,95,207,0.04) 0%, #fdf5ff 35%, #fdf5ff 65%, rgba(200,80,100,0.04) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
 
       <section style={{ padding: "80px 16px 40px", textAlign: "center" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
@@ -133,5 +133,6 @@ export default function TarifsPage() {
       </section>
 
     </main>
+    </>
   );
 }

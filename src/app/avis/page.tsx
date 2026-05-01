@@ -18,9 +18,9 @@ const breadcrumbSchema = {
 };
 export default function ReviewsPage() {
   return (
-    <main
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-       style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", minHeight: "100vh", color: "#1a1a4e" }}>
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", minHeight: "100vh", color: "#1a1a4e" }}>
       <section style={{ padding: "48px 16px 32px" }}>
         <div style={{ maxWidth: 680, margin: "0 auto" }}>
           <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", textAlign: "center" }}>
@@ -55,5 +55,6 @@ export default function ReviewsPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

@@ -28,9 +28,9 @@ const breadcrumbSchema = {
 };
 export default function AvertissementPage() {
   return (
-    <main
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-       style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
+      <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen py-20 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4 text-[#5a5fcf]">Avertissement</h1>
         <p className="text-black text-sm mb-10">Last updated: April 4, 2026</p>
@@ -105,5 +105,6 @@ export default function AvertissementPage() {
         </section>
       </div>
     </main>
+    </>
   );
 }

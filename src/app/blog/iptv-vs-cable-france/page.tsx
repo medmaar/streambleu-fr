@@ -55,9 +55,9 @@ const breadcrumbSchema = {
 };
 export default function IPTVvsCableFrance() {
   return (
-    <main
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-       style={{ background: "#fdf5ff", minHeight: "100vh" }}>
+      <main style={{ background: "#fdf5ff", minHeight: "100vh" }}>
       <section style={{ background: "linear-gradient(135deg, #5a5fcf, #7b87e8)", padding: "80px 16px 60px" }}>
         <div style={{ maxWidth: 820, margin: "0 auto" }}>
           <div style={{ display: "flex", gap: 10, marginBottom: 20, flexWrap: "wrap" }}>
@@ -131,5 +131,6 @@ export default function IPTVvsCableFrance() {
         <Link href="/blog" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Retour au blog</Link>
       </article>
     </main>
+    </>
   );
 }
