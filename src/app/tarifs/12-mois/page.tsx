@@ -3,18 +3,18 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "Forfait IPTV 1 An — 49€ Meilleur Prix | Stream Bleu" },
+  title: { absolute: "Forfait IPTV 12 Mois — 49€ Meilleur Prix | Stream Bleu" },
   description:
     "Profitez d'un an complet d'IPTV en France pour seulement 49€. 25 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports, bonus IBO Player inclus. Meilleur rapport qualité-prix en France.",
   keywords:
-    "IPTV annual france, Stream Bleu 1 year, best value IPTV france, 12 month IPTV france €49, yearly IPTV france",
+    "IPTV 12 mois france, Stream Bleu 12 mois, meilleur forfait IPTV france, IPTV 49€ France, abonnement annuel IPTV france",
   alternates: { canonical: "https://streambleu.fr/tarifs/12-mois" },
 };
 
 const faqItems: FaqItem[] = [
   {
-    q: "Qu'est-ce qui est inclus dans le forfait IPTV 1 an ?",
-    a: "Le forfait 1 an vous offre 12 mois complets d'accès à plus de 25 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2 et des centaines d'autres), 120 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 49€.",
+    q: "Qu'est-ce qui est inclus dans le forfait IPTV 12 mois ?",
+    a: "Le forfait 12 mois vous offre 12 mois complets d'accès à plus de 25 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2 et des centaines d'autres), 120 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 49€.",
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
@@ -37,7 +37,7 @@ const faqItems: FaqItem[] = [
     a: "Le forfait de base supporte 1 connexion simultanée. Besoin de streamer sur plusieurs écrans ? Contactez-nous et nous configurerons un forfait multi-connexions adapté à votre foyer.",
   },
   {
-    q: "Que se passe-t-il à l'expiration de mon abonnement 1 an ?",
+    q: "Que se passe-t-il à l'expiration de mon abonnement 12 mois ?",
     a: "Vous recevrez un rappel avant la date de renouvellement. Passez simplement une nouvelle commande pour renouveler pour un an supplémentaire. Aucun prélèvement automatique, aucun contrat à long terme — vous êtes toujours maître de votre abonnement.",
   },
   {
@@ -59,8 +59,8 @@ const faqSchema = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Forfait IPTV 1 An Stream Bleu",
-  description: "12 months of IPTV access to 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K. Includes IBO Player subscription.",
+  name: "Forfait IPTV 12 Mois Stream Bleu",
+  description: "12 mois d'accès IPTV à plus de 25 000 chaînes en direct en France dont Ligue 1, beIN Sports, RMC Sport et 120 000+ titres VOD en 4K. Inclut l'abonnement IBO Player.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",
@@ -138,7 +138,7 @@ export default function Pricing12MonthsPage() {
             {/* 1. Page title */}
             <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 24, textAlign: "center" }}>
               <span style={{ background: "rgba(90,95,207,0.18)", border: "1px solid rgba(90,95,207,0.4)", color: "rgba(255,255,255,0.8)", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 20 }}>
-                Stream Bleu · 1 An
+                Stream Bleu · 12 Mois
               </span>
               <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
                 1 An
@@ -158,7 +158,7 @@ export default function Pricing12MonthsPage() {
                 borderColor: "rgba(197,188,245,0.2)", boxShadow: "0 8px 32px rgba(90,95,207,0.25)",
               }}
             >
-              <PlanOrderForm plan="Forfait 1 An — 49€" />
+              <PlanOrderForm plan="Forfait 12 Mois — 49€" />
             </div>
 
             {/* 4. FAQ */}

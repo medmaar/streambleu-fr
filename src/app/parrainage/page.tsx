@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ReferralForm from "../../components/ReferralForm";
 
 export const metadata: Metadata = {
-  title: "Parrainage IPTV France — Gagnez +1 An | Stream Bleu",
-  description: "Parrainez un ami sur Stream Bleu et gagnez +1 an de service gratuit. Sans limite — chaque parrainage réussi ajoute 12 mois à votre compte.",
+  title: "Parrainage IPTV France — Gagnez +12 Mois | Stream Bleu",
+  description: "Parrainez un ami sur Stream Bleu et gagnez +12 mois de service gratuit. Sans limite — chaque parrainage réussi ajoute 12 mois à votre compte.",
   keywords: "parrainage stream bleu, parrainer ami iptv, stream bleu an gratuit, affiliation iptv france",
   alternates: { canonical: "https://streambleu.fr/parrainage" },
 };
@@ -11,17 +11,17 @@ export const metadata: Metadata = {
 const steps = [
   { number: "01", title: "Parrainez un ami", description: "Partagez vos informations de parrainage avec un ami qui n'a pas encore utilisé notre service. Envoyez-les via WhatsApp ou remplissez le formulaire ci-dessous." },
   { number: "02", title: "Votre ami s'abonne", description: "Votre ami s'inscrit et souscrit au moins un abonnement de 12 mois à Stream Bleu." },
-  { number: "03", title: "Vous gagnez +1 an GRATUIT", description: "Une fois le paiement vérifié, 12 mois sont ajoutés à votre compte automatiquement. Sans limite — parrainez autant d'amis que vous voulez !" },
+  { number: "03", title: "Vous gagnez +12 Mois GRATUITS", description: "Une fois le paiement vérifié, 12 mois sont ajoutés à votre compte automatiquement. Sans limite — parrainez autant d'amis que vous voulez !" },
 ];
 
 const rewardCards = [
-  { title: "+1 An par Parrainage", desc: "Chaque parrainage approuvé ajoute 12 mois gratuits à votre abonnement.", bg: "#5a5fcf" },
+  { title: "+12 Mois par Parrainage", desc: "Chaque parrainage approuvé ajoute 12 mois gratuits à votre abonnement.", bg: "#5a5fcf" },
   { title: "Sans Limite", desc: "Parrainez autant de personnes que vous voulez. Chaque parrainage réussi rapporte une autre année bonus.", bg: "#7b87e8" },
   { title: "Validation Rapide", desc: "Notre équipe examine et approuve manuellement les parrainages rapidement.", bg: "#5a5fcf" },
 ];
 
 const rules = [
-  "La personne parrainée doit souscrire au moins un abonnement de 1 an Stream Bleu.",
+  "La personne parrainée doit souscrire au moins un abonnement de 12 mois Stream Bleu.",
   "Votre bonus est ajouté après vérification du paiement.",
   "La personne parrainée doit être un nouveau client qui n'a jamais utilisé Stream Bleu.",
   "Les parrainages sont illimités — chaque parrainage réussi vous donne +12 mois supplémentaires.",
@@ -36,7 +36,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "Parrainage IPTV France — Gagnez +1 An", "item": "https://streambleu.fr/parrainage"}
+    {"@type": "ListItem", "position": 2, "name": "Parrainage IPTV France — Gagnez +12 Mois", "item": "https://streambleu.fr/parrainage"}
   ]
 };
 export default function ParrainagePage() {
