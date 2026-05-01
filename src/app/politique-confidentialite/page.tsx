@@ -100,7 +100,7 @@ export default function PolitiqueConfidentialitePage() {
             <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>9. Nous contacter</h2>
             <p style={{ color: "#333", marginBottom: 16 }}>Si vous avez des questions concernant cette Politique de confidentialité :</p>
             <div style={{ background: "rgba(90,95,207,0.06)", borderRadius: 12, padding: 24, border: "1px solid rgba(90,95,207,0.15)" }}>
-              <p>Email : <a href="mailto:help@streambleu.fr" style={{ color: "#5a5fcf" }}>help@streambleu.fr</a></p>
+              <p>Email : <a href="mailto:contact@streambleu.fr" style={{ color: "#5a5fcf" }}>contact@streambleu.fr</a></p>
               <p className="mt-2">WhatsApp : <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf" }}>+1 (782) 802-6280</a></p>
             </div>
           </section>

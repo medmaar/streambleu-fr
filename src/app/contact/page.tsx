@@ -40,11 +40,11 @@ const channels = [
     name: "Email",
     desc: "Pour les demandes détaillées, questions de facturation ou avis DMCA.",
     action: "Envoyer un email",
-    href: "mailto:help@streambleu.fr",
+    href: "mailto:contact@streambleu.fr",
     actionBg: "#F5C518",
     actionColor: "#111",
     iconBg: "#F5C518",
-    detail: "help@streambleu.fr",
+    detail: "contact@streambleu.fr",
   },
 ];
 

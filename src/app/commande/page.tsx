@@ -92,7 +92,7 @@ function OrderContent() {
           </a>
 
           <a
-            href={`mailto:help@streambleu.fr?subject=${emailSubject}&body=${emailBody}`}
+            href={`mailto:contact@streambleu.fr?subject=${emailSubject}&body=${emailBody}`}
             className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl font-bold text-gray-900 bg-[#F5C518] hover:brightness-110 transition text-lg"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">

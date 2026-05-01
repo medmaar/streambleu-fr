@@ -27,7 +27,7 @@ export default function DMCAPage() {
         <div style={{ border: "1px solid rgba(220,50,50,0.3)", borderRadius: 16, padding: 24, marginBottom: 40, background: "rgba(220,50,50,0.04)" }}>
           <p style={{ fontSize: 11, fontWeight: 700, color: "#5a5fcf", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 12 }}>Avertissement Légal</p>
           <p style={{ color: "#333", lineHeight: 1.7 }}>
-            Stream Bleu est un revendeur de services IPTV tiers. Nous n&apos;hébergeons, ne stockons ni ne transmettons aucun contenu vidéo. Tous les flux sont fournis par des serveurs tiers indépendants. Si vous pensez que votre contenu protégé est accessible via notre plateforme, veuillez nous contacter à <a href="mailto:help@streambleu.fr" style={{ color: "#5a5fcf" }}>help@streambleu.fr</a> et nous transmettrons votre demande au prestataire concerné. Nous répondons à tous les avis DMCA valides dans les 72 heures.
+            Stream Bleu est un revendeur de services IPTV tiers. Nous n&apos;hébergeons, ne stockons ni ne transmettons aucun contenu vidéo. Tous les flux sont fournis par des serveurs tiers indépendants. Si vous pensez que votre contenu protégé est accessible via notre plateforme, veuillez nous contacter à <a href="mailto:contact@streambleu.fr" style={{ color: "#5a5fcf" }}>contact@streambleu.fr</a> et nous transmettrons votre demande au prestataire concerné. Nous répondons à tous les avis DMCA valides dans les 72 heures.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function DMCAPage() {
             <p className="mb-2">Envoyez tous les avis DMCA à notre agent désigné :</p>
             <div style={{ background: "rgba(90,95,207,0.06)", borderRadius: 12, padding: 24, border: "1px solid rgba(90,95,207,0.15)" }}>
               <p style={{ fontWeight: 700, color: "#1a1a4e" }}>Stream Bleu — Agent DMCA</p>
-              <p>Email : <a href="mailto:help@streambleu.fr" style={{ color: "#5a5fcf" }}>help@streambleu.fr</a></p>
+              <p>Email : <a href="mailto:contact@streambleu.fr" style={{ color: "#5a5fcf" }}>contact@streambleu.fr</a></p>
               <p style={{ fontSize: 13, color: "#666", marginTop: 8 }}>Veuillez indiquer « Avis DMCA » dans l&apos;objet du message.</p>
             </div>
           </div>

@@ -45,7 +45,7 @@ export default function ResellerPage() {
           <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 16, lineHeight: 1.7, marginBottom: 32 }}>
             Rejoignez le programme revendeur Stream Bleu. Obtenez des crédits à prix grossiste, gérez vos clients depuis un panneau dédié, et construisez votre propre activité IPTV sous votre marque.
           </p>
-          <a href="mailto:help@streambleu.fr?subject=Demande Revendeur Stream Bleu"
+          <a href="mailto:contact@streambleu.fr?subject=Demande Revendeur Stream Bleu"
             style={{ display: "inline-block", background: "#f5a623", color: "#1a1a4e", padding: "14px 36px", borderRadius: 14, fontWeight: 700, fontSize: 16, textDecoration: "none" }}>
             Devenir Revendeur →
           </a>
@@ -78,7 +78,7 @@ export default function ResellerPage() {
             Contactez-nous par email ou WhatsApp pour obtenir votre accès revendeur. Activation sous 24h.
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="mailto:help@streambleu.fr?subject=Demande Revendeur"
+            <a href="mailto:contact@streambleu.fr?subject=Demande Revendeur"
               style={{ display: "inline-block", background: "#f5a623", color: "#1a1a4e", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               Envoyer un Email
             </a>

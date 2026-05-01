@@ -82,9 +82,9 @@ export default function Footer() {
             <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 12, lineHeight: 1.65, marginBottom: 10 }}>
               Meilleur IPTV France. 25 000+ chaînes, 120 000+ films en 4K. Disponible toute l&apos;Europe.
             </p>
-            <a href="mailto:help@streambleu.fr"
+            <a href="mailto:contact@streambleu.fr"
               style={{ color: "#c5bcf5", fontSize: 12, textDecoration: "none" }}>
-              help@streambleu.fr
+              contact@streambleu.fr
             </a>
           </div>
 

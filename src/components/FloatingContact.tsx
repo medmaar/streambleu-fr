@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const WA_URL = "https://wa.me/17828026280?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service.";
 const TG_URL = "https://t.me/IPTVFranceSupport?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service.";
-const EMAIL_URL = "mailto:help@streambleu.fr?subject=I%27m%20interested%20in%20your%20service";
+const EMAIL_URL = "mailto:contact@streambleu.fr?subject=I%27m%20interested%20in%20your%20service";
 
 const contacts = [
   {

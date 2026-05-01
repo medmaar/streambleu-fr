@@ -74,7 +74,7 @@ const organizationSchema = {
   name: "Stream Bleu",
   url: "https://streambleu.fr",
   logo: "https://streambleu.fr/favicon.svg",
-  email: "help@streambleu.fr",
+  email: "contact@streambleu.fr",
   description:
     "Le meilleur abonnement IPTV en France. Streams H.265/HEVC, HDR10 & Dolby Vision. 25 000+ chaînes, 120 000+ films et séries.",
   areaServed: "FR",

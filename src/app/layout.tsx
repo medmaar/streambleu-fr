@@ -45,7 +45,7 @@ export default function RootLayout({
   "@type": "LocalBusiness",
   name: "Stream Bleu",
   url: "https://streambleu.fr",
-  email: "help@streambleu.fr",
+  email: "contact@streambleu.fr",
   description: "Abonnement IPTV France 2026 — Meilleur service IPTV premium 4K. 25 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. À partir de 9€/mois.",
   address: { "@type": "PostalAddress", streetAddress: "1 Rue Volant", addressLocality: "Nanterre", postalCode: "92000", addressCountry: "FR" },
   areaServed: [{ "@type": "Country", name: "France" }, { "@type": "Country", name: "Belgique" }, { "@type": "Country", name: "Suisse" }],

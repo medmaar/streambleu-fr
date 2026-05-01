@@ -98,7 +98,7 @@ export default function AvertissementPage() {
               third-party provider.
             </p>
             <div className="mt-4 bg-transparent rounded-xl p-6 border border-gray-800">
-              <p>Email: <a href="mailto:help@streambleu.fr" className="text-[#5a5fcf] hover:underline">help@streambleu.fr</a></p>
+              <p>Email: <a href="mailto:contact@streambleu.fr" className="text-[#5a5fcf] hover:underline">contact@streambleu.fr</a></p>
               <p className="text-[#5a5fcf] text-sm mt-2">Please include &quot;Copyright Concern&quot; in the subject line.</p>
             </div>
           </div>

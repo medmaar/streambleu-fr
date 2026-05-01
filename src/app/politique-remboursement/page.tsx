@@ -76,7 +76,7 @@ export default function PolitiqueRemboursementPage() {
             <div style={{ background: "rgba(90,95,207,0.06)", borderRadius: 12, padding: 24, border: "1px solid rgba(90,95,207,0.15)" }}>
               <p><span style={{ color: "#5a5fcf", fontWeight: 600 }}>WhatsApp : </span><a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf" }}>+1 (782) 802-6280</a></p>
               <p className="mt-2"><span style={{ color: "#5a5fcf", fontWeight: 600 }}>Telegram : </span><a href="https://t.me/IPTVFranceSupport" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf" }}>@IPTVFranceSupport</a></p>
-              <p className="mt-2"><span style={{ color: "#5a5fcf", fontWeight: 600 }}>Email : </span><a href="mailto:help@streambleu.fr" style={{ color: "#5a5fcf" }}>help@streambleu.fr</a></p>
+              <p className="mt-2"><span style={{ color: "#5a5fcf", fontWeight: 600 }}>Email : </span><a href="mailto:contact@streambleu.fr" style={{ color: "#5a5fcf" }}>contact@streambleu.fr</a></p>
             </div>
           </section>
         </div>
