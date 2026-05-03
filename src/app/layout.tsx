@@ -37,7 +37,7 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta name="google-site-verification" content="buTcDxfOZCLSPQIna8VsozPLyV-CPlCyqpUqPDmaPYc" />
-                <link rel="preload" as="image" href="/abonnement-iptv-france-1.jpg" />
+                <link rel="preload" as="image" href="/abonnement-iptv-france-1.jpg" fetchPriority="high" />
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTDG47S721"></script>
                 <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KTDG47S721');` }}></script>
                             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

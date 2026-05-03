@@ -149,7 +149,7 @@ const slideStyle = (sliding: boolean): React.CSSProperties => ({
 const ProgressDots = ({ total, current, go }: { total: number; current: number; go: (n: number) => void }) => (
   <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 22 }}>
     {Array.from({ length: total }).map((_, i) => (
-      <button key={i} onClick={() => go(i)} style={{
+      <button key={i} onClick={() => go(i)} aria-label={`Avis ${i + 1} sur ${total}`} style={{
         width: i === current ? 26 : 10, height: 10, borderRadius: 99,
         border: "none", cursor: "pointer", padding: 0, fontFamily: "inherit",
         background: i === current ? "#5a5fcf" : "rgba(90,95,207,0.25)",
@@ -212,7 +212,7 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
           <div style={slideStyle(tp.sliding)}>
             <div style={{ background: "#fff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 4px 28px rgba(90,95,207,0.12)", border: "1px solid rgba(90,95,207,0.12)" }}>
               <TP_STARS />
-              <h4 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#1a1a4e" }}>{tpReview.title}</h4>
+              <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#1a1a4e" }}>{tpReview.title}</h3>
               <p style={{ color: "#333", lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
               <p style={{ color: "#5a5fcf", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
             </div>

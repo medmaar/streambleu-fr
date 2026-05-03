@@ -79,11 +79,11 @@ export default function Footer() {
           {/* Brand */}
           <div style={{ flex: "0 0 220px", minWidth: 180 }}>
             <Logo className="mb-3" />
-            <p style={{ color: "rgba(255,255,255,0.65)", fontSize: 12, lineHeight: 1.65, marginBottom: 10 }}>
+            <p style={{ color: "rgba(255,255,255,0.90)", fontSize: 12, lineHeight: 1.65, marginBottom: 10 }}>
               Meilleur IPTV France. 25 000+ chaînes, 120 000+ films en 4K. Disponible toute l&apos;Europe.
             </p>
             <a href="mailto:contact@streambleu.fr"
-              style={{ color: "#c5bcf5", fontSize: 12, textDecoration: "none" }}>
+              style={{ color: "#ffffff", fontSize: 12, textDecoration: "none" }}>
               contact@streambleu.fr
             </a>
           </div>
@@ -102,7 +102,7 @@ export default function Footer() {
                   fontWeight: 700,
                   textTransform: "uppercase",
                   letterSpacing: "0.1em",
-                  color: "rgba(255,255,255,0.45)",
+                  color: "rgba(255,255,255,0.85)",
                   marginBottom: 10,
                 }}>
                   {section.title}
@@ -112,9 +112,9 @@ export default function Footer() {
                     <Link
                       key={l.href}
                       href={l.href}
-                      style={{ color: "rgba(255,255,255,0.72)", fontSize: 12, textDecoration: "none" }}
+                      style={{ color: "rgba(255,255,255,0.92)", fontSize: 12, textDecoration: "none" }}
                       onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
-                      onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.72)")}
+                      onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.92)")}
                     >
                       {l.label}
                     </Link>
@@ -135,13 +135,13 @@ export default function Footer() {
           gap: "6px 24px",
           padding: "14px 0",
         }}>
-          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: 0 }}>
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.75)", margin: 0 }}>
             © 2026 Stream Bleu. Tous droits réservés.
           </p>
-          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: 0 }}>
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.75)", margin: 0 }}>
             1 Rue Volant, 92000 Nanterre, France
           </p>
-          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: 0 }}>
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.75)", margin: 0 }}>
             Stream Bleu ne diffuse aucun contenu protégé — fourni par des prestataires tiers.
           </p>
         </div>

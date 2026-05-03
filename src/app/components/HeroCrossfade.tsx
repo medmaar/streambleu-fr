@@ -80,6 +80,7 @@ export default function HeroCrossfade() {
           zIndex: 2,
         }}
         loading={current === 0 ? "eager" : "lazy"}
+        fetchPriority={current === 0 ? "high" : "auto"}
       />
 
       {/* White flash — camera shutter feel */}
