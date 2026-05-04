@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /commande
+Disallow: /whatsapp-contact
 Disallow: /admin
 Disallow: /api
 
