@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import HomePricing from "./components/HomePricing";
-import ReviewsSection from "./components/ReviewsSection";
+import dynamic from "next/dynamic";
 import HeroCrossfade from "./components/HeroCrossfade";
+
+const HomePricing = dynamic(() => import("./components/HomePricing"));
+const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
 
 export const metadata: Metadata = {
   title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu" },

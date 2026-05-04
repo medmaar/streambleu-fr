@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from "react";
 
 const HERO_IMAGES = [
-  { src: "/abonnement-iptv-france-1.jpg", alt: "Abonnement IPTV France — supporters français", pos: "center 30%" },
-  { src: "/abonnement-iptv-france-2.jpg", alt: "IPTV France — fans coupe du monde", pos: "center 20%" },
-  { src: "/abonnement-iptv-france-3.jpg", alt: "IPTV Premium France — Champs-Élysées", pos: "center 40%" },
-  { src: "/abonnement-iptv-france-4.jpg", alt: "Abonnement IPTV — supporters Tour Eiffel", pos: "center 30%" },
-  { src: "/abonnement-iptv-france-5.jpg", alt: "IPTV France 4K — équipe de France football", pos: "center 25%" },
-  { src: "/abonnement-iptv-france-6.jpg", alt: "Service IPTV France — supporters stade", pos: "center 35%" },
+  { src: "/abonnement-iptv-france-1.webp", alt: "Abonnement IPTV France — supporters français", pos: "center 30%" },
+  { src: "/abonnement-iptv-france-2.webp", alt: "IPTV France — fans coupe du monde", pos: "center 20%" },
+  { src: "/abonnement-iptv-france-3.webp", alt: "IPTV Premium France — Champs-Élysées", pos: "center 40%" },
+  { src: "/abonnement-iptv-france-4.webp", alt: "Abonnement IPTV — supporters Tour Eiffel", pos: "center 30%" },
+  { src: "/abonnement-iptv-france-5.webp", alt: "IPTV France 4K — équipe de France football", pos: "center 25%" },
+  { src: "/abonnement-iptv-france-6.webp", alt: "Service IPTV France — supporters stade", pos: "center 35%" },
 ];
 
 export default function HeroCrossfade() {

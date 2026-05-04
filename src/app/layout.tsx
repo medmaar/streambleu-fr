@@ -1,6 +1,6 @@
 import { Quicksand } from 'next/font/google';
 
-const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'swap', variable: '--font-quicksand' });
+const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'optional', variable: '--font-quicksand' });
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
@@ -37,9 +37,26 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta name="google-site-verification" content="buTcDxfOZCLSPQIna8VsozPLyV-CPlCyqpUqPDmaPYc" />
-                <link rel="preload" as="image" href="/abonnement-iptv-france-1.jpg" fetchPriority="high" />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTDG47S721"></script>
-                <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KTDG47S721');` }}></script>
+                {/* Preload LCP hero — now WebP (29KB vs 84KB JPG) */}
+                <link rel="preload" as="image" href="/abonnement-iptv-france-1.webp" type="image/webp" fetchPriority="high" />
+                {/* GA4 — deferred until user interaction (saves 64.9KB on initial load) */}
+                <script dangerouslySetInnerHTML={{ __html: `
+                  window.dataLayer=window.dataLayer||[];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js',new Date());
+                  gtag('config','G-KTDG47S721');
+                  var _gaLoaded=false;
+                  function _loadGA(){
+                    if(_gaLoaded)return;_gaLoaded=true;
+                    var s=document.createElement('script');
+                    s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-KTDG47S721';
+                    document.head.appendChild(s);
+                  }
+                  ['click','scroll','keydown','touchstart','mousemove'].forEach(function(e){
+                    document.addEventListener(e,_loadGA,{once:true,passive:true});
+                  });
+                  setTimeout(_loadGA,5000);
+                `}}></script>
                             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
