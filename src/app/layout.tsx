@@ -37,7 +37,6 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta name="google-site-verification" content="buTcDxfOZCLSPQIna8VsozPLyV-CPlCyqpUqPDmaPYc" />
-                <meta name="google-site-verification" content="z2uXCLvrAX-abP2zLhz0Ldx3Q0GngTfAPn2Oyx79060" />
                 {/* Preload LCP hero — now WebP (29KB vs 84KB JPG) */}
                 <link rel="preload" as="image" href="/abonnement-iptv-france-1.webp" type="image/webp" fetchPriority="high" />
                 {/* GA4 — deferred until user interaction (saves 64.9KB on initial load) */}
