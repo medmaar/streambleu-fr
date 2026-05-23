@@ -228,6 +228,9 @@ export default function IPTVParisPage() {
                 { label: "IPTV Toulouse", href: "/iptv-toulouse" },
                 { label: "IPTV Nice", href: "/iptv-nice" },
                 { label: "IPTV Bordeaux", href: "/iptv-bordeaux" },
+                { label: "IPTV Lille", href: "/iptv-lille" },
+                { label: "IPTV Nantes", href: "/iptv-nantes" },
+                { label: "IPTV Strasbourg", href: "/iptv-strasbourg" },
               ].filter(c => !c.href.includes("paris")).map((c) => (
                 <Link key={c.href} href={c.href} style={{
                   background: "rgba(123,135,232,0.08)",
