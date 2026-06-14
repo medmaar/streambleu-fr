@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PlanOrderForm from "../tarifs/PlanOrderForm";
+import EssaiGratuitForm from "./EssaiGratuitForm";
 import PlanFAQ, { type FaqItem } from "../tarifs/PlanFAQ";
 
 export const metadata: Metadata = {
@@ -85,7 +85,7 @@ export default function FreeTrialPage() {
               <p style={{ textAlign: "center", color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 28 }}>
                 Remplissez le formulaire — vous recevrez vos identifiants par email en moins de 5 minutes.
               </p>
-              <PlanOrderForm plan="Essai Gratuit 24h" />
+              <EssaiGratuitForm />
             </div>
           </div>
         </section>
