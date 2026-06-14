@@ -1,24 +1,17 @@
 /**
  * Stream Bleu — Worker d'essai gratuit automatique
- * URL cible : https://iptv-trial-streambleu.medmaar.workers.dev
- *
- * Flux :
- *  1. Reçoit le formulaire de streambleu.fr/essai-gratuit
- *  2. Récupère la liste des packages depuis le panel TREX
- *  3. Trouve le package "France"
- *  4. Crée une ligne M3U (24h) dans le panel
- *  5. Envoie les identifiants par email (en français, Arial) via Resend
- *  6. Envoie une notification admin
+ * URL : https://iptv-trial-streambleu.medmaar.workers.dev
  */
 
-const PANEL_URL    = "https://activationpanel.ru";
+const PANEL_HTTPS  = "https://activationpanel.ru";
+const PANEL_HTTP   = "http://activationpanel.ru";
 const API_KEY      = "35cf68cc83a3a82e";
 const RESEND_KEY   = "re_98ZyX2kU_12nnqJff4QZ28PQbD8ueCdK7";
 const FROM_EMAIL   = "Stream Bleu <contact@streambleu.fr>";
 const ADMIN_EMAIL  = "contact@streambleu.fr";
-const PACKAGE_NAME = "France"; // package exact name in panel
+const PACKAGE_NAME = "France";
 
-// ── helpers ──────────────────────────────────────────────────────────────────
+// ── helpers ───────────────────────────────────────────────────────────────────
 
 function randomStr(len, pool = "abcdefghijklmnopqrstuvwxyz0123456789") {
   const buf = new Uint8Array(len);
@@ -47,31 +40,60 @@ async function sendEmail(to, subject, html) {
   });
   if (!res.ok) {
     const txt = await res.text();
-    throw new Error(`Resend error (${res.status}): ${txt}`);
+    throw new Error(`Resend (${res.status}): ${txt}`);
   }
 }
 
 // ── panel helpers ─────────────────────────────────────────────────────────────
 
+async function panelFetch(path) {
+  // Try HTTPS first, fall back to HTTP
+  let res, lastErr;
+  for (const base of [PANEL_HTTPS, PANEL_HTTP]) {
+    try {
+      res = await fetch(`${base}${path}`, { cf: { cacheTtl: 0 } });
+      if (res.ok) return res;
+      lastErr = `HTTP ${res.status} from ${base}`;
+    } catch (e) {
+      lastErr = `Fetch error on ${base}: ${e.message}`;
+    }
+  }
+  throw new Error(`Panel unreachable — ${lastErr}`);
+}
+
 async function getPackages() {
-  const res = await fetch(
-    `${PANEL_URL}/api.php?action=packages&api_key=${API_KEY}`
-  );
-  if (!res.ok) throw new Error(`Panel packages request failed: ${res.status}`);
-  return res.json();
+  const res = await panelFetch(`/api.php?action=packages&api_key=${API_KEY}`);
+  const text = await res.text();
+  let data;
+  try { data = JSON.parse(text); } catch {
+    throw new Error(`Panel packages non-JSON: ${text.slice(0, 300)}`);
+  }
+  // Normalise: could be array, {packages:[...]}, {data:[...]}, or object map
+  if (Array.isArray(data)) return data;
+  if (data && Array.isArray(data.packages)) return data.packages;
+  if (data && Array.isArray(data.data)) return data.data;
+  if (data && typeof data === "object") return Object.values(data);
+  throw new Error(`Unexpected packages format: ${text.slice(0, 300)}`);
 }
 
 async function createLine(packageId, username, password) {
-  const expDate = Math.floor(Date.now() / 1000) + 86400; // +24h
-  const url = `${PANEL_URL}/api.php?action=user&sub=create&api_key=${API_KEY}` +
-    `&username=${encodeURIComponent(username)}` +
-    `&password=${encodeURIComponent(password)}` +
-    `&max_connections=1` +
-    `&exp_date=${expDate}` +
-    `&package=${packageId}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Panel create request failed: ${res.status}`);
-  return res.json();
+  const expDate = Math.floor(Date.now() / 1000) + 86400;
+  const qs = new URLSearchParams({
+    action: "user", sub: "create",
+    api_key: API_KEY,
+    username, password,
+    max_connections: "1",
+    exp_date: String(expDate),
+    package: String(packageId),
+  });
+  const res = await panelFetch(`/api.php?${qs}`);
+  const text = await res.text();
+  let data;
+  try { data = JSON.parse(text); } catch {
+    throw new Error(`Panel create non-JSON: ${text.slice(0, 300)}`);
+  }
+  if (data && data.error) throw new Error(`Panel create: ${data.error}`);
+  return data;
 }
 
 // ── email templates ───────────────────────────────────────────────────────────
@@ -85,7 +107,6 @@ function customerEmail(name, username, password, m3uUrl) {
   <title>Votre essai gratuit Stream Bleu</title>
 </head>
 <body style="margin:0;padding:0;background-color:#f2f2f2;font-family:Arial,sans-serif;">
-
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
        style="background-color:#f2f2f2;padding:32px 16px;">
   <tr>
@@ -98,7 +119,7 @@ function customerEmail(name, username, password, m3uUrl) {
         <tr>
           <td style="background-color:#4a4fc0;padding:32px 40px;text-align:center;">
             <h1 style="margin:0;font-family:Arial,sans-serif;font-size:26px;font-weight:bold;
-                       color:#ffffff;letter-spacing:-0.5px;">Stream Bleu</h1>
+                       color:#ffffff;">Stream Bleu</h1>
             <p style="margin:6px 0 0;font-family:Arial,sans-serif;font-size:13px;
                       color:rgba(255,255,255,0.80);">IPTV Premium · France</p>
           </td>
@@ -107,63 +128,50 @@ function customerEmail(name, username, password, m3uUrl) {
         <!-- Corps -->
         <tr>
           <td style="padding:36px 40px;">
-
-            <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:15px;
-                      color:#333333;">Bonjour ${name},</p>
-
+            <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">
+              Bonjour ${name},</p>
             <p style="margin:0 0 28px;font-family:Arial,sans-serif;font-size:14px;
                       line-height:1.65;color:#555555;">
               Votre essai gratuit de <strong>24 heures</strong> est maintenant actif.
               Voici vos identifiants de connexion :
             </p>
 
-            <!-- Bloc identifiants -->
+            <!-- Identifiants -->
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                   style="background-color:#f5f6ff;border:1px solid #dde0f5;
-                          border-radius:6px;margin-bottom:28px;">
+                   style="background-color:#f5f6ff;border:1px solid #dde0f5;border-radius:6px;margin-bottom:28px;">
               <tr>
                 <td style="padding:24px 28px;">
-
                   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-
                     <tr>
                       <td style="padding:0 0 14px;border-bottom:1px solid #e5e7f5;">
                         <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:12px;
-                                  color:#888888;text-transform:uppercase;letter-spacing:0.05em;">
-                          Serveur</p>
+                                  color:#888888;text-transform:uppercase;">Serveur</p>
                         <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;
-                                  color:#333333;font-weight:bold;">${PANEL_URL}</p>
+                                  color:#333333;font-weight:bold;">${PANEL_HTTPS}</p>
                       </td>
                     </tr>
-
                     <tr>
                       <td style="padding:14px 0;border-bottom:1px solid #e5e7f5;">
                         <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:12px;
-                                  color:#888888;text-transform:uppercase;letter-spacing:0.05em;">
-                          Nom d'utilisateur</p>
+                                  color:#888888;text-transform:uppercase;">Nom d'utilisateur</p>
                         <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;
-                                  color:#333333;font-weight:bold;letter-spacing:0.04em;">
-                          ${username}</p>
+                                  color:#333333;font-weight:bold;">${username}</p>
                       </td>
                     </tr>
-
                     <tr>
                       <td style="padding:14px 0 0;">
                         <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:12px;
-                                  color:#888888;text-transform:uppercase;letter-spacing:0.05em;">
-                          Mot de passe</p>
+                                  color:#888888;text-transform:uppercase;">Mot de passe</p>
                         <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;
-                                  color:#333333;font-weight:bold;letter-spacing:0.04em;">
-                          ${password}</p>
+                                  color:#333333;font-weight:bold;">${password}</p>
                       </td>
                     </tr>
-
                   </table>
                 </td>
               </tr>
             </table>
 
-            <!-- Lien M3U -->
+            <!-- M3U -->
             <p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:13px;
                       color:#555555;font-weight:bold;">Lien M3U :</p>
             <p style="margin:0 0 28px;font-family:Arial,sans-serif;font-size:12px;
@@ -179,11 +187,10 @@ function customerEmail(name, username, password, m3uUrl) {
               Cordialement,<br>
               <strong>L'équipe Stream Bleu</strong>
             </p>
-
           </td>
         </tr>
 
-        <!-- Pied de page -->
+        <!-- Pied -->
         <tr>
           <td style="background-color:#f8f8f8;border-top:1px solid #eeeeee;
                      padding:18px 40px;text-align:center;">
@@ -198,15 +205,13 @@ function customerEmail(name, username, password, m3uUrl) {
     </td>
   </tr>
 </table>
-
 </body>
 </html>`;
 }
 
 function adminEmail(name, email, country, device, whatsapp, notes, username, password) {
   return `<!DOCTYPE html>
-<html lang="fr">
-<head><meta charset="UTF-8"></head>
+<html lang="fr"><head><meta charset="UTF-8"></head>
 <body style="font-family:Arial,sans-serif;font-size:14px;color:#333;padding:20px;">
   <h2 style="color:#4a4fc0;margin-top:0;">Nouvel essai gratuit — Stream Bleu</h2>
   <table cellpadding="6" cellspacing="0" border="0">
@@ -220,8 +225,7 @@ function adminEmail(name, email, country, device, whatsapp, notes, username, pas
     <tr><td style="color:#888;">Username</td><td><strong>${username}</strong></td></tr>
     <tr><td style="color:#888;">Password</td><td><strong>${password}</strong></td></tr>
   </table>
-</body>
-</html>`;
+</body></html>`;
 }
 
 // ── main handler ──────────────────────────────────────────────────────────────
@@ -229,7 +233,6 @@ function adminEmail(name, email, country, device, whatsapp, notes, username, pas
 export default {
   async fetch(request) {
 
-    // CORS preflight
     if (request.method === "OPTIONS") {
       return new Response(null, {
         headers: {
@@ -252,17 +255,19 @@ export default {
     }
 
     const { name, email, country, device, whatsapp, notes } = body;
-
     if (!name || !email) {
       return json({ success: false, error: "Nom et email requis" }, 400);
     }
 
+    let step = "packages";
     try {
-      // ── 1. Trouver le package France ─────────────────────────────────────────
+
+      // 1. Packages
       const packages = await getPackages();
+      console.log("Packages reçus:", JSON.stringify(packages).slice(0, 500));
 
       let packageId = null;
-      for (const pkg of Array.isArray(packages) ? packages : []) {
+      for (const pkg of packages) {
         const n = (pkg.package_name || pkg.name || "").trim().toLowerCase();
         if (n === PACKAGE_NAME.toLowerCase()) {
           packageId = pkg.id ?? pkg.package_id ?? null;
@@ -271,35 +276,34 @@ export default {
       }
 
       if (!packageId) {
-        // Fallback: log available packages to help debug
-        console.error("Packages reçus :", JSON.stringify(packages));
-        throw new Error(`Package "${PACKAGE_NAME}" introuvable dans le panel`);
+        const names = packages.map(p => p.package_name || p.name || "?").join(", ");
+        throw new Error(`Package "${PACKAGE_NAME}" non trouvé. Disponibles : ${names}`);
       }
 
-      // ── 2. Générer les identifiants ──────────────────────────────────────────
+      // 2. Credentials
+      step = "credentials";
       const username = "sb_" + randomStr(8);
       const password = randomStr(10);
 
-      // ── 3. Créer la ligne dans le panel ─────────────────────────────────────
-      const result = await createLine(packageId, username, password);
+      // 3. Create line
+      step = "create_line";
+      await createLine(packageId, username, password);
 
-      if (result && result.error) {
-        throw new Error(`Panel : ${result.error}`);
-      }
-
-      // ── 4. Construire l'URL M3U ──────────────────────────────────────────────
+      // 4. M3U URL
       const m3uUrl =
-        `${PANEL_URL}/get.php?username=${encodeURIComponent(username)}` +
+        `${PANEL_HTTPS}/get.php?username=${encodeURIComponent(username)}` +
         `&password=${encodeURIComponent(password)}&type=m3u_plus&output=ts`;
 
-      // ── 5. Email client ──────────────────────────────────────────────────────
+      // 5. Email client
+      step = "email_client";
       await sendEmail(
         email,
         "Votre accès Stream Bleu — Essai gratuit 24H activé ✓",
         customerEmail(name, username, password, m3uUrl)
       );
 
-      // ── 6. Notification admin ────────────────────────────────────────────────
+      // 6. Email admin
+      step = "email_admin";
       await sendEmail(
         ADMIN_EMAIL,
         `[Essai] ${name} — ${email}`,
@@ -309,8 +313,8 @@ export default {
       return json({ success: true });
 
     } catch (err) {
-      console.error("[streambleu-trial]", err.message);
-      return json({ success: false, error: err.message }, 500);
+      console.error(`[streambleu-trial] step=${step}`, err.message);
+      return json({ success: false, error: `[${step}] ${err.message}` }, 500);
     }
   },
 };
