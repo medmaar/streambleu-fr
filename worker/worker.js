@@ -184,7 +184,7 @@ export default {
         type:   "m3u",
         sub:    "99",
         pack:   packId,
-        note:   `${name} | ${email} | StreamBleu trial`,
+        note:   `Trial / streambleu.fr / ${email} | ${whatsapp || ""}`,
       });
 
       console.log("Create response:", crRes.text.slice(0, 300));
