@@ -1,10 +1,10 @@
 /**
  * Stream Bleu — Worker d'essai gratuit automatique
- * API: https://activationpanel.net/api/api.php
+ * API: https://activationpanel.ru/api/api.php
  * sub=99 → demo ticket (24h), action=bouquet → package list
  */
 
-const API_BASE   = "https://activationpanel.net/api/api.php";
+const API_BASE   = "https://activationpanel.ru/api/api.php";
 const API_KEY    = "35cf68cc83a3a82e";
 const RESEND_KEY = "re_98ZyX2kU_12nnqJff4QZ28PQbD8ueCdK7";
 const FROM_EMAIL = "Stream Bleu <contact@streambleu.fr>";
