@@ -5,7 +5,7 @@
  */
 
 const API_BASE    = "https://activationpanel.ru/api/api.php";
-const API_KEY     = "35cf68cc83a3a82e";
+const API_KEY     = "35cf68cc83a3a82e1a0ac5361c7b6105";
 const RESEND_KEY  = "re_98ZyX2kU_12nnqJff4QZ28PQbD8ueCdK7";
 const FROM_EMAIL  = "Stream Bleu <contact@streambleu.fr>";
 const ADMIN_EMAIL = "contact@streambleu.fr";
