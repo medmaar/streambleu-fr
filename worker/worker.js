@@ -5,6 +5,7 @@
  */
 
 const API_BASE    = "https://activationpanel.ru/api/api.php";
+const HOST        = "http://terry.thecontentnest.com";
 const API_KEY     = "35cf68cc83a3a82e1a0ac5361c7b6105";
 const RESEND_KEY  = "re_98ZyX2kU_12nnqJff4QZ28PQbD8ueCdK7";
 const FROM_EMAIL  = "Stream Bleu <contact@streambleu.fr>";
@@ -200,17 +201,16 @@ export default {
         throw new Error(`Panel create failed: ${item?.message || JSON.stringify(item)}`);
       }
 
-      // 3. Extract credentials from returned URL
+      // 3. Extract credentials from panel URL, build M3U from our host
       step = "extract";
-      const m3uUrl = item.url || "";
+      const rawUrl = item.url || "";
       let username = "", password = "";
-      if (m3uUrl) {
-        try {
-          const u = new URL(m3uUrl);
-          username = u.searchParams.get("username") || "";
-          password = u.searchParams.get("password") || "";
-        } catch {}
-      }
+      try {
+        const u = new URL(rawUrl);
+        username = u.searchParams.get("username") || "";
+        password = u.searchParams.get("password") || "";
+      } catch {}
+      const m3uUrl = `${HOST}/get.php?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}&type=m3u_plus&output=ts`;
 
       // 4. Send customer email (French)
       step = "email_client";
