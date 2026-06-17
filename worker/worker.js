@@ -62,7 +62,7 @@ function emailWrap(content) {
       <tr><td style="padding:36px 40px;">${content}</td></tr>
       <tr><td style="background-color:#f8f8f8;border-top:1px solid #eeeeee;padding:18px 40px;text-align:center;">
         <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#aaaaaa;">
-          © 2025 Stream Bleu · <a href="${SITE_URL}" style="color:#4a4fc0;text-decoration:none;">streambleu.fr</a>
+          © 2026 Stream Bleu · <a href="${SITE_URL}" style="color:#4a4fc0;text-decoration:none;">streambleu.fr</a>
         </p>
       </td></tr>
     </table>
