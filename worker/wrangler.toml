@@ -2,5 +2,9 @@ name = "iptv-trial-streambleu"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
-# Deploy: wrangler deploy
-# The worker will be live at https://iptv-trial-streambleu.medmaar.workers.dev
+[[kv_namespaces]]
+binding = "TRIALS"
+id = "d5e88bf585c54d26aea650d283170abd"
+
+[triggers]
+crons = ["0 * * * *"]
