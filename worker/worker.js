@@ -40,6 +40,7 @@ async function sendEmail(to, subject, html) {
 }
 
 function customerEmail(name, username, password, m3uUrl) {
+  const firstName = name.split(" ")[0];
   const server = (() => { try { return new URL(m3uUrl).origin; } catch { return "—"; } })();
   return `<!DOCTYPE html>
 <html lang="fr">
@@ -54,9 +55,18 @@ function customerEmail(name, username, password, m3uUrl) {
         <p style="margin:6px 0 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.80);">IPTV Premium · France</p>
       </td></tr>
       <tr><td style="padding:36px 40px;">
-        <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">Bonjour ${name},</p>
-        <p style="margin:0 0 28px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-          Votre essai gratuit de <strong>24 heures</strong> est maintenant actif. Voici vos identifiants de connexion :
+        <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">Bonjour ${firstName},</p>
+        <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+          Votre essai gratuit est prêt !
+        </p>
+        <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+          Nous avons débloqué tous les pays et toutes les langues afin que vous puissiez tester pleinement notre service.
+        </p>
+        <p style="margin:0 0 24px;font-family:Arial,sans-serif;font-size:13px;line-height:1.65;color:#777777;font-style:italic;">
+          Note : Ne vous inquiétez pas si la liste vous semble trop longue — par la suite, vous pourrez nous demander de masquer les régions ou catégories dont vous n'avez pas besoin !
+        </p>
+        <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+          Voici vos identifiants de connexion :
         </p>
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
                style="background-color:#f5f6ff;border:1px solid #dde0f5;border-radius:6px;margin-bottom:28px;">
@@ -79,8 +89,9 @@ function customerEmail(name, username, password, m3uUrl) {
         </table>
         <p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:13px;color:#555555;font-weight:bold;">Lien M3U :</p>
         <p style="margin:0 0 28px;font-family:Arial,sans-serif;font-size:12px;color:#4a4fc0;word-break:break-all;">${m3uUrl}</p>
-        <p style="margin:0 0 28px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-          Si vous avez des questions, n'hésitez pas à nous contacter par email ou sur WhatsApp.
+        <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+          Besoin d'aide pour l'installation ? Veuillez nous contacter sur WhatsApp au
+          <a href="https://wa.me/17828026280" style="color:#4a4fc0;text-decoration:none;font-weight:bold;">+17828026280</a>
         </p>
         <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Cordialement,<br><strong>L'équipe Stream Bleu</strong></p>
       </td></tr>
