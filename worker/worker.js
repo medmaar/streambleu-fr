@@ -74,27 +74,35 @@ function emailWrap(content) {
 function credBox(username, password, m3uUrl) {
   const server = (() => { try { return new URL(m3uUrl).origin; } catch { return HOST; } })();
   return `
+  <!-- Xtream Codes box -->
+  <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#333333;">Xtream Codes</p>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-         style="background-color:#f5f6ff;border:1px solid #dde0f5;border-radius:6px;margin-bottom:28px;">
-    <tr><td style="padding:24px 28px;">
+         style="background-color:#f5f6ff;border:1px solid #dde0f5;border-radius:6px;margin-bottom:20px;">
+    <tr><td style="padding:20px 24px;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr><td style="padding:0 0 14px;border-bottom:1px solid #e5e7f5;">
-          <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:12px;color:#888888;text-transform:uppercase;">Serveur</p>
+        <tr><td style="padding:0 0 12px;border-bottom:1px solid #e5e7f5;">
+          <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:11px;color:#888888;text-transform:uppercase;">Serveur</p>
           <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#333333;font-weight:bold;">${server}</p>
         </td></tr>
-        <tr><td style="padding:14px 0;border-bottom:1px solid #e5e7f5;">
-          <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:12px;color:#888888;text-transform:uppercase;">Nom d'utilisateur</p>
-          <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#333333;font-weight:bold;">${username}</p>
+        <tr><td style="padding:12px 0;border-bottom:1px solid #e5e7f5;">
+          <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:11px;color:#888888;text-transform:uppercase;">Nom d'utilisateur</p>
+          <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#333333;font-weight:bold;">${username}</p>
         </td></tr>
-        <tr><td style="padding:14px 0 0;">
-          <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:12px;color:#888888;text-transform:uppercase;">Mot de passe</p>
-          <p style="margin:0;font-family:Arial,sans-serif;font-size:15px;color:#333333;font-weight:bold;">${password}</p>
+        <tr><td style="padding:12px 0 0;">
+          <p style="margin:0 0 2px;font-family:Arial,sans-serif;font-size:11px;color:#888888;text-transform:uppercase;">Mot de passe</p>
+          <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#333333;font-weight:bold;">${password}</p>
         </td></tr>
       </table>
     </td></tr>
   </table>
-  <p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:13px;color:#555555;font-weight:bold;">Lien M3U :</p>
-  <p style="margin:0 0 28px;font-family:Arial,sans-serif;font-size:12px;color:#4a4fc0;word-break:break-all;">${m3uUrl}</p>`;
+  <!-- Lien M3U box -->
+  <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#333333;">Lien M3U</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background-color:#f5f6ff;border:1px solid #dde0f5;border-radius:6px;margin-bottom:28px;">
+    <tr><td style="padding:16px 24px;">
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#4a4fc0;word-break:break-all;">${m3uUrl}</p>
+    </td></tr>
+  </table>`;
 }
 
 function welcomeEmail(name, username, password, m3uUrl) {
@@ -130,7 +138,7 @@ function reminderEmail(name, username, password, m3uUrl) {
       Votre essai gratuit <strong>expire dans 4 heures</strong> ⏳
     </p>
     <p style="margin:0 0 24px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Vous avez encore un peu de temps pour profiter de votre accès complet à 50 000+ chaînes, beIN Sports, Canal+, TF1 et 300 000+ films en 4K.
+      Vous avez encore un peu de temps pour profiter de votre accès complet à +50.000 chaînes, beIN Sports, Canal+, TF1 et +300.000 films en 4K.
     </p>
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Vos identifiants actifs :
@@ -162,7 +170,7 @@ function followupEmail(name) {
       Votre essai gratuit Stream Bleu est maintenant <strong>terminé</strong>.
     </p>
     <p style="margin:0 0 24px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Nous espérons que vous avez apprécié la qualité de notre service — 50 000+ chaînes, beIN Sports, Canal+, TF1 et 300 000+ films en 4K, sans coupure.
+      Nous espérons que vous avez apprécié la qualité de notre service — +50.000 chaînes, beIN Sports, Canal+, TF1 et +300.000 films en 4K, sans coupure.
     </p>
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Continuez à profiter de Stream Bleu en choisissant l'abonnement qui vous convient :
