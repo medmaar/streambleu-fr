@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Kodi France 2026 — Configuration PVR IPTV Simple | Stream Bleu" },
   description:
-    "Configurez IPTV sur Kodi en France avec Stream Bleu. Guide complet PVR IPTV Simple Client — M3U, EPG, installation en 5 minutes. 25 000+ chaînes en 4K.",
+    "Configurez IPTV sur Kodi en France avec Stream Bleu. Guide complet PVR IPTV Simple Client — M3U, EPG, installation en 5 minutes. 50 000+ chaînes en 4K.",
   keywords: "iptv kodi france, kodi iptv pvr, kodi m3u france, iptv simple client kodi, stream bleu kodi",
   alternates: { canonical: "https://streambleu.fr/iptv-kodi-france" },
   openGraph: {
@@ -63,7 +63,7 @@ const steps = [
   { num: 3, title: "Configurer l'URL M3U", desc: "Ouvrez les paramètres du PVR → onglet Général → Entrez l'URL M3U fournie par Stream Bleu" },
   { num: 4, title: "Configurer l'EPG", desc: "Onglet EPG → Entrez l'URL EPG Stream Bleu pour avoir le guide des programmes sur 7 jours" },
   { num: 5, title: "Redémarrer Kodi", desc: "Fermez et rouvrez Kodi. Vos chaînes apparaissent dans TV > Chaînes" },
-  { num: 6, title: "Profiter", desc: "Naviguez dans 25 000+ chaînes, utilisez le guide EPG et profitez de la 4K Ultra HD" },
+  { num: 6, title: "Profiter", desc: "Naviguez dans 50 000+ chaînes, utilisez le guide EPG et profitez de la 4K Ultra HD" },
 ];
 
 export default function IPTVKodiFrance() {

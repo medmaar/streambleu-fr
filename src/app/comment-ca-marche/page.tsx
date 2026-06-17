@@ -124,7 +124,7 @@ export default function HowItWorksPage() {
               IPTV signifie <strong>Internet Protocol Television</strong>. Au lieu de recevoir les signaux TV via un câble coaxial ou une antenne satellite, l&apos;IPTV diffuse la télévision en direct et le contenu à la demande via votre connexion internet.
             </p>
             <p>
-              Pensez-y comme Netflix ou YouTube — mais pour la TV en direct. Vous ouvrez une application, parcourez un guide avec 25 000+ chaînes et appuyez sur lecture. Le flux provient directement de nos serveurs vers votre appareil en temps réel.
+              Pensez-y comme Netflix ou YouTube — mais pour la TV en direct. Vous ouvrez une application, parcourez un guide avec 50 000+ chaînes et appuyez sur lecture. Le flux provient directement de nos serveurs vers votre appareil en temps réel.
             </p>
             <p>
               Grâce à internet, l&apos;IPTV fonctionne sur <strong>n&apos;importe quel appareil connecté</strong> — votre TV, téléphone, tablette ou ordinateur — et vous pouvez regarder de partout avec une bonne connexion.

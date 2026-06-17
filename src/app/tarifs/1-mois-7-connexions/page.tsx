@@ -4,12 +4,12 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV 1 Mois — 7 Connexions — 63€ | Stream Bleu" },
-  description: "Abonnement IPTV 1 Mois pour 7 connexions simultanées à 63€. 25 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
+  description: "Abonnement IPTV 1 Mois pour 7 connexions simultanées à 63€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
   keywords: "iptv 7 connexions, abonnement iptv 1 mois 7 appareils, iptv 7 ecrans france",
   alternates: { canonical: "https://streambleu.fr/tarifs/1-mois-7-connexions" },
   openGraph: {
     title: "IPTV 1 Mois — 7 Connexions — 63€ | Stream Bleu",
-    description: "Abonnement IPTV 1 Mois pour 7 connexions simultanées à 63€. 25 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
+    description: "Abonnement IPTV 1 Mois pour 7 connexions simultanées à 63€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
     url: "https://streambleu.fr/tarifs/1-mois-7-connexions",
     type: "website",
     siteName: "Stream Bleu",
@@ -22,7 +22,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu IPTV 1 Mois — 7 Connexions",
-  description: "Abonnement IPTV 1 Mois pour 7 connexions simultanées à 63€. 25 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
+  description: "Abonnement IPTV 1 Mois pour 7 connexions simultanées à 63€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",
@@ -130,7 +130,7 @@ export default function PlanMultiPage() {
 
             <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 32 }}>
               <div style={{ display: "flex", gap: 2, marginBottom: 16, justifyContent: "center" }}>
-                {"✓ 25 000+ Chaînes · ✓ 4K Ultra HD · ✓ ".split("·").map((f, i) => <span key={i} style={{ color: "rgba(255,255,255,0.85)", fontSize: 13 }}>{f}</span>)}
+                {"✓ 50 000+ Chaînes · ✓ 4K Ultra HD · ✓ ".split("·").map((f, i) => <span key={i} style={{ color: "rgba(255,255,255,0.85)", fontSize: 13 }}>{f}</span>)}
               </div>
               <h2 style={{ color: "#ffffff", fontSize: "1.4rem", fontWeight: 800, marginBottom: 24 }}>
                 Forfait IPTV 1 Mois — 7 Connexions

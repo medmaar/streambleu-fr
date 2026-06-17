@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 3 Mois — €29 | Stream Bleu" },
   description:
-    "Profitez de 3 mois d'IPTV en France pour seulement 29€. 25 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés en quelques minutes.",
+    "Profitez de 3 mois d'IPTV en France pour seulement 29€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés en quelques minutes.",
   keywords:
     "IPTV 3 months france, Stream Bleu 3 months, IPTV quarterly france, 3 month IPTV france €29",
   alternates: { canonical: "https://streambleu.fr/tarifs/3-mois" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "Qu'est-ce qui est inclus dans le forfait 3 mois ?",
-    a: "Le forfait 3 mois vous donne un accès complet à plus de 25 000 chaînes en direct dont toutes les chaînes françaises, 120 000+ films et séries à la demande, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 29€.",
+    a: "Le forfait 3 mois vous donne un accès complet à plus de 50 000 chaînes en direct dont toutes les chaînes françaises, 300 000+ films et séries à la demande, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 29€.",
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
@@ -56,7 +56,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu 3 Mois IPTV Plan",
-  description: "3 months of IPTV access to 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K.",
+  description: "3 months of IPTV access to 50 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 300 000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",

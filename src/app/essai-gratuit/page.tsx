@@ -4,12 +4,12 @@ import PlanFAQ, { type FaqItem } from "../tarifs/PlanFAQ";
 
 export const metadata: Metadata = {
   title: { absolute: "Essai Gratuit IPTV France 24h — Sans CB | Stream Bleu" },
-  description: "Obtenez un essai gratuit IPTV en France. Sans carte bancaire. Accédez à 25 000+ chaînes en direct, beIN Sports, Canal+, TF1 et 120 000+ films. Activation en 5 minutes.",
+  description: "Obtenez un essai gratuit IPTV en France. Sans carte bancaire. Accédez à 50 000+ chaînes en direct, beIN Sports, Canal+, TF1 et 300 000+ films. Activation en 5 minutes.",
   keywords: "essai gratuit iptv france, stream bleu essai, test iptv france gratuit, iptv france sans carte bancaire",
   alternates: { canonical: "https://streambleu.fr/essai-gratuit" },
   openGraph: {
     title: "Essai Gratuit IPTV France — Testez Stream Bleu Sans Risque",
-    description: "Essai IPTV gratuit en France. Sans carte bancaire. 25 000+ chaînes, 120 000+ films et séries en 4K.",
+    description: "Essai IPTV gratuit en France. Sans carte bancaire. 50 000+ chaînes, 300 000+ films et séries en 4K.",
     url: "https://streambleu.fr/essai-gratuit",
     type: "website",
     siteName: "Stream Bleu",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const faqItems: FaqItem[] = [
   { q: "Comment obtenir l'essai gratuit ?", a: "Remplissez simplement le formulaire ci-dessus et soumettez votre demande. Notre équipe activera votre essai en quelques minutes — généralement en moins de 5 minutes." },
-  { q: "L'essai gratuit donne-t-il accès à toutes les chaînes ?", a: "Oui. Votre essai de 24h vous donne un accès complet à toutes les 25 000+ chaînes en direct, 120 000+ titres VOD, et tous les packages sportifs — sans restriction." },
+  { q: "L'essai gratuit donne-t-il accès à toutes les chaînes ?", a: "Oui. Votre essai de 24h vous donne un accès complet à toutes les 50 000+ chaînes en direct, 300 000+ titres VOD, et tous les packages sportifs — sans restriction." },
   { q: "Combien d'appareils puis-je utiliser pendant l'essai ?", a: "Votre essai inclut une connexion simultanée. Si vous souhaitez tester sur plusieurs appareils, contactez-nous et nous pouvons l'organiser." },
   { q: "Que se passe-t-il après 24 heures ?", a: "Votre essai s'arrête simplement. Aucun frais, aucune annulation nécessaire. Si vous souhaitez continuer, contactez-nous pour choisir un forfait." },
   { q: "Une carte bancaire est-elle requise pour démarrer l'essai ?", a: "Absolument pas. Aucune information de paiement n'est nécessaire. L'essai est 100% gratuit, sans aucune obligation de s'abonner ensuite." },
@@ -65,7 +65,7 @@ export default function FreeTrialPage() {
               <span style={{ color: "#c5bcf5" }}>France 24 Heures</span>
             </h1>
             <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "rgba(255,255,255,0.85)", marginBottom: 36, lineHeight: 1.7 }}>
-              Testez Stream Bleu gratuitement pendant 24 heures — sans carte bancaire, sans engagement. Accès complet à 25 000+ chaînes, beIN Sports, Canal+, TF1, et 120 000+ films en 4K.
+              Testez Stream Bleu gratuitement pendant 24 heures — sans carte bancaire, sans engagement. Accès complet à 50 000+ chaînes, beIN Sports, Canal+, TF1, et 300 000+ films en 4K.
             </p>
             <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
               {["✓ Aucune carte bancaire", "✓ Activation en 5 min", "✓ 4K Ultra HD", "✓ Toutes les chaînes incluses"].map(f => (

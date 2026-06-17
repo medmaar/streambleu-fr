@@ -73,7 +73,7 @@ const testimonials = [
 
 const critiques = [
   { point: "Pas d'application native", explication: "Stream Bleu fonctionne via des applications tierces (TiviMate, IPTV Smarters Pro) plutôt qu'une application propriétaire. Pour les utilisateurs non-techniques, la configuration initiale peut sembler complexe — le support guide pas à pas." },
-  { point: "Certaines chaînes très locales manquantes", explication: "Quelques chaînes locales de petites régions (chaînes municipales, télés locales ultra-régionales) ne sont pas disponibles. Les 25 000+ chaînes couvrent l'essentiel mais pas l'exhaustif." },
+  { point: "Certaines chaînes très locales manquantes", explication: "Quelques chaînes locales de petites régions (chaînes municipales, télés locales ultra-régionales) ne sont pas disponibles. Les 50 000+ chaînes couvrent l'essentiel mais pas l'exhaustif." },
   { point: "Maintenances nocturnes imprévues", explication: "Rares mais signalées : des maintenances non planifiées ont eu lieu entre 2h et 4h du matin dans quelques cas. Stream Bleu s'efforce de communiquer en avance via Telegram et WhatsApp." },
 ];
 

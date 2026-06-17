@@ -36,7 +36,7 @@ const breadcrumbSchema = {
 
 const faqItems = [
   { q: "L'essai gratuit Stream Bleu nécessite-t-il une carte bancaire ?", a: "Non. L'essai gratuit 24h de Stream Bleu ne nécessite aucune carte bancaire. Vous remplissez un formulaire simple (email, appareil utilisé), recevez vos identifiants en moins de 30 minutes, et accédez à l'intégralité du service pendant 24 heures. Il n'y a aucun renouvellement automatique ni prélèvement surprise." },
-  { q: "Que comprend l'essai gratuit de Stream Bleu ?", a: "L'essai gratuit 24h donne accès à l'intégralité du catalogue Stream Bleu : 25 000+ chaînes live dont beIN Sports, Canal+, RMC Sport, TNT française, chaînes européennes et internationales, 120 000+ films et séries VOD, guide des programmes EPG sur 7 jours, et les streams 4K Ultra HD H.265." },
+  { q: "Que comprend l'essai gratuit de Stream Bleu ?", a: "L'essai gratuit 24h donne accès à l'intégralité du catalogue Stream Bleu : 50 000+ chaînes live dont beIN Sports, Canal+, RMC Sport, TNT française, chaînes européennes et internationales, 300 000+ films et séries VOD, guide des programmes EPG sur 7 jours, et les streams 4K Ultra HD H.265." },
   { q: "Combien de temps dure réellement l'essai gratuit ?", a: "24 heures complètes à partir de l'activation de vos identifiants. Si vous recevez vos identifiants à 14h, vous avez accès jusqu'à 14h le lendemain. Stream Bleu envoie une notification par email et WhatsApp 2 heures avant la fin de l'essai." },
   { q: "Puis-je tester sur plusieurs appareils simultanément ?", a: "Oui. L'essai gratuit inclut 1 connexion simultanée, ce qui vous permet de tester sur l'appareil de votre choix. Si vous souhaitez tester sur 2 appareils en même temps, indiquez-le dans votre demande d'essai — c'est possible sur demande." },
   { q: "Que se passe-t-il si je ne suis pas satisfait après l'essai ?", a: "Absolument rien. L'essai est gratuit, sans engagement, sans carte bancaire. Si le service ne vous convient pas, vous n'avez rien à faire — les identifiants d'essai expirent automatiquement au bout de 24h. Aucun frais, aucune résiliation à effectuer." },
@@ -83,7 +83,7 @@ const redFlags = [
   { flag: "Pas d'essai gratuit proposé", why: "Un service confident de sa qualité propose toujours un essai. Refuser l'essai = cacher des problèmes." },
   { flag: "Essai conditionné à une CB", why: "L'essai 'gratuit' avec carte bancaire enregistrée mène souvent à des prélèvements automatiques oubliés." },
   { flag: "Essai de seulement 2-3h", why: "2 heures ne suffisent pas à tester la stabilité aux heures de pointe. Exigez au minimum 12h." },
-  { flag: "Accès limité pendant l'essai", why: "Si l'essai ne donne accès qu'à 100 chaînes sur 25 000 annoncées, impossible d'évaluer le vrai service." },
+  { flag: "Accès limité pendant l'essai", why: "Si l'essai ne donne accès qu'à 100 chaînes sur 50 000 annoncées, impossible d'évaluer le vrai service." },
   { flag: "Support inaccessible pendant l'essai", why: "Si le support ne répond pas pendant l'essai, il ne répondra pas davantage quand vous serez abonné payant." },
 ];
 
@@ -157,7 +157,7 @@ export default function IPTVTestGratuit() {
               { step: "1", title: "Remplissez le formulaire", desc: "Indiquez votre email et l'appareil sur lequel vous souhaitez tester. Aucune CB, aucune information de paiement requise." },
               { step: "2", title: "Recevez vos identifiants sous 30 min", desc: "Vous recevez par email vos identifiants Xtream Codes et votre URL M3U. Un message WhatsApp de confirmation vous est également envoyé." },
               { step: "3", title: "Installez un lecteur IPTV en 5 min", desc: "TiviMate (Android TV, Fire Stick) ou IPTV Smarters Pro (toutes plateformes). Le support vous guide si besoin — réponse en moins de 15 min." },
-              { step: "4", title: "Testez pendant 24 heures complètes", desc: "Accès complet : 25 000+ chaînes, 120 000+ VOD, 4K Ultra HD. Utilisez la checklist ci-dessus pour un test rigoureux." },
+              { step: "4", title: "Testez pendant 24 heures complètes", desc: "Accès complet : 50 000+ chaînes, 300 000+ VOD, 4K Ultra HD. Utilisez la checklist ci-dessus pour un test rigoureux." },
               { step: "5", title: "Décidez librement", desc: "Aucun prélèvement automatique. Si vous souhaitez continuer, souscrivez à l'abonnement de votre choix. Sinon, l'essai expire automatiquement — aucune action nécessaire." },
             ].map(s => (
               <div key={s.step} style={{ display: "flex", gap: 18, background: "#fff", borderRadius: 14, padding: "18px 22px", border: "1px solid rgba(90,95,207,0.1)" }}>

@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV France 2026 — 25 000+ Chaînes en Direct | Stream Bleu",
-  description: "IPTV France : le service IPTV le plus fiable en France. 25 000+ chaînes, beIN Sports, Canal+, TF1, RMC Sport. 4K Ultra HD, zéro coupure. Essai gratuit 24h sans carte bancaire.",
+  title: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu",
+  description: "IPTV France : le service IPTV le plus fiable en France. 50 000+ chaînes, beIN Sports, Canal+, TF1, RMC Sport. 4K Ultra HD, zéro coupure. Essai gratuit 24h sans carte bancaire.",
   keywords: "iptv france, france iptv, iptv en france, service iptv france, fournisseur iptv france",
   alternates: { canonical: "https://streambleu.fr/iptv-france" },
   openGraph: {
-    title: "IPTV France 2026 — 25 000+ Chaînes en Direct | Stream Bleu",
-    description: "Le meilleur service IPTV en France. 25 000+ chaînes, 4K Ultra HD, sans coupure. Essai gratuit 24h.",
+    title: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu",
+    description: "Le meilleur service IPTV en France. 50 000+ chaînes, 4K Ultra HD, sans coupure. Essai gratuit 24h.",
     url: "https://streambleu.fr/iptv-france", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV France Stream Bleu" }],
   },
 };
 
 const faqItems = [
-  { q: "Quel est le meilleur service IPTV en France ?", a: "Stream Bleu est reconnu comme le meilleur service IPTV en France grâce à sa stabilité, sa qualité 4K H.265 et son support 24/7 en français. Il propose 25 000+ chaînes dont toutes les chaînes françaises TNT, beIN Sports, Canal+ et RMC Sport." },
+  { q: "Quel est le meilleur service IPTV en France ?", a: "Stream Bleu est reconnu comme le meilleur service IPTV en France grâce à sa stabilité, sa qualité 4K H.265 et son support 24/7 en français. Il propose 50 000+ chaînes dont toutes les chaînes françaises TNT, beIN Sports, Canal+ et RMC Sport." },
   { q: "L'IPTV est-il légal en France ?", a: "La technologie IPTV est parfaitement légale en France. Stream Bleu est un revendeur de services IPTV tiers. Les utilisateurs sont responsables des contenus auxquels ils accèdent conformément à la législation française en vigueur." },
   { q: "Comment fonctionne l'IPTV en France ?", a: "L'IPTV diffuse les chaînes TV via internet. Il suffit d'une connexion stable (25 Mbps pour la 4K) et d'un lecteur IPTV comme TiviMate ou IPTV Smarters Pro installé sur votre appareil." },
   { q: "L'IPTV France inclut-il les chaînes sportives ?", a: "Oui. Stream Bleu inclut beIN Sports 1/2/3, RMC Sport 1/2, Canal+ Sport, Eurosport 1/2 et L'Équipe TV. Tous les matchs Ligue 1, Champions League, Roland-Garros et Top 14 sont couverts." },
@@ -28,7 +28,7 @@ const faqSchema = {
 };
 
 const features = [
-  { icon: "📺", title: "25 000+ Chaînes", desc: "Toutes les chaînes françaises TNT, câble, satellite et 152 pays." },
+  { icon: "📺", title: "50 000+ Chaînes", desc: "Toutes les chaînes françaises TNT, câble, satellite et 152 pays." },
   { icon: "⚡", title: "Zéro Coupure", desc: "Serveurs optimisés pour la France — aucun buffering même en direct." },
   { icon: "🎬", title: "4K Ultra HD", desc: "H.265/HEVC, HDR10 & Dolby Vision sur appareils compatibles." },
   { icon: "🇫🇷", title: "Support Français 24/7", desc: "Équipe disponible 24h/24 en français via WhatsApp et email." },
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "IPTV France 2026 — 25 000+ Chaînes en Direct", "item": "https://streambleu.fr/iptv-france"}
+    {"@type": "ListItem", "position": 2, "name": "IPTV France 2026 — 50 000+ Chaînes en Direct", "item": "https://streambleu.fr/iptv-france"}
   ]
 };
 export default function IptvFrancePage() {
@@ -59,7 +59,7 @@ export default function IptvFrancePage() {
           <div style={{ maxWidth: 760, margin: "0 auto" }}>
             <span style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 24 }}>🇫🇷 Service IPTV N°1 en France</span>
             <h1 style={{ fontSize: "clamp(2rem,5vw,3.2rem)", fontWeight: 900, color: "#fff", lineHeight: 1.1, marginBottom: 20 }}>
-              IPTV France 2026 —<br /><span style={{ color: "#c5bcf5" }}>25 000+ Chaînes en Direct</span>
+              IPTV France 2026 —<br /><span style={{ color: "#c5bcf5" }}>50 000+ Chaînes en Direct</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 17, lineHeight: 1.7, maxWidth: 600, margin: "0 auto 32px" }}>
               Le service IPTV France le plus stable du marché. Regardez la TV en 4K Ultra HD sur tous vos appareils — sans coupure, sans engagement, avec un essai gratuit de 24h.

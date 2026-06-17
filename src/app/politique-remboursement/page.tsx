@@ -47,7 +47,7 @@ export default function PolitiqueRemboursementPage() {
             <p className="mb-3">Nous encourageons vivement tous les nouveaux clients à utiliser notre essai gratuit de 24h avant d&apos;acheter un abonnement. L&apos;essai :</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Ne nécessite pas de carte bancaire</li>
-              <li>Donne un accès complet à toutes les 25 000+ chaînes et 120 000+ titres VOD</li>
+              <li>Donne un accès complet à toutes les 50 000+ chaînes et 300 000+ titres VOD</li>
               <li>Vous permet de tester sur tous vos appareils</li>
               <li>N&apos;impose aucune obligation d&apos;achat</li>
             </ul>

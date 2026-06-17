@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Lille 2026 | Stream Bleu — Meilleur IPTV Nord-Pas-de-Calais" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Lille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 25 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Lille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
   keywords:
     "iptv lille, meilleur iptv lille, abonnement iptv Lille, iptv france Lille, iptv nord pas de calais, stream bleu Lille",
   alternates: { canonical: "https://streambleu.fr/iptv-lille" },
   openGraph: {
     title: "IPTV Lille 2026 | Stream Bleu — Meilleur IPTV Nord-Pas-de-Calais",
     description:
-      "Stream Bleu est le meilleur service IPTV à Lille. 25 000+ chaînes, 120 000+ films et séries en 4K. À partir de 9€/mois.",
+      "Stream Bleu est le meilleur service IPTV à Lille. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",
     url: "https://streambleu.fr/iptv-lille",
     type: "website",
     siteName: "Stream Bleu",
@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     q: "Quel est le meilleur service IPTV à Lille ?",
-    a: "Stream Bleu est le meilleur service IPTV à Lille. Il propose 25 000+ chaînes en direct incluant toutes les chaînes locales françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 120 000+ titres à la demande — à partir de 9€/mois.",
+    a: "Stream Bleu est le meilleur service IPTV à Lille. Il propose 50 000+ chaînes en direct incluant toutes les chaînes locales françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 300 000+ titres à la demande — à partir de 9€/mois.",
   },
   {
     q: "Stream Bleu fonctionne-t-il bien à Lille et dans les Hauts-de-France ?",
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     q: "Combien coûte un abonnement IPTV à Lille ?",
-    a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée sont disponibles à prix réduit. Toutes les formules incluent un accès à 25 000+ chaînes, 120 000+ films & séries, et les chaînes sportives premium.",
+    a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée sont disponibles à prix réduit. Toutes les formules incluent un accès à 50 000+ chaînes, 300 000+ films & séries, et les chaînes sportives premium.",
   },
   {
     q: "Puis-je regarder le LOSC Lille en IPTV avec Stream Bleu ?",
@@ -105,7 +105,7 @@ export default function IPTVLillePage() {
             </h1>
             <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "#5a5fcf", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
               Stream Bleu est le meilleur service IPTV à Lille. Profitez de TF1, Canal+, beIN Sports,
-              RMC Sport et 25 000+ chaînes en 4K Ultra HD. Suivez le LOSC, l'Équipe de France et toutes les compétitions en 4K sans coupure.
+              RMC Sport et 50 000+ chaînes en 4K Ultra HD. Suivez le LOSC, l'Équipe de France et toutes les compétitions en 4K sans coupure.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/tarifs" style={{
@@ -146,7 +146,7 @@ export default function IPTVLillePage() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
               {[
-                { icon: "📺", title: "25 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
+                { icon: "📺", title: "50 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
                 { icon: "⚽", title: "LOSC & Sport Premium", desc: "Tous les matchs du LOSC, Ligue 1, Champions League, beIN Sports, RMC Sport." },
                 { icon: "🔥", title: "4K Ultra HD", desc: "Streams H.265/HEVC avec HDR10 & Dolby Vision sur les chaînes compatibles." },
                 { icon: "📱", title: "Multi-écrans", desc: "Smart TV, Fire Stick, Android, iOS, PC — tous les appareils supportés." },
@@ -186,7 +186,7 @@ export default function IPTVLillePage() {
             <div style={{ background: "rgba(90,95,207,0.07)", borderRadius: 16, padding: "24px 28px", border: "1px solid rgba(90,95,207,0.15)" }}>
               <p style={{ fontSize: 14, fontWeight: 700, color: "#5a5fcf", marginBottom: 12 }}>✓ Stream Bleu à Lille inclut :</p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 8 }}>
-                {["Toutes les chaînes TNT françaises", "beIN Sports 1, 2, 3", "RMC Sport 1 & 2", "Canal+ & Canal+ Cinéma", "25 000+ chaînes live", "120 000+ films & séries VOD", "EPG 7 jours inclus", "Support 24/7 en français"].map(f => (
+                {["Toutes les chaînes TNT françaises", "beIN Sports 1, 2, 3", "RMC Sport 1 & 2", "Canal+ & Canal+ Cinéma", "50 000+ chaînes live", "300 000+ films & séries VOD", "EPG 7 jours inclus", "Support 24/7 en français"].map(f => (
                   <li key={f} style={{ fontSize: 13, color: "#333", display: "flex", gap: 8, alignItems: "flex-start" }}>
                     <span style={{ color: "#5a5fcf", fontWeight: 700, flexShrink: 0 }}>✓</span>{f}
                   </li>

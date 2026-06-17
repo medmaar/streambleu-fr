@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu",
-  description: "Service IPTV premium en France : 4K Ultra HD H.265/HEVC, HDR10 & Dolby Vision, 25 000+ chaînes sans coupure. Le service IPTV premium le plus stable du marché français. Essai gratuit 24h.",
+  description: "Service IPTV premium en France : 4K Ultra HD H.265/HEVC, HDR10 & Dolby Vision, 50 000+ chaînes sans coupure. Le service IPTV premium le plus stable du marché français. Essai gratuit 24h.",
   keywords: "iptv premium, iptv premium france, service iptv premium, iptv premium 4k, abonnement iptv premium",
   alternates: { canonical: "https://streambleu.fr/iptv-premium" },
   openGraph: {
     title: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu",
-    description: "IPTV Premium France : 4K Ultra HD, H.265/HEVC, HDR10 & Dolby Vision. 25 000+ chaînes sans coupure.",
+    description: "IPTV Premium France : 4K Ultra HD, H.265/HEVC, HDR10 & Dolby Vision. 50 000+ chaînes sans coupure.",
     url: "https://streambleu.fr/iptv-premium", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Premium France Stream Bleu" }],
   },
@@ -19,7 +19,7 @@ const premiumFeatures = [
   { icon: "🌈", title: "HDR10 & Dolby Vision", desc: "Support complet de l'HDR10 et du Dolby Vision pour des couleurs, contrastes et luminosité exceptionnels sur vos écrans compatibles." },
   { icon: "⚡", title: "Serveurs Premium Anti-Coupure", desc: "Infrastructure premium avec redondance et basculement automatique. Aucune interruption même lors des événements les plus populaires." },
   { icon: "🏆", title: "Sport Premium Inclus", desc: "beIN Sports 1/2/3, RMC Sport 1/2, Canal+ Sport, Eurosport 1/2 — tous les matchs Ligue 1, Champions League, Top 14, Roland-Garros." },
-  { icon: "🎭", title: "120 000+ VOD 4K", desc: "Bibliothèque complète de films et séries en 4K Ultra HD. Contenu récent et classique, mis à jour en continu." },
+  { icon: "🎭", title: "300 000+ VOD 4K", desc: "Bibliothèque complète de films et séries en 4K Ultra HD. Contenu récent et classique, mis à jour en continu." },
   { icon: "📱", title: "Multi-Appareils Premium", desc: "Jusqu'à 10 connexions simultanées en 4K. Smart TV, Firestick, Android TV, Apple TV, MAG Box — tous compatibles." },
 ];
 
@@ -104,7 +104,7 @@ export default function IptvPremiumPage() {
                     ["Résolution max","4K Ultra HD","1080i","1080p"],
                     ["Codec vidéo","H.265/HEVC","MPEG-2/H.264","H.264"],
                     ["HDR10 & Dolby Vision","✅","❌","Rarement"],
-                    ["Chaînes","25 000+","150–500","5 000–15 000"],
+                    ["Chaînes","50 000+","150–500","5 000–15 000"],
                     ["Stabilité","99,9% uptime","Variable","Aléatoire"],
                     ["Prix/mois","À partir de 4€","30€–60€","5€–15€"],
                     ["Support 24/7","✅ Français","Heures ouvrées","❌"],

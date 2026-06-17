@@ -4,13 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Rennes 2026 | Stream Bleu — Meilleur IPTV Bretagne" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Rennes. Regardez TF1, Canal+, beIN Sports, RMC Sport et 25 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Rennes. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
   keywords:
     "iptv rennes, meilleur iptv rennes, abonnement iptv Rennes, iptv france Rennes, stream bleu Rennes",
   alternates: { canonical: "https://streambleu.fr/iptv-rennes" },
   openGraph: {
     title: "IPTV Rennes 2026 | Stream Bleu — Meilleur IPTV Bretagne",
-    description: "Stream Bleu est le meilleur service IPTV à Rennes. 25 000+ chaînes, 120 000+ films et séries en 4K. À partir de 9€/mois.",
+    description: "Stream Bleu est le meilleur service IPTV à Rennes. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",
     url: "https://streambleu.fr/iptv-rennes",
     type: "website",
     siteName: "Stream Bleu",
@@ -27,7 +27,7 @@ const faqItems = [
   },
   {
     q: "Quel est le meilleur service IPTV à Rennes ?",
-    a: "Stream Bleu est le meilleur service IPTV à Rennes. Il propose 25 000+ chaînes en direct incluant toutes les chaînes françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 120 000+ titres à la demande — à partir de 9€/mois.",
+    a: "Stream Bleu est le meilleur service IPTV à Rennes. Il propose 50 000+ chaînes en direct incluant toutes les chaînes françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 300 000+ titres à la demande — à partir de 9€/mois.",
   },
   {
     q: "Stream Bleu fonctionne-t-il bien à Rennes ?",
@@ -35,7 +35,7 @@ const faqItems = [
   },
   {
     q: "Combien coûte un abonnement IPTV à Rennes ?",
-    a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée sont disponibles à prix réduit. Toutes les formules incluent un accès à 25 000+ chaînes, 120 000+ films & séries, et les chaînes sportives premium.",
+    a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée sont disponibles à prix réduit. Toutes les formules incluent un accès à 50 000+ chaînes, 300 000+ films & séries, et les chaînes sportives premium.",
   },
   {
     q: "Puis-je regarder le Stade Rennais en IPTV avec Stream Bleu ?",
@@ -92,7 +92,7 @@ export default function IPTVCityPage() {
               Meilleur IPTV<br /><span style={{ color: "#5a5fcf" }}>Rennes 2026</span>
             </h1>
             <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "#5a5fcf", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
-              Stream Bleu est le meilleur service IPTV à Rennes. Profitez de TF1, Canal+, beIN Sports, RMC Sport et 25 000+ chaînes en 4K Ultra HD. Suivez le Stade Rennais et toutes les compétitions en 4K sans coupure.
+              Stream Bleu est le meilleur service IPTV à Rennes. Profitez de TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K Ultra HD. Suivez le Stade Rennais et toutes les compétitions en 4K sans coupure.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/tarifs" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(90,95,207,0.4)" }}>Voir les Tarifs →</Link>
@@ -106,7 +106,7 @@ export default function IPTVCityPage() {
             <h2 style={{ textAlign: "center", fontSize: "clamp(24px, 3.5vw, 36px)", fontWeight: 900, marginBottom: 48, color: "#5a5fcf" }}>Pourquoi choisir Stream Bleu à Rennes ?</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
               {[
-                { icon: "📺", title: "25 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
+                { icon: "📺", title: "50 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
                 { icon: "⚽", title: "Sport Premium", desc: "beIN Sports, RMC Sport, Canal+ Sport, Eurosport — tous les matchs sans supplément." },
                 { icon: "🔥", title: "4K Ultra HD", desc: "Streams H.265/HEVC avec HDR10 & Dolby Vision sur les chaînes compatibles." },
                 { icon: "📱", title: "Multi-écrans", desc: "Smart TV, Fire Stick, Android, iOS, PC — tous les appareils supportés." },

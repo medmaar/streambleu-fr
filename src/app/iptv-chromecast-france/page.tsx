@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://streambleu.fr/iptv-chromecast-france" },
   openGraph: {
     title: "IPTV Chromecast France 2026 — Google TV & Chromecast Ultra | Stream Bleu",
-    description: "Installez Stream Bleu sur votre Chromecast avec Google TV. 4K Ultra HD, 25 000+ chaînes, installation en 5 min.",
+    description: "Installez Stream Bleu sur votre Chromecast avec Google TV. 4K Ultra HD, 50 000+ chaînes, installation en 5 min.",
     url: "https://streambleu.fr/iptv-chromecast-france",
     type: "website",
     siteName: "Stream Bleu",
@@ -74,7 +74,7 @@ export default function IPTVChromecastFrance() {
               <span style={{ color: "#f5a623" }}>Google TV & Chromecast Ultra</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "clamp(15px, 2vw, 18px)", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
-              Configurez Stream Bleu sur votre Chromecast avec Google TV en moins de 5 minutes. Profitez de 25 000+ chaînes en 4K Ultra HD H.265 dans votre salon.
+              Configurez Stream Bleu sur votre Chromecast avec Google TV en moins de 5 minutes. Profitez de 50 000+ chaînes en 4K Ultra HD H.265 dans votre salon.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit 24h</Link>
@@ -95,7 +95,7 @@ export default function IPTVChromecastFrance() {
                 { n: 3, t: "Installer IPTV Smarters Pro ou TiviMate", d: "Recherchez « IPTV Smarters Pro » ou « TiviMate » et installez l'application de votre choix." },
                 { n: 4, t: "Ouvrir l'application et ajouter Stream Bleu", d: "Lancez l'app → Ajouter un compte → choisissez Xtream Codes → entrez vos identifiants Stream Bleu." },
                 { n: 5, t: "Choisir sa qualité", d: "Dans les paramètres, activez le codec H.265/HEVC pour profiter de la vraie 4K Ultra HD." },
-                { n: 6, t: "Profiter de 25 000+ chaînes", d: "Naviguez dans toutes les catégories : TNT, sport, cinéma, séries, chaînes étrangères." },
+                { n: 6, t: "Profiter de 50 000+ chaînes", d: "Naviguez dans toutes les catégories : TNT, sport, cinéma, séries, chaînes étrangères." },
               ].map(s => (
                 <div key={s.n} style={{ display: "flex", gap: 16, background: "#fff", borderRadius: 14, padding: "18px 22px", border: "1px solid rgba(90,95,207,0.1)" }}>
                   <div style={{ background: "#5a5fcf", color: "#fff", borderRadius: "50%", width: 36, height: 36, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700, fontSize: 14, flexShrink: 0 }}>{s.n}</div>

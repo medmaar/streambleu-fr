@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 1 Mois — 9€ | Stream Bleu" },
   description:
-    "Profitez d'1 mois d'IPTV en France pour seulement 9€. 25 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés en quelques minutes.",
+    "Profitez d'1 mois d'IPTV en France pour seulement 9€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés en quelques minutes.",
   keywords:
     "IPTV 1 month france, Stream Bleu 1 month, IPTV 9€ france, month to month IPTV france",
   alternates: { canonical: "https://streambleu.fr/tarifs/1-mois" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "Qu'est-ce qui est inclus dans le forfait 1 mois ?",
-    a: "Le forfait 1 mois vous donne un accès complet à plus de 25 000 chaînes en direct dont toutes les chaînes françaises (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2), 120 000+ films et séries à la demande, streaming 4K Ultra HD, guide des programmes (EPG) et rattrapage 7 jours — le tout pour 9€.",
+    a: "Le forfait 1 mois vous donne un accès complet à plus de 50 000 chaînes en direct dont toutes les chaînes françaises (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2), 300 000+ films et séries à la demande, streaming 4K Ultra HD, guide des programmes (EPG) et rattrapage 7 jours — le tout pour 9€.",
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu 1 Mois IPTV Plan",
-  description: "1 month of IPTV access to 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K.",
+  description: "1 month of IPTV access to 50 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 300 000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",

@@ -24,7 +24,7 @@ const articleSchema = {
     { "@type": "HowToStep", position: 2, name: "Installer Downloader", text: "Depuis l'Appstore Amazon, installez l'application gratuite Downloader." },
     { "@type": "HowToStep", position: 3, name: "Installer TiviMate ou IPTV Smarters", text: "Via Downloader, téléchargez TiviMate ou cherchez IPTV Smarters Pro directement dans l'Appstore." },
     { "@type": "HowToStep", position: 4, name: "Configurer avec vos identifiants Stream Bleu", text: "Ouvrez l'application → Ajouter une playlist → Entrez vos identifiants Xtream Codes Stream Bleu." },
-    { "@type": "HowToStep", position: 5, name: "Regarder en 4K Ultra HD", text: "Vos 25 000+ chaînes se chargent automatiquement. Profitez de la 4K H.265 sur votre téléviseur." },
+    { "@type": "HowToStep", position: 5, name: "Regarder en 4K Ultra HD", text: "Vos 50 000+ chaînes se chargent automatiquement. Profitez de la 4K H.265 sur votre téléviseur." },
   ],
 };
 
@@ -63,7 +63,7 @@ const stepsMethod1 = [
   { n: 3, t: "Télécharger TiviMate via Downloader", d: "Ouvrez Downloader → entrez l'URL officielle de TiviMate : tivimate.com → Téléchargez le fichier APK → Installez." },
   { n: 4, t: "Ouvrir TiviMate et ajouter la playlist", d: "Lancez TiviMate → Ajouter une playlist → Xtream Codes → Entrez l'URL, le login et le mot de passe fournis par Stream Bleu." },
   { n: 5, t: "Configurer le lecteur H.265", d: "TiviMate → Paramètres → Lecteur → Codec vidéo → HW+ (hardware) pour activer le décodage H.265 matériel." },
-  { n: 6, t: "Profiter de 25 000+ chaînes en 4K", d: "Vos chaînes se chargent en quelques secondes. Naviguez, créez des favoris, configurez l'EPG." },
+  { n: 6, t: "Profiter de 50 000+ chaînes en 4K", d: "Vos chaînes se chargent en quelques secondes. Naviguez, créez des favoris, configurez l'EPG." },
 ];
 
 const stepsMethod2 = [
@@ -71,7 +71,7 @@ const stepsMethod2 = [
   { n: 2, t: "Ouvrir l'application", d: "Lancez IPTV Smarters Pro depuis l'écran d'accueil Fire TV." },
   { n: 3, t: "Ajouter votre compte Stream Bleu", d: "Choisissez 'Login with Xtream Codes API' → entrez l'URL du serveur, votre nom d'utilisateur et mot de passe Stream Bleu." },
   { n: 4, t: "Configurer le lecteur ExoPlayer", d: "Paramètres → Lecteur → ExoPlayer en mode Hardware pour de meilleures performances 4K." },
-  { n: 5, t: "Explorer les chaînes et VOD", d: "L'interface affiche vos 25 000+ chaînes live, 120 000+ films et séries, et l'EPG sur 7 jours." },
+  { n: 5, t: "Explorer les chaînes et VOD", d: "L'interface affiche vos 50 000+ chaînes live, 300 000+ films et séries, et l'EPG sur 7 jours." },
 ];
 
 const S = { fontSize: 15, lineHeight: 1.8, color: "#333", marginBottom: 16 } as const;
@@ -104,7 +104,7 @@ export default function IPTVFirestickFrance() {
 
         <article style={{ maxWidth: 820, margin: "0 auto", padding: "60px 16px" }}>
 
-          <p style={S}>L'Amazon Fire TV Stick est l'appareil de diffusion IPTV le plus populaire en France. Compact, abordable, facile à utiliser, il transforme n'importe quelle télévision en Smart TV capable de lire 25 000+ chaînes en 4K Ultra HD. Ce guide couvre tout, du choix du bon modèle à la configuration avancée du décodage H.265 matériel.</p>
+          <p style={S}>L'Amazon Fire TV Stick est l'appareil de diffusion IPTV le plus populaire en France. Compact, abordable, facile à utiliser, il transforme n'importe quelle télévision en Smart TV capable de lire 50 000+ chaînes en 4K Ultra HD. Ce guide couvre tout, du choix du bon modèle à la configuration avancée du décodage H.265 matériel.</p>
 
           <h2 style={H2}>Quel Fire Stick choisir pour l'IPTV en France ?</h2>
           <p style={S}>Tous les Fire Stick ne sont pas équivalents pour l'IPTV 4K. La différence principale est le décodage H.265 : matériel (rapide, économe) ou logiciel (lent, chauffe).</p>

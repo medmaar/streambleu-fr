@@ -37,7 +37,7 @@ const breadcrumbSchema = {
 const faqItems = [
   { q: "TiviMate est-il le meilleur lecteur IPTV ?", a: "TiviMate est le meilleur lecteur IPTV pour les appareils Android TV (Fire Stick 4K, Nvidia Shield, Chromecast avec Google TV, Mi Box). Son interface est la plus proche d'une TV classique, son EPG est le plus complet, et son support H.265 est optimal. La version premium à 5€ est indispensable pour les enregistrements et les connexions multiples." },
   { q: "IPTV Smarters Pro est-il gratuit ?", a: "Oui. IPTV Smarters Pro est entièrement gratuit sur Android, iOS, Samsung Smart TV et LG Smart TV. Il n'y a aucun achat intégré requis pour utiliser les fonctionnalités de base. C'est pourquoi c'est la recommandation principale pour les Smart TV qui ne supportent pas TiviMate." },
-  { q: "VLC peut-il lire les flux IPTV ?", a: "Oui, mais avec limitations. VLC lit les fichiers M3U et les flux IPTV, mais son interface n'est pas optimisée pour l'IPTV : pas d'EPG intégré, pas de guide de programmes, navigation difficile entre 25 000 chaînes. Il est acceptable pour un usage occasionnel ou un test rapide, mais ne remplace pas TiviMate ou IPTV Smarters au quotidien." },
+  { q: "VLC peut-il lire les flux IPTV ?", a: "Oui, mais avec limitations. VLC lit les fichiers M3U et les flux IPTV, mais son interface n'est pas optimisée pour l'IPTV : pas d'EPG intégré, pas de guide de programmes, navigation difficile entre 50 000 chaînes. Il est acceptable pour un usage occasionnel ou un test rapide, mais ne remplace pas TiviMate ou IPTV Smarters au quotidien." },
   { q: "Quel lecteur IPTV choisir pour Samsung Smart TV ?", a: "Pour Samsung Smart TV (Tizen), IPTV Smarters Pro est la meilleure option, disponible directement dans le Samsung App Store. Smart IPTV est également très populaire mais nécessite une activation sur le site siptv.eu. Les deux sont compatibles avec Stream Bleu via URL M3U ou Xtream Codes." },
   { q: "Mon lecteur IPTV peut-il enregistrer des émissions ?", a: "TiviMate Premium (5€) permet d'enregistrer sur une clé USB ou un disque dur externe connecté à votre appareil Android TV. Cette fonctionnalité n'est pas disponible sur IPTV Smarters Pro. Pour les Smart TV Samsung et LG, l'enregistrement via IPTV n'est pas supporté nativement." },
 ];
@@ -88,7 +88,7 @@ const players = [
     price: "Gratuit open-source",
     best_for: "Test ponctuel, lecture M3U simple",
     pros: ["Disponible partout", "Entièrement gratuit et open source", "Supporte tous les formats", "Pas d'inscription"],
-    cons: ["Aucun EPG", "Navigation très difficile avec 25 000 chaînes", "Pas optimisé IPTV", "Aucune gestion de favoris"],
+    cons: ["Aucun EPG", "Navigation très difficile avec 50 000 chaînes", "Pas optimisé IPTV", "Aucune gestion de favoris"],
     verdict: "Dépannage uniquement, pas pour usage quotidien",
     color: "#c0392b",
   },

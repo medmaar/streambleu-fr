@@ -180,7 +180,7 @@ export default function IPTVLegalFrance() {
           <section style={{ background: "#5a5fcf", borderRadius: 20, padding: "36px 32px", textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Testez Stream Bleu gratuitement — 24h</h2>
             <p style={{ color: "rgba(255,255,255,0.82)", fontSize: 15, lineHeight: 1.7, marginBottom: 28, maxWidth: 520, margin: "0 auto 28px" }}>
-              Essai sans carte bancaire · Activation instantanée · 25 000+ chaînes · 4K Ultra HD
+              Essai sans carte bancaire · Activation instantanée · 50 000+ chaînes · 4K Ultra HD
             </p>
             <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit 24h →

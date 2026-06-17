@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Meilleur IPTV France 2026 — Comparatif & Test | Stream Bleu",
-  description: "Quel est le meilleur IPTV en France en 2026 ? Comparatif complet des services IPTV français. Stream Bleu arrive en tête : 4K Ultra HD, zéro coupure, 25 000+ chaînes, support 24/7.",
+  description: "Quel est le meilleur IPTV en France en 2026 ? Comparatif complet des services IPTV français. Stream Bleu arrive en tête : 4K Ultra HD, zéro coupure, 50 000+ chaînes, support 24/7.",
   keywords: "meilleur iptv france, meilleur iptv, meilleur service iptv france, top iptv france, iptv france comparatif",
   alternates: { canonical: "https://streambleu.fr/meilleur-iptv-france" },
   openGraph: {
     title: "Meilleur IPTV France 2026 — Comparatif & Test | Stream Bleu",
-    description: "Comparatif du meilleur IPTV en France 2026. Stream Bleu : 4K Ultra HD, 25 000+ chaînes, sans coupure.",
+    description: "Comparatif du meilleur IPTV en France 2026. Stream Bleu : 4K Ultra HD, 50 000+ chaînes, sans coupure.",
     url: "https://streambleu.fr/meilleur-iptv-france", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Meilleur IPTV France Stream Bleu" }],
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const criteria = [
   { score: "9.8/10", label: "Stabilité", detail: "99,9% uptime · Serveurs redondants · Basculement automatique" },
   { score: "9.7/10", label: "Qualité 4K", detail: "H.265/HEVC · HDR10 · Dolby Vision · 3840×2160" },
-  { score: "9.9/10", label: "Nombre de chaînes", detail: "25 000+ chaînes · 152 pays · TNT + câble + sport premium" },
+  { score: "9.9/10", label: "Nombre de chaînes", detail: "50 000+ chaînes · 152 pays · TNT + câble + sport premium" },
   { score: "9.6/10", label: "Support client", detail: "24/7 en français · WhatsApp < 5 min · Installation guidée" },
   { score: "9.8/10", label: "Rapport qualité/prix", detail: "À partir de 4€/mois · Sans engagement · Essai gratuit 24h" },
 ];
@@ -82,7 +82,7 @@ export default function MeilleurIptvFrancePage() {
                   <h2 style={{ fontSize: "1.5rem", fontWeight: 900, color: "#1a1a4e", marginBottom: 6 }}>Stream Bleu — N°1 IPTV France 2026</h2>
                   <p style={{ color: "#555", fontSize: 14, lineHeight: 1.6 }}>Meilleure stabilité, meilleure qualité 4K, support français 24/7. Le choix évident pour l&apos;IPTV en France.</p>
                   <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 10 }}>
-                    {["4K Ultra HD","H.265/HEVC","HDR10","Dolby Vision","25 000+ Chaînes"].map(tag => (
+                    {["4K Ultra HD","H.265/HEVC","HDR10","Dolby Vision","50 000+ Chaînes"].map(tag => (
                       <span key={tag} style={{ background: "rgba(90,95,207,0.1)", borderRadius: 999, padding: "3px 10px", fontSize: 11, fontWeight: 600, color: "#5a5fcf" }}>{tag}</span>
                     ))}
                   </div>
@@ -109,7 +109,7 @@ export default function MeilleurIptvFrancePage() {
               {[
                 { title: "1. La stabilité la plus élevée du marché", desc: "99,9% d'uptime garanti grâce à une infrastructure avec serveurs redondants et basculement automatique. Aucune coupure lors des matchs de Ligue 1, Champions League ou événements PPV — là où les concurrents échouent le plus souvent." },
                 { title: "2. La seule vraie 4K H.265 disponible en France", desc: "La plupart des services IPTV proposent du 1080p habillé en '4K'. Stream Bleu diffuse en véritable 4K Ultra HD 3840×2160 avec encodage H.265/HEVC, HDR10 et Dolby Vision — la qualité cinéma sur votre écran." },
-                { title: "3. Le plus grand catalogue de chaînes françaises", desc: "25 000+ chaînes dont l'intégralité des chaînes françaises TNT, toutes les déclinaisons régionales de France 3, beIN Sports 1/2/3 et Max 1-7, RMC Sport 1-4, Canal+ et ses déclinaisons — sans supplément." },
+                { title: "3. Le plus grand catalogue de chaînes françaises", desc: "50 000+ chaînes dont l'intégralité des chaînes françaises TNT, toutes les déclinaisons régionales de France 3, beIN Sports 1/2/3 et Max 1-7, RMC Sport 1-4, Canal+ et ses déclinaisons — sans supplément." },
                 { title: "4. Support client 24/7 en français", desc: "Notre équipe de support française répond en moins de 5 minutes sur WhatsApp. Installation guidée, dépannage, mise à jour — nous restons disponibles. Les concurrents proposent rarement un support en français et encore moins 24/7." },
                 { title: "5. Le meilleur rapport qualité/prix", desc: "À partir de 4€/mois pour le forfait annuel, Stream Bleu est moins cher que la quasi-totalité des services IPTV similaires, tout en offrant une qualité supérieure. L'essai gratuit 24h sans carte bancaire élimine tout risque." },
               ].map(item => (

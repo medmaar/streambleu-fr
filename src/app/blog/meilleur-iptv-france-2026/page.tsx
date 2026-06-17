@@ -40,7 +40,7 @@ const criteria = [
 ];
 
 const services = [
-  { rank: 1, name: "Stream Bleu", channels: "25 000+", quality: "4K H.265", uptime: "99,9%", activation: "< 30 min", support: "24/7 FR", price: "9€/mois", verdict: "Meilleur choix global" },
+  { rank: 1, name: "Stream Bleu", channels: "50 000+", quality: "4K H.265", uptime: "99,9%", activation: "< 30 min", support: "24/7 FR", price: "9€/mois", verdict: "Meilleur choix global" },
   { rank: 2, name: "Concurrent A", channels: "15 000+", quality: "1080p H.264", uptime: "97%", activation: "1–2h", support: "Email uniquement", price: "14€/mois", verdict: "Bon mais plus cher" },
   { rank: 3, name: "Concurrent B", channels: "10 000+", quality: "1080p", uptime: "95%", activation: "24h", support: "Limité", price: "12€/mois", verdict: "Service basique" },
 ];
@@ -152,7 +152,7 @@ export default function MeilleurIPTVFrance2026() {
               #1 Stream Bleu — Notre Meilleur Choix
             </h2>
             <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
-              Stream Bleu s&apos;impose comme le meilleur service IPTV en France pour 2026 grâce à une combinaison rare : 25 000+ chaînes, vrai 4K H.265/HEVC, et un support client réactif 24h/24 en français.
+              Stream Bleu s&apos;impose comme le meilleur service IPTV en France pour 2026 grâce à une combinaison rare : 50 000+ chaînes, vrai 4K H.265/HEVC, et un support client réactif 24h/24 en français.
             </p>
             <p style={{ color: "#333", fontSize: 15, lineHeight: 1.8, marginBottom: 14 }}>
               Le point fort de Stream Bleu est la qualité vidéo. Contrairement à la plupart des concurrents qui utilisent encore H.264, Stream Bleu encode tous ses streams en H.265/HEVC — ce qui donne une image deux fois plus nette au même débit. Sur un écran 4K Samsung QLED ou LG OLED, la différence est immédiatement visible.
@@ -163,7 +163,7 @@ export default function MeilleurIPTVFrance2026() {
             <div style={{ background: "rgba(90,95,207,0.06)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 14, padding: "20px 24px", marginBottom: 20 }}>
               <p style={{ fontSize: 14, color: "#5a5fcf", fontWeight: 700, marginBottom: 8 }}>✓ Ce que nous avons aimé</p>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                {["Vrai 4K H.265/HEVC avec HDR10", "25 000+ chaînes dont toute la TNT française", "Activation en moins de 30 minutes", "Support 24/7 en français par WhatsApp & email", "Essai gratuit 24h sans carte bancaire", "À partir de 9€/mois sans engagement"].map(p => (
+                {["Vrai 4K H.265/HEVC avec HDR10", "50 000+ chaînes dont toute la TNT française", "Activation en moins de 30 minutes", "Support 24/7 en français par WhatsApp & email", "Essai gratuit 24h sans carte bancaire", "À partir de 9€/mois sans engagement"].map(p => (
                   <li key={p} style={{ fontSize: 14, color: "#333", marginBottom: 5, display: "flex", gap: 8 }}>
                     <span style={{ color: "#5a5fcf", fontWeight: 700 }}>✓</span>{p}
                   </li>

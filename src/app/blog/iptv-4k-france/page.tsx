@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV 4K France 2026 — Ultra HD H.265 sans Coupure | Stream Bleu",
   description:
-    "IPTV 4K en France : guide complet pour profiter de la qualité Ultra HD H.265/HEVC sur votre téléviseur. Stream Bleu propose le vrai 4K HDR avec 25 000+ chaînes.",
+    "IPTV 4K en France : guide complet pour profiter de la qualité Ultra HD H.265/HEVC sur votre téléviseur. Stream Bleu propose le vrai 4K HDR avec 50 000+ chaînes.",
   keywords: "iptv 4k france, iptv 4k ultra hd, iptv h265 france, iptv hevc france, meilleur iptv 4k, stream bleu 4k",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-4k-france" },
   openGraph: {

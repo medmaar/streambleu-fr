@@ -9,14 +9,14 @@ const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
 export const metadata: Metadata = {
   title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu" },
   description:
-    "Abonnement IPTV France 2026 — IPTV premium 4K. 25 000+ chaînes, beIN Sports, Canal+. Sans coupure. Essai gratuit 24h. À partir de 9€/mois.",
+    "Abonnement IPTV France 2026 — IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+. Sans coupure. Essai gratuit 24h. À partir de 9€/mois.",
   keywords:
     "abonnement iptv, iptv abonnement, iptv france, iptv premium, meilleur iptv france, abonnement iptv france, iptv 4k france, iptv sans coupure, iptv stable france, french iptv",
   alternates: { canonical: "https://streambleu.fr" },
   openGraph: {
     title: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu",
     description:
-      "Abonnement IPTV France 2026. Le meilleur IPTV premium 4K — 25 000+ chaînes, beIN Sports, Canal+, sans coupure. À partir de 9€/mois. Essai gratuit 24h.",
+      "Abonnement IPTV France 2026. Le meilleur IPTV premium 4K — 50 000+ chaînes, beIN Sports, Canal+, sans coupure. À partir de 9€/mois. Essai gratuit 24h.",
     url: "https://streambleu.fr",
     type: "website",
     siteName: "Stream Bleu",
@@ -79,7 +79,7 @@ const organizationSchema = {
   logo: "https://streambleu.fr/favicon.svg",
   email: "contact@streambleu.fr",
   description:
-    "Le meilleur abonnement IPTV en France. Streams H.265/HEVC, HDR10 & Dolby Vision. 25 000+ chaînes, 120 000+ films et séries.",
+    "Le meilleur abonnement IPTV en France. Streams H.265/HEVC, HDR10 & Dolby Vision. 50 000+ chaînes, 300 000+ films et séries.",
   areaServed: "FR",
 };
 
@@ -119,7 +119,7 @@ const cities = [
 
 const comparison = [
   { feature: "Prix/mois", us: "9€", cable: "30€–60€", other: "15€–25€" },
-  { feature: "Chaînes en direct", us: "25 000+", cable: "150–500", other: "5 000–15 000" },
+  { feature: "Chaînes en direct", us: "50 000+", cable: "150–500", other: "5 000–15 000" },
   { feature: "Résolution max", us: "4K Ultra HD", cable: "1080i", other: "1080p" },
   { feature: "Codec vidéo", us: "H.265/HEVC", cable: "MPEG-2/H.264", other: "H.264" },
   { feature: "Support HDR", us: "HDR10 + Dolby Vision", cable: "×", other: "Rarement" },
@@ -187,7 +187,7 @@ export default function HomePage() {
               margin: "0 auto 36px",
               lineHeight: 1.7,
             }}>
-              Le meilleur abonnement IPTV en France : 25 000+ chaînes en direct, beIN Sports, Canal+, RMC Sport et 120 000+ films en 4K Ultra HD H.265. IPTV premium sans coupure, activation instantanée — à partir de 9€/mois.
+              Le meilleur abonnement IPTV en France : 50 000+ chaînes en direct, beIN Sports, Canal+, RMC Sport et 300 000+ films en 4K Ultra HD H.265. IPTV premium sans coupure, activation instantanée — à partir de 9€/mois.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link href="/tarifs" style={{
@@ -234,7 +234,7 @@ export default function HomePage() {
             textAlign: "center",
           }}>
             {[
-              { val: "25 000+", label: "Chaînes en direct" },
+              { val: "50 000+", label: "Chaînes en direct" },
               { val: "Vrai 4K", label: "HDR10 & Dolby Vision" },
               { val: "0 Buffering", label: "Serveurs ultra-rapides" },
               { val: "24/7", label: "Support France" },
@@ -325,7 +325,7 @@ export default function HomePage() {
               ))}
             </div>
             <p style={{ textAlign: "center", color: "#1a1a4e", fontSize: 13 }}>
-              + 25 000+ autres chaînes du monde entier
+              + 50 000+ autres chaînes du monde entier
             </p>
           </div>
         </section>

@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 6 Mois — €39 | Stream Bleu" },
   description:
-    "Profitez de 6 mois d'IPTV en France pour seulement 39€. 25 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au mensuel. Identifiants envoyés en quelques minutes.",
+    "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au mensuel. Identifiants envoyés en quelques minutes.",
   keywords:
     "IPTV 6 months france, Stream Bleu 6 months, best IPTV plan france, 6 month IPTV france €39",
   alternates: { canonical: "https://streambleu.fr/tarifs/6-mois" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "Qu'est-ce qui est inclus dans le forfait 6 mois ?",
-    a: "Le forfait 6 mois inclut six mois complets d'accès à plus de 25 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6 et plus), 120 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 39€.",
+    a: "Le forfait 6 mois inclut six mois complets d'accès à plus de 50 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6 et plus), 300 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 39€.",
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu 6 Mois IPTV Plan",
-  description: "6 months of IPTV access to 25 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 120 000+ VOD titles in 4K.",
+  description: "6 months of IPTV access to 50 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 300 000+ VOD titles in 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",

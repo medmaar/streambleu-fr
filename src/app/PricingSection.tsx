@@ -47,8 +47,8 @@ function orderHref(devices: number, dur: Duration): string {
 }
 
 const features = [
-  "25 000+ Chaînes en Direct",
-  "120 000+ Films & Séries",
+  "50 000+ Chaînes en Direct",
+  "300 000+ Films & Séries",
   "4K Ultra HD Quality",
   "beIN Sports · RMC Sport · Canal+ · CTV",
   "PPV Events Included",
@@ -204,7 +204,7 @@ export default function PricingSection() {
         </div>
 
         <p style={{ textAlign: "center", color: "#1a1a4e", fontSize: 12, marginTop: 24, opacity: 0.6 }}>
-          Tous les forfaits incluent 25 000+ chaînes, 120 000+ VOD et le support 24/7. Plus longue est la durée, moins vous payez par mois.
+          Tous les forfaits incluent 50 000+ chaînes, 300 000+ VOD et le support 24/7. Plus longue est la durée, moins vous payez par mois.
         </p>
       </div>
     </section>

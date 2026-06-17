@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Liste Chaînes IPTV France 2026 — 25 000+ Chaînes | Stream Bleu" },
+  title: { absolute: "Liste Chaînes IPTV France 2026 — 50 000+ Chaînes | Stream Bleu" },
   description:
-    "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 25 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2, et des milliers de chaînes internationales.",
+    "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 50 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2, et des milliers de chaînes internationales.",
   keywords:
     "liste chaînes iptv france, stream bleu chaînes, chaînes iptv france 2026, bein sports iptv, canal plus iptv",
   alternates: { canonical: "https://streambleu.fr/liste-chaines" },
@@ -8170,7 +8170,7 @@ export default function ChannelsListPage() {
             Stream Bleu <span style={{ color: "#c5bcf5" }}>Liste des Chaînes</span>
           </h1>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.8)", marginBottom: 24 }}>
-            25 000+ chaînes en direct pour la France, l'Europe et le monde entier.
+            50 000+ chaînes en direct pour la France, l'Europe et le monde entier.
             Tous les forfaits incluent la liste complète des chaînes — sans options payantes.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, fontSize: 14, color: "rgba(255,255,255,0.75)" }}>
@@ -8186,7 +8186,7 @@ export default function ChannelsListPage() {
       <div className="bg-[#5a5fcf] py-3 px-4">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 text-white text-sm font-semibold">
           <span>🌍 152 Pays &amp; Régions</span>
-          <span>📺 25 000+ Chaînes en direct</span>
+          <span>📺 50 000+ Chaînes en direct</span>
           <span>🎬 Qualité 4K Ultra HD</span>
           <span>⚡ Zéro Coupure</span>
         </div>
@@ -8241,7 +8241,7 @@ export default function ChannelsListPage() {
       {/* CTA */}
       <section style={{ padding: "64px 24px", background: "transparent" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
-          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Accédez à 25 000+ Chaînes</h2>
+          <h2 style={{ fontSize: "clamp(1.6rem,3vw,2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 16 }}>Accédez à 50 000+ Chaînes</h2>
           <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 32, fontSize: 16, lineHeight: 1.6 }}>
             Chaque forfait inclut la liste complète des chaînes. Testez gratuitement pendant 24h — sans carte bancaire.
           </p>

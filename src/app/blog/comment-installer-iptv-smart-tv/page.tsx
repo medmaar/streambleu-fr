@@ -28,7 +28,7 @@ const articleSchema = {
     { "@type": "HowToStep", position: 1, name: "Obtenir vos identifiants IPTV", text: "Souscrivez à Stream Bleu et recevez votre URL M3U ou vos identifiants Xtream Codes par email en moins de 30 minutes." },
     { "@type": "HowToStep", position: 2, name: "Installer une application IPTV", text: "Téléchargez IPTV Smarters Pro ou Smart IPTV depuis le Samsung App Store, le LG Content Store, ou le Google Play Store sur Android TV." },
     { "@type": "HowToStep", position: 3, name: "Entrer vos identifiants", text: "Ouvrez l'application, choisissez 'Ajouter un compte' et entrez l'URL M3U ou les identifiants Xtream Codes fournis par Stream Bleu." },
-    { "@type": "HowToStep", position: 4, name: "Profiter de l'IPTV", text: "Vos chaînes se chargent automatiquement. Naviguez dans les catégories et profitez de 25 000+ chaînes en 4K Ultra HD." },
+    { "@type": "HowToStep", position: 4, name: "Profiter de l'IPTV", text: "Vos chaînes se chargent automatiquement. Naviguez dans les catégories et profitez de 50 000+ chaînes en 4K Ultra HD." },
   ],
 };
 
@@ -76,7 +76,7 @@ const tvGuides = [
       "Installez IPTV Smarters Pro",
       "Ouvrez l'app → Ajouter un utilisateur",
       "Entrez votre login/password/URL Xtream Codes Stream Bleu",
-      "Vos 25 000+ chaînes se chargent automatiquement",
+      "Vos 50 000+ chaînes se chargent automatiquement",
     ],
   },
   {

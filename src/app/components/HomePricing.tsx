@@ -23,8 +23,8 @@ const planDefs = [
 ];
 
 const planFeatures = [
-  "25 000+ Chaînes en direct",
-  "120 000+ Films & Séries",
+  "50 000+ Chaînes en direct",
+  "300 000+ Films & Séries",
   "Vrai 4K Ultra HD — H.265/HEVC",
   "Support HDR10 & Dolby Vision",
   "Ligue 1 · beIN Sports · Canal+",
@@ -69,7 +69,7 @@ export default function HomePricing() {
           </span>
         </div>
         <p style={{ textAlign: "center", color: "#1a1a4e", marginBottom: 36, fontSize: 15 }}>
-          Tous les forfaits incluent 25 000+ chaînes, streaming 4K H.265/HEVC avec HDR10, et support 24/7 en français. Paiement par PayPal ou Carte bancaire.
+          Tous les forfaits incluent 50 000+ chaînes, streaming 4K H.265/HEVC avec HDR10, et support 24/7 en français. Paiement par PayPal ou Carte bancaire.
         </p>
 
         {/* Connection selector — horizontally scrollable, starts from left */}

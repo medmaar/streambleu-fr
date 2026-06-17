@@ -80,7 +80,7 @@ export default function Footer() {
           <div style={{ flex: "0 0 220px", minWidth: 180 }}>
             <Logo className="mb-3" />
             <p style={{ color: "rgba(255,255,255,0.90)", fontSize: 12, lineHeight: 1.65, marginBottom: 10 }}>
-              Meilleur IPTV France. 25 000+ chaînes, 120 000+ films en 4K. Disponible toute l&apos;Europe.
+              Meilleur IPTV France. 50 000+ chaînes, 300 000+ films en 4K. Disponible toute l&apos;Europe.
             </p>
             <a href="mailto:contact@streambleu.fr"
               style={{ color: "#ffffff", fontSize: 12, textDecoration: "none" }}>

@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Toulouse 2026 | Stream Bleu — Meilleur IPTV France" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Toulouse. Regardez TF1, Canal+, beIN Sports, RMC Sport et 25 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Toulouse. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
   keywords:
     "iptv toulouse, meilleur iptv toulouse, abonnement iptv Toulouse, iptv france Toulouse, stream bleu Toulouse",
   alternates: { canonical: "https://streambleu.fr/iptv-toulouse" },
   openGraph: {
     title: "IPTV Toulouse 2026 | Stream Bleu — Meilleur IPTV France",
     description:
-      "Stream Bleu est le meilleur service IPTV à Toulouse. 25 000+ chaînes, 120 000+ films et séries en 4K. À partir de 9€/mois.",
+      "Stream Bleu est le meilleur service IPTV à Toulouse. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",
     url: "https://streambleu.fr/iptv-toulouse",
     type: "website",
     siteName: "Stream Bleu",
@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     q: "Quel est le meilleur service IPTV à Toulouse ?",
-    a: "Stream Bleu est largement considéré comme le meilleur service IPTV à Toulouse. Il propose 25 000+ chaînes en direct incluant toutes les chaînes locales françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 120 000+ titres à la demande — à partir de 9€/mois.",
+    a: "Stream Bleu est largement considéré comme le meilleur service IPTV à Toulouse. Il propose 50 000+ chaînes en direct incluant toutes les chaînes locales françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 300 000+ titres à la demande — à partir de 9€/mois.",
   },
   {
     q: "Stream Bleu fonctionne-t-il bien à Toulouse ?",
@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     q: "Combien coûte un abonnement IPTV à Toulouse ?",
-    a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée sont disponibles à prix réduit. Toutes les formules incluent un accès à 25 000+ chaînes, 120 000+ films &amp; séries, et les chaînes sportives premium.",
+    a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée sont disponibles à prix réduit. Toutes les formules incluent un accès à 50 000+ chaînes, 300 000+ films &amp; séries, et les chaînes sportives premium.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function IPTVToulousePage() {
             </h1>
             <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "#5a5fcf", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
               Stream Bleu est le meilleur service IPTV à Toulouse. Profitez de TF1, Canal+, beIN Sports,
-              RMC Sport et 25 000+ chaînes en 4K Ultra HD. Suivez le Stade Toulousain en Top 14, la Ligue 1 et toute l'actualité sportive en 4K.
+              RMC Sport et 50 000+ chaînes en 4K Ultra HD. Suivez le Stade Toulousain en Top 14, la Ligue 1 et toute l'actualité sportive en 4K.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/tarifs" style={{
@@ -130,8 +130,8 @@ export default function IPTVToulousePage() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
               {[
-                { icon: "📺", title: "25 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
-                { icon: "🎬", title: "120 000+ VOD", desc: "Films et séries à la demande, mis à jour quotidiennement." },
+                { icon: "📺", title: "50 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
+                { icon: "🎬", title: "300 000+ VOD", desc: "Films et séries à la demande, mis à jour quotidiennement." },
                 { icon: "⚽", title: "Sport Premium", desc: "beIN Sports, RMC Sport, Canal+ Sport, Eurosport — sans supplément." },
                 { icon: "🔥", title: "4K Ultra HD", desc: "Streams H.265/HEVC avec HDR10 & Dolby Vision sur les chaînes compatibles." },
                 { icon: "📱", title: "Multi-écrans", desc: "Smart TV, Fire Stick, Android, iOS, PC — tous les appareils supportés." },

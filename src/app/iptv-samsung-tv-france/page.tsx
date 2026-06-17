@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV sur Samsung Smart TV en France 2026 | Stream Bleu" },
   description:
-    "Comment regarder Stream Bleu sur Samsung Smart TV en France. Guide complet. 25 000+ chaînes, 4K Ultra HD. Compatible Samsung QLED, Neo QLED, Crystal UHD, Frame TV.",
+    "Comment regarder Stream Bleu sur Samsung Smart TV en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Samsung QLED, Neo QLED, Crystal UHD, Frame TV.",
   keywords: "iptv samsung-tv france, stream bleu samsung smart tv, iptv samsung smart tv france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-samsung-tv-france" },
   openGraph: {
@@ -44,7 +44,7 @@ export default function IPTVSamsungtvFrancePage() {
             <span style={{ color: "#5a5fcf" }}>en France 2026</span>
           </h1>
           <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "#5a5fcf", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
-            Guide complet pour configurer Stream Bleu sur votre Samsung Smart TV. Installation en 5 minutes, 25 000+ chaînes françaises et internationales en 4K Ultra HD.
+            Guide complet pour configurer Stream Bleu sur votre Samsung Smart TV. Installation en 5 minutes, 50 000+ chaînes françaises et internationales en 4K Ultra HD.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/tarifs" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(90,95,207,0.4)" }}>

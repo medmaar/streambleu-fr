@@ -35,7 +35,7 @@ const breadcrumbSchema = {
 };
 
 const faqItems = [
-  { q: "L'IPTV est-il vraiment moins cher que le câble en France ?", a: "Oui, significativement. Un abonnement IPTV Stream Bleu coûte 9€/mois pour 25 000+ chaînes, contre 25-60€/mois pour un abonnement câble/satellite équivalent chez Canal+, Orange TV ou SFR. Sur un an, l'économie est de 200 à 600€ pour une qualité souvent supérieure (vraie 4K H.265 vs 4K partielle des opérateurs)." },
+  { q: "L'IPTV est-il vraiment moins cher que le câble en France ?", a: "Oui, significativement. Un abonnement IPTV Stream Bleu coûte 9€/mois pour 50 000+ chaînes, contre 25-60€/mois pour un abonnement câble/satellite équivalent chez Canal+, Orange TV ou SFR. Sur un an, l'économie est de 200 à 600€ pour une qualité souvent supérieure (vraie 4K H.265 vs 4K partielle des opérateurs)." },
   { q: "La qualité vidéo de l'IPTV est-elle meilleure que le câble ?", a: "Pour la 4K Ultra HD, oui. Stream Bleu utilise le codec H.265/HEVC qui offre une vraie 4K avec HDR10. La plupart des opérateurs câble/satellite en France n'ont que quelques chaînes en 4K réelle, le reste est en 1080p. Pour la HD standard (1080p), la différence est minime avec une bonne connexion internet." },
   { q: "L'IPTV peut-il tomber en panne comme le câble ?", a: "Les deux technologies ont leurs pannes, mais les causes diffèrent. Le câble/satellite peut tomber à cause de coupures de réseau physique ou de conditions météo (satellite). L'IPTV dépend de votre connexion internet. Avec une bonne connexion fibre (99,9% de disponibilité) et un service IPTV premium comme Stream Bleu, les pannes sont aussi rares qu'avec le câble." },
   { q: "Peut-on avoir l'IPTV sans abonnement internet à haut débit ?", a: "Pour la HD (1080p), 10 Mbps suffisent. Pour la 4K Ultra HD, 25 Mbps sont nécessaires. Avec l'ADSL classique (8–20 Mbps), vous pouvez regarder en 1080p sans problème. La fibre optique est recommandée pour la 4K et les familles avec plusieurs streams simultanés." },
@@ -49,13 +49,13 @@ const faqSchema = {
 
 const comparison = [
   { critere: "Prix mensuel moyen", iptv: "9–15€/mois", cable: "25–60€/mois", gagnant: "iptv" },
-  { critere: "Nombre de chaînes", iptv: "25 000+", cable: "100–400 chaînes", gagnant: "iptv" },
+  { critere: "Nombre de chaînes", iptv: "50 000+", cable: "100–400 chaînes", gagnant: "iptv" },
   { critere: "Qualité 4K réelle", iptv: "4K H.265 HDR10", cable: "4K partielle (H.264)", gagnant: "iptv" },
   { critere: "Engagement", iptv: "Sans engagement (1 mois)", cable: "12–24 mois minimum", gagnant: "iptv" },
   { critere: "Matériel requis", iptv: "35–70€ (Fire Stick)", cable: "0–100€ (décodeur fourni)", gagnant: "egal" },
   { critere: "Installation", iptv: "5 min, auto", cable: "Technicien requis souvent", gagnant: "iptv" },
   { critere: "Fiabilité réseau", iptv: "Dépend de votre FAI", cable: "Réseau dédié", gagnant: "egal" },
-  { critere: "VOD & replay", iptv: "120 000+ titres inclus", cable: "Bibliothèque limitée, payante", gagnant: "iptv" },
+  { critere: "VOD & replay", iptv: "300 000+ titres inclus", cable: "Bibliothèque limitée, payante", gagnant: "iptv" },
   { critere: "Multi-écrans", iptv: "Tous appareils simultanés", cable: "1 décodeur par pièce", gagnant: "iptv" },
   { critere: "Support client", iptv: "24/7 WhatsApp (Stream Bleu)", cable: "Hotline souvent difficile", gagnant: "iptv" },
   { critere: "Essai gratuit", iptv: "Oui, 24h sans CB", cable: "Non", gagnant: "iptv" },
@@ -72,11 +72,11 @@ const cablePros = [
 
 const iptv_pros = [
   "Prix 3 à 6 fois moins cher pour beaucoup plus de contenu",
-  "25 000+ chaînes vs 100–400 pour le câble au même prix",
+  "50 000+ chaînes vs 100–400 pour le câble au même prix",
   "Vraie qualité 4K H.265 HDR10 sur toutes les chaînes premium",
   "Sans engagement — résiliez à tout moment",
   "Fonctionne sur tous vos appareils simultanément",
-  "120 000+ films et séries VOD inclus sans supplément",
+  "300 000+ films et séries VOD inclus sans supplément",
   "Installation en 5 minutes sans technicien",
   "Essai gratuit 24h pour valider avant d'acheter",
 ];
@@ -166,9 +166,9 @@ export default function IPTVvsCable() {
           <h2 style={H2}>Le calcul financier : ce que vous économisez en 1 an</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: 16, marginBottom: 36 }}>
             {[
-              { scenario: "vs Canal+ Essentiel", cablePrice: "25€/mois", iptvPrice: "9€/mois", saving: "192€/an", channels: "Stream Bleu : 25 000+ vs Canal+ : ~50 chaînes" },
-              { scenario: "vs Orange TV Max", cablePrice: "45€/mois", iptvPrice: "9€/mois", saving: "432€/an", channels: "Stream Bleu : 25 000+ vs Orange TV : ~200 chaînes" },
-              { scenario: "vs SFR TV Starter", cablePrice: "35€/mois", iptvPrice: "9€/mois", saving: "312€/an", channels: "Stream Bleu : 25 000+ vs SFR TV : ~100 chaînes" },
+              { scenario: "vs Canal+ Essentiel", cablePrice: "25€/mois", iptvPrice: "9€/mois", saving: "192€/an", channels: "Stream Bleu : 50 000+ vs Canal+ : ~50 chaînes" },
+              { scenario: "vs Orange TV Max", cablePrice: "45€/mois", iptvPrice: "9€/mois", saving: "432€/an", channels: "Stream Bleu : 50 000+ vs Orange TV : ~200 chaînes" },
+              { scenario: "vs SFR TV Starter", cablePrice: "35€/mois", iptvPrice: "9€/mois", saving: "312€/an", channels: "Stream Bleu : 50 000+ vs SFR TV : ~100 chaînes" },
             ].map(s => (
               <div key={s.scenario} style={{ background: "#fff", border: "1px solid rgba(90,95,207,0.12)", borderRadius: 14, padding: "20px" }}>
                 <h3 style={{ fontWeight: 700, fontSize: 14, color: "#5a5fcf", marginBottom: 12 }}>{s.scenario}</h3>
@@ -196,7 +196,7 @@ export default function IPTVvsCable() {
           <section style={{ background: "#5a5fcf", borderRadius: 20, padding: "36px 32px", textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Essayez l'IPTV avant de décider — 24h gratuit</h2>
             <p style={{ color: "rgba(255,255,255,0.82)", fontSize: 15, lineHeight: 1.7, marginBottom: 28, maxWidth: 520, margin: "0 auto 28px" }}>
-              Comparez par vous-même · 25 000+ chaînes · 4K Ultra HD · Aucun engagement
+              Comparez par vous-même · 50 000+ chaînes · 4K Ultra HD · Aucun engagement
             </p>
             <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit 24h →

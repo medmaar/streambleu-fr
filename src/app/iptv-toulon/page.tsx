@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Toulon 2026 | Stream Bleu — Meilleur IPTV Provence-Alpes-Côte d'Azur" },
-  description: "Stream Bleu est le meilleur service IPTV à Toulon. Regardez TF1, Canal+, beIN Sports, RMC Sport et 25 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+  description: "Stream Bleu est le meilleur service IPTV à Toulon. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
   keywords: "iptv toulon, meilleur iptv toulon, abonnement iptv Toulon, iptv france Toulon, stream bleu Toulon",
   alternates: { canonical: "https://streambleu.fr/iptv-toulon" },
   openGraph: {
     title: "IPTV Toulon 2026 | Stream Bleu — Meilleur IPTV Provence-Alpes-Côte d'Azur",
-    description: "Stream Bleu est le meilleur service IPTV à Toulon. 25 000+ chaînes, 120 000+ films et séries en 4K. À partir de 9€/mois.",
+    description: "Stream Bleu est le meilleur service IPTV à Toulon. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",
     url: "https://streambleu.fr/iptv-toulon",
     type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Stream Bleu IPTV Toulon" }],
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 
 const faqItems = [
   { q: "L'IPTV est-il légal à Toulon ?", a: "La technologie IPTV est légale à Toulon et dans toute la France. Stream Bleu diffuse des flux internet sur votre appareil. Les utilisateurs sont responsables de s'assurer que les contenus auxquels ils accèdent respectent la législation française sur le droit d'auteur." },
-  { q: "Quel est le meilleur service IPTV à Toulon ?", a: "Stream Bleu est le meilleur service IPTV à Toulon. Il propose 25 000+ chaînes en direct incluant toutes les chaînes françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 120 000+ titres à la demande — à partir de 9€/mois sans engagement." },
+  { q: "Quel est le meilleur service IPTV à Toulon ?", a: "Stream Bleu est le meilleur service IPTV à Toulon. Il propose 50 000+ chaînes en direct incluant toutes les chaînes françaises, les chaînes sportives premium (beIN Sports, RMC Sport, Canal+ Sport) et 300 000+ titres à la demande — à partir de 9€/mois sans engagement." },
   { q: "Stream Bleu fonctionne-t-il bien à Toulon ?", a: "Oui. Stream Bleu fonctionne parfaitement à Toulon avec tous les fournisseurs internet majeurs (Orange, SFR, Free, Bouygues). Nos serveurs CDN couvrent la région Provence-Alpes-Côte d'Azur, offrant des streams 4K stables avec un minimum de latence." },
-  { q: "Combien coûte un abonnement IPTV à Toulon ?", a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée permettent de descendre à 4€/mois. Toutes les formules incluent 25 000+ chaînes, 120 000+ films & séries, et les chaînes sportives premium." },
+  { q: "Combien coûte un abonnement IPTV à Toulon ?", a: "Stream Bleu propose des abonnements à partir de 9€/mois sans engagement. Des forfaits longue durée permettent de descendre à 4€/mois. Toutes les formules incluent 50 000+ chaînes, 300 000+ films & séries, et les chaînes sportives premium." },
   { q: "Puis-je suivre le Sporting Club de Toulon avec Stream Bleu ?", a: "Oui. Stream Bleu inclut beIN Sports, RMC Sport et Canal+ Sport, ce qui vous permet de suivre le Sporting Club de Toulon et toutes les compétitions françaises et européennes en 4K Ultra HD." },
 ];
 
@@ -64,7 +64,7 @@ export default function IPTVCityPage() {
               Meilleur IPTV<br /><span style={{ color: "#5a5fcf" }}>Toulon 2026</span>
             </h1>
             <p style={{ fontSize: "clamp(15px,2vw,18px)", color: "#5a5fcf", maxWidth: 640, marginBottom: 36, lineHeight: 1.7 }}>
-              Stream Bleu est le meilleur service IPTV à Toulon. Profitez de TF1, Canal+, beIN Sports, RMC Sport et 25 000+ chaînes en 4K Ultra HD. Suivez le Sporting Club de Toulon et toutes les compétitions en 4K sans coupure.
+              Stream Bleu est le meilleur service IPTV à Toulon. Profitez de TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K Ultra HD. Suivez le Sporting Club de Toulon et toutes les compétitions en 4K sans coupure.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Link href="/tarifs" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", boxShadow: "0 6px 20px rgba(90,95,207,0.4)" }}>Voir les Tarifs →</Link>
@@ -77,7 +77,7 @@ export default function IPTVCityPage() {
             <h2 style={{ textAlign: "center", fontSize: "clamp(22px,3.5vw,34px)", fontWeight: 900, marginBottom: 40, color: "#5a5fcf" }}>Pourquoi choisir Stream Bleu à Toulon ?</h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(230px,1fr))", gap: 22 }}>
               {[
-                { icon: "📺", title: "25 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
+                { icon: "📺", title: "50 000+ Chaînes", desc: "TNT, câble, satellite, chaînes étrangères — tout en un seul abonnement." },
                 { icon: "⚽", title: "Sport Premium", desc: "beIN Sports, RMC Sport, Canal+ Sport, Eurosport — tous les matchs sans supplément." },
                 { icon: "🔥", title: "4K Ultra HD", desc: "Streams H.265/HEVC avec HDR10 & Dolby Vision sur les chaînes compatibles." },
                 { icon: "📱", title: "Multi-écrans", desc: "Smart TV, Fire Stick, Android, iOS, PC — tous les appareils supportés." },

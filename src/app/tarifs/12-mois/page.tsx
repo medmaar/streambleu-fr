@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 12 Mois — 49€ Meilleur Prix | Stream Bleu" },
   description:
-    "Profitez d'un an complet d'IPTV en France pour seulement 49€. 25 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports, bonus IBO Player inclus. Meilleur rapport qualité-prix en France.",
+    "Profitez d'un an complet d'IPTV en France pour seulement 49€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports, bonus IBO Player inclus. Meilleur rapport qualité-prix en France.",
   keywords:
     "IPTV 12 mois france, Stream Bleu 12 mois, meilleur forfait IPTV france, IPTV 49€ France, abonnement annuel IPTV france",
   alternates: { canonical: "https://streambleu.fr/tarifs/12-mois" },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const faqItems: FaqItem[] = [
   {
     q: "Qu'est-ce qui est inclus dans le forfait IPTV 12 mois ?",
-    a: "Le forfait 12 mois vous offre 12 mois complets d'accès à plus de 25 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2 et des centaines d'autres), 120 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 49€.",
+    a: "Le forfait 12 mois vous offre 12 mois complets d'accès à plus de 50 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2 et des centaines d'autres), 300 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 49€.",
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
@@ -60,7 +60,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Forfait IPTV 12 Mois Stream Bleu",
-  description: "12 mois d'accès IPTV à plus de 25 000 chaînes en direct en France dont Ligue 1, beIN Sports, RMC Sport et 120 000+ titres VOD en 4K. Inclut l'abonnement IBO Player.",
+  description: "12 mois d'accès IPTV à plus de 50 000 chaînes en direct en France dont Ligue 1, beIN Sports, RMC Sport et 300 000+ titres VOD en 4K. Inclut l'abonnement IBO Player.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",

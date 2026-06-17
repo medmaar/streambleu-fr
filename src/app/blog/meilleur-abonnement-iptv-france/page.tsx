@@ -35,7 +35,7 @@ const breadcrumbSchema = {
 };
 
 const faqItems = [
-  { q: "Quel est le meilleur abonnement IPTV en France en 2026 ?", a: "Stream Bleu est le meilleur abonnement IPTV en France pour 2026 selon nos tests et 50 000+ avis clients. Il offre la combinaison optimale : 25 000+ chaînes en 4K H.265, 99,9% d'uptime garanti, activation en moins de 30 minutes, et support 24/7 en français. À partir de 9€/mois sans engagement." },
+  { q: "Quel est le meilleur abonnement IPTV en France en 2026 ?", a: "Stream Bleu est le meilleur abonnement IPTV en France pour 2026 selon nos tests et 50 000+ avis clients. Il offre la combinaison optimale : 50 000+ chaînes en 4K H.265, 99,9% d'uptime garanti, activation en moins de 30 minutes, et support 24/7 en français. À partir de 9€/mois sans engagement." },
   { q: "Combien coûte un bon abonnement IPTV en France ?", a: "Un abonnement IPTV de qualité en France coûte entre 9€ et 15€ par mois pour 1 connexion. En dessous de 5€/mois, méfiez-vous : l'infrastructure nécessaire à un service stable et légal ne peut pas être financée à ce prix. Stream Bleu propose des tarifs dégressifs : 9€/mois sur 1 mois, jusqu'à 4€/mois sur 12 mois." },
   { q: "Faut-il choisir un abonnement 1 mois ou 12 mois ?", a: "Pour un nouveau service : commencez toujours par 1 mois (après l'essai gratuit) pour valider la qualité dans la durée. Si vous êtes satisfait après 1 mois, passez au 12 mois — l'économie est de 50% chez Stream Bleu. Évitez les services qui imposent 6 ou 12 mois dès le départ sans essai préalable." },
   { q: "Quelle différence entre 1 connexion et 2+ connexions ?", a: "1 connexion = 1 appareil simultané. Si vous voulez regarder l'IPTV en même temps sur votre TV salon et votre chambre, il vous faut 2 connexions. Stream Bleu propose des abonnements multi-connexions pour les familles, à tarifs dégressifs par connexion supplémentaire." },
@@ -64,7 +64,7 @@ const plans = [
 ];
 
 const comparison = [
-  { service: "Stream Bleu", channels: "25 000+", quality: "4K H.265", uptime: "99,9%", support: "24/7 FR", price: "9€/mois", trial: "24h gratuit", verdict: "⭐ Meilleur choix" },
+  { service: "Stream Bleu", channels: "50 000+", quality: "4K H.265", uptime: "99,9%", support: "24/7 FR", price: "9€/mois", trial: "24h gratuit", verdict: "⭐ Meilleur choix" },
   { service: "Canal+ (opérateur)", channels: "80+ chaînes", quality: "4K partielle", uptime: "99,8%", support: "Hotline", price: "25€/mois", trial: "30j payant", verdict: "Limité" },
   { service: "Service IPTV B", channels: "15 000+", quality: "1080p H.264", uptime: "97%", support: "Email", price: "14€/mois", trial: "Aucun", verdict: "Instable" },
   { service: "Service IPTV C", channels: "10 000+", quality: "1080p", uptime: "95%", support: "Limité", price: "12€/mois", trial: "Aucun", verdict: "Basique" },
@@ -159,7 +159,7 @@ export default function MeilleurAbonnementIPTV() {
               </div>
             ))}
           </div>
-          <p style={S}>Tous les abonnements incluent : 25 000+ chaînes live, 120 000+ films et séries VOD, qualité 4K H.265, guide EPG 7 jours, support 24/7 en français, et activation en moins de 30 minutes.</p>
+          <p style={S}>Tous les abonnements incluent : 50 000+ chaînes live, 300 000+ films et séries VOD, qualité 4K H.265, guide EPG 7 jours, support 24/7 en français, et activation en moins de 30 minutes.</p>
 
           <section style={{ marginBottom: 48 }}>
             <h2 style={H2}>Questions fréquentes — Meilleur Abonnement IPTV France</h2>

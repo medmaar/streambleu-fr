@@ -130,7 +130,7 @@ function reminderEmail(name, username, password, m3uUrl) {
       Votre essai gratuit <strong>expire dans 4 heures</strong> ⏳
     </p>
     <p style="margin:0 0 24px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Vous avez encore un peu de temps pour profiter de votre accès complet à 25 000+ chaînes, beIN Sports, Canal+, TF1 et 120 000+ films en 4K.
+      Vous avez encore un peu de temps pour profiter de votre accès complet à 50 000+ chaînes, beIN Sports, Canal+, TF1 et 300 000+ films en 4K.
     </p>
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Vos identifiants actifs :
@@ -162,7 +162,7 @@ function followupEmail(name) {
       Votre essai gratuit Stream Bleu est maintenant <strong>terminé</strong>.
     </p>
     <p style="margin:0 0 24px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Nous espérons que vous avez apprécié la qualité de notre service — 25 000+ chaînes, beIN Sports, Canal+, TF1 et 120 000+ films en 4K, sans coupure.
+      Nous espérons que vous avez apprécié la qualité de notre service — 50 000+ chaînes, beIN Sports, Canal+, TF1 et 300 000+ films en 4K, sans coupure.
     </p>
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Continuez à profiter de Stream Bleu en choisissant l'abonnement qui vous convient :
