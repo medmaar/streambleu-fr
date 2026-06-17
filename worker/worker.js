@@ -281,7 +281,7 @@ async function handleFetch(request, env) {
 
     // 5. Admin email
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `[Essai] ${name} — ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl));
+    await sendEmail(ADMIN_EMAIL, `Automation / streambleu.fr / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl));
 
     // 6. Store trial in KV (TTL 4 days auto-cleanup)
     step = "kv_store";
