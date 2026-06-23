@@ -297,7 +297,7 @@ async function handleFetch(request, env) {
     await env.TRIALS.put(
       `trial:${email}`,
       JSON.stringify(trialData),
-      { expirationTtl: 4 * 24 * 60 * 60 } // auto-delete after 4 days
+      { expirationTtl: 30 * 24 * 60 * 60 } // auto-delete after 4 days
     );
 
     return jsonRes({ success: true });
@@ -337,7 +337,7 @@ async function handleScheduled(env) {
           reminderEmail(name, username, password, m3uUrl)
         );
         trial.reminder_sent = true;
-        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 4 * 24 * 60 * 60 });
+        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Reminder sent to ${email}`);
       } catch (e) {
         console.error(`[cron] Reminder failed for ${email}:`, e.message);
@@ -353,7 +353,7 @@ async function handleScheduled(env) {
           followupEmail(name)
         );
         trial.followup_sent = true;
-        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 4 * 24 * 60 * 60 });
+        await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Follow-up sent to ${email}`);
       } catch (e) {
         console.error(`[cron] Follow-up failed for ${email}:`, e.message);
