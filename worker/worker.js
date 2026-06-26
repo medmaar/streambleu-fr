@@ -299,6 +299,14 @@ async function handleFetch(request, env) {
       JSON.stringify(trialData),
       { expirationTtl: 30 * 24 * 60 * 60 } // auto-delete after 4 days
     );
+    // Notify central KV reader
+    try {
+      await fetch('https://iptv-kv-reader.medmaar.workers.dev/add', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, whatsapp, site: 'streambleu.fr', phone: whatsapp, created_at: Date.now() })
+      });
+    } catch(_) {}
 
     return jsonRes({ success: true });
 
