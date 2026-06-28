@@ -299,6 +299,14 @@ async function handleFetch(request, env) {
       JSON.stringify(trialData),
       { expirationTtl: 30 * 24 * 60 * 60 } // auto-delete after 4 days
     );
+    // Update __keys__ index (read op, not list op — keeps KV list quota safe)
+    try {
+      const _existingKeys = JSON.parse(await env.TRIALS.get('__keys__') || '[]');
+      if (!_existingKeys.includes(email)) {
+        _existingKeys.push(email);
+        await env.TRIALS.put('__keys__', JSON.stringify(_existingKeys), { expirationTtl: 90 * 24 * 60 * 60 });
+      }
+    } catch(_) {}
     // Notify central KV reader
     const _kvBody = JSON.stringify({ name, email, whatsapp, site: 'streambleu.fr', phone: whatsapp, created_at: Date.now() });
     const _kvPost = () => fetch('https://iptv-kv-reader.medmaar.workers.dev/add',
@@ -321,7 +329,9 @@ async function handleScheduled(env) {
   const FOUR_HOURS = 4 * 60 * 60 * 1000;
 
   // List all trial keys
-  const { keys } = await env.TRIALS.list({ prefix: "trial:" });
+  const _keysRaw = await env.TRIALS.get('__keys__') || '[]';
+  const _keyEmails = JSON.parse(_keysRaw);
+  const keys = _keyEmails.map(e => ({ name: `trial:${e}` }));
   console.log(`[cron] Checking ${keys.length} trials`);
 
   for (const { name: key } of keys) {
