@@ -29,7 +29,7 @@ export default function PlanOrderForm({ planLabel, price, whatsappNumber, emailA
     const msg = encodeURIComponent(
       `Bonjour Stream Bleu !\n\nJe souhaite commander le forfait ${planLabel} à ${price}€.\n\nNom : ${name}\nEmail : ${email}\nPays : ${country}\nWhatsApp : ${phone || "—"}\n\nMerci de m'envoyer les instructions de paiement.`
     );
-    window.open(`https://wa.me/${whatsappNumber}?text=${msg}`, "_blank");
+    window.open(`/discuter/wa?msg=${msg}`, "_blank");
     setSubmitted(true);
   }
 

@@ -44,7 +44,7 @@ export default function ContactPage() {
               <h2 style={{ fontSize: 20, fontWeight: 700, color: "#1a1a4e", marginBottom: 6 }}>💬 WhatsApp</h2>
               <p style={{ color: "#555", fontSize: 14, marginBottom: 8, lineHeight: 1.6 }}>Réponse la plus rapide — généralement en moins de 5 minutes.</p>
               <p style={{ color: "#5a5fcf", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>+1 (782) 802-6280</p>
-              <a href="https://wa.me/17828026280?text=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service."
+              <a href="/discuter/wa?msg=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service."
                 target="_blank" rel="noopener noreferrer"
                 style={{ background: "#25D366", color: "#fff", fontWeight: 700, padding: "12px 28px", borderRadius: 12, fontSize: 14, textDecoration: "none", display: "inline-block" }}>
                 Écrire sur WhatsApp

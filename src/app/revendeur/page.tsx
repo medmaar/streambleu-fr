@@ -82,7 +82,7 @@ export default function ResellerPage() {
               style={{ display: "inline-block", background: "#f5a623", color: "#1a1a4e", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               Envoyer un e-mail
             </a>
-            <a href="https://wa.me/17828026280?text=Bonjour%2C%20je%20souhaite%20devenir%20revendeur%20Stream%20Bleu"
+            <a href="/discuter/wa?msg=Bonjour%2C%20je%20souhaite%20devenir%20revendeur%20Stream%20Bleu"
               target="_blank" rel="noopener noreferrer"
               style={{ display: "inline-block", background: "transparent", border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               WhatsApp

@@ -124,7 +124,7 @@ export default function EssaiGratuitForm() {
       {status === "error" && (
         <div style={{ background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.3)", color: "#fca5a5", borderRadius: 12, padding: "12px 16px", fontSize: 14 }}>
           Une erreur est survenue. Veuillez réessayer ou{" "}
-          <a href={`https://wa.me/${"+17828026280".replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer" style={{ color: "#fca5a5", textDecoration: "underline" }}>
+          <a href={`/discuter/wa`} target="_blank" rel="noopener noreferrer" style={{ color: "#fca5a5", textDecoration: "underline" }}>
             contactez-nous sur WhatsApp
           </a>.
         </div>

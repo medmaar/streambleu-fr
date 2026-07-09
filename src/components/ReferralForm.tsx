@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const WA_NUMBER = "17828026280";
-const WA_REFER_URL = `https://wa.me/${WA_NUMBER}?text=Bonjour%20Stream%20Bleu%2C%20je%20souhaite%20parrainer%20quelqu%27un.%20Quelle%20est%20la%20prochaine%20étape%20%3F`;
+const WA_REFER_URL = `/discuter/wa?msg=Bonjour%20Stream%20Bleu%2C%20je%20souhaite%20parrainer%20quelqu%27un.%20Quelle%20est%20la%20prochaine%20étape%20%3F`;
 
 const inputStyle = {
   width: "100%",

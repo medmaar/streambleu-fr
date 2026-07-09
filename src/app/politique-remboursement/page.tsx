@@ -74,7 +74,7 @@ export default function PolitiqueRemboursementPage() {
             <h2 className="text-2xl font-bold mb-3" style={{ color: "#1a1a4e" }}>5. Nous contacter</h2>
             <p className="mb-4">Si vous pensez être éligible à une exception ou avez une question de facturation, contactez-nous.</p>
             <div style={{ background: "rgba(90,95,207,0.06)", borderRadius: 12, padding: 24, border: "1px solid rgba(90,95,207,0.15)" }}>
-              <p><span style={{ color: "#5a5fcf", fontWeight: 600 }}>WhatsApp : </span><a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf" }}>+1 (782) 802-6280</a></p>
+              <p><span style={{ color: "#5a5fcf", fontWeight: 600 }}>WhatsApp : </span><a href="/discuter/wa" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf" }}>+1 (782) 802-6280</a></p>
               <p className="mt-2"><span style={{ color: "#5a5fcf", fontWeight: 600 }}>Telegram : </span><a href="https://t.me/IPTVFranceSupport" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf" }}>@IPTVFranceSupport</a></p>
               <p className="mt-2"><span style={{ color: "#5a5fcf", fontWeight: 600 }}>Email : </span><a href="mailto:contact@streambleu.fr" style={{ color: "#5a5fcf" }}>contact@streambleu.fr</a></p>
             </div>

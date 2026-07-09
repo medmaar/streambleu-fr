@@ -125,7 +125,7 @@ export default function PlanOrderForm({ plan }: Props) {
         <div className="rounded-2xl px-4 py-3 text-sm font-medium"
           style={{ background: "rgba(253,3,34,0.1)", border: "1px solid rgba(253,3,34,0.3)", color: "#ff6b6b" }}>
           ❌ Une erreur s&apos;est produite. Réessayez ou{" "}
-          <a href="https://wa.me/17828026280" target="_blank" rel="noopener noreferrer" className="underline">
+          <a href="/discuter/wa" target="_blank" rel="noopener noreferrer" className="underline">
             contactez-nous sur WhatsApp
           </a>.
         </div>
