@@ -42,7 +42,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Comment obtenir du support en cas de problème ?",
-    a: "Our Français support team is disponible 24h/24 via WhatsApp (+1 782-802-6280) and email en français. Most issues are resolved within minutes, any time of day.",
+    a: "Our Français support team is disponible 24h/24 via WhatsApp and email en français. Most issues are resolved within minutes, any time of day.",
   },
 ];
 
