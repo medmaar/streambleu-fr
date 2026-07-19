@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV sur Amazon Fire Stick en France 2026 | Stream Bleu" },
   description:
-    "Comment regarder Stream Bleu sur Amazon Fire Stick en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Fire TV Stick 4K, Fire TV Stick Lite, Fire TV Cube.",
+    "Comment regarder Stream Bleu sur Amazon Fire Stick en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Fire TV Stick 4K, Fire TV Stick.",
   keywords: "iptv firestick france, stream bleu amazon fire stick, iptv amazon fire stick france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-firestick-france" },
   openGraph: {

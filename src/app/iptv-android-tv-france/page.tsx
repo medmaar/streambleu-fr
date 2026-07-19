@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV sur Android TV / Google TV en France 2026 | Stream Bleu" },
   description:
-    "Comment regarder Stream Bleu sur Android TV / Google TV en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Sony Bravia, Philips, TCL, Xiaomi Mi Box, NVIDIA Shield.",
+    "Comment regarder Stream Bleu sur Android TV / Google TV en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Sony Bravia, Philips, TCL.",
   keywords: "iptv android-tv france, stream bleu android tv / google tv, iptv android tv / google tv france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-android-tv-france" },
   openGraph: {

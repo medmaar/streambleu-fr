@@ -5,7 +5,7 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 6 Mois — €39 | Stream Bleu" },
   description:
-    "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au mensuel. Identifiants envoyés en quelques minutes.",
+    "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au.",
   keywords:
     "IPTV 6 months france, Stream Bleu 6 months, best IPTV plan france, 6 month IPTV france €39",
   alternates: { canonical: "https://streambleu.fr/tarifs/6-mois" },

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV sur iPhone et iPad en France 2026 | Stream Bleu" },
   description:
-    "Comment regarder Stream Bleu sur iPhone et iPad en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible iPhone 14/15/16, iPad Pro, iPad Air, iPad mini.",
+    "Comment regarder Stream Bleu sur iPhone et iPad en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible iPhone 14/15/16, iPad Pro, iPad Air.",
   keywords: "iptv ios france, stream bleu iphone et ipad, iptv iphone et ipad france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-ios-france" },
   openGraph: {

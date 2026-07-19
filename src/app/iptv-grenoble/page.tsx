@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Grenoble 2026 | Stream Bleu — Meilleur IPTV Auvergne-Rhône-Alpes" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Grenoble. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Grenoble. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv grenoble, meilleur iptv grenoble, abonnement iptv Grenoble, iptv france Grenoble, stream bleu Grenoble",
   alternates: { canonical: "https://streambleu.fr/iptv-grenoble" },

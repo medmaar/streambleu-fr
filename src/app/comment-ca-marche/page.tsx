@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Comment fonctionne l'IPTV en France 2026 | Stream Bleu",
-  description: "Découvrez comment fonctionne l'IPTV en France. Installation simple en 3 étapes, appareils compatibles, connexion requise — tout pour commencer à streamer en 4K Ultra HD.",
+  description: "Découvrez comment fonctionne l'IPTV en France. Installation simple en 3 étapes, appareils compatibles, connexion requise — tout pour commencer à streamer.",
   keywords: "comment fonctionne iptv france, iptv explication france, installer iptv france, iptv configuration",
   alternates: { canonical: "https://streambleu.fr/comment-ca-marche" },
   openGraph: {
     title: "Comment fonctionne l'IPTV en France 2026 | Stream Bleu",
-    description: "Learn how Stream Bleu IPTV works en France. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming today.",
+    description: "Learn how Stream Bleu IPTV works en France. Simple 3-step setup, compatible devices, internet requirements — everything you need to start 4K streaming.",
     url: "https://streambleu.fr/comment-ca-marche",
     type: "website",
     siteName: "Stream Bleu",

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Chromecast France 2026 — Google TV & Chromecast Ultra | Stream Bleu" },
   description:
-    "Utilisez Stream Bleu sur votre Chromecast avec Google TV. Guide complet pour l'IPTV sur Chromecast en France. Installation en 5 minutes, qualité 4K Ultra HD.",
+    "Utilisez Stream Bleu sur votre Chromecast avec Google TV. Guide complet pour l'IPTV sur Chromecast en France. Installation en 5 minutes, qualité 4K Ultra.",
   keywords: "iptv chromecast france, chromecast iptv, google tv iptv france, chromecast ultra iptv, stream bleu chromecast",
   alternates: { canonical: "https://streambleu.fr/iptv-chromecast-france" },
   openGraph: {

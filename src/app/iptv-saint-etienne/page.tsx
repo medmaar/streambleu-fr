@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Saint-Étienne 2026 | Stream Bleu — Meilleur IPTV Auvergne-Rhône-Alpes" },
-  description: "Stream Bleu est le meilleur service IPTV à Saint-Étienne. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+  description: "Stream Bleu est le meilleur service IPTV à Saint-Étienne. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai.",
   keywords: "iptv saint-etienne, meilleur iptv saint-etienne, abonnement iptv Saint-Étienne, iptv france Saint-Étienne, stream bleu Saint-Étienne",
   alternates: { canonical: "https://streambleu.fr/iptv-saint-etienne" },
   openGraph: {

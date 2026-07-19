@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu",
-  description: "Service IPTV premium en France : 4K Ultra HD H.265/HEVC, HDR10 & Dolby Vision, 50 000+ chaînes sans coupure. Le service IPTV premium le plus stable du marché français. Essai gratuit 24h.",
+  description: "Service IPTV premium en France : 4K Ultra HD H.265/HEVC, HDR10 & Dolby Vision, 50 000+ chaînes sans coupure. Le service IPTV premium le plus stable du.",
   keywords: "iptv premium, iptv premium france, service iptv premium, iptv premium 4k, abonnement iptv premium",
   alternates: { canonical: "https://streambleu.fr/iptv-premium" },
   openGraph: {

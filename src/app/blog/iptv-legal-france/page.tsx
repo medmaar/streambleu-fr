@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "L'IPTV est-il Légal en France en 2026 ? Analyse Complète | Stream Bleu",
-  description: "IPTV légal ou illégal en France ? Analyse de la loi française, rôle de l'Arcom, droits des utilisateurs et risques réels. Tout ce que vous devez savoir en 2026.",
+  description: "IPTV légal ou illégal en France ? Analyse de la loi française, rôle de l'Arcom, droits des utilisateurs et risques réels. Tout ce que vous devez savoir en.",
   keywords: "iptv legal france, iptv légal france 2026, arcom iptv france, loi iptv france, iptv illégal risques france",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-legal-france" },
   openGraph: {

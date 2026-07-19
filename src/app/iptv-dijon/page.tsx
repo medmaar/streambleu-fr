@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Dijon 2026 | Stream Bleu — Meilleur IPTV Bourgogne-Franche-Comté" },
-  description: "Stream Bleu est le meilleur service IPTV à Dijon. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+  description: "Stream Bleu est le meilleur service IPTV à Dijon. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords: "iptv dijon, meilleur iptv dijon, abonnement iptv Dijon, iptv france Dijon, stream bleu Dijon",
   alternates: { canonical: "https://streambleu.fr/iptv-dijon" },
   openGraph: {

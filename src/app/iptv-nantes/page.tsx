@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Nantes 2026 | Stream Bleu — Meilleur IPTV Pays de la Loire" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Nantes. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Nantes. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv nantes, meilleur iptv nantes, abonnement iptv Nantes, iptv france Nantes, stream bleu Nantes",
   alternates: { canonical: "https://streambleu.fr/iptv-nantes" },

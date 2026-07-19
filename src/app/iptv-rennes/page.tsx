@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Rennes 2026 | Stream Bleu — Meilleur IPTV Bretagne" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Rennes. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Rennes. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv rennes, meilleur iptv rennes, abonnement iptv Rennes, iptv france Rennes, stream bleu Rennes",
   alternates: { canonical: "https://streambleu.fr/iptv-rennes" },

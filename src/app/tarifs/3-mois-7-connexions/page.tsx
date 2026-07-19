@@ -4,12 +4,12 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV 3 Mois — 7 Connexions — 203€ | Stream Bleu" },
-  description: "Abonnement IPTV 3 Mois pour 7 connexions simultanées à 203€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
+  description: "Abonnement IPTV 3 Mois pour 7 connexions simultanées à 203€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   keywords: "iptv 7 connexions, abonnement iptv 3 mois 7 appareils, iptv 7 ecrans france",
   alternates: { canonical: "https://streambleu.fr/tarifs/3-mois-7-connexions" },
   openGraph: {
     title: "IPTV 3 Mois — 7 Connexions — 203€ | Stream Bleu",
-    description: "Abonnement IPTV 3 Mois pour 7 connexions simultanées à 203€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
+    description: "Abonnement IPTV 3 Mois pour 7 connexions simultanées à 203€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
     url: "https://streambleu.fr/tarifs/3-mois-7-connexions",
     type: "website",
     siteName: "Stream Bleu",
@@ -22,7 +22,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu IPTV 3 Mois — 7 Connexions",
-  description: "Abonnement IPTV 3 Mois pour 7 connexions simultanées à 203€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement. Identifiants en 5 min.",
+  description: "Abonnement IPTV 3 Mois pour 7 connexions simultanées à 203€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",

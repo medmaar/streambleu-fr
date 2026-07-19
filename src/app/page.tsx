@@ -132,6 +132,7 @@ const comparison = [
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "Stream Bleu IPTV France", "brand": {"@type": "Brand", "name": "Stream Bleu"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "321", "bestRating": "5", "worstRating": "1"}}) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />

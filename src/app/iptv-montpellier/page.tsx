@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Montpellier 2026 | Stream Bleu — Meilleur IPTV Occitanie" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Montpellier. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Montpellier. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai.",
   keywords:
     "iptv montpellier, meilleur iptv montpellier, abonnement iptv Montpellier, iptv france Montpellier, stream bleu Montpellier",
   alternates: { canonical: "https://streambleu.fr/iptv-montpellier" },

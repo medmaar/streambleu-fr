@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Marseille 2026 | Stream Bleu — Meilleur IPTV France" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Marseille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Marseille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv marseille, meilleur iptv marseille, abonnement iptv Marseille, iptv france Marseille, stream bleu Marseille",
   alternates: { canonical: "https://streambleu.fr/iptv-marseille" },

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Français 2026 — Chaînes Françaises en 4K | Stream Bleu",
-  description: "Service IPTV français avec toutes les chaînes françaises en 4K Ultra HD. TF1, France 2, M6, Canal+, beIN Sports, RMC Sport. Support en français 24/7. Essai gratuit 24h.",
+  description: "Service IPTV français avec toutes les chaînes françaises en 4K Ultra HD. TF1, France 2, M6, Canal+, beIN Sports, RMC Sport. Support en français 24/7.",
   keywords: "iptv francais, french iptv, iptv en français, chaînes françaises iptv, iptv france français",
   alternates: { canonical: "https://streambleu.fr/iptv-francais" },
   openGraph: {

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Bordeaux 2026 | Stream Bleu — Meilleur IPTV France" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Bordeaux. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Bordeaux. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv bordeaux, meilleur iptv bordeaux, abonnement iptv Bordeaux, iptv france Bordeaux, stream bleu Bordeaux",
   alternates: { canonical: "https://streambleu.fr/iptv-bordeaux" },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Politique DMCA | Stream Bleu – IPTV France",
-  description: "Politique DMCA de Stream Bleu. Apprenez comment soumettre un avis de retrait DMCA et notre processus de traitement des réclamations pour violation de droits d'auteur.",
+  description: "Politique DMCA de Stream Bleu. Apprenez comment soumettre un avis de retrait DMCA et notre processus de traitement des réclamations pour violation de.",
   alternates: { canonical: "https://streambleu.fr/dmca" },
 };
 

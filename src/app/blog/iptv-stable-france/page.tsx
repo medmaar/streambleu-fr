@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "IPTV Stable France 2026 — Zéro Coupure, 99,9% Uptime | Stream Bleu",
-  description: "Guide complet sur l'IPTV stable en France : architecture serveur, redondance, uptime garanti. Pourquoi Stream Bleu est l'IPTV le plus fiable du marché français en 2026.",
+  description: "Guide complet sur l'IPTV stable en France : architecture serveur, redondance, uptime garanti. Pourquoi Stream Bleu est l'IPTV le plus fiable du marché.",
   keywords: "iptv stable france, iptv sans coupure france, iptv fiable france, iptv stable 2026, meilleur iptv stable",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-stable-france" },
   openGraph: {

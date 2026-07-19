@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV sur Samsung Smart TV en France 2026 | Stream Bleu" },
   description:
-    "Comment regarder Stream Bleu sur Samsung Smart TV en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Samsung QLED, Neo QLED, Crystal UHD, Frame TV.",
+    "Comment regarder Stream Bleu sur Samsung Smart TV en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Samsung QLED, Neo QLED, Crystal UHD.",
   keywords: "iptv samsung-tv france, stream bleu samsung smart tv, iptv samsung smart tv france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-samsung-tv-france" },
   openGraph: {

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Rouen 2026 | Stream Bleu — Meilleur IPTV Normandie" },
-  description: "Stream Bleu est le meilleur service IPTV à Rouen. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+  description: "Stream Bleu est le meilleur service IPTV à Rouen. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords: "iptv rouen, meilleur iptv rouen, abonnement iptv Rouen, iptv france Rouen, stream bleu Rouen",
   alternates: { canonical: "https://streambleu.fr/iptv-rouen" },
   openGraph: {

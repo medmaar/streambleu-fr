@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Politique de remboursement | Stream Bleu – IPTV France",
-  description: "Politique de remboursement de Stream Bleu. En raison de la nature numérique instantanée de notre service, les remboursements ne sont pas possibles après activation. Un essai gratuit de 24h est disponible.",
+  description: "Politique de remboursement de Stream Bleu. En raison de la nature numérique instantanée de notre service, les remboursements ne sont pas possibles après.",
   alternates: { canonical: "https://streambleu.fr/politique-remboursement" },
 };
 

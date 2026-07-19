@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Avertissement | Stream Bleu – Best 4K IPTV France",
   description:
-    "Legal disclaimer for Stream Bleu, de France meilleur IPTV service. We do not host or stream any copyrighted content. All content is provided by third-party providers.",
+    "Legal disclaimer for Stream Bleu, de France meilleur IPTV service. We do not host or stream any copyrighted content. All content is provided by.",
   alternates: { canonical: "https://streambleu.fr/avertissement" },
   openGraph: {
     title: "Avertissement | Stream Bleu – Best 4K IPTV France",

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV sur Apple TV en France 2026 | Stream Bleu" },
   description:
-    "Comment regarder Stream Bleu sur Apple TV en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Apple TV 4K (3e gen), Apple TV 4K (2e gen), Apple TV HD.",
+    "Comment regarder Stream Bleu sur Apple TV en France. Guide complet. 50 000+ chaînes, 4K Ultra HD. Compatible Apple TV 4K (3e gen), Apple TV 4K (2e gen).",
   keywords: "iptv apple-tv france, stream bleu apple tv, iptv apple tv france 2026",
   alternates: { canonical: "https://streambleu.fr/iptv-apple-tv-france" },
   openGraph: {

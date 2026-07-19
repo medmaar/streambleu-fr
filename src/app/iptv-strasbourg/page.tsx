@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Strasbourg 2026 | Stream Bleu — Meilleur IPTV Alsace" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Strasbourg. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Strasbourg. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai.",
   keywords:
     "iptv strasbourg, meilleur iptv strasbourg, abonnement iptv Strasbourg, iptv france Strasbourg, stream bleu Strasbourg",
   alternates: { canonical: "https://streambleu.fr/iptv-strasbourg" },

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "IPTV Lille 2026 | Stream Bleu — Meilleur IPTV Nord-Pas-de-Calais" },
   description:
-    "Stream Bleu est le meilleur service IPTV à Lille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit disponible.",
+    "Stream Bleu est le meilleur service IPTV à Lille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv lille, meilleur iptv lille, abonnement iptv Lille, iptv france Lille, iptv nord pas de calais, stream bleu Lille",
   alternates: { canonical: "https://streambleu.fr/iptv-lille" },
