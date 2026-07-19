@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Kodi France 2026 — Configuration PVR IPTV Simple | Stream Bleu" },
+  title: { absolute: "IPTV Kodi France 2026 — Configuration PVR IPTV | Stream Bleu" },
   description:
     "Configurez IPTV sur Kodi en France avec Stream Bleu. Guide complet PVR IPTV Simple Client — M3U, EPG, installation en 5 minutes. 50 000+ chaînes en 4K.",
   keywords: "iptv kodi france, kodi iptv pvr, kodi m3u france, iptv simple client kodi, stream bleu kodi",

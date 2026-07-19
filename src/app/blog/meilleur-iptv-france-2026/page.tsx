@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Meilleur IPTV France 2026 : Services Testés & Classés | Stream Bleu",
+  title: "Meilleur IPTV France 2026 : Services Testés & | Stream Bleu",
   description:
     "Quel est le meilleur IPTV en France 2026 ? Comparatif des services testés sur stabilité, qualité 4K et support. Stream Bleu arrive en tête.",
   keywords: "meilleur iptv france 2026, top iptv france, stream bleu avis, meilleur abonnement iptv france",

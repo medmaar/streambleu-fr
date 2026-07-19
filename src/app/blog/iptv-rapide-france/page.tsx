@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV Rapide France 2026 — Zapping Instantané & Chargement <1s | Stream Bleu",
+  title: "IPTV Rapide France 2026 — Zapping Instantané & | Stream Bleu",
   description: "IPTV rapide en France : zapping en moins d'1 seconde, EPG ultra-réactif, CDN optimisé. Guide complet pour choisir l'IPTV le plus rapide. Stream Bleu.",
   keywords: "iptv rapide france, iptv zapping rapide, iptv chargement rapide france, iptv sans délai france",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-rapide-france" },

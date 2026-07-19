@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Grenoble 2026 | Stream Bleu — Meilleur IPTV Auvergne-Rhône-Alpes" },
+  title: { absolute: "IPTV Grenoble 2026 | Stream | Meilleur IPTV Auvergne-Rhône-Alpes" },
   description:
     "Stream Bleu est le meilleur service IPTV à Grenoble. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:

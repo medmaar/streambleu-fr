@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV Stable France 2026 — Zéro Coupure, 99,9% Uptime | Stream Bleu",
+  title: "IPTV Stable France 2026 — Zéro Coupure, 99,9% | Stream Bleu",
   description: "Guide complet sur l'IPTV stable en France : architecture serveur, redondance, uptime garanti. Pourquoi Stream Bleu est l'IPTV le plus fiable du marché.",
   keywords: "iptv stable france, iptv sans coupure france, iptv fiable france, iptv stable 2026, meilleur iptv stable",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-stable-france" },

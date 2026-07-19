@@ -70,7 +70,7 @@ const posts = [
   },
   {
     slug: "iptv-rapide-france",
-    title: "IPTV Rapide France 2026 — Zap Instantané & Chargement Ultra-Rapide",
+    title: "IPTV Rapide France | Zap Instantané & Chargement Ultra-Rapide",
     excerpt: "IPTV rapide en France : zapping instantané, chargement en moins d'une seconde. Pourquoi Stream Bleu est l'IPTV le plus réactif du marché.",
     date: "12 avr. 2026",
     readTime: "6 min",

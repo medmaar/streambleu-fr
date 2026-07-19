@@ -7,7 +7,7 @@ const HomePricing = dynamic(() => import("./components/HomePricing"));
 const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
 
 export const metadata: Metadata = {
-  title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu" },
+  title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV | Stream Bleu" },
   description:
     "Abonnement IPTV France 2026 — IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+. Sans coupure. Essai gratuit 24h. À partir de 9€/mois.",
   keywords:

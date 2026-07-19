@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Meilleur Abonnement IPTV France 2026 — Guide & Comparatif | Stream Bleu",
+  title: "Meilleur Abonnement IPTV France 2026 — Guide & | Stream Bleu",
   description: "Quel est le meilleur abonnement IPTV en France en 2026 ? Comparatif complet : qualité 4K, stabilité, prix, chaînes, support. Stream Bleu s'impose comme le.",
   keywords: "meilleur abonnement iptv france, meilleur abonnement iptv, meilleur service iptv france, abonnement iptv france 2026, comparatif abonnement iptv",
   alternates: { canonical: "https://streambleu.fr/blog/meilleur-abonnement-iptv-france" },

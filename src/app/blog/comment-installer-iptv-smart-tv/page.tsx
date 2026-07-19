@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Comment Installer IPTV sur Smart TV 2026 — Guide Complet | Stream Bleu",
+  title: "Comment Installer IPTV sur Smart TV 2026 — Guide | Stream Bleu",
   description:
     "Guide étape par étape pour installer IPTV sur Samsung Smart TV, LG, Sony, Philips. Installez TiviMate ou IPTV Smarters Pro en moins de 5 minutes.",
   keywords: "comment installer iptv smart tv, installer iptv samsung, installer iptv lg, tivimate smart tv, iptv smarters smart tv france",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV Fire Stick France 2026 — Installation TiviMate & Smarters | Stream Bleu",
+  title: "IPTV Fire Stick France 2026 — Installation | Stream Bleu",
   description: "Guide complet pour installer Stream Bleu sur Amazon Fire Stick en France. TiviMate, IPTV Smarters Pro, activation Xtream Codes — étape par étape. Fire.",
   keywords: "iptv firestick france, fire stick iptv france, installer iptv fire stick, tivimate fire stick, iptv amazon fire tv france",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-firestick-france" },
