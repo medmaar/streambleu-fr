@@ -11,7 +11,6 @@
 const API_BASE    = "https://activationpanel.ru/api/api.php";
 const API_KEY     = "35cf68cc83a3a82e1a0ac5361c7b6105";
 const HOST        = "http://mag.trexlive.me";
-const RESEND_KEY  = "re_98ZyX2kU_12nnqJff4QZ28PQbD8ueCdK7";
 const FROM_EMAIL  = "Stream Bleu <contact@streambleu.fr>";
 const ADMIN_EMAIL = "contact@streambleu.fr";
 const SITE_URL    = "https://streambleu.fr";
@@ -212,6 +211,7 @@ function adminEmail(name, email, country, device, whatsapp, notes, username, pas
 // ── fetch handler ─────────────────────────────────────────────────────────────
 
 async function handleFetch(request, env) {
+  const RESEND_KEY = env.RESEND_KEY;
 
   if (request.method === "OPTIONS") {
     return new Response(null, { headers: {
@@ -328,6 +328,7 @@ async function handleFetch(request, env) {
 // ── cron handler (runs every hour) ───────────────────────────────────────────
 
 async function handleScheduled(env) {
+  const RESEND_KEY = env.RESEND_KEY;
   const now = Date.now();
   const FOUR_HOURS = 4 * 60 * 60 * 1000;
 
