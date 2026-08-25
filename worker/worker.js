@@ -280,11 +280,11 @@ async function handleFetch(request, env) {
 
     // 4. Welcome email
     step = "email_client";
-    await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl, RESEND_KEY));
+    await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
 
     // 5. Admin email
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `Automation / streambleu.fr / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl, RESEND_KEY));
+    await sendEmail(ADMIN_EMAIL, `Automation / streambleu.fr / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl), RESEND_KEY);
 
     // 6. Store trial in KV (TTL 4 days auto-cleanup)
     step = "kv_store";
