@@ -31,16 +31,22 @@ async function apiGet(params) {
   return { status: res.status, text };
 }
 
-async function sendEmail(to, subject, html, resendKey) {
+async function sendEmail(to, subject, html, resendKey, inReplyTo = null) {
+  const payload = { from: FROM_EMAIL, to, subject, html };
+  if (inReplyTo) {
+    payload.headers = {
+      "In-Reply-To": `<${inReplyTo}>`,
+      "References": `<${inReplyTo}>`,
+    };
+  }
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: FROM_EMAIL, to, subject, html }),
+    body: JSON.stringify(payload),
   });
-  if (!res.ok) {
-    const t = await res.text();
-    throw new Error(`Resend (${res.status}): ${t}`);
-  }
+  if (!res.ok) throw new Error(`Resend (${res.status}): ${await res.text()}`);
+  const data = await res.json();
+  return data.id || null;
 }
 
 // ── email templates ───────────────────────────────────────────────────────────
@@ -280,7 +286,7 @@ async function handleFetch(request, env) {
 
     // 4. Welcome email
     step = "email_client";
-    await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
+    welcomeEmailId = await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
 
     // 5. Admin email
     step = "email_admin";
@@ -289,14 +295,17 @@ async function handleFetch(request, env) {
     // 6. Store trial in KV (TTL 4 days auto-cleanup)
     step = "kv_store";
     const expiry = Date.now() + 24 * 60 * 60 * 1000; // 24h from now
-    const trialData = {
+    const let welcomeEmailId = null;
+    trialData = {
       name, email, country, device, whatsapp,
       username, password, m3uUrl,
       expiry,
       reminder_sent: false,
       followup_sent: false,
       created_at: Date.now(),
+      welcome_email_id: null,
     };
+    trialData.welcome_email_id = welcomeEmailId || null;
     await env.TRIALS.put(
       `trial:${email}`,
       JSON.stringify(trialData),
@@ -346,7 +355,7 @@ async function handleScheduled(env) {
       trial = JSON.parse(raw);
     } catch { continue; }
 
-    const { name, email, username, password, m3uUrl, expiry, reminder_sent, followup_sent } = trial;
+    const { name, email, username, password, m3uUrl, expiry, reminder_sent, followup_sent, welcome_email_id } = trial;
 
     // T-4h: send reminder if within 4h of expiry and not yet sent
     if (!reminder_sent && now >= expiry - FOUR_HOURS && now < expiry) {
