@@ -360,9 +360,7 @@ async function handleScheduled(env) {
     // T-4h: send reminder if within 4h of expiry and not yet sent
     if (!reminder_sent && now >= expiry - FOUR_HOURS && now < expiry) {
       try {
-        await sendEmail(
-          email, "⏳ Votre essai Stream Bleu expire dans 4 heures", reminderEmail(name, username, password, m3uUrl, RESEND_KEY)
-        );
+        await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", reminderEmail(name, username, password, m3uUrl, RESEND_KEY), RESEND_KEY, welcome_email_id);
         trial.reminder_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Reminder sent to ${email}`);
@@ -374,9 +372,7 @@ async function handleScheduled(env) {
     // T=0: send follow-up exactly when trial expires (cron runs hourly so within 1h window)
     if (!followup_sent && now >= expiry) {
       try {
-        await sendEmail(
-          email, "Votre essai Stream Bleu est terminé — Continuez dès maintenant 🎬", followupEmail(name, RESEND_KEY)
-        );
+        await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", followupEmail(name, RESEND_KEY), RESEND_KEY, welcome_email_id);
         trial.followup_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 30 * 24 * 60 * 60 });
         console.log(`[cron] Follow-up sent to ${email}`);
