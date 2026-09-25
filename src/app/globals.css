@@ -209,3 +209,12 @@ nav { animation: fadeSlideUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
 .phone-input-wrapper .PhoneInputInput::placeholder { color: rgba(255,255,255,0.35); }
 .phone-input-wrapper .PhoneInputInput:focus { border-color: #c5bcf5; }
 .phone-input-wrapper .PhoneInputCountrySelectArrow { color: rgba(255,255,255,0.5); }
+
+/* SEO article pages: inline text links keep a text-link hover (overrides a[href*="/iptv-"]:hover) */
+article p a[href]:hover, article li a[href]:hover, article td a[href]:hover {
+  background: transparent !important;
+  color: #7b87e8 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+details > summary { list-style-position: outside; }

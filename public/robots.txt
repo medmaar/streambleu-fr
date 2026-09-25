@@ -5,4 +5,24 @@ Disallow: /whatsapp-contact
 Disallow: /admin
 Disallow: /api
 
+# AI search crawlers
+User-agent: GPTBot
+Allow: /
+Disallow: /commande
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /commande
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /commande
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /commande
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://streambleu.fr/sitemap.xml

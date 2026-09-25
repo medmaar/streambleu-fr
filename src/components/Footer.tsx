@@ -23,6 +23,8 @@ const sections = [
       { href: "/iptv-premium", label: "IPTV Premium 4K" },
       { href: "/meilleur-iptv-france", label: "Meilleur IPTV France" },
       { href: "/iptv-francais", label: "IPTV Français" },
+      { href: "/prix-iptv", label: "Prix IPTV" },
+      { href: "/comparatif-iptv", label: "Comparatif IPTV" },
       { href: "/parrainage", label: "Parrainage" },
       { href: "/revendeur", label: "Revendeur" },
     ],
@@ -30,12 +32,33 @@ const sections = [
   {
     title: "Par Appareil",
     links: [
-      { href: "/iptv-firestick-france", label: "Fire Stick" },
-      { href: "/iptv-android-tv-france", label: "Android TV" },
-      { href: "/iptv-smart-tv-france", label: "Smart TV" },
-      { href: "/iptv-apple-tv-france", label: "Apple TV" },
-      { href: "/iptv-mag-box-france", label: "MAG Box" },
+      { href: "/appareils-iptv", label: "Tous les appareils" },
       { href: "/iptv-samsung-tv-france", label: "Samsung TV" },
+      { href: "/iptv-lg-tv-france", label: "LG TV" },
+      { href: "/iptv-android-tv-france", label: "Android TV" },
+      { href: "/iptv-apple-tv-france", label: "Apple TV" },
+      { href: "/iptv-pc-mac", label: "PC & Mac" },
+    ],
+  },
+  {
+    title: "Boîtiers",
+    links: [
+      { href: "/boitier-iptv", label: "Boîtier IPTV" },
+      { href: "/iptv-firestick-france", label: "Fire TV Stick" },
+      { href: "/boitier-formuler", label: "Formuler" },
+      { href: "/iptv-mag-box-france", label: "MAG Box" },
+      { href: "/iptv-xiaomi-mi-box", label: "Xiaomi Mi Box" },
+    ],
+  },
+  {
+    title: "Applications",
+    links: [
+      { href: "/applications-iptv", label: "Applications IPTV" },
+      { href: "/iptv-smarters-pro", label: "IPTV Smarters Pro" },
+      { href: "/tivimate", label: "TiviMate" },
+      { href: "/smart-iptv", label: "Smart IPTV" },
+      { href: "/ibo-player", label: "IBO Player" },
+      { href: "/blog/m3u-iptv", label: "Liste M3U" },
     ],
   },
   {

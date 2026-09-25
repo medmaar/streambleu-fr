@@ -21,6 +21,46 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "qu-est-ce-que-l-iptv",
+    title: "Qu'est-ce que l'IPTV ? La Télévision par Internet Expliquée",
+    excerpt: "Définition simple de l'IPTV, fonctionnement, différence avec l'OTT et la TNT, débit et matériel nécessaires pour bien démarrer.",
+    date: "26 sept. 2026",
+    readTime: "8 min",
+    tag: "Guide",
+  },
+  {
+    slug: "m3u-iptv",
+    title: "Liste M3U IPTV : Format, Lecteurs et Xtream Codes",
+    excerpt: "Tout sur les listes M3U et M3U8 : structure du fichier, lecteurs compatibles, différence avec Xtream Codes, EPG et vérification d'une liste.",
+    date: "26 sept. 2026",
+    readTime: "9 min",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-ne-fonctionne-plus",
+    title: "IPTV Qui Ne Fonctionne Plus ou Bloqué : 10 Solutions",
+    excerpt: "Écran noir, chargement infini, coupures : le diagnostic par symptôme et les 10 solutions à essayer dans l'ordre.",
+    date: "26 sept. 2026",
+    readTime: "7 min",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-wifi-ou-ethernet",
+    title: "IPTV en Wi-Fi ou en Ethernet ? Débit et Conseils Réseau",
+    excerpt: "Quel débit pour la HD et la 4K, Wi-Fi 5 GHz, CPL ou câble : le guide réseau pour une IPTV sans coupure.",
+    date: "26 sept. 2026",
+    readTime: "5 min",
+    tag: "Guide",
+  },
+  {
+    slug: "iptv-a-vie",
+    title: "IPTV à Vie : Arnaque ou Bonne Affaire ?",
+    excerpt: "Pourquoi les offres IPTV « à vie » ne tiennent jamais, les signaux d'alerte et la durée d'abonnement à choisir à la place.",
+    date: "26 sept. 2026",
+    readTime: "4 min",
+    tag: "Comparatif",
+  },
+  {
     slug: "iptv-sans-coupure",
     title: "IPTV Sans Coupure en France 2026 — Fini le Buffering",
     excerpt: "Comment avoir un IPTV sans coupure en France ? Guide complet sur les serveurs stables et pourquoi Stream Bleu garantit zéro buffering.",
@@ -185,6 +225,28 @@ export default function BlogPage() {
                 <span style={{ color: "#5a5fcf", fontWeight: 700, fontSize: 14 }}>Lire l&apos;article →</span>
               </article>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      <section style={{ padding: "0 16px 70px", maxWidth: 900, margin: "0 auto" }}>
+        <h2 style={{ textAlign: "center", fontSize: "1.1rem", fontWeight: 700, color: "#5a5fcf", marginBottom: 20, letterSpacing: "0.02em" }}>
+          Guides d&apos;installation par appareil et application
+        </h2>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "center" }}>
+          {[
+            { l: "/applications-iptv", t: "Applications IPTV" },
+            { l: "/boitier-iptv", t: "Boîtier IPTV" },
+            { l: "/appareils-iptv", t: "Appareils IPTV" },
+            { l: "/iptv-smarters-pro", t: "IPTV Smarters Pro" },
+            { l: "/tivimate", t: "TiviMate" },
+            { l: "/smart-iptv", t: "Smart IPTV" },
+            { l: "/iptv-samsung-tv-france", t: "IPTV Samsung TV" },
+            { l: "/iptv-firestick-france", t: "IPTV Fire TV Stick" },
+            { l: "/prix-iptv", t: "Prix IPTV" },
+            { l: "/comparatif-iptv", t: "Comparatif IPTV" },
+          ].map((x) => (
+            <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.07)", border: "1px solid rgba(90,95,207,0.18)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
           ))}
         </div>
       </section>

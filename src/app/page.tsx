@@ -474,6 +474,15 @@ export default function HomePage() {
                 {l:"/blog/meilleur-abonnement-iptv-france", t:"Meilleur Abonnement IPTV"},
                 {l:"/blog/iptv-france-avis", t:"Avis IPTV France"},
                 {l:"/liste-chaines", t:"Liste des Chaînes"},
+                {l:"/applications-iptv", t:"Applications IPTV"},
+                {l:"/boitier-iptv", t:"Boîtier IPTV"},
+                {l:"/appareils-iptv", t:"IPTV sur tous vos appareils"},
+                {l:"/iptv-smarters-pro", t:"IPTV Smarters Pro"},
+                {l:"/tivimate", t:"TiviMate"},
+                {l:"/prix-iptv", t:"Prix IPTV"},
+                {l:"/comparatif-iptv", t:"Comparatif IPTV"},
+                {l:"/blog/qu-est-ce-que-l-iptv", t:"Qu'est-ce que l'IPTV ?"},
+                {l:"/blog/m3u-iptv", t:"Liste M3U IPTV"},
               ].map((x) => (
                 <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.07)", border: "1px solid rgba(90,95,207,0.18)", borderRadius: 999, padding: "7px 18px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
               ))}
