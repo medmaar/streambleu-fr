@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "L'IPTV est-il Légal en France en 2026 ? Analyse Complète | Stream Bleu",
+  title: { absolute: "IPTV Légal en France 2026 ? La Réponse | Stream Bleu" },
   description: "IPTV légal ou illégal en France ? Analyse de la loi française, rôle de l'Arcom, droits des utilisateurs et risques réels. Tout ce que vous devez savoir en.",
   keywords: "iptv legal france, iptv légal france 2026, arcom iptv france, loi iptv france, iptv illégal risques france, iptv légal, iptv legale, legality of iptv",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-legal-france" },
@@ -129,7 +129,10 @@ export default function IPTVLegalFrance() {
           <p style={S}>Un signal d'alerte évident : un service qui propose 60 000 chaînes pour 3€/mois ne peut mathématiquement pas avoir payé des droits de diffusion légaux. Le coût des droits sportifs seuls (beIN Sports, Canal+, RMC Sport) représente des milliards d'euros en France. Ces services sont structurellement illicites.</p>
 
           <h2 style={H2}>L'Arcom : le régulateur et ses pouvoirs en 2026</h2>
-          <p style={S}>L'Arcom (Autorité de régulation de la communication audiovisuelle et numérique) est née de la fusion du CSA et de l'Hadopi par la loi du 25 octobre 2021. Elle dispose depuis lors de pouvoirs renforcés pour lutter contre le piratage audiovisuel, notamment :</p>
+          <p style={S}>
+            <a href="https://www.arcom.fr" target="_blank" rel="noopener noreferrer" style={{ color: "#5a5fcf", fontWeight: 700, textDecoration: "underline" }}>L'Arcom</a>
+            {" "}(Autorité de régulation de la communication audiovisuelle et numérique) est née de la fusion du CSA et de l'Hadopi par la loi du 25 octobre 2021. Elle dispose depuis lors de pouvoirs renforcés pour lutter contre le piratage audiovisuel, notamment :
+          </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
             {[
               { title: "Blocage administratif accéléré", desc: "L'Arcom peut obtenir le blocage d'un service IPTV pirate en quelques heures lors d'événements sportifs live, sans attendre une décision judiciaire complète." },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "IPTV vs Câble France 2026 — Comparatif Complet | Stream Bleu",
+  title: { absolute: "IPTV vs Câble France 2026 — Comparatif Complet | Stream Bleu" },
   description: "IPTV ou câble/satellite en France ? Comparatif complet : prix, qualité, chaînes, contrats, flexibilité. Pourquoi l'IPTV domine le câble en 2026.",
   keywords: "iptv vs cable france, iptv ou cable france, iptv vs satellite france, iptv vs canal plus, avantages iptv france",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-vs-cable-france" },

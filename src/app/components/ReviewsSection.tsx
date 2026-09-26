@@ -212,7 +212,12 @@ export default function ReviewsSection({ showHeader = true }: { showHeader?: boo
           <div style={slideStyle(tp.sliding)}>
             <div style={{ background: "#fff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 4px 28px rgba(90,95,207,0.12)", border: "1px solid rgba(90,95,207,0.12)" }}>
               <TP_STARS />
-              <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#1a1a4e" }}>{tpReview.title}</h3>
+              {/* When the section's own H2 is hidden (showHeader=false), this is the
+                  first sub-heading after the page's H1 — use H2, not H3, to avoid
+                  skipping a heading level. */}
+              {showHeader
+                ? <h3 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#1a1a4e" }}>{tpReview.title}</h3>
+                : <h2 style={{ fontWeight: 800, fontSize: 18, marginBottom: 12, color: "#1a1a4e" }}>{tpReview.title}</h2>}
               <p style={{ color: "#333", lineHeight: 1.8, fontSize: 15, marginBottom: 20 }}>{tpReview.text}</p>
               <p style={{ color: "#5a5fcf", fontWeight: 600, fontSize: 13 }}>— {tpReview.name} <FlagImg flag={tpReview.flag} /></p>
             </div>

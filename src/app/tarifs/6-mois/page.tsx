@@ -3,12 +3,18 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "Forfait IPTV 6 Mois — €39 | Stream Bleu" },
+  title: { absolute: "Forfait IPTV 6 Mois — 39€ | Stream Bleu" },
   description:
     "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au.",
   keywords:
     "IPTV 6 months france, Stream Bleu 6 months, best IPTV plan france, 6 month IPTV france €39",
   alternates: { canonical: "https://streambleu.fr/tarifs/6-mois" },
+    openGraph: {
+    title: "Forfait IPTV 6 Mois — 39€",
+    description: "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au.",
+    url: "https://streambleu.fr/tarifs/6-mois", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Forfait IPTV 6 Mois — 39€" }],
+  },
 };
 
 const faqItems: FaqItem[] = [

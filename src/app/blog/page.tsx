@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog Stream Bleu | Guides IPTV, Avis & Actualités France",
+  title: { absolute: "Blog Stream Bleu | Guides IPTV, Avis & Actualités France" },
   description:
     "Lisez le blog Stream Bleu. Guides d'installation, légalité, comparatifs de prix, avis sur les lecteurs IPTV et les meilleurs services 4K en France pour.",
   keywords: "blog iptv france, guide iptv 2026, meilleur iptv france avis",

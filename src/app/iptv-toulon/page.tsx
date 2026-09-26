@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Toulon 2026 | Stream Bleu — Meilleur IPTV Provence-Alpes-Côte d'Azur" },
+  title: { absolute: "IPTV Toulon 2026 — Meilleur IPTV Var | Stream Bleu" },
   description: "Stream Bleu est le meilleur service IPTV à Toulon. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords: "iptv toulon, meilleur iptv toulon, abonnement iptv Toulon, iptv france Toulon, stream bleu Toulon",
   alternates: { canonical: "https://streambleu.fr/iptv-toulon" },

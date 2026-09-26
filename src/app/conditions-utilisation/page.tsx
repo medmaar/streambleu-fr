@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Conditions d'utilisation | Stream Bleu – IPTV France",
+  title: { absolute: "Conditions d'utilisation | Stream Bleu – IPTV France" },
   description: "Conditions d'utilisation de Stream Bleu, le meilleur service IPTV en France. Lisez nos conditions avant d'utiliser notre service IPTV.",
   alternates: { canonical: "https://streambleu.fr/conditions-utilisation" },
+    openGraph: {
+    title: "Conditions d'utilisation",
+    description: "Conditions d'utilisation de Stream Bleu, le meilleur service IPTV en France. Lisez nos conditions avant d'utiliser notre service IPTV.",
+    url: "https://streambleu.fr/conditions-utilisation", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Conditions d'utilisation" }],
+  },
 };
 
 const sections = [

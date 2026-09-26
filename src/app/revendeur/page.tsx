@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Revendeur IPTV France 2026 | Stream Bleu",
+  title: { absolute: "Revendeur IPTV France 2026 | Stream Bleu" },
   description: "Devenez revendeur IPTV en France avec Stream Bleu. Prix grossiste, options marque blanche et panneau revendeur rapide. Lancez votre propre activité IPTV.",
   keywords: "revendeur iptv france, programme revendeur iptv france 2026, business iptv france",
   alternates: { canonical: "https://streambleu.fr/revendeur" },
@@ -29,10 +29,29 @@ const breadcrumbSchema = {
     {"@type": "ListItem", "position": 2, "name": "Revendeur IPTV France 2026", "item": "https://streambleu.fr/revendeur"}
   ]
 };
+
+const faqItems = [
+  { q: "Quel budget faut-il pour démarrer en tant que revendeur IPTV ?", a: "Il n'y a pas de commande minimum imposée : vous achetez des crédits d'abonnement au tarif grossiste selon votre budget, et vous les revendez à vos propres clients au prix de votre choix." },
+  { q: "Puis-je vendre sous ma propre marque ?", a: "Oui. L'option marque blanche vous permet de présenter le service sous votre propre nom et votre propre identité visuelle : vos clients ne voient jamais la marque Stream Bleu, seulement l'infrastructure qui fait tourner le service en arrière-plan." },
+  { q: "Comment gérer mes clients au quotidien ?", a: "Un panneau revendeur dédié vous permet de créer des comptes clients, de définir leurs dates d'expiration, de suivre leurs connexions actives et de recharger vos crédits en quelques clics, sans passer par le support." },
+  { q: "Combien de temps faut-il pour être activé comme revendeur ?", a: "L'activation se fait généralement sous 24h après votre demande par e-mail ou WhatsApp. Notre équipe vous accompagne pour la prise en main du panneau revendeur." },
+  { q: "Le programme revendeur est-il différent du parrainage ?", a: "Oui. Le parrainage récompense un client qui recommande Stream Bleu à un ami par des mois gratuits (voir la page parrainage), tandis que le programme revendeur s'adresse à ceux qui veulent construire une activité commerciale à part entière avec des crédits à prix grossiste." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
 export default function ResellerPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
       <section style={{ background: "#5a5fcf", padding: "80px 16px 60px", textAlign: "center" }}>
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
@@ -69,6 +88,22 @@ export default function ResellerPage() {
         </div>
       </section>
 
+      <section style={{ padding: "0 16px 64px" }}>
+        <div style={{ maxWidth: 780, margin: "0 auto" }}>
+          <h2 style={{ textAlign: "center", fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#5a5fcf", marginBottom: 32 }}>
+            Questions fréquentes sur le programme revendeur
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {faqItems.map((f, i) => (
+              <details key={i} style={{ background: "#fff", border: "1px solid rgba(90,95,207,0.15)", borderRadius: 16, padding: "4px 22px" }}>
+                <summary style={{ cursor: "pointer", fontWeight: 700, fontSize: 15, color: "#1a1a4e", padding: "16px 0" }}>{f.q}</summary>
+                <p style={{ color: "#555", fontSize: 14, lineHeight: 1.75, margin: "0 0 18px" }}>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section style={{ padding: "48px 24px", background: "transparent" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>
@@ -87,6 +122,17 @@ export default function ResellerPage() {
               style={{ display: "inline-block", background: "transparent", border: "2px solid rgba(255,255,255,0.4)", color: "#fff", padding: "14px 32px", borderRadius: 14, fontWeight: 700, fontSize: 15, textDecoration: "none" }}>
               WhatsApp
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: "0 16px 64px" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
+            {[{ l: "/tarifs", t: "Nos Tarifs" }, { l: "/parrainage", t: "Programme de Parrainage" }, { l: "/abonnement-iptv", t: "Abonnement IPTV" }, { l: "/contact", t: "Contact" }].map((x) => (
+              <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
+            ))}
           </div>
         </div>
       </section>

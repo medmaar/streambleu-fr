@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique DMCA | Stream Bleu – IPTV France",
+  title: { absolute: "Politique DMCA | Stream Bleu – IPTV France" },
   description: "Politique DMCA de Stream Bleu. Apprenez comment soumettre un avis de retrait DMCA et notre processus de traitement des réclamations pour violation de.",
   alternates: { canonical: "https://streambleu.fr/dmca" },
+    openGraph: {
+    title: "Politique DMCA",
+    description: "Politique DMCA de Stream Bleu. Apprenez comment soumettre un avis de retrait DMCA et notre processus de traitement des réclamations pour violation de.",
+    url: "https://streambleu.fr/dmca", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Politique DMCA" }],
+  },
 };
 
 
