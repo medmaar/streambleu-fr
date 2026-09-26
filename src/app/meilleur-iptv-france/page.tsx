@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Meilleur IPTV France 2026 — Comparatif & Test | Stream Bleu",
   description: "Quel est le meilleur IPTV en France en 2026 ? Comparatif complet des services IPTV français. Stream Bleu arrive en tête : 4K Ultra HD, zéro coupure, 50.",
-  keywords: "meilleur iptv france, meilleur iptv, meilleur service iptv france, top iptv france, iptv france comparatif",
+  keywords: "meilleur iptv france, meilleur iptv, meilleur service iptv france, top iptv france, iptv france comparatif, meilleure iptv, meilleurs iptv, meilleur ip tv, meilleure iptv 2026, meilleurs abonnements iptv, meilleur abonnements iptv",
   alternates: { canonical: "https://streambleu.fr/meilleur-iptv-france" },
   openGraph: {
     title: "Meilleur IPTV France 2026 — Comparatif & Test | Stream Bleu",
@@ -27,6 +27,7 @@ const faqItems = [
   { q: "Stream Bleu est-il vraiment le meilleur IPTV en France ?", a: "Selon nos tests et les avis de nos 50 000+ clients, Stream Bleu est le service IPTV le plus stable et qualitatif disponible en France. 4K Ultra HD H.265, serveurs premium anti-coupure, toutes les chaînes françaises et sportives, support 24/7 en français." },
   { q: "Quelle est la différence entre un bon et un mauvais service IPTV ?", a: "Un bon service IPTV offre une stabilité constante (pas de coupures aléatoires), une vraie qualité 4K (pas du 1080p étiré), toutes les chaînes annoncées réellement disponibles, et un support réactif. Les mauvais services disparaissent souvent après quelques semaines." },
   { q: "Le meilleur IPTV France fonctionne-t-il sans installation technique ?", a: "Oui. Stream Bleu vous guide pas à pas pour l'installation sur votre appareil. Un lien M3U ou des identifiants Xtream Codes sont fournis — compatibles avec tous les lecteurs IPTV populaires. Notre support vous accompagne en direct si besoin." },
+  { q: "Meilleure IPTV, meilleurs abonnements IPTV : le classement change-t-il chaque année ?", a: "Les critères restent les mêmes d'une année sur l'autre — stabilité, qualité 4K, nombre de chaînes réelles et support client — mais les offres évoluent. Nous mettons à jour cette page chaque année pour refléter le meilleur IPTV 2026." },
 ];
 
 const faqSchema = {

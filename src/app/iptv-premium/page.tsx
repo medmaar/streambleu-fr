@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu",
   description: "Service IPTV premium en France : 4K Ultra HD H.265/HEVC, HDR10 & Dolby Vision, 50 000+ chaînes sans coupure. Le service IPTV premium le plus stable du.",
-  keywords: "iptv premium, iptv premium france, service iptv premium, iptv premium 4k, abonnement iptv premium",
+  keywords: "iptv premium, iptv premium france, service iptv premium, iptv premium 4k, abonnement iptv premium, premium iptv, premium iptv tv, abonnements iptv premium",
   alternates: { canonical: "https://streambleu.fr/iptv-premium" },
   openGraph: {
     title: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu",
@@ -28,6 +28,7 @@ const faqItems = [
   { q: "L'IPTV premium de Stream Bleu fonctionne-t-il sur toutes les Smart TV ?", a: "Oui. Stream Bleu est compatible avec Samsung (Tizen), LG (webOS), Philips (Android TV), Sony (Google TV) et tous les systèmes Smart TV via des applications IPTV. Nous fournissons des guides d'installation personnalisés." },
   { q: "Comment garantissez-vous la qualité premium sans coupure ?", a: "Notre infrastructure utilise des serveurs premium avec CDN distribué et basculement automatique. En cas de problème sur un serveur, votre stream bascule automatiquement sur un serveur de secours en moins d'une seconde, sans interruption." },
   { q: "Le service IPTV premium inclut-il la TV de rattrapage ?", a: "Oui. Stream Bleu inclut 7 jours de TV de rattrapage (catch-up) sur les principales chaînes françaises. Regardez vos émissions manquées à tout moment." },
+  { q: "IPTV premium et abonnement IPTV premium : quelle différence de prix ?", a: "Aucune chez Stream Bleu : la qualité premium (4K, HDR10, serveurs anti-coupure, support prioritaire) est incluse dans tous les abonnements IPTV premium, sans supplément caché. Voir le détail sur notre page Prix IPTV." },
 ];
 
 const faqSchema = {
@@ -149,7 +150,7 @@ export default function IptvPremiumPage() {
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
             <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-              {[{l:"/iptv-france",t:"IPTV France"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/liste-chaines",t:"Liste des Chaînes"},{l:"/blog/iptv-sans-coupure",t:"IPTV Sans Coupure"},{l:"/essai-gratuit",t:"Essai Gratuit"}].map(x => (
+              {[{l:"/iptv-france",t:"IPTV France"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/liste-chaines",t:"Liste des Chaînes"},{l:"/blog/iptv-sans-coupure",t:"IPTV Sans Coupure"},{l:"/essai-gratuit",t:"Essai Gratuit"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/blog/iptv-4k-france",t:"IPTV 4K"}].map(x => (
                 <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
               ))}
             </div>

@@ -12,6 +12,7 @@ export type Block =
   | { type: "table"; head: string[]; rows: string[][]; caption?: string }
   | { type: "cards"; items: { title: string; text: string; href?: string }[] }
   | { type: "callout"; title?: string; text: string }
+  | { type: "chips"; items: string[] }
   | { type: "hub"; group: Group };
 
 export type Section = { id: string; h2: string; blocks: Block[] };
@@ -37,6 +38,9 @@ export type SeoPageData = {
   related: string[]; // slugs of other SEO pages or existing routes
   cta?: { title: string; text: string };
   schema: "Article" | "WebPage" | "CollectionPage";
+  // Optional ItemList schema — named entities this page discusses (hub's child
+  // pages, or a neutral glossary of third-party names). No ratings/reviews implied.
+  itemList?: { name: string; url?: string }[];
   datePublished: string;
   dateModified: string;
   readTime?: string;

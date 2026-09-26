@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu",
   description: "IPTV France : le service IPTV le plus fiable en France. 50 000+ chaînes, beIN Sports, Canal+, TF1, RMC Sport. 4K Ultra HD, zéro coupure. Essai gratuit 24h.",
-  keywords: "iptv france, france iptv, iptv en france, service iptv france, fournisseur iptv france",
+  keywords: "iptv france, france iptv, iptv en france, service iptv france, fournisseur iptv france, iptvfrance",
   alternates: { canonical: "https://streambleu.fr/iptv-france" },
   openGraph: {
     title: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu",

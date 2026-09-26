@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 50 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2, et.",
   keywords:
-    "liste chaînes iptv france, stream bleu chaînes, chaînes iptv france 2026, bein sports iptv, canal plus iptv",
+    "liste chaînes iptv france, stream bleu chaînes, chaînes iptv france 2026, bein sports iptv, canal plus iptv, iptv tf1, tf1 iptv, iptv tnt",
   alternates: { canonical: "https://streambleu.fr/liste-chaines" },
 };
 

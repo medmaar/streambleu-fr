@@ -248,7 +248,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
     cardText: "Google TV, Sony, Philips, Shield : TiviMate en 2 minutes.",
     title: "IPTV Android TV et Google TV : installation complète",
     description: "IPTV sur Android TV et Google TV (Sony, Philips, TCL, Nvidia Shield, Chromecast) : installer TiviMate ou Smarters Player Lite, réglages et astuces 4K.",
-    keywords: ["iptv android tv", "iptv google tv", "smart iptv android tv", "iptv smarters android tv", "iptv smasters pro android tv", "smarters player lite android tv", "lxtream android tv", "iptv nvidia shield", "iptvx android"],
+    keywords: ["iptv android tv", "iptv google tv", "smart iptv android tv", "iptv smarters android tv", "iptv smasters pro android tv", "smarters player lite android tv", "lxtream android tv", "iptv nvidia shield", "iptvx android", "nokia streaming box 8000 iptv"],
     badge: "Appareil · Android TV",
     h1: "IPTV sur Android TV et Google TV : le guide complet",
     intro: "**Android TV et Google TV** sont les systèmes les plus simples pour l'IPTV : le Google Play Store y propose directement [TiviMate](/tivimate), [Smarters Player Lite](/smarters-player-lite) et d'autres lecteurs, sans manipulation technique. Cela concerne les TV Sony, Philips, TCL, Xiaomi, ainsi que les boîtiers Nvidia Shield, Chromecast avec Google TV et Xiaomi Mi Box.",
@@ -281,7 +281,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
               { title: "Freebox Pop / Ultra", text: "Player Android TV de Free.", href: "/iptv-freebox" },
             ],
           },
-          { type: "p", text: "La Nvidia Shield TV reste la plus puissante (décodage et upscaling IA), idéale si vous visez la 4K sur grand écran. Comparatif : [boîtier IPTV](/boitier-iptv)." },
+          { type: "p", text: "La Nvidia Shield TV reste la plus puissante (décodage et upscaling IA), idéale si vous visez la 4K sur grand écran. Distribué par certains opérateurs télécoms européens, le Nokia Streaming Box 8000 est un autre boîtier Android TV certifié Google, avec les mêmes applications IPTV disponibles sur le Play Store. Comparatif : [boîtier IPTV](/boitier-iptv)." },
         ],
       },
       {

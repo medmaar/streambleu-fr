@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "IPTV 4K France 2026 — Ultra HD H.265 sans Coupure | Stream Bleu",
   description:
     "IPTV 4K en France : guide complet pour profiter de la qualité Ultra HD H.265/HEVC sur votre téléviseur. Stream Bleu propose le vrai 4K HDR avec 50 000+.",
-  keywords: "iptv 4k france, iptv 4k ultra hd, iptv h265 france, iptv hevc france, meilleur iptv 4k, stream bleu 4k",
+  keywords: "iptv 4k france, iptv 4k ultra hd, iptv h265 france, iptv hevc france, meilleur iptv 4k, stream bleu 4k, iptv 4k, 4k iptv, iptv with 4k, iptv 8k, 8k iptv",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-4k-france" },
   openGraph: {
     title: "IPTV 4K France 2026 — Ultra HD H.265 sans Coupure | Stream Bleu",
@@ -48,6 +48,11 @@ const faqSchema = {
       "@type": "Question",
       name: "Stream Bleu propose-t-il vraiment du 4K et pas du 1080p amélioré ?",
       acceptedAnswer: { "@type": "Answer", text: "Oui. Stream Bleu encode ses streams premium en vrai 4K (3840×2160) en H.265/HEVC avec un débit minimum de 25 Mbps par stream 4K. C'est fondamentalement différent du 1080p upscalé proposé par beaucoup de concurrents." }
+    },
+    {
+      "@type": "Question",
+      name: "Existe-t-il de l'IPTV en 8K ?",
+      acceptedAnswer: { "@type": "Answer", text: "En pratique, non : il n'existe quasiment aucun contenu grand public tourné et diffusé nativement en 8K, et très peu de téléviseurs 8K sont installés en France. Un service qui annonce de l'« IPTV 8K » upscale en réalité du contenu 4K ou HD. Le vrai 4K Ultra HD H.265/HEVC de Stream Bleu reste la meilleure qualité disponible aujourd'hui." }
     },
   ],
 };

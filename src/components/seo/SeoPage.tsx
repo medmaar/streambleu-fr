@@ -152,6 +152,14 @@ function RenderBlock({ b }: { b: Block }) {
           <p style={{ color: "#333", fontSize: 14, lineHeight: 1.7, margin: 0 }}><Rich text={b.text} /></p>
         </div>
       );
+    case "chips":
+      return (
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 24 }}>
+          {b.items.map((it) => (
+            <span key={it} style={{ background: "#fdf5ff", border: "1px solid rgba(123,135,232,0.2)", borderRadius: 8, padding: "5px 12px", fontSize: 12.5, color: "#444", fontWeight: 500 }}>{it}</span>
+          ))}
+        </div>
+      );
     case "hub":
       return <HubGrid group={b.group} />;
   }
@@ -232,6 +240,29 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
           isPartOf: { "@type": "WebSite", name: "Stream Bleu", url: SITE },
         },
   ];
+
+  // A hub page (block type "hub") lists real child pages — derive ItemList from
+  // those automatically so it can never drift from what's actually on the page.
+  const hubGroup = page.sections.flatMap((s) => s.blocks).find((b): b is Extract<Block, { type: "hub" }> => b.type === "hub")?.group;
+  const derivedItemList = hubGroup
+    ? SEO_PAGES.filter((p) => p.group === hubGroup).map((p) => ({ name: p.navLabel, url: SITE + p.slug }))
+    : undefined;
+  const itemList = page.itemList ?? derivedItemList;
+
+  if (itemList && itemList.length > 0) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: page.h1,
+      numberOfItems: itemList.length,
+      itemListElement: itemList.map((it, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: it.name,
+        ...(it.url ? { url: it.url } : {}),
+      })),
+    });
+  }
 
   const related = page.related.map((href) => ({ href, label: labelFor(href) }));
 

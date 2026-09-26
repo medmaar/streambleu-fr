@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import EssaiGratuitForm from "./EssaiGratuitForm";
 import PlanFAQ, { type FaqItem } from "../tarifs/PlanFAQ";
 
 export const metadata: Metadata = {
   title: { absolute: "Essai Gratuit IPTV France 24h — Sans CB | Stream Bleu" },
   description: "Obtenez un essai gratuit IPTV en France. Sans carte bancaire. Accédez à 50 000+ chaînes en direct, beIN Sports, Canal+, TF1 et 300 000+ films. Activation.",
-  keywords: "essai gratuit iptv france, stream bleu essai, test iptv france gratuit, iptv france sans carte bancaire",
+  keywords: "essai gratuit iptv france, stream bleu essai, test iptv france gratuit, iptv france sans carte bancaire, iptv tester, iptv tester gratuitement, test iptv, iptv test, essai iptv, iptv essai, iptv free trial, iptv essaie gratuit, trial iptv, iptv trial 48, iptv 24h",
   alternates: { canonical: "https://streambleu.fr/essai-gratuit" },
   openGraph: {
     title: "Essai Gratuit IPTV France — Testez Stream Bleu Sans Risque",
@@ -25,6 +26,7 @@ const faqItems: FaqItem[] = [
   { q: "Combien d'appareils puis-je utiliser pendant l'essai ?", a: "Votre essai inclut une connexion simultanée. Si vous souhaitez tester sur plusieurs appareils, contactez-nous et nous pouvons l'organiser." },
   { q: "Que se passe-t-il après 24 heures ?", a: "Votre essai s'arrête simplement. Aucun frais, aucune annulation nécessaire. Si vous souhaitez continuer, contactez-nous pour choisir un forfait." },
   { q: "Une carte bancaire est-elle requise pour démarrer l'essai ?", a: "Absolument pas. Aucune information de paiement n'est nécessaire. L'essai est 100% gratuit, sans aucune obligation de s'abonner ensuite." },
+  { q: "Essai gratuit, test IPTV, trial IPTV : quelle différence ?", a: "Aucune — ce sont les mêmes mots pour la même chose. Que vous cherchiez « essai gratuit iptv », « test iptv gratuit » ou « iptv free trial », Stream Bleu propose systématiquement 24h d'accès complet, sans carte bancaire et sans engagement." },
 ];
 
 const faqSchema = {
@@ -98,6 +100,17 @@ export default function FreeTrialPage() {
                 Questions fréquentes sur l&apos;essai gratuit
               </h2>
               <PlanFAQ items={faqItems} />
+            </div>
+          </div>
+        </section>
+
+        <section style={{ padding: "0 16px 64px" }}>
+          <div style={{ maxWidth: 720, margin: "0 auto" }}>
+            <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
+              {[{l:"/tarifs",t:"Nos Tarifs"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/comparatif-iptv",t:"Comparatif IPTV"},{l:"/applications-iptv",t:"Applications IPTV"}].map(x => (
+                <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
+              ))}
             </div>
           </div>
         </section>

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Abonnement IPTV France 2026 — À partir de 9€/mois | Stream Bleu",
   description: "Abonnement IPTV en France à partir de 9€/mois. 50 000+ chaînes, beIN Sports, Canal+, 4K Ultra HD. Sans engagement, activation instantanée. Essai gratuit.",
-  keywords: "abonnement iptv, iptv abonnement, abonnement iptv france, abonnement iptv pas cher, abonnement iptv 4k",
+  keywords: "abonnement iptv, iptv abonnement, abonnement iptv france, abonnement iptv pas cher, abonnement iptv 4k, abonnementiptv, abonnement ip tv, ip tv abonnement, abonement iptv, iptv abonement, iptv abonnemen, iptv abonnement france",
   alternates: { canonical: "https://streambleu.fr/abonnement-iptv" },
   openGraph: {
     title: "Abonnement IPTV France 2026 — À partir de 9€/mois | Stream Bleu",
@@ -27,6 +27,7 @@ const faqItems = [
   { q: "L'abonnement IPTV nécessite-t-il un engagement ?", a: "Non. Tous les abonnements Stream Bleu sont sans engagement. Vous choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, sans renouvellement automatique." },
   { q: "Puis-je essayer avant de m'abonner ?", a: "Oui ! Stream Bleu propose un essai gratuit de 24h sans carte bancaire. Testez la qualité 4K et toutes les chaînes sur votre propre matériel avant de vous décider." },
   { q: "L'abonnement fonctionne-t-il sur plusieurs appareils ?", a: "Chaque abonnement inclut 1 connexion simultanée. Des forfaits multi-connexions (2 à 10 appareils) sont disponibles pour regarder sur plusieurs écrans en même temps." },
+  { q: "Abonnement IPTV, IPTV abonnement, abonnement ip tv : est-ce la même chose ?", a: "Oui. Que vous cherchiez « abonnement iptv », « abonnementiptv » en un mot, « ip tv abonnement » ou « abonnement iptv france », il s'agit toujours du même service : un accès aux chaînes en direct et à la VOD via une application IPTV, sans matériel ni décodeur imposé." },
 ];
 
 const faqSchema = {
@@ -137,7 +138,7 @@ export default function AbonnementIptvPage() {
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
             <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-              {[{l:"/iptv-france",t:"IPTV France"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/tarifs",t:"Nos Tarifs"},{l:"/liste-chaines",t:"Liste des Chaînes"}].map(x => (
+              {[{l:"/iptv-france",t:"IPTV France"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/tarifs",t:"Nos Tarifs"},{l:"/liste-chaines",t:"Liste des Chaînes"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/comparatif-iptv",t:"Comparatif IPTV"}].map(x => (
                 <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
               ))}
             </div>

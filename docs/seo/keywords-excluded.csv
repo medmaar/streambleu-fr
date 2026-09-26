@@ -41,3 +41,6 @@ iptv netflix disney+ amazon,50,Informational,Premium channel / rights-holder nam
 iptv pluto tv,50,Informational,Premium channel / rights-holder name — no dedicated page (rights / infringement risk)
 iptv soccer,50,Commercial,Premium channel / rights-holder name — no dedicated page (rights / infringement risk)
 iptv ufc,50,Commercial,Premium channel / rights-holder name — no dedicated page (rights / infringement risk)
+cloud stream,5000,Commercial,Third-party movie-scraper/piracy app unrelated to IPTV subscriptions — not promoted
+vavoo iptv,50,Commercial,Piracy-adjacent streaming addon (unlicensed live sports/TV) — not promoted
+vavoo kodi,50,Informational,Piracy-adjacent streaming addon (unlicensed live sports/TV) — not promoted
