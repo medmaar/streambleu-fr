@@ -5,6 +5,7 @@ import { BOX_PAGES } from "./pages/boxes";
 import { DEVICE_PAGES } from "./pages/devices";
 import { GUIDE_PAGES } from "./pages/guides";
 import { COMMERCIAL_PAGES } from "./pages/commercial";
+import { CITY_PAGES } from "./pages/cities";
 
 export const SEO_PAGES: SeoPageData[] = [
   ...HUB_PAGES,
@@ -13,6 +14,7 @@ export const SEO_PAGES: SeoPageData[] = [
   ...DEVICE_PAGES,
   ...GUIDE_PAGES,
   ...COMMERCIAL_PAGES,
+  ...CITY_PAGES,
 ];
 
 // Labels for existing routes that are not rendered by <SeoPage />
@@ -47,6 +49,24 @@ const EXISTING: Record<string, string> = {
   "/blog/comment-installer-iptv-smart-tv": "Installer l'IPTV sur Smart TV",
   "/blog/meilleur-abonnement-iptv-france": "Meilleur abonnement IPTV",
   "/blog/iptv-firestick-france": "Guide IPTV Fire Stick",
+  // Legacy hand-built city pages (not in the SEO_PAGES content registry)
+  "/iptv-paris": "IPTV Paris",
+  "/iptv-lyon": "IPTV Lyon",
+  "/iptv-marseille": "IPTV Marseille",
+  "/iptv-toulouse": "IPTV Toulouse",
+  "/iptv-nice": "IPTV Nice",
+  "/iptv-bordeaux": "IPTV Bordeaux",
+  "/iptv-lille": "IPTV Lille",
+  "/iptv-nantes": "IPTV Nantes",
+  "/iptv-strasbourg": "IPTV Strasbourg",
+  "/iptv-rennes": "IPTV Rennes",
+  "/iptv-montpellier": "IPTV Montpellier",
+  "/iptv-grenoble": "IPTV Grenoble",
+  "/iptv-toulon": "IPTV Toulon",
+  "/iptv-saint-etienne": "IPTV Saint-Étienne",
+  "/iptv-reims": "IPTV Reims",
+  "/iptv-dijon": "IPTV Dijon",
+  "/iptv-rouen": "IPTV Rouen",
 };
 
 const BY_SLUG = new Map(SEO_PAGES.map((p) => [p.slug, p]));

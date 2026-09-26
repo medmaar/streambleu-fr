@@ -22,6 +22,8 @@ const HUB_LABEL: Record<Group, { href: string; label: string } | null> = {
   guides: { href: "/blog", label: "Blog" },
   commercial: null,
   hubs: null,
+  cities: null, // each city sets its own `parent` (its region hub)
+  regions: { href: "/iptv-villes-france", label: "IPTV par ville en France" },
 };
 
 // ── Shared styles (same values as the existing blog + device pages) ──
@@ -64,8 +66,8 @@ export function plain(text: string) {
   return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*([^*]+)\*\*/g, "$1");
 }
 
-function HubGrid({ group }: { group: Group }) {
-  const pages = SEO_PAGES.filter((p) => p.group === group);
+function HubGrid({ group, region }: { group: Group; region?: string }) {
+  const pages = SEO_PAGES.filter((p) => p.group === group && (!region || p.region === region));
   return (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(230px, 1fr))", gap: 14, marginBottom: 24 }}>
       {pages.map((p) => (
@@ -161,7 +163,7 @@ function RenderBlock({ b }: { b: Block }) {
         </div>
       );
     case "hub":
-      return <HubGrid group={b.group} />;
+      return <HubGrid group={b.group} region={b.region} />;
   }
 }
 
@@ -243,9 +245,9 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
 
   // A hub page (block type "hub") lists real child pages — derive ItemList from
   // those automatically so it can never drift from what's actually on the page.
-  const hubGroup = page.sections.flatMap((s) => s.blocks).find((b): b is Extract<Block, { type: "hub" }> => b.type === "hub")?.group;
-  const derivedItemList = hubGroup
-    ? SEO_PAGES.filter((p) => p.group === hubGroup).map((p) => ({ name: p.navLabel, url: SITE + p.slug }))
+  const hubBlock = page.sections.flatMap((s) => s.blocks).find((b): b is Extract<Block, { type: "hub" }> => b.type === "hub");
+  const derivedItemList = hubBlock
+    ? SEO_PAGES.filter((p) => p.group === hubBlock.group && (!hubBlock.region || p.region === hubBlock.region)).map((p) => ({ name: p.navLabel, url: SITE + p.slug }))
     : undefined;
   const itemList = page.itemList ?? derivedItemList;
 

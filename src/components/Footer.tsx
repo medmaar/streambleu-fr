@@ -64,6 +64,7 @@ const sections = [
   {
     title: "Par Ville",
     links: [
+      { href: "/iptv-villes-france", label: "Toutes les villes →" },
       { href: "/iptv-paris", label: "Paris" },
       { href: "/iptv-lyon", label: "Lyon" },
       { href: "/iptv-marseille", label: "Marseille" },

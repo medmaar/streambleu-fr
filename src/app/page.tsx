@@ -453,6 +453,11 @@ export default function HomePage() {
                 </Link>
               ))}
             </div>
+            <div style={{ textAlign: "center", marginTop: 28 }}>
+              <Link href="/iptv-villes-france" style={{ color: "#5a5fcf", fontWeight: 700, fontSize: 14, textDecoration: "none" }}>
+                Voir toutes nos villes en France (68 villes) →
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -469,6 +474,7 @@ export default function HomePage() {
                 {l:"/iptv-premium", t:"IPTV Premium 4K"},
                 {l:"/meilleur-iptv-france", t:"Meilleur IPTV France"},
                 {l:"/iptv-francais", t:"IPTV Français"},
+                {l:"/iptv-villes-france", t:"IPTV par Ville"},
                 {l:"/blog/iptv-sans-coupure", t:"IPTV Sans Coupure"},
                 {l:"/blog/iptv-pas-cher-france", t:"IPTV Pas Cher"},
                 {l:"/blog/meilleur-abonnement-iptv-france", t:"Meilleur Abonnement IPTV"},

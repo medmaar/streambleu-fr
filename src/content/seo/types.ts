@@ -1,7 +1,7 @@
 // Content model for the keyword-cluster pages rendered by <SeoPage />.
 // Inline text supports [anchor](/href) links and **bold**.
 
-export type Group = "apps" | "boxes" | "devices" | "guides" | "commercial" | "hubs";
+export type Group = "apps" | "boxes" | "devices" | "guides" | "commercial" | "hubs" | "cities" | "regions";
 
 export type Block =
   | { type: "p"; text: string }
@@ -13,7 +13,7 @@ export type Block =
   | { type: "cards"; items: { title: string; text: string; href?: string }[] }
   | { type: "callout"; title?: string; text: string }
   | { type: "chips"; items: string[] }
-  | { type: "hub"; group: Group };
+  | { type: "hub"; group: Group; region?: string };
 
 export type Section = { id: string; h2: string; blocks: Block[] };
 
@@ -33,6 +33,7 @@ export type SeoPageData = {
   tldr?: string[];
   image?: { src: string; alt: string };
   parent?: { href: string; label: string }; // pillar / hub this page belongs to
+  region?: string; // region slug (for city pages) — used to filter a region's "hub" block
   sections: Section[];
   faq: FaqItem[];
   related: string[]; // slugs of other SEO pages or existing routes
