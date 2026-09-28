@@ -266,7 +266,7 @@ async function handleFetch(request, env) {
     step = "create_demo";
     const crRes = await apiGet({
       action: "new", type: "m3u", sub: "99", pack: packId,
-      note: `Trial / streambleu.fr / ${email} | ${whatsapp || ""}`,
+      notes: `Trial / streambleu.fr / ${email} | ${whatsapp || ""}`,
     });
     if (!crRes.text.trim().startsWith("[") && !crRes.text.trim().startsWith("{")) {
       throw new Error(`Panel non-JSON: ${crRes.text.slice(0, 200)}`);
@@ -286,7 +286,7 @@ async function handleFetch(request, env) {
 
     // 4. Welcome email
     step = "email_client";
-    welcomeEmailId = await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
+    let welcomeEmailId = await sendEmail(email, "Votre accès Stream Bleu — Essai gratuit 24H activé ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
 
     // 5. Admin email
     step = "email_admin";
@@ -295,8 +295,7 @@ async function handleFetch(request, env) {
     // 6. Store trial in KV (TTL 4 days auto-cleanup)
     step = "kv_store";
     const expiry = Date.now() + 24 * 60 * 60 * 1000; // 24h from now
-    const let welcomeEmailId = null;
-    trialData = {
+    const trialData = {
       name, email, country, device, whatsapp,
       username, password, m3uUrl,
       expiry,
