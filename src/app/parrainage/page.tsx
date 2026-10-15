@@ -3,27 +3,27 @@ import Link from "next/link";
 import ReferralForm from "../../components/ReferralForm";
 
 export const metadata: Metadata = {
-  title: { absolute: "Parrainage IPTV France — Gagnez +12 Mois | Stream Bleu" },
-  description: "Parrainez un ami sur Stream Bleu et gagnez +12 mois de service gratuit. Sans limite — chaque parrainage réussi ajoute 12 mois à votre compte.",
-  keywords: "parrainage stream bleu, parrainer ami iptv, stream bleu an gratuit, affiliation iptv france",
+  title: { absolute: "Parrainage IPTV France — Gagnez 6 Mois Gratuits | Stream Bleu" },
+  description: "Parrainez un ami sur Stream Bleu et gagnez 6 mois de service gratuit. Sans limite — chaque parrainage réussi ajoute 6 mois gratuits à votre compte.",
+  keywords: "parrainage stream bleu, parrainer ami iptv, stream bleu 6 mois gratuits, affiliation iptv france",
   alternates: { canonical: "https://streambleu.fr/parrainage" },
     openGraph: {
-    title: "Parrainage IPTV France — Gagnez +12 Mois",
-    description: "Parrainez un ami sur Stream Bleu et gagnez +12 mois de service gratuit. Sans limite — chaque parrainage réussi ajoute 12 mois à votre compte.",
+    title: "Parrainage IPTV France — Gagnez 6 Mois Gratuits",
+    description: "Parrainez un ami sur Stream Bleu et gagnez 6 mois de service gratuit. Sans limite — chaque parrainage réussi ajoute 6 mois gratuits à votre compte.",
     url: "https://streambleu.fr/parrainage", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Parrainage IPTV France — Gagnez +12 Mois" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Parrainage IPTV France — Gagnez 6 Mois Gratuits" }],
   },
 };
 
 const steps = [
-  { number: "01", title: "Parrainez un ami", description: "Partagez vos informations de parrainage avec un ami qui n'a pas encore utilisé notre service. Envoyez-les via WhatsApp ou remplissez le formulaire." },
+  { number: "01", title: "Parrainez un ami", description: "Partagez vos informations de parrainage avec un ami qui n'a pas encore utilisé notre service. Remplissez le formulaire avec vos coordonnées et celles de votre ami." },
   { number: "02", title: "Votre ami s'abonne", description: "Votre ami s'inscrit et souscrit au moins un abonnement de 12 mois à Stream Bleu." },
-  { number: "03", title: "Vous gagnez +12 Mois GRATUITS", description: "Une fois le paiement vérifié, 12 mois sont ajoutés à votre compte automatiquement. Sans limite — parrainez autant d'amis que vous voulez !" },
+  { number: "03", title: "Vous gagnez 6 Mois GRATUITS", description: "Une fois le paiement vérifié, 6 mois sont ajoutés à votre compte automatiquement. Sans limite — parrainez autant d'amis que vous voulez !" },
 ];
 
 const rewardCards = [
-  { title: "+12 Mois par Parrainage", desc: "Chaque parrainage approuvé ajoute 12 mois gratuits à votre abonnement.", bg: "#5a5fcf" },
-  { title: "Sans Limite", desc: "Parrainez autant de personnes que vous voulez. Chaque parrainage réussi rapporte une autre année bonus.", bg: "#7b87e8" },
+  { title: "+6 Mois par Parrainage", desc: "Chaque parrainage approuvé ajoute 6 mois gratuits à votre abonnement.", bg: "#5a5fcf" },
+  { title: "Sans Limite", desc: "Parrainez autant de personnes que vous voulez. Chaque parrainage réussi rapporte 6 mois bonus de plus.", bg: "#7b87e8" },
   { title: "Validation Rapide", desc: "Notre équipe examine et approuve manuellement les parrainages rapidement.", bg: "#5a5fcf" },
 ];
 
@@ -31,7 +31,7 @@ const rules = [
   "La personne parrainée doit souscrire au moins un abonnement de 12 mois Stream Bleu.",
   "Votre bonus est ajouté après vérification du paiement.",
   "La personne parrainée doit être un nouveau client qui n'a jamais utilisé Stream Bleu.",
-  "Les parrainages sont illimités — chaque parrainage réussi vous donne +12 mois supplémentaires.",
+  "Les parrainages sont illimités — chaque parrainage réussi vous donne +6 mois supplémentaires.",
 ];
 
 // Shared page gradient
@@ -43,14 +43,14 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "Parrainage IPTV France — Gagnez +12 Mois", "item": "https://streambleu.fr/parrainage"}
+    {"@type": "ListItem", "position": 2, "name": "Parrainage IPTV France — Gagnez 6 Mois Gratuits", "item": "https://streambleu.fr/parrainage"}
   ]
 };
 
 const faqItems = [
   { q: "Comment parrainer un ami sur Stream Bleu ?", a: "Remplissez le formulaire de parrainage sur cette page avec les informations de votre ami, ou partagez directement vos coordonnées avec lui pour qu'il vous mentionne au moment de son abonnement." },
-  { q: "Combien de temps faut-il pour recevoir mon bonus de parrainage ?", a: "Une fois le paiement de votre ami vérifié par notre équipe, les 12 mois sont ajoutés automatiquement à votre compte, généralement sous 24 à 48h." },
-  { q: "Y a-t-il une limite au nombre de parrainages ?", a: "Non, aucune limite. Chaque nouvel ami qui souscrit un abonnement de 12 mois grâce à vous vous rapporte 12 mois supplémentaires, sans plafond." },
+  { q: "Combien de temps faut-il pour recevoir mon bonus de parrainage ?", a: "Une fois le paiement de votre ami vérifié par notre équipe, les 6 mois gratuits sont ajoutés automatiquement à votre compte, généralement sous 24 à 48h." },
+  { q: "Y a-t-il une limite au nombre de parrainages ?", a: "Non, aucune limite. Chaque nouvel ami qui souscrit un abonnement de 12 mois grâce à vous vous rapporte 6 mois gratuits supplémentaires, sans plafond." },
   { q: "Mon ami doit-il choisir un forfait précis pour que le parrainage compte ?", a: "Oui, votre ami doit souscrire au moins un abonnement de 12 mois. Les forfaits plus courts (1, 3 ou 6 mois) ne déclenchent pas le bonus de parrainage." },
   { q: "Puis-je me parrainer moi-même ou parrainer un compte déjà existant ?", a: "Non. Le programme est réservé aux nouveaux clients qui n'ont jamais utilisé Stream Bleu, afin de garantir un programme équitable pour tous les parrains." },
 ];
@@ -79,11 +79,18 @@ export default function ParrainagePage() {
           </span>
           <h1 style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 900, color: "#fff", lineHeight: 1.1, marginBottom: 14 }}>
             Parrainez un ami,<br />
-            <span style={{ color: "#f5a623" }}>gagnez +1 an gratuit</span>
+            <span style={{ color: "#f5a623" }}>gagnez 6 mois gratuits</span>
           </h1>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 16 }}>
-            Sans limite — chaque parrainage réussi ajoute 12 mois à votre compte.
+            Sans limite — chaque parrainage réussi ajoute 6 mois gratuits à votre compte.
           </p>
+        </div>
+      </section>
+
+      {/* Referral form */}
+      <section id="refer" style={{ padding: "8px 16px 64px" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto" }}>
+          <ReferralForm />
         </div>
       </section>
 
@@ -117,18 +124,6 @@ export default function ParrainagePage() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Form */}
-      <section style={{ padding: "48px 16px" }}>
-        <div style={{ maxWidth: 600, margin: "0 auto" }}>
-          <div style={{ background: "rgba(255,255,255,0.12)", borderRadius: 20, padding: "36px 32px", border: "1px solid rgba(255,255,255,0.2)" }}>
-            <h2 style={{ textAlign: "center", fontSize: "1.6rem", fontWeight: 900, color: "#fff", marginBottom: 28 }}>
-              Soumettre un Parrainage
-            </h2>
-            <ReferralForm />
           </div>
         </div>
       </section>

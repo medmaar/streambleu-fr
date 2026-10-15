@@ -1,103 +1,193 @@
 "use client";
 import { useState } from "react";
 
-const WA_REFER_URL = `/discuter/wa?msg=Bonjour%20Stream%20Bleu%2C%20je%20souhaite%20parrainer%20quelqu%27un.%20Quelle%20est%20la%20prochaine%20étape%20%3F`;
-
-const inputStyle = {
-  width: "100%",
-  background: "#ffffff",
-  border: "2px solid rgba(123,135,232,0.25)",
-  borderRadius: 10,
-  padding: "12px 16px",
-  fontSize: 14,
-  color: "#1a1a4e",
-  outline: "none",
-  boxSizing: "border-box" as const,
-  fontFamily: "inherit",
+// Referral form — same design and flow as iptvmapletv.com/refer-a-friend/.
+// Sent through the same EmailJS service/template/key as this site's order forms.
+const EMAILJS = { service: "service_wqw39vi", template: "template_3jpw5qp", publicKey: "KfpszCeX5M5itfdsO" };
+const SITE_NAME = "Stream Bleu";
+const WA_URL = "/discuter/wa?msg=Bonjour%20Stream%20Bleu%2C%20je%20viens%20d%27envoyer%20un%20parrainage.";
+const T = {
+  "title": "Envoyer un parrainage",
+  "req": "Tous les champs sont obligatoires.",
+  "g1": "Vos coordonnées",
+  "g1s": "La personne qui parraine",
+  "g2": "Les coordonnées de votre ami",
+  "g2s": "Le nouveau client que vous parrainez",
+  "name": "Nom",
+  "phone": "Téléphone (WhatsApp)",
+  "email": "E-mail",
+  "ph1n": "Ex. Jean Dupont",
+  "ph2n": "Ex. Marc Martin",
+  "ph1e": "vous@exemple.fr",
+  "ph2e": "ami@exemple.fr",
+  "submit": "Envoyer le parrainage",
+  "sending": "Envoi…",
+  "err_req": "Veuillez remplir ce champ.",
+  "err_email": "Veuillez saisir un e-mail valide.",
+  "err_phone": "Veuillez saisir un numéro valide.",
+  "fail": "Une erreur est survenue. Réessayez ou écrivez-nous sur WhatsApp.",
+  "ok_t": "Parrainage reçu !",
+  "ok_p": "Merci ! Nous avons bien reçu votre parrainage. Dès que l’abonnement 12 mois de votre ami est payé, nous ajoutons <b>6 mois gratuits</b> à votre compte et vous prévenons sur WhatsApp.",
+  "again": "Parrainer un autre ami",
+  "wa": "Confirmer sur WhatsApp",
+  "subj": "Nouveau parrainage",
+  "plan": "Programme de parrainage — 6 mois offerts",
+  "referrer": "PARRAIN",
+  "friend": "FILLEUL"
+};
+const C = {
+  "inputBg": "#fff",
+  "line": "rgba(90,95,207,.22)",
+  "text": "#1a1a4e",
+  "label": "#1a1a4e",
+  "heading": "#1a1a4e",
+  "muted": "#5b5f86",
+  "placeholder": "#9a9cc0",
+  "numText": "#fff",
+  "panel": "#ffffff",
+  "acc1": "#5a5fcf",
+  "acc2": "#f5a623",
+  "cta": "linear-gradient(120deg,#5a5fcf 0%,#7b87e8 100%)",
+  "ctaShadow": "0 18px 50px -12px rgba(90,95,207,.55)"
 };
 
-const labelStyle = {
-  display: "block",
-  fontSize: 13,
-  fontWeight: 600,
-  color: "#1a1a4e",
-  marginBottom: 6,
-};
+type Who = "r" | "f";
+type Key = `${Who}_${"name" | "phone" | "email"}`;
+const EMPTY: Record<Key, string> = { r_name: "", r_phone: "", r_email: "", f_name: "", f_phone: "", f_email: "" };
+
+function validate(k: Key, v: string): string {
+  const s = v.trim();
+  if (!s) return T.err_req;
+  if (k.endsWith("email") && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s)) return T.err_email;
+  if (k.endsWith("phone") && s.replace(/\D/g, "").length < 6) return T.err_phone;
+  return "";
+}
 
 export default function ReferralForm() {
-  const [yourName, setYourName] = useState("");
-  const [yourWA, setYourWA] = useState("");
-  const [friendName, setFriendName] = useState("");
-  const [friendWA, setFriendWA] = useState("");
+  const [v, setV] = useState<Record<Key, string>>(EMPTY);
+  const [errs, setErrs] = useState<Partial<Record<Key, string>>>({});
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const set = (k: Key) => (e: React.ChangeEvent<HTMLInputElement>) => {
+    setV((p) => ({ ...p, [k]: e.target.value }));
+    if (errs[k]) setErrs((p) => ({ ...p, [k]: validate(k, e.target.value) }));
+  };
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    const next: Partial<Record<Key, string>> = {};
+    (Object.keys(EMPTY) as Key[]).forEach((k) => { const m = validate(k, v[k]); if (m) next[k] = m; });
+    setErrs(next);
+    if (Object.keys(next).length) return;
     setStatus("loading");
+    const t = (k: Key) => v[k].trim();
+    const message =
+      `${T.referrer}\n${T.name}: ${t("r_name")}\n${T.phone}: ${t("r_phone")}\n${T.email}: ${t("r_email")}\n\n` +
+      `${T.friend}\n${T.name}: ${t("f_name")}\n${T.phone}: ${t("f_phone")}\n${T.email}: ${t("f_email")}`;
     try {
-      const res = await fetch("/api/referral", {
+      const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ yourName, yourWhatsApp: yourWA, friendName, friendWhatsApp: friendWA }),
+        body: JSON.stringify({
+          service_id: EMAILJS.service,
+          template_id: EMAILJS.template,
+          user_id: EMAILJS.publicKey,
+          template_params: {
+            site_name: SITE_NAME,
+            subject: `${T.subj} – ${SITE_NAME}: ${t("r_name")} → ${t("f_name")}`,
+            plan: T.plan,
+            name: t("r_name"), full_name: t("r_name"), from_name: t("r_name"),
+            email: t("r_email"), from_email: t("r_email"), reply_to: t("r_email"),
+            phone: t("r_phone"), whatsapp: t("r_phone"),
+            country: "—", device: "—",
+            friend_name: t("f_name"), friend_phone: t("f_phone"), friend_email: t("f_email"),
+            message,
+            time: new Date().toLocaleString(),
+          },
+        }),
       });
-      if (res.ok) {
-        setStatus("success");
-        setYourName(""); setYourWA(""); setFriendName(""); setFriendWA("");
-      } else { setStatus("error"); }
-    } catch { setStatus("error"); }
+      if (!res.ok) throw new Error(`EmailJS ${res.status}`);
+      setStatus("success");
+      setV(EMPTY);
+    } catch (err) {
+      console.error("Referral send failed:", err);
+      setStatus("error");
+    }
+  }
+
+  const input = (k: Key): React.CSSProperties => ({
+    width: "100%", height: 52, padding: "0 16px", borderRadius: 14, boxSizing: "border-box",
+    background: C.inputBg, border: `1px solid ${errs[k] ? "#ff2d4a" : C.line}`, color: C.text,
+    fontSize: 15.5, fontFamily: "inherit", outline: "none",
+  });
+
+  const field = (k: Key, label: string, type: string, ph: string, full = false, ac = "off") => (
+    <div style={{ display: "grid", gap: 7, gridColumn: full ? "1 / -1" : undefined }}>
+      <label htmlFor={`ref-${k}`} style={{ fontSize: 13.5, fontWeight: 600, color: C.label }}>{label}</label>
+      <input id={`ref-${k}`} name={k} type={type} required placeholder={ph} value={v[k]} onChange={set(k)}
+        autoComplete={ac} inputMode={type === "tel" ? "tel" : type === "email" ? "email" : undefined}
+        aria-invalid={errs[k] ? true : undefined} style={input(k)} className="ref-input" />
+      {errs[k] && <span style={{ fontSize: 12.5, color: "#ff5a6e" }}>{errs[k]}</span>}
+    </div>
+  );
+
+  const group = (who: Who, n: number, title: string, hint: string, acc: string, ph: [string, string, string]) => (
+    <fieldset style={{
+      border: `1px solid ${C.line}`, borderTop: `3px solid ${acc}`, borderRadius: 18, padding: "18px 18px 20px",
+      margin: "0 0 16px", minWidth: 0, background: `linear-gradient(180deg, ${acc}17, transparent 70%)`,
+    }}>
+      <legend style={{ display: "flex", alignItems: "center", gap: 12, padding: 0, marginBottom: 16, float: "left", width: "100%" }}>
+        <span style={{ width: 32, height: 32, flex: "none", borderRadius: "50%", display: "grid", placeItems: "center", fontWeight: 800, fontSize: 15, color: C.numText, background: acc }}>{n}</span>
+        <span><b style={{ display: "block", fontSize: 17, fontWeight: 800, color: C.heading }}>{title}</b><small style={{ display: "block", color: C.muted, fontSize: 13, marginTop: 2 }}>{hint}</small></span>
+      </legend>
+      <div className="ref-fields" style={{ clear: "both", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+        {field(`${who}_name`, T.name, "text", ph[0], false, who === "r" ? "name" : "off")}
+        {field(`${who}_phone`, T.phone, "tel", ph[1], false, who === "r" ? "tel" : "off")}
+        {field(`${who}_email`, T.email, "email", ph[2], true, who === "r" ? "email" : "off")}
+      </div>
+    </fieldset>
+  );
+
+  const card: React.CSSProperties = {
+    borderRadius: 28, padding: "clamp(22px, 4vw, 40px)", background: C.panel, border: `1px solid ${status === "success" ? "rgba(34,197,94,.55)" : C.line}`,
+    boxShadow: "0 30px 80px -30px rgba(0,0,0,.45)", textAlign: "left", color: C.text,
+  };
+
+  if (status === "success") {
+    return (
+      <div style={card} role="status">
+        <div style={{ textAlign: "center", padding: "12px 0" }}>
+          <div style={{ width: 72, height: 72, margin: "0 auto 18px", borderRadius: "50%", background: "#22c55e", display: "grid", placeItems: "center", color: "#fff", fontSize: 38, fontWeight: 900 }}>✓</div>
+          <h2 style={{ fontSize: 26, fontWeight: 800, color: C.heading, margin: "0 0 10px" }}>{T.ok_t}</h2>
+          <p style={{ color: C.muted, fontSize: 15.5, lineHeight: 1.7, maxWidth: 460, margin: "0 auto 22px" }} dangerouslySetInnerHTML={{ __html: T.ok_p }} />
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
+            <a href={WA_URL} target="_blank" rel="noopener noreferrer" style={{ background: "#25D366", color: "#fff", padding: "14px 26px", borderRadius: 999, fontWeight: 700, textDecoration: "none" }}>{T.wa}</a>
+            <button type="button" onClick={() => setStatus("idle")} style={{ background: "transparent", color: C.heading, border: `1px solid ${C.line}`, padding: "14px 26px", borderRadius: 999, fontWeight: 700, cursor: "pointer", fontFamily: "inherit", fontSize: 15 }}>{T.again}</button>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} style={{ background: "#ffffff", border: "2px solid rgba(123,135,232,0.2)", borderRadius: 20, padding: 32, boxShadow: "0 4px 24px rgba(123,135,232,0.1)" }}>
-
-        <p style={{ fontSize: 11, color: "#5a5fcf", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Vos Coordonnées</p>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
-          <div>
-            <label style={labelStyle}>Votre Prénom</label>
-            <input type="text" required placeholder="Jean" value={yourName} onChange={(e) => setYourName(e.target.value)} style={inputStyle} />
-          </div>
-          <div>
-            <label style={labelStyle}>Votre WhatsApp</label>
-            <input type="tel" required placeholder="+33 6 00 00 00 00" value={yourWA} onChange={(e) => setYourWA(e.target.value)} style={inputStyle} />
-          </div>
-        </div>
-
-        <p style={{ fontSize: 11, color: "#5a5fcf", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>Coordonnées de l&apos;Ami</p>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 28 }}>
-          <div>
-            <label style={labelStyle}>Prénom de l&apos;ami</label>
-            <input type="text" required placeholder="Marie" value={friendName} onChange={(e) => setFriendName(e.target.value)} style={inputStyle} />
-          </div>
-          <div>
-            <label style={labelStyle}>WhatsApp de l&apos;ami</label>
-            <input type="tel" required placeholder="+33 6 00 00 00 00" value={friendWA} onChange={(e) => setFriendWA(e.target.value)} style={inputStyle} />
-          </div>
-        </div>
-
-        {status === "success" ? (
-          <div style={{ background: "rgba(123,135,232,0.1)", border: "1px solid rgba(123,135,232,0.3)", borderRadius: 12, padding: "16px 20px", color: "#5a5fcf", fontSize: 14, fontWeight: 600, textAlign: "center" }}>
-            ✓ Parrainage soumis ! Nous l&apos;examinerons rapidement et vous contacterons.
-          </div>
-        ) : (
-          <button type="submit" disabled={status === "loading"} style={{ width: "100%", background: "#f5a623", color: "#fff", padding: "16px", borderRadius: 12, fontWeight: 700, fontSize: 16, border: "none", cursor: "pointer", opacity: status === "loading" ? 0.6 : 1, fontFamily: "inherit", boxShadow: "0 4px 16px rgba(245,166,35,0.35)" }}>
-            {status === "loading" ? "Envoi en cours…" : "Soumettre le Parrainage"}
-          </button>
-        )}
-
+    <div style={card} id="referral-form">
+      <style>{`.ref-input::placeholder{color:${C.placeholder}}.ref-input:focus{border-color:${C.acc2}!important;box-shadow:0 0 0 4px ${C.acc2}22}@media(max-width:520px){.ref-fields{grid-template-columns:1fr!important}}`}</style>
+      <h2 style={{ fontSize: 26, fontWeight: 800, color: C.heading, margin: "0 0 6px" }}>{T.title}</h2>
+      <p style={{ color: C.muted, margin: "0 0 20px", fontSize: 15 }}>{T.req}</p>
+      <form onSubmit={handleSubmit} noValidate>
+        {group("r", 1, T.g1, T.g1s, C.acc1, [T.ph1n, "Ex. +33 6 12 34 56 78", T.ph1e])}
+        {group("f", 2, T.g2, T.g2s, C.acc2, [T.ph2n, "Ex. +33 7 98 76 54 32", T.ph2e])}
         {status === "error" && (
-          <p style={{ textAlign: "center", color: "#5a5fcf", fontSize: 13, marginTop: 12 }}>
-            Une erreur s&apos;est produite. Réessayez ou utilisez WhatsApp ci-dessous.
-          </p>
+          <div role="alert" style={{ background: "rgba(255,45,74,.1)", border: "1px solid rgba(255,45,74,.35)", color: "#ff5a6e", borderRadius: 12, padding: "12px 16px", fontSize: 14, margin: "6px 0 0" }}>{T.fail}</div>
         )}
+        <button type="submit" disabled={status === "loading"} style={{
+          width: "100%", marginTop: 22, padding: "18px 24px", borderRadius: 999, border: "none", color: "#fff",
+          background: C.cta, fontWeight: 800, fontSize: 17, fontFamily: "inherit", cursor: status === "loading" ? "wait" : "pointer",
+          opacity: status === "loading" ? 0.7 : 1, boxShadow: C.ctaShadow,
+        }}>
+          {status === "loading" ? T.sending : <>{T.submit} &nbsp;→</>}
+        </button>
       </form>
-
-      <div style={{ marginTop: 24, textAlign: "center" }}>
-        <p style={{ color: "#1a1a4e", fontSize: 13, marginBottom: 16 }}>Vous préférez WhatsApp ? Contactez-nous directement :</p>
-        <a href={WA_REFER_URL} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#25D366", color: "#fff", fontWeight: 700, padding: "14px 32px", borderRadius: 12, fontSize: 14, textDecoration: "none" }}>
-          Parrainer via WhatsApp
-        </a>
-      </div>
     </div>
   );
 }
