@@ -3,7 +3,7 @@ import { useState } from "react";
 
 // Referral form — same design and flow as iptvmapletv.com/refer-a-friend/.
 // Sent through the same EmailJS service/template/key as this site's order forms.
-const EMAILJS = { service: "service_wqw39vi", template: "template_3jpw5qp", publicKey: "KfpszCeX5M5itfdsO" };
+const EMAILJS = { service: "service_0e3cugb", template: "template_cuf7svm", publicKey: "XgOQHE8VNnCyBYP1z" };
 const SITE_NAME = "Stream Bleu";
 const WA_URL = "/discuter/wa?msg=Bonjour%20Stream%20Bleu%2C%20je%20viens%20d%27envoyer%20un%20parrainage.";
 const T = {

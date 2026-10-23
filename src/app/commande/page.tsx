@@ -34,7 +34,7 @@ function OrderContent() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    emailjs.init("KfpszCeX5M5itfdsO");
+    emailjs.init("XgOQHE8VNnCyBYP1z");
   }, []);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
@@ -45,7 +45,7 @@ function OrderContent() {
     e.preventDefault();
     setLoading(true);
     try {
-      await emailjs.send("service_wqw39vi", "template_3jpw5qp", {
+      await emailjs.send("service_0e3cugb", "template_cuf7svm", {
         plan:      `${duration} — ${appareils} appareil${Number(appareils) > 1 ? "s" : ""} — ${price}€`,
         full_name: form.name,
         email:     form.email,
