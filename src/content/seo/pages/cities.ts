@@ -1,3 +1,5 @@
+// Region hubs and big-city pages. Generated content, edited by hand afterwards is fine.
+// The 51 small-city pages were consolidated into their region hub (301 in public/_redirects).
 import type { SeoPageData } from "../types";
 
 export const CITY_PAGES: SeoPageData[] = [
@@ -5,2924 +7,3311 @@ export const CITY_PAGES: SeoPageData[] = [
     slug: "/iptv-villes-france",
     group: "hubs",
     navLabel: "IPTV par ville en France",
-    cardText: "Toutes les régions et villes de France desservies par Stream Bleu.",
-    title: "IPTV par Ville en France 2026 | Stream Bleu",
-    description: "Stream Bleu dessert 68 villes dans les 13 régions de France métropolitaine et en Corse. Trouvez votre ville, 50 000+ chaînes en 4K, essai gratuit 24h.",
-    keywords: ["iptv france ville", "iptv par ville", "iptv ville de france", "abonnement iptv toutes les villes"],
+    cardText: "Régions et grandes villes : conseils réseau et tarifs.",
+    title: "IPTV par ville et région en France 2026 | Stream Bleu",
+    description: "IPTV partout en France : 13 régions et 17 grandes villes avec des conseils réseau et Wi-Fi adaptés. Mêmes tarifs dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv france ville", "iptv par ville", "iptv ville de france", "iptv region"],
     badge: "IPTV · Toute la France",
-    h1: "IPTV par ville en France : trouvez votre région",
-    intro: "**Stream Bleu est disponible dans 68 villes**, réparties dans les 13 régions de France métropolitaine et en Corse. L'abonnement, le catalogue de chaînes et le prix sont identiques partout : choisissez votre région ci-dessous pour voir toutes les villes desservies.",
+    h1: "IPTV par ville et par région en France",
+    intro: "**L'IPTV Stream Bleu fonctionne partout en France** où une connexion internet stable est disponible, en ville comme à la campagne. Le prix et le catalogue sont identiques partout ; ce qui change d'une région à l'autre, c'est le réseau (fibre, ADSL, 4G) et l'habitat, qui conditionnent la qualité d'image. Choisissez votre région ou votre ville pour des conseils adaptés.",
     sections: [
       {
         id: "regions",
         h2: "Choisissez votre région",
         blocks: [
-          { type: "hub", group: "regions" },
+          {
+            type: "hub",
+            group: "regions",
+          },
+        ],
+      },
+      {
+        id: "villes",
+        h2: "Les grandes villes",
+        blocks: [
+          {
+            type: "hub",
+            group: "cities",
+          },
+        ],
+      },
+      {
+        id: "debit",
+        h2: "Quel débit selon votre connexion ?",
+        blocks: [
+          {
+            type: "table",
+            head: ["Connexion", "Débit stable", "Qualité conseillée"],
+            rows: [
+              ["Fibre", "100 Mbps et plus", "4K sur plusieurs écrans"],
+              ["VDSL / bonne ADSL", "15 à 50 Mbps", "HD, 4K sur un écran"],
+              ["ADSL faible / 4G", "5 à 15 Mbps", "SD ou HD"],
+            ],
+            caption: "Repères : environ 10 Mbps par flux HD et 25 Mbps par flux 4K.",
+          },
+          {
+            type: "p",
+            text: "Mesurez votre débit le soir, au moment où vous regardez la TV, et reliez la TV à la box en Ethernet si possible : notre guide [Wi-Fi ou Ethernet pour l'IPTV](/blog/iptv-wifi-ou-ethernet) détaille chaque option.",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la France ?", a: "Oui. Stream Bleu dessert 68 villes réparties dans les 13 régions de France métropolitaine ainsi qu'en Corse, avec le même abonnement et le même catalogue partout." },
-      { q: "Le prix change-t-il selon la ville ou la région ?", a: "Non, les tarifs Stream Bleu sont identiques dans toute la France : à partir de 9€ pour 1 mois, sans majoration selon la ville, le département ou la région." },
-      { q: "Ma ville n'apparaît pas dans la liste, Stream Bleu fonctionne-t-il quand même ?", a: "Oui. L'abonnement IPTV Stream Bleu fonctionne partout en France dès qu'une connexion internet est disponible, même dans les villes qui n'ont pas encore leur propre page dédiée." },
+      {
+        q: "Stream Bleu est-il disponible dans toute la France ?",
+        a: "Oui, partout où vous avez une connexion internet stable, y compris dans les communes qui n'ont pas de page dédiée.",
+      },
+      {
+        q: "Le prix change-t-il selon la ville ou la région ?",
+        a: "Non : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), partout en France.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle sans la fibre ?",
+        a: "Oui. En ADSL ou en 4G, la HD fonctionne avec environ 10 Mbps stables ; la 4K demande environ 25 Mbps.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france", "/prix-iptv"],
+    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/blog/iptv-wifi-ou-ethernet", "/prix-iptv"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-ile-de-france",
     group: "regions",
     navLabel: "Île-de-France",
-    cardText: "IPTV dans les 7 villes de la région Île-de-France.",
-    title: "IPTV en Île-de-France — Abonnement & Essai Gratuit",
-    description: "Abonnement IPTV disponible dans toute la région Île-de-France : 7 villes desservies, 50 000+ chaînes en 4K Ultra HD, sans coupure. Essai gratuit 24h.",
-    keywords: ["iptv ile de france", "abonnement iptv ile de france", "iptv argenteuil", "iptv boulogne billancourt", "iptv montreuil", "iptv nanterre", "iptv paris", "iptv saint denis", "iptv versailles"],
+    cardText: "IPTV en Île-de-France : villes, réseau et tarifs.",
+    title: "IPTV Île-de-France 2026 : Paris et sa banlieue | Stream Bleu",
+    description: "IPTV en Île-de-France : Paris, Hauts-de-Seine, Seine-Saint-Denis, Yvelines, Val-d'Oise. Conseils Wi-Fi en appartement, tarifs dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv île-de-france", "abonnement iptv île-de-france", "iptv boulogne-billancourt", "iptv nanterre", "iptv saint-denis", "iptv montreuil", "iptv versailles", "iptv argenteuil"],
     badge: "IPTV · Île-de-France",
-    h1: "IPTV en Île-de-France : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Île-de-France** : 7 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Île-de-France.",
+    h1: "IPTV en Île-de-France : villes, réseau et abonnement",
+    intro: "L'**IPTV en Île-de-France** fonctionne avec n'importe quelle box fibre ou ADSL de la région, de Paris intra-muros aux villes de la petite et de la grande couronne. Un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, ordinateur ou mobile, au même prix partout : 9 € pour 1 mois, 49 € pour 12 mois.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Île-de-France",
+        h2: "Les villes d'Île-de-France",
         blocks: [
-          { type: "cards", items: [{ title: "Argenteuil", text: "IPTV à Argenteuil, chaînes en direct et 4K Ultra HD.", href: "/iptv-argenteuil" }, { title: "Boulogne-Billancourt", text: "IPTV à Boulogne-Billancourt, chaînes en direct et 4K Ultra HD.", href: "/iptv-boulogne-billancourt" }, { title: "Montreuil", text: "IPTV à Montreuil, chaînes en direct et 4K Ultra HD.", href: "/iptv-montreuil" }, { title: "Nanterre", text: "IPTV à Nanterre, chaînes en direct et 4K Ultra HD.", href: "/iptv-nanterre" }, { title: "Paris", text: "IPTV à Paris, chaînes en direct et 4K Ultra HD.", href: "/iptv-paris" }, { title: "Saint-Denis", text: "IPTV à Saint-Denis, chaînes en direct et 4K Ultra HD.", href: "/iptv-saint-denis" }, { title: "Versailles", text: "IPTV à Versailles, chaînes en direct et 4K Ultra HD.", href: "/iptv-versailles" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "ile-de-france",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Boulogne-Billancourt", "Hauts-de-Seine, 92", "Même abonnement, mêmes tarifs"],
+              ["Nanterre", "Hauts-de-Seine, 92", "Même abonnement, mêmes tarifs"],
+              ["Saint-Denis", "Seine-Saint-Denis, 93", "Même abonnement, mêmes tarifs"],
+              ["Montreuil", "Seine-Saint-Denis, 93", "Même abonnement, mêmes tarifs"],
+              ["Versailles", "Yvelines, 78", "Même abonnement, mêmes tarifs"],
+              ["Argenteuil", "Val-d'Oise, 95", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Île-de-France",
+        blocks: [
+          {
+            type: "p",
+            text: "L'Île-de-France est la région la plus dense de France, et c'est ce qui conditionne le plus la qualité de l'IPTV : dans un immeuble parisien ou de proche banlieue, votre box partage les canaux Wi-Fi avec des dizaines de réseaux voisins. Le symptôme typique est une image qui se fige le soir, alors que le débit de la fibre est largement suffisant.",
+          },
+          {
+            type: "p",
+            text: "Trois réglages règlent la plupart des cas : connecter la TV ou le boîtier à la box par un **câble Ethernet**, sinon forcer la bande **5 GHz** (moins encombrée que le 2,4 GHz), ou utiliser des adaptateurs CPL quand la box est loin du salon. Notre guide [Wi-Fi ou Ethernet pour l'IPTV](/blog/iptv-wifi-ou-ethernet) détaille chaque option.",
+          },
+          {
+            type: "p",
+            text: "Pour les trajets en RER, métro ou Transilien, l'application sur smartphone fonctionne en 4G/5G, mais un flux HD consomme plusieurs gigaoctets par heure : vérifiez votre forfait mobile ou passez en qualité SD dans le lecteur.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Île-de-France",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Île-de-France ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Île-de-France, y compris Argenteuil, Boulogne-Billancourt, Montreuil, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Île-de-France ?", a: "Stream Bleu est un choix très demandé dans la région Île-de-France : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Île-de-France ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Île-de-France." },
-      { q: "L'IPTV est-il légal dans la région Île-de-France ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Boulogne-Billancourt, Nanterre, Saint-Denis, Montreuil, Versailles, Argenteuil ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes d'Île-de-France dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Faut-il la fibre pour l'IPTV en Île-de-France ?",
+        a: "Non, mais elle aide. Une connexion stable de 25 Mbps suffit pour la 4K et 10 Mbps pour la HD. La fibre est très présente dans la région ; si vous êtes encore en ADSL, choisissez la qualité HD dans votre lecteur.",
+      },
+      {
+        q: "Mon image se fige le soir à Paris, pourquoi ?",
+        a: "Dans les immeubles denses, le Wi-Fi 2,4 GHz est saturé par les réseaux voisins aux heures de pointe. Passez en 5 GHz ou en Ethernet : c'est la cause la plus fréquente des coupures en appartement.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Argenteuil", url: "https://streambleu.fr/iptv-argenteuil" },
-      { name: "Boulogne-Billancourt", url: "https://streambleu.fr/iptv-boulogne-billancourt" },
-      { name: "Montreuil", url: "https://streambleu.fr/iptv-montreuil" },
-      { name: "Nanterre", url: "https://streambleu.fr/iptv-nanterre" },
-      { name: "Paris", url: "https://streambleu.fr/iptv-paris" },
-      { name: "Saint-Denis", url: "https://streambleu.fr/iptv-saint-denis" },
-      { name: "Versailles", url: "https://streambleu.fr/iptv-versailles" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-paris", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-auvergne-rhone-alpes",
     group: "regions",
     navLabel: "Auvergne-Rhône-Alpes",
-    cardText: "IPTV dans les 7 villes de la région Auvergne-Rhône-Alpes.",
-    title: "IPTV Auvergne-Rhône-Alpes 2026 | Stream Bleu",
-    description: "Abonnement IPTV disponible dans toute la région Auvergne-Rhône-Alpes : 7 villes desservies, 50 000+ chaînes en 4K Ultra HD, sans coupure. Essai gratuit 24h.",
-    keywords: ["iptv auvergne rhone alpes", "abonnement iptv auvergne rhone alpes", "iptv annecy", "iptv chambery", "iptv clermont ferrand", "iptv grenoble", "iptv lyon", "iptv saint etienne", "iptv valence"],
+    cardText: "IPTV en Auvergne-Rhône-Alpes : villes, réseau et tarifs.",
+    title: "IPTV Auvergne-Rhône-Alpes 2026 : Lyon, Grenoble | Stream Bleu",
+    description: "IPTV en Auvergne-Rhône-Alpes : Lyon, Grenoble, Saint-Étienne, Clermont-Ferrand, Annecy. Conseils pour les zones de montagne, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv auvergne-rhône-alpes", "abonnement iptv auvergne-rhône-alpes", "iptv clermont-ferrand", "iptv annecy", "iptv chambéry", "iptv valence"],
     badge: "IPTV · Auvergne-Rhône-Alpes",
-    h1: "IPTV en Auvergne-Rhône-Alpes : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Auvergne-Rhône-Alpes** : 7 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Auvergne-Rhône-Alpes.",
+    h1: "IPTV en Auvergne-Rhône-Alpes : villes, réseau et abonnement",
+    intro: "L'**IPTV en Auvergne-Rhône-Alpes** s'utilise aussi bien dans la métropole de Lyon que dans les vallées alpines ou en Auvergne : il suffit d'une connexion internet stable. Stream Bleu fonctionne avec toutes les box des opérateurs et sur la plupart des appareils (Smart TV, Fire TV Stick, Android TV, PC, mobile), au même tarif que dans le reste de la France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Auvergne-Rhône-Alpes",
+        h2: "Les villes d'Auvergne-Rhône-Alpes",
         blocks: [
-          { type: "cards", items: [{ title: "Annecy", text: "IPTV à Annecy, chaînes en direct et 4K Ultra HD.", href: "/iptv-annecy" }, { title: "Chambéry", text: "IPTV à Chambéry, chaînes en direct et 4K Ultra HD.", href: "/iptv-chambery" }, { title: "Clermont-Ferrand", text: "IPTV à Clermont-Ferrand, chaînes en direct et 4K Ultra HD.", href: "/iptv-clermont-ferrand" }, { title: "Grenoble", text: "IPTV à Grenoble, chaînes en direct et 4K Ultra HD.", href: "/iptv-grenoble" }, { title: "Lyon", text: "IPTV à Lyon, chaînes en direct et 4K Ultra HD.", href: "/iptv-lyon" }, { title: "Saint-Étienne", text: "IPTV à Saint-Étienne, chaînes en direct et 4K Ultra HD.", href: "/iptv-saint-etienne" }, { title: "Valence", text: "IPTV à Valence, chaînes en direct et 4K Ultra HD.", href: "/iptv-valence" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "auvergne-rhone-alpes",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Clermont-Ferrand", "Puy-de-Dôme, 63", "Même abonnement, mêmes tarifs"],
+              ["Annecy", "Haute-Savoie, 74", "Même abonnement, mêmes tarifs"],
+              ["Chambéry", "Savoie, 73", "Même abonnement, mêmes tarifs"],
+              ["Valence", "Drôme, 26", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Auvergne-Rhône-Alpes",
+        blocks: [
+          {
+            type: "p",
+            text: "La région combine de grandes agglomérations bien fibrées (Lyon, Grenoble, Saint-Étienne, Clermont-Ferrand) et des zones de montagne où la fibre arrive plus tard. Dans un village de vallée ou une station de ski, votre débit peut rester celui d'une ligne ADSL ou d'une box 4G/5G.",
+          },
+          {
+            type: "p",
+            text: "Avec moins de 15 Mbps, réglez le lecteur en qualité HD plutôt qu'en 4K et préférez TiviMate ou IPTV Smarters Pro, qui permettent d'augmenter la mémoire tampon. Une box 4G/5G posée près d'une fenêtre donne souvent un meilleur résultat qu'une vieille ligne cuivre. Pour connaître votre éligibilité à la fibre, l'Arcep publie une carte officielle de déploiement.",
+          },
+          {
+            type: "p",
+            text: "Dans les chalets et résidences secondaires, emportez un appareil déjà configuré (Fire TV Stick ou box Android) : vous n'avez qu'à le brancher sur la TV et au Wi-Fi du logement.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Auvergne-Rhône-Alpes",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Auvergne-Rhône-Alpes ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Auvergne-Rhône-Alpes, y compris Annecy, Chambéry, Clermont-Ferrand, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Auvergne-Rhône-Alpes ?", a: "Stream Bleu est un choix très demandé dans la région Auvergne-Rhône-Alpes : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Auvergne-Rhône-Alpes ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Auvergne-Rhône-Alpes." },
-      { q: "L'IPTV est-il légal dans la région Auvergne-Rhône-Alpes ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Clermont-Ferrand, Annecy, Chambéry, Valence ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes d'Auvergne-Rhône-Alpes dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle en station de ski ou en montagne ?",
+        a: "Oui, si la connexion du logement est stable. Avec une ligne ADSL ou une box 4G, choisissez la qualité HD et augmentez la mémoire tampon du lecteur pour éviter les coupures.",
+      },
+      {
+        q: "Quel débit faut-il à Lyon ou Grenoble pour la 4K ?",
+        a: "Environ 25 Mbps stables par écran en 4K, 10 Mbps en HD. La plupart des offres fibre de ces agglomérations le permettent, même pour plusieurs écrans en même temps.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Annecy", url: "https://streambleu.fr/iptv-annecy" },
-      { name: "Chambéry", url: "https://streambleu.fr/iptv-chambery" },
-      { name: "Clermont-Ferrand", url: "https://streambleu.fr/iptv-clermont-ferrand" },
-      { name: "Grenoble", url: "https://streambleu.fr/iptv-grenoble" },
-      { name: "Lyon", url: "https://streambleu.fr/iptv-lyon" },
-      { name: "Saint-Étienne", url: "https://streambleu.fr/iptv-saint-etienne" },
-      { name: "Valence", url: "https://streambleu.fr/iptv-valence" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-lyon", "/iptv-grenoble", "/iptv-saint-etienne", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-nouvelle-aquitaine",
     group: "regions",
     navLabel: "Nouvelle-Aquitaine",
-    cardText: "IPTV dans les 5 villes de la région Nouvelle-Aquitaine.",
-    title: "IPTV Nouvelle-Aquitaine 2026 | Stream Bleu",
-    description: "Abonnement IPTV disponible dans toute la région Nouvelle-Aquitaine : 5 villes desservies, 50 000+ chaînes en 4K Ultra HD, sans coupure. Essai gratuit 24h.",
-    keywords: ["iptv nouvelle aquitaine", "abonnement iptv nouvelle aquitaine", "iptv bordeaux", "iptv la rochelle", "iptv limoges", "iptv pau", "iptv poitiers"],
+    cardText: "IPTV en Nouvelle-Aquitaine : villes, réseau et tarifs.",
+    title: "IPTV Nouvelle-Aquitaine 2026 : Bordeaux, Limoges | Stream Bleu",
+    description: "IPTV en Nouvelle-Aquitaine : Bordeaux, Limoges, Poitiers, Pau, La Rochelle. Conseils pour les zones rurales et l'ADSL, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv nouvelle-aquitaine", "abonnement iptv nouvelle-aquitaine", "iptv limoges", "iptv poitiers", "iptv pau", "iptv la rochelle"],
     badge: "IPTV · Nouvelle-Aquitaine",
-    h1: "IPTV en Nouvelle-Aquitaine : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Nouvelle-Aquitaine** : 5 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Nouvelle-Aquitaine.",
+    h1: "IPTV en Nouvelle-Aquitaine : villes, réseau et abonnement",
+    intro: "L'**IPTV en Nouvelle-Aquitaine** est accessible partout où vous avez internet, de la métropole bordelaise au Limousin et au Pays basque. Stream Bleu fonctionne sur Smart TV, Fire TV Stick, box Android, ordinateur et mobile, avec les mêmes chaînes et le même prix que dans le reste du pays.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Nouvelle-Aquitaine",
+        h2: "Les villes de Nouvelle-Aquitaine",
         blocks: [
-          { type: "cards", items: [{ title: "Bordeaux", text: "IPTV à Bordeaux, chaînes en direct et 4K Ultra HD.", href: "/iptv-bordeaux" }, { title: "La Rochelle", text: "IPTV à La Rochelle, chaînes en direct et 4K Ultra HD.", href: "/iptv-la-rochelle" }, { title: "Limoges", text: "IPTV à Limoges, chaînes en direct et 4K Ultra HD.", href: "/iptv-limoges" }, { title: "Pau", text: "IPTV à Pau, chaînes en direct et 4K Ultra HD.", href: "/iptv-pau" }, { title: "Poitiers", text: "IPTV à Poitiers, chaînes en direct et 4K Ultra HD.", href: "/iptv-poitiers" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "nouvelle-aquitaine",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Limoges", "Haute-Vienne, 87", "Même abonnement, mêmes tarifs"],
+              ["Poitiers", "Vienne, 86", "Même abonnement, mêmes tarifs"],
+              ["Pau", "Pyrénées-Atlantiques, 64", "Même abonnement, mêmes tarifs"],
+              ["La Rochelle", "Charente-Maritime, 17", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Nouvelle-Aquitaine",
+        blocks: [
+          {
+            type: "p",
+            text: "C'est la plus grande région de France par la superficie, avec de vastes zones rurales (Landes, Creuse, Corrèze, Dordogne) où certains foyers sont encore en ADSL ou en box 4G. L'IPTV y fonctionne, à condition d'adapter la qualité au débit réel.",
+          },
+          {
+            type: "p",
+            text: "Mesurez votre débit le soir, au moment où vous regardez la TV : en dessous de 8 Mbps, restez en qualité SD/HD ; entre 10 et 25 Mbps, la HD est confortable ; au-delà, la 4K devient possible. Un câble Ethernet entre la box et la TV évite de perdre une partie de ce débit en Wi-Fi.",
+          },
+          {
+            type: "p",
+            text: "Sur la côte atlantique (Arcachon, Royan, Biarritz), beaucoup de logements sont des résidences secondaires : un Fire TV Stick configuré chez vous se branche en deux minutes sur la TV de la location.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Nouvelle-Aquitaine",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Nouvelle-Aquitaine ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Nouvelle-Aquitaine, y compris Bordeaux, La Rochelle, Limoges, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Nouvelle-Aquitaine ?", a: "Stream Bleu est un choix très demandé dans la région Nouvelle-Aquitaine : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Nouvelle-Aquitaine ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Nouvelle-Aquitaine." },
-      { q: "L'IPTV est-il légal dans la région Nouvelle-Aquitaine ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Limoges, Poitiers, Pau, La Rochelle ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes de Nouvelle-Aquitaine dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle en ADSL à la campagne ?",
+        a: "Oui, en qualité adaptée. Avec 8 à 10 Mbps stables, la HD est regardable ; la 4K demande environ 25 Mbps. Branchez la TV en Ethernet pour garder tout le débit disponible.",
+      },
+      {
+        q: "Peut-on utiliser son abonnement dans une location de vacances ?",
+        a: "L'abonnement fonctionne sur n'importe quelle connexion internet. Respectez simplement le nombre d'écrans simultanés de votre forfait.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Bordeaux", url: "https://streambleu.fr/iptv-bordeaux" },
-      { name: "La Rochelle", url: "https://streambleu.fr/iptv-la-rochelle" },
-      { name: "Limoges", url: "https://streambleu.fr/iptv-limoges" },
-      { name: "Pau", url: "https://streambleu.fr/iptv-pau" },
-      { name: "Poitiers", url: "https://streambleu.fr/iptv-poitiers" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-bordeaux", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-occitanie",
     group: "regions",
     navLabel: "Occitanie",
-    cardText: "IPTV dans les 4 villes de la région Occitanie.",
-    title: "IPTV en Occitanie — Abonnement & Essai Gratuit",
-    description: "IPTV en Occitanie : Stream Bleu dessert Montpellier, Nîmes, Perpignan, Toulouse et 4 villes de la région. 50 000+ chaînes en 4K, essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv occitanie", "abonnement iptv occitanie", "iptv montpellier", "iptv nimes", "iptv perpignan", "iptv toulouse"],
+    cardText: "IPTV en Occitanie : villes, réseau et tarifs.",
+    title: "IPTV Occitanie 2026 : Toulouse, Montpellier | Stream Bleu",
+    description: "IPTV en Occitanie : Toulouse, Montpellier, Nîmes, Perpignan. Forfaits multi-écrans pour colocations, conseils réseau, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv occitanie", "abonnement iptv occitanie", "iptv nîmes", "iptv perpignan"],
     badge: "IPTV · Occitanie",
-    h1: "IPTV en Occitanie : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Occitanie** : 4 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Occitanie.",
+    h1: "IPTV en Occitanie : villes, réseau et abonnement",
+    intro: "L'**IPTV en Occitanie** fonctionne de Toulouse à Montpellier, de Nîmes à Perpignan, et jusque dans les Pyrénées et les Cévennes, dès qu'une connexion internet stable est disponible. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, au même tarif que partout en France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Occitanie",
+        h2: "Les villes d'Occitanie",
         blocks: [
-          { type: "cards", items: [{ title: "Montpellier", text: "IPTV à Montpellier, chaînes en direct et 4K Ultra HD.", href: "/iptv-montpellier" }, { title: "Nîmes", text: "IPTV à Nîmes, chaînes en direct et 4K Ultra HD.", href: "/iptv-nimes" }, { title: "Perpignan", text: "IPTV à Perpignan, chaînes en direct et 4K Ultra HD.", href: "/iptv-perpignan" }, { title: "Toulouse", text: "IPTV à Toulouse, chaînes en direct et 4K Ultra HD.", href: "/iptv-toulouse" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "occitanie",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Nîmes", "Gard, 30", "Même abonnement, mêmes tarifs"],
+              ["Perpignan", "Pyrénées-Orientales, 66", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Occitanie",
+        blocks: [
+          {
+            type: "p",
+            text: "Toulouse et Montpellier comptent parmi les plus grandes villes étudiantes de France, et beaucoup d'abonnés y vivent en colocation. Dans ce cas, le bon calcul se fait en écrans simultanés : un forfait **2 écrans** (18 € pour 1 mois, 89 € pour 12 mois) permet à deux personnes de regarder des chaînes différentes en même temps, sans partager d'identifiants avec des inconnus.",
+          },
+          {
+            type: "p",
+            text: "Dans l'arrière-pays (Pyrénées, Aveyron, Lozère, Cévennes), la couverture fibre est plus irrégulière : réglez le lecteur en HD si votre débit du soir passe sous 15 Mbps.",
+          },
+          {
+            type: "p",
+            text: "L'été, la chaleur fait parfois chauffer les petits boîtiers Android posés derrière la TV : un appareil qui surchauffe ralentit et provoque des saccades. Laissez-le ventilé, ou préférez l'application intégrée à la Smart TV.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Occitanie",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Occitanie ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Occitanie, y compris Montpellier, Nîmes, Perpignan, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Occitanie ?", a: "Stream Bleu est un choix très demandé dans la région Occitanie : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Occitanie ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Occitanie." },
-      { q: "L'IPTV est-il légal dans la région Occitanie ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Nîmes, Perpignan ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes d'Occitanie dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Quel forfait choisir en colocation à Toulouse ou Montpellier ?",
+        a: "Comptez le nombre d'écrans qui regardent en même temps. Pour deux colocataires, le forfait 2 écrans coûte 18 € pour 1 mois ou 89 € pour 12 mois.",
+      },
+      {
+        q: "Pourquoi mon boîtier IPTV saccade en été ?",
+        a: "Les petits boîtiers Android chauffent facilement. Un appareil trop chaud réduit ses performances : laissez-le à l'air libre, loin de la TV, ou utilisez l'application de la Smart TV.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Montpellier", url: "https://streambleu.fr/iptv-montpellier" },
-      { name: "Nîmes", url: "https://streambleu.fr/iptv-nimes" },
-      { name: "Perpignan", url: "https://streambleu.fr/iptv-perpignan" },
-      { name: "Toulouse", url: "https://streambleu.fr/iptv-toulouse" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-toulouse", "/iptv-montpellier", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-paca",
     group: "regions",
     navLabel: "Provence-Alpes-Côte d'Azur",
-    cardText: "IPTV dans les 7 villes de la région Provence-Alpes-Côte d'Azur.",
-    title: "IPTV Provence-Alpes-Côte d'Azur 2026 | Stream Bleu",
-    description: "Abonnement IPTV dans toute la région Provence-Alpes-Côte d'Azur : Marseille, Nice, Toulon et 4 autres villes, 50 000+ chaînes en 4K. Essai gratuit 24h.",
-    keywords: ["iptv provence alpes cote d azur", "abonnement iptv provence alpes cote d azur", "iptv aix en provence", "iptv antibes", "iptv avignon", "iptv cannes", "iptv marseille", "iptv nice", "iptv toulon"],
+    cardText: "IPTV en Provence-Alpes-Côte d'Azur : villes, réseau et tarifs.",
+    title: "IPTV PACA 2026 : Marseille, Nice, Toulon | Stream Bleu",
+    description: "IPTV en Provence-Alpes-Côte d'Azur : Marseille, Nice, Toulon, Aix, Avignon, Cannes. Conseils résidences secondaires, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv provence-alpes-côte d'azur", "abonnement iptv provence-alpes-côte d'azur", "iptv aix-en-provence", "iptv avignon", "iptv cannes", "iptv antibes"],
     badge: "IPTV · Provence-Alpes-Côte d'Azur",
-    h1: "IPTV en Provence-Alpes-Côte d'Azur : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Provence-Alpes-Côte d'Azur** : 7 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Provence-Alpes-Côte d'Azur.",
+    h1: "IPTV en Provence-Alpes-Côte d'Azur : villes, réseau et abonnement",
+    intro: "L'**IPTV en Provence-Alpes-Côte d'Azur** fonctionne de Marseille à Nice, d'Avignon à Toulon, dès qu'une connexion internet stable est disponible. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, ordinateur ou mobile, avec le même catalogue et les mêmes tarifs que dans toute la France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Provence-Alpes-Côte d'Azur",
+        h2: "Les villes de Provence-Alpes-Côte d'Azur",
         blocks: [
-          { type: "cards", items: [{ title: "Aix-en-Provence", text: "IPTV à Aix-en-Provence, chaînes en direct et 4K Ultra HD.", href: "/iptv-aix-en-provence" }, { title: "Antibes", text: "IPTV à Antibes, chaînes en direct et 4K Ultra HD.", href: "/iptv-antibes" }, { title: "Avignon", text: "IPTV à Avignon, chaînes en direct et 4K Ultra HD.", href: "/iptv-avignon" }, { title: "Cannes", text: "IPTV à Cannes, chaînes en direct et 4K Ultra HD.", href: "/iptv-cannes" }, { title: "Marseille", text: "IPTV à Marseille, chaînes en direct et 4K Ultra HD.", href: "/iptv-marseille" }, { title: "Nice", text: "IPTV à Nice, chaînes en direct et 4K Ultra HD.", href: "/iptv-nice" }, { title: "Toulon", text: "IPTV à Toulon, chaînes en direct et 4K Ultra HD.", href: "/iptv-toulon" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "paca",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Aix-en-Provence", "Bouches-du-Rhône, 13", "Même abonnement, mêmes tarifs"],
+              ["Avignon", "Vaucluse, 84", "Même abonnement, mêmes tarifs"],
+              ["Cannes", "Alpes-Maritimes, 06", "Même abonnement, mêmes tarifs"],
+              ["Antibes", "Alpes-Maritimes, 06", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Provence-Alpes-Côte d'Azur",
+        blocks: [
+          {
+            type: "p",
+            text: "La région compte beaucoup de résidences secondaires et de locations saisonnières sur le littoral. Plutôt que de reconfigurer une application sur chaque téléviseur, beaucoup d'abonnés emportent un Fire TV Stick ou une box Android déjà paramétré : il suffit de le brancher en HDMI et de le connecter au Wi-Fi du logement.",
+          },
+          {
+            type: "p",
+            text: "Attention au nombre d'écrans : si la TV de la maison de vacances et celle de la résidence principale tournent en même temps, il faut un forfait 2 écrans. Le prix ne dépend que de la durée et du nombre d'écrans, jamais de la ville.",
+          },
+          {
+            type: "p",
+            text: "Dans l'arrière-pays alpin et le haut Var, le débit peut être plus faible qu'en ville : réglez le lecteur en HD si votre connexion descend sous 15 Mbps le soir.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Provence-Alpes-Côte d'Azur",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Provence-Alpes-Côte d'Azur ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Provence-Alpes-Côte d'Azur, y compris Aix-en-Provence, Antibes, Avignon, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Provence-Alpes-Côte d'Azur ?", a: "Stream Bleu est un choix très demandé dans la région Provence-Alpes-Côte d'Azur : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Provence-Alpes-Côte d'Azur ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Provence-Alpes-Côte d'Azur." },
-      { q: "L'IPTV est-il légal dans la région Provence-Alpes-Côte d'Azur ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Aix-en-Provence, Avignon, Cannes, Antibes ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes de Provence-Alpes-Côte d'Azur dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Puis-je utiliser Stream Bleu dans ma résidence secondaire sur la Côte d'Azur ?",
+        a: "Oui, l'abonnement fonctionne sur n'importe quelle connexion internet. Si deux téléviseurs regardent en même temps, choisissez un forfait 2 écrans.",
+      },
+      {
+        q: "Le prix change-t-il à Marseille, Nice ou Toulon ?",
+        a: "Non. Les tarifs Stream Bleu sont identiques partout : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran).",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Aix-en-Provence", url: "https://streambleu.fr/iptv-aix-en-provence" },
-      { name: "Antibes", url: "https://streambleu.fr/iptv-antibes" },
-      { name: "Avignon", url: "https://streambleu.fr/iptv-avignon" },
-      { name: "Cannes", url: "https://streambleu.fr/iptv-cannes" },
-      { name: "Marseille", url: "https://streambleu.fr/iptv-marseille" },
-      { name: "Nice", url: "https://streambleu.fr/iptv-nice" },
-      { name: "Toulon", url: "https://streambleu.fr/iptv-toulon" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-marseille", "/iptv-nice", "/iptv-toulon", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-hauts-de-france",
     group: "regions",
     navLabel: "Hauts-de-France",
-    cardText: "IPTV dans les 7 villes de la région Hauts-de-France.",
-    title: "IPTV en Hauts-de-France — Abonnement & Essai Gratuit",
-    description: "IPTV en Hauts-de-France : Stream Bleu dessert Amiens, Calais, Dunkerque, Lille et 7 villes de la région. 50 000+ chaînes en 4K, essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv hauts de france", "abonnement iptv hauts de france", "iptv amiens", "iptv calais", "iptv dunkerque", "iptv lille", "iptv roubaix", "iptv tourcoing", "iptv villeneuve d ascq"],
+    cardText: "IPTV en Hauts-de-France : villes, réseau et tarifs.",
+    title: "IPTV Hauts-de-France 2026 : Lille et la métropole | Stream Bleu",
+    description: "IPTV en Hauts-de-France : Lille, Roubaix, Tourcoing, Amiens, Dunkerque, Calais. Conseils Wi-Fi pour maisons à étages, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv hauts-de-france", "abonnement iptv hauts-de-france", "iptv roubaix", "iptv tourcoing", "iptv villeneuve-d'ascq", "iptv dunkerque", "iptv calais", "iptv amiens"],
     badge: "IPTV · Hauts-de-France",
-    h1: "IPTV en Hauts-de-France : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Hauts-de-France** : 7 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Hauts-de-France.",
+    h1: "IPTV en Hauts-de-France : villes, réseau et abonnement",
+    intro: "L'**IPTV en Hauts-de-France** fonctionne dans toute la région, de la métropole lilloise à Amiens, Dunkerque et Calais. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, avec les mêmes chaînes et les mêmes tarifs que partout en France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Hauts-de-France",
+        h2: "Les villes des Hauts-de-France",
         blocks: [
-          { type: "cards", items: [{ title: "Amiens", text: "IPTV à Amiens, chaînes en direct et 4K Ultra HD.", href: "/iptv-amiens" }, { title: "Calais", text: "IPTV à Calais, chaînes en direct et 4K Ultra HD.", href: "/iptv-calais" }, { title: "Dunkerque", text: "IPTV à Dunkerque, chaînes en direct et 4K Ultra HD.", href: "/iptv-dunkerque" }, { title: "Lille", text: "IPTV à Lille, chaînes en direct et 4K Ultra HD.", href: "/iptv-lille" }, { title: "Roubaix", text: "IPTV à Roubaix, chaînes en direct et 4K Ultra HD.", href: "/iptv-roubaix" }, { title: "Tourcoing", text: "IPTV à Tourcoing, chaînes en direct et 4K Ultra HD.", href: "/iptv-tourcoing" }, { title: "Villeneuve-d'Ascq", text: "IPTV à Villeneuve-d'Ascq, chaînes en direct et 4K Ultra HD.", href: "/iptv-villeneuve-d-ascq" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "hauts-de-france",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Roubaix", "Nord, 59", "Même abonnement, mêmes tarifs"],
+              ["Tourcoing", "Nord, 59", "Même abonnement, mêmes tarifs"],
+              ["Villeneuve-d'Ascq", "Nord, 59", "Même abonnement, mêmes tarifs"],
+              ["Dunkerque", "Nord, 59", "Même abonnement, mêmes tarifs"],
+              ["Calais", "Pas-de-Calais, 62", "Même abonnement, mêmes tarifs"],
+              ["Amiens", "Somme, 80", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Hauts-de-France",
+        blocks: [
+          {
+            type: "p",
+            text: "L'habitat typique du Nord, la maison de ville en briques sur deux ou trois niveaux, est un piège pour le Wi-Fi : la box est souvent au rez-de-chaussée et la TV de la chambre deux étages plus haut, derrière des murs épais. Résultat : un débit divisé par trois ou quatre à l'étage.",
+          },
+          {
+            type: "p",
+            text: "Pour l'IPTV, la solution la plus fiable est un kit **CPL** (le signal passe par le réseau électrique) ou un système Wi-Fi maillé avec un point d'accès par étage. Le câble Ethernet reste idéal pour la TV principale du salon.",
+          },
+          {
+            type: "p",
+            text: "La métropole de Lille est collée à la Belgique : de nombreux foyers frontaliers regardent aussi bien les chaînes françaises que belges. L'abonnement se configure de la même façon dans les deux pays.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Hauts-de-France",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Hauts-de-France ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Hauts-de-France, y compris Amiens, Calais, Dunkerque, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Hauts-de-France ?", a: "Stream Bleu est un choix très demandé dans la région Hauts-de-France : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Hauts-de-France ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Hauts-de-France." },
-      { q: "L'IPTV est-il légal dans la région Hauts-de-France ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Roubaix, Tourcoing, Villeneuve-d'Ascq, Dunkerque, Calais, Amiens ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes des Hauts-de-France dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Ma TV à l'étage coupe souvent, que faire ?",
+        a: "Dans une maison à étages, le Wi-Fi traverse mal les planchers et les murs en briques. Un kit CPL ou un Wi-Fi maillé règle le problème dans la grande majorité des cas.",
+      },
+      {
+        q: "L'abonnement fonctionne-t-il aussi en Belgique ?",
+        a: "L'abonnement se configure de la même manière en France et en Belgique, avec les mêmes applications. Le prix reste celui de la grille officielle en euros.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Amiens", url: "https://streambleu.fr/iptv-amiens" },
-      { name: "Calais", url: "https://streambleu.fr/iptv-calais" },
-      { name: "Dunkerque", url: "https://streambleu.fr/iptv-dunkerque" },
-      { name: "Lille", url: "https://streambleu.fr/iptv-lille" },
-      { name: "Roubaix", url: "https://streambleu.fr/iptv-roubaix" },
-      { name: "Tourcoing", url: "https://streambleu.fr/iptv-tourcoing" },
-      { name: "Villeneuve-d'Ascq", url: "https://streambleu.fr/iptv-villeneuve-d-ascq" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-lille", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-grand-est",
     group: "regions",
     navLabel: "Grand Est",
-    cardText: "IPTV dans les 7 villes de la région Grand Est.",
-    title: "IPTV en Grand Est — Abonnement & Essai Gratuit",
-    description: "IPTV en Grand Est : Stream Bleu dessert Colmar, Metz, Mulhouse, Nancy et 7 villes de la région. 50 000+ chaînes en 4K, essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv grand est", "abonnement iptv grand est", "iptv colmar", "iptv metz", "iptv mulhouse", "iptv nancy", "iptv reims", "iptv strasbourg", "iptv troyes"],
+    cardText: "IPTV dans le Grand Est : villes, réseau et tarifs.",
+    title: "IPTV Grand Est 2026 : Strasbourg, Reims, Metz | Stream Bleu",
+    description: "IPTV dans le Grand Est : Strasbourg, Reims, Metz, Nancy, Mulhouse, Colmar, Troyes. Infos frontaliers, tarifs dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv grand est", "abonnement iptv grand est", "iptv metz", "iptv nancy", "iptv mulhouse", "iptv colmar", "iptv troyes"],
     badge: "IPTV · Grand Est",
-    h1: "IPTV en Grand Est : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Grand Est** : 7 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Grand Est.",
+    h1: "IPTV dans le Grand Est : villes, réseau et abonnement",
+    intro: "L'**IPTV dans le Grand Est** fonctionne de Strasbourg à Reims, de Metz à Mulhouse, dans toutes les villes et communes connectées à internet. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, avec les mêmes chaînes et les mêmes prix que dans le reste du pays.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Grand Est",
+        h2: "Les villes du Grand Est",
         blocks: [
-          { type: "cards", items: [{ title: "Colmar", text: "IPTV à Colmar, chaînes en direct et 4K Ultra HD.", href: "/iptv-colmar" }, { title: "Metz", text: "IPTV à Metz, chaînes en direct et 4K Ultra HD.", href: "/iptv-metz" }, { title: "Mulhouse", text: "IPTV à Mulhouse, chaînes en direct et 4K Ultra HD.", href: "/iptv-mulhouse" }, { title: "Nancy", text: "IPTV à Nancy, chaînes en direct et 4K Ultra HD.", href: "/iptv-nancy" }, { title: "Reims", text: "IPTV à Reims, chaînes en direct et 4K Ultra HD.", href: "/iptv-reims" }, { title: "Strasbourg", text: "IPTV à Strasbourg, chaînes en direct et 4K Ultra HD.", href: "/iptv-strasbourg" }, { title: "Troyes", text: "IPTV à Troyes, chaînes en direct et 4K Ultra HD.", href: "/iptv-troyes" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "grand-est",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Metz", "Moselle, 57", "Même abonnement, mêmes tarifs"],
+              ["Nancy", "Meurthe-et-Moselle, 54", "Même abonnement, mêmes tarifs"],
+              ["Mulhouse", "Haut-Rhin, 68", "Même abonnement, mêmes tarifs"],
+              ["Colmar", "Haut-Rhin, 68", "Même abonnement, mêmes tarifs"],
+              ["Troyes", "Aube, 10", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image dans le Grand Est",
+        blocks: [
+          {
+            type: "p",
+            text: "Le Grand Est est la seule région française frontalière de quatre pays : Belgique, Luxembourg, Allemagne et Suisse. Beaucoup de foyers y sont bilingues ou travaillent de l'autre côté de la frontière, et recherchent des chaînes de plusieurs pays dans un même abonnement.",
+          },
+          {
+            type: "p",
+            text: "Si vous vivez en France et travaillez au Luxembourg, en Allemagne ou en Suisse, l'application sur smartphone vous suit ; pensez simplement que les données mobiles en itinérance peuvent coûter cher hors Union européenne (Suisse) : privilégiez le Wi-Fi.",
+          },
+          {
+            type: "p",
+            text: "Dans les Vosges et les Ardennes, la fibre arrive progressivement : réglez votre lecteur en HD si le débit du soir reste sous 15 Mbps, et passez en 4K quand votre ligne est raccordée.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV dans le Grand Est",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Grand Est ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Grand Est, y compris Colmar, Metz, Mulhouse, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Grand Est ?", a: "Stream Bleu est un choix très demandé dans la région Grand Est : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Grand Est ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Grand Est." },
-      { q: "L'IPTV est-il légal dans la région Grand Est ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Metz, Nancy, Mulhouse, Colmar, Troyes ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes du Grand Est dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Je suis frontalier, puis-je regarder depuis le Luxembourg ou l'Allemagne ?",
+        a: "L'application fonctionne sur toute connexion internet. Sur mobile, préférez le Wi-Fi : l'itinérance hors Union européenne, comme en Suisse, peut être facturée.",
+      },
+      {
+        q: "Quel débit faut-il pour l'IPTV en 4K à Strasbourg ou Reims ?",
+        a: "Comptez environ 25 Mbps stables par écran en 4K et 10 Mbps en HD.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Colmar", url: "https://streambleu.fr/iptv-colmar" },
-      { name: "Metz", url: "https://streambleu.fr/iptv-metz" },
-      { name: "Mulhouse", url: "https://streambleu.fr/iptv-mulhouse" },
-      { name: "Nancy", url: "https://streambleu.fr/iptv-nancy" },
-      { name: "Reims", url: "https://streambleu.fr/iptv-reims" },
-      { name: "Strasbourg", url: "https://streambleu.fr/iptv-strasbourg" },
-      { name: "Troyes", url: "https://streambleu.fr/iptv-troyes" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-strasbourg", "/iptv-reims", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-bretagne",
     group: "regions",
     navLabel: "Bretagne",
-    cardText: "IPTV dans les 6 villes de la région Bretagne.",
-    title: "IPTV en Bretagne — Abonnement & Essai Gratuit",
-    description: "IPTV en Bretagne : Stream Bleu dessert Brest, Lorient, Quimper, Rennes et 6 villes de la région. 50 000+ chaînes en 4K, essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv bretagne", "abonnement iptv bretagne", "iptv brest", "iptv lorient", "iptv quimper", "iptv rennes", "iptv saint malo", "iptv vannes"],
+    cardText: "IPTV en Bretagne : villes, réseau et tarifs.",
+    title: "IPTV Bretagne 2026 : Rennes, Brest, Vannes | Stream Bleu",
+    description: "IPTV en Bretagne : Rennes, Brest, Quimper, Lorient, Vannes, Saint-Malo. Conseils pour les îles et maisons en pierre, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv bretagne", "abonnement iptv bretagne", "iptv brest", "iptv quimper", "iptv lorient", "iptv vannes", "iptv saint-malo"],
     badge: "IPTV · Bretagne",
-    h1: "IPTV en Bretagne : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Bretagne** : 6 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Bretagne.",
+    h1: "IPTV en Bretagne : villes, réseau et abonnement",
+    intro: "L'**IPTV en Bretagne** fonctionne de Rennes à Brest, de Saint-Malo à Vannes, dans toute la région dès qu'une connexion internet stable est disponible. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, au même prix que dans le reste de la France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Bretagne",
+        h2: "Les villes de Bretagne",
         blocks: [
-          { type: "cards", items: [{ title: "Brest", text: "IPTV à Brest, chaînes en direct et 4K Ultra HD.", href: "/iptv-brest" }, { title: "Lorient", text: "IPTV à Lorient, chaînes en direct et 4K Ultra HD.", href: "/iptv-lorient" }, { title: "Quimper", text: "IPTV à Quimper, chaînes en direct et 4K Ultra HD.", href: "/iptv-quimper" }, { title: "Rennes", text: "IPTV à Rennes, chaînes en direct et 4K Ultra HD.", href: "/iptv-rennes" }, { title: "Saint-Malo", text: "IPTV à Saint-Malo, chaînes en direct et 4K Ultra HD.", href: "/iptv-saint-malo" }, { title: "Vannes", text: "IPTV à Vannes, chaînes en direct et 4K Ultra HD.", href: "/iptv-vannes" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "bretagne",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Brest", "Finistère, 29", "Même abonnement, mêmes tarifs"],
+              ["Quimper", "Finistère, 29", "Même abonnement, mêmes tarifs"],
+              ["Lorient", "Morbihan, 56", "Même abonnement, mêmes tarifs"],
+              ["Vannes", "Morbihan, 56", "Même abonnement, mêmes tarifs"],
+              ["Saint-Malo", "Ille-et-Vilaine, 35", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Bretagne",
+        blocks: [
+          {
+            type: "p",
+            text: "Les maisons bretonnes en granit ont des murs très épais qui arrêtent le Wi-Fi d'une pièce à l'autre. Si la box est dans l'entrée et la TV dans le salon, un câble Ethernet ou un kit CPL fait souvent la différence entre une image qui coupe et une image stable.",
+          },
+          {
+            type: "p",
+            text: "Sur les îles (Belle-Île, Groix, Ouessant, Bréhat) et dans certaines communes du Centre-Bretagne, la connexion peut reposer sur l'ADSL ou la 4G. Réglez alors votre lecteur en HD et augmentez sa mémoire tampon.",
+          },
+          {
+            type: "p",
+            text: "Rennes est une grande ville étudiante : en colocation, le forfait 2 écrans (18 € pour 1 mois) évite les conflits d'écran.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Bretagne",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Bretagne ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Bretagne, y compris Brest, Lorient, Quimper, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Bretagne ?", a: "Stream Bleu est un choix très demandé dans la région Bretagne : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Bretagne ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Bretagne." },
-      { q: "L'IPTV est-il légal dans la région Bretagne ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Brest, Quimper, Lorient, Vannes, Saint-Malo ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes de Bretagne dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Mon Wi-Fi passe mal dans ma maison en pierre, que faire ?",
+        a: "Les murs en granit bloquent le Wi-Fi. Reliez la TV à la box par Ethernet ou utilisez un kit CPL : c'est la solution la plus efficace.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle sur les îles bretonnes ?",
+        a: "Oui, avec une connexion stable. En ADSL ou en 4G, choisissez la qualité HD plutôt que la 4K.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Brest", url: "https://streambleu.fr/iptv-brest" },
-      { name: "Lorient", url: "https://streambleu.fr/iptv-lorient" },
-      { name: "Quimper", url: "https://streambleu.fr/iptv-quimper" },
-      { name: "Rennes", url: "https://streambleu.fr/iptv-rennes" },
-      { name: "Saint-Malo", url: "https://streambleu.fr/iptv-saint-malo" },
-      { name: "Vannes", url: "https://streambleu.fr/iptv-vannes" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-rennes", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-pays-de-la-loire",
     group: "regions",
     navLabel: "Pays de la Loire",
-    cardText: "IPTV dans les 6 villes de la région Pays de la Loire.",
-    title: "IPTV Pays de la Loire 2026 | Stream Bleu",
-    description: "Abonnement IPTV disponible dans toute la région Pays de la Loire : 6 villes desservies, 50 000+ chaînes en 4K Ultra HD, sans coupure. Essai gratuit 24h.",
-    keywords: ["iptv pays de la loire", "abonnement iptv pays de la loire", "iptv angers", "iptv cholet", "iptv la roche sur yon", "iptv le mans", "iptv nantes", "iptv saint nazaire"],
+    cardText: "IPTV en Pays de la Loire : villes, réseau et tarifs.",
+    title: "IPTV Pays de la Loire 2026 : Nantes, Angers | Stream Bleu",
+    description: "IPTV en Pays de la Loire : Nantes, Angers, Le Mans, Saint-Nazaire, Cholet, La Roche-sur-Yon. Conseils réseau, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv pays de la loire", "abonnement iptv pays de la loire", "iptv angers", "iptv cholet", "iptv le mans", "iptv saint-nazaire", "iptv la roche-sur-yon"],
     badge: "IPTV · Pays de la Loire",
-    h1: "IPTV en Pays de la Loire : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Pays de la Loire** : 6 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Pays de la Loire.",
+    h1: "IPTV en Pays de la Loire : villes, réseau et abonnement",
+    intro: "L'**IPTV en Pays de la Loire** fonctionne de Nantes à Angers, du Mans à La Roche-sur-Yon, et jusqu'au littoral vendéen, dès qu'une connexion internet stable est disponible. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, au même prix partout.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Pays de la Loire",
+        h2: "Les villes des Pays de la Loire",
         blocks: [
-          { type: "cards", items: [{ title: "Angers", text: "IPTV à Angers, chaînes en direct et 4K Ultra HD.", href: "/iptv-angers" }, { title: "Cholet", text: "IPTV à Cholet, chaînes en direct et 4K Ultra HD.", href: "/iptv-cholet" }, { title: "La Roche-sur-Yon", text: "IPTV à La Roche-sur-Yon, chaînes en direct et 4K Ultra HD.", href: "/iptv-la-roche-sur-yon" }, { title: "Le Mans", text: "IPTV à Le Mans, chaînes en direct et 4K Ultra HD.", href: "/iptv-le-mans" }, { title: "Nantes", text: "IPTV à Nantes, chaînes en direct et 4K Ultra HD.", href: "/iptv-nantes" }, { title: "Saint-Nazaire", text: "IPTV à Saint-Nazaire, chaînes en direct et 4K Ultra HD.", href: "/iptv-saint-nazaire" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "pays-de-la-loire",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Angers", "Maine-et-Loire, 49", "Même abonnement, mêmes tarifs"],
+              ["Cholet", "Maine-et-Loire, 49", "Même abonnement, mêmes tarifs"],
+              ["Le Mans", "Sarthe, 72", "Même abonnement, mêmes tarifs"],
+              ["Saint-Nazaire", "Loire-Atlantique, 44", "Même abonnement, mêmes tarifs"],
+              ["La Roche-sur-Yon", "Vendée, 85", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Pays de la Loire",
+        blocks: [
+          {
+            type: "p",
+            text: "La région mêle grandes agglomérations bien raccordées (Nantes, Angers, Le Mans) et communes rurales de Mayenne, Sarthe ou Vendée où l'ADSL reste fréquent. L'IPTV s'adapte : la HD demande environ 10 Mbps stables, la 4K environ 25 Mbps.",
+          },
+          {
+            type: "p",
+            text: "Sur la côte vendéenne et à La Baule, les locations d'été ont souvent un Wi-Fi partagé et chargé en soirée. Si l'image saccade, baissez la qualité dans le lecteur ou branchez l'appareil en Ethernet quand c'est possible.",
+          },
+          {
+            type: "p",
+            text: "Pour un foyer avec plusieurs téléviseurs, comparez les forfaits multi-écrans sur la page [tarifs](/tarifs) : le prix dépend uniquement de la durée et du nombre d'écrans simultanés.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Pays de la Loire",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Pays de la Loire ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Pays de la Loire, y compris Angers, Cholet, La Roche-sur-Yon, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Pays de la Loire ?", a: "Stream Bleu est un choix très demandé dans la région Pays de la Loire : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Pays de la Loire ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Pays de la Loire." },
-      { q: "L'IPTV est-il légal dans la région Pays de la Loire ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Angers, Cholet, Le Mans, Saint-Nazaire, La Roche-sur-Yon ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes des Pays de la Loire dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "L'IPTV marche-t-elle en ADSL en Vendée ou en Mayenne ?",
+        a: "Oui, en HD avec 10 Mbps stables environ. Branchez la TV en Ethernet pour profiter de tout le débit.",
+      },
+      {
+        q: "Comment choisir le nombre d'écrans ?",
+        a: "Comptez les téléviseurs ou appareils qui regardent en même temps. Le forfait 1 écran coûte 9 € pour 1 mois, le forfait 2 écrans 18 €.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Angers", url: "https://streambleu.fr/iptv-angers" },
-      { name: "Cholet", url: "https://streambleu.fr/iptv-cholet" },
-      { name: "La Roche-sur-Yon", url: "https://streambleu.fr/iptv-la-roche-sur-yon" },
-      { name: "Le Mans", url: "https://streambleu.fr/iptv-le-mans" },
-      { name: "Nantes", url: "https://streambleu.fr/iptv-nantes" },
-      { name: "Saint-Nazaire", url: "https://streambleu.fr/iptv-saint-nazaire" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-nantes", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-normandie",
     group: "regions",
     navLabel: "Normandie",
-    cardText: "IPTV dans les 5 villes de la région Normandie.",
-    title: "IPTV en Normandie — Abonnement & Essai Gratuit",
-    description: "Abonnement IPTV disponible dans toute la région Normandie : 5 villes desservies, 50 000+ chaînes en 4K Ultra HD, sans coupure. Essai gratuit 24h.",
-    keywords: ["iptv normandie", "abonnement iptv normandie", "iptv caen", "iptv cherbourg en cotentin", "iptv le havre", "iptv rouen", "iptv evreux"],
+    cardText: "IPTV en Normandie : villes, réseau et tarifs.",
+    title: "IPTV Normandie 2026 : Rouen, Caen, Le Havre | Stream Bleu",
+    description: "IPTV en Normandie : Rouen, Caen, Le Havre, Cherbourg-en-Cotentin, Évreux. Conseils Wi-Fi pour maisons anciennes, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv normandie", "abonnement iptv normandie", "iptv le havre", "iptv caen", "iptv cherbourg-en-cotentin", "iptv évreux"],
     badge: "IPTV · Normandie",
-    h1: "IPTV en Normandie : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Normandie** : 5 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Normandie.",
+    h1: "IPTV en Normandie : villes, réseau et abonnement",
+    intro: "L'**IPTV en Normandie** fonctionne de Rouen à Caen, du Havre à Cherbourg-en-Cotentin, dans toutes les communes reliées à internet. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, avec les mêmes chaînes et les mêmes prix que partout en France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Normandie",
+        h2: "Les villes de Normandie",
         blocks: [
-          { type: "cards", items: [{ title: "Caen", text: "IPTV à Caen, chaînes en direct et 4K Ultra HD.", href: "/iptv-caen" }, { title: "Cherbourg-en-Cotentin", text: "IPTV à Cherbourg-en-Cotentin, chaînes en direct et 4K Ultra HD.", href: "/iptv-cherbourg-en-cotentin" }, { title: "Le Havre", text: "IPTV à Le Havre, chaînes en direct et 4K Ultra HD.", href: "/iptv-le-havre" }, { title: "Rouen", text: "IPTV à Rouen, chaînes en direct et 4K Ultra HD.", href: "/iptv-rouen" }, { title: "Évreux", text: "IPTV à Évreux, chaînes en direct et 4K Ultra HD.", href: "/iptv-evreux" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "normandie",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Le Havre", "Seine-Maritime, 76", "Même abonnement, mêmes tarifs"],
+              ["Caen", "Calvados, 14", "Même abonnement, mêmes tarifs"],
+              ["Cherbourg-en-Cotentin", "Manche, 50", "Même abonnement, mêmes tarifs"],
+              ["Évreux", "Eure, 27", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Normandie",
+        blocks: [
+          {
+            type: "p",
+            text: "Longères, maisons à colombages et bâtisses en pierre : l'habitat normand ancien a des murs épais qui affaiblissent le Wi-Fi. Pour la TV principale, un câble Ethernet ou un kit CPL reste la solution la plus fiable pour l'IPTV.",
+          },
+          {
+            type: "p",
+            text: "Dans le bocage et le pays d'Auge, une partie des foyers est encore en ADSL. Avec moins de 10 Mbps, gardez la qualité SD ou HD ; avec la fibre, la 4K est confortable.",
+          },
+          {
+            type: "p",
+            text: "Les résidences secondaires de la côte (Deauville, Étretat, Granville) peuvent utiliser le même abonnement : un Fire TV Stick déjà configuré se branche en quelques minutes.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Normandie",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Normandie ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Normandie, y compris Caen, Cherbourg-en-Cotentin, Le Havre, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Normandie ?", a: "Stream Bleu est un choix très demandé dans la région Normandie : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Normandie ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Normandie." },
-      { q: "L'IPTV est-il légal dans la région Normandie ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Le Havre, Caen, Cherbourg-en-Cotentin, Évreux ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes de Normandie dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Mon Wi-Fi est faible dans ma longère, comment regarder l'IPTV ?",
+        a: "Utilisez un câble Ethernet ou un kit CPL entre la box et la TV : les murs épais des maisons anciennes bloquent le Wi-Fi.",
+      },
+      {
+        q: "Peut-on regarder l'IPTV en ADSL en Normandie ?",
+        a: "Oui, en qualité adaptée : HD avec environ 10 Mbps stables, 4K avec environ 25 Mbps.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Caen", url: "https://streambleu.fr/iptv-caen" },
-      { name: "Cherbourg-en-Cotentin", url: "https://streambleu.fr/iptv-cherbourg-en-cotentin" },
-      { name: "Le Havre", url: "https://streambleu.fr/iptv-le-havre" },
-      { name: "Rouen", url: "https://streambleu.fr/iptv-rouen" },
-      { name: "Évreux", url: "https://streambleu.fr/iptv-evreux" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-rouen", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-bourgogne-franche-comte",
     group: "regions",
     navLabel: "Bourgogne-Franche-Comté",
-    cardText: "IPTV dans les 2 villes de la région Bourgogne-Franche-Comté.",
-    title: "IPTV Bourgogne-Franche-Comté 2026 | Stream Bleu",
-    description: "IPTV en Bourgogne-Franche-Comté : Stream Bleu dessert Besançon, Dijon et 2 villes de la région. 50 000+ chaînes en 4K, essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv bourgogne franche comte", "abonnement iptv bourgogne franche comte", "iptv besancon", "iptv dijon"],
+    cardText: "IPTV en Bourgogne-Franche-Comté : villes, réseau et tarifs.",
+    title: "IPTV Bourgogne-Franche-Comté 2026 : Dijon | Stream Bleu",
+    description: "IPTV en Bourgogne-Franche-Comté : Dijon, Besançon, Belfort, Chalon-sur-Saône. Conseils pour zones rurales et Jura, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv bourgogne-franche-comté", "abonnement iptv bourgogne-franche-comté", "iptv besançon"],
     badge: "IPTV · Bourgogne-Franche-Comté",
-    h1: "IPTV en Bourgogne-Franche-Comté : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Bourgogne-Franche-Comté** : 2 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Bourgogne-Franche-Comté.",
+    h1: "IPTV en Bourgogne-Franche-Comté : villes, réseau et abonnement",
+    intro: "L'**IPTV en Bourgogne-Franche-Comté** fonctionne à Dijon, Besançon et dans toute la région, du Morvan au massif du Jura, dès qu'une connexion internet stable est disponible. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, au même tarif que partout en France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Bourgogne-Franche-Comté",
+        h2: "Les villes de Bourgogne-Franche-Comté",
         blocks: [
-          { type: "cards", items: [{ title: "Besançon", text: "IPTV à Besançon, chaînes en direct et 4K Ultra HD.", href: "/iptv-besancon" }, { title: "Dijon", text: "IPTV à Dijon, chaînes en direct et 4K Ultra HD.", href: "/iptv-dijon" }] },
+          {
+            type: "p",
+            text: "Les grandes villes de la région ont une page dédiée avec des conseils adaptés à leur habitat et à leur réseau :",
+          },
+          {
+            type: "hub",
+            group: "cities",
+            region: "bourgogne-franche-comte",
+          },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Besançon", "Doubs, 25", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Bourgogne-Franche-Comté",
+        blocks: [
+          {
+            type: "p",
+            text: "C'est une région très rurale, avec de nombreuses petites communes dans le Morvan, la Bresse et le Haut-Jura. Si votre connexion repose sur l'ADSL ou une box 4G, l'IPTV fonctionne en qualité HD ; la 4K demande environ 25 Mbps stables.",
+          },
+          {
+            type: "p",
+            text: "Dans le Haut-Doubs et le Jura, une partie des habitants travaille en Suisse : l'application mobile fonctionne aussi là-bas en Wi-Fi, mais l'itinérance des données mobiles en Suisse est en général facturée hors forfait.",
+          },
+          {
+            type: "p",
+            text: "Pour une maison avec plusieurs téléviseurs, choisissez le forfait selon le nombre d'écrans qui regardent en même temps.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Bourgogne-Franche-Comté",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Bourgogne-Franche-Comté ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Bourgogne-Franche-Comté, y compris Besançon, Dijon, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Bourgogne-Franche-Comté ?", a: "Stream Bleu est un choix très demandé dans la région Bourgogne-Franche-Comté : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Bourgogne-Franche-Comté ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Bourgogne-Franche-Comté." },
-      { q: "L'IPTV est-il légal dans la région Bourgogne-Franche-Comté ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Besançon ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes de Bourgogne-Franche-Comté dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle dans le Jura ou le Morvan ?",
+        a: "Oui, si la connexion est stable. En ADSL ou en 4G, réglez le lecteur en HD pour éviter les coupures.",
+      },
+      {
+        q: "Je travaille en Suisse, puis-je regarder depuis là-bas ?",
+        a: "L'application fonctionne sur toute connexion internet. En Suisse, préférez le Wi-Fi : l'itinérance mobile y est généralement payante.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Besançon", url: "https://streambleu.fr/iptv-besancon" },
-      { name: "Dijon", url: "https://streambleu.fr/iptv-dijon" },
-    ],
+    related: ["/iptv-villes-france", "/iptv-dijon", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-centre-val-de-loire",
     group: "regions",
     navLabel: "Centre-Val de Loire",
-    cardText: "IPTV dans les 4 villes de la région Centre-Val de Loire.",
-    title: "IPTV Centre-Val de Loire 2026 | Stream Bleu",
-    description: "IPTV en Centre-Val de Loire : Stream Bleu à Blois, Bourges, Orléans et Tours. 50 000+ chaînes en 4K, essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv centre val de loire", "abonnement iptv centre val de loire", "iptv blois", "iptv bourges", "iptv orleans", "iptv tours"],
+    cardText: "IPTV en Centre-Val de Loire : villes, réseau et tarifs.",
+    title: "IPTV Centre-Val de Loire 2026 : Tours, Orléans | Stream Bleu",
+    description: "IPTV en Centre-Val de Loire : Tours, Orléans, Bourges, Blois, Chartres. Conseils pour les zones rurales, tarifs dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv centre-val de loire", "abonnement iptv centre-val de loire", "iptv tours", "iptv orléans", "iptv bourges", "iptv blois"],
     badge: "IPTV · Centre-Val de Loire",
-    h1: "IPTV en Centre-Val de Loire : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Centre-Val de Loire** : 4 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Centre-Val de Loire.",
+    h1: "IPTV en Centre-Val de Loire : villes, réseau et abonnement",
+    intro: "L'**IPTV en Centre-Val de Loire** fonctionne à Tours, Orléans, Bourges, Blois et dans toutes les communes de la région reliées à internet. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, avec les mêmes chaînes et les mêmes prix que partout en France.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Centre-Val de Loire",
+        h2: "Les villes du Centre-Val de Loire",
         blocks: [
-          { type: "cards", items: [{ title: "Blois", text: "IPTV à Blois, chaînes en direct et 4K Ultra HD.", href: "/iptv-blois" }, { title: "Bourges", text: "IPTV à Bourges, chaînes en direct et 4K Ultra HD.", href: "/iptv-bourges" }, { title: "Orléans", text: "IPTV à Orléans, chaînes en direct et 4K Ultra HD.", href: "/iptv-orleans" }, { title: "Tours", text: "IPTV à Tours, chaînes en direct et 4K Ultra HD.", href: "/iptv-tours" }] },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Tours", "Indre-et-Loire, 37", "Même abonnement, mêmes tarifs"],
+              ["Orléans", "Loiret, 45", "Même abonnement, mêmes tarifs"],
+              ["Bourges", "Cher, 18", "Même abonnement, mêmes tarifs"],
+              ["Blois", "Loir-et-Cher, 41", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Centre-Val de Loire",
+        blocks: [
+          {
+            type: "p",
+            text: "Entre la Beauce, la Sologne et le Berry, beaucoup de foyers vivent loin des grandes agglomérations. Là où la fibre n'est pas encore arrivée, l'IPTV reste possible en ADSL ou en box 4G, en qualité HD.",
+          },
+          {
+            type: "p",
+            text: "Les maisons de tuffeau du Val de Loire ont des murs épais : si la TV est loin de la box, un kit CPL est plus fiable qu'un répéteur Wi-Fi.",
+          },
+          {
+            type: "p",
+            text: "Orléans et Tours sont à environ une heure de Paris en train : beaucoup d'abonnés regardent aussi sur smartphone pendant les trajets, en 4G, en qualité réduite pour économiser leurs données.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Centre-Val de Loire",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Centre-Val de Loire ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Centre-Val de Loire, y compris Blois, Bourges, Orléans, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Centre-Val de Loire ?", a: "Stream Bleu est un choix très demandé dans la région Centre-Val de Loire : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Centre-Val de Loire ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Centre-Val de Loire." },
-      { q: "L'IPTV est-il légal dans la région Centre-Val de Loire ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Tours, Orléans, Bourges, Blois ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes du Centre-Val de Loire dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "Stream Bleu fonctionne-t-il à Tours, Orléans, Bourges et Blois ?",
+        a: "Oui, comme partout en France : il suffit d'une connexion internet stable et d'un appareil compatible.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle en Sologne ou dans le Berry ?",
+        a: "Oui. En ADSL ou en 4G, choisissez la qualité HD et branchez la TV en Ethernet si possible.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Blois", url: "https://streambleu.fr/iptv-blois" },
-      { name: "Bourges", url: "https://streambleu.fr/iptv-bourges" },
-      { name: "Orléans", url: "https://streambleu.fr/iptv-orleans" },
-      { name: "Tours", url: "https://streambleu.fr/iptv-tours" },
-    ],
+    related: ["/iptv-villes-france", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
     slug: "/iptv-corse",
     group: "regions",
     navLabel: "Corse",
-    cardText: "IPTV dans les 1 villes de la région Corse.",
-    title: "IPTV en Corse — Abonnement & Essai Gratuit",
-    description: "IPTV en Corse : Stream Bleu dessert Ajaccio et 1 villes de la région. 50 000+ chaînes en 4K, essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv corse", "abonnement iptv corse", "iptv ajaccio"],
+    cardText: "IPTV en Corse : villes, réseau et tarifs.",
+    title: "IPTV en Corse 2026 : Ajaccio, Bastia | Stream Bleu",
+    description: "IPTV en Corse : Ajaccio, Bastia, Porto-Vecchio, Calvi. Conseils pour villages de montagne et résidences d'été, dès 9 €, essai gratuit 24h.",
+    keywords: ["iptv corse", "abonnement iptv corse", "iptv ajaccio", "iptv bastia"],
     badge: "IPTV · Corse",
-    h1: "IPTV en Corse : villes desservies et abonnement",
-    intro: "**Stream Bleu dessert toute la région Corse** : 1 villes couvertes avec le même abonnement, les mêmes 50 000+ chaînes en direct et le même catalogue de 300 000+ films et séries en 4K Ultra HD. Choisissez votre ville ci-dessous pour voir les informations locales, ou commandez directement — l'installation est identique partout en Corse.",
+    h1: "IPTV en Corse : villes, réseau et abonnement",
+    intro: "L'**IPTV en Corse** fonctionne à Ajaccio, Bastia et dans toute l'île, dès qu'une connexion internet stable est disponible. Stream Bleu s'installe sur Smart TV, Fire TV Stick, box Android, PC ou mobile, au même tarif que sur le continent.",
     sections: [
       {
         id: "villes",
-        h2: "Toutes les villes desservies en Corse",
+        h2: "Les villes de Corse",
         blocks: [
-          { type: "cards", items: [{ title: "Ajaccio", text: "IPTV à Ajaccio, chaînes en direct et 4K Ultra HD.", href: "/iptv-ajaccio" }] },
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne aussi dans toutes les autres communes de la région, par exemple :",
+          },
+          {
+            type: "table",
+            head: ["Ville", "Département", "Offre"],
+            rows: [
+              ["Ajaccio", "Corse-du-Sud, 2A", "Même abonnement, mêmes tarifs"],
+              ["Bastia", "Haute-Corse, 2B", "Même abonnement, mêmes tarifs"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "reseau",
+        h2: "Réseau, Wi-Fi et qualité d'image en Corse",
+        blocks: [
+          {
+            type: "p",
+            text: "Les villes du littoral (Ajaccio, Bastia, Porto-Vecchio, Calvi) sont bien raccordées, mais dans les villages de l'intérieur, la connexion repose encore souvent sur l'ADSL ou la 4G. L'IPTV fonctionne dans les deux cas : réglez simplement la qualité sur HD si votre débit est inférieur à 15 Mbps.",
+          },
+          {
+            type: "p",
+            text: "En été, les réseaux des zones touristiques sont plus chargés le soir. Si l'image saccade, augmentez la mémoire tampon du lecteur (TiviMate et IPTV Smarters Pro le permettent) ou baissez la qualité.",
+          },
+          {
+            type: "p",
+            text: "Pour une maison de vacances, un Fire TV Stick configuré sur le continent fonctionne tel quel une fois connecté au Wi-Fi du logement.",
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV en Corse",
+        blocks: [
+          {
+            type: "p",
+            text: "Le prix ne dépend ni de la ville ni de la région, seulement de la durée et du nombre d'écrans simultanés. Extrait de la grille officielle :",
+          },
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Tarifs en euros TTC, sans engagement. Grille complète jusqu'à 10 écrans sur la page tarifs.",
+          },
+          {
+            type: "p",
+            text: "Avant de payer, testez sur votre propre connexion avec l'[essai gratuit de 24h](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs). Pour l'installation, suivez le guide de votre appareil : [Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france) ou [application IPTV](/applications-iptv).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Stream Bleu est-il disponible dans toute la région Corse ?", a: "Oui. Stream Bleu fonctionne dans toutes les villes de la région Corse, y compris Ajaccio, avec les mêmes chaînes, le même catalogue et le même support en français, quelle que soit la ville." },
-      { q: "Quel est le meilleur IPTV en Corse ?", a: "Stream Bleu est un choix très demandé dans la région Corse : 50 000+ chaînes en direct, 4K Ultra HD sans coupure, et un abonnement à partir de 9€/mois avec un essai gratuit de 24h." },
-      { q: "Faut-il une offre différente selon la ville en Corse ?", a: "Non. Le tarif et le catalogue Stream Bleu sont identiques partout en France : aucune majoration selon la ville ou le département dans la région Corse." },
-      { q: "L'IPTV est-il légal dans la région Corse ?", a: "La technologie IPTV est légale partout en France. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la région où elle est utilisée." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Ajaccio, Bastia ?",
+        a: "Oui. L'abonnement fonctionne dans toutes les communes de Corse dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle dans les villages corses ?",
+        a: "Oui, avec une connexion stable. En ADSL ou en 4G, la qualité HD est la plus adaptée.",
+      },
+      {
+        q: "Le prix est-il le même en Corse ?",
+        a: "Oui : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois, 49 € pour 12 mois (1 écran), comme partout en France.",
+      },
+      {
+        q: "L'IPTV est-elle légale ?",
+        a: "La technologie IPTV est légale en France : c'est celle qu'utilisent les box des opérateurs. La légalité d'une offre dépend des droits de diffusion des contenus, pas de la région où l'on regarde. Voir notre guide [IPTV légale en France](/blog/iptv-legal-france).",
+      },
     ],
-    related: ["/iptv-villes-france", "/essai-gratuit", "/tarifs", "/abonnement-iptv", "/meilleur-iptv-france"],
-    itemList: [
-      { name: "Ajaccio", url: "https://streambleu.fr/iptv-ajaccio" },
-    ],
+    related: ["/iptv-villes-france", "/blog/iptv-wifi-ou-ethernet", "/essai-gratuit", "/tarifs"],
     schema: "CollectionPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-boulogne-billancourt",
+    slug: "/iptv-paris",
     group: "cities",
     region: "ile-de-france",
-    navLabel: "Boulogne-Billancourt",
-    cardText: "IPTV à Boulogne-Billancourt (Hauts-de-Seine) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Boulogne-Billancourt 2026 : Abonnement & Essai Gratuit",
-    description: "Stream Bleu, IPTV à Boulogne-Billancourt (Hauts-de-Seine) : 50 000+ chaînes, films et séries en 4K Ultra HD. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv boulogne-billancourt", "iptv boulogne billancourt", "abonnement iptv boulogne-billancourt", "meilleur iptv boulogne-billancourt", "iptv boulogne-billancourt avis"],
-    badge: "IPTV · Boulogne-Billancourt",
-    h1: "IPTV à Boulogne-Billancourt — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Boulogne-Billancourt** (Hauts-de-Seine, région Île-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est aux portes de Paris, sur les bords de Seine, à deux pas du bois de Boulogne. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-ile-de-france", label: "Île-de-France" },
+    navLabel: "Paris",
+    cardText: "IPTV à Paris (Paris, 75) : conseils réseau, installation et tarifs.",
+    title: "IPTV Paris 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Paris (Paris) : installation sur Smart TV et Fire TV, Wi-Fi en appartement, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv paris", "abonnement iptv paris", "iptv paris prix"],
+    badge: "IPTV · Paris",
+    h1: "IPTV à Paris : abonnement, installation et conseils",
+    intro: "L'**IPTV à Paris** (Paris, 75, Île-de-France) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-ile-de-france",
+      label: "Île-de-France",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Boulogne-Billancourt ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Boulogne-Billancourt en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans les Hauts-de-Seine et autour de Boulogne-Billancourt",
+        h2: "L'IPTV à Paris : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Hauts-de-Seine, ce qui permet de profiter pleinement de la 4K Ultra HD à Boulogne-Billancourt sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Paris](/iptv-paris), [Nanterre](/iptv-nanterre), [Versailles](/iptv-versailles) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Île-de-France." },
+          {
+            type: "p",
+            text: "Paris est la ville la plus dense de France : la plupart des abonnés vivent en appartement, souvent dans des immeubles haussmanniens aux murs épais ou dans des résidences où des dizaines de box Wi-Fi se partagent les mêmes canaux. C'est la première cause de coupure de l'IPTV à Paris, bien avant le débit, puisque la fibre est disponible dans la quasi-totalité de la capitale.",
+          },
+          {
+            type: "p",
+            text: "Dans un studio ou un deux-pièces, un **Fire TV Stick** branché directement sur la TV et connecté en Wi-Fi 5 GHz est la solution la plus simple. Dans un grand appartement, reliez la TV du salon à la box par un câble Ethernet, ou utilisez des adaptateurs CPL si la box est dans l'entrée.",
+          },
+          {
+            type: "p",
+            text: "Beaucoup de Parisiens regardent aussi sur smartphone dans le métro ou le RER : l'application fonctionne en 4G/5G, mais pensez à réduire la qualité pour ne pas épuiser votre forfait de données.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Paris en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Paris",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Paris que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Paris",
+        blocks: [
+          {
+            type: "p",
+            text: "Les villes voisines de la petite couronne (Boulogne-Billancourt, Montreuil, Saint-Denis, Nanterre) utilisent exactement le même abonnement ; retrouvez-les sur notre page [IPTV en Île-de-France](/iptv-ile-de-france).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Boulogne-Billancourt ?", a: "Stream Bleu est un choix très demandé à Boulogne-Billancourt : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Boulogne-Billancourt ?", a: "La technologie IPTV est légale partout en France, y compris à Boulogne-Billancourt — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Boulogne-Billancourt ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Hauts-de-Seine, ce qui permet un streaming 4K stable à Boulogne-Billancourt et dans les communes voisines comme Paris ou Nanterre." },
-      { q: "Combien coûte un abonnement IPTV à Boulogne-Billancourt ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Paris ?",
+        a: "Oui. L'abonnement fonctionne à Paris (Paris, 75) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle bien dans un appartement parisien ?",
+        a: "Oui, à condition de soigner le Wi-Fi : en immeuble, passez en 5 GHz ou branchez la TV en Ethernet. Les coupures à Paris viennent presque toujours d'un Wi-Fi saturé, rarement de la fibre.",
+      },
+      {
+        q: "Quel appareil choisir pour un petit appartement à Paris ?",
+        a: "Un Fire TV Stick ou l'application de votre Smart TV suffisent : pas de boîtier supplémentaire, rien à câbler à part le HDMI.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Paris ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-paris", "/iptv-nanterre", "/iptv-versailles"],
+    related: ["/iptv-ile-de-france", "/blog/iptv-wifi-ou-ethernet", "/iptv-firestick-france", "/iptv-lyon", "/iptv-marseille"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-saint-denis",
-    group: "cities",
-    region: "ile-de-france",
-    navLabel: "Saint-Denis",
-    cardText: "IPTV à Saint-Denis (Seine-Saint-Denis) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Saint-Denis 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Saint-Denis (Seine-Saint-Denis). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv saint-denis", "iptv saint denis", "abonnement iptv saint-denis", "meilleur iptv saint-denis", "iptv saint-denis avis"],
-    badge: "IPTV · Saint-Denis",
-    h1: "IPTV à Saint-Denis — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Saint-Denis** (Seine-Saint-Denis, région Île-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est connue pour sa basilique royale et pour le Stade de France, à quelques minutes de Paris. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-ile-de-france", label: "Île-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Saint-Denis ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Saint-Denis en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Seine-Saint-Denis et autour de Saint-Denis",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Seine-Saint-Denis, ce qui permet de profiter pleinement de la 4K Ultra HD à Saint-Denis sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Paris](/iptv-paris), [Montreuil](/iptv-montreuil), [Argenteuil](/iptv-argenteuil) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Île-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Saint-Denis ?", a: "Stream Bleu est un choix très demandé à Saint-Denis : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Saint-Denis ?", a: "La technologie IPTV est légale partout en France, y compris à Saint-Denis — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Saint-Denis ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Seine-Saint-Denis, ce qui permet un streaming 4K stable à Saint-Denis et dans les communes voisines comme Paris ou Montreuil." },
-      { q: "Combien coûte un abonnement IPTV à Saint-Denis ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-paris", "/iptv-montreuil", "/iptv-argenteuil"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-versailles",
-    group: "cities",
-    region: "ile-de-france",
-    navLabel: "Versailles",
-    cardText: "IPTV à Versailles (Yvelines) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Versailles 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Versailles (Yvelines). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv versailles", "iptv versailles", "abonnement iptv versailles", "meilleur iptv versailles", "iptv versailles avis"],
-    badge: "IPTV · Versailles",
-    h1: "IPTV à Versailles — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Versailles** (Yvelines, région Île-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est célèbre dans le monde entier pour son château, à l'ouest de Paris. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-ile-de-france", label: "Île-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Versailles ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Versailles en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans les Yvelines et autour de Versailles",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Yvelines, ce qui permet de profiter pleinement de la 4K Ultra HD à Versailles sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Paris](/iptv-paris), [Boulogne-Billancourt](/iptv-boulogne-billancourt), [Nanterre](/iptv-nanterre) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Île-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Versailles ?", a: "Stream Bleu est un choix très demandé à Versailles : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Versailles ?", a: "La technologie IPTV est légale partout en France, y compris à Versailles — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Versailles ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Yvelines, ce qui permet un streaming 4K stable à Versailles et dans les communes voisines comme Paris ou Boulogne-Billancourt." },
-      { q: "Combien coûte un abonnement IPTV à Versailles ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-paris", "/iptv-boulogne-billancourt", "/iptv-nanterre"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-argenteuil",
-    group: "cities",
-    region: "ile-de-france",
-    navLabel: "Argenteuil",
-    cardText: "IPTV à Argenteuil (Val-d'Oise) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Argenteuil 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Argenteuil (Val-d'Oise). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv argenteuil", "iptv argenteuil", "abonnement iptv argenteuil", "meilleur iptv argenteuil", "iptv argenteuil avis"],
-    badge: "IPTV · Argenteuil",
-    h1: "IPTV à Argenteuil — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Argenteuil** (Val-d'Oise, région Île-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est sur les bords de Seine au nord-ouest de Paris. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-ile-de-france", label: "Île-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Argenteuil ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Argenteuil en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Val-d'Oise et autour de Argenteuil",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Val-d'Oise, ce qui permet de profiter pleinement de la 4K Ultra HD à Argenteuil sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Paris](/iptv-paris), [Saint-Denis](/iptv-saint-denis), [Nanterre](/iptv-nanterre) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Île-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Argenteuil ?", a: "Stream Bleu est un choix très demandé à Argenteuil : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Argenteuil ?", a: "La technologie IPTV est légale partout en France, y compris à Argenteuil — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Argenteuil ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Val-d'Oise, ce qui permet un streaming 4K stable à Argenteuil et dans les communes voisines comme Paris ou Saint-Denis." },
-      { q: "Combien coûte un abonnement IPTV à Argenteuil ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-paris", "/iptv-saint-denis", "/iptv-nanterre"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-montreuil",
-    group: "cities",
-    region: "ile-de-france",
-    navLabel: "Montreuil",
-    cardText: "IPTV à Montreuil (Seine-Saint-Denis) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Montreuil 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Montreuil (Seine-Saint-Denis). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv montreuil", "iptv montreuil", "abonnement iptv montreuil", "meilleur iptv montreuil", "iptv montreuil avis"],
-    badge: "IPTV · Montreuil",
-    h1: "IPTV à Montreuil — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Montreuil** (Seine-Saint-Denis, région Île-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est juste à l'est de Paris, l'une des villes les plus peuplées de la petite couronne. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-ile-de-france", label: "Île-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Montreuil ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Montreuil en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Seine-Saint-Denis et autour de Montreuil",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Seine-Saint-Denis, ce qui permet de profiter pleinement de la 4K Ultra HD à Montreuil sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Paris](/iptv-paris), [Saint-Denis](/iptv-saint-denis), [Boulogne-Billancourt](/iptv-boulogne-billancourt) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Île-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Montreuil ?", a: "Stream Bleu est un choix très demandé à Montreuil : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Montreuil ?", a: "La technologie IPTV est légale partout en France, y compris à Montreuil — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Montreuil ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Seine-Saint-Denis, ce qui permet un streaming 4K stable à Montreuil et dans les communes voisines comme Paris ou Saint-Denis." },
-      { q: "Combien coûte un abonnement IPTV à Montreuil ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-paris", "/iptv-saint-denis", "/iptv-boulogne-billancourt"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-nanterre",
-    group: "cities",
-    region: "ile-de-france",
-    navLabel: "Nanterre",
-    cardText: "IPTV à Nanterre (Hauts-de-Seine) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Nanterre 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Nanterre (Hauts-de-Seine). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv nanterre", "iptv nanterre", "abonnement iptv nanterre", "meilleur iptv nanterre", "iptv nanterre avis"],
-    badge: "IPTV · Nanterre",
-    h1: "IPTV à Nanterre — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Nanterre** (Hauts-de-Seine, région Île-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est préfecture des Hauts-de-Seine et porte d'entrée du quartier d'affaires de La Défense — et c'est justement là que Stream Bleu a son siège. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-ile-de-france", label: "Île-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Nanterre ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Nanterre en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans les Hauts-de-Seine et autour de Nanterre",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Hauts-de-Seine, ce qui permet de profiter pleinement de la 4K Ultra HD à Nanterre sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Paris](/iptv-paris), [Boulogne-Billancourt](/iptv-boulogne-billancourt), [Argenteuil](/iptv-argenteuil) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Île-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Nanterre ?", a: "Stream Bleu est un choix très demandé à Nanterre : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Nanterre ?", a: "La technologie IPTV est légale partout en France, y compris à Nanterre — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Nanterre ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Hauts-de-Seine, ce qui permet un streaming 4K stable à Nanterre et dans les communes voisines comme Paris ou Boulogne-Billancourt." },
-      { q: "Combien coûte un abonnement IPTV à Nanterre ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-paris", "/iptv-boulogne-billancourt", "/iptv-argenteuil"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-clermont-ferrand",
+    slug: "/iptv-lyon",
     group: "cities",
     region: "auvergne-rhone-alpes",
-    navLabel: "Clermont-Ferrand",
-    cardText: "IPTV à Clermont-Ferrand (Puy-de-Dôme) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Clermont-Ferrand 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Clermont-Ferrand (Puy-de-Dôme). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv clermont-ferrand", "iptv clermont ferrand", "abonnement iptv clermont-ferrand", "meilleur iptv clermont-ferrand", "iptv clermont-ferrand avis"],
-    badge: "IPTV · Clermont-Ferrand",
-    h1: "IPTV à Clermont-Ferrand — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Clermont-Ferrand** (Puy-de-Dôme, région Auvergne-Rhône-Alpes) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au pied de la chaîne des Puys et du volcan du Puy de Dôme, classés au patrimoine mondial de l'UNESCO. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-auvergne-rhone-alpes", label: "Auvergne-Rhône-Alpes" },
+    navLabel: "Lyon",
+    cardText: "IPTV à Lyon (Rhône, 69) : conseils réseau, installation et tarifs.",
+    title: "IPTV Lyon 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Lyon (Rhône) : installation sur Smart TV et Fire TV, conseils Wi-Fi immeubles anciens, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv lyon", "abonnement iptv lyon", "iptv lyon prix"],
+    badge: "IPTV · Lyon",
+    h1: "IPTV à Lyon : abonnement, installation et conseils",
+    intro: "L'**IPTV à Lyon** (Rhône, 69, Auvergne-Rhône-Alpes) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-auvergne-rhone-alpes",
+      label: "Auvergne-Rhône-Alpes",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Clermont-Ferrand ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Clermont-Ferrand en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans le Puy-de-Dôme et autour de Clermont-Ferrand",
+        h2: "L'IPTV à Lyon : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Puy-de-Dôme, ce qui permet de profiter pleinement de la 4K Ultra HD à Clermont-Ferrand sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lyon](/iptv-lyon), [Saint-Étienne](/iptv-saint-etienne), [Annecy](/iptv-annecy) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Auvergne-Rhône-Alpes." },
+          {
+            type: "p",
+            text: "Lyon et sa métropole sont très bien raccordées à la fibre, ce qui permet de regarder l'IPTV en 4K sur plusieurs écrans à la fois. Les difficultés viennent plutôt de l'habitat : dans le Vieux-Lyon, sur les pentes de la Croix-Rousse ou dans les immeubles anciens de la Presqu'île, les murs en pierre épais arrêtent le Wi-Fi d'une pièce à l'autre.",
+          },
+          {
+            type: "p",
+            text: "Si votre TV est loin de la box, un câble Ethernet ou un kit CPL donne une image beaucoup plus stable qu'un répéteur Wi-Fi. Dans les logements récents de Confluence ou de la Part-Dieu, le Wi-Fi 5 GHz suffit généralement.",
+          },
+          {
+            type: "p",
+            text: "Pour un foyer avec plusieurs téléviseurs (salon, chambre, enfants), choisissez le nombre d'écrans simultanés dont vous avez besoin : le prix ne dépend que de ce nombre et de la durée.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Lyon en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Lyon",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Lyon que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Lyon",
+        blocks: [
+          {
+            type: "p",
+            text: "Stream Bleu fonctionne de la même façon à Villeurbanne, Vénissieux et dans toute la métropole, ainsi qu'à [Saint-Étienne](/iptv-saint-etienne) et [Grenoble](/iptv-grenoble). Voir aussi [IPTV en Auvergne-Rhône-Alpes](/iptv-auvergne-rhone-alpes).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Clermont-Ferrand ?", a: "Stream Bleu est un choix très demandé à Clermont-Ferrand : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Clermont-Ferrand ?", a: "La technologie IPTV est légale partout en France, y compris à Clermont-Ferrand — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Clermont-Ferrand ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Puy-de-Dôme, ce qui permet un streaming 4K stable à Clermont-Ferrand et dans les communes voisines comme Lyon ou Saint-Étienne." },
-      { q: "Combien coûte un abonnement IPTV à Clermont-Ferrand ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Lyon ?",
+        a: "Oui. L'abonnement fonctionne à Lyon (Rhône, 69) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Pourquoi mon IPTV coupe dans mon appartement du Vieux-Lyon ?",
+        a: "Les murs en pierre affaiblissent fortement le Wi-Fi. Reliez la TV à la box en Ethernet ou avec un kit CPL.",
+      },
+      {
+        q: "Peut-on regarder en 4K sur plusieurs TV à Lyon ?",
+        a: "Oui, avec un forfait multi-écrans et environ 25 Mbps par flux 4K, ce que permettent la plupart des offres fibre lyonnaises.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Lyon ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lyon", "/iptv-saint-etienne", "/iptv-annecy"],
+    related: ["/iptv-auvergne-rhone-alpes", "/iptv-grenoble", "/iptv-saint-etienne", "/blog/iptv-wifi-ou-ethernet", "/tarifs"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-annecy",
+    slug: "/iptv-marseille",
     group: "cities",
-    region: "auvergne-rhone-alpes",
-    navLabel: "Annecy",
-    cardText: "IPTV à Annecy (Haute-Savoie) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Annecy 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Annecy (Haute-Savoie). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv annecy", "iptv annecy", "abonnement iptv annecy", "meilleur iptv annecy", "iptv annecy avis"],
-    badge: "IPTV · Annecy",
-    h1: "IPTV à Annecy — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Annecy** (Haute-Savoie, région Auvergne-Rhône-Alpes) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au bord de son lac alpin et au pied des montagnes, l'une des villes les plus prisées des Alpes françaises. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-auvergne-rhone-alpes", label: "Auvergne-Rhône-Alpes" },
+    region: "paca",
+    navLabel: "Marseille",
+    cardText: "IPTV à Marseille (Bouches-du-Rhône, 13) : conseils réseau, installation et tarifs.",
+    title: "IPTV Marseille 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Marseille (Bouches-du-Rhône) : installation sur Smart TV et Fire TV, fibre et ADSL, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv marseille", "abonnement iptv marseille", "iptv marseille prix"],
+    badge: "IPTV · Marseille",
+    h1: "IPTV à Marseille : abonnement, installation et conseils",
+    intro: "L'**IPTV à Marseille** (Bouches-du-Rhône, 13, Provence-Alpes-Côte d'Azur) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-paca",
+      label: "Provence-Alpes-Côte d'Azur",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Annecy ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Annecy en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans la Haute-Savoie et autour de Annecy",
+        h2: "L'IPTV à Marseille : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Haute-Savoie, ce qui permet de profiter pleinement de la 4K Ultra HD à Annecy sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Chambéry](/iptv-chambery), [Grenoble](/iptv-grenoble), [Lyon](/iptv-lyon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Auvergne-Rhône-Alpes." },
+          {
+            type: "p",
+            text: "Marseille est la deuxième ville de France, répartie en 16 arrondissements très différents, des grands ensembles des quartiers nord aux maisons des quartiers sud et aux cabanons du littoral. La fibre est disponible dans la grande majorité de la ville ; là où ce n'est pas encore le cas, l'IPTV fonctionne aussi en ADSL, en qualité HD.",
+          },
+          {
+            type: "p",
+            text: "Dans les grands immeubles, le Wi-Fi est souvent saturé le soir : passez en 5 GHz ou branchez la TV en Ethernet. Dans une maison avec jardin ou terrasse, un Wi-Fi maillé couvre mieux toutes les pièces qu'un simple répéteur.",
+          },
+          {
+            type: "p",
+            text: "Pour regarder sur la TV du salon et sur une tablette en même temps, il faut un forfait 2 écrans : 18 € pour 1 mois, 89 € pour 12 mois.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Marseille en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Marseille",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Marseille que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Marseille",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Aix-en-Provence, Aubagne et dans toute la métropole Aix-Marseille-Provence, ainsi qu'à [Toulon](/iptv-toulon) et [Nice](/iptv-nice). Voir [IPTV en Provence-Alpes-Côte d'Azur](/iptv-paca).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Annecy ?", a: "Stream Bleu est un choix très demandé à Annecy : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Annecy ?", a: "La technologie IPTV est légale partout en France, y compris à Annecy — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Annecy ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Haute-Savoie, ce qui permet un streaming 4K stable à Annecy et dans les communes voisines comme Chambéry ou Grenoble." },
-      { q: "Combien coûte un abonnement IPTV à Annecy ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Marseille ?",
+        a: "Oui. L'abonnement fonctionne à Marseille (Bouches-du-Rhône, 13) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Stream Bleu fonctionne-t-il dans tous les arrondissements de Marseille ?",
+        a: "Oui, partout où vous avez internet. En ADSL, choisissez la qualité HD ; avec la fibre, la 4K est confortable.",
+      },
+      {
+        q: "Comment regarder sur deux écrans à Marseille ?",
+        a: "Prenez un forfait 2 écrans : 18 € pour 1 mois ou 89 € pour 12 mois. Chaque écran peut regarder une chaîne différente.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Marseille ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-chambery", "/iptv-grenoble", "/iptv-lyon"],
+    related: ["/iptv-paca", "/iptv-toulon", "/iptv-nice", "/tarifs", "/essai-gratuit"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-valence",
-    group: "cities",
-    region: "auvergne-rhone-alpes",
-    navLabel: "Valence",
-    cardText: "IPTV à Valence (Drôme) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Valence 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Valence (Drôme). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv valence", "iptv valence", "abonnement iptv valence", "meilleur iptv valence", "iptv valence avis"],
-    badge: "IPTV · Valence",
-    h1: "IPTV à Valence — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Valence** (Drôme, région Auvergne-Rhône-Alpes) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est sur les rives du Rhône, entre Lyon et Provence. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-auvergne-rhone-alpes", label: "Auvergne-Rhône-Alpes" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Valence ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Valence en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Drôme et autour de Valence",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Drôme, ce qui permet de profiter pleinement de la 4K Ultra HD à Valence sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Grenoble](/iptv-grenoble), [Lyon](/iptv-lyon), [Chambéry](/iptv-chambery) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Auvergne-Rhône-Alpes." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Valence ?", a: "Stream Bleu est un choix très demandé à Valence : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Valence ?", a: "La technologie IPTV est légale partout en France, y compris à Valence — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Valence ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Drôme, ce qui permet un streaming 4K stable à Valence et dans les communes voisines comme Grenoble ou Lyon." },
-      { q: "Combien coûte un abonnement IPTV à Valence ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-grenoble", "/iptv-lyon", "/iptv-chambery"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-chambery",
-    group: "cities",
-    region: "auvergne-rhone-alpes",
-    navLabel: "Chambéry",
-    cardText: "IPTV à Chambéry (Savoie) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Chambéry 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Chambéry (Savoie). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv chambéry", "iptv chambery", "abonnement iptv chambéry", "meilleur iptv chambéry", "iptv chambéry avis"],
-    badge: "IPTV · Chambéry",
-    h1: "IPTV à Chambéry — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Chambéry** (Savoie, région Auvergne-Rhône-Alpes) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est ancienne capitale historique de la Savoie, entre les massifs alpins. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-auvergne-rhone-alpes", label: "Auvergne-Rhône-Alpes" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Chambéry ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Chambéry en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Savoie et autour de Chambéry",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Savoie, ce qui permet de profiter pleinement de la 4K Ultra HD à Chambéry sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Annecy](/iptv-annecy), [Grenoble](/iptv-grenoble), [Lyon](/iptv-lyon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Auvergne-Rhône-Alpes." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Chambéry ?", a: "Stream Bleu est un choix très demandé à Chambéry : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Chambéry ?", a: "La technologie IPTV est légale partout en France, y compris à Chambéry — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Chambéry ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Savoie, ce qui permet un streaming 4K stable à Chambéry et dans les communes voisines comme Annecy ou Grenoble." },
-      { q: "Combien coûte un abonnement IPTV à Chambéry ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-annecy", "/iptv-grenoble", "/iptv-lyon"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-limoges",
-    group: "cities",
-    region: "nouvelle-aquitaine",
-    navLabel: "Limoges",
-    cardText: "IPTV à Limoges (Haute-Vienne) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Limoges 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Limoges (Haute-Vienne). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv limoges", "iptv limoges", "abonnement iptv limoges", "meilleur iptv limoges", "iptv limoges avis"],
-    badge: "IPTV · Limoges",
-    h1: "IPTV à Limoges — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Limoges** (Haute-Vienne, région Nouvelle-Aquitaine) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est réputée dans le monde entier pour sa porcelaine. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-nouvelle-aquitaine", label: "Nouvelle-Aquitaine" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Limoges ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Limoges en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Haute-Vienne et autour de Limoges",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Haute-Vienne, ce qui permet de profiter pleinement de la 4K Ultra HD à Limoges sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Bordeaux](/iptv-bordeaux), [Poitiers](/iptv-poitiers), [La Rochelle](/iptv-la-rochelle) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Nouvelle-Aquitaine." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Limoges ?", a: "Stream Bleu est un choix très demandé à Limoges : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Limoges ?", a: "La technologie IPTV est légale partout en France, y compris à Limoges — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Limoges ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Haute-Vienne, ce qui permet un streaming 4K stable à Limoges et dans les communes voisines comme Bordeaux ou Poitiers." },
-      { q: "Combien coûte un abonnement IPTV à Limoges ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-bordeaux", "/iptv-poitiers", "/iptv-la-rochelle"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-poitiers",
-    group: "cities",
-    region: "nouvelle-aquitaine",
-    navLabel: "Poitiers",
-    cardText: "IPTV à Poitiers (Vienne) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Poitiers 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Poitiers (Vienne). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv poitiers", "iptv poitiers", "abonnement iptv poitiers", "meilleur iptv poitiers", "iptv poitiers avis"],
-    badge: "IPTV · Poitiers",
-    h1: "IPTV à Poitiers — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Poitiers** (Vienne, région Nouvelle-Aquitaine) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est ville universitaire historique, à proximité du parc du Futuroscope. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-nouvelle-aquitaine", label: "Nouvelle-Aquitaine" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Poitiers ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Poitiers en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Vienne et autour de Poitiers",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Vienne, ce qui permet de profiter pleinement de la 4K Ultra HD à Poitiers sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Bordeaux](/iptv-bordeaux), [La Rochelle](/iptv-la-rochelle), [Limoges](/iptv-limoges) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Nouvelle-Aquitaine." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Poitiers ?", a: "Stream Bleu est un choix très demandé à Poitiers : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Poitiers ?", a: "La technologie IPTV est légale partout en France, y compris à Poitiers — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Poitiers ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Vienne, ce qui permet un streaming 4K stable à Poitiers et dans les communes voisines comme Bordeaux ou La Rochelle." },
-      { q: "Combien coûte un abonnement IPTV à Poitiers ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-bordeaux", "/iptv-la-rochelle", "/iptv-limoges"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-pau",
-    group: "cities",
-    region: "nouvelle-aquitaine",
-    navLabel: "Pau",
-    cardText: "IPTV à Pau (Pyrénées-Atlantiques) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Pau 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Pau (Pyrénées-Atlantiques). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv pau", "iptv pau", "abonnement iptv pau", "meilleur iptv pau", "iptv pau avis"],
-    badge: "IPTV · Pau",
-    h1: "IPTV à Pau — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Pau** (Pyrénées-Atlantiques, région Nouvelle-Aquitaine) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au pied des Pyrénées, avec une vue imprenable sur la chaîne montagneuse. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-nouvelle-aquitaine", label: "Nouvelle-Aquitaine" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Pau ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Pau en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans les Pyrénées-Atlantiques et autour de Pau",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Pyrénées-Atlantiques, ce qui permet de profiter pleinement de la 4K Ultra HD à Pau sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Bordeaux](/iptv-bordeaux), [La Rochelle](/iptv-la-rochelle), [Poitiers](/iptv-poitiers) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Nouvelle-Aquitaine." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Pau ?", a: "Stream Bleu est un choix très demandé à Pau : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Pau ?", a: "La technologie IPTV est légale partout en France, y compris à Pau — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Pau ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Pyrénées-Atlantiques, ce qui permet un streaming 4K stable à Pau et dans les communes voisines comme Bordeaux ou La Rochelle." },
-      { q: "Combien coûte un abonnement IPTV à Pau ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-bordeaux", "/iptv-la-rochelle", "/iptv-poitiers"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-la-rochelle",
-    group: "cities",
-    region: "nouvelle-aquitaine",
-    navLabel: "La Rochelle",
-    cardText: "IPTV à La Rochelle (Charente-Maritime) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV La Rochelle 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à La Rochelle (Charente-Maritime). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv la rochelle", "iptv la rochelle", "abonnement iptv la rochelle", "meilleur iptv la rochelle", "iptv la rochelle avis"],
-    badge: "IPTV · La Rochelle",
-    h1: "IPTV à La Rochelle — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **La Rochelle** (Charente-Maritime, région Nouvelle-Aquitaine) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est grand port de plaisance sur la côte Atlantique, ville du célèbre club de rugby du Stade Rochelais. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-nouvelle-aquitaine", label: "Nouvelle-Aquitaine" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à La Rochelle ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à La Rochelle en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Charente-Maritime et autour de La Rochelle",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Charente-Maritime, ce qui permet de profiter pleinement de la 4K Ultra HD à La Rochelle sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Bordeaux](/iptv-bordeaux), [Poitiers](/iptv-poitiers), [Pau](/iptv-pau) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Nouvelle-Aquitaine." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à La Rochelle ?", a: "Stream Bleu est un choix très demandé à La Rochelle : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à La Rochelle ?", a: "La technologie IPTV est légale partout en France, y compris à La Rochelle — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à La Rochelle ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Charente-Maritime, ce qui permet un streaming 4K stable à La Rochelle et dans les communes voisines comme Bordeaux ou Poitiers." },
-      { q: "Combien coûte un abonnement IPTV à La Rochelle ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-bordeaux", "/iptv-poitiers", "/iptv-pau"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-nimes",
+    slug: "/iptv-toulouse",
     group: "cities",
     region: "occitanie",
-    navLabel: "Nîmes",
-    cardText: "IPTV à Nîmes (Gard) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Nîmes 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Nîmes (Gard). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv nîmes", "iptv nimes", "abonnement iptv nîmes", "meilleur iptv nîmes", "iptv nîmes avis"],
-    badge: "IPTV · Nîmes",
-    h1: "IPTV à Nîmes — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Nîmes** (Gard, région Occitanie) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est connue pour ses arènes romaines exceptionnellement conservées. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-occitanie", label: "Occitanie" },
+    navLabel: "Toulouse",
+    cardText: "IPTV à Toulouse (Haute-Garonne, 31) : conseils réseau, installation et tarifs.",
+    title: "IPTV Toulouse 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Toulouse (Haute-Garonne) : installation sur Smart TV et Fire TV, forfaits colocation, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv toulouse", "abonnement iptv toulouse", "iptv toulouse prix"],
+    badge: "IPTV · Toulouse",
+    h1: "IPTV à Toulouse : abonnement, installation et conseils",
+    intro: "L'**IPTV à Toulouse** (Haute-Garonne, 31, Occitanie) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-occitanie",
+      label: "Occitanie",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Nîmes ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Nîmes en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans le Gard et autour de Nîmes",
+        h2: "L'IPTV à Toulouse : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Gard, ce qui permet de profiter pleinement de la 4K Ultra HD à Nîmes sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Montpellier](/iptv-montpellier), [Toulouse](/iptv-toulouse), [Perpignan](/iptv-perpignan) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Occitanie." },
+          {
+            type: "p",
+            text: "Toulouse, quatrième ville de France, est aussi l'une des plus grandes villes étudiantes du pays. Beaucoup d'abonnés y vivent en colocation ou en résidence étudiante, où la question n'est pas le débit mais le nombre d'écrans : chacun veut regarder sa chaîne sur sa TV, son PC ou son téléphone.",
+          },
+          {
+            type: "p",
+            text: "En colocation, un forfait **2 écrans** (18 € pour 1 mois, 89 € pour 12 mois) ou plus évite de partager des identifiants et les déconnexions qui vont avec. Sur PC ou Mac, VLC ou un lecteur en ligne suffisent ; sur TV, l'application de la Smart TV ou un Fire TV Stick.",
+          },
+          {
+            type: "p",
+            text: "Dans les résidences étudiantes, le Wi-Fi collectif bloque parfois certains flux ou limite le débit : testez d'abord avec l'essai gratuit de 24h avant de vous abonner.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Toulouse en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Toulouse",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Toulouse que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Toulouse",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Blagnac, Colomiers et dans toute l'agglomération, ainsi qu'à [Montpellier](/iptv-montpellier). Voir [IPTV en Occitanie](/iptv-occitanie).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Nîmes ?", a: "Stream Bleu est un choix très demandé à Nîmes : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Nîmes ?", a: "La technologie IPTV est légale partout en France, y compris à Nîmes — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Nîmes ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Gard, ce qui permet un streaming 4K stable à Nîmes et dans les communes voisines comme Montpellier ou Toulouse." },
-      { q: "Combien coûte un abonnement IPTV à Nîmes ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Toulouse ?",
+        a: "Oui. L'abonnement fonctionne à Toulouse (Haute-Garonne, 31) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Quel forfait IPTV pour une colocation à Toulouse ?",
+        a: "Comptez les écrans utilisés en même temps : pour deux colocataires, le forfait 2 écrans coûte 18 € pour 1 mois.",
+      },
+      {
+        q: "L'IPTV marche-t-elle sur le Wi-Fi d'une résidence étudiante ?",
+        a: "Souvent oui, mais certains réseaux collectifs limitent le streaming. Faites l'essai gratuit de 24h pour vérifier avant de payer.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Toulouse ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-montpellier", "/iptv-toulouse", "/iptv-perpignan"],
+    related: ["/iptv-occitanie", "/iptv-montpellier", "/iptv-pc-mac", "/essai-gratuit", "/tarifs"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-perpignan",
+    slug: "/iptv-nice",
+    group: "cities",
+    region: "paca",
+    navLabel: "Nice",
+    cardText: "IPTV à Nice (Alpes-Maritimes, 06) : conseils réseau, installation et tarifs.",
+    title: "IPTV Nice 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Nice (Alpes-Maritimes) : installation sur Smart TV et Fire TV, résidences secondaires, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv nice", "abonnement iptv nice", "iptv nice prix"],
+    badge: "IPTV · Nice",
+    h1: "IPTV à Nice : abonnement, installation et conseils",
+    intro: "L'**IPTV à Nice** (Alpes-Maritimes, 06, Provence-Alpes-Côte d'Azur) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-paca",
+      label: "Provence-Alpes-Côte d'Azur",
+    },
+    sections: [
+      {
+        id: "local",
+        h2: "L'IPTV à Nice : ce qui compte vraiment",
+        blocks: [
+          {
+            type: "p",
+            text: "À Nice, une grande partie des logements sont des appartements, du Vieux-Nice aux immeubles de la Promenade et des collines. Comme dans toutes les villes denses, le Wi-Fi est souvent encombré le soir : la bande 5 GHz ou un câble Ethernet donnent une image plus stable que le 2,4 GHz.",
+          },
+          {
+            type: "p",
+            text: "La Côte d'Azur compte beaucoup de résidences secondaires et de séjours longs. Un Fire TV Stick ou une box Android déjà configuré se branche en quelques minutes sur la TV du logement : pas besoin de réinstaller l'application à chaque séjour.",
+          },
+          {
+            type: "p",
+            text: "Si la TV de votre résidence principale reste allumée pendant que vous regardez à Nice, il vous faut un forfait 2 écrans, puisque les deux flux sont simultanés.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Nice en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Nice",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Nice que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Nice",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Cannes, Antibes, Menton et dans toute la métropole Nice Côte d'Azur. Voir [IPTV en Provence-Alpes-Côte d'Azur](/iptv-paca) et [IPTV Marseille](/iptv-marseille).",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Stream Bleu fonctionne-t-il à Nice ?",
+        a: "Oui. L'abonnement fonctionne à Nice (Alpes-Maritimes, 06) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Puis-je utiliser mon abonnement dans mon appartement de vacances à Nice ?",
+        a: "Oui, sur n'importe quelle connexion internet. Si deux TV regardent en même temps, prenez un forfait 2 écrans.",
+      },
+      {
+        q: "Quel appareil emporter pour un séjour sur la Côte d'Azur ?",
+        a: "Un Fire TV Stick déjà configuré : il se branche en HDMI et se connecte au Wi-Fi du logement en quelques minutes.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Nice ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
+    ],
+    related: ["/iptv-paca", "/iptv-marseille", "/iptv-toulon", "/iptv-firestick-france", "/tarifs"],
+    schema: "WebPage",
+    datePublished: "2026-09-26",
+    dateModified: "2026-10-23",
+  },
+  {
+    slug: "/iptv-bordeaux",
+    group: "cities",
+    region: "nouvelle-aquitaine",
+    navLabel: "Bordeaux",
+    cardText: "IPTV à Bordeaux (Gironde, 33) : conseils réseau, installation et tarifs.",
+    title: "IPTV Bordeaux 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Bordeaux (Gironde) : installation sur Smart TV et Fire TV, Wi-Fi en échoppe, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv bordeaux", "abonnement iptv bordeaux", "iptv bordeaux prix"],
+    badge: "IPTV · Bordeaux",
+    h1: "IPTV à Bordeaux : abonnement, installation et conseils",
+    intro: "L'**IPTV à Bordeaux** (Gironde, 33, Nouvelle-Aquitaine) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-nouvelle-aquitaine",
+      label: "Nouvelle-Aquitaine",
+    },
+    sections: [
+      {
+        id: "local",
+        h2: "L'IPTV à Bordeaux : ce qui compte vraiment",
+        blocks: [
+          {
+            type: "p",
+            text: "Bordeaux a un habitat bien particulier : l'**échoppe bordelaise**, maison basse de plain-pied, étroite et très profonde. La box est souvent côté rue et la TV côté jardin, quinze ou vingt mètres plus loin à travers plusieurs murs en pierre : le Wi-Fi arrive affaibli et l'IPTV saccade.",
+          },
+          {
+            type: "p",
+            text: "Dans une échoppe, un kit **CPL** ou un Wi-Fi maillé avec un point d'accès au milieu de la maison règle le problème. Dans les immeubles de la rive droite ou des Bassins à flot, le Wi-Fi 5 GHz suffit en général.",
+          },
+          {
+            type: "p",
+            text: "Bordeaux et sa métropole sont bien raccordées à la fibre : la 4K est confortable avec environ 25 Mbps par écran.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Bordeaux en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Bordeaux",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Bordeaux que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Bordeaux",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Mérignac, Pessac, Talence et sur le bassin d'Arcachon. Voir [IPTV en Nouvelle-Aquitaine](/iptv-nouvelle-aquitaine).",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Stream Bleu fonctionne-t-il à Bordeaux ?",
+        a: "Oui. L'abonnement fonctionne à Bordeaux (Gironde, 33) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Mon Wi-Fi ne va pas jusqu'au fond de mon échoppe, que faire ?",
+        a: "Utilisez un kit CPL ou un Wi-Fi maillé : la profondeur et les murs en pierre des échoppes affaiblissent beaucoup le signal.",
+      },
+      {
+        q: "Combien de débit pour l'IPTV en 4K à Bordeaux ?",
+        a: "Environ 25 Mbps stables par écran 4K, 10 Mbps en HD.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Bordeaux ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
+    ],
+    related: ["/iptv-nouvelle-aquitaine", "/blog/iptv-wifi-ou-ethernet", "/tarifs", "/essai-gratuit", "/iptv-toulouse"],
+    schema: "WebPage",
+    datePublished: "2026-09-26",
+    dateModified: "2026-10-23",
+  },
+  {
+    slug: "/iptv-lille",
+    group: "cities",
+    region: "hauts-de-france",
+    navLabel: "Lille",
+    cardText: "IPTV à Lille (Nord, 59) : conseils réseau, installation et tarifs.",
+    title: "IPTV Lille 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Lille (Nord) : installation sur Smart TV et Fire TV, maisons à étages, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv lille", "abonnement iptv lille", "iptv lille prix"],
+    badge: "IPTV · Lille",
+    h1: "IPTV à Lille : abonnement, installation et conseils",
+    intro: "L'**IPTV à Lille** (Nord, 59, Hauts-de-France) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-hauts-de-france",
+      label: "Hauts-de-France",
+    },
+    sections: [
+      {
+        id: "local",
+        h2: "L'IPTV à Lille : ce qui compte vraiment",
+        blocks: [
+          {
+            type: "p",
+            text: "La métropole européenne de Lille (Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq) est collée à la frontière belge, et beaucoup de foyers y regardent des chaînes françaises comme belges. L'abonnement Stream Bleu se configure de la même façon des deux côtés de la frontière.",
+          },
+          {
+            type: "p",
+            text: "L'habitat lillois typique, la maison de ville en briques sur deux ou trois étages, gêne le Wi-Fi : la TV de la chambre à l'étage reçoit souvent un signal trop faible pour un flux HD ou 4K. Un kit CPL ou un Wi-Fi maillé avec un point d'accès par étage est la solution la plus fiable.",
+          },
+          {
+            type: "p",
+            text: "Pour les étudiants de Lille (universités, grandes écoles), le forfait 2 écrans permet de partager l'abonnement en colocation sans partager d'identifiants.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Lille en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Lille",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Lille que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Lille",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Roubaix, Tourcoing, Villeneuve-d'Ascq, Lens et Douai. Voir [IPTV en Hauts-de-France](/iptv-hauts-de-france).",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Stream Bleu fonctionne-t-il à Lille ?",
+        a: "Oui. L'abonnement fonctionne à Lille (Nord, 59) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Ma TV à l'étage coupe souvent à Lille, pourquoi ?",
+        a: "Les planchers et murs en briques affaiblissent le Wi-Fi. Un kit CPL ou un Wi-Fi maillé règle le problème.",
+      },
+      {
+        q: "Puis-je utiliser l'abonnement en Belgique ?",
+        a: "Oui, il se configure de la même façon. Le prix reste celui de la grille officielle en euros.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Lille ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
+    ],
+    related: ["/iptv-hauts-de-france", "/blog/iptv-wifi-ou-ethernet", "/tarifs", "/essai-gratuit", "/iptv-paris"],
+    schema: "WebPage",
+    datePublished: "2026-09-26",
+    dateModified: "2026-10-23",
+  },
+  {
+    slug: "/iptv-nantes",
+    group: "cities",
+    region: "pays-de-la-loire",
+    navLabel: "Nantes",
+    cardText: "IPTV à Nantes (Loire-Atlantique, 44) : conseils réseau, installation et tarifs.",
+    title: "IPTV Nantes 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Nantes (Loire-Atlantique) : installation sur Smart TV et Fire TV, conseils réseau, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv nantes", "abonnement iptv nantes", "iptv nantes prix"],
+    badge: "IPTV · Nantes",
+    h1: "IPTV à Nantes : abonnement, installation et conseils",
+    intro: "L'**IPTV à Nantes** (Loire-Atlantique, 44, Pays de la Loire) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-pays-de-la-loire",
+      label: "Pays de la Loire",
+    },
+    sections: [
+      {
+        id: "local",
+        h2: "L'IPTV à Nantes : ce qui compte vraiment",
+        blocks: [
+          {
+            type: "p",
+            text: "Nantes, sixième ville de France, est bien raccordée à la fibre, de l'île de Nantes aux quartiers de Chantenay et de Doulon. La 4K y est confortable, avec environ 25 Mbps stables par écran.",
+          },
+          {
+            type: "p",
+            text: "Beaucoup de Nantais ont une maison avec étage ou un appartement dans un immeuble ancien du centre (quartier Graslin, Bouffay) : si la TV est loin de la box, préférez un câble Ethernet ou un kit CPL au répéteur Wi-Fi.",
+          },
+          {
+            type: "p",
+            text: "L'été, de nombreux habitants partent sur la côte (La Baule, Pornic, Noirmoutier) : un Fire TV Stick déjà configuré se branche sur la TV de la location en quelques minutes.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Nantes en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Nantes",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Nantes que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Nantes",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Rezé, Saint-Herblain, Saint-Nazaire et dans toute la Loire-Atlantique. Voir [IPTV en Pays de la Loire](/iptv-pays-de-la-loire) et [IPTV Rennes](/iptv-rennes).",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Stream Bleu fonctionne-t-il à Nantes ?",
+        a: "Oui. L'abonnement fonctionne à Nantes (Loire-Atlantique, 44) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Peut-on emporter son IPTV en vacances sur la côte ?",
+        a: "Oui, sur n'importe quelle connexion internet. Un Fire TV Stick configuré à Nantes fonctionne tel quel dans la location.",
+      },
+      {
+        q: "Quel débit faut-il à Nantes pour la 4K ?",
+        a: "Environ 25 Mbps stables par écran 4K, 10 Mbps en HD.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Nantes ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
+    ],
+    related: ["/iptv-pays-de-la-loire", "/iptv-rennes", "/iptv-firestick-france", "/tarifs", "/essai-gratuit"],
+    schema: "WebPage",
+    datePublished: "2026-09-26",
+    dateModified: "2026-10-23",
+  },
+  {
+    slug: "/iptv-strasbourg",
+    group: "cities",
+    region: "grand-est",
+    navLabel: "Strasbourg",
+    cardText: "IPTV à Strasbourg (Bas-Rhin, 67) : conseils réseau, installation et tarifs.",
+    title: "IPTV Strasbourg 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Strasbourg (Bas-Rhin) : installation sur Smart TV et Fire TV, infos frontaliers, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv strasbourg", "abonnement iptv strasbourg", "iptv strasbourg prix"],
+    badge: "IPTV · Strasbourg",
+    h1: "IPTV à Strasbourg : abonnement, installation et conseils",
+    intro: "L'**IPTV à Strasbourg** (Bas-Rhin, 67, Grand Est) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-grand-est",
+      label: "Grand Est",
+    },
+    sections: [
+      {
+        id: "local",
+        h2: "L'IPTV à Strasbourg : ce qui compte vraiment",
+        blocks: [
+          {
+            type: "p",
+            text: "Strasbourg, siège du Parlement européen, est une ville frontalière de l'Allemagne (Kehl est de l'autre côté du Rhin) où beaucoup de foyers sont bilingues ou internationaux. Les abonnés y cherchent souvent des chaînes de plusieurs pays dans un même abonnement, en plus des chaînes françaises.",
+          },
+          {
+            type: "p",
+            text: "Dans les immeubles anciens de la Grande Île et de la Neustadt, les murs épais affaiblissent le Wi-Fi : branchez la TV du salon en Ethernet, ou utilisez un kit CPL. Dans les quartiers récents, le Wi-Fi 5 GHz suffit.",
+          },
+          {
+            type: "p",
+            text: "Si vous travaillez en Allemagne, l'application mobile fonctionne aussi là-bas : l'itinérance dans l'Union européenne est en général incluse dans les forfaits mobiles français.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Strasbourg en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Strasbourg",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Strasbourg que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Strasbourg",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Schiltigheim, Illkirch et dans toute l'Eurométropole, ainsi qu'à Colmar et Mulhouse. Voir [IPTV dans le Grand Est](/iptv-grand-est) et [IPTV Reims](/iptv-reims).",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Stream Bleu fonctionne-t-il à Strasbourg ?",
+        a: "Oui. L'abonnement fonctionne à Strasbourg (Bas-Rhin, 67) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Puis-je regarder depuis l'Allemagne en traversant la frontière ?",
+        a: "L'application fonctionne sur toute connexion internet. En Allemagne, l'itinérance mobile UE est généralement incluse dans votre forfait.",
+      },
+      {
+        q: "Mon Wi-Fi passe mal dans mon appartement de la Neustadt, que faire ?",
+        a: "Branchez la TV en Ethernet ou avec un kit CPL : les murs épais des immeubles anciens bloquent le Wi-Fi.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Strasbourg ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
+    ],
+    related: ["/iptv-grand-est", "/iptv-reims", "/blog/iptv-wifi-ou-ethernet", "/tarifs", "/essai-gratuit"],
+    schema: "WebPage",
+    datePublished: "2026-09-26",
+    dateModified: "2026-10-23",
+  },
+  {
+    slug: "/iptv-rennes",
+    group: "cities",
+    region: "bretagne",
+    navLabel: "Rennes",
+    cardText: "IPTV à Rennes (Ille-et-Vilaine, 35) : conseils réseau, installation et tarifs.",
+    title: "IPTV Rennes 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Rennes (Ille-et-Vilaine) : installation sur Smart TV et Fire TV, forfaits étudiants, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv rennes", "abonnement iptv rennes", "iptv rennes prix"],
+    badge: "IPTV · Rennes",
+    h1: "IPTV à Rennes : abonnement, installation et conseils",
+    intro: "L'**IPTV à Rennes** (Ille-et-Vilaine, 35, Bretagne) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-bretagne",
+      label: "Bretagne",
+    },
+    sections: [
+      {
+        id: "local",
+        h2: "L'IPTV à Rennes : ce qui compte vraiment",
+        blocks: [
+          {
+            type: "p",
+            text: "Rennes, capitale de la Bretagne, compte une très forte population étudiante : colocations, résidences universitaires et petits appartements sont la norme dans le centre et autour des campus de Beaulieu et Villejean. Le bon forfait se choisit donc d'abord selon le nombre d'écrans utilisés en même temps.",
+          },
+          {
+            type: "p",
+            text: "En colocation, le forfait 2 écrans (18 € pour 1 mois, 89 € pour 12 mois) évite de partager des identifiants. Sur ordinateur, VLC ou un lecteur en ligne suffisent ; sur TV, un Fire TV Stick ou l'application de la Smart TV.",
+          },
+          {
+            type: "p",
+            text: "Dans les maisons en pierre et les longères autour de Rennes, les murs épais arrêtent le Wi-Fi : un kit CPL règle la plupart des coupures.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Rennes en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Rennes",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Rennes que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Rennes",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Cesson-Sévigné, Saint-Malo, Vannes et dans toute la Bretagne. Voir [IPTV en Bretagne](/iptv-bretagne) et [IPTV Nantes](/iptv-nantes).",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Stream Bleu fonctionne-t-il à Rennes ?",
+        a: "Oui. L'abonnement fonctionne à Rennes (Ille-et-Vilaine, 35) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Quel forfait IPTV pour des étudiants à Rennes ?",
+        a: "Comptez le nombre d'écrans simultanés. À deux, le forfait 2 écrans coûte 18 € pour 1 mois.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle sur un PC en résidence universitaire ?",
+        a: "Oui, avec VLC ou un lecteur web. Faites l'essai gratuit de 24h pour vérifier que le réseau de la résidence ne bloque pas le streaming.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Rennes ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
+    ],
+    related: ["/iptv-bretagne", "/iptv-nantes", "/iptv-pc-mac", "/essai-gratuit", "/tarifs"],
+    schema: "WebPage",
+    datePublished: "2026-09-26",
+    dateModified: "2026-10-23",
+  },
+  {
+    slug: "/iptv-montpellier",
     group: "cities",
     region: "occitanie",
-    navLabel: "Perpignan",
-    cardText: "IPTV à Perpignan (Pyrénées-Orientales) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Perpignan 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Perpignan (Pyrénées-Orientales). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv perpignan", "iptv perpignan", "abonnement iptv perpignan", "meilleur iptv perpignan", "iptv perpignan avis"],
-    badge: "IPTV · Perpignan",
-    h1: "IPTV à Perpignan — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Perpignan** (Pyrénées-Orientales, région Occitanie) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est aux portes de l'Espagne, sur la Côte Vermeille, ville du club de rugby de l'USAP. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-occitanie", label: "Occitanie" },
+    navLabel: "Montpellier",
+    cardText: "IPTV à Montpellier (Hérault, 34) : conseils réseau, installation et tarifs.",
+    title: "IPTV Montpellier 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Montpellier (Hérault) : installation sur Smart TV et Fire TV, conseils réseau, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv montpellier", "abonnement iptv montpellier", "iptv montpellier prix"],
+    badge: "IPTV · Montpellier",
+    h1: "IPTV à Montpellier : abonnement, installation et conseils",
+    intro: "L'**IPTV à Montpellier** (Hérault, 34, Occitanie) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-occitanie",
+      label: "Occitanie",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Perpignan ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Perpignan en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans les Pyrénées-Orientales et autour de Perpignan",
+        h2: "L'IPTV à Montpellier : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Pyrénées-Orientales, ce qui permet de profiter pleinement de la 4K Ultra HD à Perpignan sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Montpellier](/iptv-montpellier), [Toulouse](/iptv-toulouse), [Nîmes](/iptv-nimes) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Occitanie." },
+          {
+            type: "p",
+            text: "Montpellier est l'une des villes françaises qui grandit le plus vite, avec une population jeune et étudiante importante et beaucoup de logements récents (Port Marianne, Odysseum). Dans ces immeubles neufs, la fibre est généralement installée et le Wi-Fi 5 GHz suffit pour la 4K.",
+          },
+          {
+            type: "p",
+            text: "Dans l'Écusson, le centre historique, les murs anciens affaiblissent le Wi-Fi : un câble Ethernet ou un kit CPL donne une image plus stable.",
+          },
+          {
+            type: "p",
+            text: "L'été, entre la chaleur et les séjours à la plage (Palavas, La Grande-Motte, Carnon), pensez à ventiler votre boîtier Android : un appareil qui surchauffe ralentit et saccade.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Montpellier en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Montpellier",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Montpellier que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Montpellier",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Lattes, Castelnau-le-Lez, Nîmes, Sète et dans tout l'Hérault. Voir [IPTV en Occitanie](/iptv-occitanie) et [IPTV Toulouse](/iptv-toulouse).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Perpignan ?", a: "Stream Bleu est un choix très demandé à Perpignan : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Perpignan ?", a: "La technologie IPTV est légale partout en France, y compris à Perpignan — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Perpignan ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Pyrénées-Orientales, ce qui permet un streaming 4K stable à Perpignan et dans les communes voisines comme Montpellier ou Toulouse." },
-      { q: "Combien coûte un abonnement IPTV à Perpignan ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Montpellier ?",
+        a: "Oui. L'abonnement fonctionne à Montpellier (Hérault, 34) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Pourquoi mon boîtier IPTV saccade en été à Montpellier ?",
+        a: "La chaleur fait ralentir les petits boîtiers Android. Placez-le à l'air libre, loin de la TV, ou utilisez l'application de la Smart TV.",
+      },
+      {
+        q: "Le Wi-Fi d'un appartement neuf suffit-il pour la 4K ?",
+        a: "En général oui, en 5 GHz. Comptez environ 25 Mbps stables par écran 4K.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Montpellier ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-montpellier", "/iptv-toulouse", "/iptv-nimes"],
+    related: ["/iptv-occitanie", "/iptv-toulouse", "/iptv-android-tv-france", "/tarifs", "/essai-gratuit"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-aix-en-provence",
+    slug: "/iptv-grenoble",
+    group: "cities",
+    region: "auvergne-rhone-alpes",
+    navLabel: "Grenoble",
+    cardText: "IPTV à Grenoble (Isère, 38) : conseils réseau, installation et tarifs.",
+    title: "IPTV Grenoble 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Grenoble (Isère) : installation sur Smart TV et Fire TV, zones de montagne, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv grenoble", "abonnement iptv grenoble", "iptv grenoble prix"],
+    badge: "IPTV · Grenoble",
+    h1: "IPTV à Grenoble : abonnement, installation et conseils",
+    intro: "L'**IPTV à Grenoble** (Isère, 38, Auvergne-Rhône-Alpes) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-auvergne-rhone-alpes",
+      label: "Auvergne-Rhône-Alpes",
+    },
+    sections: [
+      {
+        id: "local",
+        h2: "L'IPTV à Grenoble : ce qui compte vraiment",
+        blocks: [
+          {
+            type: "p",
+            text: "Grenoble est entourée de trois massifs (Vercors, Chartreuse, Belledonne). En ville et dans l'agglomération, la fibre est largement disponible ; mais dans les communes de montagne et les stations (Chamrousse, Villard-de-Lans, Les Deux Alpes), la connexion repose encore parfois sur l'ADSL ou la 4G.",
+          },
+          {
+            type: "p",
+            text: "Avec moins de 15 Mbps, réglez le lecteur en HD plutôt qu'en 4K et augmentez la mémoire tampon dans TiviMate ou IPTV Smarters Pro. Une box 4G/5G placée près d'une fenêtre donne souvent de meilleurs résultats qu'une vieille ligne cuivre en vallée.",
+          },
+          {
+            type: "p",
+            text: "Pour un chalet ou un appartement en station, un Fire TV Stick déjà configuré à Grenoble se branche sur la TV en deux minutes.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Grenoble en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Grenoble",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Grenoble que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Grenoble",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Échirolles, Saint-Martin-d'Hères, Voiron et dans toute l'Isère. Voir [IPTV en Auvergne-Rhône-Alpes](/iptv-auvergne-rhone-alpes) et [IPTV Lyon](/iptv-lyon).",
+          },
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Stream Bleu fonctionne-t-il à Grenoble ?",
+        a: "Oui. L'abonnement fonctionne à Grenoble (Isère, 38) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle en station de ski près de Grenoble ?",
+        a: "Oui, si la connexion est stable. En ADSL ou en 4G, choisissez la HD et augmentez la mémoire tampon du lecteur.",
+      },
+      {
+        q: "Quel débit faut-il pour l'IPTV à Grenoble ?",
+        a: "Environ 10 Mbps stables pour la HD et 25 Mbps pour la 4K, par écran.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Grenoble ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
+    ],
+    related: ["/iptv-auvergne-rhone-alpes", "/iptv-lyon", "/tivimate", "/tarifs", "/essai-gratuit"],
+    schema: "WebPage",
+    datePublished: "2026-09-26",
+    dateModified: "2026-10-23",
+  },
+  {
+    slug: "/iptv-toulon",
     group: "cities",
     region: "paca",
-    navLabel: "Aix-en-Provence",
-    cardText: "IPTV à Aix-en-Provence (Bouches-du-Rhône) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Aix-en-Provence 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Aix-en-Provence (Bouches-du-Rhône). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv aix-en-provence", "iptv aix en provence", "abonnement iptv aix-en-provence", "meilleur iptv aix-en-provence", "iptv aix-en-provence avis"],
-    badge: "IPTV · Aix-en-Provence",
-    h1: "IPTV à Aix-en-Provence — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Aix-en-Provence** (Bouches-du-Rhône, région Provence-Alpes-Côte d'Azur) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est ville d'art et ville universitaire à quelques minutes de Marseille. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-paca", label: "Provence-Alpes-Côte d'Azur" },
+    navLabel: "Toulon",
+    cardText: "IPTV à Toulon (Var, 83) : conseils réseau, installation et tarifs.",
+    title: "IPTV Toulon 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Toulon (Var) : installation sur Smart TV et Fire TV, sans engagement, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv toulon", "abonnement iptv toulon", "iptv toulon prix"],
+    badge: "IPTV · Toulon",
+    h1: "IPTV à Toulon : abonnement, installation et conseils",
+    intro: "L'**IPTV à Toulon** (Var, 83, Provence-Alpes-Côte d'Azur) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-paca",
+      label: "Provence-Alpes-Côte d'Azur",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Aix-en-Provence ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Aix-en-Provence en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans les Bouches-du-Rhône et autour de Aix-en-Provence",
+        h2: "L'IPTV à Toulon : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Bouches-du-Rhône, ce qui permet de profiter pleinement de la 4K Ultra HD à Aix-en-Provence sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Marseille](/iptv-marseille), [Avignon](/iptv-avignon), [Toulon](/iptv-toulon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Provence-Alpes-Côte d'Azur." },
+          {
+            type: "p",
+            text: "Toulon accueille la principale base navale française, et beaucoup de familles de militaires y vivent quelques années avant une nouvelle affectation. Pour elles, l'avantage de l'IPTV est simple : l'abonnement suit le foyer, sans box opérateur ni engagement à résilier lors d'un déménagement.",
+          },
+          {
+            type: "p",
+            text: "La ville est construite entre la mer et le mont Faron, avec beaucoup d'immeubles en pente et de maisons sur les hauteurs. Dans une maison à étages, un kit CPL ou un Wi-Fi maillé assure une image stable dans toutes les pièces.",
+          },
+          {
+            type: "p",
+            text: "Comme partout en France, la HD demande environ 10 Mbps stables et la 4K environ 25 Mbps par écran.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Toulon en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Toulon",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Toulon que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Toulon",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à La Seyne-sur-Mer, Hyères, La Garde et dans tout le Var. Voir [IPTV en Provence-Alpes-Côte d'Azur](/iptv-paca) et [IPTV Marseille](/iptv-marseille).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Aix-en-Provence ?", a: "Stream Bleu est un choix très demandé à Aix-en-Provence : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Aix-en-Provence ?", a: "La technologie IPTV est légale partout en France, y compris à Aix-en-Provence — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Aix-en-Provence ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Bouches-du-Rhône, ce qui permet un streaming 4K stable à Aix-en-Provence et dans les communes voisines comme Marseille ou Avignon." },
-      { q: "Combien coûte un abonnement IPTV à Aix-en-Provence ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Toulon ?",
+        a: "Oui. L'abonnement fonctionne à Toulon (Var, 83) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Que devient mon abonnement si je déménage ?",
+        a: "L'abonnement n'est pas lié à une adresse : vous l'utilisez sur votre nouvelle connexion internet, sans démarche.",
+      },
+      {
+        q: "Y a-t-il un engagement ?",
+        a: "Non. Vous choisissez une durée (1, 3, 6 ou 12 mois), sans renouvellement automatique.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Toulon ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-marseille", "/iptv-avignon", "/iptv-toulon"],
+    related: ["/iptv-paca", "/iptv-marseille", "/iptv-nice", "/tarifs", "/essai-gratuit"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-avignon",
+    slug: "/iptv-saint-etienne",
     group: "cities",
-    region: "paca",
-    navLabel: "Avignon",
-    cardText: "IPTV à Avignon (Vaucluse) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Avignon 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Avignon (Vaucluse). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv avignon", "iptv avignon", "abonnement iptv avignon", "meilleur iptv avignon", "iptv avignon avis"],
-    badge: "IPTV · Avignon",
-    h1: "IPTV à Avignon — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Avignon** (Vaucluse, région Provence-Alpes-Côte d'Azur) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est connue pour le Palais des Papes et son festival de théâtre international. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-paca", label: "Provence-Alpes-Côte d'Azur" },
+    region: "auvergne-rhone-alpes",
+    navLabel: "Saint-Étienne",
+    cardText: "IPTV à Saint-Étienne (Loire, 42) : conseils réseau, installation et tarifs.",
+    title: "IPTV Saint-Étienne 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Saint-Étienne (Loire) : installation sur Smart TV et Fire TV, fibre et ADSL, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv saint-étienne", "abonnement iptv saint-étienne", "iptv saint-étienne prix"],
+    badge: "IPTV · Saint-Étienne",
+    h1: "IPTV à Saint-Étienne : abonnement, installation et conseils",
+    intro: "L'**IPTV à Saint-Étienne** (Loire, 42, Auvergne-Rhône-Alpes) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-auvergne-rhone-alpes",
+      label: "Auvergne-Rhône-Alpes",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Avignon ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Avignon en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans le Vaucluse et autour de Avignon",
+        h2: "L'IPTV à Saint-Étienne : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Vaucluse, ce qui permet de profiter pleinement de la 4K Ultra HD à Avignon sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Marseille](/iptv-marseille), [Aix-en-Provence](/iptv-aix-en-provence), [Toulon](/iptv-toulon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Provence-Alpes-Côte d'Azur." },
+          {
+            type: "p",
+            text: "Saint-Étienne, à une soixantaine de kilomètres de Lyon, a un habitat très marqué par son passé industriel : immeubles anciens du centre, maisons de ville et quartiers en pente. La fibre est disponible dans la majorité de la ville ; dans les communes du Pilat ou des monts du Forez, l'ADSL est encore fréquente.",
+          },
+          {
+            type: "p",
+            text: "Dans les immeubles anciens, les murs épais affaiblissent le Wi-Fi : branchez la TV en Ethernet ou avec un kit CPL. En ADSL, gardez la qualité HD.",
+          },
+          {
+            type: "p",
+            text: "Pour un foyer avec plusieurs téléviseurs, le forfait multi-écrans permet à chacun de regarder une chaîne différente au même moment.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Saint-Étienne en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Saint-Étienne",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Saint-Étienne que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Saint-Étienne",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Saint-Chamond, Firminy, Roanne et dans toute la Loire. Voir [IPTV en Auvergne-Rhône-Alpes](/iptv-auvergne-rhone-alpes) et [IPTV Lyon](/iptv-lyon).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Avignon ?", a: "Stream Bleu est un choix très demandé à Avignon : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Avignon ?", a: "La technologie IPTV est légale partout en France, y compris à Avignon — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Avignon ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Vaucluse, ce qui permet un streaming 4K stable à Avignon et dans les communes voisines comme Marseille ou Aix-en-Provence." },
-      { q: "Combien coûte un abonnement IPTV à Avignon ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Saint-Étienne ?",
+        a: "Oui. L'abonnement fonctionne à Saint-Étienne (Loire, 42) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "L'IPTV marche-t-elle en ADSL dans le Pilat ?",
+        a: "Oui, en HD avec environ 10 Mbps stables. La 4K demande plutôt 25 Mbps.",
+      },
+      {
+        q: "Le prix est-il le même qu'à Lyon ?",
+        a: "Oui, les tarifs sont identiques partout : 9 € pour 1 mois, 49 € pour 12 mois (1 écran).",
+      },
+      {
+        q: "Combien coûte l'IPTV à Saint-Étienne ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-marseille", "/iptv-aix-en-provence", "/iptv-toulon"],
+    related: ["/iptv-auvergne-rhone-alpes", "/iptv-lyon", "/iptv-grenoble", "/tarifs", "/essai-gratuit"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-antibes",
-    group: "cities",
-    region: "paca",
-    navLabel: "Antibes",
-    cardText: "IPTV à Antibes (Alpes-Maritimes) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Antibes 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Antibes (Alpes-Maritimes). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv antibes", "iptv antibes", "abonnement iptv antibes", "meilleur iptv antibes", "iptv antibes avis"],
-    badge: "IPTV · Antibes",
-    h1: "IPTV à Antibes — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Antibes** (Alpes-Maritimes, région Provence-Alpes-Côte d'Azur) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est sur la Côte d'Azur, entre Nice et Cannes. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-paca", label: "Provence-Alpes-Côte d'Azur" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Antibes ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Antibes en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans les Alpes-Maritimes et autour de Antibes",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Alpes-Maritimes, ce qui permet de profiter pleinement de la 4K Ultra HD à Antibes sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Nice](/iptv-nice), [Cannes](/iptv-cannes), [Toulon](/iptv-toulon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Provence-Alpes-Côte d'Azur." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Antibes ?", a: "Stream Bleu est un choix très demandé à Antibes : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Antibes ?", a: "La technologie IPTV est légale partout en France, y compris à Antibes — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Antibes ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Alpes-Maritimes, ce qui permet un streaming 4K stable à Antibes et dans les communes voisines comme Nice ou Cannes." },
-      { q: "Combien coûte un abonnement IPTV à Antibes ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-nice", "/iptv-cannes", "/iptv-toulon"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-cannes",
-    group: "cities",
-    region: "paca",
-    navLabel: "Cannes",
-    cardText: "IPTV à Cannes (Alpes-Maritimes) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Cannes 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Cannes (Alpes-Maritimes). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv cannes", "iptv cannes", "abonnement iptv cannes", "meilleur iptv cannes", "iptv cannes avis"],
-    badge: "IPTV · Cannes",
-    h1: "IPTV à Cannes — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Cannes** (Alpes-Maritimes, région Provence-Alpes-Côte d'Azur) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est mondialement connue pour son festival international du film, sur la Côte d'Azur. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-paca", label: "Provence-Alpes-Côte d'Azur" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Cannes ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Cannes en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans les Alpes-Maritimes et autour de Cannes",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans les Alpes-Maritimes, ce qui permet de profiter pleinement de la 4K Ultra HD à Cannes sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Nice](/iptv-nice), [Antibes](/iptv-antibes), [Toulon](/iptv-toulon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Provence-Alpes-Côte d'Azur." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Cannes ?", a: "Stream Bleu est un choix très demandé à Cannes : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Cannes ?", a: "La technologie IPTV est légale partout en France, y compris à Cannes — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Cannes ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans les Alpes-Maritimes, ce qui permet un streaming 4K stable à Cannes et dans les communes voisines comme Nice ou Antibes." },
-      { q: "Combien coûte un abonnement IPTV à Cannes ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-nice", "/iptv-antibes", "/iptv-toulon"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-amiens",
-    group: "cities",
-    region: "hauts-de-france",
-    navLabel: "Amiens",
-    cardText: "IPTV à Amiens (Somme) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Amiens 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Amiens (Somme). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv amiens", "iptv amiens", "abonnement iptv amiens", "meilleur iptv amiens", "iptv amiens avis"],
-    badge: "IPTV · Amiens",
-    h1: "IPTV à Amiens — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Amiens** (Somme, région Hauts-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est dominée par sa cathédrale gothique classée à l'UNESCO. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-hauts-de-france", label: "Hauts-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Amiens ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Amiens en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Somme et autour de Amiens",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Somme, ce qui permet de profiter pleinement de la 4K Ultra HD à Amiens sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lille](/iptv-lille), [Dunkerque](/iptv-dunkerque), [Calais](/iptv-calais) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Hauts-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Amiens ?", a: "Stream Bleu est un choix très demandé à Amiens : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Amiens ?", a: "La technologie IPTV est légale partout en France, y compris à Amiens — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Amiens ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Somme, ce qui permet un streaming 4K stable à Amiens et dans les communes voisines comme Lille ou Dunkerque." },
-      { q: "Combien coûte un abonnement IPTV à Amiens ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lille", "/iptv-dunkerque", "/iptv-calais"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-roubaix",
-    group: "cities",
-    region: "hauts-de-france",
-    navLabel: "Roubaix",
-    cardText: "IPTV à Roubaix (Nord) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Roubaix 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Roubaix (Nord). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv roubaix", "iptv roubaix", "abonnement iptv roubaix", "meilleur iptv roubaix", "iptv roubaix avis"],
-    badge: "IPTV · Roubaix",
-    h1: "IPTV à Roubaix — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Roubaix** (Nord, région Hauts-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est dans la métropole européenne de Lille, ville de départ de la célèbre course cycliste Paris-Roubaix. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-hauts-de-france", label: "Hauts-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Roubaix ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Roubaix en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Nord et autour de Roubaix",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Nord, ce qui permet de profiter pleinement de la 4K Ultra HD à Roubaix sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lille](/iptv-lille), [Tourcoing](/iptv-tourcoing), [Villeneuve-d'Ascq](/iptv-villeneuve-d-ascq) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Hauts-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Roubaix ?", a: "Stream Bleu est un choix très demandé à Roubaix : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Roubaix ?", a: "La technologie IPTV est légale partout en France, y compris à Roubaix — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Roubaix ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Nord, ce qui permet un streaming 4K stable à Roubaix et dans les communes voisines comme Lille ou Tourcoing." },
-      { q: "Combien coûte un abonnement IPTV à Roubaix ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lille", "/iptv-tourcoing", "/iptv-villeneuve-d-ascq"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-tourcoing",
-    group: "cities",
-    region: "hauts-de-france",
-    navLabel: "Tourcoing",
-    cardText: "IPTV à Tourcoing (Nord) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Tourcoing 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Tourcoing (Nord). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv tourcoing", "iptv tourcoing", "abonnement iptv tourcoing", "meilleur iptv tourcoing", "iptv tourcoing avis"],
-    badge: "IPTV · Tourcoing",
-    h1: "IPTV à Tourcoing — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Tourcoing** (Nord, région Hauts-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est dans la métropole européenne de Lille, à la frontière belge. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-hauts-de-france", label: "Hauts-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Tourcoing ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Tourcoing en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Nord et autour de Tourcoing",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Nord, ce qui permet de profiter pleinement de la 4K Ultra HD à Tourcoing sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lille](/iptv-lille), [Roubaix](/iptv-roubaix), [Villeneuve-d'Ascq](/iptv-villeneuve-d-ascq) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Hauts-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Tourcoing ?", a: "Stream Bleu est un choix très demandé à Tourcoing : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Tourcoing ?", a: "La technologie IPTV est légale partout en France, y compris à Tourcoing — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Tourcoing ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Nord, ce qui permet un streaming 4K stable à Tourcoing et dans les communes voisines comme Lille ou Roubaix." },
-      { q: "Combien coûte un abonnement IPTV à Tourcoing ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lille", "/iptv-roubaix", "/iptv-villeneuve-d-ascq"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-dunkerque",
-    group: "cities",
-    region: "hauts-de-france",
-    navLabel: "Dunkerque",
-    cardText: "IPTV à Dunkerque (Nord) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Dunkerque 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Dunkerque (Nord). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv dunkerque", "iptv dunkerque", "abonnement iptv dunkerque", "meilleur iptv dunkerque", "iptv dunkerque avis"],
-    badge: "IPTV · Dunkerque",
-    h1: "IPTV à Dunkerque — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Dunkerque** (Nord, région Hauts-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est grand port de la mer du Nord, tout près de la frontière belge. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-hauts-de-france", label: "Hauts-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Dunkerque ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Dunkerque en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Nord et autour de Dunkerque",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Nord, ce qui permet de profiter pleinement de la 4K Ultra HD à Dunkerque sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lille](/iptv-lille), [Calais](/iptv-calais), [Amiens](/iptv-amiens) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Hauts-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Dunkerque ?", a: "Stream Bleu est un choix très demandé à Dunkerque : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Dunkerque ?", a: "La technologie IPTV est légale partout en France, y compris à Dunkerque — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Dunkerque ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Nord, ce qui permet un streaming 4K stable à Dunkerque et dans les communes voisines comme Lille ou Calais." },
-      { q: "Combien coûte un abonnement IPTV à Dunkerque ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lille", "/iptv-calais", "/iptv-amiens"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-calais",
-    group: "cities",
-    region: "hauts-de-france",
-    navLabel: "Calais",
-    cardText: "IPTV à Calais (Pas-de-Calais) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Calais 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Calais (Pas-de-Calais). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv calais", "iptv calais", "abonnement iptv calais", "meilleur iptv calais", "iptv calais avis"],
-    badge: "IPTV · Calais",
-    h1: "IPTV à Calais — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Calais** (Pas-de-Calais, région Hauts-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est point le plus proche de l'Angleterre, porte d'entrée du tunnel sous la Manche. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-hauts-de-france", label: "Hauts-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Calais ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Calais en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Pas-de-Calais et autour de Calais",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Pas-de-Calais, ce qui permet de profiter pleinement de la 4K Ultra HD à Calais sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lille](/iptv-lille), [Dunkerque](/iptv-dunkerque), [Amiens](/iptv-amiens) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Hauts-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Calais ?", a: "Stream Bleu est un choix très demandé à Calais : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Calais ?", a: "La technologie IPTV est légale partout en France, y compris à Calais — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Calais ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Pas-de-Calais, ce qui permet un streaming 4K stable à Calais et dans les communes voisines comme Lille ou Dunkerque." },
-      { q: "Combien coûte un abonnement IPTV à Calais ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lille", "/iptv-dunkerque", "/iptv-amiens"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-villeneuve-d-ascq",
-    group: "cities",
-    region: "hauts-de-france",
-    navLabel: "Villeneuve-d'Ascq",
-    cardText: "IPTV à Villeneuve-d'Ascq (Nord) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Villeneuve-d'Ascq 2026 : Abonnement & Essai Gratuit",
-    description: "Stream Bleu, meilleur IPTV à Villeneuve-d'Ascq (Nord). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv villeneuve-d'ascq", "iptv villeneuve d ascq", "abonnement iptv villeneuve-d'ascq", "meilleur iptv villeneuve-d'ascq", "iptv villeneuve-d'ascq avis"],
-    badge: "IPTV · Villeneuve-d'Ascq",
-    h1: "IPTV à Villeneuve-d'Ascq — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Villeneuve-d'Ascq** (Nord, région Hauts-de-France) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au cœur de la métropole européenne de Lille. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-hauts-de-france", label: "Hauts-de-France" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Villeneuve-d'Ascq ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Villeneuve-d'Ascq en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Nord et autour de Villeneuve-d'Ascq",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Nord, ce qui permet de profiter pleinement de la 4K Ultra HD à Villeneuve-d'Ascq sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lille](/iptv-lille), [Roubaix](/iptv-roubaix), [Tourcoing](/iptv-tourcoing) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Hauts-de-France." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Villeneuve-d'Ascq ?", a: "Stream Bleu est un choix très demandé à Villeneuve-d'Ascq : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Villeneuve-d'Ascq ?", a: "La technologie IPTV est légale partout en France, y compris à Villeneuve-d'Ascq — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Villeneuve-d'Ascq ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Nord, ce qui permet un streaming 4K stable à Villeneuve-d'Ascq et dans les communes voisines comme Lille ou Roubaix." },
-      { q: "Combien coûte un abonnement IPTV à Villeneuve-d'Ascq ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lille", "/iptv-roubaix", "/iptv-tourcoing"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-metz",
+    slug: "/iptv-reims",
     group: "cities",
     region: "grand-est",
-    navLabel: "Metz",
-    cardText: "IPTV à Metz (Moselle) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Metz 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Metz (Moselle). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv metz", "iptv metz", "abonnement iptv metz", "meilleur iptv metz", "iptv metz avis"],
-    badge: "IPTV · Metz",
-    h1: "IPTV à Metz — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Metz** (Moselle, région Grand Est) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est à proximité du Luxembourg et de l'Allemagne, en Lorraine. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-grand-est", label: "Grand Est" },
+    navLabel: "Reims",
+    cardText: "IPTV à Reims (Marne, 51) : conseils réseau, installation et tarifs.",
+    title: "IPTV Reims 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Reims (Marne) : installation sur Smart TV et Fire TV, conseils réseau, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv reims", "abonnement iptv reims", "iptv reims prix"],
+    badge: "IPTV · Reims",
+    h1: "IPTV à Reims : abonnement, installation et conseils",
+    intro: "L'**IPTV à Reims** (Marne, 51, Grand Est) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-grand-est",
+      label: "Grand Est",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Metz ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Metz en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans la Moselle et autour de Metz",
+        h2: "L'IPTV à Reims : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Moselle, ce qui permet de profiter pleinement de la 4K Ultra HD à Metz sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Nancy](/iptv-nancy), [Strasbourg](/iptv-strasbourg), [Reims](/iptv-reims) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Grand Est." },
+          {
+            type: "p",
+            text: "Reims, capitale de la Champagne, est à environ 45 minutes de Paris en TGV : beaucoup d'habitants font le trajet chaque semaine et regardent aussi sur smartphone ou tablette. L'application fonctionne en 4G/5G, en qualité réduite pour économiser les données.",
+          },
+          {
+            type: "p",
+            text: "La ville a été en grande partie reconstruite après la Première Guerre mondiale, avec beaucoup de maisons de ville Art déco sur plusieurs niveaux : si la TV est à l'étage, un kit CPL ou un Wi-Fi maillé évite les coupures.",
+          },
+          {
+            type: "p",
+            text: "Dans les villages du vignoble et de la Marne rurale, une partie des foyers est encore en ADSL : réglez le lecteur en HD.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Reims en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Reims",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Reims que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Reims",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Épernay, Châlons-en-Champagne, Charleville-Mézières et dans toute la Marne. Voir [IPTV dans le Grand Est](/iptv-grand-est) et [IPTV Strasbourg](/iptv-strasbourg).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Metz ?", a: "Stream Bleu est un choix très demandé à Metz : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Metz ?", a: "La technologie IPTV est légale partout en France, y compris à Metz — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Metz ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Moselle, ce qui permet un streaming 4K stable à Metz et dans les communes voisines comme Nancy ou Strasbourg." },
-      { q: "Combien coûte un abonnement IPTV à Metz ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Reims ?",
+        a: "Oui. L'abonnement fonctionne à Reims (Marne, 51) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Peut-on regarder l'IPTV dans le TGV entre Reims et Paris ?",
+        a: "Sur smartphone en 4G/5G oui, selon la couverture du trajet. Réduisez la qualité pour économiser vos données.",
+      },
+      {
+        q: "Ma TV à l'étage coupe, que faire ?",
+        a: "Un kit CPL ou un Wi-Fi maillé règle la plupart des coupures dans les maisons à étages.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Reims ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-nancy", "/iptv-strasbourg", "/iptv-reims"],
+    related: ["/iptv-grand-est", "/iptv-strasbourg", "/iptv-paris", "/tarifs", "/essai-gratuit"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-mulhouse",
-    group: "cities",
-    region: "grand-est",
-    navLabel: "Mulhouse",
-    cardText: "IPTV à Mulhouse (Haut-Rhin) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Mulhouse 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Mulhouse (Haut-Rhin). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv mulhouse", "iptv mulhouse", "abonnement iptv mulhouse", "meilleur iptv mulhouse", "iptv mulhouse avis"],
-    badge: "IPTV · Mulhouse",
-    h1: "IPTV à Mulhouse — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Mulhouse** (Haut-Rhin, région Grand Est) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est en Alsace, tout près de la Suisse et de l'Allemagne. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-grand-est", label: "Grand Est" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Mulhouse ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Mulhouse en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Haut-Rhin et autour de Mulhouse",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Haut-Rhin, ce qui permet de profiter pleinement de la 4K Ultra HD à Mulhouse sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Strasbourg](/iptv-strasbourg), [Colmar](/iptv-colmar), [Nancy](/iptv-nancy) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Grand Est." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Mulhouse ?", a: "Stream Bleu est un choix très demandé à Mulhouse : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Mulhouse ?", a: "La technologie IPTV est légale partout en France, y compris à Mulhouse — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Mulhouse ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Haut-Rhin, ce qui permet un streaming 4K stable à Mulhouse et dans les communes voisines comme Strasbourg ou Colmar." },
-      { q: "Combien coûte un abonnement IPTV à Mulhouse ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-strasbourg", "/iptv-colmar", "/iptv-nancy"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-nancy",
-    group: "cities",
-    region: "grand-est",
-    navLabel: "Nancy",
-    cardText: "IPTV à Nancy (Meurthe-et-Moselle) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Nancy 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Nancy (Meurthe-et-Moselle). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv nancy", "iptv nancy", "abonnement iptv nancy", "meilleur iptv nancy", "iptv nancy avis"],
-    badge: "IPTV · Nancy",
-    h1: "IPTV à Nancy — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Nancy** (Meurthe-et-Moselle, région Grand Est) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est célèbre pour sa place Stanislas classée au patrimoine mondial de l'UNESCO. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-grand-est", label: "Grand Est" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Nancy ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Nancy en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Meurthe-et-Moselle et autour de Nancy",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Meurthe-et-Moselle, ce qui permet de profiter pleinement de la 4K Ultra HD à Nancy sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Metz](/iptv-metz), [Strasbourg](/iptv-strasbourg), [Reims](/iptv-reims) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Grand Est." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Nancy ?", a: "Stream Bleu est un choix très demandé à Nancy : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Nancy ?", a: "La technologie IPTV est légale partout en France, y compris à Nancy — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Nancy ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Meurthe-et-Moselle, ce qui permet un streaming 4K stable à Nancy et dans les communes voisines comme Metz ou Strasbourg." },
-      { q: "Combien coûte un abonnement IPTV à Nancy ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-metz", "/iptv-strasbourg", "/iptv-reims"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-colmar",
-    group: "cities",
-    region: "grand-est",
-    navLabel: "Colmar",
-    cardText: "IPTV à Colmar (Haut-Rhin) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Colmar 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Colmar (Haut-Rhin). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv colmar", "iptv colmar", "abonnement iptv colmar", "meilleur iptv colmar", "iptv colmar avis"],
-    badge: "IPTV · Colmar",
-    h1: "IPTV à Colmar — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Colmar** (Haut-Rhin, région Grand Est) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au cœur du vignoble alsacien, surnommée la « petite Venise » pour ses canaux. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-grand-est", label: "Grand Est" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Colmar ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Colmar en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Haut-Rhin et autour de Colmar",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Haut-Rhin, ce qui permet de profiter pleinement de la 4K Ultra HD à Colmar sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Strasbourg](/iptv-strasbourg), [Mulhouse](/iptv-mulhouse), [Nancy](/iptv-nancy) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Grand Est." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Colmar ?", a: "Stream Bleu est un choix très demandé à Colmar : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Colmar ?", a: "La technologie IPTV est légale partout en France, y compris à Colmar — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Colmar ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Haut-Rhin, ce qui permet un streaming 4K stable à Colmar et dans les communes voisines comme Strasbourg ou Mulhouse." },
-      { q: "Combien coûte un abonnement IPTV à Colmar ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-strasbourg", "/iptv-mulhouse", "/iptv-nancy"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-troyes",
-    group: "cities",
-    region: "grand-est",
-    navLabel: "Troyes",
-    cardText: "IPTV à Troyes (Aube) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Troyes 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Troyes (Aube). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv troyes", "iptv troyes", "abonnement iptv troyes", "meilleur iptv troyes", "iptv troyes avis"],
-    badge: "IPTV · Troyes",
-    h1: "IPTV à Troyes — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Troyes** (Aube, région Grand Est) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est connue pour son centre historique à colombages et ses magasins d'usine. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-grand-est", label: "Grand Est" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Troyes ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Troyes en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Aube et autour de Troyes",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Aube, ce qui permet de profiter pleinement de la 4K Ultra HD à Troyes sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Reims](/iptv-reims), [Nancy](/iptv-nancy), [Metz](/iptv-metz) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Grand Est." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Troyes ?", a: "Stream Bleu est un choix très demandé à Troyes : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Troyes ?", a: "La technologie IPTV est légale partout en France, y compris à Troyes — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Troyes ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Aube, ce qui permet un streaming 4K stable à Troyes et dans les communes voisines comme Reims ou Nancy." },
-      { q: "Combien coûte un abonnement IPTV à Troyes ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-reims", "/iptv-nancy", "/iptv-metz"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-brest",
-    group: "cities",
-    region: "bretagne",
-    navLabel: "Brest",
-    cardText: "IPTV à Brest (Finistère) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Brest 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Brest (Finistère). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv brest", "iptv brest", "abonnement iptv brest", "meilleur iptv brest", "iptv brest avis"],
-    badge: "IPTV · Brest",
-    h1: "IPTV à Brest — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Brest** (Finistère, région Bretagne) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est grand port militaire à la pointe occidentale de la Bretagne. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-bretagne", label: "Bretagne" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Brest ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Brest en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Finistère et autour de Brest",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Finistère, ce qui permet de profiter pleinement de la 4K Ultra HD à Brest sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Rennes](/iptv-rennes), [Quimper](/iptv-quimper), [Saint-Malo](/iptv-saint-malo) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Bretagne." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Brest ?", a: "Stream Bleu est un choix très demandé à Brest : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Brest ?", a: "La technologie IPTV est légale partout en France, y compris à Brest — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Brest ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Finistère, ce qui permet un streaming 4K stable à Brest et dans les communes voisines comme Rennes ou Quimper." },
-      { q: "Combien coûte un abonnement IPTV à Brest ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-rennes", "/iptv-quimper", "/iptv-saint-malo"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-quimper",
-    group: "cities",
-    region: "bretagne",
-    navLabel: "Quimper",
-    cardText: "IPTV à Quimper (Finistère) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Quimper 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Quimper (Finistère). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv quimper", "iptv quimper", "abonnement iptv quimper", "meilleur iptv quimper", "iptv quimper avis"],
-    badge: "IPTV · Quimper",
-    h1: "IPTV à Quimper — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Quimper** (Finistère, région Bretagne) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est capitale historique de la Cornouaille bretonne. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-bretagne", label: "Bretagne" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Quimper ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Quimper en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Finistère et autour de Quimper",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Finistère, ce qui permet de profiter pleinement de la 4K Ultra HD à Quimper sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Brest](/iptv-brest), [Lorient](/iptv-lorient), [Rennes](/iptv-rennes) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Bretagne." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Quimper ?", a: "Stream Bleu est un choix très demandé à Quimper : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Quimper ?", a: "La technologie IPTV est légale partout en France, y compris à Quimper — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Quimper ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Finistère, ce qui permet un streaming 4K stable à Quimper et dans les communes voisines comme Brest ou Lorient." },
-      { q: "Combien coûte un abonnement IPTV à Quimper ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-brest", "/iptv-lorient", "/iptv-rennes"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-lorient",
-    group: "cities",
-    region: "bretagne",
-    navLabel: "Lorient",
-    cardText: "IPTV à Lorient (Morbihan) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Lorient 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Lorient (Morbihan). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv lorient", "iptv lorient", "abonnement iptv lorient", "meilleur iptv lorient", "iptv lorient avis"],
-    badge: "IPTV · Lorient",
-    h1: "IPTV à Lorient — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Lorient** (Morbihan, région Bretagne) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est grand port de pêche, connue pour son Festival Interceltique. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-bretagne", label: "Bretagne" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Lorient ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Lorient en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Morbihan et autour de Lorient",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Morbihan, ce qui permet de profiter pleinement de la 4K Ultra HD à Lorient sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Vannes](/iptv-vannes), [Quimper](/iptv-quimper), [Rennes](/iptv-rennes) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Bretagne." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Lorient ?", a: "Stream Bleu est un choix très demandé à Lorient : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Lorient ?", a: "La technologie IPTV est légale partout en France, y compris à Lorient — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Lorient ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Morbihan, ce qui permet un streaming 4K stable à Lorient et dans les communes voisines comme Vannes ou Quimper." },
-      { q: "Combien coûte un abonnement IPTV à Lorient ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-vannes", "/iptv-quimper", "/iptv-rennes"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-vannes",
-    group: "cities",
-    region: "bretagne",
-    navLabel: "Vannes",
-    cardText: "IPTV à Vannes (Morbihan) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Vannes 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Vannes (Morbihan). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv vannes", "iptv vannes", "abonnement iptv vannes", "meilleur iptv vannes", "iptv vannes avis"],
-    badge: "IPTV · Vannes",
-    h1: "IPTV à Vannes — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Vannes** (Morbihan, région Bretagne) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au bord du golfe du Morbihan. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-bretagne", label: "Bretagne" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Vannes ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Vannes en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Morbihan et autour de Vannes",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Morbihan, ce qui permet de profiter pleinement de la 4K Ultra HD à Vannes sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Lorient](/iptv-lorient), [Rennes](/iptv-rennes), [Saint-Malo](/iptv-saint-malo) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Bretagne." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Vannes ?", a: "Stream Bleu est un choix très demandé à Vannes : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Vannes ?", a: "La technologie IPTV est légale partout en France, y compris à Vannes — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Vannes ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Morbihan, ce qui permet un streaming 4K stable à Vannes et dans les communes voisines comme Lorient ou Rennes." },
-      { q: "Combien coûte un abonnement IPTV à Vannes ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-lorient", "/iptv-rennes", "/iptv-saint-malo"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-saint-malo",
-    group: "cities",
-    region: "bretagne",
-    navLabel: "Saint-Malo",
-    cardText: "IPTV à Saint-Malo (Ille-et-Vilaine) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Saint-Malo 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Saint-Malo (Ille-et-Vilaine). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv saint-malo", "iptv saint malo", "abonnement iptv saint-malo", "meilleur iptv saint-malo", "iptv saint-malo avis"],
-    badge: "IPTV · Saint-Malo",
-    h1: "IPTV à Saint-Malo — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Saint-Malo** (Ille-et-Vilaine, région Bretagne) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est célèbre cité corsaire fortifiée, sur la Manche. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-bretagne", label: "Bretagne" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Saint-Malo ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Saint-Malo en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Ille-et-Vilaine et autour de Saint-Malo",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Ille-et-Vilaine, ce qui permet de profiter pleinement de la 4K Ultra HD à Saint-Malo sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Rennes](/iptv-rennes), [Brest](/iptv-brest), [Vannes](/iptv-vannes) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Bretagne." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Saint-Malo ?", a: "Stream Bleu est un choix très demandé à Saint-Malo : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Saint-Malo ?", a: "La technologie IPTV est légale partout en France, y compris à Saint-Malo — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Saint-Malo ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Ille-et-Vilaine, ce qui permet un streaming 4K stable à Saint-Malo et dans les communes voisines comme Rennes ou Brest." },
-      { q: "Combien coûte un abonnement IPTV à Saint-Malo ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-rennes", "/iptv-brest", "/iptv-vannes"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-angers",
-    group: "cities",
-    region: "pays-de-la-loire",
-    navLabel: "Angers",
-    cardText: "IPTV à Angers (Maine-et-Loire) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Angers 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Angers (Maine-et-Loire). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv angers", "iptv angers", "abonnement iptv angers", "meilleur iptv angers", "iptv angers avis"],
-    badge: "IPTV · Angers",
-    h1: "IPTV à Angers — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Angers** (Maine-et-Loire, région Pays de la Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au bord de la Loire, connue pour son château et la tenture de l'Apocalypse. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-pays-de-la-loire", label: "Pays de la Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Angers ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Angers en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Maine-et-Loire et autour de Angers",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Maine-et-Loire, ce qui permet de profiter pleinement de la 4K Ultra HD à Angers sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Nantes](/iptv-nantes), [Cholet](/iptv-cholet), [Le Mans](/iptv-le-mans) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Pays de la Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Angers ?", a: "Stream Bleu est un choix très demandé à Angers : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Angers ?", a: "La technologie IPTV est légale partout en France, y compris à Angers — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Angers ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Maine-et-Loire, ce qui permet un streaming 4K stable à Angers et dans les communes voisines comme Nantes ou Cholet." },
-      { q: "Combien coûte un abonnement IPTV à Angers ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-nantes", "/iptv-cholet", "/iptv-le-mans"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-le-mans",
-    group: "cities",
-    region: "pays-de-la-loire",
-    navLabel: "Le Mans",
-    cardText: "IPTV à Le Mans (Sarthe) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Le Mans 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Le Mans (Sarthe). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv le mans", "iptv le mans", "abonnement iptv le mans", "meilleur iptv le mans", "iptv le mans avis"],
-    badge: "IPTV · Le Mans",
-    h1: "IPTV à Le Mans — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Le Mans** (Sarthe, région Pays de la Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est mondialement connue pour sa course automobile des 24 Heures. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-pays-de-la-loire", label: "Pays de la Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Le Mans ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Le Mans en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Sarthe et autour de Le Mans",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Sarthe, ce qui permet de profiter pleinement de la 4K Ultra HD à Le Mans sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Angers](/iptv-angers), [Nantes](/iptv-nantes), [Cholet](/iptv-cholet) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Pays de la Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Le Mans ?", a: "Stream Bleu est un choix très demandé à Le Mans : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Le Mans ?", a: "La technologie IPTV est légale partout en France, y compris à Le Mans — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Le Mans ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Sarthe, ce qui permet un streaming 4K stable à Le Mans et dans les communes voisines comme Angers ou Nantes." },
-      { q: "Combien coûte un abonnement IPTV à Le Mans ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-angers", "/iptv-nantes", "/iptv-cholet"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-saint-nazaire",
-    group: "cities",
-    region: "pays-de-la-loire",
-    navLabel: "Saint-Nazaire",
-    cardText: "IPTV à Saint-Nazaire (Loire-Atlantique) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Saint-Nazaire 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Saint-Nazaire (Loire-Atlantique). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv saint-nazaire", "iptv saint nazaire", "abonnement iptv saint-nazaire", "meilleur iptv saint-nazaire", "iptv saint-nazaire avis"],
-    badge: "IPTV · Saint-Nazaire",
-    h1: "IPTV à Saint-Nazaire — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Saint-Nazaire** (Loire-Atlantique, région Pays de la Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est grand port et ville des chantiers navals, sur l'estuaire de la Loire près de Nantes. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-pays-de-la-loire", label: "Pays de la Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Saint-Nazaire ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Saint-Nazaire en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Loire-Atlantique et autour de Saint-Nazaire",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Loire-Atlantique, ce qui permet de profiter pleinement de la 4K Ultra HD à Saint-Nazaire sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Nantes](/iptv-nantes), [Angers](/iptv-angers), [La Roche-sur-Yon](/iptv-la-roche-sur-yon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Pays de la Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Saint-Nazaire ?", a: "Stream Bleu est un choix très demandé à Saint-Nazaire : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Saint-Nazaire ?", a: "La technologie IPTV est légale partout en France, y compris à Saint-Nazaire — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Saint-Nazaire ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Loire-Atlantique, ce qui permet un streaming 4K stable à Saint-Nazaire et dans les communes voisines comme Nantes ou Angers." },
-      { q: "Combien coûte un abonnement IPTV à Saint-Nazaire ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-nantes", "/iptv-angers", "/iptv-la-roche-sur-yon"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-cholet",
-    group: "cities",
-    region: "pays-de-la-loire",
-    navLabel: "Cholet",
-    cardText: "IPTV à Cholet (Maine-et-Loire) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Cholet 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Cholet (Maine-et-Loire). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv cholet", "iptv cholet", "abonnement iptv cholet", "meilleur iptv cholet", "iptv cholet avis"],
-    badge: "IPTV · Cholet",
-    h1: "IPTV à Cholet — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Cholet** (Maine-et-Loire, région Pays de la Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au sud du Maine-et-Loire, aux portes de la Vendée. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-pays-de-la-loire", label: "Pays de la Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Cholet ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Cholet en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Maine-et-Loire et autour de Cholet",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Maine-et-Loire, ce qui permet de profiter pleinement de la 4K Ultra HD à Cholet sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Nantes](/iptv-nantes), [Angers](/iptv-angers), [La Roche-sur-Yon](/iptv-la-roche-sur-yon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Pays de la Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Cholet ?", a: "Stream Bleu est un choix très demandé à Cholet : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Cholet ?", a: "La technologie IPTV est légale partout en France, y compris à Cholet — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Cholet ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Maine-et-Loire, ce qui permet un streaming 4K stable à Cholet et dans les communes voisines comme Nantes ou Angers." },
-      { q: "Combien coûte un abonnement IPTV à Cholet ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-nantes", "/iptv-angers", "/iptv-la-roche-sur-yon"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-la-roche-sur-yon",
-    group: "cities",
-    region: "pays-de-la-loire",
-    navLabel: "La Roche-sur-Yon",
-    cardText: "IPTV à La Roche-sur-Yon (Vendée) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV La Roche-sur-Yon 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à La Roche-sur-Yon (Vendée). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv la roche-sur-yon", "iptv la roche sur yon", "abonnement iptv la roche-sur-yon", "meilleur iptv la roche-sur-yon", "iptv la roche-sur-yon avis"],
-    badge: "IPTV · La Roche-sur-Yon",
-    h1: "IPTV à La Roche-sur-Yon — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **La Roche-sur-Yon** (Vendée, région Pays de la Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est préfecture de la Vendée. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-pays-de-la-loire", label: "Pays de la Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à La Roche-sur-Yon ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à La Roche-sur-Yon en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Vendée et autour de La Roche-sur-Yon",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Vendée, ce qui permet de profiter pleinement de la 4K Ultra HD à La Roche-sur-Yon sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Nantes](/iptv-nantes), [Cholet](/iptv-cholet), [Saint-Nazaire](/iptv-saint-nazaire) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Pays de la Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à La Roche-sur-Yon ?", a: "Stream Bleu est un choix très demandé à La Roche-sur-Yon : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à La Roche-sur-Yon ?", a: "La technologie IPTV est légale partout en France, y compris à La Roche-sur-Yon — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à La Roche-sur-Yon ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Vendée, ce qui permet un streaming 4K stable à La Roche-sur-Yon et dans les communes voisines comme Nantes ou Cholet." },
-      { q: "Combien coûte un abonnement IPTV à La Roche-sur-Yon ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-nantes", "/iptv-cholet", "/iptv-saint-nazaire"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-le-havre",
-    group: "cities",
-    region: "normandie",
-    navLabel: "Le Havre",
-    cardText: "IPTV à Le Havre (Seine-Maritime) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Le Havre 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Le Havre (Seine-Maritime). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv le havre", "iptv le havre", "abonnement iptv le havre", "meilleur iptv le havre", "iptv le havre avis"],
-    badge: "IPTV · Le Havre",
-    h1: "IPTV à Le Havre — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Le Havre** (Seine-Maritime, région Normandie) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est grand port de la Manche, dont le centre reconstruit par Auguste Perret est classé à l'UNESCO. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-normandie", label: "Normandie" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Le Havre ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Le Havre en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Seine-Maritime et autour de Le Havre",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Seine-Maritime, ce qui permet de profiter pleinement de la 4K Ultra HD à Le Havre sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Rouen](/iptv-rouen), [Caen](/iptv-caen), [Évreux](/iptv-evreux) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Normandie." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Le Havre ?", a: "Stream Bleu est un choix très demandé à Le Havre : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Le Havre ?", a: "La technologie IPTV est légale partout en France, y compris à Le Havre — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Le Havre ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Seine-Maritime, ce qui permet un streaming 4K stable à Le Havre et dans les communes voisines comme Rouen ou Caen." },
-      { q: "Combien coûte un abonnement IPTV à Le Havre ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-rouen", "/iptv-caen", "/iptv-evreux"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-caen",
-    group: "cities",
-    region: "normandie",
-    navLabel: "Caen",
-    cardText: "IPTV à Caen (Calvados) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Caen 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Caen (Calvados). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv caen", "iptv caen", "abonnement iptv caen", "meilleur iptv caen", "iptv caen avis"],
-    badge: "IPTV · Caen",
-    h1: "IPTV à Caen — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Caen** (Calvados, région Normandie) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au cœur de la Normandie, proche des plages du Débarquement. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-normandie", label: "Normandie" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Caen ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Caen en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Calvados et autour de Caen",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Calvados, ce qui permet de profiter pleinement de la 4K Ultra HD à Caen sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Rouen](/iptv-rouen), [Le Havre](/iptv-le-havre), [Cherbourg-en-Cotentin](/iptv-cherbourg-en-cotentin) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Normandie." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Caen ?", a: "Stream Bleu est un choix très demandé à Caen : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Caen ?", a: "La technologie IPTV est légale partout en France, y compris à Caen — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Caen ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Calvados, ce qui permet un streaming 4K stable à Caen et dans les communes voisines comme Rouen ou Le Havre." },
-      { q: "Combien coûte un abonnement IPTV à Caen ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-rouen", "/iptv-le-havre", "/iptv-cherbourg-en-cotentin"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-cherbourg-en-cotentin",
-    group: "cities",
-    region: "normandie",
-    navLabel: "Cherbourg-en-Cotentin",
-    cardText: "IPTV à Cherbourg-en-Cotentin (Manche) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Cherbourg-en-Cotentin 2026 : Abonnement & Essai Gratuit",
-    description: "Stream Bleu, meilleur IPTV à Cherbourg-en-Cotentin (Manche). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv cherbourg-en-cotentin", "iptv cherbourg en cotentin", "abonnement iptv cherbourg-en-cotentin", "meilleur iptv cherbourg-en-cotentin", "iptv cherbourg-en-cotentin avis"],
-    badge: "IPTV · Cherbourg-en-Cotentin",
-    h1: "IPTV à Cherbourg-en-Cotentin — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Cherbourg-en-Cotentin** (Manche, région Normandie) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est grand port militaire à la pointe du Cotentin, dernière escale du Titanic avant sa traversée. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-normandie", label: "Normandie" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Cherbourg-en-Cotentin ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Cherbourg-en-Cotentin en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Manche et autour de Cherbourg-en-Cotentin",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Manche, ce qui permet de profiter pleinement de la 4K Ultra HD à Cherbourg-en-Cotentin sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Caen](/iptv-caen), [Rouen](/iptv-rouen), [Le Havre](/iptv-le-havre) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Normandie." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Cherbourg-en-Cotentin ?", a: "Stream Bleu est un choix très demandé à Cherbourg-en-Cotentin : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Cherbourg-en-Cotentin ?", a: "La technologie IPTV est légale partout en France, y compris à Cherbourg-en-Cotentin — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Cherbourg-en-Cotentin ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Manche, ce qui permet un streaming 4K stable à Cherbourg-en-Cotentin et dans les communes voisines comme Caen ou Rouen." },
-      { q: "Combien coûte un abonnement IPTV à Cherbourg-en-Cotentin ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-caen", "/iptv-rouen", "/iptv-le-havre"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-evreux",
-    group: "cities",
-    region: "normandie",
-    navLabel: "Évreux",
-    cardText: "IPTV à Évreux (Eure) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Évreux 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Évreux (Eure). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv évreux", "iptv evreux", "abonnement iptv évreux", "meilleur iptv évreux", "iptv évreux avis"],
-    badge: "IPTV · Évreux",
-    h1: "IPTV à Évreux — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Évreux** (Eure, région Normandie) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est entre Rouen et Paris, en Normandie. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-normandie", label: "Normandie" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Évreux ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Évreux en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans l'Eure et autour de Évreux",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans l'Eure, ce qui permet de profiter pleinement de la 4K Ultra HD à Évreux sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Rouen](/iptv-rouen), [Le Havre](/iptv-le-havre), [Caen](/iptv-caen) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Normandie." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Évreux ?", a: "Stream Bleu est un choix très demandé à Évreux : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Évreux ?", a: "La technologie IPTV est légale partout en France, y compris à Évreux — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Évreux ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans l'Eure, ce qui permet un streaming 4K stable à Évreux et dans les communes voisines comme Rouen ou Le Havre." },
-      { q: "Combien coûte un abonnement IPTV à Évreux ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-rouen", "/iptv-le-havre", "/iptv-caen"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-besancon",
+    slug: "/iptv-dijon",
     group: "cities",
     region: "bourgogne-franche-comte",
-    navLabel: "Besançon",
-    cardText: "IPTV à Besançon (Doubs) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Besançon 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Besançon (Doubs). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv besançon", "iptv besancon", "abonnement iptv besançon", "meilleur iptv besançon", "iptv besançon avis"],
-    badge: "IPTV · Besançon",
-    h1: "IPTV à Besançon — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Besançon** (Doubs, région Bourgogne-Franche-Comté) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est entourée par le Doubs et dominée par sa citadelle Vauban classée à l'UNESCO, tout près de la Suisse. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-bourgogne-franche-comte", label: "Bourgogne-Franche-Comté" },
+    navLabel: "Dijon",
+    cardText: "IPTV à Dijon (Côte-d'Or, 21) : conseils réseau, installation et tarifs.",
+    title: "IPTV Dijon 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Dijon (Côte-d'Or) : installation sur Smart TV et Fire TV, conseils réseau, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv dijon", "abonnement iptv dijon", "iptv dijon prix"],
+    badge: "IPTV · Dijon",
+    h1: "IPTV à Dijon : abonnement, installation et conseils",
+    intro: "L'**IPTV à Dijon** (Côte-d'Or, 21, Bourgogne-Franche-Comté) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-bourgogne-franche-comte",
+      label: "Bourgogne-Franche-Comté",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Besançon ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Besançon en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans le Doubs et autour de Besançon",
+        h2: "L'IPTV à Dijon : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Doubs, ce qui permet de profiter pleinement de la 4K Ultra HD à Besançon sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Dijon](/iptv-dijon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Bourgogne-Franche-Comté." },
+          {
+            type: "p",
+            text: "Dijon, capitale de la Bourgogne-Franche-Comté, est bien raccordée à la fibre, du centre historique aux quartiers récents comme l'écoquartier de la Fontaine d'Ouche. Dans les hôtels particuliers et immeubles anciens du secteur sauvegardé, les murs en pierre affaiblissent le Wi-Fi : un câble Ethernet ou un kit CPL est recommandé pour la TV principale.",
+          },
+          {
+            type: "p",
+            text: "Autour de Dijon, dans les villages de la Côte et des Hautes-Côtes, l'ADSL reste fréquente : la qualité HD y est la plus adaptée.",
+          },
+          {
+            type: "p",
+            text: "Dijon est une ville universitaire : en colocation, le forfait 2 écrans permet de regarder chacun sa chaîne.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Dijon en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Dijon",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Dijon que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Dijon",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne à Chenôve, Talant, Beaune, Besançon et dans toute la région. Voir [IPTV en Bourgogne-Franche-Comté](/iptv-bourgogne-franche-comte).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Besançon ?", a: "Stream Bleu est un choix très demandé à Besançon : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Besançon ?", a: "La technologie IPTV est légale partout en France, y compris à Besançon — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Besançon ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Doubs, ce qui permet un streaming 4K stable à Besançon et dans les communes voisines comme Dijon ou Dijon." },
-      { q: "Combien coûte un abonnement IPTV à Besançon ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Dijon ?",
+        a: "Oui. L'abonnement fonctionne à Dijon (Côte-d'Or, 21) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle dans les villages autour de Dijon ?",
+        a: "Oui, avec une connexion stable. En ADSL, choisissez la qualité HD.",
+      },
+      {
+        q: "Quel débit pour la 4K à Dijon ?",
+        a: "Environ 25 Mbps stables par écran 4K, 10 Mbps en HD.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Dijon ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-dijon"],
+    related: ["/iptv-bourgogne-franche-comte", "/blog/iptv-wifi-ou-ethernet", "/tarifs", "/essai-gratuit", "/iptv-lyon"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
   {
-    slug: "/iptv-tours",
+    slug: "/iptv-rouen",
     group: "cities",
-    region: "centre-val-de-loire",
-    navLabel: "Tours",
-    cardText: "IPTV à Tours (Indre-et-Loire) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Tours 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Tours (Indre-et-Loire). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv tours", "iptv tours", "abonnement iptv tours", "meilleur iptv tours", "iptv tours avis"],
-    badge: "IPTV · Tours",
-    h1: "IPTV à Tours — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Tours** (Indre-et-Loire, région Centre-Val de Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est porte d'entrée des châteaux de la Loire. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-centre-val-de-loire", label: "Centre-Val de Loire" },
+    region: "normandie",
+    navLabel: "Rouen",
+    cardText: "IPTV à Rouen (Seine-Maritime, 76) : conseils réseau, installation et tarifs.",
+    title: "IPTV Rouen 2026 : abonnement et installation | Stream Bleu",
+    description: "IPTV à Rouen (Seine-Maritime) : installation sur Smart TV et Fire TV, Wi-Fi maisons anciennes, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
+    keywords: ["iptv rouen", "abonnement iptv rouen", "iptv rouen prix"],
+    badge: "IPTV · Rouen",
+    h1: "IPTV à Rouen : abonnement, installation et conseils",
+    intro: "L'**IPTV à Rouen** (Seine-Maritime, 76, Normandie) fonctionne avec n'importe quelle box fibre ou ADSL : un abonnement Stream Bleu donne accès aux chaînes en direct et à la VOD sur Smart TV, Fire TV Stick, box Android, PC ou mobile. Le tarif est le même que partout en France, à partir de 9 € pour 1 mois, avec un essai gratuit de 24h pour tester sur votre propre connexion.",
+    parent: {
+      href: "/iptv-normandie",
+      label: "Normandie",
+    },
     sections: [
       {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Tours ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Tours en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
         id: "local",
-        h2: "IPTV dans la Indre-et-Loire et autour de Tours",
+        h2: "L'IPTV à Rouen : ce qui compte vraiment",
         blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Indre-et-Loire, ce qui permet de profiter pleinement de la 4K Ultra HD à Tours sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Orléans](/iptv-orleans), [Blois](/iptv-blois), [Bourges](/iptv-bourges) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Centre-Val de Loire." },
+          {
+            type: "p",
+            text: "Rouen, capitale de la Normandie, est connue pour ses maisons à colombages du centre historique. Ces constructions anciennes, souvent sur trois ou quatre niveaux étroits, sont difficiles à couvrir en Wi-Fi : si la box est au rez-de-chaussée, la TV du dernier étage reçoit un signal faible.",
+          },
+          {
+            type: "p",
+            text: "Pour l'IPTV, un kit CPL ou un Wi-Fi maillé avec un point d'accès par étage règle ce problème. Sur la rive gauche et dans les immeubles récents, le Wi-Fi 5 GHz suffit en général.",
+          },
+          {
+            type: "p",
+            text: "Rouen et sa métropole sont bien raccordées à la fibre ; dans le pays de Caux et le pays de Bray, l'ADSL est encore présente, et la HD y est plus adaptée que la 4K.",
+          },
+        ],
+      },
+      {
+        id: "installer",
+        h2: "Installer l'IPTV à Rouen en 10 minutes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              {
+                title: "Testez gratuitement",
+                text: "Demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, pour vérifier votre connexion et votre appareil.",
+              },
+              {
+                title: "Choisissez votre forfait",
+                text: "Durée et nombre d'écrans sur la page [tarifs](/tarifs) ; les identifiants arrivent par e-mail en quelques minutes.",
+              },
+              {
+                title: "Installez l'application",
+                text: "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate) ou [IBO Player](/ibo-player) selon votre appareil, puis saisissez vos identifiants.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "prix",
+        h2: "Prix de l'abonnement IPTV à Rouen",
+        blocks: [
+          {
+            type: "table",
+            head: ["Durée", "1 écran", "2 écrans"],
+            rows: [
+              ["1 mois", "9 €", "18 €"],
+              ["3 mois", "29 €", "50 €"],
+              ["6 mois", "39 €", "69 €"],
+              ["12 mois", "49 € (≈ 4,08 €/mois)", "89 €"],
+            ],
+            caption: "Mêmes tarifs à Rouen que dans toute la France, sans engagement.",
+          },
+        ],
+      },
+      {
+        id: "alentours",
+        h2: "Autour de Rouen",
+        blocks: [
+          {
+            type: "p",
+            text: "Le même abonnement fonctionne au Havre, à Elbeuf, Évreux, Caen et dans toute la Normandie. Voir [IPTV en Normandie](/iptv-normandie).",
+          },
         ],
       },
     ],
     faq: [
-      { q: "Quel est le meilleur IPTV à Tours ?", a: "Stream Bleu est un choix très demandé à Tours : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Tours ?", a: "La technologie IPTV est légale partout en France, y compris à Tours — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Tours ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Indre-et-Loire, ce qui permet un streaming 4K stable à Tours et dans les communes voisines comme Orléans ou Blois." },
-      { q: "Combien coûte un abonnement IPTV à Tours ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
+      {
+        q: "Stream Bleu fonctionne-t-il à Rouen ?",
+        a: "Oui. L'abonnement fonctionne à Rouen (Seine-Maritime, 76) avec toutes les box fibre et ADSL, sur Smart TV, Fire TV Stick, box Android, PC ou mobile.",
+      },
+      {
+        q: "Ma maison à colombages bloque le Wi-Fi, comment regarder l'IPTV ?",
+        a: "Un kit CPL ou un Wi-Fi maillé permet de couvrir tous les étages. Le câble Ethernet reste idéal pour la TV principale.",
+      },
+      {
+        q: "L'IPTV fonctionne-t-elle dans le pays de Caux ?",
+        a: "Oui. En ADSL, réglez le lecteur en HD ; avec la fibre, la 4K est possible.",
+      },
+      {
+        q: "Combien coûte l'IPTV à Rouen ?",
+        a: "Le prix est le même partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois (1 écran), sans engagement.",
+      },
     ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-orleans", "/iptv-blois", "/iptv-bourges"],
+    related: ["/iptv-normandie", "/blog/iptv-wifi-ou-ethernet", "/tarifs", "/essai-gratuit", "/iptv-paris"],
     schema: "WebPage",
     datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-orleans",
-    group: "cities",
-    region: "centre-val-de-loire",
-    navLabel: "Orléans",
-    cardText: "IPTV à Orléans (Loiret) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Orléans 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Orléans (Loiret). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv orléans", "iptv orleans", "abonnement iptv orléans", "meilleur iptv orléans", "iptv orléans avis"],
-    badge: "IPTV · Orléans",
-    h1: "IPTV à Orléans — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Orléans** (Loiret, région Centre-Val de Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est sur la Loire, ville historique de Jeanne d'Arc. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-centre-val-de-loire", label: "Centre-Val de Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Orléans ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Orléans en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Loiret et autour de Orléans",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Loiret, ce qui permet de profiter pleinement de la 4K Ultra HD à Orléans sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Tours](/iptv-tours), [Blois](/iptv-blois), [Bourges](/iptv-bourges) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Centre-Val de Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Orléans ?", a: "Stream Bleu est un choix très demandé à Orléans : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Orléans ?", a: "La technologie IPTV est légale partout en France, y compris à Orléans — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Orléans ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Loiret, ce qui permet un streaming 4K stable à Orléans et dans les communes voisines comme Tours ou Blois." },
-      { q: "Combien coûte un abonnement IPTV à Orléans ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-tours", "/iptv-blois", "/iptv-bourges"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-bourges",
-    group: "cities",
-    region: "centre-val-de-loire",
-    navLabel: "Bourges",
-    cardText: "IPTV à Bourges (Cher) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Bourges 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Bourges (Cher). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv bourges", "iptv bourges", "abonnement iptv bourges", "meilleur iptv bourges", "iptv bourges avis"],
-    badge: "IPTV · Bourges",
-    h1: "IPTV à Bourges — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Bourges** (Cher, région Centre-Val de Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est connue pour sa cathédrale gothique classée à l'UNESCO. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-centre-val-de-loire", label: "Centre-Val de Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Bourges ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Bourges en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Cher et autour de Bourges",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Cher, ce qui permet de profiter pleinement de la 4K Ultra HD à Bourges sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Tours](/iptv-tours), [Orléans](/iptv-orleans), [Blois](/iptv-blois) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Centre-Val de Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Bourges ?", a: "Stream Bleu est un choix très demandé à Bourges : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Bourges ?", a: "La technologie IPTV est légale partout en France, y compris à Bourges — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Bourges ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Cher, ce qui permet un streaming 4K stable à Bourges et dans les communes voisines comme Tours ou Orléans." },
-      { q: "Combien coûte un abonnement IPTV à Bourges ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-tours", "/iptv-orleans", "/iptv-blois"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-blois",
-    group: "cities",
-    region: "centre-val-de-loire",
-    navLabel: "Blois",
-    cardText: "IPTV à Blois (Loir-et-Cher) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Blois 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Blois (Loir-et-Cher). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv blois", "iptv blois", "abonnement iptv blois", "meilleur iptv blois", "iptv blois avis"],
-    badge: "IPTV · Blois",
-    h1: "IPTV à Blois — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Blois** (Loir-et-Cher, région Centre-Val de Loire) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est au cœur du Val de Loire et de son château royal. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-centre-val-de-loire", label: "Centre-Val de Loire" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Blois ?",
-        blocks: [
-          { type: "cards", items: [{ title: "300 000+ films et séries", text: "Un catalogue VOD complet, mis à jour en continu, inclus dans tous les forfaits." }, { title: "Installation en 5 minutes", text: "Identifiants envoyés par e-mail juste après votre commande ou votre essai gratuit." }, { title: "Multi-appareils", text: "Smart TV, Fire TV Stick, Android TV, Apple TV, PC, mobile — un seul abonnement pour tous vos écrans." }, { title: "Sans engagement", text: "Choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, résiliable à tout moment." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Blois en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans le Loir-et-Cher et autour de Blois",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans le Loir-et-Cher, ce qui permet de profiter pleinement de la 4K Ultra HD à Blois sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Tours](/iptv-tours), [Orléans](/iptv-orleans), [Bourges](/iptv-bourges) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Centre-Val de Loire." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Blois ?", a: "Stream Bleu est un choix très demandé à Blois : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Blois ?", a: "La technologie IPTV est légale partout en France, y compris à Blois — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Blois ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans le Loir-et-Cher, ce qui permet un streaming 4K stable à Blois et dans les communes voisines comme Tours ou Orléans." },
-      { q: "Combien coûte un abonnement IPTV à Blois ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-tours", "/iptv-orleans", "/iptv-bourges"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
-  },
-  {
-    slug: "/iptv-ajaccio",
-    group: "cities",
-    region: "corse",
-    navLabel: "Ajaccio",
-    cardText: "IPTV à Ajaccio (Corse-du-Sud) — 50 000+ chaînes, 4K, essai gratuit.",
-    title: "IPTV Ajaccio 2026 — Meilleur Abonnement | Stream Bleu",
-    description: "Stream Bleu, meilleur IPTV à Ajaccio (Corse-du-Sud). 50 000+ chaînes, films et séries en 4K Ultra HD, sans coupure. Essai gratuit 24h, dès 9€/mois.",
-    keywords: ["iptv ajaccio", "iptv ajaccio", "abonnement iptv ajaccio", "meilleur iptv ajaccio", "iptv ajaccio avis"],
-    badge: "IPTV · Ajaccio",
-    h1: "IPTV à Ajaccio — Stream Bleu, chaînes en direct et 4K Ultra HD",
-    intro: "**Stream Bleu** est disponible à **Ajaccio** (Corse-du-Sud, région Corse) : 50 000+ chaînes en direct et 300 000+ films et séries en 4K Ultra HD, installés en quelques minutes sur votre Smart TV, Fire TV Stick, Android TV, PC ou mobile. La ville est capitale de la Corse et ville natale de Napoléon Bonaparte. Testez gratuitement pendant 24h, sans carte bancaire.",
-    parent: { href: "/iptv-corse", label: "Corse" },
-    sections: [
-      {
-        id: "pourquoi",
-        h2: "Pourquoi choisir Stream Bleu à Ajaccio ?",
-        blocks: [
-          { type: "cards", items: [{ title: "50 000+ chaînes", text: "Toutes les chaînes françaises, européennes et internationales, y compris les chaînes sportives premium." }, { title: "4K Ultra HD", text: "Encodage H.265/HEVC pour une image nette, avec HDR10 et Dolby Vision sur les appareils compatibles." }, { title: "Sans coupure", text: "Serveurs redondants avec basculement automatique, même pendant les grands événements sportifs." }, { title: "Support en français", text: "Une équipe francophone joignable 7j/7 par WhatsApp et e-mail pour l'installation." }] },
-        ],
-      },
-      {
-        id: "installation",
-        h2: "Installer l'IPTV à Ajaccio en 4 étapes",
-        blocks: [
-          { type: "steps", items: [{ title: "Commandez ou testez gratuitement", text: "Choisissez un forfait sur la page tarifs, ou demandez l'essai gratuit de 24h sans carte bancaire." }, { title: "Recevez vos identifiants", text: "Nom d'utilisateur, mot de passe et URL du serveur, envoyés par e-mail en quelques minutes." }, { title: "Installez une application IPTV", text: "TiviMate, IPTV Smarters Pro, IBO Player ou Smart IPTV selon votre appareil." }, { title: "Regardez vos chaînes", text: "Toutes vos chaînes et votre VOD apparaissent immédiatement, avec le guide des programmes." }] },
-        ],
-      },
-      {
-        id: "local",
-        h2: "IPTV dans la Corse-du-Sud et autour de Ajaccio",
-        blocks: [
-          { type: "p", text: "Comme partout en France, l'accès à la fibre optique (Orange, Free, SFR, Bouygues) est bien développé dans la Corse-du-Sud, ce qui permet de profiter pleinement de la 4K Ultra HD à Ajaccio sans coupure ni mise en mémoire tampon. Stream Bleu dessert également les villes voisines de [Marseille](/iptv-marseille), [Toulon](/iptv-toulon) avec les mêmes chaînes, le même catalogue et le même support en français — un seul abonnement suffit pour toute la famille, où qu'elle se trouve dans la région Corse." },
-        ],
-      },
-    ],
-    faq: [
-      { q: "Quel est le meilleur IPTV à Ajaccio ?", a: "Stream Bleu est un choix très demandé à Ajaccio : 50 000+ chaînes en direct, 300 000+ films et séries en 4K Ultra HD, sans coupure, et un support en français disponible 7j/7. L'abonnement démarre à 9€/mois avec un essai gratuit de 24h." },
-      { q: "L'IPTV est-il légal à Ajaccio ?", a: "La technologie IPTV est légale partout en France, y compris à Ajaccio — c'est la même que celle utilisée par Orange, SFR, Free et Bouygues pour leurs propres box TV. La légalité d'une offre dépend des droits de diffusion du contenu proposé, pas de la ville où elle est regardée." },
-      { q: "Stream Bleu fonctionne-t-il bien à Ajaccio ?", a: "Oui. Comme dans le reste de la France, la fibre optique (Orange, Free, SFR, Bouygues) est largement déployée dans la Corse-du-Sud, ce qui permet un streaming 4K stable à Ajaccio et dans les communes voisines comme Marseille ou Toulon." },
-      { q: "Combien coûte un abonnement IPTV à Ajaccio ?", a: "Les tarifs Stream Bleu sont les mêmes partout en France : à partir de 9€ pour 1 mois, et environ 4,08 €/mois avec le forfait 12 mois. Aucun supplément n'est appliqué selon la ville ou la région." },
-    ],
-    related: ["/essai-gratuit", "/tarifs", "/abonnement-iptv", "/iptv-marseille", "/iptv-toulon"],
-    schema: "WebPage",
-    datePublished: "2026-09-26",
-    dateModified: "2026-09-26",
+    dateModified: "2026-10-23",
   },
 ];
