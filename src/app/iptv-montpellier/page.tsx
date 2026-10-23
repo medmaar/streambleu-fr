@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Montpellier. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit 24h.",
   keywords:
     "iptv montpellier, meilleur iptv montpellier, abonnement iptv Montpellier, iptv france Montpellier, stream bleu Montpellier",
-  alternates: { canonical: "https://streambleu.fr/iptv-montpellier" },
+  alternates: { canonical: "https://streambleu.fr/iptv-montpellier", languages: { "fr-FR": "https://streambleu.fr/iptv-montpellier", "x-default": "https://streambleu.fr/iptv-montpellier" } },
   openGraph: {
     title: "IPTV Montpellier 2026 | Stream Bleu — Meilleur IPTV Occitanie",
     description: "Stream Bleu est le meilleur service IPTV à Montpellier. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",

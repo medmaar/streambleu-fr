@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Reims 2026 | Stream Bleu — Meilleur IPTV Grand Est" },
   description: "Stream Bleu est le meilleur service IPTV à Reims. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords: "iptv reims, meilleur iptv reims, abonnement iptv Reims, iptv france Reims, stream bleu Reims",
-  alternates: { canonical: "https://streambleu.fr/iptv-reims" },
+  alternates: { canonical: "https://streambleu.fr/iptv-reims", languages: { "fr-FR": "https://streambleu.fr/iptv-reims", "x-default": "https://streambleu.fr/iptv-reims" } },
   openGraph: {
     title: "IPTV Reims 2026 | Stream Bleu — Meilleur IPTV Grand Est",
     description: "Stream Bleu est le meilleur service IPTV à Reims. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",

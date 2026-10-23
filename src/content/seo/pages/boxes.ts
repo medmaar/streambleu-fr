@@ -710,7 +710,7 @@ export const BOX_PAGES: SeoPageData[] = [
     navLabel: "IPTV Orange, SFR, Bouygues",
     cardText: "Livebox, box SFR, Bbox : installer un lecteur IPTV et comprendre les blocages.",
     title: "IPTV Orange, SFR, Bouygues : box et décodeurs compatibles",
-    description: "IPTV avec Orange, SFR ou Bouygues : la TV de votre box est déjà de l'IPTV, quels décodeurs acceptent un lecteur, et ce que signifient les blocages des opérateurs.",
+    description: "IPTV avec Orange, SFR ou Bouygues : la TV de votre box est déjà de l'IPTV, quels décodeurs acceptent un lecteur et que signifient les blocages des FAI.",
     keywords: ["iptv orange", "iptv isp", "orange bloque iptv 2021", "iptv sfr", "iptv bouygues", "iptv livebox", "iptv bbox", "iptv fournisseur d'accès"],
     badge: "Boîtier · Box opérateur",
     h1: "IPTV avec Orange, SFR ou Bouygues : ce qui marche sur votre box",

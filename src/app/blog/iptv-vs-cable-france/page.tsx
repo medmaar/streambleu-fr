@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV vs Câble France 2026 — Comparatif Complet | Stream Bleu" },
   description: "IPTV ou câble/satellite en France ? Comparatif complet : prix, qualité, chaînes, contrats, flexibilité. Pourquoi l'IPTV domine le câble en 2026.",
   keywords: "iptv vs cable france, iptv ou cable france, iptv vs satellite france, iptv vs canal plus, avantages iptv france",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-vs-cable-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-vs-cable-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-vs-cable-france", "x-default": "https://streambleu.fr/blog/iptv-vs-cable-france" } },
   openGraph: {
     title: "IPTV vs Câble France 2026 — Comparatif Complet | Stream Bleu",
     description: "IPTV ou câble/satellite ? Comparatif complet pour la France en 2026 : prix, qualité, contrats.",

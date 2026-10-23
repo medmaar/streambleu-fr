@@ -9,6 +9,7 @@ const sections = [
       { href: "/", label: "Accueil" },
       { href: "/tarifs", label: "Tarifs" },
       { href: "/essai-gratuit", label: "Essai Gratuit" },
+      { href: "/comment-ca-marche", label: "Comment ça marche" },
       { href: "/liste-chaines", label: "Chaînes" },
       { href: "/avis", label: "Avis" },
       { href: "/blog", label: "Blog" },

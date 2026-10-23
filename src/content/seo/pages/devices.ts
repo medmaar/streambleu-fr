@@ -894,7 +894,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
     navLabel: "IPTV PS5",
     cardText: "PlayStation 5 et PS3 : ce qui est possible.",
     title: "IPTV sur PS5 : est-ce possible ? Solutions 2026",
-    description: "IPTV sur PS5 (et PS3) : pourquoi il n'existe pas d'application IPTV sur PlayStation, les solutions de contournement possibles et la meilleure alternative simple.",
+    description: "IPTV sur PS5 (et PS3) : pourquoi il n'y a pas d'application IPTV sur PlayStation, les contournements possibles et l'alternative la plus simple.",
     keywords: ["iptv ps5", "iptv sur ps5", "iptv ps3", "iptv playstation"],
     badge: "Appareil · PS5",
     h1: "IPTV sur PS5 : les vraies options en 2026",

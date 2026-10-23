@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Test Gratuit France 2026 — Essai 24h | Stream Bleu" },
-  description: "Comment tester un IPTV gratuitement en France ? Guide complet : que tester, comment évaluer la qualité, les pièges à éviter. Essai Stream Bleu 24h sans engagement.",
+  description: "Comment tester un IPTV gratuitement en France : quoi vérifier, comment juger la qualité, pièges à éviter. Essai Stream Bleu 24h, sans engagement.",
   keywords: "iptv test gratuit, iptv essai gratuit france, tester iptv gratuit, iptv gratuit 24h france, essai iptv france",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-test-gratuit" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-test-gratuit", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-test-gratuit", "x-default": "https://streambleu.fr/blog/iptv-test-gratuit" } },
   openGraph: {
     title: "IPTV Test Gratuit France 2026 — Essai 24h Sans CB | Stream Bleu",
     description: "Guide complet pour tester un IPTV gratuitement en France. Quoi tester, comment évaluer, pièges à éviter.",

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu" },
   description: "IPTV France : le service IPTV le plus fiable en France. 50 000+ chaînes, beIN Sports, Canal+, TF1, RMC Sport. 4K Ultra HD, zéro coupure. Essai gratuit 24h.",
   keywords: "iptv france, france iptv, iptv en france, service iptv france, fournisseur iptv france, iptvfrance",
-  alternates: { canonical: "https://streambleu.fr/iptv-france" },
+  alternates: { canonical: "https://streambleu.fr/iptv-france", languages: { "fr-FR": "https://streambleu.fr/iptv-france", "x-default": "https://streambleu.fr/iptv-france" } },
   openGraph: {
     title: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu",
     description: "IPTV France (IPTVFrance) : service IPTV pour la France, 4K Ultra HD, lecteurs standards. Essai gratuit 24h.",

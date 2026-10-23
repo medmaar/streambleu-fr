@@ -4,7 +4,7 @@ import ContactEmailForm from "@/components/ContactEmailForm";
 export const metadata: Metadata = {
   title: { absolute: "Contact | Stream Bleu – Meilleur IPTV France" },
   description: "Contactez Stream Bleu par WhatsApp, Telegram ou email. Notre équipe de support est disponible 24h/24 en français.",
-  alternates: { canonical: "https://streambleu.fr/contact" },
+  alternates: { canonical: "https://streambleu.fr/contact", languages: { "fr-FR": "https://streambleu.fr/contact", "x-default": "https://streambleu.fr/contact" } },
   openGraph: {
     title: "Contact | Stream Bleu – Meilleur IPTV France",
     description: "Contactez Stream Bleu par WhatsApp, Telegram ou email. Support 24/7 en français.",

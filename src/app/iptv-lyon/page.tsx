@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Lyon. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv lyon, meilleur iptv lyon, abonnement iptv Lyon, iptv france Lyon, stream bleu Lyon",
-  alternates: { canonical: "https://streambleu.fr/iptv-lyon" },
+  alternates: { canonical: "https://streambleu.fr/iptv-lyon", languages: { "fr-FR": "https://streambleu.fr/iptv-lyon", "x-default": "https://streambleu.fr/iptv-lyon" } },
   openGraph: {
     title: "IPTV Lyon 2026 | Stream Bleu — Meilleur IPTV France",
     description:

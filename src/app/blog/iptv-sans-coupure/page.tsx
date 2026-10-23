@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Sans Coupure en France 2026 — Fini le | Stream Bleu" },
   description: "IPTV sans coupure en France : guide des serveurs stables, connexion requise, et pourquoi Stream Bleu garantit zéro buffering.",
   keywords: "iptv sans coupure, iptv stable, iptv sans buffering, iptv fluide france, iptv anti freeze",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-sans-coupure" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-sans-coupure", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-sans-coupure", "x-default": "https://streambleu.fr/blog/iptv-sans-coupure" } },
   openGraph: {
     title: "IPTV Sans Coupure en France 2026 — Fini le Buffering | Stream Bleu",
     description: "Guide complet pour avoir un IPTV sans coupure en France. Pourquoi Stream Bleu garantit zéro buffering.",

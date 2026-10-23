@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { Block, Group, SeoPageData } from "@/content/seo/types";
 import { SEO_PAGES, labelFor } from "@/content/seo/registry";
+import { SOURCES } from "@/content/seo/sources";
+import { PRICES } from "@/lib/pricing";
 
 const SITE = "https://streambleu.fr";
 
@@ -187,7 +189,9 @@ export function buildMetadata(page: SeoPageData): Metadata {
     description: page.description,
     keywords: page.keywords.join(", "),
     alternates: { canonical: url, languages: { "fr-FR": url, "x-default": url } },
-    robots: { index: true, follow: true },
+    robots: page.noindex
+      ? { index: false, follow: true }
+      : { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
     openGraph: {
       title: page.title,
       description: page.description,
@@ -244,6 +248,20 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
         },
   ];
 
+  // Money pages describe the subscription itself: mark up the real price grid.
+  if (page.group === "commercial") {
+    const all = Object.values(PRICES).flat();
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Abonnement IPTV Stream Bleu",
+      serviceType: "Abonnement IPTV",
+      provider: { "@type": "Organization", name: "Stream Bleu", url: SITE },
+      areaServed: { "@type": "Country", name: "France" },
+      offers: { "@type": "AggregateOffer", priceCurrency: "EUR", lowPrice: Math.min(...all), highPrice: Math.max(...all), offerCount: all.length, url: SITE + "/tarifs" },
+    });
+  }
+
   // A hub page (block type "hub") lists real child pages — derive ItemList from
   // those automatically so it can never drift from what's actually on the page.
   const hubBlock = page.sections.flatMap((s) => s.blocks).find((b): b is Extract<Block, { type: "hub" }> => b.type === "hub");
@@ -268,6 +286,7 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
   }
 
   const related = page.related.map((href) => ({ href, label: labelFor(href) }));
+  const sources = SOURCES[page.slug] ?? [];
 
   return (
     <>
@@ -363,6 +382,20 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
             </p>
           )}
 
+          {sources.length > 0 && (
+            <section>
+              <h2 id="sources" style={H2}>Sources et liens officiels</h2>
+              <ul style={{ ...S, paddingLeft: 22, listStyle: "disc" }}>
+                {sources.map((src) => (
+                  <li key={src.href} style={{ marginBottom: 6 }}>
+                    <a href={src.href} style={LINK} target="_blank" rel="noopener">{src.label}</a> — {src.note}
+                  </li>
+                ))}
+              </ul>
+              <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6 }}>Stream Bleu n&apos;est affilié à aucun de ces sites ; les noms cités appartiennent à leurs propriétaires respectifs.</p>
+            </section>
+          )}
+
           {/* FAQ — native <details> so answers are in the HTML without JS */}
           <section>
             <h2 id="faq" style={H2}>Questions fréquentes</h2>
@@ -376,6 +409,26 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
             </div>
           </section>
         </article>
+
+        {/* Trust — facts stated in the CGU, refund policy and order flow */}
+        <section aria-label="Garanties" style={{ padding: "8px 16px 0" }}>
+          <div style={{ maxWidth: 820, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 12 }}>
+            {[
+              { t: "Essai gratuit 24h", d: "Sans carte bancaire, pour vérifier la compatibilité de votre appareil." },
+              { t: "Paiement sécurisé", d: "Carte bancaire ou PayPal, en euros, sans engagement ni renouvellement automatique." },
+              { t: "Support en français", d: "WhatsApp, Telegram et e-mail, 7j/7, pour l'installation et les questions." },
+            ].map((x) => (
+              <div key={x.t} style={CARD}>
+                <p style={{ fontWeight: 800, fontSize: 14, color: "#5a5fcf", marginBottom: 4 }}>{x.t}</p>
+                <p style={{ fontSize: 13, lineHeight: 1.6, color: "#444", margin: 0 }}>{x.d}</p>
+              </div>
+            ))}
+            <Link href="/politique-remboursement" style={{ ...CARD, display: "block", textDecoration: "none" }}>
+              <span style={{ display: "block", fontWeight: 800, fontSize: 14, color: "#5a5fcf", marginBottom: 4 }}>Remboursement →</span>
+              <span style={{ display: "block", fontSize: 13, lineHeight: 1.6, color: "#444" }}>Identifiants jamais reçus : remboursement ou nouvel envoi. Achat en double : remboursé.</span>
+            </Link>
+          </div>
+        </section>
 
         {/* CTA */}
         <section style={{ padding: "40px 24px", background: "transparent" }}>

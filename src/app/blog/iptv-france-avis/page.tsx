@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV France Avis 2026 — 50 000+ Clients Vérifiés | Stream Bleu" },
   description: "Avis IPTV France 2026 — ce que disent vraiment les clients Stream Bleu. Avis Trustpilot, Google, forums. Analyse complète de la satisfaction client.",
   keywords: "iptv france avis, avis iptv france, stream bleu avis, meilleur iptv france avis, avis clients iptv france 2026",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-france-avis" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-france-avis", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-france-avis", "x-default": "https://streambleu.fr/blog/iptv-france-avis" } },
   openGraph: {
     title: "IPTV France Avis 2026 — 50 000+ Clients Vérifiés | Stream Bleu",
     description: "Analyse des avis clients Stream Bleu : Trustpilot, Google, forums. Ce que disent vraiment 50 000+ abonnés.",

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Fire Stick France 2026 — Installation | Stream Bleu" },
   description: "Guide complet pour installer Stream Bleu sur Amazon Fire Stick en France. TiviMate, IPTV Smarters Pro, activation Xtream Codes — étape par étape.",
   keywords: "iptv firestick france, fire stick iptv france, installer iptv fire stick, tivimate fire stick, iptv amazon fire tv france",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-firestick-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-firestick-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-firestick-france", "x-default": "https://streambleu.fr/blog/iptv-firestick-france" } },
   openGraph: {
     title: "IPTV Fire Stick France 2026 — Installation Complète | Stream Bleu",
     description: "Guide pas à pas pour installer un IPTV sur Amazon Fire Stick en France. TiviMate, Smarters Pro.",

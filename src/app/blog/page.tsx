@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Lisez le blog Stream Bleu. Guides d'installation, légalité, comparatifs de prix, avis sur les lecteurs IPTV et les meilleurs services 4K en France pour 2026.",
   keywords: "blog iptv france, guide iptv 2026, meilleur iptv france avis",
-  alternates: { canonical: "https://streambleu.fr/blog" },
+  alternates: { canonical: "https://streambleu.fr/blog", languages: { "fr-FR": "https://streambleu.fr/blog", "x-default": "https://streambleu.fr/blog" } },
   openGraph: {
     title: "Blog Stream Bleu | Guides IPTV, Avis & Actualités France",
     description: "Guides d'installation IPTV, comparatifs, légalité et avis pour la France 2026.",

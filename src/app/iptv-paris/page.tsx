@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Paris. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv paris, meilleur iptv paris, abonnement iptv Paris, iptv france Paris, stream bleu Paris",
-  alternates: { canonical: "https://streambleu.fr/iptv-paris" },
+  alternates: { canonical: "https://streambleu.fr/iptv-paris", languages: { "fr-FR": "https://streambleu.fr/iptv-paris", "x-default": "https://streambleu.fr/iptv-paris" } },
   openGraph: {
     title: "IPTV Paris 2026 | Stream Bleu — Meilleur IPTV France",
     description:

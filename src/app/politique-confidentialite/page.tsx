@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "Politique de confidentialité | Stream Bleu – IPTV France" },
   description: "Politique de confidentialité de Stream Bleu. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.",
-  alternates: { canonical: "https://streambleu.fr/politique-confidentialite" },
+  alternates: { canonical: "https://streambleu.fr/politique-confidentialite", languages: { "fr-FR": "https://streambleu.fr/politique-confidentialite", "x-default": "https://streambleu.fr/politique-confidentialite" } },
     openGraph: {
     title: "Politique de confidentialité",
     description: "Politique de confidentialité de Stream Bleu. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles.",

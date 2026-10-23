@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "Revendeur IPTV France 2026 | Stream Bleu" },
   description: "Devenez revendeur IPTV en France avec Stream Bleu. Prix grossiste, options marque blanche et panneau revendeur rapide. Lancez votre propre activité IPTV.",
   keywords: "revendeur iptv france, programme revendeur iptv france 2026, business iptv france",
-  alternates: { canonical: "https://streambleu.fr/revendeur" },
+  alternates: { canonical: "https://streambleu.fr/revendeur", languages: { "fr-FR": "https://streambleu.fr/revendeur", "x-default": "https://streambleu.fr/revendeur" } },
   openGraph: {
     title: "Revendeur IPTV France 2026 | Stream Bleu",
     description: "Devenez revendeur IPTV en France avec Stream Bleu. Prix grossiste et panneau revendeur rapide.",

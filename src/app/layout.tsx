@@ -11,8 +11,8 @@ import Animations from "./components/Animations";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://streambleu.fr"),
-    alternates: { canonical: "https://streambleu.fr", languages: { "fr-FR": "https://streambleu.fr", "fr-BE": "https://streambleu.fr", "fr-CH": "https://streambleu.fr", "x-default": "https://streambleu.fr" } },
     icons: { icon: "/favicon.svg" },
+    robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
     title: {
         default: "Abonnement IPTV France 2026 — IPTV Premium 4K | Stream Bleu",
         template: "%s | Stream Bleu — Abonnement IPTV France",
@@ -38,8 +38,6 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta name="google-site-verification" content="buTcDxfOZCLSPQIna8VsozPLyV-CPlCyqpUqPDmaPYc" />
-                {/* Preload LCP hero — now WebP (29KB vs 84KB JPG) */}
-                <link rel="preload" as="image" href="/abonnement-iptv-france-1.webp" type="image/webp" fetchPriority="high" />
                 {/* GA4 — deferred until user interaction (saves 64.9KB on initial load) */}
                 <script dangerouslySetInnerHTML={{ __html: `
                   window.dataLayer=window.dataLayer||[];
@@ -67,9 +65,10 @@ export default function RootLayout({
   description: "Abonnement IPTV France 2026 — Meilleur service IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. À partir de 9€/mois.",
   address: { "@type": "PostalAddress", streetAddress: "1 Rue Volant", addressLocality: "Nanterre", postalCode: "92000", addressCountry: "FR" },
   areaServed: [{ "@type": "Country", name: "France" }, { "@type": "Country", name: "Belgique" }, { "@type": "Country", name: "Suisse" }],
-  priceRange: "€9-€100",
+  priceRange: "9 € – 450 €",
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   sameAs: ["https://t.me/+z1lV-u1HmIA2YTQ0"],
+  contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: "contact@streambleu.fr", availableLanguage: ["French"], areaServed: ["FR", "BE", "CH"] },
 }) }} />
             </head>
             <body

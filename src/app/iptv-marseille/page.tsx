@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Marseille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv marseille, meilleur iptv marseille, abonnement iptv Marseille, iptv france Marseille, stream bleu Marseille",
-  alternates: { canonical: "https://streambleu.fr/iptv-marseille" },
+  alternates: { canonical: "https://streambleu.fr/iptv-marseille", languages: { "fr-FR": "https://streambleu.fr/iptv-marseille", "x-default": "https://streambleu.fr/iptv-marseille" } },
   openGraph: {
     title: "IPTV Marseille 2026 | Stream Bleu — Meilleur IPTV France",
     description:

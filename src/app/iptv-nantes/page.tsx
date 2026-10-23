@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Nantes. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv nantes, meilleur iptv nantes, abonnement iptv Nantes, iptv france Nantes, stream bleu Nantes",
-  alternates: { canonical: "https://streambleu.fr/iptv-nantes" },
+  alternates: { canonical: "https://streambleu.fr/iptv-nantes", languages: { "fr-FR": "https://streambleu.fr/iptv-nantes", "x-default": "https://streambleu.fr/iptv-nantes" } },
   openGraph: {
     title: "IPTV Nantes 2026 | Stream Bleu — Meilleur IPTV Pays de la Loire",
     description: "Stream Bleu est le meilleur service IPTV à Nantes. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",

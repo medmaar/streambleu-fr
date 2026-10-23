@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Grenoble. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv grenoble, meilleur iptv grenoble, abonnement iptv Grenoble, iptv france Grenoble, stream bleu Grenoble",
-  alternates: { canonical: "https://streambleu.fr/iptv-grenoble" },
+  alternates: { canonical: "https://streambleu.fr/iptv-grenoble", languages: { "fr-FR": "https://streambleu.fr/iptv-grenoble", "x-default": "https://streambleu.fr/iptv-grenoble" } },
   openGraph: {
     title: "IPTV Grenoble 2026 | Stream Bleu — Meilleur IPTV Auvergne-Rhône-Alpes",
     description: "Stream Bleu est le meilleur service IPTV à Grenoble. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",

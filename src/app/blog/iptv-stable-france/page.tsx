@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Stable France 2026 — Critères et Tests | Stream Bleu" },
   description: "IPTV stable en France : architecture serveur, redondance, uptime, signes d'un service instable et comment tester la stabilité avant de payer.",
   keywords: "iptv stable france, iptv sans coupure france, iptv fiable france, iptv stable 2026, meilleur iptv stable",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-stable-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-stable-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-stable-france", "x-default": "https://streambleu.fr/blog/iptv-stable-france" } },
   openGraph: {
     title: "IPTV Stable France 2026 — Critères et Tests | Stream Bleu",
     description: "Critères d'un IPTV stable, architecture serveur, uptime et méthode de test avant achat.",

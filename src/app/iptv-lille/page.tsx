@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Lille. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv lille, meilleur iptv lille, abonnement iptv Lille, iptv france Lille, iptv nord pas de calais, stream bleu Lille",
-  alternates: { canonical: "https://streambleu.fr/iptv-lille" },
+  alternates: { canonical: "https://streambleu.fr/iptv-lille", languages: { "fr-FR": "https://streambleu.fr/iptv-lille", "x-default": "https://streambleu.fr/iptv-lille" } },
   openGraph: {
     title: "IPTV Lille 2026 | Stream Bleu — Meilleur IPTV Nord-Pas-de-Calais",
     description:

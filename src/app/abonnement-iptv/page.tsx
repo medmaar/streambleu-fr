@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "Abonnement IPTV France 2026 — Dès 9€/mois | Stream Bleu" },
   description: "Abonnement IPTV en France à partir de 9€/mois. 50 000+ chaînes, beIN Sports, Canal+, 4K Ultra HD. Sans engagement, activation instantanée. Essai gratuit.",
   keywords: "abonnement iptv, iptv abonnement, abonnement iptv france, abonnement iptv pas cher, abonnement iptv 4k, abonnementiptv, abonnement ip tv, ip tv abonnement, abonement iptv, iptv abonement, iptv abonnemen, iptv abonnement france",
-  alternates: { canonical: "https://streambleu.fr/abonnement-iptv" },
+  alternates: { canonical: "https://streambleu.fr/abonnement-iptv", languages: { "fr-FR": "https://streambleu.fr/abonnement-iptv", "x-default": "https://streambleu.fr/abonnement-iptv" } },
   openGraph: {
     title: "Abonnement IPTV France 2026 — À partir de 9€/mois | Stream Bleu",
     description: "Abonnement IPTV France à partir de 9€/mois. 50 000+ chaînes, 4K Ultra HD, sans engagement.",

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "Avertissement légal IPTV | Stream Bleu" },
   description:
     "Avertissement légal Stream Bleu : nous n'hébergeons ni ne diffusons aucun contenu protégé. Le contenu provient de fournisseurs tiers indépendants.",
-  alternates: { canonical: "https://streambleu.fr/avertissement" },
+  alternates: { canonical: "https://streambleu.fr/avertissement", languages: { "fr-FR": "https://streambleu.fr/avertissement", "x-default": "https://streambleu.fr/avertissement" } },
   openGraph: {
     title: "Avertissement légal | Stream Bleu",
     description: "Stream Bleu n'héberge ni ne diffuse aucun contenu protégé. Le contenu provient de fournisseurs tiers indépendants.",

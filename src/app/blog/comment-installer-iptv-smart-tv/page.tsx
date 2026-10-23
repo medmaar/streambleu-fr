@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Guide étape par étape pour installer IPTV sur Samsung Smart TV, LG, Sony, Philips. Installez TiviMate ou IPTV Smarters Pro en moins de 5 minutes.",
   keywords: "comment installer iptv smart tv, installer iptv samsung, installer iptv lg, tivimate smart tv, iptv smarters smart tv france",
-  alternates: { canonical: "https://streambleu.fr/blog/comment-installer-iptv-smart-tv" },
+  alternates: { canonical: "https://streambleu.fr/blog/comment-installer-iptv-smart-tv", languages: { "fr-FR": "https://streambleu.fr/blog/comment-installer-iptv-smart-tv", "x-default": "https://streambleu.fr/blog/comment-installer-iptv-smart-tv" } },
   openGraph: {
     title: "Comment Installer IPTV sur Smart TV 2026 — Guide Complet | Stream Bleu",
     description: "Guide complet pour installer IPTV sur votre Smart TV Samsung, LG, Sony ou Philips. TiviMate, IPTV Smarters Pro — installation en 5 min.",

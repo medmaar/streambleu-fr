@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: { absolute: "Politique de remboursement | Stream Bleu – IPTV France" },
-  description: "Politique de remboursement de Stream Bleu. En raison de la nature numérique instantanée de notre service, les remboursements ne sont pas possibles après l'envoi des identifiants.",
-  alternates: { canonical: "https://streambleu.fr/politique-remboursement" },
+  description: "Politique de remboursement Stream Bleu : pas de remboursement après envoi des identifiants, sauf non-livraison ou achat en double. Essai 24h gratuit.",
+  alternates: { canonical: "https://streambleu.fr/politique-remboursement", languages: { "fr-FR": "https://streambleu.fr/politique-remboursement", "x-default": "https://streambleu.fr/politique-remboursement" } },
     openGraph: {
     title: "Politique de remboursement",
-    description: "Politique de remboursement de Stream Bleu. En raison de la nature numérique instantanée de notre service, les remboursements ne sont pas possibles après l'envoi des identifiants.",
+    description: "Politique de remboursement Stream Bleu : pas de remboursement après envoi des identifiants, sauf non-livraison ou achat en double. Essai 24h gratuit.",
     url: "https://streambleu.fr/politique-remboursement", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Politique de remboursement" }],
   },

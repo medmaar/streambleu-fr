@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Nice. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv nice, meilleur iptv nice, abonnement iptv Nice, iptv france Nice, stream bleu Nice",
-  alternates: { canonical: "https://streambleu.fr/iptv-nice" },
+  alternates: { canonical: "https://streambleu.fr/iptv-nice", languages: { "fr-FR": "https://streambleu.fr/iptv-nice", "x-default": "https://streambleu.fr/iptv-nice" } },
   openGraph: {
     title: "IPTV Nice 2026 | Stream Bleu — Meilleur IPTV France",
     description:

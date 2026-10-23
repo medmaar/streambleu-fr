@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: { absolute: "Parrainage IPTV France — Gagnez 6 Mois Gratuits | Stream Bleu" },
   description: "Parrainez un ami sur Stream Bleu et gagnez 6 mois de service gratuit. Sans limite — chaque parrainage réussi ajoute 6 mois gratuits à votre compte.",
   keywords: "parrainage stream bleu, parrainer ami iptv, stream bleu 6 mois gratuits, affiliation iptv france",
-  alternates: { canonical: "https://streambleu.fr/parrainage" },
+  alternates: { canonical: "https://streambleu.fr/parrainage", languages: { "fr-FR": "https://streambleu.fr/parrainage", "x-default": "https://streambleu.fr/parrainage" } },
     openGraph: {
     title: "Parrainage IPTV France — Gagnez 6 Mois Gratuits",
     description: "Parrainez un ami sur Stream Bleu et gagnez 6 mois de service gratuit. Sans limite — chaque parrainage réussi ajoute 6 mois gratuits à votre compte.",

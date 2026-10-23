@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Strasbourg. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit 24h.",
   keywords:
     "iptv strasbourg, meilleur iptv strasbourg, abonnement iptv Strasbourg, iptv france Strasbourg, stream bleu Strasbourg",
-  alternates: { canonical: "https://streambleu.fr/iptv-strasbourg" },
+  alternates: { canonical: "https://streambleu.fr/iptv-strasbourg", languages: { "fr-FR": "https://streambleu.fr/iptv-strasbourg", "x-default": "https://streambleu.fr/iptv-strasbourg" } },
   openGraph: {
     title: "IPTV Strasbourg 2026 | Stream Bleu — Meilleur IPTV Alsace",
     description: "Stream Bleu est le meilleur service IPTV à Strasbourg. 50 000+ chaînes, 300 000+ films et séries en 4K. À partir de 9€/mois.",

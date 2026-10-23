@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Bordeaux. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv bordeaux, meilleur iptv bordeaux, abonnement iptv Bordeaux, iptv france Bordeaux, stream bleu Bordeaux",
-  alternates: { canonical: "https://streambleu.fr/iptv-bordeaux" },
+  alternates: { canonical: "https://streambleu.fr/iptv-bordeaux", languages: { "fr-FR": "https://streambleu.fr/iptv-bordeaux", "x-default": "https://streambleu.fr/iptv-bordeaux" } },
   openGraph: {
     title: "IPTV Bordeaux 2026 | Stream Bleu — Meilleur IPTV France",
     description:

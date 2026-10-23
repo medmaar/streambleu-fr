@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Stream Bleu est le meilleur service IPTV à Toulouse. Regardez TF1, Canal+, beIN Sports, RMC Sport et 50 000+ chaînes en 4K. À partir de 9€. Essai gratuit.",
   keywords:
     "iptv toulouse, meilleur iptv toulouse, abonnement iptv Toulouse, iptv france Toulouse, stream bleu Toulouse",
-  alternates: { canonical: "https://streambleu.fr/iptv-toulouse" },
+  alternates: { canonical: "https://streambleu.fr/iptv-toulouse", languages: { "fr-FR": "https://streambleu.fr/iptv-toulouse", "x-default": "https://streambleu.fr/iptv-toulouse" } },
   openGraph: {
     title: "IPTV Toulouse 2026 | Stream Bleu — Meilleur IPTV France",
     description:

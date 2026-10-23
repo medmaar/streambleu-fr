@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV Rapide France 2026 — Zapping Instantané & | Stream Bleu" },
   description: "IPTV rapide en France : zapping en moins d'1 seconde, EPG ultra-réactif, CDN optimisé. Guide complet pour choisir l'IPTV le plus rapide. Stream Bleu.",
   keywords: "iptv rapide france, iptv zapping rapide, iptv chargement rapide france, iptv sans délai france",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-rapide-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-rapide-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-rapide-france", "x-default": "https://streambleu.fr/blog/iptv-rapide-france" } },
   openGraph: {
     title: "IPTV Rapide France 2026 — Zapping Instantané & Chargement <1s | Stream Bleu",
     description: "Guide complet sur l'IPTV rapide en France. Zapping < 1 sec, EPG instantané, CDN France. Stream Bleu.",

@@ -5,7 +5,7 @@ import ReviewsSection from "../components/ReviewsSection";
 export const metadata: Metadata = {
   title: { absolute: "Avis Stream Bleu — Trustpilot, WhatsApp & Google | IPTV France" },
   description: "Lisez les avis vérifiés Stream Bleu de Trustpilot, WhatsApp et Google. 50 000+ clients satisfaits en France. Découvrez pourquoi Stream Bleu est le service.",
-  alternates: { canonical: "https://streambleu.fr/avis" },
+  alternates: { canonical: "https://streambleu.fr/avis", languages: { "fr-FR": "https://streambleu.fr/avis", "x-default": "https://streambleu.fr/avis" } },
     openGraph: {
     title: "Avis Stream Bleu — Trustpilot, WhatsApp & Google",
     description: "Lisez les avis vérifiés Stream Bleu de Trustpilot, WhatsApp et Google. 50 000+ clients satisfaits en France. Découvrez pourquoi Stream Bleu est le service.",
