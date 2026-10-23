@@ -24,6 +24,7 @@ const HUB_LABEL: Record<Group, { href: string; label: string } | null> = {
   hubs: null,
   cities: null, // each city sets its own `parent` (its region hub)
   regions: { href: "/iptv-villes-france", label: "IPTV par ville en France" },
+  competitors: { href: "/alternatives-iptv", label: "Alternatives IPTV" },
 };
 
 // ── Shared styles (same values as the existing blog + device pages) ──

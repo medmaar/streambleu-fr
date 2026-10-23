@@ -1,7 +1,7 @@
 // Content model for the keyword-cluster pages rendered by <SeoPage />.
 // Inline text supports [anchor](/href) links and **bold**.
 
-export type Group = "apps" | "boxes" | "devices" | "guides" | "commercial" | "hubs" | "cities" | "regions";
+export type Group = "apps" | "boxes" | "devices" | "guides" | "commercial" | "hubs" | "cities" | "regions" | "competitors";
 
 export type Block =
   | { type: "p"; text: string }

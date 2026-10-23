@@ -27,8 +27,8 @@ legality of iptv,1300,Informational,/blog/iptv-legal-france
 iptv legale,50,Commercial,/blog/iptv-legal-france
 iptv bloqué,500,Informational,/blog/iptv-ne-fonctionne-plus
 iptv ne fonctionne plus,500,Informational,/blog/iptv-ne-fonctionne-plus
-iptv smarter pro bloqué,50,Informational,/blog/iptv-ne-fonctionne-plus
-iptv smasters pro introuvable google play,50,Informational,/blog/iptv-ne-fonctionne-plus
+iptv smarter pro bloqué,50,Informational,/iptv-smarters-pro-ne-fonctionne-pas
+iptv smasters pro introuvable google play,50,Informational,/iptv-smarters-pro-ne-fonctionne-pas
 orange bloque iptv 2021,50,Informational,/blog/iptv-ne-fonctionne-plus
 iptv combien de connexion,50,Informational,/blog/iptv-wifi-ou-ethernet
 iptv wifi,50,Informational,/blog/iptv-wifi-ou-ethernet
@@ -79,10 +79,10 @@ iptv internet,50,Informational,/blog/qu-est-ce-que-l-iptv
 iptv live tv,50,Commercial,/blog/qu-est-ce-que-l-iptv
 iptv vod,50,Commercial,/blog/qu-est-ce-que-l-iptv
 formuler z11 pro max,5000,Commercial,/boitier-formuler
-mytvonline,5000,Commercial,/boitier-formuler
+mytvonline,5000,Commercial,/mytvonline
 box formuler,500,Commercial,/boitier-formuler
 iptv formuler,500,Commercial,/boitier-formuler
-mytvonline 3,500,Commercial,/boitier-formuler
+mytvonline 3,500,Commercial,/mytvonline
 formuler box,50,Commercial,/boitier-formuler
 formuler iptv box,50,Commercial,/boitier-formuler
 formuler tv box,50,Commercial,/boitier-formuler
@@ -115,201 +115,201 @@ local iptv,50,Commercial,/boitier-iptv
 media iptv,50,Commercial,/boitier-iptv
 my ip tv,50,Commercial,/boitier-iptv
 ugoos am7,50,Commercial,/boitier-iptv
-atlas iptv,5000,Commercial,/comparatif-iptv
-atlas pro iptv,5000,Commercial,/comparatif-iptv
-atlaspro,5000,Commercial,/comparatif-iptv
-cod iptv,5000,Commercial,/comparatif-iptv
-hotiptv,5000,Commercial,/comparatif-iptv
-ironiptv,5000,Commercial,/comparatif-iptv
-king365,5000,Commercial,/comparatif-iptv
-king365 tv,5000,Commercial,/comparatif-iptv
-king365tv,5000,Commercial,/comparatif-iptv
-kingiptv,5000,Commercial,/comparatif-iptv
-mario iptv,5000,Commercial,/comparatif-iptv
-ottiptv,5000,Commercial,/comparatif-iptv
-pandar tv,5000,Commercial,/comparatif-iptv
-premier iptv,5000,Commercial,/comparatif-iptv
-pure iptv,5000,Commercial,/comparatif-iptv
-pureiptv,5000,Commercial,/comparatif-iptv
-room iptv,5000,Commercial,/comparatif-iptv
-smart4iptv,5000,Commercial,/comparatif-iptv
-iron iptv,2900,Commercial,/comparatif-iptv
-hot iptv,1900,Commercial,/comparatif-iptv
-agence iptv,1300,Commercial,/comparatif-iptv
-fournisseur iptv,1300,Commercial,/comparatif-iptv
-iptv atlas,1300,Commercial,/comparatif-iptv
-iptv az,1300,Commercial,/comparatif-iptv
-agences iptv,1000,Commercial,/comparatif-iptv
-majestic iptv,1000,Commercial,/comparatif-iptv
-iptv atlas pro,880,Commercial,/comparatif-iptv
-orca iptv,880,Commercial,/comparatif-iptv
-rg iptv,880,Commercial,/comparatif-iptv
-atlas iptv pro,720,Commercial,/comparatif-iptv
-elon iptv,720,Commercial,/comparatif-iptv
+atlas iptv,5000,Commercial,/alternative-atlas-pro
+atlas pro iptv,5000,Commercial,/alternative-atlas-pro
+atlaspro,5000,Commercial,/alternative-atlas-pro
+cod iptv,5000,Commercial,/alternatives-iptv
+hotiptv,5000,Commercial,/alternatives-iptv
+ironiptv,5000,Commercial,/alternatives-iptv
+king365,5000,Commercial,/alternative-king365
+king365 tv,5000,Commercial,/alternative-king365
+king365tv,5000,Commercial,/alternative-king365
+kingiptv,5000,Commercial,/alternative-king365
+mario iptv,5000,Commercial,/alternatives-iptv
+ottiptv,5000,Commercial,/alternatives-iptv
+pandar tv,5000,Commercial,/alternatives-iptv
+premier iptv,5000,Commercial,/alternatives-iptv
+pure iptv,5000,Commercial,/alternative-pure-iptv
+pureiptv,5000,Commercial,/alternative-pure-iptv
+room iptv,5000,Commercial,/alternatives-iptv
+smart4iptv,5000,Commercial,/alternatives-iptv
+iron iptv,2900,Commercial,/alternatives-iptv
+hot iptv,1900,Commercial,/alternatives-iptv
+agence iptv,1300,Commercial,/fournisseur-iptv
+fournisseur iptv,1300,Commercial,/fournisseur-iptv
+iptv atlas,1300,Commercial,/alternative-atlas-pro
+iptv az,1300,Commercial,/alternatives-iptv
+agences iptv,1000,Commercial,/fournisseur-iptv
+majestic iptv,1000,Commercial,/alternatives-iptv
+iptv atlas pro,880,Commercial,/alternative-atlas-pro
+orca iptv,880,Commercial,/alternatives-iptv
+rg iptv,880,Commercial,/alternatives-iptv
+atlas iptv pro,720,Commercial,/alternative-atlas-pro
+elon iptv,720,Commercial,/alternatives-iptv
 iptv avis,720,Commercial,/comparatif-iptv
 iptv streaming,720,Commercial,/comparatif-iptv
-9xtream iptv,590,Commercial,/comparatif-iptv
+9xtream iptv,590,Commercial,/alternatives-iptv
 avis iptv,590,Commercial,/comparatif-iptv
-atlaspro in,500,Commercial,/comparatif-iptv
-avatar iptv,500,Commercial,/comparatif-iptv
+atlaspro in,500,Commercial,/alternative-atlas-pro
+avatar iptv,500,Commercial,/alternatives-iptv
 comparatif iptv,500,Commercial,/comparatif-iptv
-delta iptv,500,Commercial,/comparatif-iptv
-dragon iptv,500,Commercial,/comparatif-iptv
-dragoniptv,500,Commercial,/comparatif-iptv
-dream tv iptv,500,Commercial,/comparatif-iptv
-eagle iptv,500,Commercial,/comparatif-iptv
-elite iptv,500,Commercial,/comparatif-iptv
-eloniptv,500,Commercial,/comparatif-iptv
-euro iptv,500,Commercial,/comparatif-iptv
-euroiptv,500,Commercial,/comparatif-iptv
-fastiptv,500,Commercial,/comparatif-iptv
-foxiptv,500,Commercial,/comparatif-iptv
-golden iptv,500,Commercial,/comparatif-iptv
-goldiptv,500,Commercial,/comparatif-iptv
-iptv 365,500,Commercial,/comparatif-iptv
-iptv best,500,Commercial,/comparatif-iptv
+delta iptv,500,Commercial,/alternatives-iptv
+dragon iptv,500,Commercial,/alternatives-iptv
+dragoniptv,500,Commercial,/alternatives-iptv
+dream tv iptv,500,Commercial,/alternatives-iptv
+eagle iptv,500,Commercial,/alternatives-iptv
+elite iptv,500,Commercial,/alternatives-iptv
+eloniptv,500,Commercial,/alternatives-iptv
+euro iptv,500,Commercial,/alternatives-iptv
+euroiptv,500,Commercial,/alternatives-iptv
+fastiptv,500,Commercial,/alternatives-iptv
+foxiptv,500,Commercial,/alternatives-iptv
+golden iptv,500,Commercial,/alternatives-iptv
+goldiptv,500,Commercial,/alternatives-iptv
+iptv 365,500,Commercial,/alternatives-iptv
+iptv best,500,Commercial,/meilleur-iptv-france
 iptv com,500,Commercial,/comparatif-iptv
-iptv connect,500,Commercial,/comparatif-iptv
-iptv dragon,500,Commercial,/comparatif-iptv
+iptv connect,500,Commercial,/alternatives-iptv
+iptv dragon,500,Commercial,/alternatives-iptv
 iptv fiable,500,Commercial,/comparatif-iptv
-iptv fox,500,Commercial,/comparatif-iptv
-iptv global,500,Commercial,/comparatif-iptv
-iptv hunt,500,Commercial,/comparatif-iptv
-iptv max,500,Commercial,/comparatif-iptv
-iptv meilleur,500,Commercial,/comparatif-iptv
-iptv monster,500,Commercial,/comparatif-iptv
-iptv one,500,Commercial,/comparatif-iptv
-iptv pro2,500,Commercial,/comparatif-iptv
-iptv pure,500,Commercial,/comparatif-iptv
-iptv revolution,500,Commercial,/comparatif-iptv
-iptv sans coupure,500,Commercial,/comparatif-iptv
-iptv secured,500,Commercial,/comparatif-iptv
-iptv stable,500,Commercial,/comparatif-iptv
-iptv wings,500,Commercial,/comparatif-iptv
-iptv x,500,Commercial,/comparatif-iptv
-king365 iptv,500,Commercial,/comparatif-iptv
-king365tv box v3,500,Commercial,/comparatif-iptv
-kingtv365,500,Commercial,/comparatif-iptv
-les meilleurs iptv,500,Commercial,/comparatif-iptv
-maestro iptv,500,Commercial,/comparatif-iptv
-mega ip tv,500,Commercial,/comparatif-iptv
-mega iptv,500,Commercial,/comparatif-iptv
-megaott,500,Commercial,/comparatif-iptv
-meilleur service iptv,500,Commercial,/comparatif-iptv
-meilleur site iptv,500,Commercial,/comparatif-iptv
-mu3 iptv,500,Commercial,/comparatif-iptv
-nano iptv,500,Commercial,/comparatif-iptv
-nanomid,500,Commercial,/comparatif-iptv
-neo iptv,500,Commercial,/comparatif-iptv
-neo tv pro,500,Commercial,/comparatif-iptv
-neox2 iptv,500,Commercial,/comparatif-iptv
-obs iptv,500,Commercial,/comparatif-iptv
-platinum iptv,500,Commercial,/comparatif-iptv
-playiptv,500,Commercial,/comparatif-iptv
-pro iptv,500,Commercial,/comparatif-iptv
-provider iptv,500,Commercial,/comparatif-iptv
-purple iptv,500,Commercial,/comparatif-iptv
-royal iptv,500,Commercial,/comparatif-iptv
-royaliptv,500,Commercial,/comparatif-iptv
-saphir iptv,500,Commercial,/comparatif-iptv
-service iptv,500,Commercial,/comparatif-iptv
-strong iptv,500,Commercial,/comparatif-iptv
-subtv iptv,500,Commercial,/comparatif-iptv
-top iptv,500,Commercial,/comparatif-iptv
-top1iptv,500,Commercial,/comparatif-iptv
-vipiptv,500,Commercial,/comparatif-iptv
-vision iptv,500,Commercial,/comparatif-iptv
-watched iptv,500,Commercial,/comparatif-iptv
-worldwide iptv,500,Commercial,/comparatif-iptv
-xiplayer iptv,500,Commercial,/comparatif-iptv
-xiptv,500,Commercial,/comparatif-iptv
-xplayer iptv,500,Commercial,/comparatif-iptv
-atlas pro ontv iphone,50,Informational,/comparatif-iptv
-atlas pro ontv sur tv samsung,50,Informational,/comparatif-iptv
-atlas pro ott,50,Commercial,/comparatif-iptv
-iptv connect pro,50,Commercial,/comparatif-iptv
-iptv flex,50,Commercial,/comparatif-iptv
-iptv high tech,50,Commercial,/comparatif-iptv
-iptv life,50,Commercial,/comparatif-iptv
-iptv mondial,50,Commercial,/comparatif-iptv
-iptv motion,50,Commercial,/comparatif-iptv
-iptv mu3,50,Commercial,/comparatif-iptv
-iptv purple,50,Commercial,/comparatif-iptv
-iptv run,50,Commercial,/comparatif-iptv
-iptv set,50,Commercial,/comparatif-iptv
-iptv shark,50,Commercial,/comparatif-iptv
-iptv tech,50,Commercial,/comparatif-iptv
-iptv total,50,Commercial,/comparatif-iptv
+iptv fox,500,Commercial,/alternatives-iptv
+iptv global,500,Commercial,/alternatives-iptv
+iptv hunt,500,Commercial,/alternatives-iptv
+iptv max,500,Commercial,/alternatives-iptv
+iptv meilleur,500,Commercial,/meilleur-iptv-france
+iptv monster,500,Commercial,/alternatives-iptv
+iptv one,500,Commercial,/alternatives-iptv
+iptv pro2,500,Commercial,/alternatives-iptv
+iptv pure,500,Commercial,/alternative-pure-iptv
+iptv revolution,500,Commercial,/alternatives-iptv
+iptv sans coupure,500,Commercial,/blog/iptv-sans-coupure
+iptv secured,500,Commercial,/alternatives-iptv
+iptv stable,500,Commercial,/blog/iptv-stable-france
+iptv wings,500,Commercial,/alternatives-iptv
+iptv x,500,Commercial,/alternatives-iptv
+king365 iptv,500,Commercial,/alternative-king365
+king365tv box v3,500,Commercial,/alternative-king365
+kingtv365,500,Commercial,/alternative-king365
+les meilleurs iptv,500,Commercial,/meilleur-iptv-france
+maestro iptv,500,Commercial,/alternatives-iptv
+mega ip tv,500,Commercial,/alternatives-iptv
+mega iptv,500,Commercial,/alternatives-iptv
+megaott,500,Commercial,/alternatives-iptv
+meilleur service iptv,500,Commercial,/fournisseur-iptv
+meilleur site iptv,500,Commercial,/fournisseur-iptv
+mu3 iptv,500,Commercial,/alternatives-iptv
+nano iptv,500,Commercial,/alternatives-iptv
+nanomid,500,Commercial,/alternatives-iptv
+neo iptv,500,Commercial,/alternatives-iptv
+neo tv pro,500,Commercial,/alternatives-iptv
+neox2 iptv,500,Commercial,/alternatives-iptv
+obs iptv,500,Commercial,/alternatives-iptv
+platinum iptv,500,Commercial,/alternatives-iptv
+playiptv,500,Commercial,/alternatives-iptv
+pro iptv,500,Commercial,/alternatives-iptv
+provider iptv,500,Commercial,/fournisseur-iptv
+purple iptv,500,Commercial,/alternatives-iptv
+royal iptv,500,Commercial,/alternatives-iptv
+royaliptv,500,Commercial,/alternatives-iptv
+saphir iptv,500,Commercial,/alternatives-iptv
+service iptv,500,Commercial,/fournisseur-iptv
+strong iptv,500,Commercial,/alternatives-iptv
+subtv iptv,500,Commercial,/alternatives-iptv
+top iptv,500,Commercial,/meilleur-iptv-france
+top1iptv,500,Commercial,/alternatives-iptv
+vipiptv,500,Commercial,/alternatives-iptv
+vision iptv,500,Commercial,/alternatives-iptv
+watched iptv,500,Commercial,/alternatives-iptv
+worldwide iptv,500,Commercial,/alternatives-iptv
+xiplayer iptv,500,Commercial,/alternatives-iptv
+xiptv,500,Commercial,/alternatives-iptv
+xplayer iptv,500,Commercial,/alternatives-iptv
+atlas pro ontv iphone,50,Informational,/alternative-atlas-pro
+atlas pro ontv sur tv samsung,50,Informational,/alternative-atlas-pro
+atlas pro ott,50,Commercial,/alternative-atlas-pro
+iptv connect pro,50,Commercial,/alternatives-iptv
+iptv flex,50,Commercial,/alternatives-iptv
+iptv high tech,50,Commercial,/alternatives-iptv
+iptv life,50,Commercial,/alternatives-iptv
+iptv mondial,50,Commercial,/alternatives-iptv
+iptv motion,50,Commercial,/alternatives-iptv
+iptv mu3,50,Commercial,/alternatives-iptv
+iptv purple,50,Commercial,/alternatives-iptv
+iptv run,50,Commercial,/alternatives-iptv
+iptv set,50,Commercial,/alternatives-iptv
+iptv shark,50,Commercial,/alternatives-iptv
+iptv tech,50,Commercial,/alternatives-iptv
+iptv total,50,Commercial,/alternatives-iptv
 iptv trustpilot,50,Informational,/comparatif-iptv
-iptv xyz,50,Commercial,/comparatif-iptv
-iptv+,50,Commercial,/comparatif-iptv
-iptv24,50,Commercial,/comparatif-iptv
-iptv365,50,Commercial,/comparatif-iptv
-iptv4on,50,Commercial,/comparatif-iptv
-iptv4u,50,Commercial,/comparatif-iptv
-iptvfull,50,Commercial,/comparatif-iptv
-iptvgold,50,Commercial,/comparatif-iptv
-iptvisuel,50,Commercial,/comparatif-iptv
-iptvone,50,Commercial,/comparatif-iptv
-iptvplus,50,Commercial,/comparatif-iptv
-iptvstore,50,Commercial,/comparatif-iptv
-lux iptv,50,Commercial,/comparatif-iptv
-magic iptv,50,Commercial,/comparatif-iptv
-magnum iptv,50,Commercial,/comparatif-iptv
-magnum ott,50,Commercial,/comparatif-iptv
-majax31 iptv,50,Commercial,/comparatif-iptv
-max iptv,50,Commercial,/comparatif-iptv
-max ott iptv,50,Commercial,/comparatif-iptv
-mega ott,50,Commercial,/comparatif-iptv
-mega ott iptv,50,Commercial,/comparatif-iptv
-megaiptv,50,Commercial,/comparatif-iptv
-megaott iptv,50,Commercial,/comparatif-iptv
-megaott net,50,Commercial,/comparatif-iptv
-mitvpro,50,Commercial,/comparatif-iptv
-moonplayer iptv,50,Commercial,/comparatif-iptv
-neo tv pro 2,50,Commercial,/comparatif-iptv
-neotv pro,50,Commercial,/comparatif-iptv
-neotv pro 2,50,Commercial,/comparatif-iptv
-neox iptv,50,Commercial,/comparatif-iptv
-nettv iptv,50,Commercial,/comparatif-iptv
-niptv,50,Commercial,/comparatif-iptv
-nord iptv,50,Commercial,/comparatif-iptv
-one player iptv,50,Commercial,/comparatif-iptv
-one tv iptv,50,Commercial,/comparatif-iptv
-ott plus player,50,Commercial,/comparatif-iptv
-ott plus v2,50,Commercial,/comparatif-iptv
-ott pro box,50,Commercial,/comparatif-iptv
-ott+ player,50,Commercial,/comparatif-iptv
-ottclub player,50,Commercial,/comparatif-iptv
-panda iptv,50,Commercial,/comparatif-iptv
-pandar iptv,50,Commercial,/comparatif-iptv
-perfectiptv,50,Commercial,/comparatif-iptv
-phoenix iptv,50,Commercial,/comparatif-iptv
-player iptv solutions,50,Commercial,/comparatif-iptv
-prestige iptv,50,Commercial,/comparatif-iptv
-primeiptv,50,Commercial,/comparatif-iptv
-pure iptv légal,50,Commercial,/comparatif-iptv
-qhdtvpro,50,Commercial,/comparatif-iptv
-quzu iptv,50,Commercial,/comparatif-iptv
-royale iptv,50,Commercial,/comparatif-iptv
-sharkiptv,50,Commercial,/comparatif-iptv
-simpleiptv,50,Commercial,/comparatif-iptv
-sniper iptv,50,Commercial,/comparatif-iptv
-sonic iptv,50,Commercial,/comparatif-iptv
-super iptv,50,Commercial,/comparatif-iptv
-super tv iptv,50,Commercial,/comparatif-iptv
-teli iptv,50,Commercial,/comparatif-iptv
-terra iptv,50,Commercial,/comparatif-iptv
-tiger iptv,50,Commercial,/comparatif-iptv
+iptv xyz,50,Commercial,/alternatives-iptv
+iptv+,50,Commercial,/alternatives-iptv
+iptv24,50,Commercial,/alternatives-iptv
+iptv365,50,Commercial,/alternatives-iptv
+iptv4on,50,Commercial,/alternatives-iptv
+iptv4u,50,Commercial,/alternatives-iptv
+iptvfull,50,Commercial,/alternatives-iptv
+iptvgold,50,Commercial,/alternatives-iptv
+iptvisuel,50,Commercial,/alternatives-iptv
+iptvone,50,Commercial,/alternatives-iptv
+iptvplus,50,Commercial,/alternatives-iptv
+iptvstore,50,Commercial,/alternatives-iptv
+lux iptv,50,Commercial,/alternatives-iptv
+magic iptv,50,Commercial,/alternatives-iptv
+magnum iptv,50,Commercial,/alternatives-iptv
+magnum ott,50,Commercial,/alternatives-iptv
+majax31 iptv,50,Commercial,/alternatives-iptv
+max iptv,50,Commercial,/alternatives-iptv
+max ott iptv,50,Commercial,/alternatives-iptv
+mega ott,50,Commercial,/alternatives-iptv
+mega ott iptv,50,Commercial,/alternatives-iptv
+megaiptv,50,Commercial,/alternatives-iptv
+megaott iptv,50,Commercial,/alternatives-iptv
+megaott net,50,Commercial,/alternatives-iptv
+mitvpro,50,Commercial,/alternatives-iptv
+moonplayer iptv,50,Commercial,/alternatives-iptv
+neo tv pro 2,50,Commercial,/alternatives-iptv
+neotv pro,50,Commercial,/alternatives-iptv
+neotv pro 2,50,Commercial,/alternatives-iptv
+neox iptv,50,Commercial,/alternatives-iptv
+nettv iptv,50,Commercial,/alternatives-iptv
+niptv,50,Commercial,/alternatives-iptv
+nord iptv,50,Commercial,/alternatives-iptv
+one player iptv,50,Commercial,/alternatives-iptv
+one tv iptv,50,Commercial,/alternatives-iptv
+ott plus player,50,Commercial,/alternatives-iptv
+ott plus v2,50,Commercial,/alternatives-iptv
+ott pro box,50,Commercial,/alternatives-iptv
+ott+ player,50,Commercial,/alternatives-iptv
+ottclub player,50,Commercial,/alternatives-iptv
+panda iptv,50,Commercial,/alternatives-iptv
+pandar iptv,50,Commercial,/alternatives-iptv
+perfectiptv,50,Commercial,/alternatives-iptv
+phoenix iptv,50,Commercial,/alternatives-iptv
+player iptv solutions,50,Commercial,/alternatives-iptv
+prestige iptv,50,Commercial,/alternatives-iptv
+primeiptv,50,Commercial,/alternatives-iptv
+pure iptv légal,50,Commercial,/alternative-pure-iptv
+qhdtvpro,50,Commercial,/alternatives-iptv
+quzu iptv,50,Commercial,/alternatives-iptv
+royale iptv,50,Commercial,/alternatives-iptv
+sharkiptv,50,Commercial,/alternatives-iptv
+simpleiptv,50,Commercial,/alternatives-iptv
+sniper iptv,50,Commercial,/alternatives-iptv
+sonic iptv,50,Commercial,/alternatives-iptv
+super iptv,50,Commercial,/alternatives-iptv
+super tv iptv,50,Commercial,/alternatives-iptv
+teli iptv,50,Commercial,/alternatives-iptv
+terra iptv,50,Commercial,/alternatives-iptv
+tiger iptv,50,Commercial,/alternatives-iptv
 trustpilot iptv,50,Informational,/comparatif-iptv
-tv team iptv,50,Commercial,/comparatif-iptv
-wise iptv,50,Commercial,/comparatif-iptv
-wise iptv player,50,Commercial,/comparatif-iptv
-wolf iptv,50,Commercial,/comparatif-iptv
-x iptv,50,Commercial,/comparatif-iptv
-xtreamtv,50,Commercial,/comparatif-iptv
-yootix tv,50,Commercial,/comparatif-iptv
-yu2go,50,Commercial,/comparatif-iptv
+tv team iptv,50,Commercial,/alternatives-iptv
+wise iptv,50,Commercial,/alternatives-iptv
+wise iptv player,50,Commercial,/alternatives-iptv
+wolf iptv,50,Commercial,/alternatives-iptv
+x iptv,50,Commercial,/alternatives-iptv
+xtreamtv,50,Commercial,/alternatives-iptv
+yootix tv,50,Commercial,/alternatives-iptv
+yu2go,50,Commercial,/alternatives-iptv
 downloader iptv,500,Informational,/downloader-iptv
 iptv smarter pro downloader,500,Informational,/downloader-iptv
 iptv smarters downloader,500,Informational,/downloader-iptv
@@ -479,7 +479,7 @@ iptv ps3,50,Informational,/iptv-ps5
 ip tv samsung,500,Informational,/iptv-samsung-tv-france
 iptv samsung,500,Informational,/iptv-samsung-tv-france
 iptv samsung tv,500,Informational,/iptv-samsung-tv-france
-iptv smasters pro ne fonctionne pas sur tv samsung,500,Informational,/iptv-samsung-tv-france
+iptv smasters pro ne fonctionne pas sur tv samsung,500,Informational,/iptv-smarters-pro-ne-fonctionne-pas
 iptv smasters pro samsung tv,500,Informational,/iptv-samsung-tv-france
 iptv sur samsung,500,Informational,/iptv-samsung-tv-france
 iptv sur tv samsung,500,Informational,/iptv-samsung-tv-france
@@ -594,12 +594,12 @@ meilleurs iptv,1300,Commercial,/meilleur-iptv-france
 meilleure iptv 2026,1000,Commercial,/meilleur-iptv-france
 meilleurs abonnements iptv,1000,Commercial,/meilleur-iptv-france
 meilleur abonnements iptv,880,Commercial,/meilleur-iptv-france
-abonnement iptv,22200,Commercial,/page.tsx
-iptv abonnement,14800,Commercial,/page.tsx
-iptv france,9900,Commercial,/page.tsx
-iptv premium,6600,Commercial,/page.tsx
-french iptv,2900,Commercial,/page.tsx
-abonnement iptv france,1300,Commercial,/page.tsx
+abonnement iptv,22200,Commercial,/
+iptv abonnement,14800,Commercial,/
+iptv france,9900,Commercial,/
+iptv premium,6600,Commercial,/
+french iptv,2900,Commercial,/
+abonnement iptv france,1300,Commercial,/
 iptv pas cher,5000,Commercial,/prix-iptv
 iptv prix,5000,Commercial,/prix-iptv
 prix iptv,5000,Commercial,/prix-iptv

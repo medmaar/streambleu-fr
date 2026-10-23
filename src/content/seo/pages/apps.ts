@@ -88,6 +88,7 @@ export const APP_PAGES: SeoPageData[] = [
               ["Bloqué au chargement", "Réseau ou DNS", "Redémarrez la box internet ; voir notre guide [IPTV ne fonctionne plus](/blog/iptv-ne-fonctionne-plus)"],
             ],
           },
+          { type: "p", text: "Toutes les pannes, symptôme par symptôme, sont détaillées dans notre guide de dépannage [IPTV Smarters Pro ne fonctionne pas](/iptv-smarters-pro-ne-fonctionne-pas)." },
         ],
       },
       {
@@ -105,7 +106,7 @@ export const APP_PAGES: SeoPageData[] = [
       { q: "IPTV Smarters Pro fonctionne-t-il sur Samsung TV ?", a: "Cela dépend du modèle et de l'année. Si l'application n'apparaît pas dans la boutique Samsung, installez IBO Player ou Flix IPTV, ou branchez un Fire TV Stick. Voir notre guide [IPTV Samsung](/iptv-samsung-tv-france)." },
       { q: "IPTV Smarters Pro existe-t-il sur PC et Mac ?", a: "Oui, une version Windows et une version macOS sont proposées sur le site officiel. Sur Mac, vous pouvez aussi utiliser Smarters Player Lite depuis le Mac App Store." },
     ],
-    related: ["/smarters-player-lite", "/tivimate", "/downloader-iptv", "/iptv-firestick-france", "/iptv-pc-mac", "/applications-iptv", "/abonnement-iptv", "/essai-gratuit"],
+    related: ["/iptv-smarters-pro-ne-fonctionne-pas", "/smarters-player-lite", "/tivimate", "/downloader-iptv", "/iptv-firestick-france", "/iptv-pc-mac", "/applications-iptv", "/abonnement-iptv", "/essai-gratuit"],
     schema: "Article",
     datePublished: D,
     dateModified: D,
@@ -877,5 +878,225 @@ export const APP_PAGES: SeoPageData[] = [
     datePublished: D,
     dateModified: D,
     readTime: "4 min",
+  },
+
+  // ── IPTV Smarters Pro ne fonctionne pas ────────────────────────
+  {
+    slug: "/iptv-smarters-pro-ne-fonctionne-pas",
+    group: "apps",
+    parent: { href: "/iptv-smarters-pro", label: "IPTV Smarters Pro" },
+    navLabel: "Smarters Pro ne fonctionne pas",
+    cardText: "Bloqué au chargement, absent sur Samsung, introuvable sur Google Play : les solutions.",
+    title: "IPTV Smarters Pro ne fonctionne pas : 9 solutions (2026)",
+    description: "IPTV Smarters Pro bloqué au chargement, absent sur TV Samsung ou introuvable sur Google Play ? Les solutions, de la plus rapide à la plus complète.",
+    keywords: ["iptv smarters pro ne fonctionne pas", "iptv smasters pro ne fonctionne pas sur tv samsung", "iptv smarter pro bloqué", "iptv smasters pro introuvable google play", "iptv smarters bloqué au chargement", "smarters pro ne marche plus"],
+    badge: "Dépannage · IPTV Smarters Pro",
+    h1: "IPTV Smarters Pro ne fonctionne pas : les solutions, de la plus rapide à la plus complète",
+    intro: "Quand **IPTV Smarters Pro ne fonctionne pas**, la cause tient presque toujours en trois familles : des identifiants mal saisis, un problème de réseau ou de cache, ou une application absente ou obsolète sur votre appareil (cas typique des TV Samsung et de Google Play). Suivez la liste ci-dessous dans l'ordre : les cinq premières vérifications règlent la grande majorité des pannes en moins de cinq minutes.",
+    tldr: [
+      "Redémarrez la box internet et l'appareil, puis vérifiez l'URL du serveur (avec http:// et le port).",
+      "Écran noir ou chargement infini : changez de lecteur dans Paramètres → Player.",
+      "Sur TV Samsung, Smarters est souvent indisponible : utilisez [IBO Player](/ibo-player) ou un [Fire TV Stick](/iptv-firestick-france).",
+    ],
+    sections: [
+      {
+        id: "rapide",
+        h2: "Les 9 vérifications, dans l'ordre",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              { title: "Redémarrez box internet et appareil", text: "Débranchez la box 30 secondes, puis éteignez complètement la TV ou la clé (pas seulement la veille). C'est la solution la plus souvent efficace." },
+              { title: "Testez une autre chaîne et la VOD", text: "Si une seule chaîne ne marche pas, le problème vient du flux, pas de l'application : signalez-le au support." },
+              { title: "Vérifiez l'URL du serveur", text: "Elle doit commencer par http:// et inclure le port s'il vous a été communiqué. Une espace en trop suffit à provoquer « Invalid credentials »." },
+              { title: "Vérifiez la date d'expiration", text: "Dans l'application, menu Compte (« Account info ») : un abonnement expiré affiche des chaînes qui ne chargent plus." },
+              { title: "Changez de lecteur interne", text: "Paramètres → Player → choisissez un autre moteur de lecture (lecteur natif, VLC ou lecteur externe) : cela règle la plupart des écrans noirs." },
+              { title: "Videz le cache", text: "Sur Android et Fire TV : Paramètres de l'appareil → Applications → IPTV Smarters → Vider le cache. Puis relancez." },
+              { title: "Passez en Ethernet ou rapprochez le Wi-Fi", text: "Les coupures aux heures de pointe viennent souvent du Wi-Fi. Voir [IPTV Wi-Fi ou Ethernet](/blog/iptv-wifi-ou-ethernet)." },
+              { title: "Mettez à jour ou réinstallez l'application", text: "Depuis une source officielle uniquement. Les versions modifiées trouvées sur des sites tiers sont une cause fréquente de plantages." },
+              { title: "Contactez le support", text: "Si rien ne change, notez le message d'erreur exact et l'appareil utilisé, puis [contactez-nous](/contact) : nous vérifions votre ligne côté serveur." },
+            ],
+          },
+        ],
+      },
+      {
+        id: "symptomes",
+        h2: "Diagnostic par symptôme",
+        blocks: [
+          {
+            type: "table",
+            head: ["Symptôme", "Cause la plus probable", "Solution"],
+            rows: [
+              ["« Invalid credentials » / « Authorization failed »", "Faute dans l'identifiant, le mot de passe ou l'URL", "Recopiez les identifiants depuis l'e-mail, sans espace"],
+              ["Bloqué sur l'écran de chargement", "Liste volumineuse, réseau lent ou cache plein", "Videz le cache, redémarrez la box, réessayez en Ethernet"],
+              ["Chaînes qui tournent sans fin", "Lecteur interne inadapté", "Paramètres → Player : changez de moteur de lecture"],
+              ["Son sans image (ou l'inverse)", "Codec non pris en charge par l'appareil", "Essayez VLC comme lecteur externe ou un autre appareil"],
+              ["Pas de guide TV", "EPG non installé ou trop ancien", "Live TV → menu → Install EPG, puis rafraîchir"],
+              ["Coupures le soir uniquement", "Wi-Fi saturé ou ralentissement réseau", "Ethernet ; voir [IPTV ne fonctionne plus](/blog/iptv-ne-fonctionne-plus)"],
+              ["« Expired » ou chaînes vides", "Abonnement arrivé à échéance", "Renouvelez depuis la page [tarifs](/tarifs)"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "samsung",
+        h2: "IPTV Smarters Pro ne fonctionne pas sur TV Samsung",
+        blocks: [
+          { type: "p", text: "C'est la recherche la plus fréquente sur le sujet. Sur la plupart des TV Samsung (système Tizen), IPTV Smarters Pro n'est pas ou plus proposé dans le Smart Hub, ou seulement dans une version ancienne qui n'est plus mise à jour. Ce n'est pas une panne de votre abonnement : c'est la disponibilité de l'application qui pose problème." },
+          {
+            type: "cards",
+            items: [
+              { title: "IBO Player", text: "Disponible sur Samsung, activation par adresse MAC, offert avec le forfait 12 mois.", href: "/ibo-player" },
+              { title: "Flix IPTV", text: "Autre lecteur fiable sur Tizen, même principe d'activation.", href: "/flix-iptv" },
+              { title: "Fire TV Stick", text: "Branché en HDMI, il permet d'installer IPTV Smarters Pro ou TiviMate.", href: "/iptv-firestick-france" },
+            ],
+          },
+          { type: "p", text: "Guide complet : [IPTV sur TV Samsung](/iptv-samsung-tv-france). Même logique sur LG : [IPTV sur LG](/iptv-lg-tv-france)." },
+        ],
+      },
+      {
+        id: "google-play",
+        h2: "IPTV Smarters Pro introuvable sur Google Play",
+        blocks: [
+          { type: "p", text: "L'application a été retirée, renommée ou restreinte à plusieurs reprises sur Google Play, si bien qu'on ne la trouve pas toujours en la cherchant par son nom. Deux solutions sûres :" },
+          {
+            type: "ol",
+            items: [
+              "Installer **Smarters Player Lite**, la version publiée par le même éditeur sur Google Play et l'App Store, avec les mêmes identifiants. Voir [Smarters Player Lite](/smarters-player-lite).",
+              "Télécharger l'**APK depuis le site officiel** de l'éditeur. Sur Fire TV, passez par l'application [Downloader](/downloader-iptv).",
+            ],
+          },
+          { type: "callout", title: "⚠️ À éviter", text: "Les APK « Smarters Premium », « Pro débloqué » ou « mod » proposés sur des sites tiers. Ils sont souvent instables et peuvent contenir des logiciels malveillants." },
+        ],
+      },
+      {
+        id: "alternatives",
+        h2: "Si Smarters ne vous convient décidément pas",
+        blocks: [
+          { type: "p", text: "Vos identifiants Stream Bleu fonctionnent dans n'importe quel lecteur compatible Xtream Codes ou M3U. Sur Android TV et Fire TV, [TiviMate](/tivimate) est souvent plus rapide sur les grosses listes ; sur Samsung et LG, [IBO Player](/ibo-player) ; sur PC, [VLC](/iptv-vlc). Le comparatif complet est sur notre page [applications IPTV](/applications-iptv)." },
+        ],
+      },
+    ],
+    faq: [
+      { q: "Pourquoi IPTV Smarters Pro ne fonctionne plus ?", a: "Le plus souvent à cause d'un réseau instable, d'un cache plein, d'identifiants mal saisis ou d'un abonnement expiré. Redémarrez la box et l'appareil, vérifiez l'URL du serveur et la date d'expiration, puis changez de lecteur interne dans les paramètres." },
+      { q: "Pourquoi IPTV Smarters Pro ne fonctionne pas sur ma TV Samsung ?", a: "Parce que l'application n'est généralement pas, ou plus, disponible et mise à jour sur le système Tizen de Samsung. Utilisez IBO Player ou Flix IPTV depuis le Smart Hub, ou branchez un Fire TV Stick." },
+      { q: "IPTV Smarters Pro est bloqué au chargement, que faire ?", a: "Videz le cache de l'application, redémarrez la box internet et réessayez, idéalement en Ethernet. Si le blocage persiste, réinstallez l'application depuis une source officielle." },
+      { q: "IPTV Smarters Pro est introuvable sur Google Play, est-ce normal ?", a: "Oui, l'application a été retirée ou renommée plusieurs fois. Installez Smarters Player Lite depuis Google Play, ou l'APK depuis le site officiel de l'éditeur." },
+      { q: "Mon abonnement est-il en cause si Smarters ne marche pas ?", a: "Pas forcément. Si plusieurs chaînes et la VOD fonctionnent dans un autre lecteur comme VLC, c'est l'application qui est en cause. Sinon, contactez le support avec le message d'erreur exact." },
+    ],
+    related: ["/iptv-smarters-pro", "/smarters-player-lite", "/blog/iptv-ne-fonctionne-plus", "/iptv-samsung-tv-france", "/ibo-player", "/downloader-iptv", "/tivimate", "/contact"],
+    cta: { title: "Une application qui marche, un service qui suit", text: "Testez Stream Bleu 24h gratuitement dans le lecteur de votre choix." },
+    schema: "Article",
+    datePublished: "2026-10-23",
+    dateModified: "2026-10-23",
+    readTime: "6 min",
+  },
+
+  // ── MyTVOnline ─────────────────────────────────────────────────
+  {
+    slug: "/mytvonline",
+    group: "apps",
+    navLabel: "MyTVOnline 3",
+    cardText: "L'application IPTV des boîtiers Formuler : configuration et réglages.",
+    title: "MyTVOnline 3 : configurer l'IPTV sur Formuler (2026)",
+    description: "MyTVOnline 3 sur boîtier Formuler : ajouter un portail Xtream Codes, M3U ou Stalker, régler le guide TV et le replay, et corriger les erreurs courantes.",
+    keywords: ["mytvonline", "mytvonline 3", "mytvonline 2", "my tv online", "mytvonline formuler", "mytvonline xtream"],
+    badge: "Application · MyTVOnline",
+    h1: "MyTVOnline 3 : configurer votre abonnement IPTV sur Formuler",
+    intro: "**MyTVOnline** est l'application IPTV développée par Formuler et préinstallée sur ses boîtiers ; **MyTVOnline 3** équipe les modèles récents comme le Formuler Z11 Pro Max. Elle accepte trois types de connexion (Xtream Codes, liste M3U et portail Stalker) et offre un guide TV, le replay quand le service le permet et une gestion fine des favoris. Voici comment y ajouter votre abonnement et la régler pour un zapping rapide.",
+    tldr: [
+      "MyTVOnline n'existe que sur les boîtiers Formuler : ce n'est pas une application à télécharger ailleurs.",
+      "Connexion recommandée : Xtream Codes (chaînes, VOD et guide TV chargés d'un coup).",
+      "Le Formuler restant une box Android, vous pouvez aussi y installer [TiviMate](/tivimate).",
+    ],
+    image: { src: "/abonnement-iptv-france-5.webp", alt: "MyTVOnline 3 sur boîtier Formuler : guide des programmes IPTV" },
+    sections: [
+      {
+        id: "versions",
+        h2: "MyTVOnline 2 ou MyTVOnline 3 : quelle version sur quel Formuler ?",
+        blocks: [
+          {
+            type: "table",
+            head: ["Boîtier Formuler", "Version MyTVOnline", "Remarque"],
+            rows: [
+              ["Z11 Pro Max, Z11 Pro", "MyTVOnline 3", "Interface la plus récente et la plus rapide"],
+              ["Z10 Pro Max, Z10 SE", "MyTVOnline 2 ou 3 selon mise à jour", "Vérifiez les mises à jour système"],
+              ["Z8, Z8 Pro", "MyTVOnline 2", "Fonctionne encore, plus lent sur les grosses listes"],
+              ["Z7+, Z+, ZX", "MyTVOnline (1re génération)", "Matériel ancien, à remplacer pour la 4K"],
+            ],
+            caption: "Version indicative ; elle dépend du firmware installé sur votre boîtier.",
+          },
+          { type: "p", text: "Comparatif détaillé des modèles sur notre page [boîtier Formuler](/boitier-formuler)." },
+        ],
+      },
+      {
+        id: "configurer",
+        h2: "Ajouter votre abonnement dans MyTVOnline 3",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              { title: "Ouvrez MyTVOnline 3", text: "Depuis l'écran d'accueil du Formuler. Au premier lancement, acceptez les conditions et choisissez la langue." },
+              { title: "Ajoutez un portail", text: "Sélectionnez « Add Portal » (ou « Ajouter un portail »), puis le type de connexion : Xtream Codes, M3U ou Stalker." },
+              { title: "Xtream Codes (recommandé)", text: "Donnez un nom au portail, puis saisissez l'URL du serveur, l'identifiant et le mot de passe reçus par e-mail après votre [essai gratuit](/essai-gratuit) ou votre commande." },
+              { title: "Ou M3U / Stalker", text: "En M3U, collez votre lien de liste. En Stalker (portail MAG), indiquez l'URL du portail : l'adresse MAC du Formuler doit avoir été communiquée au fournisseur." },
+              { title: "Chargez chaînes et guide TV", text: "MyTVOnline télécharge les catégories, la VOD et l'EPG. Laissez-le terminer avant de zapper la première fois." },
+            ],
+          },
+        ],
+      },
+      {
+        id: "reglages",
+        h2: "Les réglages qui changent tout",
+        blocks: [
+          {
+            type: "ul",
+            items: [
+              "**Mise à jour de l'EPG** : programmez un rafraîchissement automatique quotidien pour garder un guide TV à jour.",
+              "**Favoris** : regroupez vos chaînes dans une liste dédiée pour éviter de parcourir des milliers d'entrées.",
+              "**Masquer des catégories** : cachez les bouquets que vous ne regardez jamais ; le chargement devient nettement plus rapide.",
+              "**Contrôle parental** : protégez certaines catégories par un code.",
+              "**Connexion filaire** : branchez le Formuler en Ethernet, c'est l'un de ses principaux atouts face à une clé HDMI.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "erreurs",
+        h2: "MyTVOnline ne fonctionne pas : erreurs courantes",
+        blocks: [
+          {
+            type: "table",
+            head: ["Problème", "Cause probable", "Solution"],
+            rows: [
+              ["Échec de connexion au portail", "URL, identifiant ou mot de passe incorrect", "Recopiez les informations, avec http:// et le port"],
+              ["Portail Stalker refusé", "Adresse MAC non enregistrée chez le fournisseur", "Communiquez la MAC exacte (étiquette sous le boîtier)"],
+              ["Guide TV vide", "EPG pas encore téléchargé", "Forcez la mise à jour de l'EPG dans les paramètres du portail"],
+              ["Zapping lent", "Liste trop volumineuse, Wi-Fi", "Masquez des catégories, passez en Ethernet"],
+              ["Coupures le soir", "Réseau saturé", "Voir [IPTV ne fonctionne plus](/blog/iptv-ne-fonctionne-plus)"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "alternatives",
+        h2: "MyTVOnline, TiviMate ou IPTV Smarters sur Formuler ?",
+        blocks: [
+          { type: "p", text: "MyTVOnline est pensé pour la télécommande Formuler et gère nativement les portails Stalker, ce que la plupart des lecteurs Android ne font pas. Si vous préférez l'interface de [TiviMate](/tivimate) ou d'[IPTV Smarters Pro](/iptv-smarters-pro), installez-les depuis le Play Store des modèles Android TV : vos identifiants Stream Bleu fonctionnent dans les trois. Les boîtiers [MAG](/iptv-mag-box-france) restent l'autre option pour une utilisation en portail pur." },
+        ],
+      },
+    ],
+    faq: [
+      { q: "Qu'est-ce que MyTVOnline ?", a: "MyTVOnline est l'application IPTV développée par Formuler pour ses boîtiers. Elle lit les abonnements en Xtream Codes, en liste M3U ou en portail Stalker, avec guide TV, favoris et contrôle parental." },
+      { q: "Peut-on installer MyTVOnline sur une autre box ou une Smart TV ?", a: "Non, MyTVOnline est réservée aux boîtiers Formuler. Sur un autre appareil, utilisez TiviMate, IPTV Smarters Pro ou IBO Player selon le modèle." },
+      { q: "MyTVOnline inclut-il des chaînes ?", a: "Non. C'est un lecteur : il faut y ajouter un abonnement IPTV. Stream Bleu fonctionne avec MyTVOnline en Xtream Codes, en M3U ou en portail." },
+      { q: "Quelle différence entre MyTVOnline 2 et MyTVOnline 3 ?", a: "MyTVOnline 3 est la version la plus récente, livrée sur les Formuler Z11. Son interface est plus rapide et mieux adaptée aux grosses listes ; MyTVOnline 2 équipe les modèles plus anciens comme le Z8." },
+      { q: "Faut-il choisir Xtream Codes ou portail dans MyTVOnline ?", a: "Xtream Codes est le plus simple : il charge chaînes, VOD et guide TV sans enregistrement d'adresse MAC. Le portail Stalker est utile si vous utilisez aussi un boîtier MAG avec le même compte." },
+    ],
+    related: ["/boitier-formuler", "/iptv-mag-box-france", "/tivimate", "/boitier-iptv", "/applications-iptv", "/abonnement-iptv", "/essai-gratuit"],
+    schema: "Article",
+    datePublished: "2026-10-23",
+    dateModified: "2026-10-23",
+    readTime: "5 min",
   },
 ];

@@ -487,6 +487,8 @@ export default function HomePage() {
                 {l:"/tivimate", t:"TiviMate"},
                 {l:"/prix-iptv", t:"Prix IPTV"},
                 {l:"/comparatif-iptv", t:"Comparatif IPTV"},
+                {l:"/fournisseur-iptv", t:"Fournisseur IPTV"},
+                {l:"/alternatives-iptv", t:"Alternatives IPTV"},
                 {l:"/blog/qu-est-ce-que-l-iptv", t:"Qu'est-ce que l'IPTV ?"},
                 {l:"/blog/m3u-iptv", t:"Liste M3U IPTV"},
               ].map((x) => (

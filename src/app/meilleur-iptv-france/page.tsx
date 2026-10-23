@@ -150,7 +150,7 @@ export default function MeilleurIptvFrancePage() {
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
             <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-              {[{l:"/iptv-france",t:"IPTV France"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/blog/meilleur-iptv-france-2026",t:"Article Blog"},{l:"/avis",t:"Avis Clients"}].map(x => (
+              {[{l:"/iptv-france",t:"IPTV France"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/blog/meilleur-iptv-france-2026",t:"Article Blog"},{l:"/avis",t:"Avis Clients"},{l:"/comparatif-iptv",t:"Comparatif IPTV"},{l:"/fournisseur-iptv",t:"Fournisseur IPTV"},{l:"/alternatives-iptv",t:"Alternatives IPTV"}].map(x => (
                 <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
               ))}
             </div>

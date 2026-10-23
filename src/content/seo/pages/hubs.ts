@@ -236,4 +236,103 @@ export const HUB_PAGES: SeoPageData[] = [
     datePublished: D,
     dateModified: D,
   },
+  {
+    slug: "/alternatives-iptv",
+    group: "hubs",
+    navLabel: "Alternatives IPTV",
+    cardText: "Atlas Pro, King365, Pure IPTV… comment changer de service IPTV.",
+    title: "Alternatives IPTV 2026 : Atlas Pro, King365, Pure IPTV",
+    description: "Votre service IPTV ne marche plus ? Alternatives à Atlas Pro, King365, Pure IPTV, Iron IPTV, Hot IPTV et autres : comment changer sans racheter de matériel.",
+    keywords: ["alternative iptv", "alternatives iptv", "changer de fournisseur iptv", "iron iptv", "ironiptv", "hot iptv", "hotiptv", "cod iptv", "mario iptv", "ottiptv", "pandar tv", "pandar iptv", "panda iptv", "premier iptv", "room iptv", "smart4iptv", "mega iptv", "mega ip tv", "megaott", "mega ott", "megaiptv", "megaott iptv", "neo tv pro", "neotv pro", "neo iptv", "dragon iptv", "elon iptv", "royal iptv", "majestic iptv", "orca iptv", "rg iptv"],
+    badge: "Hub · Alternatives",
+    h1: "Alternatives IPTV : changer de service sans changer d'appareil",
+    intro: "Chercher une **alternative IPTV**, c'est souvent la conséquence d'un problème concret : un service qui coupe pendant les matchs, une application qui disparaît de la boutique de la TV, un revendeur qui ne répond plus. La bonne nouvelle : dans la plupart des cas, **vous gardez votre TV, votre box et même votre application**. Seuls les identifiants changent. Cette page regroupe les noms de services les plus recherchés en France et la marche à suivre pour passer à un autre, en toute transparence.",
+    tldr: [
+      "Changer de service IPTV = garder son lecteur (Smarters, TiviMate, IBO…) et saisir de nouveaux identifiants.",
+      "Seuls les services liés à une application ou un boîtier propriétaire demandent d'installer un nouveau lecteur.",
+      "Testez toujours 24h aux heures de pointe avant de payer : [essai gratuit](/essai-gratuit).",
+    ],
+    sections: [
+      {
+        id: "guides",
+        h2: "Nos guides par service",
+        blocks: [
+          { type: "p", text: "Pour les trois noms les plus recherchés, nous avons rédigé un guide dédié : application à utiliser après le changement, matériel compatible et étapes de migration." },
+          { type: "hub", group: "competitors" },
+        ],
+      },
+      {
+        id: "recherches",
+        h2: "Les services IPTV les plus recherchés en France",
+        blocks: [
+          { type: "p", text: "Volumes de recherche mensuels estimés sur Google France (toutes variantes d'orthographe confondues, octobre 2026). Ils mesurent la notoriété d'un nom, **pas sa qualité** : nous ne notons ni ne classons ces services." },
+          {
+            type: "table",
+            head: ["Service recherché", "Recherches / mois", "Notre guide"],
+            rows: [
+              ["King365 / King365 TV", "≈ 21 500", "[Alternative à King365](/alternative-king365)"],
+              ["Atlas Pro / Atlas Pro ONTV", "≈ 18 500", "[Alternative à Atlas Pro](/alternative-atlas-pro)"],
+              ["Pure IPTV", "≈ 10 500", "[Alternative à Pure IPTV](/alternative-pure-iptv)"],
+              ["Iron IPTV", "≈ 7 900", "Méthode générale ci-dessous"],
+              ["Hot IPTV", "≈ 6 900", "Méthode générale ci-dessous"],
+              ["Pandar TV / Panda IPTV", "≈ 5 100", "Méthode générale ci-dessous"],
+              ["Cod IPTV, Mario IPTV, Premier IPTV, Room IPTV, Ottiptv, Smart4IPTV", "≈ 5 000 chacun", "Méthode générale ci-dessous"],
+              ["Mega IPTV / MegaOTT", "≈ 1 750", "Méthode générale ci-dessous"],
+              ["Neo TV Pro / Neo IPTV", "≈ 1 700", "Méthode générale ci-dessous"],
+              ["Dragon IPTV, Elon IPTV, Royal IPTV, Majestic IPTV", "≈ 1 000 à 1 500 chacun", "Méthode générale ci-dessous"],
+            ],
+            caption: "Source : estimations d'outils de mots-clés pour la France. Les ordres de grandeur comptent plus que les chiffres exacts.",
+          },
+          { type: "p", text: "Autres noms de services et de panels IPTV que l'on voit passer en France, cités en vrac et sans jugement :" },
+          { type: "chips", items: ["Atlas Pro", "King365", "Iron IPTV", "Hot IPTV", "Pure IPTV", "Mega IPTV / MegaOTT", "Royal / Royale IPTV", "Dragon IPTV", "Elon IPTV", "Euro IPTV", "Fox IPTV", "Golden IPTV", "Neo IPTV / Neo TV Pro", "Purple IPTV", "Shark IPTV", "Wise IPTV", "Panda / Pandar IPTV", "X IPTV / Xiptv / Xplayer", "One IPTV / One Player", "Max IPTV", "Magnum IPTV", "OTT Plus / OTT Pro", "Worldwide IPTV", "Vision IPTV", "Watched IPTV", "VIP IPTV", "Top1 IPTV", "Subtv IPTV", "Strong IPTV", "Smart4IPTV", "Saphir IPTV", "RG IPTV", "Room IPTV", "Premier IPTV", "Orca IPTV", "Mario IPTV", "Majestic IPTV", "Cod IPTV", "9xtream IPTV", "Avatar IPTV", "Delta IPTV", "Dream TV IPTV", "Eagle IPTV", "Elite IPTV", "Fastiptv", "Maestro IPTV", "Lux IPTV", "Magic IPTV", "Majax31 IPTV", "Mitvpro", "Moonplayer IPTV", "Mu3 IPTV", "Nano IPTV / Nanomid", "Nettv IPTV", "Niptv", "Nord IPTV", "Obs IPTV", "Perfectiptv", "Phoenix IPTV", "Platinum IPTV", "Playiptv", "Player IPTV Solutions", "Prestige IPTV", "Primeiptv", "Pro IPTV", "QHDTVPro", "Quzu IPTV", "Simpleiptv", "Sniper IPTV", "Sonic IPTV", "Super IPTV", "Teli IPTV", "Terra IPTV", "Tiger IPTV", "TV Team IPTV", "Wolf IPTV", "Xtreamtv", "Yootix TV", "Yu2go", "Ottiptv", "IPTV+", "IPTV24", "IPTV365", "IPTV4on", "IPTV4u", "IPTVfull", "IPTVgold", "IPTVisuel", "IPTVone", "IPTVplus", "IPTVstore", "IPTV Az", "IPTV 365", "IPTV Com", "IPTV Connect", "IPTV Connect Pro", "IPTV Global", "IPTV Streaming", "IPTV Total", "IPTV Life", "IPTV Tech", "IPTV High Tech", "IPTV Mondial", "IPTV Set", "IPTV Run", "IPTV Flex", "IPTV Motion", "IPTV Xyz", "IPTV Hunt", "IPTV Monster", "IPTV Pro2", "IPTV Revolution", "IPTV Secured", "IPTV Wings"] },
+          { type: "p", text: "Certaines recherches comme « iptv az » ou « iptv 365 » décrivent une offre plutôt qu'une marque précise (« de A à Z », « toute l'année ») : elles ne désignent aucun service en particulier." },
+          { type: "callout", title: "Transparence", text: "Stream Bleu n'est affilié à aucun de ces services et n'en revend aucun. Nous ne les avons pas testés et ne publions aucun avis, positif ou négatif, à leur sujet. Les noms sont cités uniquement pour vous aider si c'est l'un d'eux qui vous a amené ici." },
+        ],
+      },
+      {
+        id: "methode",
+        h2: "Changer de service IPTV : la méthode en 4 étapes",
+        blocks: [
+          {
+            type: "steps",
+            items: [
+              { title: "Identifiez votre lecteur", text: "IPTV Smarters, TiviMate, IBO Player, Smart IPTV, MyTVOnline… Si c'est un lecteur standard, vous le gardez. Si c'est l'application propre au service, choisissez un lecteur dans notre guide [applications IPTV](/applications-iptv)." },
+              { title: "Demandez un essai", text: "Un service sérieux vous laisse tester avant de payer. Chez Stream Bleu : [essai gratuit 24h](/essai-gratuit)." },
+              { title: "Ajoutez un second profil", text: "La plupart des lecteurs gèrent plusieurs comptes : comparez l'ancien et le nouveau service aux mêmes heures, sur le même appareil." },
+              { title: "Décidez sur des faits", text: "Stabilité un soir de match, temps de zapping, guide TV, réactivité du support. Notre grille complète est sur la page [comparatif IPTV](/comparatif-iptv)." },
+            ],
+          },
+        ],
+      },
+      {
+        id: "lecteur-ou-service",
+        h2: "Service, application ou boîtier : ce que vous changez vraiment",
+        blocks: [
+          {
+            type: "table",
+            head: ["Élément", "Exemples", "À changer quand vous changez de service ?"],
+            rows: [
+              ["Service (les chaînes)", "Stream Bleu et les noms ci-dessus", "Oui, c'est l'abonnement"],
+              ["Lecteur standard", "[IPTV Smarters Pro](/iptv-smarters-pro), [TiviMate](/tivimate), [IBO Player](/ibo-player)", "Non, on y ajoute les nouveaux identifiants"],
+              ["Application propriétaire", "Application livrée par un service, réservée à lui", "Oui, remplacez-la par un lecteur standard"],
+              ["Boîtier Android ouvert", "[Xiaomi Mi Box](/iptv-xiaomi-mi-box), [Formuler](/boitier-formuler), box Android", "Non"],
+              ["Boîtier verrouillé", "Box limitée à une seule application", "Ajoutez une [clé Fire TV](/iptv-firestick-france)"],
+            ],
+          },
+        ],
+      },
+    ],
+    faq: [
+      { q: "Comment changer de fournisseur IPTV ?", a: "Gardez votre lecteur IPTV s'il est standard (IPTV Smarters, TiviMate, IBO Player…), demandez un essai au nouveau fournisseur et ajoutez ses identifiants dans un second profil. Si tout fonctionne, laissez simplement l'ancien abonnement expirer." },
+      { q: "Faut-il racheter un boîtier pour changer de service IPTV ?", a: "Rarement. Une TV Samsung ou LG, un Fire TV Stick ou une box Android ouverte acceptent n'importe quel service compatible Xtream Codes ou M3U. Seuls les boîtiers verrouillés sur une application posent problème." },
+      { q: "Quelle est la meilleure alternative à Atlas Pro ou King365 ?", a: "Celle qui reste stable sur votre connexion aux heures où vous regardez. Faites un essai de 24h un soir de semaine ou pendant un match, sur votre appareil principal, avant de payer." },
+      { q: "Stream Bleu est-il affilié à l'un de ces services ?", a: "Non. Stream Bleu est un service indépendant, sans lien avec Atlas Pro, King365, Pure IPTV ou les autres noms cités sur cette page." },
+      { q: "Pourquoi publier les volumes de recherche ?", a: "Pour montrer quels noms les internautes français tapent le plus, sans porter de jugement. Ces chiffres sont des estimations d'outils de mots-clés et mesurent la notoriété, pas la qualité d'un service." },
+    ],
+    related: ["/alternative-atlas-pro", "/alternative-king365", "/alternative-pure-iptv", "/comparatif-iptv", "/fournisseur-iptv", "/meilleur-iptv-france", "/applications-iptv", "/essai-gratuit"],
+    cta: { title: "Comparez Stream Bleu à votre service actuel", text: "24h d'essai gratuit, dans votre application habituelle. Sans engagement." },
+    schema: "CollectionPage",
+    datePublished: "2026-10-23",
+    dateModified: "2026-10-23",
+  },
 ];

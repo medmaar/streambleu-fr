@@ -82,7 +82,8 @@
 /decodeur-iptv /boitier-iptv 301
 /formuler /boitier-formuler 301
 /formuler-z11-pro-max /boitier-formuler 301
-/mytvonline /boitier-formuler 301
+/mytvonline-3 /mytvonline 301
+/my-tv-online /mytvonline 301
 /iptv-mag /iptv-mag-box-france 301
 /cle-amazon-iptv /iptv-firestick-france 301
 /iptv-firestick /iptv-firestick-france 301
@@ -115,3 +116,21 @@
 /iptv-test /essai-gratuit 301
 /iptv-free-trial /essai-gratuit 301
 /blogqu-est-ce-que-l-iptv /blog/qu-est-ce-que-l-iptv 301
+
+# Competitor-conquest, provider and troubleshooting clusters (2026-10-23)
+/alternative-iptv /alternatives-iptv 301
+/alternatives /alternatives-iptv 301
+/changer-de-fournisseur-iptv /alternatives-iptv 301
+/atlas-pro-alternative /alternative-atlas-pro 301
+/alternative-atlas-pro-iptv /alternative-atlas-pro 301
+/king365-alternative /alternative-king365 301
+/alternative-king365-tv /alternative-king365 301
+/pure-iptv-alternative /alternative-pure-iptv 301
+/pure-iptv-legal /alternative-pure-iptv 301
+/fournisseurs-iptv /fournisseur-iptv 301
+/provider-iptv /fournisseur-iptv 301
+/service-iptv /fournisseur-iptv 301
+/agence-iptv /fournisseur-iptv 301
+/iptv-smarters-ne-fonctionne-pas /iptv-smarters-pro-ne-fonctionne-pas 301
+/smarters-pro-ne-fonctionne-pas /iptv-smarters-pro-ne-fonctionne-pas 301
+/iptv-smarters-pro-bloque /iptv-smarters-pro-ne-fonctionne-pas 301
