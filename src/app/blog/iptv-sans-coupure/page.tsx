@@ -18,7 +18,7 @@ const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
   headline: "IPTV Sans Coupure en France 2026 — Fini le Buffering",
   description: "Guide complet sur l'IPTV sans coupure en France. Comment fonctionne un service IPTV stable et pourquoi Stream Bleu garantit zéro buffering.",
-  datePublished: "2026-03-15", dateModified: "2026-04-30",
+  datePublished: "2026-03-15", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-sans-coupure" },
@@ -28,7 +28,7 @@ const faqItems = [
   { q: "Pourquoi mon IPTV buffe sans cesse ?", a: "Les coupures IPTV sont causées par des serveurs surchargés, une connexion internet insuffisante (moins de 10 Mbps pour la HD, 25 Mbps pour la 4K), ou un service IPTV peu fiable utilisant des serveurs bon marché. La qualité du fournisseur IPTV est le facteur principal." },
   { q: "Quelle connexion internet faut-il pour l'IPTV sans coupure ?", a: "Pour un IPTV sans coupure en HD, 10 Mbps stables suffisent. Pour la 4K Ultra HD H.265, 25 Mbps sont recommandés. La fibre française (100 Mbps+) offre une expérience parfaite avec plusieurs connexions simultanées sans aucun buffering." },
   { q: "Un VPN peut-il améliorer la stabilité de mon IPTV ?", a: "Rarement. Un VPN ajoute de la latence et peut ralentir votre connexion. Avec un bon fournisseur IPTV comme Stream Bleu, aucun VPN n'est nécessaire. Si vous constatez des améliorations avec un VPN, c'est signe que votre FAI brident certains flux." },
-  { q: "Stream Bleu garantit-il vraiment zéro coupure ?", a: "Oui. Notre infrastructure utilise des serveurs redondants avec basculement automatique. En cas de problème sur un serveur, votre flux bascule instantanément sur un autre sans interruption visible. 99,9% d'uptime garanti." },
+  { q: "Stream Bleu garantit-il zéro coupure ?", a: "Aucun service internet ne peut garantir zéro coupure, et nos conditions d'utilisation le disent clairement. Notre infrastructure utilise des serveurs redondants avec basculement automatique, avec un objectif de disponibilité de 99,9 %. La stabilité dépend aussi de votre connexion : testez 24h gratuitement un soir de match." },
   { q: "Que faire si mon IPTV Stream Bleu buffe ?", a: "Dans les très rares cas de buffering, contactez notre support via WhatsApp — nous répondons en moins de 5 minutes. La cause est généralement liée à votre connexion locale (WiFi vs câble Ethernet) ou à un lecteur IPTV mal configuré." },
 ];
 
@@ -94,7 +94,7 @@ export default function IptvSansCoupurePage() {
                 { title: "Infrastructure redondante", desc: "Nos serveurs sont répliqués dans plusieurs datacenters. En cas de défaillance d'un serveur, votre flux bascule automatiquement sur un autre en moins d'une seconde — sans interruption visible." },
                 { title: "Capacité dédiée aux heures de pointe", desc: "Nous surdimensionnons notre infrastructure pour les événements à forte audience : finales de Champions League, Roland-Garros, Top 14. La capacité est doublée lors des pics de trafic prévus." },
                 { title: "Encodage H.265/HEVC efficace", desc: "L'encodage H.265 consomme deux fois moins de bande passante que le H.264 à qualité égale. Résultat : une 4K H.265 consomme autant qu'une 1080p H.264, ce qui réduit drastiquement les risques de buffering." },
-                { title: "Monitoring 24/7 et intervention proactive", desc: "Notre équipe technique surveille les serveurs en temps réel 24h/24. Toute anomalie est détectée et résolue avant que les utilisateurs ne la remarquent. C'est pourquoi nous affichons 99,9% d'uptime." },
+                { title: "Monitoring 24/7 et intervention proactive", desc: "Notre équipe technique surveille les serveurs en temps réel 24h/24. Toute anomalie est détectée et résolue avant que les utilisateurs ne la remarquent. C'est ce qui nous permet de viser 99,9 % de disponibilité." },
               ].map(item => (
                 <div key={item.title} style={{ background: "#fff", borderRadius: 14, padding: "20px 22px", border: "1px solid rgba(90,95,207,0.12)", boxShadow: "0 4px 12px rgba(90,95,207,0.05)" }}>
                   <h3 style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>✓ {item.title}</h3>
@@ -124,7 +124,7 @@ export default function IptvSansCoupurePage() {
             <div style={{ background: "rgba(90,95,207,0.04)", borderRadius: 16, padding: "20px 24px", border: "1px solid rgba(90,95,207,0.12)", marginBottom: 40 }}>
               <p style={{ fontSize: 13, fontWeight: 700, color: "#5a5fcf", marginBottom: 12 }}>Articles connexes :</p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                {[{l:"/blog/meilleur-abonnement-iptv-france",t:"Meilleur abonnement IPTV"},{l:"/blog/iptv-stable-france",t:"IPTV Stable France"},{l:"/blog/iptv-pas-cher-france",t:"IPTV Pas Cher France"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/abonnement-iptv",t:"Abonnement IPTV"}].map(x => (
+                {[{l:"/meilleur-iptv-france",t:"Meilleur abonnement IPTV"},{l:"/blog/iptv-stable-france",t:"IPTV Stable France"},{l:"/blog/iptv-pas-cher-france",t:"IPTV Pas Cher France"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/abonnement-iptv",t:"Abonnement IPTV"}].map(x => (
                   <Link key={x.l} href={x.l} style={{ background: "#fff", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "5px 14px", fontSize: 12, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
                 ))}
               </div>

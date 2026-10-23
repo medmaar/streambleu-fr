@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 50 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2 et bien plus.",
   keywords:
-    "liste chaînes iptv france, stream bleu chaînes, chaînes iptv france 2026, bein sports iptv, canal plus iptv, iptv tf1, tf1 iptv, iptv tnt",
+    "liste chaînes iptv france, chaine iptv, chaînes iptv, stream bleu chaînes, chaînes iptv france 2026, iptv tf1, tf1 iptv, iptv tnt",
   alternates: { canonical: "https://streambleu.fr/liste-chaines" },
     openGraph: {
     title: "Liste Chaînes IPTV France 2026 — 50 000+ Chaînes",
@@ -8156,6 +8156,19 @@ const categories = [{
 ];
 
 
+const faqItems = [
+  { q: "Qu'est-ce qu'une chaîne IPTV ?", a: "Une chaîne IPTV est une chaîne de télévision diffusée par internet plutôt que par l'antenne ou le satellite. Elle apparaît dans votre lecteur IPTV (IPTV Smarters, TiviMate, IBO Player…) avec son nom, son logo et, si disponible, le programme en cours dans le guide TV." },
+  { q: "Les chaînes de la TNT sont-elles disponibles en IPTV ?", a: "Oui : la catégorie France de la liste regroupe les chaînes de la TNT, dont TF1, France 2, France 3 et ses déclinaisons régionales. En IPTV, vous les retrouvez sur tous vos appareils, y compris sur une TV sans antenne." },
+  { q: "Comment trouver une chaîne précise, comme TF1, dans mon lecteur IPTV ?", a: "Utilisez la recherche de votre lecteur, ou ajoutez la chaîne à vos favoris depuis sa catégorie. Les noms commencent par un préfixe de pays (par exemple « FR - TF1 FHD »), ce qui facilite le tri." },
+  { q: "La liste des chaînes change-t-elle ?", a: "Oui, elle évolue au fil du temps. Le plus sûr est de vérifier les chaînes que vous regardez vraiment pendant l'essai gratuit de 24h, avant de choisir un forfait." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -8168,6 +8181,7 @@ export default function ChannelsListPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen">
       {/* Hero */}
       <section style={{ background: "#5a5fcf", padding: "64px 16px", textAlign: "center" }}>
@@ -8241,6 +8255,21 @@ export default function ChannelsListPage() {
               </div>
             </details>
           ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="pb-4 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 style={{ fontSize: 24, fontWeight: 800, color: "#5a5fcf", marginBottom: 16 }}>Chaînes IPTV : questions fréquentes</h2>
+          <div className="space-y-3">
+            {faqItems.map((f) => (
+              <div key={f.q} style={{ background: "#ffffff", borderRadius: 14, padding: "18px 22px", border: "1px solid rgba(123,135,232,0.2)" }}>
+                <h3 style={{ fontWeight: 700, fontSize: 16, color: "#5a5fcf", marginBottom: 8 }}>{f.q}</h3>
+                <p style={{ fontSize: 14, lineHeight: 1.7, color: "#333" }}>{f.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

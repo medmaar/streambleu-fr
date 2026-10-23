@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://streambleu.fr/iptv-france" },
   openGraph: {
     title: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu",
-    description: "Le meilleur service IPTV en France. 50 000+ chaînes, 4K Ultra HD, sans coupure. Essai gratuit 24h.",
+    description: "IPTV France (IPTVFrance) : service IPTV pour la France, 4K Ultra HD, lecteurs standards. Essai gratuit 24h.",
     url: "https://streambleu.fr/iptv-france", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV France Stream Bleu" }],
   },
 };
 
 const faqItems = [
-  { q: "Quel est le meilleur service IPTV en France ?", a: "Stream Bleu est reconnu comme le meilleur service IPTV en France grâce à sa stabilité, sa qualité 4K H.265 et son support 24/7 en français. Il propose 50 000+ chaînes dont toutes les chaînes françaises TNT, beIN Sports, Canal+ et RMC Sport." },
+  { q: "Quel est le meilleur service IPTV en France ?", a: "Aucun classement indépendant ne désigne un « meilleur » service : le bon choix est celui qui reste stable chez vous. Stream Bleu mise sur la stabilité, la qualité 4K H.265 et un support en français, et se teste gratuitement 24h. Il propose 50 000+ chaînes dont toutes les chaînes françaises TNT, beIN Sports, Canal+ et RMC Sport." },
   { q: "L'IPTV est-il légal en France ?", a: "La technologie IPTV est parfaitement légale en France. Stream Bleu est un revendeur de services IPTV tiers. Les utilisateurs sont responsables des contenus auxquels ils accèdent conformément à la législation française en vigueur." },
   { q: "Comment fonctionne l'IPTV en France ?", a: "L'IPTV diffuse les chaînes TV via internet. Il suffit d'une connexion stable (25 Mbps pour la 4K) et d'un lecteur IPTV comme TiviMate ou IPTV Smarters Pro installé sur votre appareil." },
   { q: "L'IPTV France inclut-il les chaînes sportives ?", a: "Oui. Stream Bleu inclut beIN Sports 1/2/3, RMC Sport 1/2, Canal+ Sport, Eurosport 1/2 et L'Équipe TV. Tous les matchs Ligue 1, Champions League, Roland-Garros et Top 14 sont couverts." },

@@ -208,7 +208,7 @@ export default function IPTVFranceAvis() {
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/blog" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Blog</Link>
             <Link href="/avis" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Page avis →</Link>
-            <Link href="/blog/meilleur-iptv-france-2026" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Meilleur IPTV France →</Link>
+            <Link href="/meilleur-iptv-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Meilleur IPTV France →</Link>
           </div>
         </article>
       </main>

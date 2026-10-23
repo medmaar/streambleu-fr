@@ -62,6 +62,20 @@ const requirements = [
 ];
 
 
+const faqItems = [
+  { q: "Faut-il installer du matériel spécifique ?", a: "Non. Si vous avez déjà un Fire Stick, une Smart TV, un téléphone ou un ordinateur, vous êtes prêt. Pas d'antenne, pas de décodeur, pas de technicien requis." },
+  { q: "L'IPTV fonctionne-t-il avec mon abonnement internet actuel ?", a: "Oui. Tout abonnement internet français standard (Orange, SFR, Free, Bouygues) avec au moins 25 Mbps fonctionne parfaitement pour le streaming HD." },
+  { q: "Puis-je regarder sur plusieurs TV en même temps ?", a: "Oui — choisissez un forfait 2, 3, 4 ou 5 appareils. Chaque appareil streame indépendamment. Une personne peut regarder le foot au salon pendant qu'une autre regarde un film dans la chambre." },
+  { q: "L'IPTV fonctionne-t-il hors de France ?", a: "Votre abonnement fonctionne partout dans le monde avec une bonne connexion internet. Voyagez en Europe, aux États-Unis ou ailleurs et accédez toujours à toutes vos chaînes françaises." },
+  { q: "Que se passe-t-il si une chaîne est indisponible ?", a: "Nos serveurs maintiennent plusieurs flux redondants pour chaque chaîne. En cas de problème, le système bascule automatiquement sur un flux de secours. Notre équipe support 24h/24 surveille le service en permanence." },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -74,6 +88,7 @@ export default function HowItWorksPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "linear-gradient(to right, rgba(100,130,255,0.08) 0%, #c5bcf5 30%, #fdf5ff 60%, rgba(220,100,120,0.07) 100%)", color: "#1a1a4e" }} className="min-h-screen">
       {/* Hero */}
       <section className="bg-gradient-to-br from-gray-900 via-gray-950 to-black py-16 px-4 text-center">
@@ -191,13 +206,7 @@ export default function HowItWorksPage() {
             Questions <span className="text-[#5a5fcf]">fréquentes</span>
           </h2>
           <div className="space-y-6">
-            {[
-              { q: "Faut-il installer du matériel spécifique ?", a: "Non. Si vous avez déjà un Fire Stick, une Smart TV, un téléphone ou un ordinateur, vous êtes prêt. Pas d'antenne, pas de décodeur, pas de technicien requis." },
-              { q: "L'IPTV fonctionne-t-il avec mon abonnement internet actuel ?", a: "Oui. Tout abonnement internet français standard (Orange, SFR, Free, Bouygues) avec au moins 25 Mbps fonctionne parfaitement pour le streaming HD." },
-              { q: "Puis-je regarder sur plusieurs TV en même temps ?", a: "Oui — choisissez un forfait 2, 3, 4 ou 5 appareils. Chaque appareil streame indépendamment. Une personne peut regarder le foot au salon pendant qu'une autre regarde un film dans la chambre." },
-              { q: "L'IPTV fonctionne-t-il hors de France ?", a: "Votre abonnement fonctionne partout dans le monde avec une bonne connexion internet. Voyagez en Europe, aux États-Unis ou ailleurs et accédez toujours à toutes vos chaînes françaises." },
-              { q: "Que se passe-t-il si une chaîne est indisponible ?", a: "Nos serveurs maintiennent plusieurs flux redondants pour chaque chaîne. En cas de problème, le système bascule automatiquement sur un flux de secours. Notre équipe support 24h/24 surveille le service en permanence." },
-            ].map((item) => (
+            {faqItems.map((item) => (
               <div key={item.q} className="bg-transparent rounded-xl p-6 border border-gray-800">
                 <h3 className="font-bold text-lg mb-3 text-[#5a5fcf]">{item.q}</h3>
                 <p className="text-black text-sm leading-relaxed">{item.a}</p>

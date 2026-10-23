@@ -30,7 +30,6 @@ const EXISTING: Record<string, string> = {
   "/iptv-france": "IPTV France",
   "/abonnement-iptv": "Abonnement IPTV",
   "/iptv-premium": "IPTV Premium 4K",
-  "/meilleur-iptv-france": "Meilleur IPTV France",
   "/iptv-francais": "IPTV Français",
   "/tarifs/12-mois": "Abonnement IPTV 12 mois",
   "/tarifs/1-mois": "Abonnement IPTV 1 mois",
@@ -50,7 +49,6 @@ const EXISTING: Record<string, string> = {
   "/blog/iptv-france-avis": "Avis IPTV France",
   "/blog/iptv-vs-cable-france": "IPTV vs câble",
   "/blog/comment-installer-iptv-smart-tv": "Installer l'IPTV sur Smart TV",
-  "/blog/meilleur-abonnement-iptv-france": "Meilleur abonnement IPTV",
   "/blog/iptv-firestick-france": "Guide IPTV Fire Stick",
   // Legacy hand-built city pages (not in the SEO_PAGES content registry)
   "/iptv-paris": "IPTV Paris",

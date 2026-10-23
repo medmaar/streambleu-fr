@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HomePricing from "../components/HomePricing";
 import FaqAccordion from "../components/FaqAccordion";
+import { TARIFS_FAQ } from "./faq";
 
 export const metadata: Metadata = {
   title: { absolute: "Abonnement IPTV France 2026 — Dès 9€ | Stream Bleu" },
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
 };
 
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: TARIFS_FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -29,6 +36,7 @@ export default function TarifsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ background: "linear-gradient(to right, rgba(90,95,207,0.04) 0%, #fdf5ff 35%, #fdf5ff 65%, rgba(200,80,100,0.04) 100%)", color: "#1a1a4e", minHeight: "100vh" }}>
 
       <section style={{ padding: "80px 16px 40px", textAlign: "center" }}>
@@ -76,7 +84,7 @@ export default function TarifsPage() {
               "EPG complet + Télévision de rattrapage (7 jours)",
               "Compatible TiviMate & IBO Player",
               "Tous appareils : Fire TV, Smart TV, iOS, Android",
-              "Garantie de disponibilité 99,9%",
+              "Objectif de disponibilité 99,9 %",
               "Support 24/7 en français",
             ].map(feature => (
               <div key={feature} style={{ display: "flex", alignItems: "center", gap: 12, background: "#ffffff", border: "1px solid rgba(90,95,207,0.12)", borderRadius: 14, padding: "14px 18px" }}>
@@ -111,7 +119,7 @@ export default function TarifsPage() {
           <h2 style={{ fontSize: "1.6rem", fontWeight: 900, color: "#ffffff", marginBottom: 28, textAlign: "center" }}>
             Questions fréquentes sur les tarifs
           </h2>
-          <FaqAccordion />
+          <FaqAccordion items={TARIFS_FAQ} />
         </div>
       </section>
 

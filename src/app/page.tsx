@@ -56,6 +56,10 @@ const faqs = [
     a: "La technologie IPTV est légale en France et est le même mode de diffusion qu'utilisent les grands opérateurs téléphoniques. Stream Bleu donne accès à des flux disponibles publiquement. Les utilisateurs sont responsables de s'assurer que les contenus auxquels ils accèdent respectent la législation en vigueur.",
   },
   {
+    q: "Comment souscrire un abonnement IPTV en France ?",
+    a: "Choisissez une durée et un nombre d'écrans sur la page Tarifs : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois ou 49 € pour 12 mois (1 écran). Que vous cherchiez « abonnement IPTV », « IPTV abonnement » ou « French IPTV », c'est la même offre : vos identifiants arrivent par e-mail et fonctionnent dans IPTV Smarters, TiviMate, IBO Player ou VLC.",
+  },
+  {
     q: "Y a-t-il un essai gratuit pour tester la qualité ?",
     a: "Oui — Stream Bleu propose un essai gratuit de 24h sans carte bancaire requise. L'essai diffuse en pleine qualité 4K pour que vous puissiez valider les performances H.265, le rendu HDR et la liste des chaînes sur votre propre matériel. Activation instantanée via WhatsApp ou email.",
   },
@@ -477,7 +481,10 @@ export default function HomePage() {
                 {l:"/iptv-villes-france", t:"IPTV par Ville"},
                 {l:"/blog/iptv-sans-coupure", t:"IPTV Sans Coupure"},
                 {l:"/blog/iptv-pas-cher-france", t:"IPTV Pas Cher"},
-                {l:"/blog/meilleur-abonnement-iptv-france", t:"Meilleur Abonnement IPTV"},
+                {l:"/iptv-orange-sfr-bouygues", t:"IPTV Orange, SFR, Bouygues"},
+                {l:"/blog/ott-iptv", t:"OTT ou IPTV"},
+                {l:"/lecteur-iptv-en-ligne", t:"Lecteur IPTV en ligne"},
+                {l:"/telecommande-iptv", t:"Télécommande IPTV"},
                 {l:"/blog/iptv-france-avis", t:"Avis IPTV France"},
                 {l:"/liste-chaines", t:"Liste des Chaînes"},
                 {l:"/applications-iptv", t:"Applications IPTV"},

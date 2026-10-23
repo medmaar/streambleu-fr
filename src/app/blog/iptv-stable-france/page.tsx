@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Stable France 2026 — Zéro Coupure, 99,9% | Stream Bleu" },
-  description: "Guide complet sur l'IPTV stable en France : architecture serveur, redondance, uptime garanti. Pourquoi Stream Bleu est l'IPTV le plus fiable du marché.",
+  title: { absolute: "IPTV Stable France 2026 — Critères et Tests | Stream Bleu" },
+  description: "IPTV stable en France : architecture serveur, redondance, uptime, signes d'un service instable et comment tester la stabilité avant de payer.",
   keywords: "iptv stable france, iptv sans coupure france, iptv fiable france, iptv stable 2026, meilleur iptv stable",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-stable-france" },
   openGraph: {
-    title: "IPTV Stable France 2026 — Zéro Coupure, 99,9% Uptime | Stream Bleu",
-    description: "Critères d'un IPTV stable, architecture serveur, uptime. Stream Bleu : le plus stable en France.",
+    title: "IPTV Stable France 2026 — Critères et Tests | Stream Bleu",
+    description: "Critères d'un IPTV stable, architecture serveur, uptime et méthode de test avant achat.",
     url: "https://streambleu.fr/blog/iptv-stable-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Stable France 2026" }],
   },
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
-  headline: "IPTV Stable France 2026 — Zéro Coupure, 99,9% Uptime",
+  headline: "IPTV Stable France 2026 — Critères et Tests",
   description: "Guide complet sur la stabilité d'un service IPTV en France : infrastructure, redondance, uptime et tests.",
-  datePublished: "2026-04-05", dateModified: "2026-05-01",
+  datePublished: "2026-04-05", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-stable-france" },
@@ -28,7 +28,7 @@ const articleSchema = {
 const faqItems = [
   { q: "Comment savoir si un service IPTV est vraiment stable avant d'acheter ?", a: "Demandez un essai gratuit (Stream Bleu propose 24h). Testez obligatoirement pendant un événement sportif en direct — c'est le test ultime. Vérifiez les forums et avis d'autres utilisateurs français. Évitez les services sans période d'essai ou avec uniquement des avis anonymes sur leur propre site." },
   { q: "Quelle est la différence entre un freeze et un buffering sur IPTV ?", a: "Un freeze (gel de l'image) indique une interruption totale du flux, souvent due à une surcharge serveur ou une coupure réseau. Le buffering (mise en mémoire tampon visible) indique que le débit entrant est insuffisant pour la qualité choisie. Le premier est un problème serveur, le second peut être résolu en abaissant la qualité ou en améliorant votre connexion." },
-  { q: "Stream Bleu garantit-il réellement 99,9% d'uptime ?", a: "Oui. 99,9% d'uptime correspond à moins de 8,7 heures d'indisponibilité par an. Depuis 2024, Stream Bleu maintient un uptime mesuré de 99,94% sur l'ensemble de son catalogue de chaînes. Les rares maintenances sont planifiées entre 3h et 5h du matin pour minimiser l'impact." },
+  { q: "Un service IPTV peut-il garantir 99,9% d'uptime ?", a: "Un tel chiffre n'a de valeur que s'il est mesuré par un tiers et publié. 99,9% d'uptime correspond à moins de 8,7 heures d'indisponibilité par an. Nous ne publions pas de taux garanti : le test le plus fiable reste un essai gratuit de 24h un soir de match, sur votre propre connexion." },
   { q: "Ma connexion internet peut-elle causer des instabilités ?", a: "Oui, partiellement. Une connexion instable (pertes de paquets > 1%, ping variable) cause des bufferings indépendamment de la qualité du service IPTV. Testez votre connexion sur fast.com ou speedtest.net. Si votre connexion est stable mais que l'IPTV buffe quand même, c'est le service qui est défaillant." },
   { q: "Pourquoi certains IPTV pas chers sont-ils si instables ?", a: "Les services IPTV bon marché utilisent souvent des serveurs partagés avec des centaines ou milliers d'utilisateurs simultanés, sans CDN, sans redondance. Le coût d'une infrastructure vraiment stable (serveurs dédiés, CDN, monitoring 24/7) est incompatible avec des prix inférieurs à 5€/mois. Chez Stream Bleu, le prix reflète une infrastructure sérieuse." },
 ];
@@ -83,10 +83,10 @@ export default function IPTVStableFrance() {
               <span style={{ color: "rgba(255,255,255,0.7)", fontSize: 13 }}>IPTV Stable France 2026</span>
             </div>
             <h1 style={{ fontSize: "clamp(26px,4.5vw,48px)", fontWeight: 900, color: "#fff", lineHeight: 1.15, marginBottom: 18 }}>
-              IPTV Stable France 2026 :<br />Zéro Coupure & 99,9% Uptime Garanti
+              IPTV Stable France 2026 :<br />Les Critères d'un Service Fiable
             </h1>
             <p style={{ color: "rgba(255,255,255,0.82)", fontSize: 16, lineHeight: 1.7, maxWidth: 680 }}>
-              La stabilité est le critère numéro un pour choisir un IPTV en France. Ce guide explique comment évaluer la fiabilité d'un service, les signes d'un IPTV instable, et pourquoi l'infrastructure de Stream Bleu garantit 99,9% d'uptime même lors des grands événements sportifs.
+              La stabilité est le critère numéro un pour choisir un IPTV en France. Ce guide explique comment évaluer la fiabilité d'un service, les signes d'un IPTV instable, et comment vérifier la stabilité d'un service avant de payer, même lors des grands événements sportifs.
             </p>
             <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 13, marginTop: 18 }}>Mis à jour le 1 mai 2026 · 11 min de lecture</p>
           </div>
@@ -124,7 +124,7 @@ export default function IPTVStableFrance() {
           </div>
 
           <h2 style={H2}>L'infrastructure de Stream Bleu : comment la stabilité est construite</h2>
-          <p style={S}>La stabilité d'un service IPTV n'est pas un accident — c'est le résultat d'une architecture technique spécifiquement conçue pour la résilience. Voici les 5 piliers de l'infrastructure Stream Bleu qui garantissent le 99,9% d'uptime annoncé.</p>
+          <p style={S}>La stabilité d'un service IPTV n'est pas un accident — c'est le résultat d'une architecture technique spécifiquement conçue pour la résilience. Voici les 5 piliers d'une infrastructure IPTV conçue pour la stabilité, ceux sur lesquels Stream Bleu s'appuie.</p>
           <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 40 }}>
             {infra.map(item => (
               <div key={item.num} style={{ display: "flex", gap: 18, background: "#fff", borderRadius: 14, padding: "18px 22px", border: "1px solid rgba(90,95,207,0.1)" }}>
@@ -163,7 +163,7 @@ export default function IPTVStableFrance() {
               </thead>
               <tbody>
                 {[
-                  ["99,9%", "8,7h", "43 min", "✓ Excellent (Stream Bleu)"],
+                  ["99,9%", "8,7h", "43 min", "✓ Excellent"],
                   ["99,5%", "43,8h", "3,6h", "Acceptable"],
                   ["99%", "87,6h", "7,3h", "⚠ Problématique"],
                   ["98%", "175h", "14,6h", "✗ Inacceptable"],
@@ -192,7 +192,7 @@ export default function IPTVStableFrance() {
           <section style={{ background: "#5a5fcf", borderRadius: 20, padding: "36px 32px", textAlign: "center", marginBottom: 40 }}>
             <h2 style={{ fontSize: 22, fontWeight: 900, color: "#fff", marginBottom: 12 }}>Testez la stabilité de Stream Bleu — 24h gratuit</h2>
             <p style={{ color: "rgba(255,255,255,0.82)", fontSize: 15, lineHeight: 1.7, marginBottom: 28, maxWidth: 520, margin: "0 auto 28px" }}>
-              99,9% uptime · Zéro buffering · Infrastructure premium France · Sans carte bancaire
+              Essai gratuit 24h · Testez un soir de match · Sans carte bancaire
             </p>
             <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
               Essai Gratuit 24h →

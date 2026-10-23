@@ -26,6 +26,7 @@ const faqItems: FaqItem[] = [
   { q: "Combien d'appareils puis-je utiliser pendant l'essai ?", a: "Votre essai inclut une connexion simultanée. Si vous souhaitez tester sur plusieurs appareils, contactez-nous et nous pouvons l'organiser." },
   { q: "Que se passe-t-il après 24 heures ?", a: "Votre essai s'arrête simplement. Aucun frais, aucune annulation nécessaire. Si vous souhaitez continuer, contactez-nous pour choisir un forfait." },
   { q: "Une carte bancaire est-elle requise pour démarrer l'essai ?", a: "Absolument pas. Aucune information de paiement n'est nécessaire. L'essai est 100% gratuit, sans aucune obligation de s'abonner ensuite." },
+  { q: "Comment tester l'IPTV gratuitement pendant 24h ?", a: "Remplissez le formulaire de cette page : vous recevez un accès d'essai IPTV de 24h par e-mail, à utiliser dans votre lecteur habituel. Pour bien tester, regardez un soir de semaine entre 20h et 23h ou pendant un match, sur l'appareil que vous utiliserez vraiment." },
   { q: "Essai gratuit, test IPTV, trial IPTV : quelle différence ?", a: "Aucune — ce sont les mêmes mots pour la même chose. Que vous cherchiez « essai gratuit iptv », « test iptv gratuit » ou « iptv free trial », Stream Bleu propose systématiquement 24h d'accès complet, sans carte bancaire et sans engagement." },
 ];
 

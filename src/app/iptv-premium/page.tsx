@@ -106,7 +106,7 @@ export default function IptvPremiumPage() {
                     ["Codec vidéo","H.265/HEVC","MPEG-2/H.264","H.264"],
                     ["HDR10 & Dolby Vision","✅","❌","Rarement"],
                     ["Chaînes","50 000+","150–500","5 000–15 000"],
-                    ["Stabilité","99,9% uptime","Variable","Aléatoire"],
+                    ["Stabilité","Objectif 99,9 %","Variable","Aléatoire"],
                     ["Prix/mois","À partir de 4€","30€–60€","5€–15€"],
                     ["Support 24/7","✅ Français","Heures ouvrées","❌"],
                     ["Essai gratuit","✅ 24h sans CB","❌","Rarement"],

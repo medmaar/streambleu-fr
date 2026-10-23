@@ -150,7 +150,7 @@ export default function IPTVLillePage() {
                 { icon: "⚽", title: "LOSC & Sport Premium", desc: "Tous les matchs du LOSC, Ligue 1, Champions League, beIN Sports, RMC Sport." },
                 { icon: "🔥", title: "4K Ultra HD", desc: "Streams H.265/HEVC avec HDR10 & Dolby Vision sur les chaînes compatibles." },
                 { icon: "📱", title: "Multi-écrans", desc: "Smart TV, Fire Stick, Android, iOS, PC — tous les appareils supportés." },
-                { icon: "⚡", title: "Zéro Coupure", desc: "Infrastructure premium avec serveurs redondants. 99,9% uptime garanti." },
+                { icon: "⚡", title: "Zéro Coupure", desc: "Infrastructure premium avec serveurs redondants. Objectif de disponibilité : 99,9 %." },
                 { icon: "🆓", title: "Essai Gratuit", desc: "Testez 24h gratuitement sans carte bancaire. Activation instantanée." },
               ].map((f) => (
                 <div key={f.title} style={{

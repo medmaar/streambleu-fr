@@ -110,7 +110,7 @@ export default function IPTVCityPage() {
                 { icon: "⚽", title: "Sport Premium", desc: "beIN Sports, RMC Sport, Canal+ Sport, Eurosport — tous les matchs sans supplément." },
                 { icon: "🔥", title: "4K Ultra HD", desc: "Streams H.265/HEVC avec HDR10 & Dolby Vision sur les chaînes compatibles." },
                 { icon: "📱", title: "Multi-écrans", desc: "Smart TV, Fire Stick, Android, iOS, PC — tous les appareils supportés." },
-                { icon: "⚡", title: "Zéro Coupure", desc: "Infrastructure premium avec serveurs redondants. 99,9% uptime garanti." },
+                { icon: "⚡", title: "Zéro Coupure", desc: "Infrastructure premium avec serveurs redondants. Objectif de disponibilité : 99,9 %." },
                 { icon: "🆓", title: "Essai Gratuit", desc: "Testez 24h gratuitement sans carte bancaire. Activation instantanée." },
               ].map((f) => (
                 <div key={f.title} style={{ background: "rgba(123,135,232,0.06)", border: "1px solid rgba(123,135,232,0.18)", borderRadius: 16, padding: "28px 24px" }}>

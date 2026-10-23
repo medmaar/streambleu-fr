@@ -19,6 +19,10 @@ export const metadata: Metadata = {
 
 const faqItems: FaqItem[] = [
   {
+    q: "Pourquoi choisir l'IPTV 1 mois ?",
+    a: "L'IPTV 1 mois, à 9 € pour 1 écran, est idéal pour un événement précis ou pour tester le service dans la durée après l'essai gratuit de 24h. Il est sans engagement : vous pouvez ensuite passer au forfait 12 mois (49 €) si le service vous convient.",
+  },
+  {
     q: "Qu'est-ce qui est inclus dans le forfait 1 mois ?",
     a: "Le forfait 1 mois vous donne un accès complet à plus de 50 000 chaînes en direct dont toutes les chaînes françaises (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2), 300 000+ films et séries à la demande, streaming 4K Ultra HD, guide des programmes (EPG) et rattrapage 7 jours — le tout pour 9€.",
   },

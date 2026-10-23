@@ -19,6 +19,10 @@ export const metadata: Metadata = {
 
 const faqItems: FaqItem[] = [
   {
+    q: "L'abonnement IPTV 12 mois fonctionne-t-il sur Smart TV ?",
+    a: "Oui. Sur Samsung et LG, installez IBO Player : son activation est offerte avec le forfait 12 mois. Sur les TV Android (Sony, Philips, TCL), TiviMate ou Smarters Player Lite s'installent depuis le Play Store. Le forfait IPTV 12 mois coûte 49 € pour 1 écran, soit environ 4,08 € par mois.",
+  },
+  {
     q: "Qu'est-ce qui est inclus dans le forfait IPTV 12 mois ?",
     a: "Le forfait 12 mois vous offre 12 mois complets d'accès à plus de 50 000 chaînes en direct (beIN Sports, RMC Sport, Canal+, TF1, M6, France 2 et des centaines d'autres), 300 000+ films et séries, streaming 4K Ultra HD, EPG et rattrapage 7 jours — le tout pour 49€.",
   },

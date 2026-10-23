@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Pas Cher France 2026 — À partir de 4€/mois | Stream Bleu" },
-  description: "IPTV pas cher en France : comparatif des prix et guide pour éviter les arnaques. Stream Bleu dès 4€/mois avec qualité 4K.",
+  title: { absolute: "IPTV Pas Cher France 2026 — À partir de 4,08 €/mois | Stream Bleu" },
+  description: "IPTV pas cher en France : comparatif des prix et guide pour éviter les arnaques. Stream Bleu dès 4,08 €/mois avec qualité 4K.",
   keywords: "iptv pas cher france, iptv pas cher, abonnement iptv pas cher, iptv economique france, iptv moins cher",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-pas-cher-france" },
   openGraph: {
-    title: "IPTV Pas Cher France 2026 — À partir de 4€/mois | Stream Bleu",
+    title: "IPTV Pas Cher France 2026 — À partir de 4,08 €/mois | Stream Bleu",
     description: "IPTV pas cher en France : comparatif des prix et guide pour éviter les arnaques.",
     url: "https://streambleu.fr/blog/iptv-pas-cher-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Pas Cher France" }],
@@ -41,7 +41,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "IPTV Pas Cher France 2026 — À partir de 4€/mois", "item": "https://streambleu.fr/blog/iptv-pas-cher-france"}
+    {"@type": "ListItem", "position": 2, "name": "IPTV Pas Cher France 2026 — À partir de 4,08 €/mois", "item": "https://streambleu.fr/blog/iptv-pas-cher-france"}
   ]
 };
 export default function IptvPasCherFrancePage() {
@@ -89,9 +89,9 @@ export default function IptvPasCherFrancePage() {
                     ["1 mois","9€/mois","30–60€/mois","3–5€/mois"],
                     ["3 mois","9,67€/mois (29€)","—","Variable"],
                     ["6 mois","6,50€/mois (39€)","—","Variable"],
-                    ["12 mois","4€/mois (49€)","—","—"],
+                    ["12 mois","4,08 €/mois (49 €)","—","—"],
                     ["Qualité","4K H.265 HDR10","1080i max","1080p instable"],
-                    ["Stabilité","99,9% uptime","Bonne","Aléatoire"],
+                    ["Stabilité","Objectif 99,9 %","Bonne","Aléatoire"],
                     ["Support","24/7 français","Heures ouvrées","Inexistant"],
                   ].map((row, i) => (
                     <tr key={i} style={{ background: i % 2 === 0 ? "#fff" : "rgba(90,95,207,0.03)" }}>
@@ -144,7 +144,7 @@ export default function IptvPasCherFrancePage() {
 
         <section style={{ padding: "48px 24px" }}>
           <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
-            <h2 style={{ fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>IPTV Premium à partir de 4€/mois</h2>
+            <h2 style={{ fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>IPTV Premium à partir de 4,08 €/mois</h2>
             <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, fontSize: 15 }}>Essai gratuit 24h • Qualité 4K • Sans carte bancaire</p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit</Link>

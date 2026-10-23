@@ -18,7 +18,7 @@ const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
   headline: "L'IPTV est-il Légal en France en 2026 ? Analyse Complète",
   description: "Analyse de la législation française sur l'IPTV, rôle de l'Arcom, droits des utilisateurs et risques réels.",
-  datePublished: "2026-02-05", dateModified: "2026-05-01",
+  datePublished: "2026-02-05", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-legal-france" },
@@ -26,10 +26,11 @@ const articleSchema = {
 };
 
 const faqItems = [
+  { q: "Legality of IPTV : que dit la loi française ?", a: "La loi française ne vise pas la technologie IPTV, qui est légale et utilisée par les opérateurs eux-mêmes. Elle vise la diffusion de contenus sans autorisation des ayants droit : une IPTV légale est donc un service qui détient les droits de ce qu'il diffuse. L'Arcom, créée par la loi du 25 octobre 2021, peut faire bloquer les services illicites." },
   { q: "L'IPTV est-il légal en France ?", a: "La technologie IPTV (Internet Protocol Television) est parfaitement légale en France — c'est la même qu'utilisent Orange TV, SFR TV et Free. Ce qui détermine la légalité d'un service IPTV est la question des droits de diffusion du contenu proposé, pas la technologie elle-même." },
   { q: "Risque-t-on une amende en utilisant un service IPTV en France ?", a: "En pratique, les poursuites de l'Arcom ciblent les opérateurs de services IPTV pirates, pas les utilisateurs individuels. À ce jour (2026), aucune condamnation d'utilisateur français pour simple consommation d'IPTV n'a été médiatisée. Les risques réels pour l'utilisateur final sont limités mais théoriquement existants selon le type de service utilisé." },
   { q: "Quelle est la différence entre un IPTV légal et illégal ?", a: "Un service IPTV légal détient les droits de diffusion pour les contenus qu'il propose. Un service illégal retransmet des chaînes sans payer les droits aux ayants droit (chaînes, ligues sportives, producteurs de films). La ligne de démarcation est la question des droits, pas le prix ni la quantité de chaînes proposées." },
-  { q: "L'Arcom peut-elle bloquer mon accès IPTV ?", a: "Depuis la loi ARCOM de 2022, l'autorité peut demander aux FAI français (Orange, SFR, Free, Bouygues) de bloquer des services IPTV pirates sans procédure judiciaire préalable dans certains cas urgents. Ce blocage touche le service, pas l'utilisateur personnellement. Un VPN peut contourner ce blocage mais n'efface pas la responsabilité légale." },
+  { q: "L'Arcom peut-elle bloquer mon accès IPTV ?", a: "Depuis la loi du 25 octobre 2021 (l'Arcom existe depuis janvier 2022), un juge peut ordonner aux FAI français (Orange, SFR, Free, Bouygues) de bloquer des services qui diffusent illégalement des compétitions sportives, et l'Arcom peut ensuite faire étendre ce blocage aux sites miroirs sans nouvelle procédure. Ce blocage touche le service, pas l'utilisateur personnellement. Un VPN peut contourner ce blocage mais n'efface pas la responsabilité légale." },
   { q: "Stream Bleu est-il un service IPTV légal ?", a: "Stream Bleu donne accès à des flux internet disponibles publiquement. Comme pour tout service technologique, les utilisateurs restent responsables des contenus auxquels ils choisissent d'accéder et de leur conformité avec la législation française applicable. Stream Bleu recommande à ses utilisateurs de consulter notre page Avertissement pour plus d'informations." },
 ];
 

@@ -22,7 +22,8 @@ const plans = [
 ];
 
 const faqItems = [
-  { q: "Quel est le meilleur abonnement IPTV en France ?", a: "Stream Bleu propose le meilleur abonnement IPTV en France avec 50 000+ chaînes, une qualité 4K Ultra HD et un support 24/7 en français. Le forfait 12 mois à 49€ offre le meilleur rapport qualité/prix à seulement 4€/mois." },
+  { q: "Quel est le meilleur abonnement IPTV en France ?", a: "Le meilleur abonnement IPTV est celui qui reste stable sur votre connexion et fonctionne avec votre TV : testez-le 24h avant de payer. Chez Stream Bleu, le forfait 12 mois à 49 € revient à environ 4,08 € par mois pour un écran ; notre guide Meilleur IPTV France détaille la méthode de test." },
+  { q: "Quelle est la différence entre un abonnement IPTV France et un abonnement IPTV international ?", a: "Un abonnement IPTV France est pensé pour un public francophone : chaînes françaises, guide TV en français et support en français. Chez Stream Bleu, les tarifs sont les mêmes partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois." },
   { q: "Comment fonctionne un abonnement IPTV ?", a: "Après votre abonnement, vous recevez vos identifiants par email en moins de 5 minutes. Installez un lecteur IPTV (TiviMate, IPTV Smarters Pro) sur votre appareil, entrez votre URL M3U et commencez à regarder." },
   { q: "L'abonnement IPTV nécessite-t-il un engagement ?", a: "Non. Tous les abonnements Stream Bleu sont sans engagement. Vous choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, sans renouvellement automatique." },
   { q: "Puis-je essayer avant de m'abonner ?", a: "Oui ! Stream Bleu propose un essai gratuit de 24h sans carte bancaire. Testez la qualité 4K et toutes les chaînes sur votre propre matériel avant de vous décider." },

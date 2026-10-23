@@ -205,7 +205,7 @@ export default function IPTVvsCable() {
 
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
             <Link href="/blog" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>← Blog</Link>
-            <Link href="/blog/meilleur-abonnement-iptv-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Meilleur abonnement IPTV →</Link>
+            <Link href="/meilleur-iptv-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Meilleur abonnement IPTV →</Link>
             <Link href="/tarifs" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Voir les tarifs →</Link>
           </div>
         </article>

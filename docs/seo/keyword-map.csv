@@ -29,7 +29,7 @@ iptv bloqué,500,Informational,/blog/iptv-ne-fonctionne-plus
 iptv ne fonctionne plus,500,Informational,/blog/iptv-ne-fonctionne-plus
 iptv smarter pro bloqué,50,Informational,/iptv-smarters-pro-ne-fonctionne-pas
 iptv smasters pro introuvable google play,50,Informational,/iptv-smarters-pro-ne-fonctionne-pas
-orange bloque iptv 2021,50,Informational,/blog/iptv-ne-fonctionne-plus
+orange bloque iptv 2021,50,Informational,/iptv-orange-sfr-bouygues
 iptv combien de connexion,50,Informational,/blog/iptv-wifi-ou-ethernet
 iptv wifi,50,Informational,/blog/iptv-wifi-ou-ethernet
 iptv wifi ou ethernet,50,Informational,/blog/iptv-wifi-ou-ethernet
@@ -53,21 +53,21 @@ iptv checker,50,Informational,/blog/m3u-iptv
 iptv checker online,50,Informational,/blog/m3u-iptv
 iptv listas m3u,50,Informational,/blog/m3u-iptv
 m3u checker,50,Informational,/blog/m3u-iptv
-m3u downloader online,50,Informational,/blog/m3u-iptv
+m3u downloader online,50,Informational,/lecteur-iptv-en-ligne
 m3u iptv france github,50,Informational,/blog/m3u-iptv
 m3u lista,50,Informational,/blog/m3u-iptv
-m3u online,50,Informational,/blog/m3u-iptv
+m3u online,50,Informational,/lecteur-iptv-en-ligne
 m3u premium,50,Commercial,/blog/m3u-iptv
 m3u vod,50,Informational,/blog/m3u-iptv
 m3u8 iptv,50,Informational,/blog/m3u-iptv
 vod m3u,50,Informational,/blog/m3u-iptv
-meilleur abonnement iptv,1900,Commercial,/blog/meilleur-abonnement-iptv-france
+meilleur abonnement iptv,1900,Commercial,/meilleur-iptv-france
 meilleur lecteur iptv,500,Commercial,/blog/meilleur-lecteur-iptv-france
 iptv,500000,Commercial,/blog/qu-est-ce-que-l-iptv
 ip television,50000,Informational,/blog/qu-est-ce-que-l-iptv
 iptv tv,50000,Commercial,/blog/qu-est-ce-que-l-iptv
-ott and iptv,1000,Commercial,/blog/qu-est-ce-que-l-iptv
-iptv ott service,880,Commercial,/blog/qu-est-ce-que-l-iptv
+ott and iptv,1000,Commercial,/blog/ott-iptv
+iptv ott service,880,Commercial,/blog/ott-iptv
 ip tele,500,Informational,/blog/qu-est-ce-que-l-iptv
 iptv live,500,Commercial,/blog/qu-est-ce-que-l-iptv
 iptv television,500,Informational,/blog/qu-est-ce-que-l-iptv
@@ -107,7 +107,7 @@ box iptv,1300,Commercial,/boitier-iptv
 boîtier iptv,1300,Commercial,/boitier-iptv
 decodeur iptv,1300,Commercial,/boitier-iptv
 iptv box,1300,Commercial,/boitier-iptv
-telecommande iptv,1000,Commercial,/boitier-iptv
+telecommande iptv,1000,Commercial,/telecommande-iptv
 boitier ip tv,880,Commercial,/boitier-iptv
 meilleur box iptv,500,Commercial,/boitier-iptv
 iptv sur tv non connectée,50,Informational,/boitier-iptv
@@ -126,7 +126,7 @@ king365 tv,5000,Commercial,/alternative-king365
 king365tv,5000,Commercial,/alternative-king365
 kingiptv,5000,Commercial,/alternative-king365
 mario iptv,5000,Commercial,/alternatives-iptv
-ottiptv,5000,Commercial,/alternatives-iptv
+ottiptv,5000,Commercial,/blog/ott-iptv
 pandar tv,5000,Commercial,/alternatives-iptv
 premier iptv,5000,Commercial,/alternatives-iptv
 pure iptv,5000,Commercial,/alternative-pure-iptv
@@ -276,11 +276,11 @@ niptv,50,Commercial,/alternatives-iptv
 nord iptv,50,Commercial,/alternatives-iptv
 one player iptv,50,Commercial,/alternatives-iptv
 one tv iptv,50,Commercial,/alternatives-iptv
-ott plus player,50,Commercial,/alternatives-iptv
+ott plus player,50,Commercial,/blog/ott-iptv
 ott plus v2,50,Commercial,/alternatives-iptv
-ott pro box,50,Commercial,/alternatives-iptv
-ott+ player,50,Commercial,/alternatives-iptv
-ottclub player,50,Commercial,/alternatives-iptv
+ott pro box,50,Commercial,/blog/ott-iptv
+ott+ player,50,Commercial,/blog/ott-iptv
+ottclub player,50,Commercial,/blog/ott-iptv
 panda iptv,50,Commercial,/alternatives-iptv
 pandar iptv,50,Commercial,/alternatives-iptv
 perfectiptv,50,Commercial,/alternatives-iptv
@@ -393,8 +393,8 @@ iptv sur amazon stick,50,Informational,/iptv-firestick-france
 iptvfrance,5000,Commercial,/iptv-france
 france iptv,4400,Commercial,/iptv-france
 iptv freebox,500,Informational,/iptv-freebox
-iptv isp,500,Informational,/iptv-freebox
-iptv orange,500,Commercial,/iptv-freebox
+iptv isp,500,Informational,/iptv-orange-sfr-bouygues
+iptv orange,500,Commercial,/iptv-orange-sfr-bouygues
 télécharger iptv sur freebox révolution,50,Informational,/iptv-freebox
 iptv hisense vidaa,50,Informational,/iptv-hisense-vidaa
 iptv vidaa,50,Informational,/iptv-hisense-vidaa
@@ -408,10 +408,10 @@ iptv smasters iphone,50,Informational,/iptv-ios-france
 iptv smasters pro iphone,50,Informational,/iptv-ios-france
 iptv telephone,50,Commercial,/iptv-ios-france
 ip tv kodi,500,Informational,/iptv-kodi-france
-jellyfin iptv,500,Informational,/iptv-kodi-france
+jellyfin iptv,500,Informational,/iptv-jellyfin-plex
 kodi ip tv,500,Informational,/iptv-kodi-france
 kodi iptv,500,Informational,/iptv-kodi-france
-stremio iptv,500,Informational,/iptv-kodi-france
+stremio iptv,500,Informational,/iptv-jellyfin-plex
 iptv sur kodi,50,Informational,/iptv-kodi-france
 m3u kodi,50,Informational,/iptv-kodi-france
 ip tv lg,500,Informational,/iptv-lg-tv-france
@@ -442,32 +442,32 @@ mag425a,50,Commercial,/iptv-mag-box-france
 tv box mag,50,Commercial,/iptv-mag-box-france
 tvip s box,50,Commercial,/iptv-mag-box-france
 iptv macbook,500,Informational,/iptv-pc-mac
-iptv online player,500,Commercial,/iptv-pc-mac
+iptv online player,500,Commercial,/lecteur-iptv-en-ligne
 iptv pc,500,Informational,/iptv-pc-mac
 iptv pour pc,500,Informational,/iptv-pc-mac
 iptv smasters pro mac,500,Informational,/iptv-pc-mac
 iptv sur mac,500,Informational,/iptv-pc-mac
 iptv sur pc,500,Informational,/iptv-pc-mac
-iptv web,500,Informational,/iptv-pc-mac
-lecteur m3u en ligne,500,Informational,/iptv-pc-mac
-iptv browser,50,Informational,/iptv-pc-mac
-iptv chrome,50,Informational,/iptv-pc-mac
+iptv web,500,Informational,/lecteur-iptv-en-ligne
+lecteur m3u en ligne,500,Informational,/lecteur-iptv-en-ligne
+iptv browser,50,Informational,/lecteur-iptv-en-ligne
+iptv chrome,50,Informational,/lecteur-iptv-en-ligne
 iptv laptop,50,Informational,/iptv-pc-mac
 iptv smasters linux,50,Informational,/iptv-pc-mac
 iptv smasters mac,50,Informational,/iptv-pc-mac
 iptv smasters mac os,50,Informational,/iptv-pc-mac
-iptv smasters online,50,Commercial,/iptv-pc-mac
+iptv smasters online,50,Commercial,/lecteur-iptv-en-ligne
 iptv smasters player mac,50,Informational,/iptv-pc-mac
 iptv smasters pro macbook,50,Informational,/iptv-pc-mac
-iptv smasters pro web,50,Informational,/iptv-pc-mac
-iptv smasters web,50,Commercial,/iptv-pc-mac
-m3u player online,50,Informational,/iptv-pc-mac
+iptv smasters pro web,50,Informational,/lecteur-iptv-en-ligne
+iptv smasters web,50,Commercial,/lecteur-iptv-en-ligne
+m3u player online,50,Informational,/lecteur-iptv-en-ligne
 m3u player pc,50,Informational,/iptv-pc-mac
 mac iptv,50,Informational,/iptv-pc-mac
 smart iptv mac,50,Informational,/iptv-pc-mac
 smart iptv pc,50,Informational,/iptv-pc-mac
 smasters iptv pc,50,Informational,/iptv-pc-mac
-web iptv smasters,50,Informational,/iptv-pc-mac
+web iptv smasters,50,Informational,/lecteur-iptv-en-ligne
 premium iptv,1900,Commercial,/iptv-premium
 premium iptv tv,1600,Commercial,/iptv-premium
 abonnement iptv premium,720,Commercial,/iptv-premium
@@ -603,12 +603,12 @@ abonnement iptv france,1300,Commercial,/
 iptv pas cher,5000,Commercial,/prix-iptv
 iptv prix,5000,Commercial,/prix-iptv
 prix iptv,5000,Commercial,/prix-iptv
-abonnement iptv 12 mois smart tv,1600,Commercial,/prix-iptv
+abonnement iptv 12 mois smart tv,1600,Commercial,/tarifs/12-mois
 iptv abonne,880,Commercial,/prix-iptv
 abonnement iptv pas cher,590,Commercial,/prix-iptv
 buy iptv,500,Commercial,/prix-iptv
-iptv 1 mois,500,Commercial,/prix-iptv
-iptv 12 mois,500,Commercial,/prix-iptv
+iptv 1 mois,500,Commercial,/tarifs/1-mois
+iptv 12 mois,500,Commercial,/tarifs/12-mois
 iptv meilleur rapport qualité prix,50,Commercial,/prix-iptv
 iptv promo,50,Commercial,/prix-iptv
 ip tv smart,5000,Commercial,/smart-iptv
@@ -683,3 +683,4 @@ tivimate mac,50,Informational,/tivimate
 tivimate player,50,Commercial,/tivimate
 tivimate premium prix,50,Commercial,/tivimate
 tivimate samsung,50,Informational,/tivimate
+chaine iptv,720,Commercial,/liste-chaines

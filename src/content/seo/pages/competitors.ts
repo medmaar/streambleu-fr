@@ -22,7 +22,7 @@ export const COMPETITOR_PAGES: SeoPageData[] = [
     keywords: ["atlas pro iptv", "atlas iptv", "atlaspro", "iptv atlas", "iptv atlas pro", "atlas iptv pro", "atlaspro in", "atlas pro ontv iphone", "atlas pro ontv sur tv samsung", "atlas pro ott", "alternative atlas pro"],
     badge: "Alternative · Atlas Pro",
     h1: "Alternative à Atlas Pro IPTV : passer à Stream Bleu sans perdre vos habitudes",
-    intro: "**Atlas Pro** (souvent appelé Atlas Pro ONTV, du nom de son application) fait partie des noms de service IPTV les plus tapés sur Google en France, avec près de 18 500 recherches par mois toutes variantes confondues. Si vous cherchez une **alternative à Atlas Pro IPTV** parce que votre code a expiré, que l'application ne se lance plus sur votre TV ou que votre revendeur ne répond plus, la bonne nouvelle est simple : changer de service ne demande ni nouvel appareil ni compétence technique. Il suffit d'un lecteur IPTV standard et de nouveaux identifiants.",
+    intro: "**Atlas Pro** (souvent appelé Atlas Pro ONTV, du nom de son application) fait partie des noms de service IPTV les plus tapés sur Google en France, avec près de 18 500 recherches par mois toutes variantes confondues. Si vous cherchez une **alternative à Atlas Pro IPTV** parce que votre code a expiré, que l'application ne se lance plus sur votre TV ou que votre revendeur ne répond plus, la bonne nouvelle est simple : changer de service ne demande ni nouvel appareil ni compétence technique. Il suffit d'un lecteur IPTV standard et de nouveaux identifiants. Cette page vaut pour toutes les façons de l'écrire : Atlas IPTV, AtlasPro, IPTV Atlas ou Atlas IPTV Pro.",
     tldr: [
       "Stream Bleu fonctionne avec les lecteurs standards (IPTV Smarters, TiviMate, IBO Player…) : vous n'êtes pas lié à une application propriétaire.",
       "Sur Samsung ou LG, passez par [IBO Player](/ibo-player) ; sur iPhone, par [Smarters Player Lite](/smarters-player-lite).",
@@ -129,7 +129,7 @@ export const COMPETITOR_PAGES: SeoPageData[] = [
     keywords: ["king365", "king365 tv", "king365tv", "king365 iptv", "kingiptv", "kingtv365", "king365tv box v3", "alternative king365"],
     badge: "Alternative · King365",
     h1: "Alternative à King365 TV : garder votre box et changer de service",
-    intro: "**King365** (ou King365 TV) est l'un des noms de service IPTV les plus recherchés en France, avec environ 21 500 recherches par mois cumulées, souvent associé à un boîtier vendu sous le même nom (« King365 TV box »). Si vous cherchez une **alternative à King365**, la question clé est de savoir si votre boîtier est une box Android ouverte, sur laquelle on peut installer n'importe quel lecteur IPTV, ou un appareil limité à une seule application. Cette page vous aide à trancher et à changer de service sans racheter de matériel inutilement.",
+    intro: "**King365** (ou King365 TV) est l'un des noms de service IPTV les plus recherchés en France, avec environ 21 500 recherches par mois cumulées, souvent associé à un boîtier vendu sous le même nom (« King365 TV box »). Si vous cherchez une **alternative à King365**, la question clé est de savoir si votre boîtier est une box Android ouverte, sur laquelle on peut installer n'importe quel lecteur IPTV, ou un appareil limité à une seule application. Cette page vous aide à trancher et à changer de service sans racheter de matériel inutilement. Elle vaut aussi pour les recherches King365TV, KingTV365, King365 IPTV ou King IPTV.",
     tldr: [
       "Box Android ouverte : installez [TiviMate](/tivimate) ou [IPTV Smarters Pro](/iptv-smarters-pro) et utilisez de nouveaux identifiants.",
       "Box verrouillée : une [clé Fire TV Stick](/iptv-firestick-france) à une trentaine d'euros suffit.",
@@ -294,7 +294,7 @@ export const COMPETITOR_PAGES: SeoPageData[] = [
       },
     ],
     faq: [
-      { q: "Pure IPTV est-il légal en France ?", a: "La légalité d'un service IPTV dépend des droits de diffusion qu'il détient pour ses contenus. Nous ne connaissons pas les accords de Pure IPTV et ne pouvons pas répondre à sa place ; vérifiez ses mentions légales, ses conditions de vente et ses moyens de paiement." },
+      { q: "Pure IPTV est-il légal ?", a: "La légalité d'un service IPTV dépend des droits de diffusion qu'il détient pour ses contenus. Nous ne connaissons pas les accords de Pure IPTV et ne pouvons pas répondre à sa place ; vérifiez ses mentions légales, ses conditions de vente et ses moyens de paiement." },
       { q: "Pure IPTV et Xsarius Pure, c'est la même chose ?", a: "Non. Xsarius Pure et Pure 2 sont des récepteurs (du matériel), alors que Pure IPTV est un nom de service. Un Xsarius peut lire un abonnement IPTV selon le modèle, via Enigma2 ou une liste M3U." },
       { q: "Comment passer de Pure IPTV à un autre service ?", a: "Gardez votre application de lecture et ajoutez un nouveau profil avec les identifiants de votre nouveau service. Avec l'essai gratuit Stream Bleu, vous pouvez comparer les deux pendant 24h." },
       { q: "Stream Bleu est-il lié à Pure IPTV ?", a: "Non. Stream Bleu est un service indépendant, sans lien avec Pure IPTV ni avec ses revendeurs." },

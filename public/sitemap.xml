@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://streambleu.fr</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -157,19 +157,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://streambleu.fr/blog/meilleur-abonnement-iptv-france</loc>
+    <loc>https://streambleu.fr/blog/meilleur-lecteur-iptv-france</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://streambleu.fr/blog/meilleur-iptv-france-2026</loc>
-    <lastmod>2026-09-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://streambleu.fr/blog/meilleur-lecteur-iptv-france</loc>
+    <loc>https://streambleu.fr/blog/ott-iptv</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -523,6 +517,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://streambleu.fr/iptv-jellyfin-plex</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://streambleu.fr/iptv-kodi-france</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -663,6 +663,12 @@
   <url>
     <loc>https://streambleu.fr/iptv-occitanie</loc>
     <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://streambleu.fr/iptv-orange-sfr-bouygues</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -907,6 +913,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://streambleu.fr/lecteur-iptv-en-ligne</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://streambleu.fr/liste-chaines</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -920,7 +932,7 @@
   </url>
   <url>
     <loc>https://streambleu.fr/meilleur-iptv-france</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -1229,6 +1241,12 @@
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://streambleu.fr/telecommande-iptv</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://streambleu.fr/tivimate</loc>

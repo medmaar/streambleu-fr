@@ -134,3 +134,29 @@
 /iptv-smarters-ne-fonctionne-pas /iptv-smarters-pro-ne-fonctionne-pas 301
 /smarters-pro-ne-fonctionne-pas /iptv-smarters-pro-ne-fonctionne-pas 301
 /iptv-smarters-pro-bloque /iptv-smarters-pro-ne-fonctionne-pas 301
+
+# Gap-coverage round two (2026-10-23)
+/blog/meilleur-iptv-france-2026 /meilleur-iptv-france 301
+/blog/meilleur-abonnement-iptv-france /meilleur-iptv-france 301
+/meilleur-abonnement-iptv /meilleur-iptv-france 301
+/meilleure-iptv /meilleur-iptv-france 301
+/top-iptv /meilleur-iptv-france 301
+/ott-iptv /blog/ott-iptv 301
+/ott-vs-iptv /blog/ott-iptv 301
+/difference-ott-iptv /blog/ott-iptv 301
+/lecteur-m3u-en-ligne /lecteur-iptv-en-ligne 301
+/iptv-en-ligne /lecteur-iptv-en-ligne 301
+/iptv-web /lecteur-iptv-en-ligne 301
+/iptv-web-player /lecteur-iptv-en-ligne 301
+/jellyfin-iptv /iptv-jellyfin-plex 301
+/iptv-jellyfin /iptv-jellyfin-plex 301
+/plex-iptv /iptv-jellyfin-plex 301
+/iptv-plex /iptv-jellyfin-plex 301
+/telecommande-box-iptv /telecommande-iptv 301
+/telecommande-mag /telecommande-iptv 301
+/iptv-orange /iptv-orange-sfr-bouygues 301
+/iptv-sfr /iptv-orange-sfr-bouygues 301
+/iptv-bouygues /iptv-orange-sfr-bouygues 301
+/iptv-livebox /iptv-orange-sfr-bouygues 301
+/iptv-bbox /iptv-orange-sfr-bouygues 301
+/iptv-8k /blog/iptv-4k-france 301
