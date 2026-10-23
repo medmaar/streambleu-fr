@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: { absolute: "Liste Chaînes IPTV France 2026 — 50 000+ Chaînes | Stream Bleu" },
   description:
-    "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 50 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2, et.",
+    "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 50 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2 et bien plus.",
   keywords:
     "liste chaînes iptv france, stream bleu chaînes, chaînes iptv france 2026, bein sports iptv, canal plus iptv, iptv tf1, tf1 iptv, iptv tnt",
   alternates: { canonical: "https://streambleu.fr/liste-chaines" },
     openGraph: {
     title: "Liste Chaînes IPTV France 2026 — 50 000+ Chaînes",
-    description: "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 50 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2, et.",
+    description: "Liste complète des chaînes IPTV Stream Bleu pour la France 2026. Parcourez 50 000+ chaînes en direct : beIN Sports, RMC Sport, Canal+, TF1, France 2 et bien plus.",
     url: "https://streambleu.fr/liste-chaines", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Liste Chaînes IPTV France 2026 — 50 000+ Chaînes" }],
   },

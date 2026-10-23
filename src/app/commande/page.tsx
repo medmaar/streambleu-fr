@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { Suspense, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { PRICES, DURATIONS, getPrice } from "@/lib/pricing";
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -21,9 +22,12 @@ const COUNTRIES = [
 
 function OrderContent() {
   const params = useSearchParams();
-  const appareils = params.get("appareils") || "1";
-  const duration = params.get("duration") || "1 Mois";
-  const price = params.get("price") || "9";
+  // Price is always derived from the official grid, never trusted from the URL.
+  const requestedDevices = Number(params.get("appareils"));
+  const appareils = String(PRICES[requestedDevices] ? requestedDevices : 1);
+  const requestedDuration = params.get("duration") || "1 Mois";
+  const duration = (DURATIONS as readonly string[]).includes(requestedDuration) ? requestedDuration : "1 Mois";
+  const price = String(getPrice(Number(appareils), duration));
 
   const [form, setForm] = useState({ name: "", email: "", country: "France", phone: "" });
   const [submitted, setSubmitted] = useState(false);

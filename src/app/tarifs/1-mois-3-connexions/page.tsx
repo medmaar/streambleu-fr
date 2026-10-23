@@ -135,16 +135,16 @@ export default function PlanMultiPage() {
               <h2 style={{ color: "#ffffff", fontSize: "1.4rem", fontWeight: 800, marginBottom: 24 }}>
                 Forfait IPTV 1 Mois — 3 Connexions
               </h2>
-              <PlanOrderForm plan="Forfait IPTV 1 Mois — 3 Connexions" />
+              <PlanOrderForm plan="Forfait IPTV 1 Mois — 3 Connexions — 27€" />
             </div>
 
             <div style={{ marginTop: 32, background: "rgba(90,95,207,0.06)", borderRadius: 16, padding: "24px 20px" }}>
               <p style={{ color: "#5a5fcf", fontSize: 12, fontWeight: 700, textAlign: "center", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>Autres Forfaits</p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
                 <a href="/tarifs/1-mois-3-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>1 Mois — 27€</a>
-                <a href="/tarifs/3-mois-3-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Mois — 87€</a>
-                <a href="/tarifs/6-mois-3-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Mois — 117€</a>
-                <a href="/tarifs/12-mois-3-connexions" style={{ background: "#5a5fcf", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>12 Mois — 147€ ⭐</a>
+                <a href="/tarifs/3-mois-3-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Mois — 75€</a>
+                <a href="/tarifs/6-mois-3-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Mois — 105€</a>
+                <a href="/tarifs/12-mois-3-connexions" style={{ background: "#5a5fcf", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>12 Mois — 135€ ⭐</a>
                 <a href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Essai Gratuit 24h</a>
                 <a href="/tarifs" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Tous les Tarifs</a>
               </div>

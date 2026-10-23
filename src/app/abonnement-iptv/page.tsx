@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 
 const plans = [
   { name: "1 Mois", price: "9€", desc: "Idéal pour tester. Accès complet à 50 000+ chaînes.", href: "/tarifs/1-mois", tag: null },
-  { name: "3 Mois", price: "29€", desc: "3€ de moins par mois. Parfait pour usage régulier.", href: "/tarifs/3-mois", tag: "Populaire" },
+  { name: "3 Mois", price: "29€", desc: "Sans engagement. Parfait pour un usage régulier.", href: "/tarifs/3-mois", tag: "Populaire" },
   { name: "6 Mois", price: "39€", desc: "6,50€/mois. Le meilleur rapport qualité/prix.", href: "/tarifs/6-mois", tag: null },
-  { name: "12 Mois", price: "49€", desc: "4€/mois. Économisez 56% vs l'abonnement mensuel.", href: "/tarifs/12-mois", tag: "Meilleur Prix" },
+  { name: "12 Mois", price: "49€", desc: "4,08€/mois. Économisez 55% vs l'abonnement mensuel.", href: "/tarifs/12-mois", tag: "Meilleur Prix" },
 ];
 
 const faqItems = [

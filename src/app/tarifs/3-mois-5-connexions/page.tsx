@@ -3,13 +3,13 @@ import PlanOrderForm from "../PlanOrderForm";
 import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV 3 Mois — 5 Connexions — 145€ | Stream Bleu" },
-  description: "Abonnement IPTV 3 Mois pour 5 connexions simultanées à 145€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
+  title: { absolute: "IPTV 3 Mois — 5 Connexions — 120€ | Stream Bleu" },
+  description: "Abonnement IPTV 3 Mois pour 5 connexions simultanées à 120€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   keywords: "iptv 5 connexions, abonnement iptv 3 mois 5 appareils, iptv 5 ecrans france",
   alternates: { canonical: "https://streambleu.fr/tarifs/3-mois-5-connexions" },
   openGraph: {
-    title: "IPTV 3 Mois — 5 Connexions — 145€ | Stream Bleu",
-    description: "Abonnement IPTV 3 Mois pour 5 connexions simultanées à 145€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
+    title: "IPTV 3 Mois — 5 Connexions — 120€ | Stream Bleu",
+    description: "Abonnement IPTV 3 Mois pour 5 connexions simultanées à 120€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
     url: "https://streambleu.fr/tarifs/3-mois-5-connexions",
     type: "website",
     siteName: "Stream Bleu",
@@ -22,7 +22,7 @@ const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Stream Bleu IPTV 3 Mois — 5 Connexions",
-  description: "Abonnement IPTV 3 Mois pour 5 connexions simultanées à 145€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
+  description: "Abonnement IPTV 3 Mois pour 5 connexions simultanées à 120€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",
@@ -44,7 +44,7 @@ const productSchema = {
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   offers: {
     "@type": "Offer",
-    price: "145.00",
+    price: "120.00",
     priceCurrency: "EUR",
     availability: "https://schema.org/InStock",
     hasMerchantReturnPolicy: {
@@ -101,7 +101,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "IPTV 3 Mois — 5 Connexions — 145€", "item": "https://streambleu.fr/tarifs/3-mois-5-connexions"}
+    {"@type": "ListItem", "position": 2, "name": "IPTV 3 Mois — 5 Connexions — 120€", "item": "https://streambleu.fr/tarifs/3-mois-5-connexions"}
   ]
 };
 export default function PlanMultiPage() {
@@ -122,7 +122,7 @@ export default function PlanMultiPage() {
                 IPTV 3 Mois — 5 Connexions
               </h1>
               <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 8, marginBottom: 12 }}>
-                <span style={{ color: "#f5a623", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 145€</span>
+                <span style={{ color: "#f5a623", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 120€</span>
                 <span style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>-50% offre</span>
               </div>
               <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 13 }}>Remplissez le formulaire — identifiants envoyés en moins de 5 minutes</p>
@@ -135,16 +135,16 @@ export default function PlanMultiPage() {
               <h2 style={{ color: "#ffffff", fontSize: "1.4rem", fontWeight: 800, marginBottom: 24 }}>
                 Forfait IPTV 3 Mois — 5 Connexions
               </h2>
-              <PlanOrderForm plan="Forfait IPTV 3 Mois — 5 Connexions" />
+              <PlanOrderForm plan="Forfait IPTV 3 Mois — 5 Connexions — 120€" />
             </div>
 
             <div style={{ marginTop: 32, background: "rgba(90,95,207,0.06)", borderRadius: 16, padding: "24px 20px" }}>
               <p style={{ color: "#5a5fcf", fontSize: 12, fontWeight: 700, textAlign: "center", marginBottom: 16, textTransform: "uppercase", letterSpacing: "0.08em" }}>Autres Forfaits</p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
                 <a href="/tarifs/1-mois-5-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>1 Mois — 45€</a>
-                <a href="/tarifs/3-mois-5-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Mois — 145€</a>
-                <a href="/tarifs/6-mois-5-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Mois — 195€</a>
-                <a href="/tarifs/12-mois-5-connexions" style={{ background: "#5a5fcf", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>12 Mois — 245€ ⭐</a>
+                <a href="/tarifs/3-mois-5-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Mois — 120€</a>
+                <a href="/tarifs/6-mois-5-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Mois — 175€</a>
+                <a href="/tarifs/12-mois-5-connexions" style={{ background: "#5a5fcf", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>12 Mois — 225€ ⭐</a>
                 <a href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Essai Gratuit 24h</a>
                 <a href="/tarifs" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Tous les Tarifs</a>
               </div>

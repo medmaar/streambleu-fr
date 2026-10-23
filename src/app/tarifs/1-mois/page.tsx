@@ -5,13 +5,13 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 1 Mois — 9€/mois | Stream Bleu" },
   description:
-    "Profitez d'1 mois d'IPTV en France pour seulement 9€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants.",
+    "Profitez d'1 mois d'IPTV en France pour seulement 9€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés par e-mail.",
   keywords:
-    "IPTV 1 month france, Stream Bleu 1 month, IPTV 9€ france, month to month IPTV france",
+    "iptv 1 mois france, Stream Bleu 1 mois, iptv 9€, abonnement iptv mensuel sans engagement",
   alternates: { canonical: "https://streambleu.fr/tarifs/1-mois" },
     openGraph: {
     title: "Forfait IPTV 1 Mois — 9€/mois",
-    description: "Profitez d'1 mois d'IPTV en France pour seulement 9€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants.",
+    description: "Profitez d'1 mois d'IPTV en France pour seulement 9€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés par e-mail.",
     url: "https://streambleu.fr/tarifs/1-mois", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Forfait IPTV 1 Mois — 9€/mois" }],
   },
@@ -65,8 +65,8 @@ const faqSchema = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Stream Bleu 1 Mois IPTV Plan",
-  description: "1 month of IPTV access to 50 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 300 000+ VOD titles in 4K.",
+  name: "Forfait IPTV 1 Mois Stream Bleu",
+  description: "1 mois d'accès IPTV à plus de 50 000 chaînes en direct en France dont Ligue 1, beIN Sports, RMC Sport et 300 000+ titres VOD en 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",
@@ -106,7 +106,7 @@ const productSchema = {
         transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 5, unitCode: "MIN" },
       },
     },
-    url: "https://streambleu.fr/pricing/1-month",
+    url: "https://streambleu.fr/tarifs/1-mois",
   },
 };
 
@@ -164,7 +164,7 @@ export default function Pricing1MonthPage() {
                 borderColor: "rgba(197,188,245,0.2)", boxShadow: "0 8px 32px rgba(90,95,207,0.25)",
               }}
             >
-              <PlanOrderForm plan="1 Mois Plan — 9€" />
+              <PlanOrderForm plan="Forfait IPTV 1 Mois — 1 Connexion — 9€" />
             </div>
 
             {/* 4. FAQ */}

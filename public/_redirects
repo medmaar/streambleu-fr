@@ -53,6 +53,14 @@
 /tarifs/3-months /tarifs/3-mois 301
 /tarifs/6-months /tarifs/6-mois 301
 /tarifs/12-months /tarifs/12-mois 301
+/1-month /tarifs/1-mois 301
+/pricing/1-month /tarifs/1-mois 301
+/3-months /tarifs/3-mois 301
+/pricing/3-months /tarifs/3-mois 301
+/6-months /tarifs/6-mois 301
+/pricing/6-months /tarifs/6-mois 301
+/12-months /tarifs/12-mois 301
+/pricing/12-months /tarifs/12-mois 301
 # /comment-ca-marche /tarifs 301   # disabled: page is live and indexed — re-enable if intended
 
 # Keyword-variant clean URLs → canonical cluster pages

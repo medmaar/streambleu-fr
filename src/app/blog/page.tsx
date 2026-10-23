@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: { absolute: "Blog Stream Bleu | Guides IPTV, Avis & Actualités France" },
   description:
-    "Lisez le blog Stream Bleu. Guides d'installation, légalité, comparatifs de prix, avis sur les lecteurs IPTV et les meilleurs services 4K en France pour.",
+    "Lisez le blog Stream Bleu. Guides d'installation, légalité, comparatifs de prix, avis sur les lecteurs IPTV et les meilleurs services 4K en France pour 2026.",
   keywords: "blog iptv france, guide iptv 2026, meilleur iptv france avis",
   alternates: { canonical: "https://streambleu.fr/blog" },
   openGraph: {

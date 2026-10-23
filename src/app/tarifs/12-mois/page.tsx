@@ -48,7 +48,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Comment obtenir du support en cas de problème ?",
-    a: "Our Français support team is disponible 24h/24 via WhatsApp and email en français. Most issues are resolved within minutes, any time of day.",
+    a: "Notre équipe support est disponible 24h/24 via WhatsApp et e-mail en français. La plupart des problèmes sont résolus en quelques minutes, à toute heure.",
   },
 ];
 
@@ -164,7 +164,7 @@ export default function Pricing12MonthsPage() {
                 borderColor: "rgba(197,188,245,0.2)", boxShadow: "0 8px 32px rgba(90,95,207,0.25)",
               }}
             >
-              <PlanOrderForm plan="Forfait 12 Mois — 49€" />
+              <PlanOrderForm plan="Forfait IPTV 12 Mois — 1 Connexion — 49€" />
             </div>
 
             {/* 4. FAQ */}

@@ -12,10 +12,11 @@
 - NO Vercel references anywhere
 - Always keep `output: "export"` in next.config.ts
 
-## EmailJS Credentials
-- Service: service_0e3cugb
-- Template: template_cuf7svm
-- Public Key: XgOQHE8VNnCyBYP1z
+## EmailJS Credentials (Stream Bleu only — never reuse another site's)
+- Service: service_wqw39vi
+- Template: template_3jpw5qp
+- Public Key: KfpszCeX5M5itfdsO
+- Account email: contact@streambleu.fr
 
 ## Brand
 - Name: Stream Bleu

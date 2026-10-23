@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "Meilleur Lecteur IPTV France 2026 — TiviMate | Stream Bleu" },
-  description: "Quel est le meilleur lecteur IPTV en France ? Comparatif TiviMate vs IPTV Smarters Pro vs VLC vs Perfect Player. Guide complet pour chaque appareil en.",
+  description: "Quel est le meilleur lecteur IPTV en France ? Comparatif TiviMate vs IPTV Smarters Pro vs VLC vs Perfect Player. Guide complet pour chaque appareil.",
   keywords: "meilleur lecteur iptv france, meilleur lecteur iptv, tivimate france, iptv smarters pro france, lecteur iptv android, lecteur iptv smart tv france",
   alternates: { canonical: "https://streambleu.fr/blog/meilleur-lecteur-iptv-france" },
   openGraph: {
