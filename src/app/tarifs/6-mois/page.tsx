@@ -5,13 +5,13 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 6 Mois — 39€ | Stream Bleu" },
   description:
-    "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au.",
+    "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au forfait mensuel.",
   keywords:
-    "IPTV 6 months france, Stream Bleu 6 months, best IPTV plan france, 6 month IPTV france €39",
+    "iptv 6 mois france, Stream Bleu 6 mois, meilleur forfait iptv france, iptv 6 mois 39€",
   alternates: { canonical: "https://streambleu.fr/tarifs/6-mois" },
     openGraph: {
     title: "Forfait IPTV 6 Mois — 39€",
-    description: "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au.",
+    description: "Profitez de 6 mois d'IPTV en France pour seulement 39€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Économisez par rapport au forfait mensuel.",
     url: "https://streambleu.fr/tarifs/6-mois", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Forfait IPTV 6 Mois — 39€" }],
   },
@@ -36,7 +36,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Puis-je regarder les chaînes françaises en direct ?",
-    a: "Yes — all plans include beIN Sports, RMC Sport, Canal+, CTV, Global, City TV, RDS, TVA, Canal Vie, and all regional Français channels in HD and 4K. Complete Ligue 1, NFL, NBA, MLB, UFC and CFL coverage is included.",
+    a: "Oui — chaque forfait inclut beIN Sports, RMC Sport, Canal+, TF1, M6, France 2, Arte et toutes les chaînes régionales françaises en HD et 4K. Toute la Ligue 1, la Champions League et les grands matchs internationaux sont couverts.",
   },
   {
     q: "Puis-je utiliser ce service sur plusieurs appareils en même temps ?",
@@ -44,7 +44,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Que se passe-t-il à l'expiration de mon abonnement 6 mois ?",
-    a: "You'll receive a reminder before your expiry date. You can renew for another 6 months or upgrade to the annual plan for even better value. There are no automatic charges and no contracts.",
+    a: "Vous recevrez un rappel avant l'expiration. Vous pouvez renouveler pour 6 mois ou passer au forfait 12 mois pour encore plus d'économies. Aucun prélèvement automatique, aucun contrat.",
   },
   {
     q: "Comment obtenir du support en cas de problème ?",
@@ -65,8 +65,8 @@ const faqSchema = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "Stream Bleu 6 Mois IPTV Plan",
-  description: "6 months of IPTV access to 50 000+ live channels in france including Ligue 1, beIN Sports, CTV, RMC Sport and 300 000+ VOD titles in 4K.",
+  name: "Forfait IPTV 6 Mois Stream Bleu",
+  description: "6 mois d'accès IPTV à plus de 50 000 chaînes en direct en France dont Ligue 1, beIN Sports, RMC Sport et 300 000+ titres VOD en 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
   review: {
     "@type": "Review",
@@ -106,7 +106,7 @@ const productSchema = {
         transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 5, unitCode: "MIN" },
       },
     },
-    url: "https://streambleu.fr/pricing/6-months",
+    url: "https://streambleu.fr/tarifs/6-mois",
   },
 };
 
@@ -164,7 +164,7 @@ export default function Pricing6MonthsPage() {
                 borderColor: "rgba(197,188,245,0.2)", boxShadow: "0 8px 32px rgba(90,95,207,0.25)",
               }}
             >
-              <PlanOrderForm plan="6 Mois Plan — €39" />
+              <PlanOrderForm plan="Forfait IPTV 6 Mois — 1 Connexion — 39€" />
             </div>
 
             {/* 4. FAQ */}

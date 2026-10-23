@@ -1,19 +1,8 @@
 "use client";
 import { useRef, useState } from "react";
 import Link from "next/link";
+import { PRICES as allPrices } from "@/lib/pricing";
 
-const allPrices: Record<number, [number, number, number, number]> = {
-  1:  [9,   29,  39,  49],
-  2:  [18,  50,  69,  89],
-  3:  [27,  75,  105, 135],
-  4:  [36,  99,  140, 180],
-  5:  [45,  120, 175, 225],
-  6:  [54,  144, 210, 270],
-  7:  [63,  168, 245, 315],
-  8:  [72,  192, 280, 360],
-  9:  [81,  216, 315, 405],
-  10: [90,  240, 350, 450],
-};
 
 const planDefs = [
   { name: "1 Mois",   badge: null,         slug: "1-mois"   },
@@ -162,7 +151,7 @@ export default function HomePricing() {
               )}
               <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 6, color: isLight ? "#5a5fcf" : "#fff" }}>{plan.name}</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 20 }}>
-                <span style={{ fontSize: 40, fontWeight: 900, color: isLight ? "#5a5fcf" : "#fdf5ff" }}>€{prices[i]}</span>
+                <span style={{ fontSize: 40, fontWeight: 900, color: isLight ? "#5a5fcf" : "#fdf5ff" }}>{prices[i]}€</span>
                 <span style={{ fontSize: 12, color: isLight ? "#7b87e8" : "rgba(255,255,255,0.7)" }}>/ {connLabel.replace('Connection', 'Connexion')}</span>
               </div>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 24px", flex: 1 }}>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: { absolute: "Meilleur Abonnement IPTV France 2026 — Guide & | Stream Bleu" },
-  description: "Quel est le meilleur abonnement IPTV en France en 2026 ? Comparatif complet : qualité 4K, stabilité, prix, chaînes, support. Stream Bleu s'impose comme le.",
+  description: "Quel est le meilleur abonnement IPTV en France en 2026 ? Comparatif complet : qualité 4K, stabilité, prix, chaînes, support. Stream Bleu s'impose comme la référence.",
   keywords: "meilleur abonnement iptv france, meilleur abonnement iptv, meilleur service iptv france, abonnement iptv france 2026, comparatif abonnement iptv",
   alternates: { canonical: "https://streambleu.fr/blog/meilleur-abonnement-iptv-france" },
   openGraph: {
@@ -37,7 +37,7 @@ const breadcrumbSchema = {
 const faqItems = [
   { q: "Quel est le meilleur abonnement IPTV en France en 2026 ?", a: "Stream Bleu est le meilleur abonnement IPTV en France pour 2026 selon nos tests et 50 000+ avis clients. Il offre la combinaison optimale : 50 000+ chaînes en 4K H.265, 99,9% d'uptime garanti, activation en moins de 30 minutes, et support 24/7 en français. À partir de 9€/mois sans engagement." },
   { q: "Combien coûte un bon abonnement IPTV en France ?", a: "Un abonnement IPTV de qualité en France coûte entre 9€ et 15€ par mois pour 1 connexion. En dessous de 5€/mois, méfiez-vous : l'infrastructure nécessaire à un service stable et légal ne peut pas être financée à ce prix. Stream Bleu propose des tarifs dégressifs : 9€/mois sur 1 mois, jusqu'à 4€/mois sur 12 mois." },
-  { q: "Faut-il choisir un abonnement 1 mois ou 12 mois ?", a: "Pour un nouveau service : commencez toujours par 1 mois (après l'essai gratuit) pour valider la qualité dans la durée. Si vous êtes satisfait après 1 mois, passez au 12 mois — l'économie est de 50% chez Stream Bleu. Évitez les services qui imposent 6 ou 12 mois dès le départ sans essai préalable." },
+  { q: "Faut-il choisir un abonnement 1 mois ou 12 mois ?", a: "Pour un nouveau service : commencez toujours par 1 mois (après l'essai gratuit) pour valider la qualité dans la durée. Si vous êtes satisfait après 1 mois, passez au 12 mois — l'économie est de 55% chez Stream Bleu. Évitez les services qui imposent 6 ou 12 mois dès le départ sans essai préalable." },
   { q: "Quelle différence entre 1 connexion et 2+ connexions ?", a: "1 connexion = 1 appareil simultané. Si vous voulez regarder l'IPTV en même temps sur votre TV salon et votre chambre, il vous faut 2 connexions. Stream Bleu propose des abonnements multi-connexions pour les familles, à tarifs dégressifs par connexion supplémentaire." },
   { q: "Le meilleur IPTV France inclut-il les chaînes sportives premium ?", a: "Oui. Stream Bleu inclut dans tous ses abonnements : beIN Sports 1, 2 et 3, RMC Sport 1 et 2, Canal+ et Canal+ Sport, Eurosport 1 et 2, L'Équipe TV. Ces chaînes sont disponibles sans supplément dans tous les forfaits, y compris le moins cher." },
 ];
@@ -58,8 +58,8 @@ const criteria = [
 
 const plans = [
   { duration: "1 mois", price: "9€", perMonth: "9€/mois", ideal: "Découverte, test longue durée", saving: "" },
-  { duration: "3 mois", price: "22€", perMonth: "7,33€/mois", ideal: "Abonnement courte durée", saving: "−19%" },
-  { duration: "6 mois", price: "35€", perMonth: "5,83€/mois", ideal: "Meilleur équilibre", saving: "−35%" },
+  { duration: "3 mois", price: "29€", perMonth: "9,67€/mois", ideal: "Abonnement courte durée", saving: "" },
+  { duration: "6 mois", price: "39€", perMonth: "6,50€/mois", ideal: "Meilleur équilibre", saving: "−28%" },
   { duration: "12 mois", price: "49€", perMonth: "4,08€/mois", ideal: "Meilleur prix, fidèles", saving: "−55%" },
 ];
 
