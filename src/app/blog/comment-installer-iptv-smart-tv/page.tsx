@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "Comment Installer IPTV sur Smart TV 2026 — Guide | Stream Bleu" },
@@ -219,6 +220,7 @@ export default function CommentInstallerIPTVSmartTV() {
             <Link href="/iptv-firestick-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>IPTV Firestick France →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Samsung France](https://www.samsung.com/fr/) — site officiel du fabricant", "[LG France](https://www.lg.com/fr/) — site officiel du fabricant"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

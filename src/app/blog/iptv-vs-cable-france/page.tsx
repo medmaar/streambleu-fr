@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV vs Câble France 2026 — Comparatif Complet | Stream Bleu" },
@@ -209,6 +210,7 @@ export default function IPTVvsCable() {
             <Link href="/tarifs" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Voir les tarifs →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Télévision sur IP (Wikipédia)](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9vision_sur_IP) — définition et historique de l'IPTV", "[Arcep](https://www.arcep.fr) — régulateur des télécoms : fibre et qualité des réseaux"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

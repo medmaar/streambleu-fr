@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose, { type ProseSection } from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Français 2026 — Chaînes Françaises en 4K | Stream Bleu" },
-  description: "Service IPTV français avec toutes les chaînes françaises en 4K Ultra HD. TF1, France 2, M6, Canal+, beIN Sports, RMC Sport. Support en français 24/7.",
+  description: "IPTV français : chaînes françaises en 4K, TF1, France 2, M6, Canal+, beIN Sports, RMC Sport, guide TV et support en français. Essai gratuit 24h.",
   keywords: "iptv francais, french iptv, iptv en français, chaînes françaises iptv, iptv france français",
   alternates: { canonical: "https://streambleu.fr/iptv-francais", languages: { "fr-FR": "https://streambleu.fr/iptv-francais", "x-default": "https://streambleu.fr/iptv-francais" } },
   openGraph: {
@@ -27,6 +28,73 @@ const faqItems = [
   { q: "Le service IPTV français fonctionne-t-il en dehors de France ?", a: "Oui. Stream Bleu fonctionne dans toute l'Europe et dans le monde entier. Les expatriés français peuvent regarder leurs chaînes françaises préférées depuis n'importe où grâce à notre service IPTV." },
   { q: "Les chaînes françaises sont-elles en direct ou en décalé ?", a: "Toutes les chaînes françaises Stream Bleu sont diffusées en direct (live). De plus, les principales chaînes proposent 7 jours de TV de rattrapage (catch-up) pour regarder les émissions manquées." },
   { q: "Y a-t-il un IPTV français qui fonctionne sans VPN ?", a: "Oui. Stream Bleu fonctionne sans VPN depuis la France et depuis l'étranger. Notre infrastructure est optimisée pour une diffusion directe sans nécessiter de services supplémentaires." },
+];
+
+const proseSections: ProseSection[] = [
+  {
+    "h2": "Qu'est-ce qu'un IPTV français ?",
+    "paras": [
+      "Un **IPTV français** est un service IPTV construit autour d'un public francophone : chaînes françaises en tête de liste, guide des programmes en français, site, facturation en euros et support dans votre langue. La technologie est la même que celle de tout service IPTV ; ce qui change, c'est l'organisation du catalogue et l'accompagnement.",
+      "Chez Stream Bleu, les chaînes françaises sont regroupées dans des catégories dédiées (généralistes, info, sport, jeunesse, cinéma), ce qui évite de chercher TF1 ou France 2 parmi des milliers de chaînes étrangères. La [liste des chaînes](/liste-chaines) détaille le contenu par catégorie."
+    ]
+  },
+  {
+    "h2": "Régler votre application en français",
+    "list": [
+      "**Langue de l'interface** : dans [IPTV Smarters Pro](/iptv-smarters-pro) et [TiviMate](/tivimate), choisissez le français dans les paramètres, rubrique Langue.",
+      "**Fuseau horaire du guide TV** : réglez l'EPG sur Europe/Paris, sinon les programmes s'affichent avec une ou deux heures de décalage.",
+      "**Audio et sous-titres** : sur les films et séries, le choix de la piste se fait pendant la lecture, dans le menu audio du lecteur.",
+      "**Favoris** : ajoutez vos chaînes françaises habituelles en favoris pour les retrouver en un clic."
+    ]
+  },
+  {
+    "h2": "IPTV français en Belgique et en Suisse",
+    "paras": [
+      "L'abonnement fonctionne de la même façon pour les francophones de Belgique et de Suisse : mêmes applications, mêmes identifiants, même grille tarifaire en euros. Le fuseau horaire est le même qu'en France, ce qui simplifie le guide TV.",
+      "En Suisse, pensez aux frais d'itinérance mobile si vous regardez sur smartphone avec une carte SIM française : privilégiez le Wi-Fi."
+    ]
+  },
+  {
+    "h2": "Tarifs de l'IPTV français",
+    "table": {
+      "head": [
+        "Durée",
+        "1 écran",
+        "Prix par mois",
+        "2 écrans"
+      ],
+      "rows": [
+        [
+          "1 mois",
+          "9 €",
+          "9 €",
+          "18 €"
+        ],
+        [
+          "3 mois",
+          "29 €",
+          "≈ 9,67 €",
+          "50 €"
+        ],
+        [
+          "6 mois",
+          "39 €",
+          "6,50 €",
+          "69 €"
+        ],
+        [
+          "12 mois",
+          "49 €",
+          "≈ 4,08 €",
+          "89 €"
+        ]
+      ],
+      "caption": "Grille officielle en euros TTC, sans engagement ni renouvellement automatique. Jusqu'à 10 écrans sur la page tarifs."
+    },
+    "paras": [
+      "Testez d'abord gratuitement pendant 24h avec l'[essai gratuit](/essai-gratuit), puis choisissez votre durée sur la page [tarifs](/tarifs)."
+    ]
+  }
 ];
 
 const faqSchema = {
@@ -60,7 +128,7 @@ export default function IptvFrancaisPage() {
               IPTV Français 2026 —<br /><span style={{ color: "#c5bcf5" }}>Toutes les Chaînes Françaises en 4K</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 17, lineHeight: 1.7, maxWidth: 620, margin: "0 auto 32px" }}>
-              Le service IPTV français par excellence. 180+ chaînes françaises en 4K Ultra HD — TF1, France 2, Canal+, beIN Sports — avec un support client entièrement en français 24h/24.
+              Un service IPTV pensé pour les francophones. 180+ chaînes françaises en 4K Ultra HD — TF1, France 2, Canal+, beIN Sports — avec un support client entièrement en français, 7j/7.
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit 24h</Link>
@@ -103,8 +171,8 @@ export default function IptvFrancaisPage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 16 }}>
               {[
                 { icon: "🇫🇷", title: "Interface en français", desc: "Site, support, facturation — tout est en français. Pas de traduction approximative, pas de support étranger." },
-                { icon: "📡", title: "Serveurs localisés en France", desc: "Nos serveurs sont optimisés pour les connexions françaises. Moins de latence, plus de stabilité pour les utilisateurs en France." },
-                { icon: "💬", title: "Support WhatsApp en français", desc: "Réponse en moins de 5 minutes via WhatsApp en français. Notre équipe connaît les appareils populaires en France." },
+                { icon: "📡", title: "Guide TV à l'heure française", desc: "Programme des chaînes (EPG) affiché en français, calé sur le fuseau Europe/Paris une fois l'application réglée." },
+                { icon: "💬", title: "Support WhatsApp en français", desc: "Réponse rapide via WhatsApp, en français. Notre équipe connaît les appareils populaires en France." },
                 { icon: "💳", title: "Paiement en euros", desc: "Paiement par carte bancaire ou PayPal en euros, sans conversion de devises ni frais cachés." },
               ].map(item => (
                 <div key={item.title} style={{ background: "#fff", borderRadius: 16, padding: "22px", border: "1px solid rgba(90,95,207,0.12)", boxShadow: "0 4px 14px rgba(90,95,207,0.05)" }}>
@@ -116,6 +184,9 @@ export default function IptvFrancaisPage() {
             </div>
           </div>
         </section>
+
+        <Prose sections={proseSections} />
+
 
         <section style={{ padding: "64px 16px" }}>
           <div style={{ maxWidth: 720, margin: "0 auto", background: "#4a4fc0", borderRadius: 24, padding: "40px 36px", boxShadow: "0 8px 32px rgba(90,95,207,0.2)" }}>

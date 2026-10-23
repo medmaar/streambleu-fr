@@ -197,7 +197,7 @@ export default function HomePage() {
               borderRadius: 999,
               marginBottom: 28,
             }}>
-              🇫🇷 Abonnement IPTV France — N°1 2026
+              🇫🇷 Abonnement IPTV France 2026
             </span>
             <h1 style={{
               fontSize: "clamp(36px, 6vw, 64px)",

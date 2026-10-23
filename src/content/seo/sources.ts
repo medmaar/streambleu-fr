@@ -32,6 +32,7 @@ const VIDAA: Source = { label: "VIDAA", href: "https://www.vidaa.com", note: "sy
 const XIAOMI: Source = { label: "Xiaomi France", href: "https://www.mi.com/fr/", note: "site officiel du fabricant" };
 const WINDOWS: Source = { label: "Windows", href: "https://www.microsoft.com/fr-fr/windows", note: "page officielle Microsoft" };
 const FREE: Source = { label: "Free", href: "https://www.free.fr", note: "site officiel de l'opérateur (Freebox)" };
+const DGCCRF: Source = { label: "DGCCRF", href: "https://www.economie.gouv.fr/dgccrf", note: "répression des pratiques commerciales trompeuses, dont les faux avis" };
 const AFTV: Source = { label: "AFTVnews", href: "https://www.aftvnews.com", note: "éditeur de l'application Downloader" };
 
 export const SOURCES: Record<string, Source[]> = {
@@ -73,4 +74,46 @@ export const SOURCES: Record<string, Source[]> = {
   "/fournisseur-iptv": [ARCOM],
   "/meilleur-iptv-france": [ARCOM, SPEEDTEST],
   "/comparatif-iptv": [ARCOM],
+  // Region and city pages: network advice → telecom regulator + speed test
+  "/iptv-villes-france": [ARCEP, SPEEDTEST],
+  "/iptv-ile-de-france": [ARCEP, SPEEDTEST],
+  "/iptv-auvergne-rhone-alpes": [ARCEP, SPEEDTEST],
+  "/iptv-nouvelle-aquitaine": [ARCEP, SPEEDTEST],
+  "/iptv-occitanie": [ARCEP, SPEEDTEST],
+  "/iptv-paca": [ARCEP, SPEEDTEST],
+  "/iptv-hauts-de-france": [ARCEP, SPEEDTEST],
+  "/iptv-grand-est": [ARCEP, SPEEDTEST],
+  "/iptv-bretagne": [ARCEP, SPEEDTEST],
+  "/iptv-pays-de-la-loire": [ARCEP, SPEEDTEST],
+  "/iptv-normandie": [ARCEP, SPEEDTEST],
+  "/iptv-bourgogne-franche-comte": [ARCEP, SPEEDTEST],
+  "/iptv-centre-val-de-loire": [ARCEP, SPEEDTEST],
+  "/iptv-corse": [ARCEP, SPEEDTEST],
+  "/iptv-paris": [ARCEP, SPEEDTEST],
+  "/iptv-lyon": [ARCEP, SPEEDTEST],
+  "/iptv-marseille": [ARCEP, SPEEDTEST],
+  "/iptv-toulouse": [ARCEP, SPEEDTEST],
+  "/iptv-nice": [ARCEP, SPEEDTEST],
+  "/iptv-bordeaux": [ARCEP, SPEEDTEST],
+  "/iptv-lille": [ARCEP, SPEEDTEST],
+  "/iptv-nantes": [ARCEP, SPEEDTEST],
+  "/iptv-strasbourg": [ARCEP, SPEEDTEST],
+  "/iptv-rennes": [ARCEP, SPEEDTEST],
+  "/iptv-montpellier": [ARCEP, SPEEDTEST],
+  "/iptv-grenoble": [ARCEP, SPEEDTEST],
+  "/iptv-toulon": [ARCEP, SPEEDTEST],
+  "/iptv-saint-etienne": [ARCEP, SPEEDTEST],
+  "/iptv-reims": [ARCEP, SPEEDTEST],
+  "/iptv-dijon": [ARCEP, SPEEDTEST],
+  "/iptv-rouen": [ARCEP, SPEEDTEST],
+  "/blog/iptv-france-avis": [DGCCRF, ARCOM],
+  "/iptv-firestick-france": [SMARTERS, TIVIMATE, AFTV],
+  "/iptv-android-france": [SMARTERS, VLC],
+  "/iptv-ios-france": [SMARTERS, VLC],
+  "/blog/iptv-a-vie": [DGCCRF, ARCOM],
+  "/prix-iptv": [DGCCRF],
+  "/alternatives-iptv": [DGCCRF, ARCOM],
+  "/applications-iptv": [SMARTERS, TIVIMATE, VLC],
+  "/boitier-iptv": [INFOMIR, FORMULER, ANDROID_TV],
+  "/appareils-iptv": [ANDROID_TV, APPLE_TV, SAMSUNG, LG],
 };

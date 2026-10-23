@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Test Gratuit France 2026 — Essai 24h | Stream Bleu" },
@@ -198,6 +199,7 @@ export default function IPTVTestGratuit() {
             <Link href="/meilleur-iptv-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Meilleur IPTV France →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[DGCCRF](https://www.economie.gouv.fr/dgccrf) — protection des consommateurs et pratiques commerciales", "[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

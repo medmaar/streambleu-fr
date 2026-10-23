@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV 4K France 2026 — Ultra HD sans Coupure | Stream Bleu" },
@@ -243,6 +244,7 @@ export default function IPTV4KFrance() {
           </div>
 
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion", "[Arcep](https://www.arcep.fr) — régulateur des télécoms : fibre et qualité des réseaux"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

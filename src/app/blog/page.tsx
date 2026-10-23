@@ -63,7 +63,7 @@ const posts = [
   {
     slug: "iptv-sans-coupure",
     title: "IPTV Sans Coupure en France 2026 — Fini le Buffering",
-    excerpt: "Comment avoir un IPTV sans coupure en France ? Guide complet sur les serveurs stables et pourquoi Stream Bleu garantit zéro buffering.",
+    excerpt: "Comment avoir un IPTV sans coupure en France ? Guide complet sur les serveurs stables et comment Stream Bleu limite le buffering.",
     date: "15 mar. 2026",
     readTime: "8 min",
     tag: "Guide",
@@ -86,8 +86,8 @@ const posts = [
   },
   {
     slug: "iptv-france-avis",
-    title: "IPTV France Avis 2026 — Ce que Disent les Vrais Clients",
-    excerpt: "Avis vérifiés de 50 000+ clients sur Stream Bleu. Trustpilot, Google et WhatsApp — ce que disent vraiment les utilisateurs.",
+    title: "IPTV France Avis 2026 — Comment Lire les Avis",
+    excerpt: "Repérer les faux avis IPTV, ce que valent les notes en ligne et les six critères à vérifier vous-même pendant un essai gratuit.",
     date: "8 avr. 2026",
     readTime: "6 min",
     tag: "Avis",

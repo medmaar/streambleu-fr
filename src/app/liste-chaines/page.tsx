@@ -8208,7 +8208,7 @@ export default function ChannelsListPage() {
           <span>🌍 152 Pays &amp; Régions</span>
           <span>📺 50 000+ Chaînes en direct</span>
           <span>🎬 Qualité 4K Ultra HD</span>
-          <span>⚡ Zéro Coupure</span>
+          <span>⚡ Serveurs redondants</span>
         </div>
       </div>
 

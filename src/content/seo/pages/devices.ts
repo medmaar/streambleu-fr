@@ -390,6 +390,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           { type: "p", text: "TiviMate n'existe pas sur tvOS. IPTVX et iPlayTV sont les équivalents les plus proches, avec grille EPG et favoris. Pour iPhone et iPad, voir notre guide [IPTV sur iPhone](/iptv-ios-france)." },
         ],
       },
+      {"id": "modeles", "h2": "Quel modèle d'Apple TV pour l'IPTV ?", "blocks": [{"type": "table", "head": ["Modèle", "4K", "Applications IPTV", "Conseil"], "rows": [["Apple TV 4K (2021 et 2022)", "Oui, HDR10 et Dolby Vision", "IPTV Smarters, iPlayTV, GSE Smart IPTV", "Le meilleur choix pour l'IPTV en 4K"], ["Apple TV 4K (2017)", "Oui", "Les mêmes, un peu plus lentes", "Suffisant, vérifiez la version de tvOS"], ["Apple TV HD", "Non (1080p)", "La plupart des applications", "Correct pour la HD uniquement"]], "caption": "Les applications disponibles dépendent de l'App Store et de votre version de tvOS."}, {"type": "p", "text": "Branchez l'Apple TV en Ethernet si possible : le port réseau évite la plupart des coupures liées au Wi-Fi. Le guide [Wi-Fi ou Ethernet](/blog/iptv-wifi-ou-ethernet) explique pourquoi."}]},
     ],
     faq: [
       { q: "Quelle est la meilleure application IPTV pour Apple TV ?", a: "IPTVX pour son interface et sa fluidité, iPlayTV pour son guide TV. Smarters Player Lite est la meilleure option gratuite." },
@@ -457,6 +458,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           { type: "p", text: "Sur la TV du salon, l'[Apple TV](/iptv-apple-tv-france) offre une meilleure expérience que le partage d'écran. Sur Mac, suivez notre guide [IPTV sur PC et Mac](/iptv-pc-mac). Et pour Android : [IPTV sur Android](/iptv-android-france)." },
         ],
       },
+      {"id": "depannage", "h2": "IPTV sur iPhone et iPad : problèmes fréquents", "blocks": [{"type": "table", "head": ["Problème", "Cause probable", "Solution"], "rows": [["La lecture s'arrête en arrière-plan", "iOS met l'application en pause", "Utilisez le mode image dans l'image si l'application le propose"], ["Impossible d'ajouter la playlist", "URL M3U incomplète", "Utilisez plutôt la connexion Xtream Codes (utilisateur, mot de passe, URL)"], ["Image saccadée en 4G", "Débit mobile variable", "Réduisez la qualité dans le lecteur ou passez en Wi-Fi"], ["Recopie vers la TV qui coupe", "AirPlay sur un Wi-Fi chargé", "Rapprochez-vous de la box ou utilisez une [Apple TV](/iptv-apple-tv-france)"]]}]},
     ],
     faq: [
       { q: "Quelle application IPTV sur iPhone ?", a: "Smarters Player Lite (gratuit), IPTVX et GSE Smart IPTV sont les plus utilisées. Toutes fonctionnent avec un abonnement Xtream Codes ou M3U." },
@@ -530,6 +532,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           },
         ],
       },
+      {"id": "depannage", "h2": "Problèmes fréquents sur Android et solutions", "blocks": [{"type": "table", "head": ["Problème", "Cause probable", "Solution"], "rows": [["L'image se fige", "Wi-Fi faible ou mode économie de batterie", "Désactivez l'optimisation de batterie pour le lecteur IPTV et passez en Wi-Fi 5 GHz"], ["« Authorization failed »", "Identifiants mal recopiés", "Copiez-collez l'utilisateur, le mot de passe et l'URL depuis l'e-mail, sans espace"], ["Pas de guide TV", "EPG non chargé", "Dans le lecteur, lancez « Mettre à jour l'EPG » et vérifiez le fuseau Europe/Paris"], ["Son décalé", "Décodage logiciel", "Activez le décodeur matériel (HW) dans les réglages du lecteur"]]}, {"type": "p", "text": "Sur un téléphone récent, la HD fonctionne sans difficulté en 4G/5G ; pour regarder sur la TV, un [Fire TV Stick](/iptv-firestick-france) ou une [box Android TV](/iptv-android-tv-france) reste plus confortable que la recopie d'écran."}]},
     ],
     faq: [
       { q: "Quel est le meilleur lecteur IPTV Android ?", a: "IPTV Smarters Pro ou Smarters Player Lite pour smartphone et tablette. Sur une TV Android, TiviMate est préférable." },
@@ -595,6 +598,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           { type: "p", text: "Un câble HDMI entre le PC et la TV suffit pour profiter de l'IPTV sur grand écran. Pour un usage quotidien au salon, un [boîtier IPTV](/boitier-iptv) reste plus pratique qu'un ordinateur allumé." },
         ],
       },
+      {"id": "depannage", "h2": "IPTV sur Windows : problèmes fréquents", "blocks": [{"type": "table", "head": ["Problème", "Cause probable", "Solution"], "rows": [["L'application ne s'ouvre pas", "Windows SmartScreen bloque un fichier téléchargé", "Installez depuis le Microsoft Store ou le site officiel de l'éditeur"], ["Image saccadée", "Décodage logiciel sur un PC ancien", "Activez l'accélération matérielle dans le lecteur, ou utilisez [VLC](/iptv-vlc)"], ["Pas de son sur la TV en HDMI", "Sortie audio Windows sur les haut-parleurs du PC", "Choisissez la TV comme périphérique audio dans Windows"], ["Coupures en Wi-Fi", "Carte Wi-Fi ancienne ou éloignée", "Utilisez un câble Ethernet ou un adaptateur Wi-Fi 5 GHz"]]}]},
     ],
     faq: [
       { q: "Quelle est la meilleure application IPTV pour Windows ?", a: "IPTV Smarters pour Windows pour une interface complète, MyIPTV Player pour une app légère du Microsoft Store, et VLC pour tester une liste." },
@@ -825,6 +829,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           { type: "p", text: "Avec un ancien Chromecast, lancez la chaîne dans [IPTV Smarters Pro](/iptv-smarters-pro) sur Android et touchez l'icône Cast. Le téléphone doit rester sur le même Wi-Fi. La qualité dépend du Wi-Fi et de l'application ; pour un usage quotidien, un Chromecast avec Google TV ou un [Fire TV Stick](/iptv-firestick-france) est plus confortable." },
         ],
       },
+      {"id": "depannage", "h2": "Chromecast : problèmes fréquents", "blocks": [{"type": "table", "head": ["Problème", "Cause probable", "Solution"], "rows": [["L'application n'apparaît pas dans le Play Store", "Ancien Chromecast sans Google TV", "Castez depuis le smartphone, ou passez à un Chromecast avec Google TV"], ["Le cast se coupe", "Téléphone et Chromecast sur des réseaux différents", "Connectez-les au même Wi-Fi, idéalement en 5 GHz"], ["Image en basse qualité", "Débit Wi-Fi insuffisant", "Rapprochez la box ou ajoutez l'adaptateur Ethernet officiel"], ["Pas de son", "Format audio non pris en charge par la TV", "Changez la piste audio dans le lecteur"]]}, {"type": "p", "text": "Le Chromecast avec Google TV fonctionne comme une [box Android TV](/iptv-android-tv-france) : TiviMate et IPTV Smarters Pro s'y installent directement, ce qui est plus stable que le cast."}]},
     ],
     faq: [
       { q: "Peut-on installer une application IPTV sur Chromecast ?", a: "Oui sur le Chromecast avec Google TV et le Google TV Streamer, via le Play Store. Les anciens Chromecast ne font que recevoir un flux depuis un téléphone." },
@@ -874,6 +879,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           { type: "p", text: "Roku est peu diffusé en France et son écosystème IPTV est pauvre. Si vous achetez un appareil pour l'IPTV, choisissez un appareil Android TV ou Fire TV : vous aurez accès à [TiviMate](/tivimate) et [IPTV Smarters Pro](/iptv-smarters-pro). Tous les choix sont comparés sur notre page [boîtier IPTV](/boitier-iptv)." },
         ],
       },
+      {"id": "pourquoi", "h2": "Pourquoi l'IPTV est limitée sur Roku", "blocks": [{"type": "p", "text": "Roku n'autorise que les applications publiées dans sa propre boutique, et ne permet pas d'installer un fichier APK comme sur Android. Les lecteurs IPTV complets (TiviMate, IPTV Smarters Pro) n'y sont pas disponibles, et ceux qui le sont acceptent rarement une connexion Xtream Codes avec guide TV."}, {"type": "p", "text": "Pour regarder l'IPTV sur la même TV, la solution la plus fiable est d'ajouter un [Fire TV Stick](/iptv-firestick-france) ou un [Chromecast avec Google TV](/iptv-chromecast-france) sur un autre port HDMI. Vous gardez Roku pour vos autres applications."}, {"type": "ul", "items": ["**À éviter** : les applications « IPTV » inconnues qui demandent un paiement avant tout test.", "**À faire** : tester l'appareil de remplacement avec l'[essai gratuit de 24h](/essai-gratuit)."]}]},
     ],
     faq: [
       { q: "Peut-on installer IPTV Smarters sur Roku ?", a: "Non, IPTV Smarters n'est pas disponible sur Roku et Roku n'accepte pas l'installation d'APK. Utilisez un Fire TV Stick ou un Chromecast avec Google TV." },
@@ -923,6 +929,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           { type: "p", text: "La PS3 est trop ancienne pour les flux IPTV modernes (HEVC) et son navigateur n'est plus maintenu. Une clé HDMI à 30–40 € fera bien mieux. Consultez notre [comparatif des boîtiers IPTV](/boitier-iptv)." },
         ],
       },
+      {"id": "alternatives", "h2": "Les alternatives simples à la PS5", "blocks": [{"type": "table", "head": ["Solution", "Coût approximatif", "Installation", "Pour qui"], "rows": [["Application de la Smart TV", "0 €", "Lecteur IPTV depuis la boutique de la TV", "TV Samsung, LG ou Android récente"], ["[Fire TV Stick](/iptv-firestick-france)", "Environ 30 à 70 €", "Branché en HDMI à côté de la PS5", "TV ancienne ou sans application"], ["[Box Android TV](/iptv-android-tv-france)", "Environ 40 à 150 €", "TiviMate ou Smarters Pro", "Usage intensif, 4K"], ["Navigateur de la PS5", "0 €", "Lecteur web, sans garantie", "Dépannage ponctuel"]], "caption": "Prix indicatifs du matériel, hors abonnement IPTV."}, {"type": "p", "text": "La PS5 reste branchée sur une autre entrée HDMI : vous passez de la console à l'IPTV avec la télécommande de la TV."}]},
     ],
     faq: [
       { q: "Peut-on installer une application IPTV sur PS5 ?", a: "Non, aucune application IPTV n'est proposée sur le PlayStation Store. Il faut passer par un autre appareil, comme un Fire TV Stick branché sur la TV." },
@@ -972,6 +979,7 @@ export const DEVICE_PAGES: SeoPageData[] = [
           { type: "p", text: "Une clé HDMI à moins de 50 € transforme la TV Hisense en TV IPTV complète. Voir notre [comparatif des boîtiers IPTV](/boitier-iptv) et le guide [IPTV sur Smart TV](/iptv-smart-tv-france)." },
         ],
       },
+      {"id": "verifier", "h2": "Vérifier la compatibilité de votre TV Hisense", "blocks": [{"type": "ol", "items": ["Ouvrez **Paramètres > Assistance > Informations système** et notez la version de VIDAA.", "Cherchez le lecteur (IBO Player, Smart IPTV, Flix IPTV) dans la boutique d'applications VIDAA. S'il n'apparaît pas, votre version ne le propose pas.", "Si un lecteur est présent, notez l'**adresse MAC** affichée au démarrage : elle sert à activer la playlist sur le site de l'éditeur.", "Faites l'[essai gratuit de 24h](/essai-gratuit) avant d'acheter une licence d'application."]}, {"type": "p", "text": "Certains téléviseurs Hisense fonctionnent sous Google TV ou Android TV et non sous VIDAA : dans ce cas, suivez notre guide [Android TV](/iptv-android-tv-france), qui donne accès à TiviMate et IPTV Smarters Pro."}]},
     ],
     faq: [
       { q: "Peut-on installer l'IPTV sur une TV Hisense VIDAA ?", a: "Oui, si un lecteur IPTV est disponible dans l'App Store VIDAA de votre modèle. Sinon, branchez un Fire TV Stick ou un Chromecast avec Google TV." },

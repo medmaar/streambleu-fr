@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "Meilleur Lecteur IPTV France 2026 — TiviMate | Stream Bleu" },
@@ -218,6 +219,7 @@ export default function MeilleurLecteurIPTV() {
             <Link href="/iptv-firestick-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>IPTV Firestick →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[VLC (VideoLAN)](https://www.videolan.org/vlc/) — site officiel du lecteur VLC", "[IPTV Smarters](https://www.iptvsmarters.com) — site officiel de l'éditeur", "[TiviMate](https://tivimate.com) — site officiel de l'application"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

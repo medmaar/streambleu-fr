@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose, { type ProseSection } from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "Abonnement IPTV France 2026 — Dès 9€/mois | Stream Bleu" },
@@ -29,6 +30,81 @@ const faqItems = [
   { q: "Puis-je essayer avant de m'abonner ?", a: "Oui ! Stream Bleu propose un essai gratuit de 24h sans carte bancaire. Testez la qualité 4K et toutes les chaînes sur votre propre matériel avant de vous décider." },
   { q: "L'abonnement fonctionne-t-il sur plusieurs appareils ?", a: "Chaque abonnement inclut 1 connexion simultanée. Des forfaits multi-connexions (2 à 10 appareils) sont disponibles pour regarder sur plusieurs écrans en même temps." },
   { q: "Abonnement IPTV, IPTV abonnement, abonnement ip tv : est-ce la même chose ?", a: "Oui. Que vous cherchiez « abonnement iptv », « abonnementiptv » en un mot, « ip tv abonnement » ou « abonnement iptv france », il s'agit toujours du même service : un accès aux chaînes en direct et à la VOD via une application IPTV, sans matériel ni décodeur imposé." },
+];
+
+const proseSections: ProseSection[] = [
+  {
+    "h2": "Souscrire un abonnement IPTV en 4 étapes",
+    "list": [
+      "**Testez** : demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, sur l'appareil que vous utiliserez.",
+      "**Choisissez** une durée (1, 3, 6 ou 12 mois) et un nombre d'écrans sur la page [tarifs](/tarifs), puis payez par carte bancaire ou PayPal.",
+      "**Recevez vos identifiants** par e-mail en quelques minutes : nom d'utilisateur, mot de passe et URL du serveur, ou lien M3U.",
+      "**Installez l'application** adaptée à votre appareil ([Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france), [IPTV Smarters Pro](/iptv-smarters-pro)) et saisissez vos identifiants."
+    ]
+  },
+  {
+    "h2": "Combien d'écrans prévoir ?",
+    "paras": [
+      "Un écran correspond à un flux regardé en même temps. Vous pouvez installer l'application sur autant d'appareils que vous voulez ; c'est le nombre de lectures simultanées qui compte. Prix pour 12 mois, extraits de la grille officielle :"
+    ],
+    "table": {
+      "head": [
+        "Écrans simultanés",
+        "12 mois",
+        "Soit par mois",
+        "Pour qui"
+      ],
+      "rows": [
+        [
+          "1",
+          "49 €",
+          "≈ 4,08 €",
+          "Une TV principale"
+        ],
+        [
+          "2",
+          "89 €",
+          "≈ 7,42 €",
+          "Couple, colocation"
+        ],
+        [
+          "3",
+          "135 €",
+          "11,25 €",
+          "Famille avec une TV enfant"
+        ],
+        [
+          "4",
+          "180 €",
+          "15 €",
+          "Grande famille"
+        ],
+        [
+          "5",
+          "225 €",
+          "18,75 €",
+          "Maison avec plusieurs pièces TV"
+        ]
+      ],
+      "caption": "Grille complète de 1 à 10 écrans et pour 1, 3 et 6 mois sur la page tarifs."
+    }
+  },
+  {
+    "h2": "Abonnement IPTV, box opérateur ou « IPTV à vie » ?",
+    "paras": [
+      "La TV de votre box opérateur est déjà de l'IPTV, mais liée à votre ligne et à un bouquet souvent payant en option ; un abonnement IPTV indépendant fonctionne sur n'importe quelle connexion et n'importe quel appareil. Le détail est sur notre page [IPTV avec Orange, SFR ou Bouygues](/iptv-orange-sfr-bouygues).",
+      "Les offres « à vie » promettent un paiement unique, mais un service IPTV a des coûts permanents (serveurs, bande passante) : lisez [pourquoi l'IPTV à vie est un piège](/blog/iptv-a-vie) avant de payer. Pour comparer les prix du marché, consultez notre page [prix IPTV](/prix-iptv)."
+    ]
+  },
+  {
+    "h2": "Paiement, engagement et remboursement",
+    "list": [
+      "Paiement par **carte bancaire ou PayPal**, en euros.",
+      "**Aucun engagement** et aucun renouvellement automatique : à l'échéance, vous renouvelez seulement si vous le souhaitez.",
+      "Identifiants jamais reçus ou achat en double : consultez notre [politique de remboursement](/politique-remboursement).",
+      "Questions avant l'achat : [contactez le support](/contact) en français."
+    ]
+  }
 ];
 
 const faqSchema = {
@@ -62,7 +138,7 @@ export default function AbonnementIptvPage() {
               Abonnement IPTV France —<br /><span style={{ color: "#c5bcf5" }}>À partir de 9€/mois</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 17, lineHeight: 1.7, maxWidth: 600, margin: "0 auto 32px" }}>
-              Le meilleur abonnement IPTV en France. 50 000+ chaînes, beIN Sports, Canal+, RMC Sport en 4K Ultra HD. Sans engagement, sans carte bancaire pour l&apos;essai.
+              Un abonnement IPTV simple pour la France : 50 000+ chaînes, beIN Sports, Canal+, RMC Sport en 4K Ultra HD. Sans engagement, sans carte bancaire pour l&apos;essai.
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit 24h</Link>
@@ -75,7 +151,7 @@ export default function AbonnementIptvPage() {
         <section style={{ padding: "64px 16px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <h2 style={{ textAlign: "center", fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 900, color: "#1a1a4e", marginBottom: 12 }}>Choisissez votre abonnement IPTV</h2>
-            <p style={{ textAlign: "center", color: "#555", fontSize: 15, maxWidth: 500, margin: "0 auto 44px" }}>Tous les abonnements incluent les 50 000+ chaînes, la 4K Ultra HD et le support 24/7.</p>
+            <p style={{ textAlign: "center", color: "#555", fontSize: 15, maxWidth: 500, margin: "0 auto 44px" }}>Tous les abonnements incluent les 50 000+ chaînes, la 4K Ultra HD et le support en français 7j/7.</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))", gap: 16 }}>
               {plans.map((p, i) => (
                 <div key={p.name} style={{ background: i === 3 ? "#5a5fcf" : i === 2 ? "#8b92ec" : i === 1 ? "#c5c9f5" : "#fff", borderRadius: 20, padding: "28px 22px", textAlign: "center", border: i < 2 ? "1px solid rgba(90,95,207,0.15)" : "none", position: "relative", boxShadow: i === 3 ? "0 8px 32px rgba(90,95,207,0.3)" : "0 4px 16px rgba(90,95,207,0.08)" }}>
@@ -101,7 +177,7 @@ export default function AbonnementIptvPage() {
                 { title: "Plus de chaînes qu'un abonnement classique", desc: "Avec 50 000+ chaînes françaises, européennes et internationales, l'abonnement IPTV Stream Bleu dépasse toutes les offres câble/satellite à une fraction du prix." },
                 { title: "Qualité 4K supérieure", desc: "Encodage H.265/HEVC pour une qualité d'image maximale. HDR10 & Dolby Vision sur appareils compatibles. La même qualité qu'un Blu-ray 4K en streaming." },
                 { title: "Aucun engagement", desc: "Choisissez 1, 3, 6 ou 12 mois selon vos besoins. Pas de renouvellement automatique, pas de frais cachés, résiliation libre." },
-                { title: "Support français 24/7", desc: "Notre équipe de support parle français et répond sous 5 minutes via WhatsApp. Aide à l'installation sur tous les appareils incluse." },
+                { title: "Support en français", desc: "Notre équipe francophone répond par WhatsApp, Telegram et e-mail, 7j/7. Aide à l'installation sur tous les appareils incluse." },
               ].map(item => (
                 <div key={item.title} style={{ background: "#fff", borderRadius: 16, padding: "22px", border: "1px solid rgba(90,95,207,0.12)", boxShadow: "0 4px 14px rgba(90,95,207,0.06)" }}>
                   <h3 style={{ fontWeight: 700, fontSize: 15, color: "#5a5fcf", marginBottom: 8 }}>✓ {item.title}</h3>
@@ -111,6 +187,9 @@ export default function AbonnementIptvPage() {
             </div>
           </div>
         </section>
+
+        <Prose sections={proseSections} />
+
 
         <section style={{ padding: "64px 16px" }}>
           <div style={{ maxWidth: 720, margin: "0 auto", background: "#4a4fc0", borderRadius: 24, padding: "40px 36px", boxShadow: "0 8px 32px rgba(90,95,207,0.2)" }}>

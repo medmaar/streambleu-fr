@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Rapide France 2026 — Zapping Instantané & | Stream Bleu" },
@@ -27,7 +28,7 @@ const articleSchema = {
 
 const faqItems = [
   { q: "Quelle vitesse de zapping est normale pour un bon IPTV ?", a: "Un bon service IPTV en France doit offrir un temps de zapping inférieur à 1 seconde. Entre 1 et 3 secondes c'est acceptable mais frustrant pour les sports. Au-delà de 3 secondes, le service est considéré comme lent. Stream Bleu maintient un temps de changement de chaîne moyen de 0,4 secondes grâce à son CDN optimisé pour la France." },
-  { q: "Est-ce que ma connexion internet peut ralentir l'IPTV ?", a: "Oui, mais moins qu'on ne le croit. Pour la HD standard, 10 Mbps suffisent. Pour la 4K, 25 Mbps minimum. En revanche, la latence (ping) compte plus que le débit brut : un ping < 30ms vers les serveurs Stream Bleu garantit un zapping instantané, même avec une connexion modeste." },
+  { q: "Est-ce que ma connexion internet peut ralentir l'IPTV ?", a: "Oui, mais moins qu'on ne le croit. Pour la HD standard, 10 Mbps suffisent. Pour la 4K, 25 Mbps minimum. En revanche, la latence (ping) compte plus que le débit brut : un ping < 30ms vers les serveurs Stream Bleu permet un zapping rapide, même avec une connexion modeste." },
   { q: "Pourquoi mon IPTV buffe pendant les matchs mais pas le reste du temps ?", a: "Les pics d'audience lors des événements sportifs majeurs (finales Champions League, matchs PSG) surchargent les serveurs des services IPTV sous-dimensionnés. Stream Bleu utilise une architecture CDN avec mise à l'échelle automatique qui absorbe les pics jusqu'à 10x le trafic normal sans dégradation." },
   { q: "H.265 rend-il vraiment l'IPTV plus rapide ?", a: "Oui, de deux façons. D'abord, H.265 transmet la même qualité avec 40-50% de données en moins, réduisant le temps de mise en mémoire tampon initial. Ensuite, le décodage H.265 moderne est optimisé matériellement sur tous les appareils récents (Smart TV, Fire Stick 4K, Apple TV), ce qui réduit le délai de décodage." },
   { q: "Puis-je tester la vitesse de Stream Bleu gratuitement ?", a: "Oui. Stream Bleu propose un essai gratuit 24h sans carte bancaire. Vous recevez des identifiants complets et pouvez tester le zapping, le chargement de l'EPG et la qualité 4K sur vos propres appareils avant de vous abonner." },
@@ -228,6 +229,7 @@ export default function IPTVRapideFrance() {
             <Link href="/blog/iptv-sans-coupure" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>IPTV Sans Coupure →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion", "[Arcep](https://www.arcep.fr) — régulateur des télécoms : fibre et qualité des réseaux"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose, { type ProseSection } from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu" },
-  description: "IPTV France : le service IPTV le plus fiable en France. 50 000+ chaînes, beIN Sports, Canal+, TF1, RMC Sport. 4K Ultra HD, zéro coupure. Essai gratuit 24h.",
+  description: "IPTV France : 50 000+ chaînes, beIN Sports, Canal+, TF1, RMC Sport en 4K Ultra HD, sur Smart TV, Fire TV et mobile. Dès 9 €, essai gratuit 24h.",
   keywords: "iptv france, france iptv, iptv en france, service iptv france, fournisseur iptv france, iptvfrance",
   alternates: { canonical: "https://streambleu.fr/iptv-france", languages: { "fr-FR": "https://streambleu.fr/iptv-france", "x-default": "https://streambleu.fr/iptv-france" } },
   openGraph: {
@@ -19,7 +20,78 @@ const faqItems = [
   { q: "L'IPTV est-il légal en France ?", a: "La technologie IPTV est parfaitement légale en France. Stream Bleu est un revendeur de services IPTV tiers. Les utilisateurs sont responsables des contenus auxquels ils accèdent conformément à la législation française en vigueur." },
   { q: "Comment fonctionne l'IPTV en France ?", a: "L'IPTV diffuse les chaînes TV via internet. Il suffit d'une connexion stable (25 Mbps pour la 4K) et d'un lecteur IPTV comme TiviMate ou IPTV Smarters Pro installé sur votre appareil." },
   { q: "L'IPTV France inclut-il les chaînes sportives ?", a: "Oui. Stream Bleu inclut beIN Sports 1/2/3, RMC Sport 1/2, Canal+ Sport, Eurosport 1/2 et L'Équipe TV. Tous les matchs Ligue 1, Champions League, Roland-Garros et Top 14 sont couverts." },
-  { q: "Quelle connexion internet faut-il pour l'IPTV en France ?", a: "25 Mbps suffisent pour la 4K Ultra HD. La fibre française (100 Mbps+) permet plusieurs streams simultanés sans aucun buffering. L'IPTV fonctionne également très bien en 4G/5G." },
+  { q: "Quelle connexion internet faut-il pour l'IPTV en France ?", a: "25 Mbps suffisent pour la 4K Ultra HD. La fibre française (100 Mbps+) permet plusieurs streams simultanés sans aucun buffering. L'IPTV fonctionne aussi en 4G/5G, en qualité adaptée au débit." },
+];
+
+const proseSections: ProseSection[] = [
+  {
+    "h2": "Comment fonctionne l'IPTV en France ?",
+    "paras": [
+      "L'IPTV (télévision sur IP) transporte les chaînes par internet au lieu de l'antenne ou du satellite. C'est déjà la technologie utilisée par les box TV d'Orange, Free, SFR et Bouygues ; un service IPTV comme Stream Bleu fonctionne de la même manière, mais à travers une application installée sur votre appareil, indépendamment de votre opérateur. Notre guide [qu'est-ce que l'IPTV](/blog/qu-est-ce-que-l-iptv) explique le principe en détail.",
+      "Il vous faut trois choses : une connexion stable (environ 10 Mbps par écran en HD, 25 Mbps en 4K), un appareil compatible ([Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france), box Android, iPhone, PC) et une [application IPTV](/applications-iptv) comme IPTV Smarters Pro ou TiviMate. Vos identifiants arrivent par e-mail après la commande ou l'essai gratuit.",
+      "Si vous avez déjà une box opérateur, elle peut rester branchée : l'IPTV passe simplement par votre connexion internet. Les différences entre la TV de la box et un service IPTV sont détaillées sur notre page [IPTV avec Orange, SFR ou Bouygues](/iptv-orange-sfr-bouygues)."
+    ]
+  },
+  {
+    "h2": "Prix de l'IPTV en France",
+    "paras": [
+      "Le prix ne dépend que de la durée et du nombre d'écrans qui regardent en même temps, jamais de la ville ou de l'appareil :"
+    ],
+    "table": {
+      "head": [
+        "Durée",
+        "1 écran",
+        "Prix par mois",
+        "2 écrans"
+      ],
+      "rows": [
+        [
+          "1 mois",
+          "9 €",
+          "9 €",
+          "18 €"
+        ],
+        [
+          "3 mois",
+          "29 €",
+          "≈ 9,67 €",
+          "50 €"
+        ],
+        [
+          "6 mois",
+          "39 €",
+          "6,50 €",
+          "69 €"
+        ],
+        [
+          "12 mois",
+          "49 €",
+          "≈ 4,08 €",
+          "89 €"
+        ]
+      ],
+      "caption": "Grille officielle en euros TTC, sans engagement ni renouvellement automatique. Jusqu'à 10 écrans sur la page tarifs."
+    }
+  },
+  {
+    "h2": "Comment choisir un service IPTV en France",
+    "list": [
+      "**Un essai gratuit sur votre propre connexion** : c'est le seul moyen de juger la stabilité chez vous, en soirée, sur votre TV.",
+      "**Des tarifs affichés clairement** et sans renouvellement automatique ; méfiez-vous des offres « [IPTV à vie](/blog/iptv-a-vie) ».",
+      "**Des applications standards** (Smarters, TiviMate, IBO Player, VLC) plutôt qu'une application propriétaire imposée.",
+      "**Un support joignable en français**, avant et après l'achat.",
+      "**Un cadre légal compris** : lisez notre point sur l'[IPTV légale en France](/blog/iptv-legal-france)."
+    ],
+    "paras": [
+      "Pour comparer les offres sans classement inventé, consultez notre [guide du meilleur IPTV en France](/meilleur-iptv-france) et le [comparatif IPTV](/comparatif-iptv)."
+    ]
+  },
+  {
+    "h2": "L'IPTV partout en France",
+    "paras": [
+      "Stream Bleu fonctionne dans toutes les régions, en fibre comme en ADSL ou en 4G. Les conseils changent surtout selon le réseau et l'habitat (immeuble dense, maison à étages, zone de montagne) : retrouvez-les par [région et grande ville](/iptv-villes-france), par exemple pour [Paris](/iptv-paris), [Lyon](/iptv-lyon) ou [Marseille](/iptv-marseille)."
+    ]
+  }
 ];
 
 const faqSchema = {
@@ -29,9 +101,9 @@ const faqSchema = {
 
 const features = [
   { icon: "📺", title: "50 000+ Chaînes", desc: "Toutes les chaînes françaises TNT, câble, satellite et 152 pays." },
-  { icon: "⚡", title: "Zéro Coupure", desc: "Serveurs optimisés pour la France — aucun buffering même en direct." },
+  { icon: "⚡", title: "Stabilité", desc: "Serveurs redondants avec basculement automatique pour limiter les coupures, y compris en soirée." },
   { icon: "🎬", title: "4K Ultra HD", desc: "H.265/HEVC, HDR10 & Dolby Vision sur appareils compatibles." },
-  { icon: "🇫🇷", title: "Support Français 24/7", desc: "Équipe disponible 24h/24 en français via WhatsApp et email." },
+  { icon: "🇫🇷", title: "Support en français", desc: "Équipe francophone joignable 7j/7 par WhatsApp, Telegram et e-mail." },
   { icon: "📱", title: "Tous les Appareils", desc: "Smart TV, Firestick, Android, iOS, PC, MAG Box, Apple TV." },
   { icon: "✅", title: "Essai Gratuit 24h", desc: "Testez sans carte bancaire. Accès complet, activation en 5 min." },
 ];
@@ -57,12 +129,12 @@ export default function IptvFrancePage() {
 
         <section style={{ background: "linear-gradient(135deg,#4a4fc0 0%,#5a5fcf 100%)", padding: "80px 16px 60px", textAlign: "center" }}>
           <div style={{ maxWidth: 760, margin: "0 auto" }}>
-            <span style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 24 }}>🇫🇷 Service IPTV N°1 en France</span>
+            <span style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 24 }}>🇫🇷 Service IPTV pour la France</span>
             <h1 style={{ fontSize: "clamp(2rem,5vw,3.2rem)", fontWeight: 900, color: "#fff", lineHeight: 1.1, marginBottom: 20 }}>
               IPTV France 2026 —<br /><span style={{ color: "#c5bcf5" }}>50 000+ Chaînes en Direct</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 17, lineHeight: 1.7, maxWidth: 600, margin: "0 auto 32px" }}>
-              Le service IPTV France le plus stable du marché. Regardez la TV en 4K Ultra HD sur tous vos appareils — sans coupure, sans engagement, avec un essai gratuit de 24h.
+              L'IPTV en France avec Stream Bleu : regardez la TV en direct et la VOD en 4K Ultra HD sur Smart TV, Fire TV Stick, Android, iPhone ou PC, sans engagement, avec un essai gratuit de 24h.
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit 24h</Link>
@@ -99,6 +171,9 @@ export default function IptvFrancePage() {
             <Link href="/liste-chaines" style={{ display: "inline-block", background: "#5a5fcf", color: "#fff", fontWeight: 700, padding: "12px 28px", borderRadius: 12, textDecoration: "none" }}>Voir la liste complète →</Link>
           </div>
         </section>
+
+        <Prose sections={proseSections} />
+
 
         <section style={{ padding: "64px 16px" }}>
           <div style={{ maxWidth: 720, margin: "0 auto", background: "#4a4fc0", borderRadius: 24, padding: "40px 36px", boxShadow: "0 8px 32px rgba(90,95,207,0.2)" }}>

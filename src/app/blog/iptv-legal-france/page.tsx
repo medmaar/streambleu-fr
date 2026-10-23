@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Légal en France 2026 ? La Réponse | Stream Bleu" },
@@ -196,6 +197,7 @@ export default function IPTVLegalFrance() {
             <Link href="/avertissement" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Page Avertissement →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Légifrance](https://www.legifrance.gouv.fr) — textes officiels, dont le Code de la propriété intellectuelle", "[DGCCRF](https://www.economie.gouv.fr/dgccrf) — protection des consommateurs et pratiques commerciales"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

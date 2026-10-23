@@ -40,7 +40,7 @@ const CHIP = { background: "rgba(90,95,207,0.07)", border: "1px solid rgba(90,95
 // ── Inline markup: [anchor](/href) and **bold** ──
 const INLINE = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g;
 
-function Rich({ text }: { text: string }) {
+export function Rich({ text }: { text: string }) {
   const out: React.ReactNode[] = [];
   let last = 0;
   let m: RegExpExecArray | null;
