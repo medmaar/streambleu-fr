@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import SuccessCheck from "../../components/SuccessCheck";
 
 const WORKER_URL = "https://iptv-trial-streambleu.medmaar.workers.dev";
 
@@ -91,50 +92,12 @@ export default function EssaiGratuitForm() {
     }
   }
 
+  if (status === "success") {
+    return <SuccessCheck title="Essai confirmé !" text="Vous recevrez vos identifiants en moins de 5 minutes." />;
+  }
+
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-4">
-
-      {/* Success */}
-      {status === "success" && (
-        <>
-          <style>{`
-            @keyframes popIn{0%{transform:scale(0);opacity:0}100%{transform:scale(1);opacity:1}}
-            @keyframes drawCheck{to{stroke-dashoffset:0}}
-          `}</style>
-          <div style={{
-            textAlign: "center", padding: "2.5rem 1.5rem",
-            background: "rgba(20,108,58,0.35)",
-            border: "1px solid rgba(46,204,113,0.35)",
-            borderRadius: 20,
-            boxShadow: "0 0 40px rgba(46,204,113,0.12)"
-          }}>
-            <div style={{ marginBottom: "1.5rem" }}>
-              <div style={{
-                width: 90, height: 90, borderRadius: "50%",
-                background: "rgba(46,204,113,0.15)",
-                border: "3px solid #2ecc71",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                margin: "0 auto",
-                animation: "popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275) both"
-              }}>
-                <svg viewBox="0 0 52 52" style={{
-                  width: 44, height: 44, stroke: "#2ecc71", strokeWidth: 3, fill: "none",
-                  strokeDasharray: 60, strokeDashoffset: 60,
-                  animation: "drawCheck 0.5s 0.35s ease forwards"
-                } as React.CSSProperties}>
-                  <polyline points="14,27 22,36 38,17" />
-                </svg>
-              </div>
-            </div>
-            <div style={{ color: "#2ecc71", fontSize: "1.8rem", fontWeight: 900, marginBottom: "0.5rem" }}>
-              Votre essai est en route !
-            </div>
-            <p style={{ color: "#ffffff", fontSize: "1rem", lineHeight: 1.7, margin: 0 }}>
-              Vous recevrez vos identifiants en moins de 5 minutes.
-            </p>
-          </div>
-        </>
-      )}
 
       {/* Error */}
       {status === "error" && (
@@ -191,10 +154,10 @@ export default function EssaiGratuitForm() {
 
       <button
         type="submit"
-        disabled={status === "loading" || status === "success"}
+        disabled={status === "loading"}
         className="sb-submit"
       >
-        {status === "loading" ? "Activation en cours…" : status === "success" ? "✅ Essai envoyé !" : "Obtenir mon essai gratuit →"}
+        {status === "loading" ? "Activation en cours…" : "Obtenir mon essai gratuit →"}
       </button>
 
       <p style={{ textAlign: "center", color: "rgba(255,255,255,0.85)", fontSize: 12 }}>
