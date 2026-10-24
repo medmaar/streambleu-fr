@@ -240,3 +240,32 @@ article p a[href]:hover, article li a[href]:hover, article td a[href]:hover {
   box-shadow: none !important;
 }
 details > summary { list-style-position: outside; }
+
+/* Form success confirmation */
+@keyframes sbPop { 0% { transform: scale(0); opacity: 0; } 70% { transform: scale(1.12); } 100% { transform: scale(1); opacity: 1; } }
+@keyframes sbDraw { to { stroke-dashoffset: 0; } }
+@keyframes sbRing { 0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.6); } 100% { box-shadow: 0 0 0 28px rgba(255,255,255,0); } }
+@keyframes sbRise { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
+.sb-success {
+  text-align: center; padding: 44px 24px 40px; border-radius: 20px;
+  background: linear-gradient(160deg, #22c55e 0%, #15803d 100%);
+  box-shadow: 0 12px 40px rgba(21,128,61,0.45);
+}
+.sb-success-circle {
+  width: 128px; height: 128px; margin: 0 auto 24px; border-radius: 50%;
+  background: #ffffff; display: flex; align-items: center; justify-content: center;
+  animation: sbPop 0.55s cubic-bezier(0.175,0.885,0.32,1.275) both, sbRing 1.4s 0.5s ease-out 2;
+}
+.sb-success-circle svg {
+  width: 76px; height: 76px; fill: none; stroke: #16a34a; stroke-width: 4.5;
+  stroke-linecap: round; stroke-linejoin: round;
+  stroke-dasharray: 60; stroke-dashoffset: 60; animation: sbDraw 0.45s 0.4s ease forwards;
+}
+.sb-success-title {
+  color: #ffffff; font-size: clamp(1.7rem, 5vw, 2.3rem); font-weight: 900; line-height: 1.15;
+  margin: 0 0 10px; animation: sbRise 0.4s 0.55s ease both;
+}
+.sb-success-text {
+  color: #ffffff; font-size: 1.1rem; font-weight: 600; line-height: 1.6; margin: 0;
+  animation: sbRise 0.4s 0.7s ease both;
+}

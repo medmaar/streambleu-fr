@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import SuccessCheck from "../../components/SuccessCheck";
 
 const countries = [
   "France", "Belgique", "Suisse", "Luxembourg", "Canada", "Maroc", "Algérie",
@@ -83,16 +84,12 @@ export default function PlanOrderForm({ plan }: Props) {
     }
   }
 
+  if (status === "success") {
+    return <SuccessCheck title="Commande confirmée !" text="Vous recevrez vos identifiants en moins de 5 minutes." />;
+  }
+
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-4">
-
-      {/* Succès */}
-      {status === "success" && (
-        <div className="rounded-2xl px-4 py-3 text-sm font-semibold"
-          style={{ background: "#e8f9ee", border: "1px solid #34c771", color: "#146c3a" }}>
-          ✅ Commande reçue ! Vous recevrez vos identifiants en moins de 5 minutes.
-        </div>
-      )}
 
       {/* Erreur */}
       {status === "error" && (
