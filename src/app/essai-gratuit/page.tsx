@@ -57,38 +57,42 @@ export default function FreeTrialPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main style={{ minHeight: "100vh" }}>
 
-        {/* Hero */}
-        <section style={{ background: "linear-gradient(135deg, #4a4fc0 0%, #5a5fcf 100%)", padding: "80px 16px 60px" }}>
+        {/* Title + price, one instruction line, then the form */}
+        <section style={{ padding: "60px 16px 24px", background: "#eef0ff" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <span style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 12, fontWeight: 700, padding: "4px 14px", borderRadius: 999, letterSpacing: "0.08em", textTransform: "uppercase" }}>
-              Sans Carte Bancaire · Activation Instantanée
-            </span>
-            <h1 style={{ fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 900, lineHeight: 1.1, marginTop: 24, marginBottom: 20, color: "#ffffff" }}>
-              Essai Gratuit IPTV<br />
-              <span style={{ color: "#c5bcf5" }}>France 24 Heures</span>
-            </h1>
-            <p style={{ fontSize: "clamp(14px, 2vw, 17px)", color: "rgba(255,255,255,0.85)", marginBottom: 36, lineHeight: 1.7 }}>
-              Testez Stream Bleu gratuitement pendant 24 heures — sans carte bancaire, sans engagement. Accès complet à 50 000+ chaînes, beIN Sports, Canal+, TF1, et 300 000+ films en 4K.
-            </p>
-            <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
-              {["✓ Aucune carte bancaire", "✓ Activation en 5 min", "✓ 4K Ultra HD", "✓ Toutes les chaînes incluses"].map(f => (
-                <span key={f} style={{ fontSize: 14, fontWeight: 600, color: "rgba(255,255,255,0.9)" }}>{f}</span>
-              ))}
+            <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "28px 24px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 24, textAlign: "center" }}>
+              <span style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.3)", color: "#ffffff", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 16px", borderRadius: 999, display: "inline-block", marginBottom: 20 }}>
+                Stream Bleu · Essai 24h
+              </span>
+              <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
+                Essai Gratuit IPTV 24h
+              </h1>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 16, flexWrap: "wrap" }}>
+                <span style={{ color: "#ffd166", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 0€</span>
+                <span style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>Sans carte bancaire</span>
+              </div>
+              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en moins de 5 minutes.</p>
+            </div>
+
+            <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)" }}>
+              <EssaiGratuitForm />
             </div>
           </div>
         </section>
 
-        {/* Form — light blue background so it stands out */}
-        <section style={{ padding: "60px 16px", background: "#eef0ff" }}>
+        {/* SEO content below the form */}
+        <section style={{ padding: "36px 16px 0", background: "#eef0ff" }}>
           <div style={{ maxWidth: 700, margin: "0 auto" }}>
-            <div style={{ background: "#5a5fcf", borderRadius: 20, padding: "40px 36px", boxShadow: "0 8px 40px rgba(90,95,207,0.3)" }}>
-              <h2 style={{ fontSize: 24, fontWeight: 800, color: "#ffffff", marginBottom: 8, textAlign: "center" }}>
-                Demander votre essai gratuit
-              </h2>
-              <p style={{ textAlign: "center", color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 28 }}>
-                Remplissez le formulaire — vous recevrez vos identifiants par e-mail en quelques minutes.
-              </p>
-              <EssaiGratuitForm />
+            <h2 style={{ fontSize: "clamp(22px, 3.5vw, 30px)", fontWeight: 900, lineHeight: 1.2, marginBottom: 14, color: "#1a1a4e" }}>
+              Essai Gratuit IPTV France 24 Heures
+            </h2>
+            <p style={{ fontSize: 16, color: "#33366b", marginBottom: 20, lineHeight: 1.7 }}>
+              Testez Stream Bleu gratuitement pendant 24 heures — sans carte bancaire, sans engagement. Accès complet à 50 000+ chaînes, beIN Sports, Canal+, TF1, et 300 000+ films en 4K.
+            </p>
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+              {["✓ Aucune carte bancaire", "✓ Activation en 5 min", "✓ 4K Ultra HD", "✓ Toutes les chaînes incluses"].map(f => (
+                <span key={f} style={{ fontSize: 14, fontWeight: 700, color: "#3d4199", background: "#ffffff", border: "1px solid #c5bcf5", borderRadius: 999, padding: "6px 14px" }}>{f}</span>
+              ))}
             </div>
           </div>
         </section>

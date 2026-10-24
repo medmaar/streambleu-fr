@@ -108,19 +108,13 @@ export default function PlanMultiPage() {
                 IPTV 1 Mois — 2 Connexions
               </h1>
               <div style={{ display: "flex", justifyContent: "center", alignItems: "baseline", gap: 8, marginBottom: 12 }}>
-                <span style={{ color: "#f5a623", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 18€</span>
-                <span style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>-50% offre</span>
+                <span style={{ color: "#ffd166", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 18€</span>
+                <span style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>-50% offre</span>
               </div>
-              <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 13 }}>Remplissez le formulaire — identifiants envoyés en quelques minutes</p>
+              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en moins de 5 minutes.</p>
             </div>
 
             <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 32 }}>
-              <div style={{ display: "flex", gap: 2, marginBottom: 16, justifyContent: "center" }}>
-                {"✓ 50 000+ Chaînes · ✓ 4K Ultra HD · ✓ ".split("·").map((f, i) => <span key={i} style={{ color: "rgba(255,255,255,0.85)", fontSize: 13 }}>{f}</span>)}
-              </div>
-              <h2 style={{ color: "#ffffff", fontSize: "1.4rem", fontWeight: 800, marginBottom: 24 }}>
-                Forfait IPTV 1 Mois — 2 Connexions
-              </h2>
               <PlanOrderForm plan="Forfait IPTV 1 Mois — 2 Connexions — 18€" />
             </div>
 
@@ -131,7 +125,7 @@ export default function PlanMultiPage() {
                 <a href="/tarifs/3-mois-2-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>3 Mois — 50€</a>
                 <a href="/tarifs/6-mois-2-connexions" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>6 Mois — 69€</a>
                 <a href="/tarifs/12-mois-2-connexions" style={{ background: "#5a5fcf", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>12 Mois — 89€ ⭐</a>
-                <a href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Essai Gratuit 24h</a>
+                <a href="/essai-gratuit" style={{ background: "#f5a623", color: "#1a1a4e", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 700, textDecoration: "none" }}>Essai Gratuit 24h</a>
                 <a href="/tarifs" style={{ background: "rgba(90,95,207,0.1)", color: "#5a5fcf", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Tous les Tarifs</a>
               </div>
             </div>
