@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "IPTV Test Gratuit France 2026 — Essai 24h Sans CB | Stream Bleu",
     description: "Guide complet pour tester un IPTV gratuitement en France. Quoi tester, comment évaluer, pièges à éviter.",
     url: "https://streambleu.fr/blog/iptv-test-gratuit", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Test Gratuit France 2026" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Test Gratuit France 2026" }],
   },
 };
 
@@ -21,9 +21,9 @@ const articleSchema = {
   description: "Comment tester un IPTV gratuitement en France : méthodologie, critères d'évaluation, pièges à éviter.",
   datePublished: "2026-03-01", dateModified: "2026-05-01",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
-  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/logo-stream-bleu.png" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-test-gratuit" },
-  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
 };
 
 const breadcrumbSchema = {

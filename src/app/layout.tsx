@@ -1,7 +1,7 @@
 import { Quicksand } from 'next/font/google';
 
 const quicksand = Quicksand({ subsets: ['latin'], weight: ['400','500','600','700'], display: 'optional', variable: '--font-quicksand' });
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "../components/Footer";
@@ -11,24 +11,26 @@ import Animations from "./components/Animations";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://streambleu.fr"),
-    icons: { icon: "/favicon.svg" },
+    icons: { icon: "/favicon.svg", apple: "/apple-touch-icon.png" },
     robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
     title: {
         default: "Abonnement IPTV France 2026 — IPTV Premium 4K | Stream Bleu",
         template: "%s | Stream Bleu — Abonnement IPTV France",
     },
     description:
-        "Abonnement IPTV France 2026 — Service IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. À partir de 9€/mois. Essai gratuit 24h.",
+        "Abonnement IPTV France 2026 — Service IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+, RMC Sport. À partir de 9€/mois. Essai gratuit 24h.",
     keywords:
         "abonnement iptv, iptv abonnement, iptv france, iptv premium, meilleur iptv france, abonnement iptv france, iptv sans coupure, french iptv",
     openGraph: {
         siteName: "Stream Bleu",
         locale: "fr_FR",
         type: "website",
-        images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Stream Bleu – Meilleur IPTV France 2026 — IPTV Premium 4K" }],
+        images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Stream Bleu — Abonnement IPTV France 2026, IPTV Premium 4K" }],
     },
     twitter: { card: "summary_large_image" },
 };
+
+export const viewport: Viewport = { themeColor: "#1A3D45" };
 
 export default function RootLayout({
     children,
@@ -36,7 +38,6 @@ export default function RootLayout({
     return (
         <html lang="fr" className="h-full">
             <head>
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta name="google-site-verification" content="buTcDxfOZCLSPQIna8VsozPLyV-CPlCyqpUqPDmaPYc" />
                 {/* GA4 — deferred until user interaction (saves 64.9KB on initial load) */}
                 <script dangerouslySetInnerHTML={{ __html: `
@@ -62,11 +63,12 @@ export default function RootLayout({
   name: "Stream Bleu",
   url: "https://streambleu.fr",
   email: "contact@streambleu.fr",
-  description: "Abonnement IPTV France 2026 — Meilleur service IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+, RMC Sport. Sans coupure. À partir de 9€/mois.",
+  description: "Abonnement IPTV France 2026 — Service IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+, RMC Sport. À partir de 9€/mois.",
   address: { "@type": "PostalAddress", streetAddress: "1 Rue Volant", addressLocality: "Nanterre", postalCode: "92000", addressCountry: "FR" },
   areaServed: [{ "@type": "Country", name: "France" }, { "@type": "Country", name: "Belgique" }, { "@type": "Country", name: "Suisse" }],
   priceRange: "9 € – 450 €",
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
+  logo: "https://streambleu.fr/logo-stream-bleu.png",
   sameAs: ["https://t.me/+z1lV-u1HmIA2YTQ0"],
   contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: "contact@streambleu.fr", availableLanguage: ["French"], areaServed: ["FR", "BE", "CH"] },
 }) }} />

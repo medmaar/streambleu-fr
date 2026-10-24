@@ -126,13 +126,13 @@ export default function Pricing3MonthsPage() {
                 Stream Bleu · 3 Mois
               </span>
               <h1 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 900, color: "#ffffff", lineHeight: 1.1, marginBottom: 16 }}>
-                3 Mois
+                IPTV 3 Mois
               </h1>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 16 }}>
                 <span style={{ color: "#ffd166", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 29€</span>
                 <span style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>Offre -50%</span>
               </div>
-              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en moins de 5 minutes.</p>
+              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en quelques minutes.</p>
             </div>
 
             {/* 3. Order Form */}

@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import ContactEmailForm from "@/components/ContactEmailForm";
 
 export const metadata: Metadata = {
-  title: { absolute: "Contact | Stream Bleu – Meilleur IPTV France" },
+  title: { absolute: "Contacter Stream Bleu : support IPTV en français" },
   description: "Contactez Stream Bleu par WhatsApp, Telegram ou email. Notre équipe de support est disponible 24h/24 en français.",
   alternates: { canonical: "https://streambleu.fr/contact", languages: { "fr-FR": "https://streambleu.fr/contact", "x-default": "https://streambleu.fr/contact" } },
   openGraph: {
-    title: "Contact | Stream Bleu – Meilleur IPTV France",
+    title: "Contacter Stream Bleu : support IPTV en français",
     description: "Contactez Stream Bleu par WhatsApp, Telegram ou email. Support 24/7 en français.",
     url: "https://streambleu.fr/contact",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Stream Bleu – Contact" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Stream Bleu – Contact" }],
   },
 };
 
@@ -26,7 +26,7 @@ const breadcrumbSchema = {
 };
 
 const faqItems = [
-  { q: "Quel est le moyen le plus rapide de contacter Stream Bleu ?", a: "WhatsApp est le canal le plus rapide, avec une réponse en moins de 5 minutes en général. Telegram et l'e-mail restent disponibles si vous préférez laisser un message écrit." },
+  { q: "Quel est le moyen le plus rapide de contacter Stream Bleu ?", a: "WhatsApp est le canal le plus rapide, avec une réponse en général en quelques minutes. Telegram et l'e-mail restent disponibles si vous préférez laisser un message écrit." },
   { q: "Le support est-il vraiment disponible 24h/24 ?", a: "Oui, notre équipe de support répond en français 24h/24 et 7j/7, y compris pour l'aide à l'installation sur votre appareil et les questions de facturation." },
   { q: "Puis-je demander de l'aide pour installer l'IPTV avant d'acheter ?", a: "Oui. Contactez-nous par WhatsApp avant ou pendant votre essai gratuit : notre équipe vous guide gratuitement pour l'installation sur votre TV, boîtier ou mobile." },
   { q: "Où puis-je signaler un problème technique avec mon abonnement ?", a: "Le plus rapide est WhatsApp, avec une capture d'écran du problème si possible. Notre équipe technique traite les incidents en priorité, y compris en dehors des heures ouvrées." },
@@ -61,7 +61,7 @@ export default function ContactPage() {
             {/* WhatsApp */}
             <div style={{ background: "#fff", borderRadius: 20, padding: "24px 28px", border: "1px solid rgba(90,95,207,0.12)", boxShadow: "0 4px 20px rgba(90,95,207,0.07)" }}>
               <h2 style={{ fontSize: 20, fontWeight: 700, color: "#1a1a4e", marginBottom: 6 }}>💬 WhatsApp</h2>
-              <p style={{ color: "#555", fontSize: 14, marginBottom: 8, lineHeight: 1.6 }}>Réponse la plus rapide — généralement en moins de 5 minutes.</p>
+              <p style={{ color: "#555", fontSize: 14, marginBottom: 8, lineHeight: 1.6 }}>Réponse la plus rapide — généralement en quelques minutes.</p>
               <p style={{ color: "#5a5fcf", fontSize: 13, fontWeight: 600, marginBottom: 16 }}>Cliquez pour discuter</p>
               <a href="/discuter/wa?msg=Bonjour%20Stream%20Bleu%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service."
                 target="_blank" rel="noopener noreferrer"

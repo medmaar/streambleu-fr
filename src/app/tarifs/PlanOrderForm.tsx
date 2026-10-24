@@ -85,7 +85,7 @@ export default function PlanOrderForm({ plan }: Props) {
   }
 
   if (status === "success") {
-    return <SuccessCheck title="Commande confirmée !" text="Vous recevrez vos identifiants en moins de 5 minutes." />;
+    return <SuccessCheck title="Commande confirmée !" text="Vous recevrez vos identifiants en quelques minutes." />;
   }
 
   return (
@@ -163,7 +163,7 @@ export default function PlanOrderForm({ plan }: Props) {
       </button>
 
       <p style={{ textAlign: "center", color: "rgba(255,255,255,0.85)", fontSize: 12 }}>
-        🔒 Sécurisé · Identifiants reçus en moins de 5 minutes
+        🔒 Sécurisé · Identifiants reçus en quelques minutes
       </p>
     </form>
   );

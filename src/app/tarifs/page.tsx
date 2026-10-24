@@ -5,15 +5,15 @@ import FaqAccordion from "../components/FaqAccordion";
 import { TARIFS_FAQ } from "./faq";
 
 export const metadata: Metadata = {
-  title: { absolute: "Abonnement IPTV France 2026 — Dès 9€ | Stream Bleu" },
+  title: { absolute: "Tarifs IPTV 2026 : forfaits 1 à 12 mois dès 9 € | Stream Bleu" },
   description: "Comparez les forfaits IPTV premium Stream Bleu. H.265/HEVC, HDR10 & Dolby Vision. Formules 1, 3, 6 et 12 mois à partir de 9€. 50 000+ chaînes, sans engagement.",
   keywords: "abonnement iptv france, tarif iptv france 2026, forfait iptv 4k france, iptv pas cher france",
   alternates: { canonical: "https://streambleu.fr/tarifs", languages: { "fr-FR": "https://streambleu.fr/tarifs", "x-default": "https://streambleu.fr/tarifs" } },
     openGraph: {
-    title: "Abonnement IPTV France 2026 — Dès 9€",
+    title: "Tarifs IPTV 2026 : forfaits 1 à 12 mois dès 9 €",
     description: "Comparez les forfaits IPTV premium Stream Bleu. H.265/HEVC, HDR10 & Dolby Vision. Formules 1, 3, 6 et 12 mois à partir de 9€. 50 000+ chaînes, sans engagement.",
     url: "https://streambleu.fr/tarifs", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Abonnement IPTV France 2026 — Dès 9€" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Tarifs IPTV Stream Bleu 2026" }],
   },
 };
 

@@ -9,21 +9,21 @@ const HomePricing = dynamic(() => import("./components/HomePricing"));
 const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
 
 export const metadata: Metadata = {
-  title: { absolute: "Abonnement IPTV France 2026 — Meilleur IPTV | Stream Bleu" },
+  title: { absolute: "Abonnement IPTV France 2026 — IPTV Premium 4K | Stream Bleu" },
   description:
     "Abonnement IPTV France 2026 — IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+. Sans coupure. Essai gratuit 24h. À partir de 9€/mois.",
   keywords:
     "abonnement iptv, iptv abonnement, iptv france, iptv premium, meilleur iptv france, abonnement iptv france, iptv 4k france, iptv sans coupure, iptv stable france, french iptv",
   alternates: { canonical: "https://streambleu.fr", languages: { "fr-FR": "https://streambleu.fr", "x-default": "https://streambleu.fr" } },
   openGraph: {
-    title: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu",
+    title: "Abonnement IPTV France 2026 — IPTV Premium 4K | Stream Bleu",
     description:
       "Abonnement IPTV France 2026. Le meilleur IPTV premium 4K — 50 000+ chaînes, beIN Sports, Canal+, sans coupure. À partir de 9€/mois. Essai gratuit 24h.",
     url: "https://streambleu.fr",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Stream Bleu – Meilleur IPTV France" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Stream Bleu – Meilleur IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Stream Bleu inclut-il les chaînes françaises gratuites (TNT) ?",
-    a: "Oui. Stream Bleu inclut toutes les chaînes de la TNT française : TF1, France 2, France 3, France 4, France 5, M6, Arte, C8, CNews, et bien d'autres — en qualité maximale disponible, sans coupure.",
+    a: "Oui. Stream Bleu inclut toutes les chaînes de la TNT française : TF1, France 2, France 3, France 4, France 5, M6, Arte, TMC, CNews, et bien d'autres — en qualité maximale disponible, sans coupure.",
   },
   {
     q: "Est-ce que Stream Bleu fonctionne sur ma Smart TV ?",
@@ -82,10 +82,10 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Stream Bleu",
   url: "https://streambleu.fr",
-  logo: "https://streambleu.fr/favicon.svg",
+  logo: "https://streambleu.fr/logo-stream-bleu.png",
   email: "contact@streambleu.fr",
   description:
-    "Le meilleur abonnement IPTV en France. Streams H.265/HEVC, HDR10 & Dolby Vision. 50 000+ chaînes, 300 000+ films et séries.",
+    "Abonnement IPTV en France. Streams H.265/HEVC, HDR10 & Dolby Vision. 50 000+ chaînes, 300 000+ films et séries.",
   areaServed: "FR",
 };
 
@@ -130,7 +130,7 @@ const sportsChannels = [
 
 const frenchChannels = [
   "TF1", "France 2", "France 3", "France 4", "France 5", "M6", "Arte",
-  "C8", "W9", "TMC", "TFX", "BFM TV", "CNews", "LCI", "Canal+",
+  "W9", "TMC", "TFX", "BFM TV", "CNews", "LCI", "Canal+",
   "TV5 Monde", "M6 Boutique", "6ter",
 ];
 
@@ -216,7 +216,7 @@ export default function HomePage() {
               margin: "0 auto 36px",
               lineHeight: 1.7,
             }}>
-              Le meilleur abonnement IPTV en France : 50 000+ chaînes en direct, beIN Sports, Canal+, RMC Sport et 300 000+ films en 4K Ultra HD H.265. IPTV premium sans coupure, activation instantanée — à partir de 9€/mois.
+              Un abonnement IPTV en France avec 50 000+ chaînes en direct, beIN Sports, Canal+, RMC Sport et 300 000+ films en 4K Ultra HD H.265. IPTV premium stable, activation rapide — à partir de 9€/mois.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 28 }}>
               <Link href="/tarifs" style={{

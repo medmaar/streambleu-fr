@@ -3,21 +3,22 @@ import Link from "next/link";
 import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Sans Coupure en France 2026 — Fini le | Stream Bleu" },
+  title: { absolute: "IPTV Sans Coupure 2026 : limiter le buffering | Stream Bleu" },
   description: "IPTV sans coupure en France : guide des serveurs stables, connexion requise, et comment Stream Bleu limite le buffering.",
   keywords: "iptv sans coupure, iptv stable, iptv sans buffering, iptv fluide france, iptv anti freeze",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-sans-coupure", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-sans-coupure", "x-default": "https://streambleu.fr/blog/iptv-sans-coupure" } },
   openGraph: {
-    title: "IPTV Sans Coupure en France 2026 — Fini le Buffering | Stream Bleu",
+    title: "IPTV Sans Coupure 2026 : limiter le buffering | Stream Bleu",
     description: "Guide complet pour avoir un IPTV sans coupure en France. Comment Stream Bleu limite le buffering.",
     url: "https://streambleu.fr/blog/iptv-sans-coupure", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Sans Coupure France" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Sans Coupure France" }],
   },
 };
 
 const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
-  headline: "IPTV Sans Coupure en France 2026 — Fini le Buffering",
+  headline: "IPTV Sans Coupure en France 2026 : limiter le buffering",
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
   description: "Guide complet sur l'IPTV sans coupure en France. Comment fonctionne un service IPTV stable et comment Stream Bleu limite le buffering.",
   datePublished: "2026-03-15", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu" },
@@ -30,7 +31,7 @@ const faqItems = [
   { q: "Quelle connexion internet faut-il pour l'IPTV sans coupure ?", a: "Pour un IPTV sans coupure en HD, 10 Mbps stables suffisent. Pour la 4K Ultra HD H.265, 25 Mbps sont recommandés. La fibre française (100 Mbps+) offre une expérience parfaite avec plusieurs connexions simultanées sans aucun buffering." },
   { q: "Un VPN peut-il améliorer la stabilité de mon IPTV ?", a: "Rarement. Un VPN ajoute de la latence et peut ralentir votre connexion. Avec un bon fournisseur IPTV comme Stream Bleu, aucun VPN n'est nécessaire. Si vous constatez des améliorations avec un VPN, c'est signe que votre FAI brident certains flux." },
   { q: "Stream Bleu garantit-il zéro coupure ?", a: "Aucun service internet ne peut garantir zéro coupure, et nos conditions d'utilisation le disent clairement. Notre infrastructure utilise des serveurs redondants avec basculement automatique, avec un objectif de disponibilité de 99,9 %. La stabilité dépend aussi de votre connexion : testez 24h gratuitement un soir de match." },
-  { q: "Que faire si mon IPTV Stream Bleu buffe ?", a: "Dans les très rares cas de buffering, contactez notre support via WhatsApp — nous répondons en moins de 5 minutes. La cause est généralement liée à votre connexion locale (WiFi vs câble Ethernet) ou à un lecteur IPTV mal configuré." },
+  { q: "Que faire si mon IPTV Stream Bleu buffe ?", a: "Dans les très rares cas de buffering, contactez notre support via WhatsApp — nous répondons rapidement. La cause est généralement liée à votre connexion locale (WiFi vs câble Ethernet) ou à un lecteur IPTV mal configuré." },
 ];
 
 const faqSchema = {
@@ -44,7 +45,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "IPTV Sans Coupure en France 2026 — Fini le Bufferi", "item": "https://streambleu.fr/blog/iptv-sans-coupure"}
+    {"@type": "ListItem", "position": 2, "name": "IPTV sans coupure", "item": "https://streambleu.fr/blog/iptv-sans-coupure"}
   ]
 };
 export default function IptvSansCoupurePage() {
@@ -147,7 +148,7 @@ export default function IptvSansCoupurePage() {
         <section style={{ padding: "48px 24px" }}>
           <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
             <h2 style={{ fontSize: "clamp(1.4rem,3vw,2rem)", fontWeight: 900, color: "#fff", marginBottom: 14 }}>Testez l&apos;IPTV sans coupure gratuitement</h2>
-            <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, fontSize: 15 }}>24h d&apos;essai gratuit • Qualité 4K Ultra HD • Zéro buffering garanti</p>
+            <p style={{ color: "rgba(255,255,255,0.8)", marginBottom: 28, fontSize: 15 }}>24h d&apos;essai gratuit • Qualité 4K Ultra HD • Support 7j/7</p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit</Link>
               <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontWeight: 700, padding: "13px 28px", borderRadius: 12, textDecoration: "none" }}>Voir les Tarifs →</Link>

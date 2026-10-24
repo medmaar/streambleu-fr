@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Abonnement IPTV France 3 Mois 6 connexions" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Abonnement IPTV France 3 Mois 6 connexions" }],
   },
 };
 
@@ -111,7 +111,7 @@ export default function PlanMultiPage() {
                 <span style={{ color: "#ffd166", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 144€</span>
                 <span style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>-50% offre</span>
               </div>
-              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en moins de 5 minutes.</p>
+              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en quelques minutes.</p>
             </div>
 
             <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 32 }}>

@@ -11,13 +11,14 @@ export const metadata: Metadata = {
     title: "IPTV Pas Cher France 2026 — À partir de 4,08 €/mois | Stream Bleu",
     description: "IPTV pas cher en France : comparatif des prix et guide pour éviter les arnaques.",
     url: "https://streambleu.fr/blog/iptv-pas-cher-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Pas Cher France" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Pas Cher France" }],
   },
 };
 
 const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
   headline: "IPTV Pas Cher France 2026 — Comment économiser sans sacrifier la qualité",
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
   datePublished: "2026-03-20", dateModified: "2026-10-24",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
@@ -42,7 +43,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "IPTV Pas Cher France 2026 — À partir de 4,08 €/mois", "item": "https://streambleu.fr/blog/iptv-pas-cher-france"}
+    {"@type": "ListItem", "position": 2, "name": "IPTV pas cher", "item": "https://streambleu.fr/blog/iptv-pas-cher-france"}
   ]
 };
 export default function IptvPasCherFrancePage() {

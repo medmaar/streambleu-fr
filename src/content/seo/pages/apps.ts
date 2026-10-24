@@ -250,7 +250,6 @@ export const APP_PAGES: SeoPageData[] = [
     faq: [
       { q: "Smarters Player Lite est-il gratuit ?", a: "Oui, Smarters Player Lite est gratuit sur l'App Store et Google Play. Il nécessite un abonnement IPTV séparé pour afficher des chaînes." },
       { q: "Smarters Player Lite fonctionne-t-il sur Android TV ?", a: "Oui, il est disponible sur Google Play pour Android TV et Google TV. Sur Fire TV Stick, installez l'APK via l'application Downloader." },
-      { q: "Peut-on installer Smarters Player Lite sur une TV Samsung ?", a: "En général non : l'application n'est pas proposée sur le store Samsung Tizen. Utilisez IBO Player, Flix IPTV ou un Fire TV Stick branché en HDMI." },
       { q: "Quelle différence entre Smarters Player Lite et IPTV Smarters Pro ?", a: "Même éditeur et mêmes identifiants. La version Lite est distribuée dans les boutiques officielles avec moins d'options ; la version Pro offre le multi-écran et plus de réglages, surtout sur Android et PC." },
       { q: "Smarters Player Lite fonctionne-t-il sur TV Samsung ?", a: "En général non : l'application n'est pas proposée dans la boutique Samsung. Utilisez IBO Player ou Smart IPTV sur la TV, ou branchez une clé Fire TV Stick." },
       { q: "Où télécharger Smarters Player Lite ?", a: "Sur l'App Store pour iPhone, iPad, Apple TV et Mac, et sur Google Play pour Android et Android TV. Évitez les sites de téléchargement tiers." },
@@ -718,7 +717,6 @@ export const APP_PAGES: SeoPageData[] = [
     ],
     faq: [
       { q: "IPTV Stream Player est-il gratuit ?", a: "La version de base est gratuite, avec publicité dans certaines versions. Une option payante peut retirer les publicités selon l'éditeur." },
-      { q: "IPTV Stream Player fonctionne-t-il sur Smart TV ?", a: "Oui sur Android TV. Sur Samsung et LG, il est rarement disponible ; IBO Player ou Smart IPTV sont de meilleures options." },
       { q: "Quelle est la différence entre IPTV Stream Player et IPTV Smarters ?", a: "Les deux lisent Xtream et M3U. IPTV Smarters Pro est plus complet (VOD, séries, multi-écran) et existe sur plus d'appareils, dont PC et Mac." },
       { q: "Mon abonnement fonctionne-t-il avec IPTV Stream Player ?", a: "Oui, tout abonnement Stream Bleu fonctionne avec les lecteurs compatibles Xtream Codes ou M3U." },
       { q: "IPTV Stream Player fonctionne-t-il sur Smart TV et PC ?", a: "IPTV Stream Player est surtout proposé sur mobile et sur certaines Smart TV selon les boutiques. Sur PC, VLC ou IPTV Smarters Pro sont plus simples ; sur Smart TV, IBO Player ou Smart IPTV sont les plus répandus." },
@@ -778,7 +776,6 @@ export const APP_PAGES: SeoPageData[] = [
     ],
     faq: [
       { q: "Lxtream est-il compatible avec Stream Bleu ?", a: "Oui. Lxtream fonctionne avec les identifiants Xtream Codes que nous envoyons à l'activation." },
-      { q: "Où télécharger Lxtream ?", a: "Sur les boîtiers Leadcool, il est préinstallé. Sur Android TV, passez par la boutique d'applications ou le site officiel de l'éditeur, jamais par un lien inconnu." },
       { q: "Lxtream accepte-t-il les listes M3U ?", a: "Lxtream est pensé pour les comptes Xtream Codes. Pour une simple liste M3U, un lecteur comme VLC ou TiviMate est plus adapté." },
       { q: "Où télécharger Lxtream ?", a: "Lxtream est généralement préinstallé sur certains boîtiers, notamment ceux de la marque Leadcool, ou disponible dans la boutique de la box. Sur Android TV, si vous ne le trouvez pas, TiviMate ou IPTV Smarters Pro font le même travail avec vos identifiants Xtream Codes." },
       { q: "Lxtream fonctionne-t-il sur Android TV ?", a: "Oui si la version est proposée pour votre box. Sinon, utilisez TiviMate ou Smarters Player Lite depuis Google Play : vos identifiants Stream Bleu y fonctionnent de la même manière." },
@@ -1085,7 +1082,6 @@ export const APP_PAGES: SeoPageData[] = [
     faq: [
       { q: "Pourquoi IPTV Smarters Pro ne fonctionne plus ?", a: "Le plus souvent à cause d'un réseau instable, d'un cache plein, d'identifiants mal saisis ou d'un abonnement expiré. Redémarrez la box et l'appareil, vérifiez l'URL du serveur et la date d'expiration, puis changez de lecteur interne dans les paramètres." },
       { q: "Pourquoi IPTV Smarters Pro ne fonctionne pas sur ma TV Samsung ?", a: "Parce que l'application n'est généralement pas, ou plus, disponible et mise à jour sur le système Tizen de Samsung. Utilisez IBO Player ou Flix IPTV depuis le Smart Hub, ou branchez un Fire TV Stick." },
-      { q: "IPTV Smarters Pro est bloqué au chargement, que faire ?", a: "Videz le cache de l'application, redémarrez la box internet et réessayez, idéalement en Ethernet. Si le blocage persiste, réinstallez l'application depuis une source officielle." },
       { q: "IPTV Smarters Pro est introuvable sur Google Play, est-ce normal ?", a: "Oui, l'application a été retirée ou renommée plusieurs fois. Installez Smarters Player Lite depuis Google Play, ou l'APK depuis le site officiel de l'éditeur." },
       { q: "Mon abonnement est-il en cause si Smarters ne marche pas ?", a: "Pas forcément. Si plusieurs chaînes et la VOD fonctionnent dans un autre lecteur comme VLC, c'est l'application qui est en cause. Sinon, contactez le support avec le message d'erreur exact." },
       { q: "IPTV Smarters Pro est bloqué au chargement, que faire ?", a: "Vérifiez d'abord votre connexion et l'URL du serveur, puis videz le cache de l'application et changez de lecteur interne dans les paramètres. Si l'application reste bloquée sur toutes les chaînes, testez le même compte dans VLC pour savoir si le problème vient de l'application ou du service." },

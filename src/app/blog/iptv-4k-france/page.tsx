@@ -3,26 +3,27 @@ import Link from "next/link";
 import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV 4K France 2026 — Ultra HD sans Coupure | Stream Bleu" },
+  title: { absolute: "IPTV 4K France 2026 — Guide Ultra HD H.265 | Stream Bleu" },
   description:
     "IPTV 4K en France : guide complet pour profiter de la qualité Ultra HD H.265/HEVC sur votre téléviseur. Stream Bleu propose le vrai 4K HDR avec 50 000+.",
   keywords: "iptv 4k france, iptv 4k ultra hd, iptv h265 france, iptv hevc france, meilleur iptv 4k, stream bleu 4k, iptv 4k, 4k iptv, iptv with 4k, iptv 8k, 8k iptv",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-4k-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-4k-france", "x-default": "https://streambleu.fr/blog/iptv-4k-france" } },
   openGraph: {
-    title: "IPTV 4K France 2026 — Ultra HD H.265 sans Coupure | Stream Bleu",
+    title: "IPTV 4K France 2026 — Guide Ultra HD H.265 | Stream Bleu",
     description: "Guide complet IPTV 4K en France : H.265, HDR10, Dolby Vision. Stream Bleu propose le vrai 4K Ultra HD.",
     url: "https://streambleu.fr/blog/iptv-4k-france",
     type: "article",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV 4K France 2026" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV 4K France 2026" }],
   },
 };
 
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "IPTV 4K France 2026 — Ultra HD H.265 sans Coupure",
+  headline: "IPTV 4K France 2026 : Guide Ultra HD H.265 Complet",
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
   description: "Guide complet pour profiter de l'IPTV 4K Ultra HD en France avec H.265/HEVC et HDR10.",
   datePublished: "2026-02-01",
   dateModified: "2026-10-24",

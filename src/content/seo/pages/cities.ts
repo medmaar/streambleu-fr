@@ -1347,10 +1347,6 @@ export const CITY_PAGES: SeoPageData[] = [
         a: "Oui. L'abonnement fonctionne dans toutes les communes du Centre-Val de Loire dès qu'une connexion internet stable est disponible, avec les mêmes chaînes, la même VOD et les mêmes tarifs.",
       },
       {
-        q: "Stream Bleu fonctionne-t-il à Tours, Orléans, Bourges et Blois ?",
-        a: "Oui, comme partout en France : il suffit d'une connexion internet stable et d'un appareil compatible.",
-      },
-      {
         q: "L'IPTV fonctionne-t-elle en Sologne ou dans le Berry ?",
         a: "Oui. En ADSL ou en 4G, choisissez la qualité HD et branchez la TV en Ethernet si possible.",
       },
@@ -2884,7 +2880,7 @@ export const CITY_PAGES: SeoPageData[] = [
     region: "auvergne-rhone-alpes",
     navLabel: "Saint-Étienne",
     cardText: "IPTV à Saint-Étienne (Loire, 42) : conseils réseau, installation et tarifs.",
-    title: "IPTV Saint-Étienne 2026 : abonnement et installation | Stream Bleu",
+    title: "IPTV Saint-Étienne 2026 : abonnement, installation | Stream Bleu",
     description: "IPTV à Saint-Étienne (Loire) : installation sur Smart TV et Fire TV, fibre et ADSL, tarifs dès 9 €. Essai gratuit 24h sans carte bancaire.",
     keywords: ["iptv saint-étienne", "abonnement iptv saint-étienne", "iptv saint-étienne prix"],
     badge: "IPTV · Saint-Étienne",

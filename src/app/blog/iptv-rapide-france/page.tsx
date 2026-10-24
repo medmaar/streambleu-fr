@@ -3,15 +3,15 @@ import Link from "next/link";
 import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
-  title: { absolute: "IPTV Rapide France 2026 — Zapping Instantané & | Stream Bleu" },
+  title: { absolute: "IPTV Rapide France 2026 : zapping et chargement | Stream Bleu" },
   description: "IPTV rapide en France : zapping en moins d'1 seconde, EPG ultra-réactif, CDN optimisé. Guide complet pour choisir l'IPTV le plus rapide. Stream Bleu.",
   keywords: "iptv rapide france, iptv zapping rapide, iptv chargement rapide france, iptv sans délai france",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-rapide-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-rapide-france", "x-default": "https://streambleu.fr/blog/iptv-rapide-france" } },
   openGraph: {
-    title: "IPTV Rapide France 2026 — Zapping Instantané & Chargement <1s | Stream Bleu",
+    title: "IPTV Rapide France 2026 : zapping et chargement | Stream Bleu",
     description: "Guide complet sur l'IPTV rapide en France. Zapping < 1 sec, EPG instantané, CDN France. Stream Bleu.",
     url: "https://streambleu.fr/blog/iptv-rapide-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Rapide France 2026" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Rapide France 2026" }],
   },
 };
 
@@ -21,9 +21,9 @@ const articleSchema = {
   description: "Guide complet sur l'IPTV rapide en France : CDN, H.265, protocoles de streaming, et pourquoi Stream Bleu est le plus rapide.",
   datePublished: "2026-04-12", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
-  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/logo-stream-bleu.png" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-rapide-france" },
-  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
 };
 
 const faqItems = [
