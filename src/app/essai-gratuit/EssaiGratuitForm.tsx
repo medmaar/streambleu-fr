@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
@@ -24,23 +25,29 @@ const deviceTypes = [
   "Autre",
 ];
 
-const inputStyle: React.CSSProperties = {
-  width: "100%",
-  background: "rgba(255,255,255,0.05)",
-  border: "1px solid rgba(255,255,255,0.12)",
-  borderRadius: "12px",
-  padding: "12px 16px",
-  color: "#fff",
-  fontSize: "14px",
-  outline: "none",
-  fontFamily: "Arial, Helvetica, sans-serif",
-  boxSizing: "border-box",
-};
-
 export default function EssaiGratuitForm() {
   const [form, setForm] = useState({ full_name: "", email: "", country: "France", device: "", message: "" });
   const [phone, setPhone] = useState<string | undefined>("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  useEffect(() => {
+    emailjs.init("KfpszCeX5M5itfdsO");
+  }, []);
+
+  // Every field is optional. With an email the trial is created and sent automatically;
+  // without one (or if the automation fails) the team gets the request and sends it by hand.
+  async function notifyTeam(reason: string) {
+    await emailjs.send("service_wqw39vi", "template_3jpw5qp", {
+      from_name: form.full_name || "Non renseigné",
+      from_email: form.email || "Non renseigné",
+      phone: phone || "Non renseigné",
+      country: form.country,
+      device: form.device || "Non précisé",
+      plan: `Essai gratuit 24h — à envoyer manuellement (${reason})`,
+      message: form.message || "—",
+      site_name: "Stream Bleu",
+    });
+  }
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
@@ -51,20 +58,30 @@ export default function EssaiGratuitForm() {
     e.preventDefault();
     setStatus("loading");
     try {
-      const res = await fetch(WORKER_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name:     form.full_name,
-          email:    form.email,
-          country:  form.country,
-          device:   form.device || "Non précisé",
-          whatsapp: phone || "",
-          notes:    form.message || "",
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok || !data.success) throw new Error(data.error || "Erreur Worker");
+      const email = form.email.trim();
+      let sent = false;
+      if (email.includes("@")) {
+        try {
+          const res = await fetch(WORKER_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name:     form.full_name.trim() || "Client",
+              email,
+              country:  form.country,
+              device:   form.device || "Non précisé",
+              whatsapp: phone || "",
+              notes:    form.message || "",
+            }),
+          });
+          const data = await res.json();
+          if (!res.ok || !data.success) throw new Error(data.error || "Erreur Worker");
+          sent = true;
+        } catch (err) {
+          console.error(err);
+        }
+      }
+      if (!sent) await notifyTeam(email ? "activation auto échouée" : "pas d'email");
       setStatus("success");
       setForm({ full_name: "", email: "", country: "France", device: "", message: "" });
       setPhone("");
@@ -75,7 +92,7 @@ export default function EssaiGratuitForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4" style={{ fontFamily: "Arial, Helvetica, sans-serif" }}>
+    <form onSubmit={handleSubmit} noValidate className="space-y-4">
 
       {/* Success */}
       {status === "success" && (
@@ -86,7 +103,7 @@ export default function EssaiGratuitForm() {
           `}</style>
           <div style={{
             textAlign: "center", padding: "2.5rem 1.5rem",
-            background: "rgba(46,204,113,0.08)",
+            background: "rgba(20,108,58,0.35)",
             border: "1px solid rgba(46,204,113,0.35)",
             borderRadius: 20,
             boxShadow: "0 0 40px rgba(46,204,113,0.12)"
@@ -110,11 +127,10 @@ export default function EssaiGratuitForm() {
               </div>
             </div>
             <div style={{ color: "#2ecc71", fontSize: "1.8rem", fontWeight: 900, marginBottom: "0.5rem" }}>
-              Votre essai est actif !
+              Votre essai est en route !
             </div>
-            <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1rem", lineHeight: 1.7, margin: 0 }}>
-              Vos identifiants ont été envoyés à votre adresse email.<br />
-              Vérifiez votre boîte de réception — votre accès 24H commence maintenant.
+            <p style={{ color: "#ffffff", fontSize: "1rem", lineHeight: 1.7, margin: 0 }}>
+              Vous recevrez vos identifiants en moins de 5 minutes.
             </p>
           </div>
         </>
@@ -122,29 +138,29 @@ export default function EssaiGratuitForm() {
 
       {/* Error */}
       {status === "error" && (
-        <div style={{ background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.3)", color: "#fca5a5", borderRadius: 12, padding: "12px 16px", fontSize: 14 }}>
+        <div style={{ background: "#fdecec", border: "1px solid #f08080", color: "#9b1c1c", borderRadius: 12, padding: "12px 16px", fontSize: 14, fontWeight: 600 }}>
           Une erreur est survenue. Veuillez réessayer ou{" "}
-          <a href={`/discuter/wa`} target="_blank" rel="noopener noreferrer" style={{ color: "#fca5a5", textDecoration: "underline" }}>
-            contactez-nous sur WhatsApp
+          <a href={`/discuter/wa`} target="_blank" rel="noopener noreferrer" style={{ color: "#9b1c1c", textDecoration: "underline" }}>
+            contactez-nous
           </a>.
         </div>
       )}
 
       {/* Nom */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Nom complet</label>
-        <input type="text" name="full_name" placeholder="Votre nom" value={form.full_name} onChange={handleChange} style={inputStyle} />
+        <label className="sb-label">Nom complet</label>
+        <input type="text" autoComplete="name" name="full_name" placeholder="Votre nom" value={form.full_name} onChange={handleChange} className="sb-field" />
       </div>
 
       {/* Email */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Adresse email</label>
-        <input type="email" name="email" placeholder="vous@exemple.com" value={form.email} onChange={handleChange} style={inputStyle} />
+        <label className="sb-label">Adresse email</label>
+        <input type="email" inputMode="email" autoComplete="email" name="email" placeholder="vous@exemple.com" value={form.email} onChange={handleChange} className="sb-field" />
       </div>
 
       {/* Téléphone */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Téléphone / WhatsApp</label>
+        <label className="sb-label">Téléphone / WhatsApp</label>
         <div className="phone-input-wrapper">
           <PhoneInput defaultCountry="FR" value={phone} onChange={setPhone} international countryCallingCodeEditable={false} placeholder="Numéro de téléphone" />
         </div>
@@ -152,38 +168,37 @@ export default function EssaiGratuitForm() {
 
       {/* Pays */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Pays</label>
-        <select name="country" value={form.country} onChange={handleChange} style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#111827" }}>
-          {countries.map(c => <option key={c} value={c} style={{ backgroundColor: "#111827", color: "#fff" }}>{c}</option>)}
+        <label className="sb-label">Pays</label>
+        <select name="country" value={form.country} onChange={handleChange} className="sb-field">
+          {countries.map(c => <option key={c} value={c}>{c}</option>)}
         </select>
       </div>
 
       {/* Appareil */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Type d&apos;appareil</label>
-        <select name="device" value={form.device} onChange={handleChange} style={{ ...inputStyle, cursor: "pointer", backgroundColor: "#111827" }}>
-          <option value="" style={{ backgroundColor: "#111827", color: "#fff" }}>Sélectionnez votre appareil</option>
-          {deviceTypes.map(d => <option key={d} value={d} style={{ backgroundColor: "#111827", color: "#fff" }}>{d}</option>)}
+        <label className="sb-label">Type d&apos;appareil</label>
+        <select name="device" value={form.device} onChange={handleChange} className="sb-field">
+          <option value="">Sélectionnez votre appareil</option>
+          {deviceTypes.map(d => <option key={d} value={d}>{d}</option>)}
         </select>
       </div>
 
       {/* Message */}
       <div>
-        <label className="block text-sm text-gray-400 mb-1.5">Message</label>
-        <textarea name="message" placeholder="Questions ou remarques..." value={form.message} onChange={handleChange} rows={3} style={{ ...inputStyle, resize: "vertical" }} />
+        <label className="sb-label">Message</label>
+        <textarea name="message" placeholder="Questions ou remarques..." value={form.message} onChange={handleChange} rows={3} className="sb-field" style={{ resize: "vertical" }} />
       </div>
 
       <button
         type="submit"
         disabled={status === "loading" || status === "success"}
-        className="w-full text-white py-4 rounded-2xl font-bold text-base transition-all hover:brightness-110 disabled:opacity-60"
-        style={{ background: "#4a4fc0", fontFamily: "Arial, Helvetica, sans-serif" }}
+        className="sb-submit"
       >
         {status === "loading" ? "Activation en cours…" : status === "success" ? "✅ Essai envoyé !" : "Obtenir mon essai gratuit →"}
       </button>
 
-      <p className="text-center text-gray-600 text-xs" style={{ fontFamily: "Arial, Helvetica, sans-serif" }}>
-        Sécurisé · Identifiants envoyés automatiquement par email
+      <p style={{ textAlign: "center", color: "rgba(255,255,255,0.85)", fontSize: 12 }}>
+        🔒 Sécurisé · Identifiants reçus en moins de 5 minutes
       </p>
     </form>
   );

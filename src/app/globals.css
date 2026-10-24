@@ -104,11 +104,13 @@ a, button {
   position: relative;
 }
 
-nav a:not([href="/free-trial"]), nav a:not([href="/free-trial"]):hover, footer a, footer a:hover {
+nav a:not([href="/essai-gratuit"]), nav a:not([href="/essai-gratuit"]):hover, footer a, footer a:hover {
   background: transparent !important;
   box-shadow: none !important;
 }
-nav a:not([href="/free-trial"]):hover { transform: translateY(-2px) !important; }
+nav a:not([href="/essai-gratuit"]):hover { transform: translateY(-2px) !important; }
+nav a[href="/essai-gratuit"]::after { display: none; }
+nav a[href="/essai-gratuit"]:hover { background: #ffb938 !important; color: #1a1a4e !important; transform: translateY(-2px) !important; }
 
 a:not(nav a):not(footer a)[style*="#5a5fcf"]:hover,
 button[style*="#5a5fcf"]:hover {
@@ -191,24 +193,44 @@ nav { animation: fadeSlideUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
   filter: drop-shadow(0 2px 6px rgba(197,188,245,0.3));
 }
 
-/* react-phone-number-input theme */
+/* Order + trial forms: solid light fields on the blue card */
+.sb-label { display: block; font-size: 13px; font-weight: 600; color: #ffffff; margin-bottom: 6px; }
+.sb-field {
+  width: 100%; box-sizing: border-box;
+  background: #ffffff; color: #1a1a4e;
+  border: 1px solid #c5bcf5; border-radius: 12px;
+  padding: 12px 16px; font-size: 15px; outline: none;
+}
+.sb-field::placeholder { color: #7a7fa8; }
+.sb-field:focus { border-color: #f5a623; }
+select.sb-field { cursor: pointer; }
+select.sb-field option { background: #ffffff; color: #1a1a4e; }
+.sb-submit {
+  width: 100%; padding: 16px; border-radius: 16px; border: none; cursor: pointer;
+  background: #f5a623; color: #1a1a4e; font-size: 16px; font-weight: 800;
+  box-shadow: 0 4px 16px rgba(245,166,35,0.4);
+}
+.sb-submit:hover:not(:disabled) { background: #ffb938; transform: translateY(-2px); }
+.sb-submit:disabled { opacity: 0.6; cursor: default; }
+
+/* react-phone-number-input theme (matches .sb-field) */
 .phone-input-wrapper .PhoneInput { display: flex; gap: 8px; align-items: center; }
 .phone-input-wrapper .PhoneInputCountry {
   display: flex; align-items: center;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
+  background: #ffffff;
+  border: 1px solid #c5bcf5;
   border-radius: 12px; padding: 0 12px; height: 46px; gap: 6px; cursor: pointer;
 }
 .phone-input-wrapper .PhoneInputCountrySelect {
-  background: #5a5fcf; color: #fff; border: none; outline: none; cursor: pointer; font-size: 14px;
+  background: #ffffff; color: #1a1a4e; border: none; outline: none; cursor: pointer; font-size: 14px;
 }
 .phone-input-wrapper .PhoneInputInput {
-  flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px; padding: 12px 16px; color: #fff; font-size: 14px; outline: none;
+  flex: 1; min-width: 0; background: #ffffff; border: 1px solid #c5bcf5;
+  border-radius: 12px; padding: 12px 16px; color: #1a1a4e; font-size: 15px; outline: none;
 }
-.phone-input-wrapper .PhoneInputInput::placeholder { color: rgba(255,255,255,0.35); }
-.phone-input-wrapper .PhoneInputInput:focus { border-color: #c5bcf5; }
-.phone-input-wrapper .PhoneInputCountrySelectArrow { color: rgba(255,255,255,0.5); }
+.phone-input-wrapper .PhoneInputInput::placeholder { color: #7a7fa8; }
+.phone-input-wrapper .PhoneInputInput:focus { border-color: #f5a623; }
+.phone-input-wrapper .PhoneInputCountrySelectArrow { color: #3d4199; }
 
 /* SEO article pages: inline text links keep a text-link hover (overrides a[href*="/iptv-"]:hover) */
 article p a[href]:hover, article li a[href]:hover, article td a[href]:hover {
