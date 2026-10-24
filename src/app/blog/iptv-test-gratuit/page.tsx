@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Test Gratuit France 2026 — Essai 24h | Stream Bleu" },
-  description: "Comment tester un IPTV gratuitement en France ? Guide complet : que tester, comment évaluer la qualité, les pièges à éviter. Essai Stream Bleu 24h sans engagement.",
+  description: "Comment tester un IPTV gratuitement en France : quoi vérifier, comment juger la qualité, pièges à éviter. Essai Stream Bleu 24h, sans engagement.",
   keywords: "iptv test gratuit, iptv essai gratuit france, tester iptv gratuit, iptv gratuit 24h france, essai iptv france",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-test-gratuit" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-test-gratuit", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-test-gratuit", "x-default": "https://streambleu.fr/blog/iptv-test-gratuit" } },
   openGraph: {
     title: "IPTV Test Gratuit France 2026 — Essai 24h Sans CB | Stream Bleu",
     description: "Guide complet pour tester un IPTV gratuitement en France. Quoi tester, comment évaluer, pièges à éviter.",
@@ -198,6 +199,7 @@ export default function IPTVTestGratuit() {
             <Link href="/meilleur-iptv-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Meilleur IPTV France →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[DGCCRF](https://www.economie.gouv.fr/dgccrf) — protection des consommateurs et pratiques commerciales", "[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

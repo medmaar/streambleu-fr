@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV 4K France 2026 — Ultra HD sans Coupure | Stream Bleu" },
   description:
     "IPTV 4K en France : guide complet pour profiter de la qualité Ultra HD H.265/HEVC sur votre téléviseur. Stream Bleu propose le vrai 4K HDR avec 50 000+.",
   keywords: "iptv 4k france, iptv 4k ultra hd, iptv h265 france, iptv hevc france, meilleur iptv 4k, stream bleu 4k, iptv 4k, 4k iptv, iptv with 4k, iptv 8k, 8k iptv",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-4k-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-4k-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-4k-france", "x-default": "https://streambleu.fr/blog/iptv-4k-france" } },
   openGraph: {
     title: "IPTV 4K France 2026 — Ultra HD H.265 sans Coupure | Stream Bleu",
     description: "Guide complet IPTV 4K en France : H.265, HDR10, Dolby Vision. Stream Bleu propose le vrai 4K Ultra HD.",
@@ -243,6 +244,7 @@ export default function IPTV4KFrance() {
           </div>
 
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion", "[Arcep](https://www.arcep.fr) — régulateur des télécoms : fibre et qualité des réseaux"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

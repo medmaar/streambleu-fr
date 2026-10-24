@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "Comment Installer IPTV sur Smart TV 2026 — Guide | Stream Bleu" },
   description:
     "Guide étape par étape pour installer IPTV sur Samsung Smart TV, LG, Sony, Philips. Installez TiviMate ou IPTV Smarters Pro en moins de 5 minutes.",
   keywords: "comment installer iptv smart tv, installer iptv samsung, installer iptv lg, tivimate smart tv, iptv smarters smart tv france",
-  alternates: { canonical: "https://streambleu.fr/blog/comment-installer-iptv-smart-tv" },
+  alternates: { canonical: "https://streambleu.fr/blog/comment-installer-iptv-smart-tv", languages: { "fr-FR": "https://streambleu.fr/blog/comment-installer-iptv-smart-tv", "x-default": "https://streambleu.fr/blog/comment-installer-iptv-smart-tv" } },
   openGraph: {
     title: "Comment Installer IPTV sur Smart TV 2026 — Guide Complet | Stream Bleu",
     description: "Guide complet pour installer IPTV sur votre Smart TV Samsung, LG, Sony ou Philips. TiviMate, IPTV Smarters Pro — installation en 5 min.",
@@ -219,6 +220,7 @@ export default function CommentInstallerIPTVSmartTV() {
             <Link href="/iptv-firestick-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>IPTV Firestick France →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Samsung France](https://www.samsung.com/fr/) — site officiel du fabricant", "[LG France](https://www.lg.com/fr/) — site officiel du fabricant"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

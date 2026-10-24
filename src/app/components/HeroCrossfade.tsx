@@ -44,6 +44,8 @@ export default function HeroCrossfade() {
           key={"prev-" + prev}
           src={HERO_IMAGES[prev].src}
           alt={HERO_IMAGES[prev].alt}
+          width={1280}
+          height={720}
           style={{
             position: "absolute", inset: 0,
             width: "100%", height: "100%",
@@ -61,6 +63,8 @@ export default function HeroCrossfade() {
         key={"cur-" + current}
         src={HERO_IMAGES[current].src}
         alt={HERO_IMAGES[current].alt}
+        width={1280}
+        height={720}
         style={{
           position: "absolute", inset: 0,
           width: "100%", height: "100%",

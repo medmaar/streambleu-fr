@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import { preload } from "react-dom";
 import HeroCrossfade from "./components/HeroCrossfade";
+import { PRICES } from "@/lib/pricing";
 
 const HomePricing = dynamic(() => import("./components/HomePricing"));
 const ReviewsSection = dynamic(() => import("./components/ReviewsSection"));
@@ -12,7 +14,7 @@ export const metadata: Metadata = {
     "Abonnement IPTV France 2026 — IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+. Sans coupure. Essai gratuit 24h. À partir de 9€/mois.",
   keywords:
     "abonnement iptv, iptv abonnement, iptv france, iptv premium, meilleur iptv france, abonnement iptv france, iptv 4k france, iptv sans coupure, iptv stable france, french iptv",
-  alternates: { canonical: "https://streambleu.fr" },
+  alternates: { canonical: "https://streambleu.fr", languages: { "fr-FR": "https://streambleu.fr", "x-default": "https://streambleu.fr" } },
   openGraph: {
     title: "Abonnement IPTV France 2026 — Meilleur IPTV Premium 4K | Stream Bleu",
     description:
@@ -87,6 +89,26 @@ const organizationSchema = {
   areaServed: "FR",
 };
 
+// Offer data comes straight from the official price grid (no ratings: the
+// site has no verifiable third-party review count to mark up).
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Abonnement IPTV Stream Bleu",
+  serviceType: "Abonnement IPTV",
+  provider: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
+  areaServed: [{ "@type": "Country", name: "France" }, { "@type": "Country", name: "Belgique" }, { "@type": "Country", name: "Suisse" }],
+  url: "https://streambleu.fr/tarifs",
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "EUR",
+    lowPrice: Math.min(...Object.values(PRICES).flat()),
+    highPrice: Math.max(...Object.values(PRICES).flat()),
+    offerCount: Object.values(PRICES).flat().length,
+    url: "https://streambleu.fr/tarifs",
+  },
+};
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -134,9 +156,11 @@ const comparison = [
 
 
 export default function HomePage() {
+  // LCP image: preloaded on the homepage only (it was preloaded site-wide before)
+  preload("/abonnement-iptv-france-1.webp", { as: "image", type: "image/webp", fetchPriority: "high" });
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Product", "name": "Stream Bleu IPTV France", "brand": {"@type": "Brand", "name": "Stream Bleu"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "321", "bestRating": "5", "worstRating": "1"}}) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
@@ -173,7 +197,7 @@ export default function HomePage() {
               borderRadius: 999,
               marginBottom: 28,
             }}>
-              🇫🇷 Abonnement IPTV France — N°1 2026
+              🇫🇷 Abonnement IPTV France 2026
             </span>
             <h1 style={{
               fontSize: "clamp(36px, 6vw, 64px)",

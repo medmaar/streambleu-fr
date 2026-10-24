@@ -21,6 +21,7 @@ export type FaqItem = { q: string; a: string };
 
 export type SeoPageData = {
   slug: string; // "/tivimate"
+  noindex?: boolean; // keep the page live and linked, but out of the index + sitemap (put right after slug)
   group: Group;
   navLabel: string; // short label used in hubs, chips and breadcrumbs
   cardText: string; // one-line summary used on hub cards

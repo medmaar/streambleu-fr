@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV 12 Mois — 6 Connexions — 270€ | Stream Bleu" },
   description: "Abonnement IPTV 12 Mois pour 6 connexions simultanées à 270€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   keywords: "iptv 6 connexions, abonnement iptv 12 mois 6 appareils, iptv 6 ecrans france",
-  alternates: { canonical: "https://streambleu.fr/tarifs/12-mois-6-connexions" },
+  // Same content as the base duration page with a different screen count:
+  // kept live for ordering, left out of the index to avoid near-duplicates.
+  robots: { index: false, follow: true },
+  alternates: { canonical: "https://streambleu.fr/tarifs/12-mois-6-connexions", languages: { "fr-FR": "https://streambleu.fr/tarifs/12-mois-6-connexions", "x-default": "https://streambleu.fr/tarifs/12-mois-6-connexions" } },
   openGraph: {
     title: "IPTV 12 Mois — 6 Connexions — 270€ | Stream Bleu",
     description: "Abonnement IPTV 12 Mois pour 6 connexions simultanées à 270€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
@@ -24,23 +27,6 @@ const productSchema = {
   name: "Stream Bleu IPTV 12 Mois — 6 Connexions",
   description: "Abonnement IPTV 12 Mois pour 6 connexions simultanées à 270€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "5",
-      bestRating: "5",
-    },
-    author: { "@type": "Person", name: "Jean-Pierre M." },
-    reviewBody: "Service IPTV exceptionnel, image 4K impeccable et aucune coupure depuis 6 mois. Support très réactif.",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "312",
-    bestRating: "5",
-    worstRating: "1",
-  },
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   offers: {
     "@type": "Offer",

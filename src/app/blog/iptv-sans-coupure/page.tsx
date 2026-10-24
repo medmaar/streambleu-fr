@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Sans Coupure en France 2026 — Fini le | Stream Bleu" },
-  description: "IPTV sans coupure en France : guide des serveurs stables, connexion requise, et pourquoi Stream Bleu garantit zéro buffering.",
+  description: "IPTV sans coupure en France : guide des serveurs stables, connexion requise, et comment Stream Bleu limite le buffering.",
   keywords: "iptv sans coupure, iptv stable, iptv sans buffering, iptv fluide france, iptv anti freeze",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-sans-coupure" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-sans-coupure", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-sans-coupure", "x-default": "https://streambleu.fr/blog/iptv-sans-coupure" } },
   openGraph: {
     title: "IPTV Sans Coupure en France 2026 — Fini le Buffering | Stream Bleu",
-    description: "Guide complet pour avoir un IPTV sans coupure en France. Pourquoi Stream Bleu garantit zéro buffering.",
+    description: "Guide complet pour avoir un IPTV sans coupure en France. Comment Stream Bleu limite le buffering.",
     url: "https://streambleu.fr/blog/iptv-sans-coupure", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Sans Coupure France" }],
   },
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
   headline: "IPTV Sans Coupure en France 2026 — Fini le Buffering",
-  description: "Guide complet sur l'IPTV sans coupure en France. Comment fonctionne un service IPTV stable et pourquoi Stream Bleu garantit zéro buffering.",
+  description: "Guide complet sur l'IPTV sans coupure en France. Comment fonctionne un service IPTV stable et comment Stream Bleu limite le buffering.",
   datePublished: "2026-03-15", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
@@ -88,7 +89,7 @@ export default function IptvSansCoupurePage() {
               La troisième cause est le lecteur IPTV utilisé. Certains lecteurs sont mieux optimisés que d&apos;autres pour la gestion du buffer. TiviMate sur Android TV et IPTV Smarters Pro sont généralement les plus performants.
             </p>
 
-            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#1a1a4e", marginBottom: 16, marginTop: 40 }}>Comment Stream Bleu garantit un IPTV sans coupure</h2>
+            <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#1a1a4e", marginBottom: 16, marginTop: 40 }}>Comment Stream Bleu limite les coupures</h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 24 }}>
               {[
                 { title: "Infrastructure redondante", desc: "Nos serveurs sont répliqués dans plusieurs datacenters. En cas de défaillance d'un serveur, votre flux bascule automatiquement sur un autre en moins d'une seconde — sans interruption visible." },
@@ -114,7 +115,7 @@ export default function IptvSansCoupurePage() {
 
             <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#1a1a4e", marginBottom: 16, marginTop: 40 }}>Conclusion : L&apos;IPTV sans coupure, ça existe</h2>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: "#333", marginBottom: 16 }}>
-              Un <Link href="/iptv-premium" style={{ color: "#5a5fcf" }}>service IPTV premium</Link> sans coupure n&apos;est pas un mythe. Stream Bleu le prouve avec 50 000+ clients satisfaits en France. La différence ? Une infrastructure dédiée, un encodage H.265 efficace et une équipe technique qui surveille les serveurs 24h/24.
+              Un <Link href="/iptv-premium" style={{ color: "#5a5fcf" }}>service IPTV premium</Link> sans coupure n&apos;est pas un mythe. Vous pouvez le vérifier vous-même avec l&apos;essai gratuit de 24h. La différence ? Une infrastructure dédiée, un encodage H.265 efficace et une équipe technique qui surveille les serveurs 24h/24.
             </p>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: "#333", marginBottom: 32 }}>
               Vous ne nous croyez pas ? Testez par vous-même avec notre <Link href="/essai-gratuit" style={{ color: "#5a5fcf", fontWeight: 600 }}>essai gratuit de 24h</Link> — sans carte bancaire, avec accès complet à toutes les chaînes et à la qualité 4K Ultra HD.
@@ -153,6 +154,7 @@ export default function IptvSansCoupurePage() {
             </div>
           </div>
         </section>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion", "[Arcep](https://www.arcep.fr) — régulateur des télécoms : fibre et qualité des réseaux"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

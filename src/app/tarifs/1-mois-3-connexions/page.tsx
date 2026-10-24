@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   title: { absolute: "IPTV 1 Mois — 3 Connexions — 27€ | Stream Bleu" },
   description: "Abonnement IPTV 1 Mois pour 3 connexions simultanées à 27€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   keywords: "iptv 3 connexions, abonnement iptv 1 mois 3 appareils, iptv 3 ecrans france",
-  alternates: { canonical: "https://streambleu.fr/tarifs/1-mois-3-connexions" },
+  // Same content as the base duration page with a different screen count:
+  // kept live for ordering, left out of the index to avoid near-duplicates.
+  robots: { index: false, follow: true },
+  alternates: { canonical: "https://streambleu.fr/tarifs/1-mois-3-connexions", languages: { "fr-FR": "https://streambleu.fr/tarifs/1-mois-3-connexions", "x-default": "https://streambleu.fr/tarifs/1-mois-3-connexions" } },
   openGraph: {
     title: "IPTV 1 Mois — 3 Connexions — 27€ | Stream Bleu",
     description: "Abonnement IPTV 1 Mois pour 3 connexions simultanées à 27€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
@@ -24,23 +27,6 @@ const productSchema = {
   name: "Stream Bleu IPTV 1 Mois — 3 Connexions",
   description: "Abonnement IPTV 1 Mois pour 3 connexions simultanées à 27€. 50 000+ chaînes françaises, beIN Sports, Canal+, 4K Ultra HD H.265. Sans engagement.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "5",
-      bestRating: "5",
-    },
-    author: { "@type": "Person", name: "Jean-Pierre M." },
-    reviewBody: "Service IPTV exceptionnel, image 4K impeccable et aucune coupure depuis 6 mois. Support très réactif.",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "312",
-    bestRating: "5",
-    worstRating: "1",
-  },
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   offers: {
     "@type": "Offer",

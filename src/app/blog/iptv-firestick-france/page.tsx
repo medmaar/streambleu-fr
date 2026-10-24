@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Fire Stick France 2026 — Installation | Stream Bleu" },
   description: "Guide complet pour installer Stream Bleu sur Amazon Fire Stick en France. TiviMate, IPTV Smarters Pro, activation Xtream Codes — étape par étape.",
   keywords: "iptv firestick france, fire stick iptv france, installer iptv fire stick, tivimate fire stick, iptv amazon fire tv france",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-firestick-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-firestick-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-firestick-france", "x-default": "https://streambleu.fr/blog/iptv-firestick-france" } },
   openGraph: {
     title: "IPTV Fire Stick France 2026 — Installation Complète | Stream Bleu",
     description: "Guide pas à pas pour installer un IPTV sur Amazon Fire Stick en France. TiviMate, Smarters Pro.",
@@ -204,6 +205,7 @@ export default function IPTVFirestickFrance() {
             <Link href="/blog/meilleur-lecteur-iptv-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Meilleur Lecteur IPTV →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[IPTV Smarters](https://www.iptvsmarters.com) — site officiel de l'éditeur", "[TiviMate](https://tivimate.com) — site officiel de l'application"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

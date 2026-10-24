@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Pas Cher France 2026 — À partir de 4,08 €/mois | Stream Bleu" },
   description: "IPTV pas cher en France : comparatif des prix et guide pour éviter les arnaques. Stream Bleu dès 4,08 €/mois avec qualité 4K.",
   keywords: "iptv pas cher france, iptv pas cher, abonnement iptv pas cher, iptv economique france, iptv moins cher",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-pas-cher-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-pas-cher-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-pas-cher-france", "x-default": "https://streambleu.fr/blog/iptv-pas-cher-france" } },
   openGraph: {
     title: "IPTV Pas Cher France 2026 — À partir de 4,08 €/mois | Stream Bleu",
     description: "IPTV pas cher en France : comparatif des prix et guide pour éviter les arnaques.",
@@ -25,7 +26,7 @@ const articleSchema = {
 
 const faqItems = [
   { q: "Quel est le prix d'un abonnement IPTV en France ?", a: "Les abonnements IPTV en France varient de 5€ à 30€/mois. Stream Bleu propose des forfaits à partir de 9€/mois (ou 4€/mois avec le forfait annuel à 49€). Un prix trop bas (moins de 3€) est souvent signe d'un service peu fiable ou frauduleux." },
-  { q: "Comment trouver un IPTV pas cher et fiable en France ?", a: "Recherchez un service proposant un essai gratuit (sans carte bancaire), des avis vérifiés sur des plateformes indépendantes, et une qualité 4K réelle. Stream Bleu offre exactement cela : essai gratuit 24h, 50 000+ avis positifs, et une qualité 4K H.265 certifiée." },
+  { q: "Comment trouver un IPTV pas cher et fiable en France ?", a: "Recherchez un service proposant un essai gratuit (sans carte bancaire), des avis vérifiés sur des plateformes indépendantes, et une qualité 4K réelle. Stream Bleu propose un essai gratuit de 24h pour vérifier vous-même la stabilité et la qualité 4K H.265 sur votre appareil." },
   { q: "Un IPTV gratuit est-il possible en France ?", a: "Des listes M3U gratuites existent mais elles sont instables, de mauvaise qualité et souvent illégales. La solution la plus économique reste un abonnement IPTV premium comme Stream Bleu à partir de 4€/mois — fiable, légal et en 4K." },
   { q: "Comment économiser sur son abonnement IPTV France ?", a: "Optez pour un forfait longue durée. Le forfait 12 mois Stream Bleu à 49€ revient à 4€/mois — économisant 56% par rapport au tarif mensuel de 9€/mois. C'est la meilleure façon d'avoir un IPTV pas cher de qualité premium." },
 ];
@@ -152,6 +153,7 @@ export default function IptvPasCherFrancePage() {
             </div>
           </div>
         </section>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[DGCCRF](https://www.economie.gouv.fr/dgccrf) — protection des consommateurs et pratiques commerciales", "[Arcom](https://www.arcom.fr) — régulateur français de l'audiovisuel et du numérique"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

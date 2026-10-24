@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose, { type ProseSection } from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu" },
-  description: "Service IPTV premium en France : 4K Ultra HD H.265/HEVC, HDR10 & Dolby Vision, 50 000+ chaînes sans coupure. Le service IPTV premium le plus stable du marché.",
+  description: "IPTV premium en France : 4K Ultra HD H.265/HEVC, HDR10 et Dolby Vision, 50 000+ chaînes, serveurs redondants. Dès 9 €, essai gratuit 24h.",
   keywords: "iptv premium, iptv premium france, service iptv premium, iptv premium 4k, abonnement iptv premium, premium iptv, premium iptv tv, abonnements iptv premium",
-  alternates: { canonical: "https://streambleu.fr/iptv-premium" },
+  alternates: { canonical: "https://streambleu.fr/iptv-premium", languages: { "fr-FR": "https://streambleu.fr/iptv-premium", "x-default": "https://streambleu.fr/iptv-premium" } },
   openGraph: {
     title: "IPTV Premium France 2026 — 4K H.265 HDR10 | Stream Bleu",
     description: "IPTV Premium France : 4K Ultra HD, H.265/HEVC, HDR10 & Dolby Vision. 50 000+ chaînes sans coupure.",
@@ -17,18 +18,125 @@ export const metadata: Metadata = {
 const premiumFeatures = [
   { icon: "🎬", title: "4K Ultra HD H.265/HEVC", desc: "Encodage H.265 (HEVC) pour une qualité d'image maximale à débits réduits. La même netteté qu'un Blu-ray 4K en streaming." },
   { icon: "🌈", title: "HDR10 & Dolby Vision", desc: "Support complet de l'HDR10 et du Dolby Vision pour des couleurs, contrastes et luminosité exceptionnels sur vos écrans compatibles." },
-  { icon: "⚡", title: "Serveurs Premium Anti-Coupure", desc: "Infrastructure premium avec redondance et basculement automatique. Aucune interruption même lors des événements les plus populaires." },
+  { icon: "⚡", title: "Serveurs redondants", desc: "Infrastructure avec redondance et basculement automatique pour limiter les interruptions lors des grands événements." },
   { icon: "🏆", title: "Sport Premium Inclus", desc: "beIN Sports 1/2/3, RMC Sport 1/2, Canal+ Sport, Eurosport 1/2 — tous les matchs Ligue 1, Champions League, Top 14, Roland-Garros." },
   { icon: "🎭", title: "300 000+ VOD 4K", desc: "Bibliothèque complète de films et séries en 4K Ultra HD. Contenu récent et classique, mis à jour en continu." },
   { icon: "📱", title: "Multi-Appareils Premium", desc: "Jusqu'à 10 connexions simultanées en 4K. Smart TV, Firestick, Android TV, Apple TV, MAG Box — tous compatibles." },
 ];
 
 const faqItems = [
-  { q: "Qu'est-ce qui différencie un IPTV premium d'un IPTV classique ?", a: "Un service IPTV premium comme Stream Bleu offre une qualité 4K Ultra HD H.265/HEVC, des serveurs redondants pour zéro coupure, un support HDR10 & Dolby Vision, un guide des programmes EPG complet et un support client réactif 24/7. Les services basiques n'offrent généralement que du 1080p avec une stabilité médiocre." },
+  { q: "Qu'est-ce qui différencie un IPTV premium d'un IPTV classique ?", a: "Un service IPTV premium comme Stream Bleu offre une qualité 4K Ultra HD H.265/HEVC, des serveurs redondants pour limiter les coupures, un support HDR10 & Dolby Vision, un guide des programmes EPG complet et un support client réactif 24/7. Les services basiques n'offrent généralement que du 1080p avec une stabilité médiocre." },
   { q: "L'IPTV premium de Stream Bleu fonctionne-t-il sur toutes les Smart TV ?", a: "Oui. Stream Bleu est compatible avec Samsung (Tizen), LG (webOS), Philips (Android TV), Sony (Google TV) et tous les systèmes Smart TV via des applications IPTV. Nous fournissons des guides d'installation personnalisés." },
-  { q: "Comment garantissez-vous la qualité premium sans coupure ?", a: "Notre infrastructure utilise des serveurs premium avec CDN distribué et basculement automatique. En cas de problème sur un serveur, votre stream bascule automatiquement sur un serveur de secours en moins d'une seconde, sans interruption." },
+  { q: "Comment limitez-vous les coupures ?", a: "Notre infrastructure utilise des serveurs premium avec CDN distribué et basculement automatique. En cas de problème sur un serveur, votre stream bascule automatiquement sur un serveur de secours en moins d'une seconde, sans interruption." },
   { q: "Le service IPTV premium inclut-il la TV de rattrapage ?", a: "Oui. Stream Bleu inclut 7 jours de TV de rattrapage (catch-up) sur les principales chaînes françaises. Regardez vos émissions manquées à tout moment." },
   { q: "IPTV premium et abonnement IPTV premium : quelle différence de prix ?", a: "Aucune chez Stream Bleu : la qualité premium (4K, HDR10, serveurs anti-coupure, support prioritaire) est incluse dans tous les abonnements IPTV premium, sans supplément caché. Voir le détail sur notre page Prix IPTV." },
+];
+
+const proseSections: ProseSection[] = [
+  {
+    "h2": "Ce que « premium » veut dire concrètement",
+    "paras": [
+      "Le mot **IPTV premium** est utilisé par beaucoup de services sans définition précise. Chez Stream Bleu, il recouvre trois éléments vérifiables chez vous pendant l'essai gratuit : des flux 4K encodés en H.265/HEVC, un catalogue VOD inclus dans tous les forfaits, et une infrastructure avec basculement automatique entre serveurs.",
+      "Le H.265 compresse environ deux fois mieux que l'ancien H.264 : à qualité égale, un flux 4K demande donc moins de débit, autour de 25 Mbps stables. C'est ce qui rend la 4K regardable sur la plupart des connexions fibre et VDSL françaises. Pour aller plus loin, lisez notre guide [IPTV 4K](/blog/iptv-4k-france)."
+    ]
+  },
+  {
+    "h2": "Le matériel nécessaire pour la 4K et le HDR",
+    "paras": [
+      "La 4K et le HDR ne s'affichent que si toute la chaîne est compatible : la TV, l'appareil qui lit le flux et l'application."
+    ],
+    "table": {
+      "head": [
+        "Appareil",
+        "4K",
+        "Décodage H.265",
+        "HDR"
+      ],
+      "rows": [
+        [
+          "[Fire TV Stick 4K](/iptv-firestick-france)",
+          "Oui",
+          "Oui",
+          "HDR10, Dolby Vision selon modèle"
+        ],
+        [
+          "[Apple TV 4K](/iptv-apple-tv-france)",
+          "Oui",
+          "Oui",
+          "HDR10, Dolby Vision"
+        ],
+        [
+          "[Smart TV Samsung / LG](/iptv-smart-tv-france) 4K",
+          "Oui",
+          "Oui",
+          "Selon le modèle de TV"
+        ],
+        [
+          "Fire TV Stick (non 4K)",
+          "Non (1080p)",
+          "Oui",
+          "Non"
+        ],
+        [
+          "[Box Android](/boitier-iptv) d'entrée de gamme",
+          "Variable",
+          "Variable",
+          "Rarement"
+        ]
+      ],
+      "caption": "Vérifiez la fiche technique de votre appareil : la mention HEVC/H.265 est indispensable pour la 4K IPTV."
+    }
+  },
+  {
+    "h2": "Débit et réglages pour une image premium",
+    "list": [
+      "Environ **25 Mbps stables par écran 4K**, 10 Mbps en HD : mesurez le soir, au moment où vous regardez.",
+      "Préférez un **câble Ethernet** ou le Wi-Fi 5 GHz : voir [Wi-Fi ou Ethernet pour l'IPTV](/blog/iptv-wifi-ou-ethernet).",
+      "Dans [TiviMate](/tivimate) ou [IPTV Smarters Pro](/iptv-smarters-pro), activez le décodage matériel et augmentez la mémoire tampon si l'image saccade.",
+      "Plusieurs TV en 4K en même temps : additionnez les débits et choisissez un forfait multi-écrans sur la page [tarifs](/tarifs)."
+    ]
+  },
+  {
+    "h2": "Prix de l'IPTV premium",
+    "paras": [
+      "La qualité premium est incluse dans tous les forfaits, sans option payante :"
+    ],
+    "table": {
+      "head": [
+        "Durée",
+        "1 écran",
+        "Prix par mois",
+        "2 écrans"
+      ],
+      "rows": [
+        [
+          "1 mois",
+          "9 €",
+          "9 €",
+          "18 €"
+        ],
+        [
+          "3 mois",
+          "29 €",
+          "≈ 9,67 €",
+          "50 €"
+        ],
+        [
+          "6 mois",
+          "39 €",
+          "6,50 €",
+          "69 €"
+        ],
+        [
+          "12 mois",
+          "49 €",
+          "≈ 4,08 €",
+          "89 €"
+        ]
+      ],
+      "caption": "Grille officielle en euros TTC, sans engagement ni renouvellement automatique. Jusqu'à 10 écrans sur la page tarifs."
+    }
+  }
 ];
 
 const faqSchema = {
@@ -62,7 +170,7 @@ export default function IptvPremiumPage() {
               IPTV Premium France —<br /><span style={{ color: "#c5bcf5" }}>4K H.265 · HDR10 · Sans Coupure</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.85)", fontSize: 17, lineHeight: 1.7, maxWidth: 620, margin: "0 auto 32px" }}>
-              L&apos;IPTV premium le plus avancé en France. Qualité cinéma 4K Ultra HD avec encodage H.265/HEVC, support HDR10 & Dolby Vision, et des serveurs premium qui garantissent zéro coupure.
+              L&apos;IPTV premium selon Stream Bleu : qualité 4K Ultra HD avec encodage H.265/HEVC, HDR10 et Dolby Vision sur les écrans compatibles, et des serveurs redondants pour limiter les coupures.
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12, textDecoration: "none" }}>Essai Gratuit 24h</Link>
@@ -107,7 +215,7 @@ export default function IptvPremiumPage() {
                     ["HDR10 & Dolby Vision","✅","❌","Rarement"],
                     ["Chaînes","50 000+","150–500","5 000–15 000"],
                     ["Stabilité","Objectif 99,9 %","Variable","Aléatoire"],
-                    ["Prix/mois","À partir de 4€","30€–60€","5€–15€"],
+                    ["Prix/mois","Dès 4,08 € (12 mois)","30€–60€","5€–15€"],
                     ["Support 24/7","✅ Français","Heures ouvrées","❌"],
                     ["Essai gratuit","✅ 24h sans CB","❌","Rarement"],
                   ].map((row, i) => (
@@ -122,6 +230,9 @@ export default function IptvPremiumPage() {
             </div>
           </div>
         </section>
+
+        <Prose sections={proseSections} />
+
 
         <section style={{ padding: "64px 16px" }}>
           <div style={{ maxWidth: 720, margin: "0 auto", background: "#4a4fc0", borderRadius: 24, padding: "40px 36px", boxShadow: "0 8px 32px rgba(90,95,207,0.2)" }}>

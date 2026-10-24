@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "Meilleur Lecteur IPTV France 2026 — TiviMate | Stream Bleu" },
   description: "Quel est le meilleur lecteur IPTV en France ? Comparatif TiviMate vs IPTV Smarters Pro vs VLC vs Perfect Player. Guide complet pour chaque appareil.",
   keywords: "meilleur lecteur iptv france, meilleur lecteur iptv, tivimate france, iptv smarters pro france, lecteur iptv android, lecteur iptv smart tv france",
-  alternates: { canonical: "https://streambleu.fr/blog/meilleur-lecteur-iptv-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/meilleur-lecteur-iptv-france", languages: { "fr-FR": "https://streambleu.fr/blog/meilleur-lecteur-iptv-france", "x-default": "https://streambleu.fr/blog/meilleur-lecteur-iptv-france" } },
   openGraph: {
     title: "Meilleur Lecteur IPTV France 2026 — TiviMate, Smarters, VLC | Stream Bleu",
     description: "Comparatif TiviMate vs IPTV Smarters Pro vs VLC vs Perfect Player pour la France en 2026.",
@@ -218,6 +219,7 @@ export default function MeilleurLecteurIPTV() {
             <Link href="/iptv-firestick-france" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>IPTV Firestick →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[VLC (VideoLAN)](https://www.videolan.org/vlc/) — site officiel du lecteur VLC", "[IPTV Smarters](https://www.iptvsmarters.com) — site officiel de l'éditeur", "[TiviMate](https://tivimate.com) — site officiel de l'application"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

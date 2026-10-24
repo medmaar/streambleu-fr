@@ -17,6 +17,18 @@ const redirected = new Set(
     .filter((s) => s && s.startsWith("/")),
 );
 
+// Pages that declare noindex — hand-built pages via `robots: { index: false`,
+// content-registry pages via `noindex: true` right after their slug.
+const noindexSeo = new Set();
+const seoModified = new Map();
+for (const f of readdirSync("src/content/seo/pages")) {
+  const src = readFileSync(join("src/content/seo/pages", f), "utf8");
+  for (const m of src.matchAll(/slug: "([^"]+)",\s*noindex: true/g)) noindexSeo.add(m[1]);
+  // Registry pages: lastmod = the page's own dateModified, not the wrapper file's commit date
+  for (const m of src.matchAll(/slug: "([^"]+)",[\s\S]*?dateModified: "(\d{4}-\d{2}-\d{2})"/g)) seoModified.set(m[1], m[2]);
+}
+const isNoindex = (file, route) => noindexSeo.has(route) || /robots:\s*\{\s*index:\s*false/.test(readFileSync(file, "utf8"));
+
 function walk(dir) {
   const out = [];
   for (const name of readdirSync(dir)) {
@@ -27,7 +39,8 @@ function walk(dir) {
   return out;
 }
 
-function lastmod(file) {
+function lastmod(file, route) {
+  if (seoModified.has(route)) return seoModified.get(route);
   try {
     const d = execSync(`git log -1 --format=%cs -- "${file}"`, { stdio: ["ignore", "pipe", "ignore"] }).toString().trim();
     if (d) return d;
@@ -51,7 +64,7 @@ const routes = walk(APP)
   })
   .map((r) => ({ ...r, route: r.route === "/" ? "/" : r.route.replace(/\/$/, "") }))
   .filter((r) => !r.route.includes("["))
-  .filter((r) => !EXCLUDE.has(r.route) && !redirected.has(r.route))
+  .filter((r) => !EXCLUDE.has(r.route) && !redirected.has(r.route) && !isNoindex(r.file, r.route))
   .sort((a, b) => (a.route === "/" ? -1 : b.route === "/" ? 1 : a.route.localeCompare(b.route)));
 
 const xml = [
@@ -59,7 +72,7 @@ const xml = [
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
   ...routes.map(({ file, route }) => {
     const [freq, prio] = meta(route);
-    return `  <url>\n    <loc>${SITE}${route === "/" ? "" : route}</loc>\n    <lastmod>${lastmod(file)}</lastmod>\n    <changefreq>${freq}</changefreq>\n    <priority>${prio}</priority>\n  </url>`;
+    return `  <url>\n    <loc>${SITE}${route === "/" ? "" : route}</loc>\n    <lastmod>${lastmod(file, route)}</lastmod>\n    <changefreq>${freq}</changefreq>\n    <priority>${prio}</priority>\n  </url>`;
   }),
   "</urlset>",
   "",

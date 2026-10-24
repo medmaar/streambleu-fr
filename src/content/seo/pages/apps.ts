@@ -526,6 +526,7 @@ export const APP_PAGES: SeoPageData[] = [
           { type: "p", text: "Pour une expérience plus riche sur TV connectée, comparez avec [Smart IPTV](/smart-iptv) ou [Flix IPTV](/flix-iptv), ou regardez notre [comparatif des applications IPTV](/applications-iptv)." },
         ],
       },
+      {"id": "depannage", "h2": "SS IPTV : problèmes fréquents", "blocks": [{"type": "table", "head": ["Problème", "Cause probable", "Solution"], "rows": [["La playlist n'apparaît pas", "Code de connexion expiré", "Générez un nouveau code dans SS IPTV et ajoutez la playlist sur le site de l'éditeur"], ["Chaînes en double ou mal classées", "Playlist M3U non filtrée", "Demandez au support une playlist limitée aux catégories souhaitées"], ["Pas de VOD", "SS IPTV gère mal les catalogues de films", "Utilisez [IBO Player](/ibo-player) ou [Smart IPTV](/smart-iptv) pour la VOD"], ["Image qui saccade", "Wi-Fi de la TV", "Passez en Ethernet ou en 5 GHz"]]}]},
     ],
     faq: [
       { q: "SS IPTV est-il gratuit ?", a: "Oui, SS IPTV est gratuit. Il affiche parfois des publicités dans l'interface, mais aucune activation payante n'est demandée pour lire une playlist." },
@@ -547,7 +548,7 @@ export const APP_PAGES: SeoPageData[] = [
     navLabel: "IBO Player",
     cardText: "IBO Player : prix, activation MAC et configuration.",
     title: "IBO Player : prix, activation et configuration (2026)",
-    description: "IBO Player : prix de la licence, activation avec adresse MAC et device key, ajout de playlist sur Samsung, LG, Android et Fire TV. Offert avec le forfait 12 mois.",
+    description: "IBO Player : prix de la licence, activation par adresse MAC et device key, playlist sur Samsung, LG, Android et Fire TV. Offert avec le forfait 12 mois.",
     keywords: ["ibo player", "ibo player prix", "ibo player pro", "ibo player activation", "ibo player samsung", "ibo player lg"],
     badge: "Application · IBO Player",
     h1: "IBO Player : prix, activation et configuration pas à pas",
@@ -653,6 +654,7 @@ export const APP_PAGES: SeoPageData[] = [
           { type: "p", text: "Les trois fonctionnent sur le même principe (MAC + upload web). Flix IPTV se distingue par son interface soignée et ses sous-titres, IBO Player par sa stabilité sur Samsung récents, et [Smart IPTV](/smart-iptv) par sa légèreté sur LG. Si vous voulez tester avant d'acheter une licence, commencez par l'[essai gratuit Stream Bleu](/essai-gratuit) avec la période d'essai du lecteur." },
         ],
       },
+      {"id": "depannage", "h2": "Flix IPTV : problèmes fréquents", "blocks": [{"type": "table", "head": ["Problème", "Cause probable", "Solution"], "rows": [["La playlist ne s'affiche pas", "Playlist non enregistrée pour cette adresse MAC", "Vérifiez la MAC sur le site de l'éditeur, puis redémarrez l'application"], ["Message d'activation", "Période d'essai de l'application terminée", "La licence Flix IPTV se paie à l'éditeur, séparément de l'abonnement IPTV"], ["Chaînes lentes à démarrer", "Wi-Fi faible sur la Smart TV", "Branchez la TV en Ethernet"], ["Guide TV absent", "EPG non lié à la playlist", "Ajoutez l'URL EPG fournie par le support"]]}]},
     ],
     faq: [
       { q: "Flix IPTV fournit-il des chaînes ?", a: "Non. Flix IPTV est uniquement un lecteur. Il faut y ajouter la playlist d'un abonnement IPTV pour regarder la TV." },
@@ -712,6 +714,7 @@ export const APP_PAGES: SeoPageData[] = [
           },
         ],
       },
+      {"id": "alternatives", "h2": "IPTV Stream Player ou un autre lecteur ?", "blocks": [{"type": "p", "text": "IPTV Stream Player est un lecteur simple, adapté pour regarder rapidement une playlist. Si vous voulez un guide TV complet, des favoris par catégorie ou l'enregistrement, d'autres lecteurs sont plus complets :"}, {"type": "table", "head": ["Besoin", "Lecteur conseillé"], "rows": [["Guide TV complet sur Android TV", "[TiviMate](/tivimate)"], ["Même application sur téléphone, TV et PC", "[IPTV Smarters Pro](/iptv-smarters-pro)"], ["Smart TV Samsung ou LG", "[IBO Player](/ibo-player)"], ["Ordinateur, sans installation", "[Lecteur IPTV en ligne](/lecteur-iptv-en-ligne) ou [VLC](/iptv-vlc)"]]}]},
     ],
     faq: [
       { q: "IPTV Stream Player est-il gratuit ?", a: "La version de base est gratuite, avec publicité dans certaines versions. Une option payante peut retirer les publicités selon l'éditeur." },
@@ -771,6 +774,7 @@ export const APP_PAGES: SeoPageData[] = [
           { type: "p", text: "Si votre boîtier montre ses limites, comparez les modèles plus récents dans notre guide [boîtier IPTV](/boitier-iptv)." },
         ],
       },
+      {"id": "alternatives", "h2": "Lxtream ou un autre lecteur ?", "blocks": [{"type": "table", "head": ["Lecteur", "Appareils", "Points forts"], "rows": [["Lxtream", "Android, Android TV, Fire TV", "Léger, connexion Xtream Codes simple"], ["[TiviMate](/tivimate)", "Android TV, Fire TV", "Guide TV complet, enregistrement (version payante)"], ["[IPTV Smarters Pro](/iptv-smarters-pro)", "Android, iOS, Fire TV, Windows", "Disponible presque partout"], ["[IBO Player](/ibo-player)", "Samsung, LG, Android", "Installé directement sur les Smart TV"]]}, {"type": "p", "text": "Les identifiants Stream Bleu fonctionnent dans tous ces lecteurs : vous pouvez en essayer plusieurs pendant l'[essai gratuit](/essai-gratuit) et garder celui qui vous convient."}]},
     ],
     faq: [
       { q: "Lxtream est-il compatible avec Stream Bleu ?", a: "Oui. Lxtream fonctionne avec les identifiants Xtream Codes que nous envoyons à l'activation." },
@@ -830,6 +834,7 @@ export const APP_PAGES: SeoPageData[] = [
           { type: "p", text: "STBEmu a du sens si votre abonnement ne fournit qu'un portail. Avec un abonnement Stream Bleu, vous recevez aussi des identifiants Xtream Codes : [TiviMate](/tivimate) ou [IPTV Smarters Pro](/iptv-smarters-pro) offrent alors une interface plus moderne. Pour un vrai boîtier, voir [IPTV sur box MAG](/iptv-mag-box-france)." },
         ],
       },
+      {"id": "depannage", "h2": "STBEmu : erreurs fréquentes", "blocks": [{"type": "table", "head": ["Problème", "Cause probable", "Solution"], "rows": [["« Portal not found »", "URL du portail mal saisie", "Recopiez l'URL exacte reçue par e-mail, avec /c/ à la fin si indiqué"], ["« Authentication failed »", "Adresse MAC non enregistrée", "Communiquez au support l'adresse MAC choisie dans le profil STBEmu"], ["Chaînes qui ne se lancent pas", "Mauvais modèle de boîtier émulé", "Choisissez MAG 250 ou MAG 254 dans les paramètres du profil"], ["Guide TV vide", "EPG non téléchargé", "Redémarrez le profil puis attendez le chargement complet du portail"]]}, {"type": "p", "text": "Si vous préférez une connexion par identifiants plutôt que par adresse MAC, [TiviMate](/tivimate) ou [IPTV Smarters Pro](/iptv-smarters-pro) sont plus simples à configurer."}]},
     ],
     faq: [
       { q: "À quoi sert STBEmu ?", a: "STBEmu émule un boîtier MAG sur un appareil Android. Il permet d'utiliser un abonnement IPTV basé sur un portail Stalker (URL + adresse MAC) sans acheter de boîtier MAG." },
@@ -851,7 +856,7 @@ export const APP_PAGES: SeoPageData[] = [
     navLabel: "IPTV sur VLC",
     cardText: "Lire une liste M3U IPTV avec VLC sur PC, Mac et mobile.",
     title: "IPTV sur VLC : lire une liste M3U sur PC, Mac, mobile",
-    description: "Regarder l'IPTV avec VLC : ouvrir une URL M3U sur Windows, Mac, Android et iPhone, afficher la liste des chaînes, régler la mise en cache et limiter les coupures.",
+    description: "Regarder l'IPTV avec VLC : ouvrir une URL M3U sur Windows, Mac, Android et iPhone, afficher les chaînes, régler la mise en cache et limiter les coupures.",
     keywords: ["iptv vlc", "vlc ip tv", "iptv sur vlc", "iptv vlc media player", "iptv vlc player", "ip tv vlc", "vlc iptv m3u"],
     badge: "Guide · VLC",
     h1: "IPTV sur VLC : lire une liste M3U en 2 minutes",
@@ -922,7 +927,7 @@ export const APP_PAGES: SeoPageData[] = [
     navLabel: "Downloader IPTV",
     cardText: "Utiliser Downloader pour installer un lecteur IPTV sur Fire TV.",
     title: "Downloader IPTV : installer une app sur Fire TV Stick",
-    description: "Downloader sur Fire TV Stick : activer les applications inconnues, télécharger IPTV Smarters Pro, TiviMate ou Smart IPTV en APK, et éviter les fichiers dangereux.",
+    description: "Downloader sur Fire TV Stick : activer les sources inconnues, installer IPTV Smarters Pro, TiviMate ou Smart IPTV en APK et éviter les fichiers dangereux.",
     keywords: ["downloader iptv", "iptv smarters downloader", "iptv smarter pro downloader", "smart iptv downloader", "iptv smasters pro downloader", "smart iptv fire stick", "smarters iptv fire stick", "iptv sur fire stick"],
     badge: "Guide · Downloader",
     h1: "Downloader : installer un lecteur IPTV sur Fire TV Stick",

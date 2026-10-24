@@ -435,6 +435,7 @@ export const BOX_PAGES: SeoPageData[] = [
           { type: "p", text: "Pour quelques dizaines d'euros de plus, une [Xiaomi Mi Box S](/iptv-xiaomi-mi-box) ou un [Fire TV Stick 4K](/iptv-firestick-france) offrent une expérience plus fiable. Comparatif complet : [boîtier IPTV](/boitier-iptv)." },
         ],
       },
+      {"id": "alternatives", "h2": "X96 Mini ou box certifiée ?", "blocks": [{"type": "table", "head": ["Critère", "X96 Mini", "Box Android TV certifiée / Fire TV"], "rows": [["Prix", "Bas", "Plus élevé"], ["Play Store officiel", "Souvent absent ou modifié", "Oui"], ["Mises à jour de sécurité", "Rares", "Régulières"], ["4K fluide", "Variable selon le modèle", "Oui sur les modèles 4K"], ["Netflix et applications de streaming en HD", "Souvent limitées", "Oui"]]}, {"type": "p", "text": "Pour l'IPTV seule, une X96 Mini peut suffire en HD. Si vous voulez aussi les applications de streaming officielles ou la 4K stable, comparez avec les [boîtiers IPTV](/boitier-iptv) et le [Fire TV Stick](/iptv-firestick-france)."}]},
     ],
     faq: [
       { q: "La X96 Mini est-elle bien pour l'IPTV ?", a: "Elle fonctionne pour un usage HD avec un budget minimal, surtout en Ethernet. Pour la 4K et une utilisation quotidienne, une box certifiée Google est plus fiable." },
@@ -710,7 +711,7 @@ export const BOX_PAGES: SeoPageData[] = [
     navLabel: "IPTV Orange, SFR, Bouygues",
     cardText: "Livebox, box SFR, Bbox : installer un lecteur IPTV et comprendre les blocages.",
     title: "IPTV Orange, SFR, Bouygues : box et décodeurs compatibles",
-    description: "IPTV avec Orange, SFR ou Bouygues : la TV de votre box est déjà de l'IPTV, quels décodeurs acceptent un lecteur, et ce que signifient les blocages des opérateurs.",
+    description: "IPTV avec Orange, SFR ou Bouygues : la TV de votre box est déjà de l'IPTV, quels décodeurs acceptent un lecteur et que signifient les blocages des FAI.",
     keywords: ["iptv orange", "iptv isp", "orange bloque iptv 2021", "iptv sfr", "iptv bouygues", "iptv livebox", "iptv bbox", "iptv fournisseur d'accès"],
     badge: "Boîtier · Box opérateur",
     h1: "IPTV avec Orange, SFR ou Bouygues : ce qui marche sur votre box",

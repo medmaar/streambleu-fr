@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Prose from "@/components/seo/Prose";
 
 export const metadata: Metadata = {
   title: { absolute: "IPTV Légal en France 2026 ? La Réponse | Stream Bleu" },
   description: "IPTV légal ou illégal en France ? Analyse de la loi française, rôle de l'Arcom, droits des utilisateurs et risques réels. Tout ce que vous devez savoir en 2026.",
   keywords: "iptv legal france, iptv légal france 2026, arcom iptv france, loi iptv france, iptv illégal risques france, iptv légal, iptv legale, legality of iptv",
-  alternates: { canonical: "https://streambleu.fr/blog/iptv-legal-france" },
+  alternates: { canonical: "https://streambleu.fr/blog/iptv-legal-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-legal-france", "x-default": "https://streambleu.fr/blog/iptv-legal-france" } },
   openGraph: {
     title: "L'IPTV est-il Légal en France en 2026 ? Analyse Complète | Stream Bleu",
     description: "Analyse complète de la légalité de l'IPTV en France : loi, Arcom, risques utilisateurs. Guide 2026.",
@@ -196,6 +197,7 @@ export default function IPTVLegalFrance() {
             <Link href="/avertissement" style={{ color: "#7b87e8", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Page Avertissement →</Link>
           </div>
         </article>
+      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Légifrance](https://www.legifrance.gouv.fr) — textes officiels, dont le Code de la propriété intellectuelle", "[DGCCRF](https://www.economie.gouv.fr/dgccrf) — protection des consommateurs et pratiques commerciales"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

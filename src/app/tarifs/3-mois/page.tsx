@@ -5,13 +5,13 @@ import PlanFAQ, { type FaqItem } from "../PlanFAQ";
 export const metadata: Metadata = {
   title: { absolute: "Forfait IPTV 3 Mois — 29€ | Stream Bleu" },
   description:
-    "Profitez de 3 mois d'IPTV en France pour seulement 29€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés par e-mail.",
+    "IPTV 3 mois en France pour 29 € : 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat, identifiants envoyés par e-mail.",
   keywords:
     "iptv 3 mois france, Stream Bleu 3 mois, abonnement iptv trimestriel, iptv 3 mois 29€",
-  alternates: { canonical: "https://streambleu.fr/tarifs/3-mois" },
+  alternates: { canonical: "https://streambleu.fr/tarifs/3-mois", languages: { "fr-FR": "https://streambleu.fr/tarifs/3-mois", "x-default": "https://streambleu.fr/tarifs/3-mois" } },
     openGraph: {
     title: "Forfait IPTV 3 Mois — 29€",
-    description: "Profitez de 3 mois d'IPTV en France pour seulement 29€. 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat. Identifiants envoyés par e-mail.",
+    description: "IPTV 3 mois en France pour 29 € : 50 000+ chaînes en direct, qualité 4K, Ligue 1, beIN Sports inclus. Sans contrat, identifiants envoyés par e-mail.",
     url: "https://streambleu.fr/tarifs/3-mois", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Forfait IPTV 3 Mois — 29€" }],
   },
@@ -64,23 +64,6 @@ const productSchema = {
   name: "Forfait IPTV 3 Mois Stream Bleu",
   description: "3 mois d'accès IPTV à plus de 50 000 chaînes en direct en France dont Ligue 1, beIN Sports, RMC Sport et 300 000+ titres VOD en 4K.",
   brand: { "@type": "Brand", name: "Stream Bleu" },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "5",
-      bestRating: "5",
-    },
-    author: { "@type": "Person", name: "Jean-Pierre M." },
-    reviewBody: "Service IPTV exceptionnel, image 4K impeccable et aucune coupure depuis 6 mois. Support très réactif.",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "312",
-    bestRating: "5",
-    worstRating: "1",
-  },
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
   offers: {
     "@type": "Offer",
