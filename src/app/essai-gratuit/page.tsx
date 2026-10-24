@@ -86,7 +86,7 @@ export default function FreeTrialPage() {
                 Demander votre essai gratuit
               </h2>
               <p style={{ textAlign: "center", color: "rgba(255,255,255,0.75)", fontSize: 14, marginBottom: 28 }}>
-                Remplissez le formulaire — vous recevrez vos identifiants par email en moins de 5 minutes.
+                Remplissez le formulaire — vous recevrez vos identifiants par e-mail en quelques minutes.
               </p>
               <EssaiGratuitForm />
             </div>

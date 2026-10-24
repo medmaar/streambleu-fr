@@ -97,6 +97,23 @@ export default function TarifsPage() {
       </section>
 
       {/* Essai gratuit CTA */}
+      {/* Buying guides: one per purchase question */}
+      <section style={{ padding: "24px 16px 0" }}>
+        <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14 }}>
+          {[
+            { href: "/abonnement-iptv-multi-ecrans", t: "Plusieurs écrans ?", d: "Grille de 1 à 10 écrans, prix par écran et débit à prévoir." },
+            { href: "/abonnement-iptv-smart-tv", t: "Une Smart TV ?", d: "Coût total avec le lecteur selon votre marque de TV." },
+            { href: "/acheter-abonnement-iptv", t: "Commande et renouvellement", d: "Paiement, activation, remboursement : les conditions en clair." },
+            { href: "/iptv-belgique", t: "Belgique ou Suisse ?", d: "Mêmes prix en euros, conseils réseau par pays." },
+          ].map((x) => (
+            <Link key={x.href} href={x.href} style={{ display: "block", background: "#fdf5ff", borderRadius: 14, padding: "18px 20px", border: "1px solid rgba(123,135,232,0.15)", textDecoration: "none" }}>
+              <span style={{ display: "block", fontWeight: 800, fontSize: 15, color: "#5a5fcf", marginBottom: 6 }}>{x.t} →</span>
+              <span style={{ display: "block", fontSize: 13, lineHeight: 1.6, color: "#444" }}>{x.d}</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section style={{ padding: "48px 24px", background: "transparent" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", background: "#5a5fcf", borderRadius: 24, padding: "48px 40px", textAlign: "center", boxShadow: "0 12px 40px rgba(90,95,207,0.3)" }}>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, color: "#ffffff", marginBottom: 14 }}>

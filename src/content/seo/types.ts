@@ -13,7 +13,9 @@ export type Block =
   | { type: "cards"; items: { title: string; text: string; href?: string }[] }
   | { type: "callout"; title?: string; text: string }
   | { type: "chips"; items: string[] }
-  | { type: "hub"; group: Group; region?: string };
+  | { type: "hub"; group: Group; region?: string }
+  // Price grid rendered from src/lib/pricing.ts, each cell linking to its order page.
+  | { type: "prices"; screens: number[]; perMonth?: boolean; caption?: string };
 
 export type Section = { id: string; h2: string; blocks: Block[] };
 
@@ -23,6 +25,7 @@ export type SeoPageData = {
   slug: string; // "/tivimate"
   noindex?: boolean; // keep the page live and linked, but out of the index + sitemap (put right after slug)
   group: Group;
+  areaServed?: string; // country served, for the Service schema on money pages (default France)
   navLabel: string; // short label used in hubs, chips and breadcrumbs
   cardText: string; // one-line summary used on hub cards
   title: string; // <title>, 50–60 chars

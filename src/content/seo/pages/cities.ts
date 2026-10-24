@@ -240,7 +240,7 @@ export const CITY_PAGES: SeoPageData[] = [
           },
           {
             type: "p",
-            text: "Dans les chalets et résidences secondaires, emportez un appareil déjà configuré (Fire TV Stick ou box Android) : vous n'avez qu'à le brancher sur la TV et au Wi-Fi du logement.",
+            text: "Dans les chalets et résidences secondaires, emportez un appareil déjà configuré (Fire TV Stick ou box Android) : vous n'avez qu'à le brancher sur la TV et au Wi-Fi du logement. Frontaliers du Genevois et du Chablais : le même abonnement fonctionne de l'autre côté de la frontière, voir [IPTV Suisse](/iptv-suisse).",
           },
         ],
       },
@@ -672,7 +672,7 @@ export const CITY_PAGES: SeoPageData[] = [
           },
           {
             type: "p",
-            text: "La métropole de Lille est collée à la Belgique : de nombreux foyers frontaliers regardent aussi bien les chaînes françaises que belges. L'abonnement se configure de la même façon dans les deux pays.",
+            text: "La métropole de Lille est collée à la Belgique : de nombreux foyers frontaliers regardent aussi bien les chaînes françaises que belges. L'abonnement se configure de la même façon dans les deux pays (voir notre page [IPTV Belgique](/iptv-belgique) pour les réseaux et appareils côté belge).",
           },
         ],
       },
@@ -1208,7 +1208,7 @@ export const CITY_PAGES: SeoPageData[] = [
           },
           {
             type: "p",
-            text: "Dans le Haut-Doubs et le Jura, une partie des habitants travaille en Suisse : l'application mobile fonctionne aussi là-bas en Wi-Fi, mais l'itinérance des données mobiles en Suisse est en général facturée hors forfait.",
+            text: "Dans le Haut-Doubs et le Jura, une partie des habitants travaille en Suisse : l'application mobile fonctionne aussi là-bas en Wi-Fi, mais l'itinérance des données mobiles en Suisse est en général facturée hors forfait. Pour un abonnement regardé côté suisse, voir [IPTV Suisse](/iptv-suisse).",
           },
           {
             type: "p",

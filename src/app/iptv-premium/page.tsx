@@ -25,9 +25,9 @@ const premiumFeatures = [
 ];
 
 const faqItems = [
-  { q: "Qu'est-ce qui différencie un IPTV premium d'un IPTV classique ?", a: "Un service IPTV premium comme Stream Bleu offre une qualité 4K Ultra HD H.265/HEVC, des serveurs redondants pour limiter les coupures, un support HDR10 & Dolby Vision, un guide des programmes EPG complet et un support client réactif 24/7. Les services basiques n'offrent généralement que du 1080p avec une stabilité médiocre." },
+  { q: "Qu'est-ce qui différencie un IPTV premium d'un IPTV classique ?", a: "Un service IPTV premium comme Stream Bleu offre une qualité 4K Ultra HD H.265/HEVC, des serveurs redondants pour limiter les coupures, un support HDR10 & Dolby Vision, un guide des programmes EPG complet et un support client réactif 24/7. Comparez ces points pendant un essai plutôt que sur une promesse commerciale." },
   { q: "L'IPTV premium de Stream Bleu fonctionne-t-il sur toutes les Smart TV ?", a: "Oui. Stream Bleu est compatible avec Samsung (Tizen), LG (webOS), Philips (Android TV), Sony (Google TV) et tous les systèmes Smart TV via des applications IPTV. Nous fournissons des guides d'installation personnalisés." },
-  { q: "Comment limitez-vous les coupures ?", a: "Notre infrastructure utilise des serveurs premium avec CDN distribué et basculement automatique. En cas de problème sur un serveur, votre stream bascule automatiquement sur un serveur de secours en moins d'une seconde, sans interruption." },
+  { q: "Comment limitez-vous les coupures ?", a: "Notre infrastructure utilise des serveurs premium avec CDN distribué et basculement automatique. En cas de problème sur un serveur, la lecture bascule automatiquement sur un serveur de secours, ce qui limite la durée des coupures sans pouvoir les exclure totalement." },
   { q: "Le service IPTV premium inclut-il la TV de rattrapage ?", a: "Oui. Stream Bleu inclut 7 jours de TV de rattrapage (catch-up) sur les principales chaînes françaises. Regardez vos émissions manquées à tout moment." },
   { q: "IPTV premium et abonnement IPTV premium : quelle différence de prix ?", a: "Aucune chez Stream Bleu : la qualité premium (4K, HDR10, serveurs anti-coupure, support prioritaire) est incluse dans tous les abonnements IPTV premium, sans supplément caché. Voir le détail sur notre page Prix IPTV." },
 ];
@@ -261,7 +261,7 @@ export default function IptvPremiumPage() {
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
             <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-              {[{l:"/iptv-france",t:"IPTV France"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/liste-chaines",t:"Liste des Chaînes"},{l:"/blog/iptv-sans-coupure",t:"IPTV Sans Coupure"},{l:"/essai-gratuit",t:"Essai Gratuit"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/blog/iptv-4k-france",t:"IPTV 4K"}].map(x => (
+              {[{l:"/iptv-france",t:"IPTV France"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/liste-chaines",t:"Liste des Chaînes"},{l:"/blog/iptv-sans-coupure",t:"IPTV Sans Coupure"},{l:"/essai-gratuit",t:"Essai Gratuit"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/blog/iptv-4k-france",t:"IPTV 4K"},{l:"/tarifs",t:"Nos Tarifs"},{l:"/abonnement-iptv-multi-ecrans",t:"Abonnement multi-écrans"},{l:"/abonnement-iptv-smart-tv",t:"Abonnement IPTV Smart TV"}].map(x => (
                 <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
               ))}
             </div>

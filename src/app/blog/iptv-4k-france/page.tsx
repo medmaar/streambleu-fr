@@ -25,7 +25,7 @@ const articleSchema = {
   headline: "IPTV 4K France 2026 — Ultra HD H.265 sans Coupure",
   description: "Guide complet pour profiter de l'IPTV 4K Ultra HD en France avec H.265/HEVC et HDR10.",
   datePublished: "2026-02-01",
-  dateModified: "2026-05-01",
+  dateModified: "2026-10-24",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-4k-france" },
@@ -95,7 +95,7 @@ export default function IPTV4KFrance() {
             <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 16, lineHeight: 1.7, maxWidth: 680 }}>
               Tout ce que vous devez savoir pour profiter de l'IPTV en qualité 4K Ultra HD en France : codec H.265, HDR10, Dolby Vision, compatibilité des appareils et quelle connexion internet vous faut-il.
             </p>
-            <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, marginTop: 20 }}>1 février 2026 · 10 min de lecture</p>
+            <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, marginTop: 20 }}>1 février 2026 · Mis à jour le 24 octobre 2026 · 10 min de lecture</p>
           </div>
         </section>
 
@@ -244,7 +244,28 @@ export default function IPTV4KFrance() {
           </div>
 
         </article>
-      <Prose sections={[{"h2": "Sources et liens officiels", "list": ["[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion", "[Arcep](https://www.arcep.fr) — régulateur des télécoms : fibre et qualité des réseaux"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
+      <Prose sections={[
+        {
+          h2: "Quel abonnement IPTV pour regarder en 4K ?",
+          paras: [
+            "Bonne nouvelle : la 4K n'est pas une option payante. Tous les forfaits Stream Bleu donnent accès aux mêmes flux, en HD comme en 4K ; ce qui change, c'est la durée et le nombre d'écrans qui regardent en même temps. Le vrai critère pour la 4K, c'est votre débit : environ 25 Mbps stables **par écran** qui regarde en 4K.",
+          ],
+          table: {
+            head: ["Usage", "Débit à prévoir", "Forfait 12 mois", "Prix"],
+            rows: [
+              ["1 TV en 4K", "≈ 25 Mbps", "[1 écran](/tarifs/12-mois)", "49 €"],
+              ["1 TV en 4K + 1 écran en HD", "≈ 35 Mbps", "[2 écrans](/tarifs/12-mois-2-connexions)", "89 €"],
+              ["2 TV en 4K + 1 écran en HD", "≈ 60 Mbps", "[3 écrans](/tarifs/12-mois-3-connexions)", "135 €"],
+            ],
+            caption: "Prix TTC, paiement unique sans renouvellement automatique. Toutes les durées (1, 3, 6 mois) sur la page Tarifs.",
+          },
+          list: [
+            "Grille complète de 1 à 10 écrans et débit pour plusieurs écrans : [abonnement IPTV multi-écrans](/abonnement-iptv-multi-ecrans).",
+            "TV Samsung ou LG : le forfait 12 mois inclut l'activation IBO Player, voir [abonnement IPTV Smart TV](/abonnement-iptv-smart-tv).",
+            "Ce que recouvre l'offre « premium » (H.265, HDR, VOD) : [IPTV Premium](/iptv-premium). Toutes les durées : [tarifs](/tarifs).",
+          ],
+        },
+        {"h2": "Sources et liens officiels", "list": ["[Speedtest](https://www.speedtest.net) — mesurer le débit réel de votre connexion", "[Arcep](https://www.arcep.fr) — régulateur des télécoms : fibre et qualité des réseaux"], "paras": ["Stream Bleu n'est affilié à aucun de ces sites."]}]} />
       </main>
     </>
   );

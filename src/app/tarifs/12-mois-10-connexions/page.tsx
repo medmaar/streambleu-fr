@@ -59,7 +59,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Comment recevoir mes identifiants après la commande ?",
-    a: "Après votre commande, notre équipe vous enverra vos identifiants IPTV directement par email en moins de 5 minutes. Vérifiez vos spams si vous ne les recevez pas.",
+    a: "Après votre commande, notre équipe vous enverra vos identifiants IPTV directement par e-mail en quelques minutes. Vérifiez vos spams si vous ne les recevez pas.",
   },
   {
     q: "Quels appareils sont compatibles avec ce forfait 10 connexions ?",
@@ -111,7 +111,7 @@ export default function PlanMultiPage() {
                 <span style={{ color: "#f5a623", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 450€</span>
                 <span style={{ background: "#f5a623", color: "#fff", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>-50% offre</span>
               </div>
-              <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 13 }}>Remplissez le formulaire — identifiants envoyés en moins de 5 minutes</p>
+              <p style={{ color: "rgba(255,255,255,0.75)", fontSize: 13 }}>Remplissez le formulaire — identifiants envoyés en quelques minutes</p>
             </div>
 
             <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)", marginBottom: 32 }}>

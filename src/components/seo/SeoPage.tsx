@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Block, Group, SeoPageData } from "@/content/seo/types";
 import { SEO_PAGES, labelFor } from "@/content/seo/registry";
 import { SOURCES } from "@/content/seo/sources";
-import { PRICES } from "@/lib/pricing";
+import { PRICES, DURATIONS, planHref, euros } from "@/lib/pricing";
 
 const SITE = "https://streambleu.fr";
 
@@ -79,6 +79,41 @@ function HubGrid({ group, region }: { group: Group; region?: string }) {
           <span style={{ display: "block", fontSize: 13, lineHeight: 1.6, color: "#444" }}>{p.cardText}</span>
         </Link>
       ))}
+    </div>
+  );
+}
+
+const MONTHS = [1, 3, 6, 12];
+
+// Official grid from src/lib/pricing.ts: prices can never drift from the order pages.
+function PriceGrid({ screens, perMonth, caption }: { screens: number[]; perMonth?: boolean; caption?: string }) {
+  return (
+    <div style={{ overflowX: "auto", marginBottom: 24, borderRadius: 14, border: "1px solid rgba(123,135,232,0.2)" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, minWidth: 520 }}>
+        <caption style={{ captionSide: "bottom", fontSize: 12, color: "#666", padding: 8 }}>
+          {caption ?? "Prix TTC en euros, paiement unique sans renouvellement automatique. Cliquez sur un prix pour commander ce forfait."}
+        </caption>
+        <thead>
+          <tr style={{ background: "#5a5fcf" }}>
+            <th style={{ color: "#fff", textAlign: "left", padding: "12px 14px", fontWeight: 700 }}>Écrans</th>
+            {DURATIONS.map((d) => <th key={d} style={{ color: "#fff", textAlign: "left", padding: "12px 14px", fontWeight: 700 }}>{d.toLowerCase()}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {screens.map((n, i) => (
+            <tr key={n} style={{ background: i % 2 ? "#fdf5ff" : "#fff" }}>
+              <td style={{ padding: "11px 14px", color: "#1a1a4e", fontWeight: 700, borderTop: "1px solid rgba(123,135,232,0.12)" }}>{n} écran{n > 1 ? "s" : ""}</td>
+              {DURATIONS.map((d, j) => (
+                <td key={d} style={{ padding: "11px 14px", color: "#444", borderTop: "1px solid rgba(123,135,232,0.12)" }}>
+                  <Link href={planHref(n, d)} style={LINK}>{euros(PRICES[n][j])}</Link>
+                  {perMonth && <span style={{ display: "block", fontSize: 12, color: "#666", whiteSpace: "nowrap" }}>{euros(PRICES[n][j] / MONTHS[j], 2)}/mois</span>}
+                  {perMonth && n > 1 && <span style={{ display: "block", fontSize: 12, color: "#666", whiteSpace: "nowrap" }}>soit {euros(PRICES[n][j] / MONTHS[j] / n, 2)}/écran</span>}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
@@ -167,6 +202,8 @@ function RenderBlock({ b }: { b: Block }) {
       );
     case "hub":
       return <HubGrid group={b.group} region={b.region} />;
+    case "prices":
+      return <PriceGrid screens={b.screens} perMonth={b.perMonth} caption={b.caption} />;
   }
 }
 
@@ -209,6 +246,8 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
   const url = SITE + page.slug;
   const trail = crumbs(page);
   const hub = page.parent ?? HUB_LABEL[page.group];
+  // Money pages lead with the order flow; the free trial stays as the secondary option.
+  const money = page.group === "commercial";
   const img = page.image && IMAGES[page.image.src] ? { ...page.image, size: IMAGES[page.image.src] } : null;
 
   const schemas: object[] = [
@@ -257,7 +296,7 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
       name: "Abonnement IPTV Stream Bleu",
       serviceType: "Abonnement IPTV",
       provider: { "@type": "Organization", name: "Stream Bleu", url: SITE },
-      areaServed: { "@type": "Country", name: "France" },
+      areaServed: { "@type": "Country", name: page.areaServed ?? "France" },
       offers: { "@type": "AggregateOffer", priceCurrency: "EUR", lowPrice: Math.min(...all), highPrice: Math.max(...all), offerCount: all.length, url: SITE + "/tarifs" },
     });
   }
@@ -315,12 +354,25 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
             <h1 style={{ fontSize: "clamp(28px,4.5vw,48px)", fontWeight: 900, color: "#fff", lineHeight: 1.15, marginBottom: 18 }}>{page.h1}</h1>
             <p style={{ color: "rgba(255,255,255,0.88)", fontSize: 16, lineHeight: 1.7, maxWidth: 680, marginBottom: 28 }}>{plain(page.intro).split(/(?<=[.!?])\s/)[0]}</p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 800, fontSize: 15, padding: "14px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(245,166,35,0.4)" }}>
-                Essai Gratuit 24h
-              </Link>
-              <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
-                Voir les Tarifs →
-              </Link>
+              {money ? (
+                <>
+                  <Link href="/tarifs" style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 800, fontSize: 15, padding: "14px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(245,166,35,0.4)" }}>
+                    Choisir mon abonnement →
+                  </Link>
+                  <Link href="/essai-gratuit" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+                    Essai Gratuit 24h
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 800, fontSize: 15, padding: "14px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block", boxShadow: "0 6px 20px rgba(245,166,35,0.4)" }}>
+                    Essai Gratuit 24h
+                  </Link>
+                  <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.5)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "12px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+                    Voir les Tarifs →
+                  </Link>
+                </>
+              )}
             </div>
             <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 13, marginTop: 22 }}>
               Par l&apos;équipe Stream Bleu · Mis à jour le {frDate(page.dateModified)}{page.readTime ? ` · ${page.readTime} de lecture` : ""}
@@ -368,8 +420,17 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
               )}
               {i === Math.floor(page.sections.length / 2) && page.sections.length > 2 && (
                 <div style={{ ...CARD, display: "flex", flexWrap: "wrap", gap: 14, alignItems: "center", justifyContent: "space-between", margin: "8px 0 8px" }}>
-                  <p style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1a1a4e" }}>Testez Stream Bleu sur votre appareil pendant 24h, sans engagement.</p>
-                  <Link href="/essai-gratuit" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 14, padding: "10px 22px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>Essai gratuit →</Link>
+                  {money ? (
+                    <>
+                      <p style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1a1a4e" }}>Abonnement dès {euros(PRICES[1][0])} le mois, {euros(PRICES[1][3])} les 12 mois. Identifiants envoyés par e-mail après la commande.</p>
+                      <Link href={planHref(1, "12 Mois")} style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 14, padding: "10px 22px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>Commander 12 mois →</Link>
+                    </>
+                  ) : (
+                    <>
+                      <p style={{ margin: 0, fontSize: 14, fontWeight: 700, color: "#1a1a4e" }}>Testez Stream Bleu sur votre appareil pendant 24h, sans engagement.</p>
+                      <Link href="/essai-gratuit" style={{ background: "#5a5fcf", color: "#fff", fontWeight: 700, fontSize: 14, padding: "10px 22px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>Essai gratuit →</Link>
+                    </>
+                  )}
                 </div>
               )}
             </section>
@@ -440,11 +501,11 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
               {page.cta?.text ?? "Sans engagement · Activation rapide · Support en français 7j/7"}
             </p>
             <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/essai-gratuit" style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 800, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
-                Essai Gratuit 24h
+              <Link href={money ? "/tarifs" : "/essai-gratuit"} style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 800, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+                {money ? "Choisir mon abonnement →" : "Essai Gratuit 24h"}
               </Link>
-              <Link href="/tarifs" style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
-                Voir les Tarifs →
+              <Link href={money ? "/essai-gratuit" : "/tarifs"} style={{ background: "transparent", border: "2px solid rgba(255,255,255,0.35)", color: "#fff", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 12, textDecoration: "none", display: "inline-block" }}>
+                {money ? "Essai Gratuit 24h" : "Voir les Tarifs →"}
               </Link>
             </div>
           </div>

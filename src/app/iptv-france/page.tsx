@@ -202,7 +202,7 @@ export default function IptvFrancePage() {
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
             <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-              {[{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/liste-chaines",t:"Chaînes IPTV"},{l:"/essai-gratuit",t:"Essai Gratuit"}].map(x => (
+              {[{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/liste-chaines",t:"Chaînes IPTV"},{l:"/essai-gratuit",t:"Essai Gratuit"},{l:"/tarifs",t:"Nos Tarifs"},{l:"/abonnement-iptv-multi-ecrans",t:"Abonnement multi-écrans"},{l:"/abonnement-iptv-smart-tv",t:"Abonnement IPTV Smart TV"},{l:"/acheter-abonnement-iptv",t:"Acheter un abonnement IPTV"}].map(x => (
                 <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
               ))}
             </div>

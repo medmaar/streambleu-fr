@@ -156,7 +156,7 @@ export default function ParrainagePage() {
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 32, display: "flex", gap: 8, flexWrap: "wrap", justifyContent: "center" }}>
-            {[{ l: "/tarifs", t: "Nos Tarifs" }, { l: "/revendeur", t: "Programme Revendeur" }, { l: "/essai-gratuit", t: "Essai Gratuit" }, { l: "/contact", t: "Contact" }].map((x) => (
+            {[{ l: "/tarifs", t: "Nos Tarifs" }, { l: "/revendeur", t: "Programme Revendeur" }, { l: "/essai-gratuit", t: "Essai Gratuit" }, { l: "/contact", t: "Contact" }, { l: "/acheter-abonnement-iptv", t: "Acheter un abonnement IPTV" }].map((x) => (
               <Link key={x.l} href={x.l} style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.25)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#fff", textDecoration: "none" }}>{x.t}</Link>
             ))}
           </div>

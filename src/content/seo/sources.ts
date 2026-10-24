@@ -32,6 +32,9 @@ const VIDAA: Source = { label: "VIDAA", href: "https://www.vidaa.com", note: "sy
 const XIAOMI: Source = { label: "Xiaomi France", href: "https://www.mi.com/fr/", note: "site officiel du fabricant" };
 const WINDOWS: Source = { label: "Windows", href: "https://www.microsoft.com/fr-fr/windows", note: "page officielle Microsoft" };
 const FREE: Source = { label: "Free", href: "https://www.free.fr", note: "site officiel de l'opérateur (Freebox)" };
+const IBPT: Source = { label: "IBPT", href: "https://www.ibpt.be", note: "régulateur belge des télécoms : couverture et comparaison des opérateurs" };
+const OFCOM_CH: Source = { label: "OFCOM", href: "https://www.bakom.admin.ch", note: "Office fédéral de la communication (Suisse) : télécoms et radio-TV" };
+const SERAFE: Source = { label: "Serafe", href: "https://www.serafe.ch", note: "organe de perception de la redevance radio-TV en Suisse" };
 const DGCCRF: Source = { label: "DGCCRF", href: "https://www.economie.gouv.fr/dgccrf", note: "répression des pratiques commerciales trompeuses, dont les faux avis" };
 const AFTV: Source = { label: "AFTVnews", href: "https://www.aftvnews.com", note: "éditeur de l'application Downloader" };
 
@@ -72,6 +75,11 @@ export const SOURCES: Record<string, Source[]> = {
   "/blog/iptv-wifi-ou-ethernet": [SPEEDTEST, ARCEP],
   "/blog/ott-iptv": [WIKI_IPTV, ARCOM],
   "/fournisseur-iptv": [ARCOM],
+  "/abonnement-iptv-multi-ecrans": [SPEEDTEST, ARCEP],
+  "/abonnement-iptv-smart-tv": [SAMSUNG, LG, ANDROID_TV],
+  "/acheter-abonnement-iptv": [DGCCRF],
+  "/iptv-belgique": [IBPT, SPEEDTEST],
+  "/iptv-suisse": [OFCOM_CH, SERAFE, SPEEDTEST],
   "/meilleur-iptv-france": [ARCOM, SPEEDTEST],
   "/comparatif-iptv": [ARCOM],
   // Region and city pages: network advice → telecom regulator + speed test
