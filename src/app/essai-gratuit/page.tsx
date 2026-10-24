@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Stream Bleu Essai Gratuit IPTV France" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Stream Bleu Essai Gratuit IPTV France" }],
   },
   twitter: { card: "summary_large_image" },
 };
 
 const faqItems: FaqItem[] = [
-  { q: "Comment obtenir l'essai gratuit ?", a: "Remplissez simplement le formulaire ci-dessus et soumettez votre demande. Notre équipe activera votre essai en quelques minutes — généralement en moins de 5 minutes." },
+  { q: "Comment obtenir l'essai gratuit ?", a: "Remplissez simplement le formulaire ci-dessus et soumettez votre demande. Notre équipe activera votre essai en quelques minutes." },
   { q: "L'essai gratuit donne-t-il accès à toutes les chaînes ?", a: "Oui. Votre essai de 24h vous donne un accès complet à toutes les 50 000+ chaînes en direct, 300 000+ titres VOD, et tous les packages sportifs — sans restriction." },
   { q: "Combien d'appareils puis-je utiliser pendant l'essai ?", a: "Votre essai inclut une connexion simultanée. Si vous souhaitez tester sur plusieurs appareils, contactez-nous et nous pouvons l'organiser." },
   { q: "Que se passe-t-il après 24 heures ?", a: "Votre essai s'arrête simplement. Aucun frais, aucune annulation nécessaire. Si vous souhaitez continuer, contactez-nous pour choisir un forfait." },
@@ -46,7 +46,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Stream Bleu", "item": "https://streambleu.fr"},
-    {"@type": "ListItem", "position": 2, "name": "Essai Gratuit IPTV France — Testez Stream Bleu San", "item": "https://streambleu.fr/essai-gratuit"}
+    {"@type": "ListItem", "position": 2, "name": "Essai gratuit IPTV", "item": "https://streambleu.fr/essai-gratuit"}
   ]
 };
 export default function FreeTrialPage() {
@@ -71,7 +71,7 @@ export default function FreeTrialPage() {
                 <span style={{ color: "#ffd166", fontWeight: 900, fontSize: "2.4rem" }}>Prix : 0€</span>
                 <span style={{ background: "#f5a623", color: "#1a1a4e", fontWeight: 700, fontSize: 12, padding: "5px 14px", borderRadius: 999 }}>Sans carte bancaire</span>
               </div>
-              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en moins de 5 minutes.</p>
+              <p style={{ color: "#ffffff", fontSize: 15, fontWeight: 600, lineHeight: 1.5, maxWidth: 440, margin: "0 auto" }}>Entrez vos informations ci-dessous et recevez vos identifiants en quelques minutes.</p>
             </div>
 
             <div style={{ background: "#5a5fcf", borderRadius: 24, padding: "32px", boxShadow: "0 8px 32px rgba(90,95,207,0.25)" }}>

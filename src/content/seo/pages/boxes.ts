@@ -107,7 +107,6 @@ export const BOX_PAGES: SeoPageData[] = [
     ],
     faq: [
       { q: "Peut-on regarder l'IPTV sur un Fire TV Stick ?", a: "Oui. Il suffit d'installer un lecteur IPTV (TiviMate, IPTV Smarters Pro, IBO Player) avec l'application Downloader, puis d'ajouter les identifiants de votre abonnement IPTV." },
-      { q: "Qu'est-ce qu'une « clé Amazon IPTV » ?", a: "C'est un Fire TV Stick sur lequel on a installé une application IPTV. La clé elle-même est un produit Amazon standard ; les chaînes viennent de votre abonnement IPTV." },
       { q: "Quel Fire TV Stick choisir pour l'IPTV 4K ?", a: "Le Fire TV Stick 4K Max : plus de mémoire vive et un meilleur Wi-Fi, ce qui rend le zapping plus fluide sur les grosses listes." },
       { q: "Faut-il un VPN sur Fire Stick pour l'IPTV ?", a: "Non, un VPN n'est pas nécessaire pour faire fonctionner l'IPTV. Il ne rend pas légal un contenu qui ne l'est pas et peut ajouter de la latence." },
       { q: "Pourquoi mon Fire Stick IPTV rame ?", a: "Le plus souvent : Wi-Fi 2,4 GHz saturé, alimentation insuffisante ou mémoire pleine. Passez en 5 GHz ou Ethernet, utilisez le bloc secteur d'origine et videz le cache." },

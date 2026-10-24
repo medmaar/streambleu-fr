@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     title: "IPTV Français 2026 — Chaînes Françaises en 4K | Stream Bleu",
     description: "IPTV Français : toutes les chaînes françaises en 4K Ultra HD. Support en français 24/7.",
     url: "https://streambleu.fr/iptv-francais", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Français Stream Bleu" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Français Stream Bleu" }],
   },
 };
 
 const frenchChannelGroups = [
-  { group: "🇫🇷 TNT Généraliste", channels: ["TF1 4K", "France 2 4K", "France 3", "France 4", "France 5", "M6 4K", "Arte 4K", "C8", "W9", "TMC", "TFX", "6ter", "C Star"] },
+  { group: "🇫🇷 TNT Généraliste", channels: ["TF1 4K", "France 2 4K", "France 3", "France 4", "France 5", "M6 4K", "Arte 4K", "W9", "TMC", "TFX", "6ter", "C Star"] },
   { group: "📰 Info & Actualités", channels: ["BFM TV 4K", "CNews", "LCI", "BFM Business", "France 24", "Public Sénat", "LCP Assemblée", "CNEWS", "Europe 1 TV"] },
   { group: "⚽ Sport Premium", channels: ["beIN Sports 1", "beIN Sports 2", "beIN Sports 3", "RMC Sport 1", "RMC Sport 2", "Canal+ Sport", "Eurosport 1", "Eurosport 2", "L'Équipe TV"] },
   { group: "🎬 Canal+ & Cinéma", channels: ["Canal+ 4K", "Canal+ Cinéma", "Canal+ Séries", "Canal+ Docs", "Ciné+ Premier", "Ciné+ Club", "Ciné+ Émotion"] },
@@ -24,7 +24,7 @@ const frenchChannelGroups = [
 ];
 
 const faqItems = [
-  { q: "Quelles sont les chaînes françaises disponibles en IPTV ?", a: "Stream Bleu propose toutes les chaînes françaises disponibles : TF1, France 2, France 3 (avec les déclinaisons régionales), M6, Arte, C8, Canal+, beIN Sports 1/2/3, RMC Sport 1/2, BFM TV, CNews, LCI, et bien plus encore. Plus de 180 chaînes françaises au total." },
+  { q: "Quelles sont les chaînes françaises disponibles en IPTV ?", a: "Stream Bleu propose toutes les chaînes françaises disponibles : TF1, France 2, France 3 (avec les déclinaisons régionales), M6, Arte, Canal+, beIN Sports 1/2/3, RMC Sport 1/2, BFM TV, CNews, LCI, et bien plus encore. Plus de 180 chaînes françaises au total." },
   { q: "Le service IPTV français fonctionne-t-il en dehors de France ?", a: "Oui. Stream Bleu fonctionne dans toute l'Europe et dans le monde entier. Les expatriés français peuvent regarder leurs chaînes françaises préférées depuis n'importe où grâce à notre service IPTV." },
   { q: "Les chaînes françaises sont-elles en direct ou en décalé ?", a: "Toutes les chaînes françaises Stream Bleu sont diffusées en direct (live). De plus, les principales chaînes proposent 7 jours de TV de rattrapage (catch-up) pour regarder les émissions manquées." },
   { q: "Y a-t-il un IPTV français qui fonctionne sans VPN ?", a: "Oui. Stream Bleu fonctionne sans VPN depuis la France et depuis l'étranger. Notre infrastructure est optimisée pour une diffusion directe sans nécessiter de services supplémentaires." },

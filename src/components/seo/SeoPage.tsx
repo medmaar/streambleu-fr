@@ -272,7 +272,7 @@ export default function SeoPage({ page }: { page: SeoPageData }) {
           datePublished: page.datePublished,
           dateModified: page.dateModified,
           author: { "@type": "Organization", name: "Équipe Stream Bleu", url: SITE },
-          publisher: { "@type": "Organization", name: "Stream Bleu", url: SITE, logo: { "@type": "ImageObject", url: SITE + "/favicon.svg" } },
+          publisher: { "@type": "Organization", name: "Stream Bleu", url: SITE, logo: { "@type": "ImageObject", url: SITE + "/logo-stream-bleu.png" } },
           mainEntityOfPage: { "@type": "WebPage", "@id": url },
         }
       : {

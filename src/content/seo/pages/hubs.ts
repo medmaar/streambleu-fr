@@ -200,7 +200,6 @@ export const HUB_PAGES: SeoPageData[] = [
     ],
     faq: [
       { q: "Quel est le meilleur boîtier IPTV en 2026 ?", a: "Pour la majorité des foyers, le Fire TV Stick 4K Max ou le Chromecast avec Google TV offrent le meilleur rapport qualité-prix. Pour la fluidité maximale et la 4K HDR, la Nvidia Shield TV et le Formuler Z11 Pro Max restent au-dessus." },
-      { q: "Peut-on regarder l'IPTV sur une TV non connectée ?", a: "Oui. Il suffit de brancher un boîtier IPTV ou une clé HDMI sur la TV : c'est le boîtier qui se connecte à internet et lit l'abonnement. Une TV avec un port HDMI suffit." },
       { q: "Un décodeur IPTV fonctionne-t-il sans abonnement ?", a: "Non. Le décodeur IPTV lit le flux mais ne fournit pas les chaînes. Il faut un abonnement IPTV avec des identifiants Xtream Codes, un lien M3U ou un portail MAG." },
       { q: "Box Android ou boîtier MAG : que choisir ?", a: "Une box Android accepte toutes les applications (TiviMate, Kodi, YouTube, Netflix selon certification). Un boîtier MAG est plus simple et stable mais limité à l'IPTV. Pour un usage familial polyvalent, choisissez Android ; pour un proche peu technophile, un MAG." },
       { q: "Faut-il un boîtier en Ethernet ou en Wi-Fi ?", a: "L'Ethernet est plus stable, surtout en 4K. En Wi-Fi 5 GHz, un débit réel de 25 Mbit/s suffit généralement. Voir notre guide [IPTV Wi-Fi ou Ethernet](/blog/iptv-wifi-ou-ethernet)." },

@@ -7,13 +7,13 @@ export const metadata: Metadata = {
     "Avertissement légal Stream Bleu : nous n'hébergeons ni ne diffusons aucun contenu protégé. Le contenu provient de fournisseurs tiers indépendants.",
   alternates: { canonical: "https://streambleu.fr/avertissement", languages: { "fr-FR": "https://streambleu.fr/avertissement", "x-default": "https://streambleu.fr/avertissement" } },
   openGraph: {
-    title: "Avertissement légal | Stream Bleu",
+    title: "Avertissement légal IPTV | Stream Bleu",
     description: "Stream Bleu n'héberge ni ne diffuse aucun contenu protégé. Le contenu provient de fournisseurs tiers indépendants.",
     url: "https://streambleu.fr/avertissement",
     type: "website",
     siteName: "Stream Bleu",
     locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "Stream Bleu – Avertissement légal" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Stream Bleu – Avertissement légal" }],
   },
   twitter: { card: "summary_large_image" },
 };

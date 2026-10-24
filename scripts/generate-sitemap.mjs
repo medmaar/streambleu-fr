@@ -24,8 +24,16 @@ const seoModified = new Map();
 for (const f of readdirSync("src/content/seo/pages")) {
   const src = readFileSync(join("src/content/seo/pages", f), "utf8");
   for (const m of src.matchAll(/slug: "([^"]+)",\s*noindex: true/g)) noindexSeo.add(m[1]);
-  // Registry pages: lastmod = the page's own dateModified, not the wrapper file's commit date
-  for (const m of src.matchAll(/slug: "([^"]+)",[\s\S]*?dateModified: "(\d{4}-\d{2}-\d{2})"/g)) seoModified.set(m[1], m[2]);
+  // Registry pages: lastmod = the page's own dateModified, not the wrapper file's commit date.
+  // dateModified is either a literal date or a file-level constant (const D = "2026-…").
+  const consts = new Map([...src.matchAll(/^const (\w+) = "(\d{4}-\d{2}-\d{2})";/gm)].map((m) => [m[1], m[2]]));
+  const blocks = src.split(/(?=slug: ")/).slice(1);
+  for (const b of blocks) {
+    const slug = b.match(/^slug: "([^"]+)"/)[1];
+    const d = b.match(/dateModified: (?:"(\d{4}-\d{2}-\d{2})"|(\w+))/);
+    const date = d && (d[1] || consts.get(d[2]));
+    if (date) seoModified.set(slug, date);
+  }
 }
 const isNoindex = (file, route) => noindexSeo.has(route) || /robots:\s*\{\s*index:\s*false/.test(readFileSync(file, "utf8"));
 

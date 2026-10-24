@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "IPTV Fire Stick France 2026 — Installation Complète | Stream Bleu",
     description: "Guide pas à pas pour installer un IPTV sur Amazon Fire Stick en France. TiviMate, Smarters Pro.",
     url: "https://streambleu.fr/blog/iptv-firestick-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Fire Stick France 2026" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Fire Stick France 2026" }],
   },
 };
 

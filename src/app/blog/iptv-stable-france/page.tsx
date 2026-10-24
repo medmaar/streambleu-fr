@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "IPTV Stable France 2026 — Critères et Tests | Stream Bleu",
     description: "Critères d'un IPTV stable, architecture serveur, uptime et méthode de test avant achat.",
     url: "https://streambleu.fr/blog/iptv-stable-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Stable France 2026" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Stable France 2026" }],
   },
 };
 
@@ -21,9 +21,9 @@ const articleSchema = {
   description: "Guide complet sur la stabilité d'un service IPTV en France : infrastructure, redondance, uptime et tests.",
   datePublished: "2026-04-05", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
-  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/logo-stream-bleu.png" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-stable-france" },
-  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
 };
 
 const faqItems = [

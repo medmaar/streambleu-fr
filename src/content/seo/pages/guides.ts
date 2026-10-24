@@ -473,7 +473,6 @@ export const GUIDE_PAGES: SeoPageData[] = [
       { q: "L'IPTV fonctionne-t-il en Wi-Fi ?", a: "Oui, à condition d'avoir un Wi-Fi 5 GHz stable avec au moins 10 Mbit/s en HD et 25 Mbit/s en 4K par écran. L'Ethernet reste plus fiable." },
       { q: "Quel débit faut-il pour l'IPTV 4K ?", a: "Environ 25 Mbit/s stables par écran en 4K. La fibre permet plusieurs flux 4K simultanés sans difficulté." },
       { q: "Le CPL est-il bien pour l'IPTV ?", a: "Oui, le CPL est une bonne solution si la TV est loin de la box, à condition que les prises soient sur le même circuit électrique et sans multiprise." },
-      { q: "Combien de connexions IPTV me faut-il ?", a: "Autant que d'écrans utilisés en même temps. Une seule connexion suffit si une seule personne regarde à la fois." },
       { q: "IPTV : combien de connexions faut-il prévoir ?", a: "Une connexion par écran qui regarde en même temps. Une famille avec une TV au salon et une dans une chambre a besoin de 2 connexions, par exemple le forfait 12 mois 2 écrans à 89 €. Comptez aussi le débit : environ 10 Mbit/s par écran en HD. Grille de 1 à 10 écrans : [abonnement IPTV multi-écrans](/abonnement-iptv-multi-ecrans)." },
       { q: "Peut-on regarder l'IPTV en Wi-Fi ?", a: "Oui, l'IPTV fonctionne très bien en Wi-Fi 5 GHz si la TV est proche de la box. Si l'image saccade le soir, passez en Ethernet ou en CPL : c'est la solution la plus simple pour une IPTV sans coupure." },
     ],

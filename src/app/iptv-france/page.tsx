@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "IPTV France 2026 — 50 000+ Chaînes en Direct | Stream Bleu",
     description: "IPTV France (IPTVFrance) : service IPTV pour la France, 4K Ultra HD, lecteurs standards. Essai gratuit 24h.",
     url: "https://streambleu.fr/iptv-france", type: "website", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV France Stream Bleu" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV France Stream Bleu" }],
   },
 };
 
@@ -108,7 +108,7 @@ const features = [
   { icon: "✅", title: "Essai Gratuit 24h", desc: "Testez sans carte bancaire. Accès complet, activation en 5 min." },
 ];
 
-const channels = ["TF1 4K","France 2 4K","M6","Arte","Canal+","beIN Sports 1","beIN Sports 2","beIN Sports 3","RMC Sport 1","RMC Sport 2","BFM TV","CNews","LCI","C8","W9","TMC","TFX","France 3","Eurosport 1","TV5 Monde","France 24","Canal+ Sport"];
+const channels = ["TF1 4K","France 2 4K","M6","Arte","Canal+","beIN Sports 1","beIN Sports 2","beIN Sports 3","RMC Sport 1","RMC Sport 2","BFM TV","CNews","LCI","W9","TMC","TFX","France 3","Eurosport 1","TV5 Monde","France 24","Canal+ Sport"];
 
 
 const breadcrumbSchema = {

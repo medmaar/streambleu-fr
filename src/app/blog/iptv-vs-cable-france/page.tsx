@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "IPTV vs Câble France 2026 — Comparatif Complet | Stream Bleu",
     description: "IPTV ou câble/satellite ? Comparatif complet pour la France en 2026 : prix, qualité, contrats.",
     url: "https://streambleu.fr/blog/iptv-vs-cable-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV vs Câble France 2026" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV vs Câble France 2026" }],
   },
 };
 
@@ -21,9 +21,9 @@ const articleSchema = {
   description: "Comparaison détaillée entre les services IPTV et le câble/satellite traditionnels en France pour 2026.",
   datePublished: "2026-02-10", dateModified: "2026-05-01",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
-  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/logo-stream-bleu.png" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-vs-cable-france" },
-  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
 };
 
 const breadcrumbSchema = {

@@ -183,7 +183,6 @@ export const DEVICE_PAGES: SeoPageData[] = [
     ],
     faq: [
       { q: "Quelle application IPTV installer sur une TV LG ?", a: "Smart IPTV et IBO Player sont les plus fiables sur webOS. SS IPTV est une option gratuite, Flix IPTV une alternative moderne." },
-      { q: "IPTV Smarters Pro fonctionne-t-il sur LG ?", a: "Sa disponibilité sur le LG Content Store varie selon les modèles et les pays. Si vous ne le trouvez pas, IBO Player offre une interface très proche." },
       { q: "TiviMate existe-t-il sur LG ?", a: "Non. TiviMate est réservé à Android. Utilisez un Fire TV Stick ou une box Android TV branchée à la TV LG." },
       { q: "Comment trouver l'adresse MAC de ma TV LG ?", a: "Le lecteur IPTV l'affiche au démarrage. Vous la trouvez aussi dans Paramètres → Général → À propos de ce téléviseur → Réseau." },
       { q: "IPTV Smarters fonctionne-t-il sur TV LG ?", a: "Selon le modèle et la version de webOS, IPTV Smarters peut être absent du LG Content Store. IBO Player, Smart IPTV et SS IPTV sont les lecteurs les plus fiables sur les TV LG ; sinon, une clé Fire TV Stick règle le problème." },
@@ -464,7 +463,6 @@ export const DEVICE_PAGES: SeoPageData[] = [
     faq: [
       { q: "Quelle application IPTV sur iPhone ?", a: "Smarters Player Lite (gratuit), IPTVX et GSE Smart IPTV sont les plus utilisées. Toutes fonctionnent avec un abonnement Xtream Codes ou M3U." },
       { q: "IPTV Smarters Pro existe-t-il sur iPhone ?", a: "Sur iPhone, l'application officielle s'appelle Smarters Player Lite. Elle utilise les mêmes identifiants qu'IPTV Smarters Pro." },
-      { q: "Peut-on regarder l'IPTV sur iPad ?", a: "Oui, les mêmes applications fonctionnent sur iPad avec une interface adaptée au grand écran." },
       { q: "Comment mettre l'IPTV de l'iPhone sur la TV ?", a: "Avec AirPlay vers une Apple TV ou une TV compatible AirPlay 2, ou en installant directement le lecteur sur l'Apple TV pour une meilleure qualité." },
       { q: "Peut-on regarder l'IPTV sur un téléphone ou un iPad ?", a: "Oui. Sur iPhone et iPad, installez Smarters Player Lite depuis l'App Store ; sur un téléphone Android, IPTV Smarters Pro ou Smarters Player Lite. En 4G ou 5G, surveillez votre forfait : une heure en HD consomme environ 3 Go." },
     ],
@@ -984,7 +982,6 @@ export const DEVICE_PAGES: SeoPageData[] = [
     ],
     faq: [
       { q: "Peut-on installer l'IPTV sur une TV Hisense VIDAA ?", a: "Oui, si un lecteur IPTV est disponible dans l'App Store VIDAA de votre modèle. Sinon, branchez un Fire TV Stick ou un Chromecast avec Google TV." },
-      { q: "Smart IPTV fonctionne-t-il sur Hisense VIDAA ?", a: "Smart IPTV n'est généralement pas proposé sur VIDAA. Cherchez les lecteurs disponibles dans la boutique ou utilisez une clé HDMI." },
       { q: "Comment savoir si ma TV Hisense est sous VIDAA ou Google TV ?", a: "Regardez l'écran d'accueil : un store « Google Play » indique Google TV, un « App Store » VIDAA indique VIDAA OS. La fiche technique du modèle le précise aussi." },
       { q: "Smart IPTV fonctionne-t-il sur Hisense VIDAA ?", a: "Smart IPTV n'est en général pas proposé sur VIDAA. Cherchez les lecteurs disponibles dans la boutique VIDAA de votre TV ou, plus simple, branchez une clé Fire TV Stick avec TiviMate." },
     ],

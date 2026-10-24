@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   keywords: "iptv legal france, iptv légal france 2026, arcom iptv france, loi iptv france, iptv illégal risques france, iptv légal, iptv legale, legality of iptv",
   alternates: { canonical: "https://streambleu.fr/blog/iptv-legal-france", languages: { "fr-FR": "https://streambleu.fr/blog/iptv-legal-france", "x-default": "https://streambleu.fr/blog/iptv-legal-france" } },
   openGraph: {
-    title: "L'IPTV est-il Légal en France en 2026 ? Analyse Complète | Stream Bleu",
+    title: "IPTV Légal en France 2026 ? La Réponse | Stream Bleu",
     description: "Analyse complète de la légalité de l'IPTV en France : loi, Arcom, risques utilisateurs. Guide 2026.",
     url: "https://streambleu.fr/blog/iptv-legal-france", type: "article", siteName: "Stream Bleu", locale: "fr_FR",
-    images: [{ url: "/abonnement-iptv-france-1.jpg", width: 800, height: 533, alt: "IPTV Légal France 2026" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "IPTV Légal France 2026" }],
   },
 };
 
@@ -21,9 +21,9 @@ const articleSchema = {
   description: "Analyse de la législation française sur l'IPTV, rôle de l'Arcom, droits des utilisateurs et risques réels.",
   datePublished: "2026-02-05", dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
-  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/favicon.svg" } },
+  publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr", logo: { "@type": "ImageObject", url: "https://streambleu.fr/logo-stream-bleu.png" } },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-legal-france" },
-  image: { "@type": "ImageObject", url: "https://streambleu.fr/abonnement-iptv-france-1.jpg", width: 800, height: 533 },
+  image: { "@type": "ImageObject", url: "https://streambleu.fr/og-image.jpg", width: 1200, height: 630 },
 };
 
 const faqItems = [
