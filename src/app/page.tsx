@@ -517,6 +517,11 @@ export default function HomePage() {
                 {l:"/iptv-smarters-pro", t:"IPTV Smarters Pro"},
                 {l:"/tivimate", t:"TiviMate"},
                 {l:"/prix-iptv", t:"Prix IPTV"},
+                {l:"/abonnement-iptv-multi-ecrans", t:"Abonnement multi-écrans"},
+                {l:"/abonnement-iptv-smart-tv", t:"Abonnement IPTV Smart TV"},
+                {l:"/acheter-abonnement-iptv", t:"Acheter un abonnement IPTV"},
+                {l:"/iptv-belgique", t:"IPTV Belgique"},
+                {l:"/iptv-suisse", t:"IPTV Suisse"},
                 {l:"/comparatif-iptv", t:"Comparatif IPTV"},
                 {l:"/fournisseur-iptv", t:"Fournisseur IPTV"},
                 {l:"/alternatives-iptv", t:"Alternatives IPTV"},
@@ -536,7 +541,7 @@ export default function HomePage() {
               Commencez à streamer dès aujourd&apos;hui
             </h2>
             <p style={{ color: "#1a1a4e", marginBottom: 36, fontSize: 16, lineHeight: 1.7 }}>
-              Le seul IPTV français construit autour du vrai 4K Ultra HD. H.265/HEVC, HDR10 &amp; Dolby Vision — à partir de 9€/mois. Essai gratuit, sans carte bancaire.
+              Un IPTV français construit autour de la 4K Ultra HD. H.265/HEVC, HDR10 &amp; Dolby Vision — à partir de 9€/mois. Essai gratuit, sans carte bancaire.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/essai-gratuit" style={{

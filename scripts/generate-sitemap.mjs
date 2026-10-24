@@ -51,7 +51,7 @@ function lastmod(file, route) {
 function meta(route) {
   if (route === "/") return ["daily", "1.0"];
   if (["/abonnement-iptv", "/iptv-france", "/iptv-premium", "/meilleur-iptv-france", "/tarifs", "/essai-gratuit"].includes(route)) return ["weekly", "0.95"];
-  if (["/applications-iptv", "/boitier-iptv", "/appareils-iptv", "/prix-iptv", "/comparatif-iptv", "/blog", "/liste-chaines", "/iptv-francais"].includes(route)) return ["weekly", "0.9"];
+  if (["/applications-iptv", "/boitier-iptv", "/appareils-iptv", "/prix-iptv", "/comparatif-iptv", "/blog", "/liste-chaines", "/iptv-francais", "/abonnement-iptv-multi-ecrans", "/abonnement-iptv-smart-tv", "/acheter-abonnement-iptv", "/iptv-belgique", "/iptv-suisse"].includes(route)) return ["weekly", "0.9"];
   if (/^\/(politique|conditions|avertissement|dmca)/.test(route)) return ["yearly", "0.3"];
   if (route.startsWith("/tarifs/")) return ["monthly", "0.7"];
   return ["monthly", "0.8"];

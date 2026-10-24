@@ -161,6 +161,28 @@
 /iptv-bbox /iptv-orange-sfr-bouygues 301
 /iptv-8k /blog/iptv-4k-france 301
 
+# Money pages round three (2026-10-24)
+/iptv-multi-ecrans /abonnement-iptv-multi-ecrans 301
+/iptv-plusieurs-ecrans /abonnement-iptv-multi-ecrans 301
+/abonnement-iptv-plusieurs-ecrans /abonnement-iptv-multi-ecrans 301
+/abonnement-iptv-famille /abonnement-iptv-multi-ecrans 301
+/iptv-2-ecrans /abonnement-iptv-multi-ecrans 301
+/abonnement-iptv-tv /abonnement-iptv-smart-tv 301
+/iptv-smart-tv-abonnement /abonnement-iptv-smart-tv 301
+/abonnement-iptv-samsung /abonnement-iptv-smart-tv 301
+/abonnement-iptv-lg /abonnement-iptv-smart-tv 301
+/acheter-iptv /acheter-abonnement-iptv 301
+/commander-abonnement-iptv /acheter-abonnement-iptv 301
+/renouveler-abonnement-iptv /acheter-abonnement-iptv 301
+/renouvellement-iptv /acheter-abonnement-iptv 301
+/abonnement-iptv-belgique /iptv-belgique 301
+/iptv-belge /iptv-belgique 301
+/iptv-bruxelles /iptv-belgique 301
+/abonnement-iptv-suisse /iptv-suisse 301
+/iptv-suisse-romande /iptv-suisse 301
+/iptv-geneve /iptv-suisse 301
+/iptv-lausanne /iptv-suisse 301
+
 # Small-city pages consolidated into their region hub (2026-10-23)
 /iptv-aix-en-provence /iptv-paca 301
 /iptv-ajaccio /iptv-corse 301

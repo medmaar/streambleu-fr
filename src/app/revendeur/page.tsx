@@ -130,7 +130,7 @@ export default function ResellerPage() {
         <div style={{ maxWidth: 720, margin: "0 auto" }}>
           <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-            {[{ l: "/tarifs", t: "Nos Tarifs" }, { l: "/parrainage", t: "Programme de Parrainage" }, { l: "/abonnement-iptv", t: "Abonnement IPTV" }, { l: "/contact", t: "Contact" }].map((x) => (
+            {[{ l: "/tarifs", t: "Nos Tarifs" }, { l: "/parrainage", t: "Programme de Parrainage" }, { l: "/abonnement-iptv", t: "Abonnement IPTV" }, { l: "/contact", t: "Contact" }, { l: "/acheter-abonnement-iptv", t: "Acheter un abonnement IPTV" }, { l: "/abonnement-iptv-multi-ecrans", t: "Abonnement multi-écrans" }].map((x) => (
               <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
             ))}
           </div>

@@ -25,7 +25,7 @@ const plans = [
 const faqItems = [
   { q: "Quel est le meilleur abonnement IPTV en France ?", a: "Le meilleur abonnement IPTV est celui qui reste stable sur votre connexion et fonctionne avec votre TV : testez-le 24h avant de payer. Chez Stream Bleu, le forfait 12 mois à 49 € revient à environ 4,08 € par mois pour un écran ; notre guide Meilleur IPTV France détaille la méthode de test." },
   { q: "Quelle est la différence entre un abonnement IPTV France et un abonnement IPTV international ?", a: "Un abonnement IPTV France est pensé pour un public francophone : chaînes françaises, guide TV en français et support en français. Chez Stream Bleu, les tarifs sont les mêmes partout en France : 9 € pour 1 mois, 29 € pour 3 mois, 39 € pour 6 mois et 49 € pour 12 mois." },
-  { q: "Comment fonctionne un abonnement IPTV ?", a: "Après votre abonnement, vous recevez vos identifiants par email en moins de 5 minutes. Installez un lecteur IPTV (TiviMate, IPTV Smarters Pro) sur votre appareil, entrez votre URL M3U et commencez à regarder." },
+  { q: "Comment fonctionne un abonnement IPTV ?", a: "Après votre abonnement, vous recevez vos identifiants par e-mail en quelques minutes. Installez un lecteur IPTV (TiviMate, IPTV Smarters Pro) sur votre appareil, entrez votre URL M3U et commencez à regarder." },
   { q: "L'abonnement IPTV nécessite-t-il un engagement ?", a: "Non. Tous les abonnements Stream Bleu sont sans engagement. Vous choisissez la durée qui vous convient : 1, 3, 6 ou 12 mois, sans renouvellement automatique." },
   { q: "Puis-je essayer avant de m'abonner ?", a: "Oui ! Stream Bleu propose un essai gratuit de 24h sans carte bancaire. Testez la qualité 4K et toutes les chaînes sur votre propre matériel avant de vous décider." },
   { q: "L'abonnement fonctionne-t-il sur plusieurs appareils ?", a: "Chaque abonnement inclut 1 connexion simultanée. Des forfaits multi-connexions (2 à 10 appareils) sont disponibles pour regarder sur plusieurs écrans en même temps." },
@@ -37,7 +37,7 @@ const proseSections: ProseSection[] = [
     "h2": "Souscrire un abonnement IPTV en 4 étapes",
     "list": [
       "**Testez** : demandez l'[essai gratuit de 24h](/essai-gratuit), sans carte bancaire, sur l'appareil que vous utiliserez.",
-      "**Choisissez** une durée (1, 3, 6 ou 12 mois) et un nombre d'écrans sur la page [tarifs](/tarifs), puis payez par carte bancaire ou PayPal.",
+      "**Choisissez** une durée (1, 3, 6 ou 12 mois) et un nombre d'écrans sur la page [tarifs](/tarifs) (plusieurs TV : voir l'[abonnement IPTV multi-écrans](/abonnement-iptv-multi-ecrans)), puis payez par carte bancaire ou PayPal. Le détail de la commande et du renouvellement est sur [acheter un abonnement IPTV](/acheter-abonnement-iptv).",
       "**Recevez vos identifiants** par e-mail en quelques minutes : nom d'utilisateur, mot de passe et URL du serveur, ou lien M3U.",
       "**Installez l'application** adaptée à votre appareil ([Smart TV](/iptv-smart-tv-france), [Fire TV Stick](/iptv-firestick-france), [IPTV Smarters Pro](/iptv-smarters-pro)) et saisissez vos identifiants."
     ]
@@ -218,7 +218,7 @@ export default function AbonnementIptvPage() {
           <div style={{ maxWidth: 720, margin: "0 auto" }}>
             <p style={{ textAlign: "center", color: "#555", fontSize: 13, marginBottom: 16 }}>Voir aussi :</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>
-              {[{l:"/iptv-france",t:"IPTV France"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/tarifs",t:"Nos Tarifs"},{l:"/liste-chaines",t:"Liste des Chaînes"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/comparatif-iptv",t:"Comparatif IPTV"}].map(x => (
+              {[{l:"/iptv-france",t:"IPTV France"},{l:"/iptv-premium",t:"IPTV Premium"},{l:"/meilleur-iptv-france",t:"Meilleur IPTV France"},{l:"/iptv-francais",t:"IPTV Français"},{l:"/tarifs",t:"Nos Tarifs"},{l:"/liste-chaines",t:"Liste des Chaînes"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/comparatif-iptv",t:"Comparatif IPTV"},{l:"/abonnement-iptv-multi-ecrans",t:"Abonnement multi-écrans"},{l:"/abonnement-iptv-smart-tv",t:"Abonnement IPTV Smart TV"},{l:"/acheter-abonnement-iptv",t:"Acheter / renouveler"},{l:"/iptv-belgique",t:"IPTV Belgique"},{l:"/iptv-suisse",t:"IPTV Suisse"}].map(x => (
                 <Link key={x.l} href={x.l} style={{ background: "rgba(90,95,207,0.08)", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "6px 16px", fontSize: 13, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
               ))}
             </div>

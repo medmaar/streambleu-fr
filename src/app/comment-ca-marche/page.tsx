@@ -29,7 +29,7 @@ const steps = [
     step: "2",
     title: "Recevoir vos identifiants",
     desc: "Après votre commande, notre équipe vous envoie vos identifiants en quelques minutes — URL serveur, nom d'utilisateur et mot de passe.",
-    detail: "Contactez-nous via WhatsApp, Telegram ou e-mail. Notre équipe support est disponible 24h/24 et répond généralement en moins de 5 minutes.",
+    detail: "Contactez-nous via WhatsApp, Telegram ou e-mail. Notre équipe support est disponible 24h/24 et répond rapidement, en français.",
     cta: { label: "Nous contacter", href: "/contact" },
   },
   {
@@ -65,7 +65,7 @@ const requirements = [
 const faqItems = [
   { q: "Faut-il installer du matériel spécifique ?", a: "Non. Si vous avez déjà un Fire Stick, une Smart TV, un téléphone ou un ordinateur, vous êtes prêt. Pas d'antenne, pas de décodeur, pas de technicien requis." },
   { q: "L'IPTV fonctionne-t-il avec mon abonnement internet actuel ?", a: "Oui. Tout abonnement internet français standard (Orange, SFR, Free, Bouygues) avec au moins 25 Mbps fonctionne parfaitement pour le streaming HD." },
-  { q: "Puis-je regarder sur plusieurs TV en même temps ?", a: "Oui — choisissez un forfait 2, 3, 4 ou 5 appareils. Chaque appareil streame indépendamment. Une personne peut regarder le foot au salon pendant qu'une autre regarde un film dans la chambre." },
+  { q: "Puis-je regarder sur plusieurs TV en même temps ?", a: "Oui — choisissez un forfait de 2 à 10 écrans simultanés (par exemple 89€ pour 2 écrans sur 12 mois). Chaque appareil streame indépendamment. Une personne peut regarder le foot au salon pendant qu'une autre regarde un film dans la chambre." },
   { q: "L'IPTV fonctionne-t-il hors de France ?", a: "Votre abonnement fonctionne partout dans le monde avec une bonne connexion internet. Voyagez en Europe, aux États-Unis ou ailleurs et accédez toujours à toutes vos chaînes françaises." },
   { q: "Que se passe-t-il si une chaîne est indisponible ?", a: "Nos serveurs maintiennent plusieurs flux redondants pour chaque chaîne. En cas de problème, le système bascule automatiquement sur un flux de secours. Notre équipe support 24h/24 surveille le service en permanence." },
 ];

@@ -18,17 +18,17 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org", "@type": "Article",
   headline: "IPTV Pas Cher France 2026 — Comment économiser sans sacrifier la qualité",
-  datePublished: "2026-03-20", dateModified: "2026-04-30",
+  datePublished: "2026-03-20", dateModified: "2026-10-24",
   author: { "@type": "Organization", name: "Stream Bleu" },
   publisher: { "@type": "Organization", name: "Stream Bleu", url: "https://streambleu.fr" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://streambleu.fr/blog/iptv-pas-cher-france" },
 };
 
 const faqItems = [
-  { q: "Quel est le prix d'un abonnement IPTV en France ?", a: "Les abonnements IPTV en France varient de 5€ à 30€/mois. Stream Bleu propose des forfaits à partir de 9€/mois (ou 4€/mois avec le forfait annuel à 49€). Un prix trop bas (moins de 3€) est souvent signe d'un service peu fiable ou frauduleux." },
+  { q: "Quel est le prix d'un abonnement IPTV en France ?", a: "Les abonnements IPTV en France varient de 5€ à 30€/mois. Stream Bleu propose des forfaits à partir de 9€/mois (soit environ 4,08 €/mois avec le forfait annuel à 49 €). Un prix trop bas (moins de 3€) est souvent signe d'un service peu fiable ou frauduleux." },
   { q: "Comment trouver un IPTV pas cher et fiable en France ?", a: "Recherchez un service proposant un essai gratuit (sans carte bancaire), des avis vérifiés sur des plateformes indépendantes, et une qualité 4K réelle. Stream Bleu propose un essai gratuit de 24h pour vérifier vous-même la stabilité et la qualité 4K H.265 sur votre appareil." },
-  { q: "Un IPTV gratuit est-il possible en France ?", a: "Des listes M3U gratuites existent mais elles sont instables, de mauvaise qualité et souvent illégales. La solution la plus économique reste un abonnement IPTV premium comme Stream Bleu à partir de 4€/mois — fiable, légal et en 4K." },
-  { q: "Comment économiser sur son abonnement IPTV France ?", a: "Optez pour un forfait longue durée. Le forfait 12 mois Stream Bleu à 49€ revient à 4€/mois — économisant 56% par rapport au tarif mensuel de 9€/mois. C'est la meilleure façon d'avoir un IPTV pas cher de qualité premium." },
+  { q: "Un IPTV gratuit est-il possible en France ?", a: "Des listes M3U gratuites existent mais elles sont instables, de mauvaise qualité et souvent illégales. La solution la plus économique reste un abonnement IPTV premium comme Stream Bleu, à partir d'environ 4,08 €/mois sur 12 mois, avec un support joignable et des conditions de vente publiées." },
+  { q: "Comment économiser sur son abonnement IPTV France ?", a: "Optez pour un forfait longue durée. Le forfait 12 mois Stream Bleu à 49€ revient à environ 4,08 €/mois — soit 55 % de moins que 12 mois payés au tarif mensuel (108 €). C'est la meilleure façon d'avoir un IPTV pas cher de qualité premium." },
 ];
 
 const faqSchema = {
@@ -63,7 +63,7 @@ export default function IptvPasCherFrancePage() {
             <h1 style={{ fontSize: "clamp(1.8rem,4vw,2.8rem)", fontWeight: 900, color: "#fff", lineHeight: 1.15, marginBottom: 16 }}>
               IPTV Pas Cher France 2026 : Comment Payer Moins Sans Sacrifier la Qualité
             </h1>
-            <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, lineHeight: 1.7 }}>Mis à jour le 18 avril 2026 • 7 minutes de lecture</p>
+            <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, lineHeight: 1.7 }}>Mis à jour le 24 octobre 2026 • 7 minutes de lecture</p>
           </div>
         </section>
 
@@ -116,16 +116,16 @@ export default function IptvPasCherFrancePage() {
 
             <h2 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#1a1a4e", marginBottom: 16, marginTop: 40 }}>Comment Stream Bleu propose un IPTV pas cher et fiable</h2>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: "#333", marginBottom: 16 }}>
-              Stream Bleu a optimisé sa structure de coûts pour proposer le meilleur rapport qualité/prix du marché. L&apos;utilisation du codec H.265/HEVC réduit la bande passante nécessaire de 50% par rapport au H.264 traditionnel, permettant de maintenir une qualité 4K à moindre coût d&apos;infrastructure.
+              Stream Bleu a optimisé sa structure de coûts pour garder des prix bas sans rogner sur la qualité. L&apos;utilisation du codec H.265/HEVC réduit la bande passante nécessaire de 50% par rapport au H.264 traditionnel, permettant de maintenir une qualité 4K à moindre coût d&apos;infrastructure.
             </p>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: "#333", marginBottom: 32 }}>
-              Notre modèle est simple : vous payez plus longtemps, vous payez moins par mois. Le <Link href="/tarifs/12-mois" style={{ color: "#5a5fcf" }}>forfait 12 mois à 49€</Link> revient à 4,08€/mois — soit le tarif le plus bas du marché pour un service IPTV premium de qualité certifiée.
+              Notre modèle est simple : vous payez plus longtemps, vous payez moins par mois. Le <Link href="/tarifs/12-mois" style={{ color: "#5a5fcf" }}>forfait 12 mois à 49€</Link> revient à 4,08€/mois, et un forfait multi-écrans fait encore baisser le prix par écran : 89€ pour 2 écrans sur 12 mois, soit 3,71€ par écran et par mois (voir l&apos;<Link href="/abonnement-iptv-multi-ecrans" style={{ color: "#5a5fcf" }}>abonnement IPTV multi-écrans</Link>). Comment commander, payer et renouveler sans frais cachés : <Link href="/acheter-abonnement-iptv" style={{ color: "#5a5fcf" }}>acheter un abonnement IPTV</Link>.
             </p>
 
             <div style={{ background: "rgba(90,95,207,0.04)", borderRadius: 16, padding: "20px 24px", border: "1px solid rgba(90,95,207,0.12)", marginBottom: 40 }}>
               <p style={{ fontSize: 13, fontWeight: 700, color: "#5a5fcf", marginBottom: 12 }}>Voir aussi :</p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                {[{l:"/blog/iptv-sans-coupure",t:"IPTV Sans Coupure"},{l:"/blog/iptv-stable-france",t:"IPTV Stable"},{l:"/blog/iptv-test-gratuit",t:"Test Gratuit IPTV"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/tarifs",t:"Nos Tarifs"}].map(x => (
+                {[{l:"/blog/iptv-sans-coupure",t:"IPTV Sans Coupure"},{l:"/blog/iptv-stable-france",t:"IPTV Stable"},{l:"/blog/iptv-test-gratuit",t:"Test Gratuit IPTV"},{l:"/abonnement-iptv",t:"Abonnement IPTV"},{l:"/tarifs",t:"Nos Tarifs"},{l:"/prix-iptv",t:"Prix IPTV"},{l:"/abonnement-iptv-multi-ecrans",t:"Abonnement multi-écrans"},{l:"/acheter-abonnement-iptv",t:"Acheter un abonnement IPTV"}].map(x => (
                   <Link key={x.l} href={x.l} style={{ background: "#fff", border: "1px solid rgba(90,95,207,0.2)", borderRadius: 999, padding: "5px 14px", fontSize: 12, fontWeight: 600, color: "#5a5fcf", textDecoration: "none" }}>{x.t}</Link>
                 ))}
               </div>

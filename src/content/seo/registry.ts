@@ -7,6 +7,7 @@ import { GUIDE_PAGES } from "./pages/guides";
 import { COMMERCIAL_PAGES } from "./pages/commercial";
 import { CITY_PAGES } from "./pages/cities";
 import { COMPETITOR_PAGES } from "./pages/competitors";
+import { MONEY_PAGES } from "./pages/money";
 
 export const SEO_PAGES: SeoPageData[] = [
   ...HUB_PAGES,
@@ -15,6 +16,7 @@ export const SEO_PAGES: SeoPageData[] = [
   ...DEVICE_PAGES,
   ...GUIDE_PAGES,
   ...COMMERCIAL_PAGES,
+  ...MONEY_PAGES,
   ...COMPETITOR_PAGES,
   ...CITY_PAGES,
 ];
@@ -38,6 +40,9 @@ const EXISTING: Record<string, string> = {
   "/contact": "Contact",
   "/revendeur": "Revendeur IPTV",
   "/politique-remboursement": "Politique de remboursement",
+  "/comment-ca-marche": "Comment ça marche",
+  "/parrainage": "Parrainage",
+  "/conditions-utilisation": "Conditions d'utilisation",
   "/avertissement": "Avertissement légal",
   "/blog/iptv-legal-france": "IPTV légal en France ?",
   "/blog/iptv-pas-cher-france": "IPTV pas cher",
