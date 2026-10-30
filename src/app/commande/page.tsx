@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { Suspense, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { sendInvoice } from "@/lib/invoice";
 import { PRICES, DURATIONS, getPrice } from "@/lib/pricing";
 
 const breadcrumbSchema = {
@@ -56,6 +57,7 @@ function OrderContent() {
         reply_to:  form.email,
         site_name: "Stream Bleu",
       });
+      sendInvoice(form.name, form.email, `${duration} — ${appareils} appareil${Number(appareils) > 1 ? "s" : ""} — ${price}€`);
     } catch (err) {
       console.error("EmailJS error:", err);
     } finally {

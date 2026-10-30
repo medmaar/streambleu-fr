@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { sendInvoice } from "@/lib/invoice";
 
 const countries = [
   "France", "États-Unis", "Royaume-Uni", "Australie", "France", "Allemagne",
@@ -51,6 +52,7 @@ export default function OrderForm({ plan, price, devices }: Props) {
         message: "—",
         site_name: "Stream Bleu",
       });
+      sendInvoice(form.name || "Non renseigné", form.email || "Non renseigné", `${plan} — ${devices} device${devices > 1 ? "s" : ""} — $${price}`);
     } catch {
       // Still show success to user even if email fails
     } finally {
