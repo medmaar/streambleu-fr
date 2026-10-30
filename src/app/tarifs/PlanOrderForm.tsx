@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { sendInvoice } from "@/lib/invoice";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import SuccessCheck from "../../components/SuccessCheck";
@@ -74,6 +75,7 @@ export default function PlanOrderForm({ plan }: Props) {
           site_name: "Stream Bleu",
         }
       );
+      sendInvoice(form.full_name || "Non renseigné", form.email || "Non renseigné", plan);
       console.log("EmailJS success:", result);
       setStatus("success");
       setForm({ full_name: "", email: "", country: "France", device: "", message: "" });

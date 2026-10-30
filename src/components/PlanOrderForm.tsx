@@ -1,6 +1,7 @@
 "use client";
 import { useState, FormEvent, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { sendInvoice } from "@/lib/invoice";
 
 const COUNTRIES = [
   "France","Belgique","Suisse","Pays-Bas","Allemagne","Espagne","Italie",
@@ -44,6 +45,7 @@ export default function PlanOrderForm({ planLabel, price }: Props) {
         reply_to:  email,
         site_name: "Stream Bleu",
       });
+      sendInvoice(name, email, `${planLabel} — ${price}€`);
     } catch (err) {
       console.error("EmailJS error:", err);
     } finally {
