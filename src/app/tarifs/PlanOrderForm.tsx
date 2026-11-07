@@ -5,6 +5,7 @@ import { sendInvoice } from "@/lib/invoice";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import SuccessCheck from "../../components/SuccessCheck";
+import Celebrate from "../../components/Celebrate";
 
 const countries = [
   "France", "Belgique", "Suisse", "Luxembourg", "Canada", "Maroc", "Algérie",
@@ -42,6 +43,7 @@ export default function PlanOrderForm({ plan }: Props) {
   const [phone, setPhone] = useState<string | undefined>("");
   const [emailWarning, setEmailWarning] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [sentTo, setSentTo] = useState("");
 
   useEffect(() => {
     emailjs.init("KfpszCeX5M5itfdsO");
@@ -77,6 +79,7 @@ export default function PlanOrderForm({ plan }: Props) {
       );
       sendInvoice(form.full_name || "Non renseigné", form.email || "Non renseigné", plan);
       console.log("EmailJS success:", result);
+      setSentTo(form.email);
       setStatus("success");
       setForm({ full_name: "", email: "", country: "France", device: "", message: "" });
       setPhone("");
@@ -87,7 +90,12 @@ export default function PlanOrderForm({ plan }: Props) {
   }
 
   if (status === "success") {
-    return <SuccessCheck title="Commande confirmée !" text="Vous recevrez vos identifiants en quelques minutes." />;
+    return (
+      <>
+        <SuccessCheck title="Commande confirmée !" text="Vous recevrez vos identifiants en quelques minutes." />
+        <Celebrate kind="order" email={sentTo} />
+      </>
+    );
   }
 
   return (

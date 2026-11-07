@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import SuccessCheck from "../../components/SuccessCheck";
+import Celebrate from "../../components/Celebrate";
 
 const WORKER_URL = "https://iptv-trial-streambleu.medmaar.workers.dev";
 
@@ -30,6 +31,7 @@ export default function EssaiGratuitForm() {
   const [form, setForm] = useState({ full_name: "", email: "", country: "France", device: "", message: "" });
   const [phone, setPhone] = useState<string | undefined>("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [sentTo, setSentTo] = useState("");
 
   useEffect(() => {
     emailjs.init("KfpszCeX5M5itfdsO");
@@ -83,6 +85,7 @@ export default function EssaiGratuitForm() {
         }
       }
       if (!sent) await notifyTeam(email ? "activation auto échouée" : "pas d'email");
+      setSentTo(email);
       setStatus("success");
       setForm({ full_name: "", email: "", country: "France", device: "", message: "" });
       setPhone("");
@@ -93,7 +96,12 @@ export default function EssaiGratuitForm() {
   }
 
   if (status === "success") {
-    return <SuccessCheck title="Essai confirmé !" text="Vous recevrez vos identifiants en quelques minutes." />;
+    return (
+      <>
+        <SuccessCheck title="Essai confirmé !" text="Vous recevrez vos identifiants en quelques minutes." />
+        <Celebrate kind="trial" email={sentTo} />
+      </>
+    );
   }
 
   return (

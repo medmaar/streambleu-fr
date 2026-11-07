@@ -3,6 +3,7 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { sendInvoice } from "@/lib/invoice";
+import Celebrate from "@/components/Celebrate";
 import { PRICES, DURATIONS, getPrice } from "@/lib/pricing";
 
 const breadcrumbSchema = {
@@ -70,6 +71,7 @@ function OrderContent() {
     return (
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <Celebrate kind="order" email={form.email} />
         <main style={{ background: "linear-gradient(to right, rgba(90,95,207,0.08) 0%, #f5f0ff 35%, #fdf5ff 65%, rgba(200,80,100,0.06) 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4 flex items-center justify-center">
           <div className="text-center max-w-md">
             <div className="text-6xl mb-6">✅</div>

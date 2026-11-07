@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
 import SalesBanner from "../components/SalesBanner";
 import Animations from "./components/Animations";
+import { CelebratePreview } from "../components/Celebrate";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://streambleu.fr"),
@@ -83,6 +84,7 @@ export default function RootLayout({
                 <FloatingContact />
                 <SalesBanner />
                 <Animations />
+                <CelebratePreview />
             </body>
         </html>
     );
