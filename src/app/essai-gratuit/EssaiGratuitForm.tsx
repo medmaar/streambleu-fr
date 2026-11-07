@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
-import SuccessCheck from "../../components/SuccessCheck";
 import Celebrate from "../../components/Celebrate";
 
 const WORKER_URL = "https://iptv-trial-streambleu.medmaar.workers.dev";
@@ -96,12 +95,8 @@ export default function EssaiGratuitForm() {
   }
 
   if (status === "success") {
-    return (
-      <>
-        <SuccessCheck title="Essai confirmé !" text="Vous recevrez vos identifiants en quelques minutes." />
-        <Celebrate kind="trial" email={sentTo} />
-      </>
-    );
+    // Only the full-screen celebration: no plain confirmation underneath.
+    return <Celebrate kind="trial" email={sentTo} />;
   }
 
   return (

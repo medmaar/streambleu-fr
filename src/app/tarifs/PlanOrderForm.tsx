@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser";
 import { sendInvoice } from "@/lib/invoice";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
-import SuccessCheck from "../../components/SuccessCheck";
 import Celebrate from "../../components/Celebrate";
 
 const countries = [
@@ -90,12 +89,8 @@ export default function PlanOrderForm({ plan }: Props) {
   }
 
   if (status === "success") {
-    return (
-      <>
-        <SuccessCheck title="Commande confirmée !" text="Vous recevrez vos identifiants en quelques minutes." />
-        <Celebrate kind="order" email={sentTo} />
-      </>
-    );
+    // Only the full-screen celebration: no plain confirmation underneath.
+    return <Celebrate kind="order" email={sentTo} />;
   }
 
   return (

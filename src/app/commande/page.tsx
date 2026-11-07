@@ -68,21 +68,8 @@ function OrderContent() {
   }
 
   if (submitted) {
-    return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-        <Celebrate kind="order" email={form.email} />
-        <main style={{ background: "linear-gradient(to right, rgba(90,95,207,0.08) 0%, #f5f0ff 35%, #fdf5ff 65%, rgba(200,80,100,0.06) 100%)", color: "#1a1a4e" }} className="min-h-screen py-16 px-4 flex items-center justify-center">
-          <div className="text-center max-w-md">
-            <div className="text-6xl mb-6">✅</div>
-            <h1 className="text-3xl font-extrabold mb-4 text-[#5a5fcf]">Commande reçue !</h1>
-            <p className="text-gray-600 text-lg mb-2">Merci <strong>{form.name}</strong>.</p>
-            <p className="text-gray-500">Nous vous contacterons à <strong>{form.email}</strong> dans quelques minutes pour activer votre abonnement.</p>
-            <a href="/tarifs" className="inline-block mt-8 text-[#5a5fcf] font-semibold text-sm">← Retour aux tarifs</a>
-          </div>
-        </main>
-      </>
-    );
+    // Only the full-screen celebration: no plain confirmation underneath.
+    return <Celebrate kind="order" email={form.email} />;
   }
 
   return (

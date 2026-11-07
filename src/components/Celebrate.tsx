@@ -14,7 +14,7 @@ const TEXT: Record<CelebrateKind, { title: string; lines: string[]; btn: string 
       "Ça arrive en général en moins de 2 minutes. Vérifiez votre <b>boîte de réception</b> ET vos <b>spams</b> : notre email est un peu timide et adore se cacher là-dedans.",
       "Votre seule mission pour les 24 prochaines heures : le pop-corn (ou les chips, on ne juge pas). 🍿",
     ],
-    btn: "Compris, je file chercher le pop-corn",
+    btn: "Compris, je file chercher le pop-corn 🍿",
   },
   order: {
     title: "Bravo, c’est fait ! Commande passée.",
@@ -50,58 +50,46 @@ function Line({ html, email }: { html: string; email: string }) {
   );
 }
 
-export default function Celebrate({ kind, email, onClose }: { kind: CelebrateKind; email?: string; onClose?: () => void }) {
-  const [open, setOpen] = useState(true);
+// No close button, no Escape, no backdrop click: the only way out is the button, which goes to the homepage.
+export default function Celebrate({ kind, email }: { kind: CelebrateKind; email?: string }) {
   const [mounted, setMounted] = useState(false);
-  const goRef = useRef<HTMLButtonElement>(null);
-  const xRef = useRef<HTMLButtonElement>(null);
+  const goRef = useRef<HTMLAnchorElement>(null);
   const c = TEXT[kind];
   const shownEmail = email && email.includes("@") ? email.trim() : "votre adresse email";
 
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {
-    if (!open || !mounted) return;
-    const back = document.activeElement as HTMLElement | null;
+    if (!mounted) return;
     document.documentElement.classList.add("sb-celebrating");
     goRef.current?.focus({ preventScroll: true });
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
-      if (e.key === "Tab") {
-        e.preventDefault();
-        (document.activeElement === goRef.current ? xRef.current : goRef.current)?.focus();
-      }
+      if (e.key === "Tab") { e.preventDefault(); goRef.current?.focus(); }
     };
     document.addEventListener("keydown", onKey);
     return () => {
       document.removeEventListener("keydown", onKey);
       document.documentElement.classList.remove("sb-celebrating");
-      back?.focus?.({ preventScroll: true });
     };
-  }, [open, mounted]);
+  }, [mounted]);
 
-  useEffect(() => {
-    if (!open && mounted) onClose?.();
-  }, [open, mounted, onClose]);
-
-  if (!mounted || !open) return null;
+  if (!mounted) return null;
 
   return createPortal(
-    <div className="sb-celebrate" role="dialog" aria-modal="true" aria-labelledby="sb-celebrate-title">
+    <div className="sb-celebrate" role="alertdialog" aria-modal="true" aria-labelledby="sb-celebrate-title">
       <div className="sb-celebrate-bits" aria-hidden="true">
         {BITS.map((b, i) => (
           <i key={i} style={{ "--x": `${b.x}%`, "--d": `${b.d}s`, "--t": `${b.t}s`, "--r": `${b.r}deg` } as React.CSSProperties}>{b.emoji}</i>
         ))}
       </div>
       <div className="sb-celebrate-box">
-        <button ref={xRef} className="sb-celebrate-x" type="button" aria-label="Fermer" onClick={() => setOpen(false)}>×</button>
         <svg className="sb-celebrate-mark" viewBox="0 0 120 120" aria-hidden="true">
           <circle cx="60" cy="60" r="54" />
           <path d="M36 62 53 79 86 44" />
         </svg>
         <h2 id="sb-celebrate-title">{c.title}</h2>
         {c.lines.map((l, i) => <Line key={i} html={l} email={shownEmail} />)}
-        <button ref={goRef} className="sb-submit sb-celebrate-go" type="button" onClick={() => setOpen(false)}>{c.btn}</button>
+        <a ref={goRef} href="/" className="sb-submit sb-celebrate-go">{c.btn}</a>
       </div>
     </div>,
     document.body
@@ -115,5 +103,5 @@ export function CelebratePreview() {
     const q = new URLSearchParams(window.location.search).get("celebrate");
     if (q) setKind(q === "order" ? "order" : "trial");
   }, []);
-  return kind ? <Celebrate kind={kind} email="vous@exemple.com" onClose={() => setKind(null)} /> : null;
+  return kind ? <Celebrate kind={kind} email="vous@exemple.com" /> : null;
 }
