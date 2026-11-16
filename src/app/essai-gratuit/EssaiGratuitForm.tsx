@@ -105,10 +105,7 @@ export default function EssaiGratuitForm() {
       {/* Error */}
       {status === "error" && (
         <div style={{ background: "#fdecec", border: "1px solid #f08080", color: "#9b1c1c", borderRadius: 12, padding: "12px 16px", fontSize: 14, fontWeight: 600 }}>
-          Une erreur est survenue. Veuillez réessayer ou{" "}
-          <a href={`/discuter/wa`} target="_blank" rel="noopener noreferrer" style={{ color: "#9b1c1c", textDecoration: "underline" }}>
-            contactez-nous
-          </a>.
+          Nos essais gratuits sont actuellement suspendus.
         </div>
       )}
 
