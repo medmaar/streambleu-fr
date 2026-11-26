@@ -79,7 +79,7 @@ const sections: { title: string; paras: string[] }[] = [
   {
     "title": "Article 10 – Réclamations et médiation",
     "paras": [
-      "Pour toute réclamation, contactez-nous d’abord à <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a>. Conformément à l’article L612-1 du Code de la consommation, vous pouvez recourir gratuitement à un médiateur de la consommation : [nom et coordonnées du médiateur]."
+      "Pour toute réclamation, contactez-nous d’abord à <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a>. Conformément à l’article L612-1 du Code de la consommation, vous pouvez recourir gratuitement à un médiateur de la consommation : CM2C (Centre de la Médiation de la Consommation de Conciliateurs de Justice), 49 rue de Ponthieu, 75008 Paris, France – <a href=\"https://www.cm2c.net/declarer-un-litige.php\" rel=\"noopener\">www.cm2c.net</a>."
     ]
   },
   {
