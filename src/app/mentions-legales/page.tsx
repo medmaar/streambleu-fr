@@ -18,7 +18,7 @@ const sections: { title: string; paras: string[] }[] = [
     "title": "1. Éditeur du site",
     "paras": [
       "Stream Bleu<br>18 bis rue Waldeck Rochet<br>92000 Nanterre<br>France<br>Numéro d’immatriculation : 3967XXXX<br>E-mail : <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a>",
-      "Directeur de la publication : Stream Bleu"
+      "Directeur de la publication : Gérard Labrie"
     ]
   },
   {
