@@ -43,6 +43,8 @@ const EXISTING: Record<string, string> = {
   "/comment-ca-marche": "Comment ça marche",
   "/parrainage": "Parrainage",
   "/conditions-utilisation": "Conditions d'utilisation",
+  "/cgv": "Conditions générales de vente",
+  "/mentions-legales": "Mentions légales",
   "/avertissement": "Avertissement légal",
   "/blog/iptv-legal-france": "IPTV légal en France ?",
   "/blog/iptv-pas-cher-france": "IPTV pas cher",

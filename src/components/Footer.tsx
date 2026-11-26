@@ -87,6 +87,8 @@ const sections = [
     links: [
       { href: "/politique-confidentialite", label: "Politique de confidentialité" },
       { href: "/conditions-utilisation", label: "Conditions d'utilisation" },
+      { href: "/cgv", label: "CGV" },
+      { href: "/mentions-legales", label: "Mentions légales" },
       { href: "/politique-remboursement", label: "Remboursement" },
       { href: "/avertissement", label: "Avertissement" },
       { href: "/dmca", label: "DMCA" },
