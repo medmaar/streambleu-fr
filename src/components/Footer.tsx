@@ -174,7 +174,7 @@ export default function Footer() {
             © 2026 Stream Bleu. Tous droits réservés.
           </p>
           <p style={{ fontSize: 11, color: "rgba(255,255,255,0.75)", margin: 0 }}>
-            1 Rue Volant, 92000 Nanterre, France
+            18 bis rue Waldeck Rochet, 92000 Nanterre, France
           </p>
           <p style={{ fontSize: 11, color: "rgba(255,255,255,0.75)", margin: 0 }}>
             Stream Bleu ne diffuse aucun contenu protégé — fourni par des prestataires tiers.

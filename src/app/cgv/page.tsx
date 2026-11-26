@@ -107,7 +107,6 @@ export default function CgvPage() {
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4" style={{ color: "#5a5fcf" }}>Conditions générales de vente</h1>
         <p style={{ color: "#666", fontSize: 13, marginBottom: 12 }}>Dernière mise à jour : 26 novembre 2026</p>
-        <p style={{ color: "#666", fontSize: 13, marginBottom: 40 }}><em>Les informations sur l&apos;exploitant entre crochets seront complétées avant la mise en ligne.</em></p>
         <div className="space-y-8 leading-relaxed legal-text">
           {sections.map(s => (
             <section key={s.title}>

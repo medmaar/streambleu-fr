@@ -65,7 +65,7 @@ export default function RootLayout({
   url: "https://streambleu.fr",
   email: "contact@streambleu.fr",
   description: "Abonnement IPTV France 2026 — Service IPTV premium 4K. 50 000+ chaînes, beIN Sports, Canal+, RMC Sport. À partir de 9€/mois.",
-  address: { "@type": "PostalAddress", streetAddress: "1 Rue Volant", addressLocality: "Nanterre", postalCode: "92000", addressCountry: "FR" },
+  address: { "@type": "PostalAddress", streetAddress: "18 bis rue Waldeck Rochet", addressLocality: "Nanterre", postalCode: "92000", addressCountry: "FR" },
   areaServed: [{ "@type": "Country", name: "France" }, { "@type": "Country", name: "Belgique" }, { "@type": "Country", name: "Suisse" }],
   priceRange: "9 € – 450 €",
   image: "https://streambleu.fr/abonnement-iptv-france-1.jpg",
