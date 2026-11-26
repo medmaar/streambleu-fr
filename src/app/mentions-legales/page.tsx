@@ -17,8 +17,8 @@ const sections: { title: string; paras: string[] }[] = [
   {
     "title": "1. Éditeur du site",
     "paras": [
-      "Stream Bleu<br>[Nom ou raison sociale de l’exploitant]<br>[Forme juridique et capital, le cas échéant]<br>[Adresse postale]<br>[SIRET / RCS]<br>[N° de TVA intracommunautaire, le cas échéant]<br>E-mail : <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a>",
-      "Directeur de la publication : [nom du responsable]"
+      "Stream Bleu<br>18 bis rue Waldeck Rochet<br>92000 Nanterre<br>France<br>Numéro d’immatriculation : 3967XXXX<br>E-mail : <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a>",
+      "Directeur de la publication : Stream Bleu"
     ]
   },
   {

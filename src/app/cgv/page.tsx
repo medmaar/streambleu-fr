@@ -19,7 +19,7 @@ const sections: { title: string; paras: string[] }[] = [
     "paras": [
       "Les présentes conditions générales de vente (CGV) s’appliquent à tout abonnement souscrit sur le site streambleu.fr.",
       "Le service est vendu par :",
-      "Stream Bleu<br>[Nom ou raison sociale de l’exploitant]<br>[Forme juridique et capital, le cas échéant]<br>[Adresse postale]<br>[SIRET / RCS]<br>[N° de TVA intracommunautaire, le cas échéant]<br>E-mail : <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a><br>WhatsApp : <a href=\"/discuter/wa\" rel=\"noopener\">nous écrire</a>"
+      "Stream Bleu<br>18 bis rue Waldeck Rochet<br>92000 Nanterre<br>France<br>Numéro d’immatriculation : 3967XXXX<br>E-mail : <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a><br>WhatsApp : <a href=\"/discuter/wa\" rel=\"noopener\">nous écrire</a>"
     ]
   },
   {
@@ -55,7 +55,7 @@ const sections: { title: string; paras: string[] }[] = [
       "Conformément à l’article L221-18 du Code de la consommation, vous disposez d’un délai de quatorze jours à compter de la conclusion du contrat pour exercer votre droit de rétractation, sans avoir à motiver votre décision.",
       "Pour l’exercer, informez-nous de votre décision par une déclaration dénuée d’ambiguïté, par exemple par e-mail à <a href=\"mailto:contact@streambleu.fr\">contact@streambleu.fr</a>. Vous pouvez utiliser le formulaire ci-dessous, qui n’est pas obligatoire. Nous vous remboursons tous les paiements reçus au plus tard quatorze jours après réception de votre demande, par le même moyen de paiement.",
       "Si vous avez demandé que le service commence avant la fin du délai de rétractation, vous nous devez, conformément à l’article L221-25 du Code de la consommation, un montant proportionnel au service fourni jusqu’à la communication de votre décision de vous rétracter.",
-      "<strong>Modèle de formulaire de rétractation</strong><br>À l’attention de : Stream Bleu, [Nom ou raison sociale de l’exploitant], [Forme juridique et capital, le cas échéant], [Adresse postale], [SIRET / RCS], [N° de TVA intracommunautaire, le cas échéant], contact@streambleu.fr<br>Je vous notifie par la présente ma rétractation du contrat portant sur la prestation de services ci-dessous :<br>Commandé le :<br>Nom du consommateur :<br>Adresse du consommateur :<br>Signature (uniquement en cas de notification sur papier) :<br>Date :"
+      "<strong>Modèle de formulaire de rétractation</strong><br>À l’attention de : Stream Bleu, 18 bis rue Waldeck Rochet, 92000 Nanterre, France, contact@streambleu.fr<br>Je vous notifie par la présente ma rétractation du contrat portant sur la prestation de services ci-dessous :<br>Commandé le :<br>Nom du consommateur :<br>Adresse du consommateur :<br>Signature (uniquement en cas de notification sur papier) :<br>Date :"
     ]
   },
   {
